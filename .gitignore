@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+
+# Jupyter / local scratch
+.ipynb_checkpoints/
+*.tmp
+*.swp
+*.bak
+*.bak_*
+
+# Experiment artifacts (large/ephemeral)
+pilot_runs/
+pilot_outputs/
+logs/
+outputs/
+intermediates/
+*.log
+
+# HuggingFace / model caches
+.huggingface/
+.cache/
+hf_cache/
+
+# OS
+.DS_Store
