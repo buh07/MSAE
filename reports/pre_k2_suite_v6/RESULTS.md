@@ -27,5 +27,5 @@
 
 ## Compatibility Check
 
-- v5-like IID compatibility run: 
-- Delta report: 
+- v5-like IID compatibility run: `20260528_132545_compat_v5_iid`
+- Delta report: `compatibility_iid_v5_vs_v6.md`
