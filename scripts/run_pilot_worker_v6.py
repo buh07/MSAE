@@ -64,6 +64,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--run_root", required=True)
     p.add_argument("--poll_sec", type=float, default=4.0)
     p.add_argument("--heartbeat_sec", type=float, default=60.0)
+    p.add_argument("--git_commit_hash", default="")
     return p.parse_args()
 
 
@@ -216,6 +217,8 @@ def run_job(args: argparse.Namespace, job: Dict[str, str], manifest: Path) -> No
         "--output_dir",
         str(out_dir),
     ]
+    if args.git_commit_hash:
+        cmd.extend(["--git_commit_hash", args.git_commit_hash])
 
     env = os.environ.copy()
     env["PYTHONUNBUFFERED"] = "1"
@@ -269,6 +272,15 @@ def run_summarizer(args: argparse.Namespace) -> None:
 
 def main() -> None:
     args = parse_args()
+    if not args.git_commit_hash:
+        try:
+            args.git_commit_hash = subprocess.check_output(
+                ["git", "rev-parse", "HEAD"],
+                cwd=args.repo_root,
+                text=True,
+            ).strip()
+        except Exception:
+            args.git_commit_hash = ""
     manifest = Path(args.manifest).resolve()
     while True:
         job = claim_job(manifest, worker=args.worker, gpu=args.gpu)

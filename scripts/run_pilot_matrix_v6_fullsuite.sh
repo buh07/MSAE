@@ -6,6 +6,7 @@ MSAE_ROOT="${REPO_ROOT}/MSAE"
 SCRIPT="${MSAE_ROOT}/scripts/raw_activation_separability_pilot.py"
 SUMMARIZER="${MSAE_ROOT}/scripts/summarize_pilot_run.py"
 WORKER="${MSAE_ROOT}/scripts/run_pilot_worker_v6.py"
+GIT_HASH="$(cd "${MSAE_ROOT}" && git rev-parse HEAD)"
 
 TS="${TS:-$(date +%Y%m%d_%H%M%S)}"
 RUN_ROOT="${MSAE_ROOT}/pilot_runs/${TS}_v6_prek2_fullsuite"
@@ -94,7 +95,7 @@ for gpu in 4 5 6 7; do
     "bash -lc 'set -euo pipefail; cd ${REPO_ROOT}; export PYTHONUNBUFFERED=1; \
      python -u ${WORKER} --manifest ${MANIFEST} --worker ${session} --gpu ${gpu} \
      --repo_root ${REPO_ROOT} --pilot_script ${SCRIPT} --summarizer_script ${SUMMARIZER} \
-     --run_root ${RUN_ROOT} 2>&1 | tee ${wlog}'"
+     --run_root ${RUN_ROOT} --git_commit_hash ${GIT_HASH} 2>&1 | tee ${wlog}'"
   echo "[ok] started ${session}"
 done
 
@@ -102,4 +103,3 @@ echo "RUN_ROOT=${RUN_ROOT}"
 echo "MANIFEST=${MANIFEST}"
 echo "SOURCE_MANIFEST=${SOURCE_MANIFEST}"
 tmux ls | rg "msae-pilot6-"
-
