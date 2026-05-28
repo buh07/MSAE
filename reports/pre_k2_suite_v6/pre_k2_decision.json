@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-28T13:25:17.867693",
+  "run_root": "/jumbo/lisp/f004ndc/MSAE/pilot_runs/20260528_001543_v6_prek2_fullsuite",
+  "primary_layer_recommendation": 3,
+  "fallback_layer": 4,
+  "headline_ranks": [
+    8,
+    16
+  ],
+  "boundary_rank_diagnostic": 32,
+  "layer_scores": {
+    "3": {
+      "headline_pass_rate": 1.0,
+      "holdout_headline_pass_rate": 1.0,
+      "raw_pos_auc_mean": 0.7910968160611005,
+      "r32_pass_rate": 0.0
+    },
+    "4": {
+      "headline_pass_rate": 1.0,
+      "holdout_headline_pass_rate": 1.0,
+      "raw_pos_auc_mean": 0.7805300771394087,
+      "r32_pass_rate": 0.0
+    }
+  },
+  "gate_policy": "Proceed to K=2 only after this decision artifact is committed and pushed."
+}
