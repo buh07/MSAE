@@ -104,7 +104,11 @@ def main() -> None:
         run_status: dict[str, Any] = dict(run)
         run_status["summary_path"] = summary_path
         run_status["partial_summary_path"] = partial_path
-        run_status["status"] = "pending"
+        manifest_status = str(run.get("status", "")).strip().lower()
+        if manifest_status in {"running", "done", "failed", "pending"}:
+            run_status["status"] = manifest_status
+        else:
+            run_status["status"] = "pending"
         run_status["completed_ranks"] = []
         run_status["layer_index_effective"] = run.get("layer_index", "")
         run_status["collection_stats"] = {}
