@@ -20,6 +20,11 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--output_per_layer", type=str, default="per_layer_aggregate.tsv")
     p.add_argument("--output_status", type=str, default="status_snapshot.json")
     p.add_argument("--output_ci", type=str, default="ci_metrics.tsv")
+    p.add_argument("--output_ci_iid", type=str, default="ci_metrics_iid.tsv")
+    p.add_argument("--output_ci_source_holdout", type=str, default="ci_metrics_source_holdout.tsv")
+    p.add_argument("--output_ci_corpus_holdout", type=str, default="ci_metrics_corpus_holdout.tsv")
+    p.add_argument("--output_convergence", type=str, default="convergence_quality.tsv")
+    p.add_argument("--output_control_notes", type=str, default="control_notes.md")
     p.add_argument("--output_sensitivity", type=str, default="threshold_sensitivity.tsv")
     p.add_argument("--output_decision_json", type=str, default="pre_k2_decision.json")
     p.add_argument("--output_decision_md", type=str, default="pre_k2_decision.md")
@@ -83,6 +88,45 @@ def write_tsv(path: str, rows: list[dict[str, Any]]) -> None:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()), delimiter="\t")
         w.writeheader()
         w.writerows(rows)
+
+
+def compute_ci_rows(
+    rows: list[dict[str, Any]],
+    metrics_for_ci: list[str],
+    bootstrap_samples: int,
+    split_mode_filter: str | None = None,
+) -> list[dict[str, Any]]:
+    ci_rows: list[dict[str, Any]] = []
+    grouped_rank = defaultdict(list)
+    for row in rows:
+        if split_mode_filter is not None and str(row.get("split_mode", "")) != split_mode_filter:
+            continue
+        key = (str(row["model"]), int(row["layer_index"]), int(row["rank"]))
+        grouped_rank[key].append(row)
+
+    for (model, layer, rank), grp in sorted(grouped_rank.items(), key=lambda x: (x[0][0], x[0][1], x[0][2])):
+        for metric in metrics_for_ci:
+            vals = [safe_float(r.get(metric, float("nan"))) for r in grp]
+            point, lo, hi = bootstrap_mean_ci(
+                vals,
+                n_boot=int(bootstrap_samples),
+                alpha=0.05,
+                seed=abs(hash((model, layer, rank, metric, split_mode_filter))) % (2**31 - 1),
+            )
+            ci_rows.append(
+                {
+                    "split_mode": split_mode_filter if split_mode_filter is not None else "all",
+                    "model": model,
+                    "layer_index": layer,
+                    "rank": rank,
+                    "metric": metric,
+                    "n": len([v for v in vals if finite(v)]),
+                    "mean": point,
+                    "ci_lo_95": lo,
+                    "ci_hi_95": hi,
+                }
+            )
+    return ci_rows
 
 
 def main() -> None:
@@ -307,36 +351,126 @@ def main() -> None:
     per_layer_path = os.path.join(args.run_root, args.output_per_layer)
     write_tsv(per_layer_path, per_layer_rows)
 
-    # Bootstrap CI tables for key metrics
-    ci_rows: list[dict[str, Any]] = []
+    # Bootstrap CI tables for key metrics (overall + split-specific)
     metrics_for_ci = ["raw_pos_auc", "c2_var_ratio", "tok_drop_frac_v2", "all_pass_v2"]
-    grouped_rank = defaultdict(list)
-    for row in aggregate_rows:
-        key = (str(row["model"]), int(row["layer_index"]), int(row["rank"]))
-        grouped_rank[key].append(row)
-    for (model, layer, rank), rows in sorted(grouped_rank.items(), key=lambda x: (x[0][0], x[0][1], x[0][2])):
-        for metric in metrics_for_ci:
-            vals = [safe_float(r.get(metric, float("nan"))) for r in rows]
-            point, lo, hi = bootstrap_mean_ci(
-                vals,
-                n_boot=int(args.bootstrap_samples),
-                alpha=0.05,
-                seed=abs(hash((model, layer, rank, metric))) % (2**31 - 1),
-            )
-            ci_rows.append(
-                {
-                    "model": model,
-                    "layer_index": layer,
-                    "rank": rank,
-                    "metric": metric,
-                    "n": len([v for v in vals if finite(v)]),
-                    "mean": point,
-                    "ci_lo_95": lo,
-                    "ci_hi_95": hi,
-                }
-            )
+    ci_rows = compute_ci_rows(
+        rows=aggregate_rows,
+        metrics_for_ci=metrics_for_ci,
+        bootstrap_samples=int(args.bootstrap_samples),
+        split_mode_filter=None,
+    )
     ci_path = os.path.join(args.run_root, args.output_ci)
     write_tsv(ci_path, ci_rows)
+    ci_iid_path = os.path.join(args.run_root, args.output_ci_iid)
+    ci_source_path = os.path.join(args.run_root, args.output_ci_source_holdout)
+    ci_corpus_path = os.path.join(args.run_root, args.output_ci_corpus_holdout)
+    write_tsv(
+        ci_iid_path,
+        compute_ci_rows(
+            rows=aggregate_rows,
+            metrics_for_ci=metrics_for_ci,
+            bootstrap_samples=int(args.bootstrap_samples),
+            split_mode_filter="iid",
+        ),
+    )
+    write_tsv(
+        ci_source_path,
+        compute_ci_rows(
+            rows=aggregate_rows,
+            metrics_for_ci=metrics_for_ci,
+            bootstrap_samples=int(args.bootstrap_samples),
+            split_mode_filter="source_holdout",
+        ),
+    )
+    write_tsv(
+        ci_corpus_path,
+        compute_ci_rows(
+            rows=aggregate_rows,
+            metrics_for_ci=metrics_for_ci,
+            bootstrap_samples=int(args.bootstrap_samples),
+            split_mode_filter="corpus_holdout",
+        ),
+    )
+
+    # Convergence quality table
+    conv_rows: list[dict[str, Any]] = []
+    conv_groups: dict[tuple[str, int, str, int], list[dict[str, Any]]] = defaultdict(list)
+    for row in aggregate_rows:
+        key = (
+            str(row["model"]),
+            int(row["layer_index"]),
+            str(row.get("split_mode", "")),
+            int(row["rank"]),
+        )
+        conv_groups[key].append(row)
+    for (model, layer, split_mode, rank), grp in sorted(
+        conv_groups.items(), key=lambda x: (x[0][0], x[0][1], x[0][2], x[0][3])
+    ):
+        n = len(grp)
+        pos_hits = sum(to_int_bool(r.get("position_raw_hit_max_iter", 0)) for r in grp)
+        tok_hits = sum(to_int_bool(r.get("token_raw_hit_max_iter", 0)) for r in grp)
+        pos_steps = [safe_float(r.get("position_raw_n_iter_max", float("nan"))) for r in grp]
+        tok_steps = [safe_float(r.get("token_raw_n_iter_max", float("nan"))) for r in grp]
+        pos_lrs = [safe_float(r.get("position_raw_effective_lr", float("nan"))) for r in grp if finite(r.get("position_raw_effective_lr", float("nan")))]
+        tok_lrs = [safe_float(r.get("token_raw_effective_lr", float("nan"))) for r in grp if finite(r.get("token_raw_effective_lr", float("nan")))]
+        scheds = sorted({str(r.get("probe_torch_scheduler", "")) for r in grp})
+        conv_rows.append(
+            {
+                "model": model,
+                "layer_index": layer,
+                "split_mode": split_mode,
+                "rank": rank,
+                "n": n,
+                "position_hit_max_iter_rate": pos_hits / max(1, n),
+                "token_hit_max_iter_rate": tok_hits / max(1, n),
+                "position_n_iter_mean": sum(pos_steps) / max(1, len(pos_steps)),
+                "position_n_iter_max": max(pos_steps) if pos_steps else float("nan"),
+                "token_n_iter_mean": sum(tok_steps) / max(1, len(tok_steps)),
+                "token_n_iter_max": max(tok_steps) if tok_steps else float("nan"),
+                "position_effective_lr_mean": sum(pos_lrs) / max(1, len(pos_lrs)),
+                "token_effective_lr_mean": sum(tok_lrs) / max(1, len(tok_lrs)),
+                "scheduler_set": ",".join(scheds),
+            }
+        )
+    convergence_path = os.path.join(args.run_root, args.output_convergence)
+    write_tsv(convergence_path, conv_rows)
+
+    # Control notes markdown (GPT-2 floor behavior and related caveats)
+    control_notes_path = os.path.join(args.run_root, args.output_control_notes)
+    gpt2_rows = [r for r in aggregate_rows if str(r.get("model", "")) == "gpt2"]
+    lines = [
+        "# Control Notes",
+        "",
+        "## GPT-2 Floor Sensitivity",
+    ]
+    ratio_pass_floor_fail = []
+    for r in sorted(gpt2_rows, key=lambda x: int(x.get("rank", -1))):
+        c2_ratio = safe_float(r.get("c2_var_ratio", float("nan")))
+        excess = safe_float(r.get("tok_energy_excess", float("nan")))
+        ratio_thr = safe_float(r.get("c2_var_v2_ratio_threshold", float("nan")))
+        excess_floor = safe_float(r.get("c2_var_v2_excess_floor", float("nan")))
+        if finite(c2_ratio) and finite(excess) and finite(ratio_thr) and finite(excess_floor):
+            if c2_ratio >= ratio_thr and excess < excess_floor:
+                ratio_pass_floor_fail.append(r)
+    if ratio_pass_floor_fail:
+        lines.append("")
+        lines.append(
+            "Observed cases where `c2_var_ratio` passed but `tok_energy_excess` floor failed "
+            "(reported as ratio-pass, floor-fail):"
+        )
+        for r in ratio_pass_floor_fail:
+            lines.append(
+                f"- split={r.get('split_mode','')} layer={r.get('layer_index','')} rank={r.get('rank','')}: "
+                f"c2_var_ratio={safe_float(r.get('c2_var_ratio', float('nan'))):.4f}, "
+                f"tok_energy_excess={safe_float(r.get('tok_energy_excess', float('nan'))):.4f}, "
+                f"thresholds=({safe_float(r.get('c2_var_v2_ratio_threshold', float('nan'))):.2f}, "
+                f"{safe_float(r.get('c2_var_v2_excess_floor', float('nan'))):.2f})"
+            )
+    else:
+        lines.append("")
+        lines.append("No ratio-pass/floor-fail cases detected for GPT-2.")
+    with open(control_notes_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
 
     # Threshold sensitivity recomputation (no retraining)
     ratio_grid = [2.5, 3.0, 3.5]
@@ -496,6 +630,11 @@ def main() -> None:
         "aggregate_results_tsv": aggregate_path,
         "per_layer_aggregate_tsv": per_layer_path,
         "ci_tsv": ci_path,
+        "ci_iid_tsv": ci_iid_path,
+        "ci_source_holdout_tsv": ci_source_path,
+        "ci_corpus_holdout_tsv": ci_corpus_path,
+        "convergence_tsv": convergence_path,
+        "control_notes_md": control_notes_path,
         "sensitivity_tsv": sensitivity_path,
         "decision_json": decision_json_path,
         "decision_md": decision_md_path,
@@ -508,6 +647,11 @@ def main() -> None:
     print(f"[done] wrote {aggregate_path}")
     print(f"[done] wrote {per_layer_path}")
     print(f"[done] wrote {ci_path}")
+    print(f"[done] wrote {ci_iid_path}")
+    print(f"[done] wrote {ci_source_path}")
+    print(f"[done] wrote {ci_corpus_path}")
+    print(f"[done] wrote {convergence_path}")
+    print(f"[done] wrote {control_notes_path}")
     print(f"[done] wrote {sensitivity_path}")
     print(f"[done] wrote {decision_json_path}")
     print(f"[done] wrote {decision_md_path}")
