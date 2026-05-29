@@ -146,6 +146,7 @@ def main() -> None:
         layer_index = int(r["layer_index"])
         lam = float(r["lambda_inc"])
         is_l3_baseline = layer_index == 3 and abs(lam - 1e-2) < 1e-12
+        has_reached_first_milestone = tokens_seen >= args.milestone_tokens
 
         tail100_fvu = safe_float(
             summary.get("tail100_fvu_total_median", tail_median(metrics_rows, "fvu_total", args.tail_window))
@@ -202,7 +203,7 @@ def main() -> None:
                 f"content_dead>{args.dead_fraction_fail_threshold:.3f} ({content_dead:.4f})"
             )
 
-        if is_l3_baseline:
+        if is_l3_baseline and has_reached_first_milestone:
             if math.isfinite(tail100_fvu) and tail100_fvu > args.tail_fvu_fail_threshold_l3_baseline:
                 quality_fail_reasons.append(
                     f"tail100_fvu>{args.tail_fvu_fail_threshold_l3_baseline:.3f} ({tail100_fvu:.4f})"
@@ -263,6 +264,7 @@ def main() -> None:
                 "pos_dead_fraction_final": pos_dead,
                 "content_dead_fraction_final": content_dead,
                 "quality_ok": quality_ok,
+                "has_reached_first_milestone": has_reached_first_milestone,
                 "quality_fail_reasons": quality_fail_reasons,
                 "warnings": warnings,
                 "fail_streak": fail_streak,
@@ -274,7 +276,9 @@ def main() -> None:
     l3_baseline_wave2 = [
         r
         for r in job_states
-        if r["layer_index"] == 3 and abs(float(r["lambda_inc"]) - 1e-2) < 1e-12
+        if r["layer_index"] == 3
+        and abs(float(r["lambda_inc"]) - 1e-2) < 1e-12
+        and bool(r.get("has_reached_first_milestone", False))
     ]
     l3_all_regressing_twice = bool(l3_baseline_wave2) and all(r["fail_streak"] >= 2 for r in l3_baseline_wave2)
 
