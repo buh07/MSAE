@@ -18,6 +18,8 @@ import torch.nn.functional as F
 from datasets import load_dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+METRICS_SCHEMA_VERSION = "k2_msae_v2"
+
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Train K=2 MSAE on transformer activations (GPU-first)")
@@ -177,6 +179,20 @@ class StepStats:
     fvu_total: float
     fvu_pos: float
     fvu_content: float
+    fvu_only_pos: float
+    fvu_only_content: float
+    delta_drop_pos: float
+    delta_drop_content: float
+    energy_ratio_pos: float
+    energy_ratio_content: float
+    active_latent_frac_pos: float
+    active_latent_frac_content: float
+    usage_entropy_pos: float
+    usage_entropy_content: float
+    usage_gini_pos: float
+    usage_gini_content: float
+    revival_rate_pos_per_mtok: float
+    revival_rate_content_per_mtok: float
     pos_dead_fraction: float
     content_dead_fraction: float
     throughput_tok_s: float
@@ -243,6 +259,53 @@ def incoherence_estimate(
     b = d_content[idx_c]  # [sc, d]
     gram = a @ b.T
     return torch.mean(gram * gram)
+
+
+def usage_entropy_and_gini(counts: torch.Tensor) -> tuple[float, float]:
+    counts = counts.float()
+    total = counts.sum()
+    if float(total.item()) <= 0.0:
+        return 0.0, 0.0
+
+    nonzero = counts[counts > 0]
+    p = nonzero / total
+    denom = max(1.0, math.log(float(counts.numel())))
+    entropy = float((-(p * torch.log(p + 1e-12)).sum() / denom).item())
+
+    xs, _ = torch.sort(counts)
+    n = xs.numel()
+    idx = torch.arange(1, n + 1, device=xs.device, dtype=xs.dtype)
+    gini = (2.0 * torch.sum(idx * xs) / (float(n) * total)) - (float(n + 1) / float(n))
+    gini = float(torch.clamp(gini, 0.0, 1.0).item())
+    return entropy, gini
+
+
+def finite_float(x: Any) -> bool:
+    try:
+        xv = float(x)
+    except Exception:
+        return False
+    return math.isfinite(xv)
+
+
+def tail_median(rows: list[dict[str, Any]], key: str, window: int) -> float:
+    vals = [float(r[key]) for r in rows if key in r and finite_float(r[key])]
+    if not vals:
+        return float("nan")
+    tail = vals[-window:]
+    return float(np.median(np.asarray(tail, dtype=np.float64)))
+
+
+def tail_slope(rows: list[dict[str, Any]], key: str, window: int) -> float:
+    vals = [float(r[key]) for r in rows if key in r and finite_float(r[key])]
+    if len(vals) < 2:
+        return float("nan")
+    tail = np.asarray(vals[-window:], dtype=np.float64)
+    if tail.size < 2:
+        return float("nan")
+    xs = np.arange(tail.size, dtype=np.float64)
+    slope = np.polyfit(xs, tail, 1)[0]
+    return float(slope)
 
 
 def save_checkpoint(
@@ -424,11 +487,17 @@ def main() -> None:
         "fvu_total": 0.0,
         "fvu_pos": 0.0,
         "fvu_content": 0.0,
+        "delta_drop_pos": 0.0,
+        "delta_drop_content": 0.0,
+        "energy_ratio_pos": 0.0,
+        "energy_ratio_content": 0.0,
         "n_micro": 0,
         "n_tok": 0,
         "revived_pos": 0,
         "revived_content": 0,
     }
+    window_usage_pos = torch.zeros(args.m_pos, dtype=torch.float32, device=device)
+    window_usage_content = torch.zeros(args.m_content, dtype=torch.float32, device=device)
 
     def flush_log() -> None:
         nonlocal last_log_time
@@ -438,6 +507,11 @@ def main() -> None:
         elapsed = now - start_time
         dt = max(1e-6, now - last_log_time)
         tok_rate = running["n_tok"] / dt
+        window_tok_m = max(1e-9, running["n_tok"] / 1_000_000.0)
+        active_latent_frac_pos = float((window_usage_pos > 0).float().mean().item())
+        active_latent_frac_content = float((window_usage_content > 0).float().mean().item())
+        usage_entropy_pos, usage_gini_pos = usage_entropy_and_gini(window_usage_pos)
+        usage_entropy_content, usage_gini_content = usage_entropy_and_gini(window_usage_content)
         st = StepStats(
             step=step,
             tokens_seen=tokens_seen,
@@ -447,12 +521,27 @@ def main() -> None:
             fvu_total=running["fvu_total"] / running["n_micro"],
             fvu_pos=running["fvu_pos"] / running["n_micro"],
             fvu_content=running["fvu_content"] / running["n_micro"],
+            fvu_only_pos=running["fvu_pos"] / running["n_micro"],
+            fvu_only_content=running["fvu_content"] / running["n_micro"],
+            delta_drop_pos=running["delta_drop_pos"] / running["n_micro"],
+            delta_drop_content=running["delta_drop_content"] / running["n_micro"],
+            energy_ratio_pos=running["energy_ratio_pos"] / running["n_micro"],
+            energy_ratio_content=running["energy_ratio_content"] / running["n_micro"],
+            active_latent_frac_pos=active_latent_frac_pos,
+            active_latent_frac_content=active_latent_frac_content,
+            usage_entropy_pos=usage_entropy_pos,
+            usage_entropy_content=usage_entropy_content,
+            usage_gini_pos=usage_gini_pos,
+            usage_gini_content=usage_gini_content,
+            revival_rate_pos_per_mtok=running["revived_pos"] / window_tok_m,
+            revival_rate_content_per_mtok=running["revived_content"] / window_tok_m,
             pos_dead_fraction=pos_tracker.dead_fraction(step, args.dead_after_steps),
             content_dead_fraction=content_tracker.dead_fraction(step, args.dead_after_steps),
             throughput_tok_s=tok_rate,
             elapsed_s=elapsed,
         )
         rec = asdict(st)
+        rec["metrics_schema_version"] = METRICS_SCHEMA_VERSION
         rec["lr"] = optimizer.param_groups[0]["lr"]
         rec["accum_steps"] = accum_steps
         rec["revived_pos_last_window"] = running["revived_pos"]
@@ -466,8 +555,26 @@ def main() -> None:
             f"fvu={rec['fvu_total']:.6f} tok_s={rec['throughput_tok_s']:.1f} "
             f"dead_pos={rec['pos_dead_fraction']:.4f} dead_content={rec['content_dead_fraction']:.4f}"
         )
-        running.update({k: 0.0 for k in ["recon_loss", "incoh", "total", "fvu_total", "fvu_pos", "fvu_content"]})
+        running.update(
+            {
+                k: 0.0
+                for k in [
+                    "recon_loss",
+                    "incoh",
+                    "total",
+                    "fvu_total",
+                    "fvu_pos",
+                    "fvu_content",
+                    "delta_drop_pos",
+                    "delta_drop_content",
+                    "energy_ratio_pos",
+                    "energy_ratio_content",
+                ]
+            }
+        )
         running.update({"n_micro": 0, "n_tok": 0, "revived_pos": 0, "revived_content": 0})
+        window_usage_pos.zero_()
+        window_usage_content.zero_()
         last_log_time = now
 
     while tokens_seen < args.target_tokens:
@@ -531,9 +638,19 @@ def main() -> None:
             fvu_total = F.mse_loss(recon, xb) / var_x
             fvu_pos = F.mse_loss(out_b["recon_pos"], xb) / var_x
             fvu_content = F.mse_loss(out_b["recon_content"], xb) / var_x
+            energy_ratio_pos = torch.var(out_b["recon_pos"], unbiased=False) / var_x
+            energy_ratio_content = torch.var(out_b["recon_content"], unbiased=False) / var_x
+            delta_drop_pos = fvu_content - fvu_total
+            delta_drop_content = fvu_pos - fvu_total
 
             pos_tracker.update(out_b["idx_pos"], step)
             content_tracker.update(out_b["idx_content"], step)
+            window_usage_pos += torch.bincount(
+                out_b["idx_pos"].reshape(-1), minlength=args.m_pos
+            ).float()
+            window_usage_content += torch.bincount(
+                out_b["idx_content"].reshape(-1), minlength=args.m_content
+            ).float()
 
             bsz = int(xb.shape[0])
             tokens_seen += bsz
@@ -544,6 +661,10 @@ def main() -> None:
             running["fvu_total"] += float(fvu_total.detach().item())
             running["fvu_pos"] += float(fvu_pos.detach().item())
             running["fvu_content"] += float(fvu_content.detach().item())
+            running["delta_drop_pos"] += float(delta_drop_pos.detach().item())
+            running["delta_drop_content"] += float(delta_drop_content.detach().item())
+            running["energy_ratio_pos"] += float(energy_ratio_pos.detach().item())
+            running["energy_ratio_content"] += float(energy_ratio_content.detach().item())
             running["n_micro"] += 1
             running["n_tok"] += bsz
 
@@ -614,6 +735,18 @@ def main() -> None:
     else:
         final_ckpt_saved = str(final_ckpt)
 
+    metrics_rows: list[dict[str, Any]] = []
+    if metrics_jsonl.exists():
+        with open(metrics_jsonl, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    metrics_rows.append(json.loads(line))
+                except Exception:
+                    continue
+
     summary = {
         "model_name": args.model_name,
         "layer_index": args.layer_index,
@@ -628,6 +761,29 @@ def main() -> None:
         "content_dead_fraction_final": content_tracker.dead_fraction(step, args.dead_after_steps),
         "checkpoint_final": final_ckpt_saved,
         "git_commit_hash": args.git_commit_hash,
+        "metrics_schema_version": METRICS_SCHEMA_VERSION,
+        "tail100_fvu_total_median": tail_median(metrics_rows, "fvu_total", 100),
+        "tail500_fvu_total_median": tail_median(metrics_rows, "fvu_total", 500),
+        "tail100_incoh_loss_est_median": tail_median(metrics_rows, "incoh_loss_est", 100),
+        "tail500_incoh_loss_est_median": tail_median(metrics_rows, "incoh_loss_est", 500),
+        "tail100_fvu_total_slope": tail_slope(metrics_rows, "fvu_total", 100),
+        "tail100_incoh_loss_est_slope": tail_slope(metrics_rows, "incoh_loss_est", 100),
+        "tail100_active_latent_frac_pos_median": tail_median(metrics_rows, "active_latent_frac_pos", 100),
+        "tail100_active_latent_frac_content_median": tail_median(metrics_rows, "active_latent_frac_content", 100),
+        "tail100_usage_entropy_pos_median": tail_median(metrics_rows, "usage_entropy_pos", 100),
+        "tail100_usage_entropy_content_median": tail_median(metrics_rows, "usage_entropy_content", 100),
+        "tail_windows": {
+            "100": {
+                "fvu_total_median": tail_median(metrics_rows, "fvu_total", 100),
+                "incoh_loss_est_median": tail_median(metrics_rows, "incoh_loss_est", 100),
+                "recon_loss_median": tail_median(metrics_rows, "recon_loss", 100),
+            },
+            "500": {
+                "fvu_total_median": tail_median(metrics_rows, "fvu_total", 500),
+                "incoh_loss_est_median": tail_median(metrics_rows, "incoh_loss_est", 500),
+                "recon_loss_median": tail_median(metrics_rows, "recon_loss", 500),
+            },
+        },
     }
     with open(summary_json, "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
