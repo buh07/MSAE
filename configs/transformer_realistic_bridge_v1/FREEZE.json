@@ -1,0 +1,119 @@
+{
+  "candidate_inventory": [
+    {
+      "bytes": 67479,
+      "path": "PAPER.md",
+      "sha256": "86b4e561ecb6136915785d80accb2a474fc7ccb3a509df5453636e6ac22e631e"
+    },
+    {
+      "bytes": 28443,
+      "path": "PLAN_TRANSFORMER_REALISTIC_BRIDGE_V1.md",
+      "sha256": "018df780ea15297ccf77840719048c9fe9f30ef19863dc958d5a883e60250107"
+    },
+    {
+      "bytes": 3566,
+      "path": "configs/transformer_realistic_bridge_v1/GENERATOR_LOCK.json",
+      "sha256": "209d5dea28ad43d21b9fbbcc19a7ab5f93f04ca245eb18f28b58549c42eeb942"
+    },
+    {
+      "bytes": 4460,
+      "path": "configs/transformer_realistic_bridge_v1/run.json",
+      "sha256": "0fc6a1efb94088df2a60bdf2adf4da93b1dd6c6b5ee314a31a22edaf15aee459"
+    },
+    {
+      "bytes": 658,
+      "path": "data/transformer_realistic_bridge_v1_prepared/PANEL_METADATA.json",
+      "sha256": "b668e3b32945fb52a3076b2fafa9560019d6f6ee4529b9bfb86559b7a7c441b2"
+    },
+    {
+      "bytes": 204,
+      "path": "data/transformer_realistic_bridge_v1_prepared/PREPARED.json",
+      "sha256": "9a8526c56997f53117db0a3b8d0734df5f4d92318469d5b82d5ad1bb61c9cbfa"
+    },
+    {
+      "bytes": 3235,
+      "path": "reports/adversarial/transformer_realistic_bridge_v1_candidate_review.md",
+      "sha256": "6ab9bc52a922008229a7458c25e9283e26123d08941bd05effb9a0b39cac13c1"
+    },
+    {
+      "bytes": 1574,
+      "path": "reports/adversarial/transformer_realistic_bridge_v1_plan_review.md",
+      "sha256": "4afebeb87770f3e7f084f435f87634a982920ffb6b81b43ae59584096b233fe3"
+    },
+    {
+      "bytes": 1133,
+      "path": "reports/claim_review/constructed_copy_circuit_v1_1_post_result_claim_review.md",
+      "sha256": "7966477d753f48fe7b9d930584c3bb048cac44b5922f89eca4cd7bfa8bf1b7c2"
+    },
+    {
+      "bytes": 124002,
+      "path": "reports/paper_claim_ledger_v1.json",
+      "sha256": "be7d189591ec83aa31f4241e16f007b18319713fb216b381c07586ee1342057b"
+    },
+    {
+      "bytes": 23995,
+      "path": "reports/provenance/constructed_copy_circuit_v1_1_postresult/PRESERVATION.json",
+      "sha256": "9e29143713438daea839fd89616a27fe9b7bd2934220474e8806a9ecfc15d561"
+    },
+    {
+      "bytes": 503,
+      "path": "reports/provenance/constructed_copy_circuit_v1_1_postresult/PRESERVATION_FIELD_CLARIFICATION.json",
+      "sha256": "c8b99c7a3caf7ab364189b062d5bca12e2aab38195b294be5187f5ad99296dcd"
+    },
+    {
+      "bytes": 956,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_candidate_r3/CALIBRATION.json",
+      "sha256": "d425550c5b5125e72b34bc40e2468d7cddc350de91522c7bcae78e16378d3231"
+    },
+    {
+      "bytes": 174162,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_candidate_r3/SMOKE_CPU.json",
+      "sha256": "22103077b9fe1682cb80b149a8baeb4c4f780ec95daf35eeb7c11e9d32bbe3bc"
+    },
+    {
+      "bytes": 174840,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_candidate_r3/SMOKE_GPU.json",
+      "sha256": "bca59605552c05c4dea2734fec05db2f8e65076cae442cfeb381be20bf21bbce"
+    },
+    {
+      "bytes": 3420,
+      "path": "scripts/launch_transformer_realistic_bridge_v1_tmux.sh",
+      "sha256": "6a7e84c0bf85a850bfd6f678981d3edb9487846bb021d78d47ac2da7dd0c6ba6"
+    },
+    {
+      "bytes": 5563,
+      "path": "scripts/preserve_constructed_copy_circuit_v1_1.py",
+      "sha256": "0a9cb83038a6e80521a7686f0ef315cd1d21052c77f2c5252ea061f7117f2ec5"
+    },
+    {
+      "bytes": 100616,
+      "path": "scripts/transformer_realistic_bridge_v1.py",
+      "sha256": "52bb59d774e08eb76b511bbcfaa3068af9846d32ff85ec57319bbfdc9a8a4396"
+    },
+    {
+      "bytes": 9216,
+      "path": "tests/test_transformer_realistic_bridge_v1.py",
+      "sha256": "e91060a5d92bb9784d93134d10647e3f70629a013105ab4fa70538f1708d7486"
+    }
+  ],
+  "candidate_inventory_sha256": "08d5727a9784bee0926b19c0ceda87c27acf28ff65ecd1e2695a9f8177139f95",
+  "generator_lock_sha256": "209d5dea28ad43d21b9fbbcc19a7ab5f93f04ca245eb18f28b58549c42eeb942",
+  "kind": "bridge",
+  "opaque_panel_metadata": {
+    "confirmation": {
+      "bytes": 319363,
+      "path": "data/transformer_realistic_bridge_v1_prepared/confirmation.jsonl",
+      "rows": 1152,
+      "sha256": "a879c53026a27801a8ed832e5a8cfd658f068753ae2946b7f471b96e14822569"
+    },
+    "development": {
+      "bytes": 316996,
+      "path": "data/transformer_realistic_bridge_v1_prepared/development.jsonl",
+      "rows": 1152,
+      "sha256": "86026aaf762cb5e0975dbf7da6ad91ad4422d63e8ab94e279fa83f26ad2cfbec"
+    }
+  },
+  "panel_paths_accessed_during_freeze": false,
+  "schema_version": "transformer_realistic_bridge_v1_experiment_freeze",
+  "status": "FROZEN_BEFORE_SCIENTIFIC_OPENING"
+}

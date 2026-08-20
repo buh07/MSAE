@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "attempt7_retirement_sha256": "1dadd656d5bc02cebaa5a52a3b7f60a1ee710e1f5e988608a99e89331c10c905",
+    "attempt8_retirement_sha256": "6bc19447431666ce06827e7d7db71ccb810eeefa9b818c309c8c26271f95ef27",
+    "authorized_stage": "EWT_DIAGNOSTIC_ONLY",
+    "calibration_cap_candidate_sha256": "8085d9125c55c300e68c9dd98e10482f3a2b33da6cc8ab8b05fd43c64cef4037",
+    "calibration_import_sha256": "37df7b806097735eea6fd23a99a0cf8c003a381111c2ba9decd45cb2cfbccb13",
+    "implementation_candidate_sha256": "b79124938859886fca11c41e100ae72ef943feb74dc38200052b9a44ebe783a7",
+    "implementation_inventory": {
+      "PLAN_ATTEMPT9.md": {
+        "bytes": 14413,
+        "sha256": "98612621e0a7d01e707afc676ace5121daf3325293cc5eae4a01c8dac92e4705"
+      },
+      "configs/atlas_rope_v5/prescore.json": {
+        "bytes": 10088,
+        "sha256": "a3862c377597bbf2109fa4d61935f3bba481eef5da794f41377c814832fde348"
+      },
+      "configs/atlas_rope_v5/science_adapter.json": {
+        "bytes": 9562,
+        "sha256": "5c338376f99d99a2d55efa216d8608ab1abe4e7f6192071a4b51e603f9da1df1"
+      },
+      "docs/rfc-atlas-v3-5-attempt9-rope-technical.md": {
+        "bytes": 4486,
+        "sha256": "837048304ea286d934d413e5e8ea204799aa72f4c0c42c7352a47466f54b3ba5"
+      },
+      "reports/adversarial/atlas_v3_5_attempt9_implementation_review_block_v1.md": {
+        "bytes": 6756,
+        "sha256": "f5878ac7689f559da947d304e7cc75747ad199b2570362000b35159f98834663"
+      },
+      "reports/adversarial/atlas_v3_5_attempt9_implementation_review_block_v2.md": {
+        "bytes": 4818,
+        "sha256": "dc8dc66ddcb796c499eb2873bcb57767af74dfee29262a3e2b07272c2b8649f6"
+      },
+      "reports/adversarial/atlas_v3_5_attempt9_plan_review.md": {
+        "bytes": 2787,
+        "sha256": "90018900e646a8c588e7a379acdd0fdb8f81252ec5afacf7ffe3e5c494e5aa70"
+      },
+      "requirements-atlas.lock.txt": {
+        "bytes": 417,
+        "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+      },
+      "scripts/analyze_atlas_discovery_v3_3.py": {
+        "bytes": 66806,
+        "sha256": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031"
+      },
+      "scripts/atlas_discovery_v3_3_analysis.py": {
+        "bytes": 7240,
+        "sha256": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266"
+      },
+      "scripts/atlas_rope_v5.py": {
+        "bytes": 45658,
+        "sha256": "f45f29797e845006bf5d11efb08ea5e4763ecf8e6693eccd9caa655131cfcf4f"
+      },
+      "scripts/build_atlas_rope_v5.py": {
+        "bytes": 36555,
+        "sha256": "82539501eac419cd50c3e77e83068463ae81aeb3bb6bdc0b56d5699d07dcd835"
+      },
+      "scripts/diagnose_atlas_rope_v5.py": {
+        "bytes": 24800,
+        "sha256": "b99e95ec9629bd56f4d6386d0e1b2761fd9bf723e15da0e92831f18ffdcdeb12"
+      },
+      "scripts/extract_atlas_discovery_v3_3.py": {
+        "bytes": 53804,
+        "sha256": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+      },
+      "scripts/probe_atlas_rope_v5_runtime.py": {
+        "bytes": 6103,
+        "sha256": "6466b58b44242e26f85dfc93fc75bfd6288aeaa734e6ab9092b9036adc89113e"
+      },
+      "scripts/run_atlas_rope_v5.py": {
+        "bytes": 96991,
+        "sha256": "8b7a53506f8586f61b54ec221777418ccea22dc3e2bd24af371055eab9d03fec"
+      },
+      "scripts/run_atlas_rope_v5_science.py": {
+        "bytes": 22998,
+        "sha256": "4c4568f4e6a2acc0cd42c0d50a7ae4ac622fb66990add5f440f5d263e1580376"
+      },
+      "tests/test_atlas_discovery_v3_3_scoring.py": {
+        "bytes": 15673,
+        "sha256": "4058fbc194ba051904949609fb9da807ab68e342f7ad50dad575ddb6bdfc4431"
+      },
+      "tests/test_atlas_rope_v5.py": {
+        "bytes": 31168,
+        "sha256": "c445181e012b9d00ce1f67e617fd6c425b41be09e7ed68920754309cbfbee5e7"
+      },
+      "tests/test_atlas_rope_v5_science.py": {
+        "bytes": 7329,
+        "sha256": "ce4348d15fe62c72e82c2d064cf059e302e3b0a4cb554460b9a015da5ee50e0f"
+      }
+    },
+    "implementation_review": {
+      "path": "reports/adversarial/atlas_v3_5_attempt9_implementation_review.md",
+      "sha256": "944af4b9391167714f047bc50a5d1bceb7f08997e024cc991a35de54a1aa1223",
+      "verdict": "SHIP"
+    },
+    "neural_training_authorized": false,
+    "prescore_config_sha256": "a3862c377597bbf2109fa4d61935f3bba481eef5da794f41377c814832fde348",
+    "prescore_manifest_sha256": "58fe7fd785d66db9a7ebcb9c0c2e6852ad26806a2df3ac0bb1ab0f013355ddf6",
+    "prescore_rebuild_report_sha256": "f6941d5b31163076e5e8f94e9bd3d2de647254e60fd2e72a4145433e5ef92efe",
+    "runtime_probe_sha256": "6d7fb2460f6fbebd0f0f266ee42ce8c8cad2425c4f6e7aaa3bf1168b5a4ee951",
+    "schema_version": "atlas_rope_v5_attempt9_stage_authorization_v1",
+    "science_model_calls_authorized": false,
+    "status": "AUTHORIZED",
+    "validation_model_calls_authorized": false
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "f4439d37d94b1162e6532a5eadeac8a823a8bb854f8c06d7ec247746f3fef108",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "BOkBbTXWIboxPupmIfx3WTVAH0chkDpk9VntUzvuKcdYqlXtahKH5ljocnfLUQm+BP2Ei6S041RdmaDuIH+NBw=="
+  }
+}

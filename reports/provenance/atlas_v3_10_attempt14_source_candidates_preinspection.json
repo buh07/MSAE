@@ -1,0 +1,46 @@
+{
+  "schema_version": "atlas_context_local_v10_attempt14_source_candidates_v1",
+  "status": "FROZEN_BEFORE_CANDIDATE_CONTENT_OR_LABEL_INSPECTION",
+  "created_date": "2026-08-04",
+  "model_forward_performed": false,
+  "activation_or_endpoint_outcome_used": false,
+  "selection_rule": "Inspect groups in listed order using source text, upstream document metadata, UD labels, and the pinned tokenizer only. Select the first language group containing at least two endpoint-outcome-naive treebanks that each have recoverable surface forms, at least 80 authentic multi-sentence documents, and at least 40 prospective disjoint joint context-plus-lexical components. Within that group select the first two eligible treebanks. Preserve every rejection. Do not inspect activations. If no group supplies two eligible sources, stop and amend the scientific design before any model forward.",
+  "groups": [
+    {
+      "language": "English",
+      "candidates": [
+        {"repository": "UD_English-ESL", "revision": "c4c0f90680371425a82c54391fd7eb070636a563"},
+        {"repository": "UD_English-LittlePrince", "revision": "60d7a34bcae4d3a09f11dd9fd47e743375e3b9c4"}
+      ]
+    },
+    {
+      "language": "French",
+      "candidates": [
+        {"repository": "UD_French-GSD", "revision": "94d5b68e185fc22a9ef292040e84f476d36d9b0e"},
+        {"repository": "UD_French-Sequoia", "revision": "21e377f98e07109500618ea83f1deccd77670d8f"},
+        {"repository": "UD_French-Rhapsodie", "revision": "6979888f619d58edbb8a2de5352c5297b0eff902"},
+        {"repository": "UD_French-ParisStories", "revision": "dec76f7a1731318b033c578d534410b0a3d4ea5c"}
+      ]
+    },
+    {
+      "language": "German",
+      "candidates": [
+        {"repository": "UD_German-GSD", "revision": "ce54dbe9c6a5640c93e9952f069f582f6cd1f9fc"},
+        {"repository": "UD_German-HDT", "revision": "8359ac9bdf5e96fdc64c519d28d74882d8c01bad"},
+        {"repository": "UD_German-LIT", "revision": "702e5734b1a813a8403146a8076bd9d5c8209b84"}
+      ]
+    },
+    {
+      "language": "Spanish",
+      "candidates": [
+        {"repository": "UD_Spanish-AnCora", "revision": "20adddbfcdd773c6dc97ba48ea11ca9364e74185"},
+        {"repository": "UD_Spanish-GSD", "revision": "267f3530d4f122ee85d1891800211a06dfb79347"}
+      ]
+    }
+  ],
+  "notes": [
+    "GUMReddit and CHILDES are excluded by the first adversarial plan review because they cannot instantiate the frozen text/document contract.",
+    "Cross-language source pairs are forbidden; both selected sources must come from one language group.",
+    "The 80-document and 40-component floors support rank-16 refit bootstraps without relying on arbitrary SVD null directions."
+  ]
+}

@@ -1,0 +1,45 @@
+captured_utc=2026-08-01T02:59:35Z
+head=1cef38e881892de6605cec58fc3bf35e091da46e
+status_begin
+ M TODO.md
+ M scripts/run_msae_k2_worker.py
+ M scripts/train_msae_k2.py
+?? ANALYSIS.md
+?? MSAE_presentation.html
+?? PLAN.md
+?? RESULTS.md
+?? docs/
+?? prereg/pcc_gate_revision_v1.md
+?? prereg/pcc_state_checkpoint_20260605_pre_a1c.md
+?? reports/provenance/
+?? scripts/pcc_stage_a0_audit.py
+?? scripts/pcc_stage_a1_audit.py
+?? scripts/pcc_stage_a1b_audit.py
+?? scripts/pcc_stage_a1c_confirmation.py
+?? scripts/pcc_stage_b_contrasts.py
+?? scripts/pcc_stage_b_light_controls.py
+?? scripts/run_pcc_stage_a0_matrix.sh
+?? scripts/run_pcc_stage_a1_matrix.sh
+?? scripts/run_pcc_stage_a1b_matrix.sh
+?? scripts/run_pcc_stage_a1c_matrix.sh
+?? scripts/run_pcc_stage_b_contrasts_matrix.sh
+?? scripts/run_pcc_stage_b_light_matrix.sh
+?? scripts/summarize_pcc_stage_a0.py
+?? scripts/summarize_pcc_stage_a1.py
+?? scripts/summarize_pcc_stage_a1b.py
+?? scripts/summarize_pcc_stage_a1c.py
+?? scripts/summarize_pcc_stage_b_contrasts.py
+?? scripts/summarize_pcc_stage_b_light.py
+status_end
+python=Python 3.12.3
+uname=Linux lisplab-1.thayer.dartmouth.edu 6.8.0-124-generic #124-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 13:00:45 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+nvidia_begin
+0, NVIDIA RTX 6000 Ada Generation, 570.207, 49140 MiB
+1, NVIDIA RTX 6000 Ada Generation, 570.207, 49140 MiB
+2, NVIDIA RTX 6000 Ada Generation, 570.207, 49140 MiB
+3, NVIDIA RTX 6000 Ada Generation, 570.207, 49140 MiB
+4, NVIDIA RTX 6000 Ada Generation, 570.207, 49140 MiB
+5, NVIDIA RTX 6000 Ada Generation, 570.207, 49140 MiB
+6, NVIDIA RTX 6000 Ada Generation, 570.207, 49140 MiB
+7, NVIDIA RTX 6000 Ada Generation, 570.207, 49140 MiB
+nvidia_end

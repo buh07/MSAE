@@ -1,0 +1,227 @@
+{
+  "activation_read": false,
+  "candidate_amendment_path": "reports/provenance/atlas_v3_10_attempt14_source_candidates_amendment_v2.json",
+  "candidate_amendment_sha256": "95a01d09372f0e348c0a74b2f2f32b2de9963b95b8afff9db8ca8aff0717a59f",
+  "candidate_order_path": "reports/provenance/atlas_v3_10_attempt14_source_candidates_preinspection.json",
+  "candidate_order_sha256": "7ba44ef82181ed7413ed9098eff2e6d21b9eccd5bf2c225cdb9d5047259839f3",
+  "endpoint_outcome_used": false,
+  "model_forward_performed": false,
+  "schema_version": "atlas_context_local_v10_attempt14_label_text_source_census_v1",
+  "selected_partition_candidates": {
+    "ANCORA_3LB": {
+      "authentic_multi_sentence_documents": 279,
+      "document_id_prefix": "3LB-"
+    },
+    "ANCORA_CESS": {
+      "authentic_multi_sentence_documents": 1325,
+      "document_id_prefix": "CESS-"
+    }
+  },
+  "selected_treebank": "UD_Spanish-AnCora",
+  "selection_note": "AnCora is the only inspected treebank with enough authentic document groups and contains two upstream named corpora, 3LB and CESS, encoded in every authentic newdoc id. Treating them as two fixed source partitions is a prospective design amendment; joint component feasibility remains untested and must fail closed.",
+  "sources": {
+    "UD_English-ESL": {
+      "census_disposition": [
+        "surface_forms_redacted",
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "en_esl-ud-dev.conllu",
+        "en_esl-ud-test.conllu",
+        "en_esl-ud-train.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 97681,
+      "revision": "c4c0f90680371425a82c54391fd7eb070636a563",
+      "sentences": 5124,
+      "sentences_without_newdoc": 5124,
+      "word_rows": 97681
+    },
+    "UD_English-LittlePrince": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "en_littleprince-ud-test.conllu"
+      ],
+      "multi_sentence_documents": 9,
+      "newdoc_ids": 9,
+      "redacted_forms": 0,
+      "revision": "60d7a34bcae4d3a09f11dd9fd47e743375e3b9c4",
+      "sentences": 500,
+      "sentences_without_newdoc": 0,
+      "word_rows": 6852
+    },
+    "UD_French-GSD": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "fr_gsd-ud-dev.conllu",
+        "fr_gsd-ud-test.conllu",
+        "fr_gsd-ud-train.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 0,
+      "revision": "94d5b68e185fc22a9ef292040e84f476d36d9b0e",
+      "sentences": 16342,
+      "sentences_without_newdoc": 16342,
+      "word_rows": 400385
+    },
+    "UD_French-ParisStories": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "fr_parisstories-ud-dev.conllu",
+        "fr_parisstories-ud-test.conllu",
+        "fr_parisstories-ud-train.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 0,
+      "revision": "dec76f7a1731318b033c578d534410b0a3d4ea5c",
+      "sentences": 2776,
+      "sentences_without_newdoc": 2776,
+      "word_rows": 42789
+    },
+    "UD_French-Rhapsodie": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "fr_rhapsodie-ud-dev.conllu",
+        "fr_rhapsodie-ud-test.conllu",
+        "fr_rhapsodie-ud-train.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 0,
+      "revision": "6979888f619d58edbb8a2de5352c5297b0eff902",
+      "sentences": 3209,
+      "sentences_without_newdoc": 3209,
+      "word_rows": 44234
+    },
+    "UD_French-Sequoia": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "fr_sequoia-ud-dev.conllu",
+        "fr_sequoia-ud-test.conllu",
+        "fr_sequoia-ud-train.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 0,
+      "revision": "21e377f98e07109500618ea83f1deccd77670d8f",
+      "sentences": 3099,
+      "sentences_without_newdoc": 3099,
+      "word_rows": 70545
+    },
+    "UD_German-GSD": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "de_gsd-ud-dev.conllu",
+        "de_gsd-ud-test.conllu",
+        "de_gsd-ud-train.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 0,
+      "revision": "ce54dbe9c6a5640c93e9952f069f582f6cd1f9fc",
+      "sentences": 15589,
+      "sentences_without_newdoc": 15589,
+      "word_rows": 292756
+    },
+    "UD_German-HDT": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "de_hdt-ud-dev.conllu",
+        "de_hdt-ud-test.conllu",
+        "de_hdt-ud-train-a-1.conllu",
+        "de_hdt-ud-train-a-2.conllu",
+        "de_hdt-ud-train-b-1.conllu",
+        "de_hdt-ud-train-b-2.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 0,
+      "revision": "8359ac9bdf5e96fdc64c519d28d74882d8c01bad",
+      "sentences": 189928,
+      "sentences_without_newdoc": 189928,
+      "word_rows": 3455580
+    },
+    "UD_German-LIT": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "de_lit-ud-test.conllu"
+      ],
+      "multi_sentence_documents": 3,
+      "newdoc_ids": 3,
+      "redacted_forms": 0,
+      "revision": "702e5734b1a813a8403146a8076bd9d5c8209b84",
+      "sentences": 1920,
+      "sentences_without_newdoc": 0,
+      "word_rows": 40450
+    },
+    "UD_Spanish-AnCora": {
+      "census_disposition": [
+        "passes_document_and_surface_census_only"
+      ],
+      "files": [
+        "es_ancora-ud-dev.conllu",
+        "es_ancora-ud-test.conllu",
+        "es_ancora-ud-train.conllu"
+      ],
+      "multi_sentence_documents": 1604,
+      "newdoc_ids": 1635,
+      "redacted_forms": 0,
+      "revision": "20adddbfcdd773c6dc97ba48ea11ca9364e74185",
+      "sentences": 17662,
+      "sentences_without_newdoc": 0,
+      "word_rows": 560137
+    },
+    "UD_Spanish-COSER": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "es_coser-ud-test.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 0,
+      "revision": "01b43bdd30e3e2081613052fff33277083f00fe9",
+      "sentences": 539,
+      "sentences_without_newdoc": 539,
+      "word_rows": 8073
+    },
+    "UD_Spanish-GSD": {
+      "census_disposition": [
+        "fewer_than_80_authentic_multi_sentence_documents"
+      ],
+      "files": [
+        "es_gsd-ud-dev.conllu",
+        "es_gsd-ud-test.conllu",
+        "es_gsd-ud-train.conllu"
+      ],
+      "multi_sentence_documents": 0,
+      "newdoc_ids": 0,
+      "redacted_forms": 0,
+      "revision": "267f3530d4f122ee85d1891800211a06dfb79347",
+      "sentences": 16013,
+      "sentences_without_newdoc": 16013,
+      "word_rows": 431478
+    }
+  },
+  "status": "COMPLETE_LABEL_TEXT_ONLY_NO_MODEL_FORWARD"
+}

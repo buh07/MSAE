@@ -1,0 +1,27 @@
+{
+  "payload": {
+    "authorized_stage": "OPENED_TECHNICAL_DEVELOPMENT_ONLY",
+    "fresh_validation_model_calls_authorized": false,
+    "implementation_candidate_sha256": "1dafa6d4ad2eff2d1020db1589ebbd6c519de829acc890e94d1546d7dc121683",
+    "neural_training_authorized": false,
+    "opened_sources": [
+      "EWT",
+      "GUM",
+      "GENTLE"
+    ],
+    "review": {
+      "path": "reports/adversarial/atlas_v3_7_attempt11_implementation_review.md",
+      "reviewed_sha256": "1dafa6d4ad2eff2d1020db1589ebbd6c519de829acc890e94d1546d7dc121683",
+      "sha256": "23eb58033ffa3e9d6fdb7b100d1b8f82b63362b09374792f370f3d1a9dc84029"
+    },
+    "schema_version": "atlas_rope_v7_attempt11_authorization_v1",
+    "status": "AUTHORIZED",
+    "threshold_change_authorized": false
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "9ea65185918d5b7bb90e109a00a6097192b339a8c87f3951e92ad27e5f8b63a7",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "j2sOu4RDBdElEDm43Za1zo9VsPSWfNcVgNfG2GguALJmPZ2YzD1pr+87h670dX+tcRMCaSeN0zWq2wOAikwRDw=="
+  }
+}

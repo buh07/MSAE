@@ -1,0 +1,38 @@
+{
+  "comparison_source": "opaque v1 freeze metadata versus r2 PANEL_METADATA only",
+  "panels": {
+    "bridge": {
+      "confirmation": {
+        "bytes": 319363,
+        "rows": 1152,
+        "sha256": "a879c53026a27801a8ed832e5a8cfd658f068753ae2946b7f471b96e14822569"
+      },
+      "development": {
+        "bytes": 316996,
+        "rows": 1152,
+        "sha256": "86026aaf762cb5e0975dbf7da6ad91ad4422d63e8ab94e279fa83f26ad2cfbec"
+      }
+    },
+    "methods": {
+      "confirmation": {
+        "bytes": 56463,
+        "rows": 192,
+        "sha256": "1a160f3696a0b0a7dbf8b32e28a887841eeb4fac020b24de27baa1532bfbab0e"
+      },
+      "development": {
+        "bytes": 56095,
+        "rows": 192,
+        "sha256": "a2af3bc876589b27d7868dbca3445225da6ccb7d0e132f488241021150d3abc3"
+      },
+      "train": {
+        "bytes": 143713,
+        "rows": 512,
+        "sha256": "cee6c16a7607a9ca6884e4408c9364f43bba42da521e00d0ca29be0613ee9d19"
+      }
+    }
+  },
+  "payloads_accessed": false,
+  "prelock_parity_sha256": "f21df200be8600d01eb5f001a4eb3ea23e615e37fee76df848aa20fc79534952",
+  "schema_version": "transformer_realistic_bridge_v1_r2_payload_continuity",
+  "status": "PASS"
+}

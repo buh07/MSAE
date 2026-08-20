@@ -1,0 +1,81 @@
+{
+  "payload": {
+    "attempt7_retirement_sha256": "1dadd656d5bc02cebaa5a52a3b7f60a1ee710e1f5e988608a99e89331c10c905",
+    "authorized_stage": "EWT_CALIBRATION_AND_DIAGNOSTIC_ONLY",
+    "implementation_candidate_sha256": "71bc788a393512a5b3480fed6bf9a9c07c3fbe5c0654a29368892b0d1fecd360",
+    "implementation_inventory": {
+      "PLAN.md": {
+        "bytes": 32000,
+        "sha256": "a468e0495c1db1eab15ace5bc721d3e6c7e373469c8d658da86e402f88b2e5cf"
+      },
+      "configs/atlas_rope_v4/prescore.json": {
+        "bytes": 9654,
+        "sha256": "2a3de6ea6bb6eb64bcfbcfebc0ed1e1560278bc41f9d68f131e85ae7e0768fb9"
+      },
+      "docs/rfc-atlas-v3-4-attempt8-rope-technical.md": {
+        "bytes": 4072,
+        "sha256": "9c1d991f832a5bcf0f00365fb278ee4617db9cc08b7643da79c67c265409a03d"
+      },
+      "reports/adversarial/atlas_v3_4_attempt8_plan_review_v9.md": {
+        "bytes": 5031,
+        "sha256": "fe28be86143567ac0e726243fbe234413e88cd2c99325f1646d6a6a312b94e4c"
+      },
+      "requirements-atlas.lock.txt": {
+        "bytes": 417,
+        "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+      },
+      "scripts/atlas_rope_v4.py": {
+        "bytes": 41038,
+        "sha256": "c9fd84ba444900c486eb2ea841c636aac051f21e66582587d8a863c39574e471"
+      },
+      "scripts/build_atlas_rope_v4.py": {
+        "bytes": 36515,
+        "sha256": "1af3b782fe0835de8fd9d76ff3cf9e896867116723475df91a461fa41d21efb9"
+      },
+      "scripts/diagnose_atlas_rope_v4.py": {
+        "bytes": 24360,
+        "sha256": "2e4ce9121b09a99033976c5b6028de7e52276e6e6cb40e6390b87d1f71684818"
+      },
+      "scripts/extract_atlas_discovery_v3_3.py": {
+        "bytes": 53804,
+        "sha256": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+      },
+      "scripts/probe_atlas_rope_v4_runtime.py": {
+        "bytes": 6103,
+        "sha256": "4a3fc32f27cd0e63a8e633dc520917abcdf82bd59377f09b1b859c81420601d5"
+      },
+      "scripts/run_atlas_rope_v4.py": {
+        "bytes": 73416,
+        "sha256": "12b884e82f768b848d91aa7a9af7f0e8f93b249ca3964b0666f305e164ad4899"
+      },
+      "tests/test_atlas_discovery_v3_3_scoring.py": {
+        "bytes": 15673,
+        "sha256": "4058fbc194ba051904949609fb9da807ab68e342f7ad50dad575ddb6bdfc4431"
+      },
+      "tests/test_atlas_rope_v4.py": {
+        "bytes": 21057,
+        "sha256": "36026c8c2b71ad991ace899c4174e1123849bcd5ef7fbeff8612e6c6d816e212"
+      }
+    },
+    "implementation_review": {
+      "path": "reports/adversarial/atlas_v3_4_attempt8_implementation_review.md",
+      "sha256": "a7759d0d8d1aae02009505530ccd652d6272cd48c970ffe17028c791d501f9e2",
+      "verdict": "SHIP"
+    },
+    "neural_training_authorized": false,
+    "prescore_config_sha256": "2a3de6ea6bb6eb64bcfbcfebc0ed1e1560278bc41f9d68f131e85ae7e0768fb9",
+    "prescore_manifest_sha256": "a8e4824589bc4dff9e83a1aa1e5731a097d1a9312c66191a76dec0548f5a340b",
+    "prescore_rebuild_report_sha256": "b46de7fe9ab0ab7f77908c12655fc0bf1cc286a6d68ae5e21110052a8b99da6a",
+    "runtime_probe_sha256": "9228ad54f54c42a3067b5c7138fb0ac78dc98098d2ec91efa8f1a7fd2c8cf37d",
+    "schema_version": "atlas_rope_v4_attempt8_stage_authorization_v1",
+    "science_model_calls_authorized": false,
+    "status": "AUTHORIZED",
+    "validation_model_calls_authorized": false
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "4c3fa0c3098a9a46d41084918f33dedb5773a36ff835b0e6f15a51176c6e48dc",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "/g4tmtUcwLZfl9YtIJulOvyrv26sYllX7XVcFnExHAxPYF98tDdU26wlJsgdDjz8eB63xmAdXVDdZLzUvRpHDg=="
+  }
+}

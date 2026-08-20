@@ -1,0 +1,65 @@
+--- scripts/run_atlas_rope_v6.py	2026-08-03 15:58:15.974179034 -0400
++++ configs/atlas_rope_v6/hotfix/run_atlas_rope_v6.proposed.py	2026-08-03 16:09:26.867775423 -0400
+@@ -41,6 +41,8 @@
+ AMENDMENT_CONFIG = ROOT / "configs/atlas_rope_v6/amendment.json"
+ SCIENCE_ADAPTER_CONFIG = ROOT / "configs/atlas_rope_v6/science_adapter.json"
+ IMPLEMENTATION_CANDIDATE = ROOT / "configs/atlas_rope_v6/implementation_candidate.json"
++IMPLEMENTATION_HOTFIX = ROOT / "configs/atlas_rope_v6/IMPLEMENTATION_HOTFIX.json"
++HOTFIX_CANDIDATE = ROOT / "configs/atlas_rope_v6/hotfix_candidate.json"
+ ATTEMPT9_RETIREMENT = RUN_ROOT / "provenance/ATTEMPT9_RETIRED.json"
+ CALIBRATION_IMPORT = RUN_ROOT / "calibration_history/EWT_GUM_IMPORT.json"
+ CALIBRATION_CAP_CANDIDATE = ROOT / "configs/atlas_rope_v6/CALIBRATION_CAP_CANDIDATE.json"
+@@ -184,8 +186,39 @@
+     if candidate.get("status") != "READY_FOR_IMPLEMENTATION_ADVERSARIAL_REVIEW":
+         raise RuntimeError("implementation candidate status drift")
+     inventory = _file_inventory(tuple(candidate["implementation_inventory"]))
+-    if inventory != candidate["implementation_inventory"] or inventory_digest(inventory) != candidate["implementation_inventory_sha256"]:
+-        raise RuntimeError("reviewed implementation inventory drift")
++    expected_inventory = candidate["implementation_inventory"]
++    if inventory != expected_inventory:
++        mismatches = [name for name in expected_inventory if inventory.get(name) != expected_inventory[name]]
++        if mismatches != ["scripts/run_atlas_rope_v6.py"] or not IMPLEMENTATION_HOTFIX.is_file():
++            raise RuntimeError(f"reviewed implementation inventory drift: {mismatches}")
++        hotfix = verify_envelope(read_json(IMPLEMENTATION_HOTFIX))
++        hotfix_candidate = read_json(HOTFIX_CANDIDATE)
++        candidate_sha = sha256_file(HOTFIX_CANDIDATE)
++        proposed_path = ROOT / str(hotfix_candidate.get("proposed_path", ""))
++        patch_path = ROOT / str(hotfix_candidate.get("diff_path", ""))
++        review_path = ROOT / str(hotfix.get("review", {}).get("path", ""))
++        if (hotfix_candidate.get("schema_version") != "atlas_rope_v6_attempt10_prevalidation_hotfix_candidate_v1" or
++                hotfix_candidate.get("status") != "READY_FOR_ADVERSARIAL_REVIEW" or
++                hotfix_candidate.get("base_implementation_candidate_sha256") != sha256_file(IMPLEMENTATION_CANDIDATE) or
++                hotfix_candidate.get("target") != "scripts/run_atlas_rope_v6.py" or
++                hotfix_candidate.get("old_sha256") != expected_inventory["scripts/run_atlas_rope_v6.py"]["sha256"] or
++                hotfix_candidate.get("new_sha256") != inventory["scripts/run_atlas_rope_v6.py"]["sha256"] or
++                not proposed_path.is_file() or sha256_file(proposed_path) != hotfix_candidate.get("new_sha256") or
++                not patch_path.is_file() or sha256_file(patch_path) != hotfix_candidate.get("diff_sha256") or
++                hotfix.get("schema_version") != "atlas_rope_v6_attempt10_prevalidation_hotfix_v1" or
++                hotfix.get("status") != "AUTHORIZED_PREVALIDATION_HOTFIX" or
++                hotfix.get("base_implementation_candidate_sha256") != hotfix_candidate.get("base_implementation_candidate_sha256") or
++                hotfix.get("target") != hotfix_candidate.get("target") or
++                hotfix.get("old_sha256") != hotfix_candidate.get("old_sha256") or
++                hotfix.get("new_sha256") != hotfix_candidate.get("new_sha256") or
++                hotfix.get("hotfix_candidate_sha256") != candidate_sha or
++                not review_path.is_file() or sha256_file(review_path) != hotfix.get("review", {}).get("sha256") or
++                "VERDICT: SHIP" not in review_path.read_text(encoding="utf-8") or
++                candidate_sha not in review_path.read_text(encoding="utf-8") or
++                hotfix.get("neural_training_authorized") is not False):
++            raise RuntimeError("signed/reviewed implementation hotfix drift")
++    elif inventory_digest(inventory) != candidate["implementation_inventory_sha256"]:
++        raise RuntimeError("reviewed implementation inventory digest drift")
+     report_path = ROOT / candidate["verification_report"]["path"]
+     if sha256_file(report_path) != candidate["verification_report"]["sha256"] or read_json(report_path).get("status") != "PASS":
+         raise RuntimeError("implementation verification lineage drift")
+@@ -520,9 +553,10 @@
+     payload = {"schema_version": "atlas_rope_v6_attempt10_validation_freeze_v1", "status": "READY_FOR_ADVERSARIAL_REVIEW",
+                "caps": caps["caps"], "fixed_rtol": FIXED_RTOL, "implementation_candidate_sha256": sha256_file(IMPLEMENTATION_CANDIDATE),
+                "calibration_cap_candidate_sha256": sha256_file(CALIBRATION_CAP_CANDIDATE),
++               "implementation_hotfix_sha256": sha256_file(IMPLEMENTATION_HOTFIX),
+                "science_adapter": candidate["implementation_inventory"]["configs/atlas_rope_v6/science_adapter.json"],
+                "gentle_panel": {"path": str((gentle_root / 'panel.json').relative_to(ROOT)), "sha256": sha256_file(gentle_root / "panel.json"),
+-                                  "selected_document_union": read_json(gentle_root / "panel.json")["selected_document_union"]},
++                                  "selected_document_union": read_json(gentle_root / "panel.json")["selection_support"]["selected_panel_union_documents"]},
+                "gentle_operationally_unopened": True, "unlogged_invocation_excluded": False,
+                "required_outputs_absent": True, "validation_order": ["GENTLE_validation"],
+                "science_result_claim_class": "EXPLORATORY_GUM_TECHNICAL_CALIBRATION_DUAL_ROLE",

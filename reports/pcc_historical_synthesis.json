@@ -1,0 +1,854 @@
+{
+  "a1b_diagnostic": {
+    "source_files": [
+      {
+        "path": "pilot_runs/20260605_030600_pcc_stage_a1b/outputs/pcc_a1b_g4_L3_s42_inc1e2/pcc_stage_a1b_summary.json",
+        "sha256": "58fba5a3be7c196dfa6ef1bef71ac02848abe61b574a5b0b7267268a8feb744c"
+      },
+      {
+        "path": "pilot_runs/20260605_030600_pcc_stage_a1b/outputs/pcc_a1b_g5_L3_s43_inc1e2/pcc_stage_a1b_summary.json",
+        "sha256": "b4d121b7bc1ac9d5e3a1a10499f12881bfdf66a5e0869e22fdba22220258c4ca"
+      },
+      {
+        "path": "pilot_runs/20260605_030600_pcc_stage_a1b/outputs/pcc_a1b_g6_L3_s44_inc1e2/pcc_stage_a1b_summary.json",
+        "sha256": "a59cf7da533618cc101170068fc22ea2cc8e2769e0fd1d923b9d1147076ac461"
+      },
+      {
+        "path": "pilot_runs/20260605_030600_pcc_stage_a1b/outputs/pcc_a1b_g7_L3_s42_inc0/pcc_stage_a1b_summary.json",
+        "sha256": "6750eb75172a5faae9b137b604dedf6e1c947d849a02477d77e2af20168eea8d"
+      }
+    ],
+    "tasks": {
+      "deprel_coarse_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_dep_coarse",
+        "mean_content_margin": 0.21782512805919185,
+        "mean_joint_gain": 0.004873363688104676,
+        "mean_raw_gap": 0.09069080819578829,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "head_dir_dist_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_dep_head_dir",
+        "mean_content_margin": 0.08962599544937429,
+        "mean_joint_gain": 0.0038751422070534836,
+        "mean_raw_gap": 0.07245449374288963,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "ner_fewnerd_coarse_entity_binary": {
+        "control_type": "none",
+        "family": "sem_fewnerd_coarse_binary",
+        "mean_content_margin": 0.14836548311074907,
+        "mean_joint_gain": 0.0022368419832796416,
+        "mean_raw_gap": 0.02839682041115943,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "ner_fewnerd_coarse_typeonly": {
+        "control_type": "none",
+        "family": "sem_fewnerd_coarse_typeonly",
+        "mean_content_margin": 0.17062237102782551,
+        "mean_joint_gain": 0.010392618489622196,
+        "mean_raw_gap": 0.20483248691251454,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "ner_wikineural_en_entity_binary": {
+        "control_type": "none",
+        "family": "sem_wikineural_en_binary",
+        "mean_content_margin": 0.21445413995245585,
+        "mean_joint_gain": 0.00037987251144921963,
+        "mean_raw_gap": 0.027909170386481136,
+        "n_checkpoints": 4,
+        "positive_count": 2
+      },
+      "ner_wikineural_en_typeonly": {
+        "control_type": "none",
+        "family": "sem_wikineural_en_typeonly",
+        "mean_content_margin": 0.31331706828289063,
+        "mean_joint_gain": 0.005076773748923069,
+        "mean_raw_gap": 0.14980873690347396,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "ner_wnut17_entity_binary": {
+        "control_type": "none",
+        "family": "sem_wnut17_binary",
+        "mean_content_margin": 0.13739214142724868,
+        "mean_joint_gain": 0.02058420763490837,
+        "mean_raw_gap": 0.0550342881087931,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "ner_wnut17_typeonly": {
+        "control_type": "none",
+        "family": "sem_wnut17_typeonly",
+        "mean_content_margin": 0.04764557114744684,
+        "mean_joint_gain": -0.0029195766022096503,
+        "mean_raw_gap": 0.07062805365989772,
+        "n_checkpoints": 4,
+        "positive_count": 1
+      },
+      "number_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_morph",
+        "mean_content_margin": 0.0699326851159312,
+        "mean_joint_gain": -0.002758040388930433,
+        "mean_raw_gap": 0.023279730740463717,
+        "n_checkpoints": 4,
+        "positive_count": 1
+      },
+      "pos_ambig_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_pos",
+        "mean_content_margin": 0.25558302759610785,
+        "mean_joint_gain": 0.0033896953262083362,
+        "mean_raw_gap": 0.05367682245972241,
+        "n_checkpoints": 4,
+        "positive_count": 2
+      },
+      "pos_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_pos",
+        "mean_content_margin": 0.25279081342434584,
+        "mean_joint_gain": 0.005670506257110353,
+        "mean_raw_gap": 0.07714732650739478,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      }
+    }
+  },
+  "a1c_confirmation": {
+    "source_files": [
+      {
+        "path": "pilot_runs/20260605_034815_pcc_stage_a1c/outputs/pcc_a1c_g4_L3_s42_inc1e2/pcc_stage_a1c_summary.json",
+        "sha256": "f840f29e039f2522a94b061e49e48ba96f920174700db5c32a991e9f46a1f9fa"
+      },
+      {
+        "path": "pilot_runs/20260605_034815_pcc_stage_a1c/outputs/pcc_a1c_g5_L3_s43_inc1e2/pcc_stage_a1c_summary.json",
+        "sha256": "bde9363d0939f0f41965caf59f7d8fa35e5c45bc596f73a821bb10827e21609c"
+      },
+      {
+        "path": "pilot_runs/20260605_034815_pcc_stage_a1c/outputs/pcc_a1c_g6_L3_s44_inc1e2/pcc_stage_a1c_summary.json",
+        "sha256": "af5510c238261053a9fec6f25c513651e8518ada63a4f7d9339736c0f18ba246"
+      },
+      {
+        "path": "pilot_runs/20260605_034815_pcc_stage_a1c/outputs/pcc_a1c_g7_L3_s42_inc0/pcc_stage_a1c_summary.json",
+        "sha256": "865dfecbd3558299ff72871d6e4069ec0ed1494d4dbd58e6e32bfc44f0bf8d36"
+      }
+    ],
+    "tasks": {
+      "deprel_coarse_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_dep_coarse",
+        "mean_content_margin": 0.21782512805919185,
+        "mean_joint_gain": 0.004873363688104676,
+        "mean_raw_gap": 0.09069080819578829,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "head_dir_dist_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_dep_head_dir",
+        "mean_content_margin": 0.08962599544937429,
+        "mean_joint_gain": 0.0038751422070534836,
+        "mean_raw_gap": 0.07245449374288963,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "ner_fewnerd_coarse_binary": {
+        "control_type": "none",
+        "family": "sem_fewnerd_coarse_binary",
+        "mean_content_margin": 0.14240479558866204,
+        "mean_joint_gain": 0.002843633626012726,
+        "mean_raw_gap": 0.02266873471459624,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "ner_wikineural_en_binary": {
+        "control_type": "none",
+        "family": "sem_wikineural_en_binary",
+        "mean_content_margin": 0.18829949511522862,
+        "mean_joint_gain": 0.0016377281308445901,
+        "mean_raw_gap": 0.019987830785627853,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "ner_wnut17_typeonly": {
+        "control_type": "none",
+        "family": "sem_wnut17_typeonly",
+        "mean_content_margin": 0.048579199010352486,
+        "mean_joint_gain": -0.005417475695455989,
+        "mean_raw_gap": 0.0707308811017624,
+        "n_checkpoints": 4,
+        "positive_count": 1
+      },
+      "number_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_morph",
+        "mean_content_margin": 0.0699326851159312,
+        "mean_joint_gain": -0.002758040388930433,
+        "mean_raw_gap": 0.023279730740463717,
+        "n_checkpoints": 4,
+        "positive_count": 1
+      },
+      "pos_ambig_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_pos",
+        "mean_content_margin": 0.25558302759610785,
+        "mean_joint_gain": 0.0033896953262083362,
+        "mean_raw_gap": 0.05367682245972241,
+        "n_checkpoints": 4,
+        "positive_count": 2
+      },
+      "pos_ud_ewt": {
+        "control_type": "none",
+        "family": "syntax_pos",
+        "mean_content_margin": 0.25279081342434584,
+        "mean_joint_gain": 0.005670506257110353,
+        "mean_raw_gap": 0.07714732650739478,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      }
+    }
+  },
+  "b_light_controls": {
+    "source_files": [
+      {
+        "path": "pilot_runs/20260605_040323_pcc_stage_b_light_controls/outputs/pcc_bl_g4_L3_s42_inc1e2/pcc_stage_b_light_summary.json",
+        "sha256": "6e559e7b48c03c28f41b4c320124acdedc659d6e980fa9888c650b4afd2f5046"
+      },
+      {
+        "path": "pilot_runs/20260605_040323_pcc_stage_b_light_controls/outputs/pcc_bl_g5_L3_s43_inc1e2/pcc_stage_b_light_summary.json",
+        "sha256": "e925e2727d3e6457dc3641ab3ff95bc9690729551e1c6b7204c0284d401ab033"
+      },
+      {
+        "path": "pilot_runs/20260605_040323_pcc_stage_b_light_controls/outputs/pcc_bl_g6_L3_s44_inc1e2/pcc_stage_b_light_summary.json",
+        "sha256": "a72f1a47550daa571f62034adc237f5b2b9662e8a6c997349e2833df50e4524a"
+      },
+      {
+        "path": "pilot_runs/20260605_040323_pcc_stage_b_light_controls/outputs/pcc_bl_g7_L3_s42_inc0/pcc_stage_b_light_summary.json",
+        "sha256": "7a232d2efae7704a0461d2fe91d9b042e98a9674e0b41d0cacde79611980e52c"
+      }
+    ],
+    "tasks": {
+      "deprel_coarse_ud_ewt": {
+        "control_type": "full",
+        "family": "syntax_dep_coarse",
+        "mean_content_margin": 0.21928357996585085,
+        "mean_joint_gain": 0.006936539556061522,
+        "mean_raw_gap": 0.08629766647694931,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "deprel_coarse_ud_ewt_posctrl": {
+        "control_type": "posctrl",
+        "family": "syntax_dep_coarse",
+        "mean_content_margin": 0.21946143995446785,
+        "mean_joint_gain": 0.006349601593625492,
+        "mean_raw_gap": 0.08713360842344905,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "deprel_coarse_ud_ewt_tokenctrl": {
+        "control_type": "tokenctrl",
+        "family": "syntax_dep_coarse",
+        "mean_content_margin": 0.24341753184202078,
+        "mean_joint_gain": 0.0009632880231188745,
+        "mean_raw_gap": 0.08482286203574871,
+        "n_checkpoints": 4,
+        "positive_count": 2
+      },
+      "head_dir_dist_ud_ewt": {
+        "control_type": "full",
+        "family": "syntax_dep_head_dir",
+        "mean_content_margin": 0.08455986916951082,
+        "mean_joint_gain": 0.0036618316268486883,
+        "mean_raw_gap": 0.07190344141069398,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "ner_fewnerd_coarse_binary": {
+        "control_type": "full",
+        "family": "sem_fewnerd_coarse_binary",
+        "mean_content_margin": 0.13114811006652488,
+        "mean_joint_gain": 0.0028609571002579937,
+        "mean_raw_gap": 0.021919725458616257,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "ner_fewnerd_coarse_binary_posctrl": {
+        "control_type": "posctrl",
+        "family": "sem_fewnerd_coarse_binary",
+        "mean_content_margin": 0.14335139408788428,
+        "mean_joint_gain": 0.002120108920340452,
+        "mean_raw_gap": 0.02207131754630598,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "ner_fewnerd_coarse_binary_tokenctrl": {
+        "control_type": "tokenctrl",
+        "family": "sem_fewnerd_coarse_binary",
+        "mean_content_margin": 0.15234515657993009,
+        "mean_joint_gain": 0.003955101539259376,
+        "mean_raw_gap": 0.023720375077010053,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "ner_wikineural_en_binary": {
+        "control_type": "full",
+        "family": "sem_wikineural_en_binary",
+        "mean_content_margin": 0.18890446407047132,
+        "mean_joint_gain": 0.0007433440560802862,
+        "mean_raw_gap": 0.020668104484703242,
+        "n_checkpoints": 4,
+        "positive_count": 2
+      },
+      "ner_wikineural_en_binary_posctrl": {
+        "control_type": "posctrl",
+        "family": "sem_wikineural_en_binary",
+        "mean_content_margin": 0.1787264381979456,
+        "mean_joint_gain": 0.0005469840860111985,
+        "mean_raw_gap": 0.021872134171923102,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "ner_wikineural_en_binary_tokenctrl": {
+        "control_type": "tokenctrl",
+        "family": "sem_wikineural_en_binary",
+        "mean_content_margin": 0.19101747934383115,
+        "mean_joint_gain": 0.0021524192084634297,
+        "mean_raw_gap": 0.02595344019360027,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "ner_wnut17_typeonly": {
+        "control_type": "full",
+        "family": "sem_wnut17_typeonly",
+        "mean_content_margin": 0.04377093320501253,
+        "mean_joint_gain": -0.0008255097291506933,
+        "mean_raw_gap": 0.059209595801694,
+        "n_checkpoints": 4,
+        "positive_count": 1
+      },
+      "ner_wnut17_typeonly_posctrl": {
+        "control_type": "posctrl",
+        "family": "sem_wnut17_typeonly",
+        "mean_content_margin": 0.053460376760762096,
+        "mean_joint_gain": 0.0019246850909526436,
+        "mean_raw_gap": 0.06430949698635915,
+        "n_checkpoints": 4,
+        "positive_count": 2
+      },
+      "ner_wnut17_typeonly_tokenctrl": {
+        "control_type": "tokenctrl",
+        "family": "sem_wnut17_typeonly",
+        "mean_content_margin": 0.036973869788628586,
+        "mean_joint_gain": 0.014857888593191149,
+        "mean_raw_gap": 0.06010607447643328,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "number_ud_ewt": {
+        "control_type": "full",
+        "family": "syntax_morph",
+        "mean_content_margin": 0.06881077038145106,
+        "mean_joint_gain": -0.0029917726252804977,
+        "mean_raw_gap": 0.025196335078534027,
+        "n_checkpoints": 4,
+        "positive_count": 2
+      },
+      "pos_ud_ewt": {
+        "control_type": "full",
+        "family": "syntax_pos",
+        "mean_content_margin": 0.25279081342434584,
+        "mean_joint_gain": 0.005670506257110353,
+        "mean_raw_gap": 0.07714732650739478,
+        "n_checkpoints": 4,
+        "positive_count": 3
+      },
+      "pos_ud_ewt_posctrl": {
+        "control_type": "posctrl",
+        "family": "syntax_pos",
+        "mean_content_margin": 0.2574658703071672,
+        "mean_joint_gain": 0.006114903299203639,
+        "mean_raw_gap": 0.07625853242320821,
+        "n_checkpoints": 4,
+        "positive_count": 4
+      },
+      "pos_ud_ewt_tokenctrl": {
+        "control_type": "tokenctrl",
+        "family": "syntax_pos",
+        "mean_content_margin": 0.25558302759610785,
+        "mean_joint_gain": 0.0033896953262083362,
+        "mean_raw_gap": 0.05367682245972241,
+        "n_checkpoints": 4,
+        "positive_count": 2
+      }
+    }
+  },
+  "decisions": [
+    {
+      "path": "pilot_runs/20260604_184924_pcc_stage_a0/stage_a0_decision.json",
+      "payload": {
+        "conclusion": {
+          "proceed_to_stage_a1": true,
+          "summary": "Proceed to Stage A1: POS and dependency are promising syntax families; WNUT NER remains content-private but not strongly crossover-enriched. Stage A1 should be syntax-heavy with replicated semantics sentinels."
+        },
+        "n_summaries": 4,
+        "run_root": "/jumbo/lisp/f004ndc/MSAE/pilot_runs/20260604_184924_pcc_stage_a0",
+        "stage": "pcc_stage_a0_aggregate",
+        "task_verdicts": {
+          "deprel_ud_ewt": {
+            "stable_positive": true,
+            "stats": {
+              "content_private_pass": true,
+              "family": "syntax_dep",
+              "max_joint_gain": 0.01088503130335805,
+              "mean_best_private_metric": 0.6166050085372794,
+              "mean_content_minus_pos": 0.2168824701195219,
+              "mean_joint_gain": 0.006011667615253263,
+              "mean_joint_metric": 0.6226166761525327,
+              "mean_raw_metric": 0.6975846613545816,
+              "median_joint_gain": 0.00807484348320997,
+              "metric_name": "accuracy",
+              "min_joint_gain": -0.0029880478087649376,
+              "n_runs": 4,
+              "positive_count": 3,
+              "syntax_gate_pass": true,
+              "task": "deprel_ud_ewt"
+            }
+          },
+          "ner_wnut17": {
+            "content_private": true,
+            "stats": {
+              "content_private_pass": true,
+              "family": "sem_wnut",
+              "max_joint_gain": 0.006572401587066207,
+              "mean_best_private_metric": 0.11643877206495692,
+              "mean_content_minus_pos": 0.042297128744527276,
+              "mean_joint_gain": 0.0013880026648831409,
+              "mean_joint_metric": 0.11782677472984007,
+              "mean_raw_metric": 0.19054482319523797,
+              "median_joint_gain": 0.0026993006316378965,
+              "metric_name": "macro_f1",
+              "min_joint_gain": -0.006418992190809436,
+              "n_runs": 4,
+              "positive_count": 3,
+              "syntax_gate_pass": false,
+              "task": "ner_wnut17"
+            }
+          },
+          "pos_ud_ewt": {
+            "stable_positive": true,
+            "stats": {
+              "content_private_pass": true,
+              "family": "syntax_pos",
+              "max_joint_gain": 0.012656427758816924,
+              "mean_best_private_metric": 0.780130119453925,
+              "mean_content_minus_pos": 0.25279081342434584,
+              "mean_joint_gain": 0.005670506257110353,
+              "mean_joint_metric": 0.7858006257110353,
+              "mean_raw_metric": 0.86294795221843,
+              "median_joint_gain": 0.0053683162684868835,
+              "metric_name": "accuracy",
+              "min_joint_gain": -0.0007110352673492804,
+              "n_runs": 4,
+              "positive_count": 3,
+              "syntax_gate_pass": true,
+              "task": "pos_ud_ewt"
+            }
+          }
+        },
+        "thresholds": {
+          "semantics_content_private_all_runs": true,
+          "syntax_mean_joint_gain_gt": 0.003,
+          "syntax_median_joint_gain_gt": 0.0,
+          "syntax_positive_count_gte": 3
+        }
+      },
+      "sha256": "0b02f74cf832749531cadcaf1a522026b1d239ced604dc80dc8c48bca7192b92"
+    },
+    {
+      "path": "pilot_runs/20260605_013756_pcc_stage_a1/stage_a1_decision.json",
+      "payload": {
+        "conclusion": "Stop PCC expansion at Stage A1: crossover evidence is insufficient under the current gate. Do not prepare PCC branch training.",
+        "family_verdicts": {
+          "sem_fewnerd": {
+            "content_private_all_runs": true,
+            "family": "sem_fewnerd",
+            "max_joint_gain": 0.01915962958214079,
+            "mean_content_margin": 0.17062237102782551,
+            "mean_content_priv_metric": 0.32502305297673667,
+            "mean_joint_gain": 0.010392618489622196,
+            "mean_pos_priv_metric": 0.15440068194891116,
+            "mean_raw_gap": 0.20483248691251454,
+            "mean_resid_gain": 0.1103694061519951,
+            "median_joint_gain": 0.008793140850809456,
+            "median_resid_gain": 0.11539143034606067,
+            "min_joint_gain": 0.004824562674729083,
+            "n_runs": 4,
+            "positive_count": 4,
+            "semantic_family_pass": false,
+            "syntax_family_pass": false
+          },
+          "sem_wikineural": {
+            "content_private_all_runs": true,
+            "family": "sem_wikineural",
+            "max_joint_gain": 0.014218370262588431,
+            "mean_content_margin": 0.3408072418648447,
+            "mean_content_priv_metric": 0.5019333761682712,
+            "mean_joint_gain": 0.008860716746072944,
+            "mean_pos_priv_metric": 0.16112613430342645,
+            "mean_raw_gap": 0.2117189230495777,
+            "mean_resid_gain": 0.12621514027429487,
+            "median_joint_gain": 0.01057087989909311,
+            "median_resid_gain": 0.12387389299165019,
+            "min_joint_gain": 8.27369235171238e-05,
+            "n_runs": 4,
+            "positive_count": 4,
+            "semantic_family_pass": false,
+            "syntax_family_pass": false
+          },
+          "sem_wnut": {
+            "content_private_all_runs": true,
+            "family": "sem_wnut",
+            "max_joint_gain": 0.013064006088186808,
+            "mean_content_margin": 0.0396329785644335,
+            "mean_content_priv_metric": 0.11435034133850987,
+            "mean_joint_gain": 0.0035770547467400375,
+            "mean_pos_priv_metric": 0.07471736277407637,
+            "mean_raw_gap": 0.07199587792877364,
+            "mean_resid_gain": 0.01734661857260825,
+            "median_joint_gain": 0.004542832497749248,
+            "median_resid_gain": 0.01208688241961279,
+            "min_joint_gain": -0.007841452096725154,
+            "n_runs": 4,
+            "positive_count": 3,
+            "semantic_family_pass": true,
+            "syntax_family_pass": false
+          },
+          "syntax_dep": {
+            "content_private_all_runs": true,
+            "family": "syntax_dep",
+            "max_joint_gain": 0.006520898906136145,
+            "mean_content_margin": 0.1725325120235241,
+            "mean_content_priv_metric": 0.552714975732802,
+            "mean_joint_gain": -0.000650086014898077,
+            "mean_pos_priv_metric": 0.380182463709278,
+            "mean_raw_gap": 0.08457944928126487,
+            "mean_resid_gain": -0.00044525362982760863,
+            "median_joint_gain": -0.00014282757371831645,
+            "median_resid_gain": -0.0005336541584892811,
+            "min_joint_gain": -0.00883558781829182,
+            "n_runs": 4,
+            "positive_count": 2,
+            "semantic_family_pass": false,
+            "syntax_family_pass": false
+          },
+          "syntax_morph": {
+            "content_private_all_runs": true,
+            "family": "syntax_morph",
+            "max_joint_gain": 0.00542258788332084,
+            "mean_content_margin": 0.0699326851159312,
+            "mean_content_priv_metric": 0.8889771877337322,
+            "mean_joint_gain": -0.002758040388930433,
+            "mean_pos_priv_metric": 0.819044502617801,
+            "mean_raw_gap": 0.023279730740463717,
+            "mean_resid_gain": -0.02239154824233358,
+            "median_joint_gain": -0.0007479431563200967,
+            "median_resid_gain": -0.02112939416604337,
+            "min_joint_gain": -0.014958863126402377,
+            "n_runs": 4,
+            "positive_count": 1,
+            "semantic_family_pass": false,
+            "syntax_family_pass": false
+          },
+          "syntax_pos": {
+            "content_private_all_runs": true,
+            "family": "syntax_pos",
+            "max_joint_gain": 0.011639456779490465,
+            "mean_content_margin": 0.25418692051022684,
+            "mean_content_priv_metric": 0.8045649799694253,
+            "mean_joint_gain": 0.004530100791659344,
+            "mean_pos_priv_metric": 0.5503780594591985,
+            "mean_raw_gap": 0.0654120744835586,
+            "mean_resid_gain": -0.011925799040768181,
+            "median_joint_gain": 0.004734231372350489,
+            "median_resid_gain": -0.013395290830097217,
+            "min_joint_gain": -0.0029875163575540653,
+            "n_runs": 4,
+            "positive_count": 3,
+            "semantic_family_pass": false,
+            "syntax_family_pass": true
+          }
+        },
+        "fit_health_summary": {
+          "worst_hit_max_iter": [
+            {
+              "effective_lr": 0.02,
+              "family": "syntax_dep",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.6330049186944962,
+              "mean_elapsed_sec": 2.524892568588257,
+              "mean_final_train_loss": 1.1931389272212982,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "accuracy",
+              "n_runs": 4,
+              "representation": "content_priv",
+              "scheduler": "cosine",
+              "task": "deprel_coarse_ud_ewt"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "syntax_dep",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.6407404243946075,
+              "mean_elapsed_sec": 3.0288256406784058,
+              "mean_final_train_loss": 1.1582975387573242,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "accuracy",
+              "n_runs": 4,
+              "representation": "joint",
+              "scheduler": "cosine",
+              "task": "deprel_coarse_ud_ewt"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "syntax_dep",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.5023083984851837,
+              "mean_elapsed_sec": 1.7800241708755493,
+              "mean_final_train_loss": 1.203141689300537,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "accuracy",
+              "n_runs": 4,
+              "representation": "raw",
+              "scheduler": "cosine",
+              "task": "head_dir_dist_ud_ewt"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "sem_fewnerd",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.8520918786525726,
+              "mean_elapsed_sec": 2.8527991771698,
+              "mean_final_train_loss": 0.5065198540687561,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "macro_f1",
+              "n_runs": 4,
+              "representation": "content_priv",
+              "scheduler": "cosine",
+              "task": "ner_fewnerd_coarse"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "sem_fewnerd",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.8540768772363663,
+              "mean_elapsed_sec": 3.6599393486976624,
+              "mean_final_train_loss": 0.5095253586769104,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "macro_f1",
+              "n_runs": 4,
+              "representation": "joint",
+              "scheduler": "cosine",
+              "task": "ner_fewnerd_coarse"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "sem_fewnerd",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.8003800213336945,
+              "mean_elapsed_sec": 2.692575216293335,
+              "mean_final_train_loss": 0.7254713028669357,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "macro_f1",
+              "n_runs": 4,
+              "representation": "pos_priv",
+              "scheduler": "cosine",
+              "task": "ner_fewnerd_coarse"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "sem_wikineural",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.9325340688228607,
+              "mean_elapsed_sec": 2.4603869915008545,
+              "mean_final_train_loss": 0.23325607553124428,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "macro_f1",
+              "n_runs": 4,
+              "representation": "content_priv",
+              "scheduler": "cosine",
+              "task": "ner_wikineural_en"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "sem_wikineural",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.9333241283893585,
+              "mean_elapsed_sec": 3.5578118562698364,
+              "mean_final_train_loss": 0.22056221589446068,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "macro_f1",
+              "n_runs": 4,
+              "representation": "joint",
+              "scheduler": "cosine",
+              "task": "ner_wikineural_en"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "sem_wikineural",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.9600726217031479,
+              "mean_elapsed_sec": 2.628765821456909,
+              "mean_final_train_loss": 0.12219121493399143,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "macro_f1",
+              "n_runs": 4,
+              "representation": "raw",
+              "scheduler": "cosine",
+              "task": "ner_wikineural_en"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "sem_wnut",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.9532919228076935,
+              "mean_elapsed_sec": 2.5979899764060974,
+              "mean_final_train_loss": 0.2178436554968357,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "macro_f1",
+              "n_runs": 4,
+              "representation": "joint",
+              "scheduler": "cosine",
+              "task": "ner_wnut17"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "syntax_pos",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.8347833305597305,
+              "mean_elapsed_sec": 2.0506131052970886,
+              "mean_final_train_loss": 0.4817829057574272,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "accuracy",
+              "n_runs": 4,
+              "representation": "joint",
+              "scheduler": "cosine",
+              "task": "pos_ambig_ud_ewt"
+            },
+            {
+              "effective_lr": 0.02,
+              "family": "syntax_pos",
+              "hit_max_iter_count": 4,
+              "hit_max_iter_frac": 1.0,
+              "mean_best_eval_top1": 0.5770682841539383,
+              "mean_elapsed_sec": 1.7437041401863098,
+              "mean_final_train_loss": 1.333428978919983,
+              "mean_n_iter_max": 1200.0,
+              "median_n_iter_max": 1200.0,
+              "metric_name": "accuracy",
+              "n_runs": 4,
+              "representation": "pos_priv",
+              "scheduler": "cosine",
+              "task": "pos_ambig_ud_ewt"
+            }
+          ]
+        },
+        "n_summaries": 4,
+        "passed_semantic_families": [
+          "sem_wnut"
+        ],
+        "passed_syntax_families": [
+          "syntax_pos"
+        ],
+        "proceed_to_stage_b": false,
+        "run_root": "/jumbo/lisp/f004ndc/MSAE/pilot_runs/20260605_013756_pcc_stage_a1",
+        "stage": "pcc_stage_a1_aggregate",
+        "thresholds": {
+          "semantic_content_private_all_runs": true,
+          "semantic_mean_joint_gain_lt": 0.005,
+          "syntax_mean_joint_gain_gt": 0.003,
+          "syntax_median_joint_gain_gt": 0.0,
+          "syntax_positive_count_gte": 3
+        }
+      },
+      "sha256": "09a9ebd599a75a53814353b1c7ef76c5041d8b47a3765ff7ca5d987cef3b72b1"
+    },
+    {
+      "path": "pilot_runs/20260605_034815_pcc_stage_a1c/amendment_decision.json",
+      "payload": {
+        "a1b_run_root": "/jumbo/lisp/f004ndc/MSAE/pilot_runs/20260605_030600_pcc_stage_a1b",
+        "a1c_run_root": "/jumbo/lisp/f004ndc/MSAE/pilot_runs/20260605_034815_pcc_stage_a1c",
+        "adopt_revision": true,
+        "frozen_a1_run_root": "/jumbo/lisp/f004ndc/MSAE/pilot_runs/20260605_013756_pcc_stage_a1",
+        "reason": "A1c confirms the amendment under metric-aligned NER selection.",
+        "revision_path": "/jumbo/lisp/f004ndc/MSAE/prereg/pcc_gate_revision_v1.md"
+      },
+      "sha256": "a0a1ff187cd1e04e67ae485b1a5b98889494820fe14107e4c17b27db544ed38e"
+    },
+    {
+      "path": "pilot_runs/20260605_034815_pcc_stage_a1c/stage_a1r_decision.json",
+      "payload": {
+        "based_on_run_root": "/jumbo/lisp/f004ndc/MSAE/pilot_runs/20260605_034815_pcc_stage_a1c",
+        "note": "This is an amended observational decision under PCC Gate Revision v1. It does not replace the frozen A1 record.",
+        "passed_semantic_families": [
+          "sem_fewnerd_coarse_binary",
+          "sem_wikineural_en_binary",
+          "sem_wnut17_typeonly"
+        ],
+        "passed_syntax_families": [
+          "syntax_dep_coarse",
+          "syntax_pos"
+        ],
+        "proceed_to_stage_b": true,
+        "revision_path": "/jumbo/lisp/f004ndc/MSAE/prereg/pcc_gate_revision_v1.md",
+        "stage": "pcc_stage_a1r"
+      },
+      "sha256": "54df2497e03a1550a5e3b54675ffc202c86e16985365fe1acd7785a8ea60a010"
+    },
+    {
+      "path": "pilot_runs/20260605_111613_pcc_stage_b_contrasts/stage_b_contrasts_decision.json",
+      "payload": {
+        "a1c_run_root": "pilot_runs/20260605_034815_pcc_stage_a1c",
+        "b_light_run_root": "pilot_runs/20260605_040323_pcc_stage_b_light_controls",
+        "n_summaries": 4,
+        "note": "Proceed only if multiple syntax and semantic contrast families show stable directional asymmetry across the checkpoint set.",
+        "proceed_to_stage_c": false,
+        "run_root": "pilot_runs/20260605_111613_pcc_stage_b_contrasts",
+        "semantic_family_pass_all_runs_count": 4,
+        "stage": "pcc_stage_b_contrasts",
+        "syntax_family_pass_all_runs_count": 0
+      },
+      "sha256": "62b76a0b10f57a8abd7ae551563e1974b4deeb9f3790fd91bf389abf019c7dc0"
+    }
+  ],
+  "evidence_class": "frozen_historical_and_diagnostic",
+  "schema_version": "pcc_historical_synthesis_v1"
+}

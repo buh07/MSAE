@@ -1,0 +1,30 @@
+{
+  "calibration_cap_candidate_sha256": "0b8fb1bcdc6816a006d0417367b696e8ed8d61cce9a65f379f8aa47e3f784464",
+  "caps": {
+    "atol": 2e-05,
+    "cosine_distance": 5e-11,
+    "relative_l2": 2e-05
+  },
+  "fixed_rtol": 5e-06,
+  "gentle_operationally_unopened": true,
+  "gentle_panel": {
+    "path": "data/atlas_rope_v5_attempt9/GENTLE_validation/panel.json",
+    "selected_document_union": 24,
+    "sha256": "c77ab7f3bb879affbb49b0e8ff146d2f0af1c31573352d9301de2e8ce2ad7f7d"
+  },
+  "implementation_candidate_sha256": "c1025bfb85778550293dde3ae2c233a1b05549fa9c8eaf2875a1c7c636fe19ce",
+  "implementation_hotfix_sha256": "3bf874d3ad1a3ed7abd8a4ac55905614616fb0279b0d078cdf920008638466b2",
+  "neural_training_authorized": false,
+  "required_outputs_absent": true,
+  "schema_version": "atlas_rope_v6_attempt10_validation_freeze_v1",
+  "science_adapter": {
+    "bytes": 10248,
+    "sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0"
+  },
+  "science_result_claim_class": "EXPLORATORY_GUM_TECHNICAL_CALIBRATION_DUAL_ROLE",
+  "status": "READY_FOR_ADVERSARIAL_REVIEW",
+  "unlogged_invocation_excluded": false,
+  "validation_order": [
+    "GENTLE_validation"
+  ]
+}

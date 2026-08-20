@@ -1,0 +1,26 @@
+{
+  "base_implementation_candidate_sha256": "c1025bfb85778550293dde3ae2c233a1b05549fa9c8eaf2875a1c7c636fe19ce",
+  "change_scope": [
+    "hotfix authorization verifier",
+    "GENTLE support-key correction",
+    "freeze hotfix binding"
+  ],
+  "diff_path": "configs/atlas_rope_v6/hotfix/run_atlas_rope_v6.patch",
+  "diff_sha256": "ea5ae441a2489fb522fc0e2b5efa0eea03fa72627e78e1807f8dc7070ea21cea",
+  "gentle_model_calls_existed": false,
+  "neural_training_authorized": false,
+  "new_sha256": "0d9f89bb618b6c94c3077c22a7dca70be248fc281b9dea838d3de13d90793d9c",
+  "old_sha256": "8aacc345272149441cafb899983477a215c4c0021f325e77c0e7a26875a5c92a",
+  "proposed_path": "configs/atlas_rope_v6/hotfix/run_atlas_rope_v6.proposed.py",
+  "reason": "Correct GENTLE panel support key discovered before freeze/authorization/model inference; add signed hotfix verification.",
+  "schema_version": "atlas_rope_v6_attempt10_prevalidation_hotfix_candidate_v1",
+  "science_model_calls_existed": false,
+  "signed_attempt10_artifacts_preserved": [
+    "provenance/ATTEMPT9_RETIRED.json",
+    "calibration_history/EWT_GUM_IMPORT.json",
+    "CALIBRATION_CAP_CANDIDATE.json"
+  ],
+  "status": "READY_FOR_ADVERSARIAL_REVIEW",
+  "target": "scripts/run_atlas_rope_v6.py",
+  "validation_authorization_existed": false
+}

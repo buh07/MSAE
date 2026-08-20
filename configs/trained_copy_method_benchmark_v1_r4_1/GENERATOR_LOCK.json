@@ -1,0 +1,15 @@
+{
+  "candidate_review_sha256": "636751e6af1e275b56643836ee46e5ee87e2f18e721f4e66d29c4e7e817d6eb1",
+  "candidate_sha256": "fa7fb2385dd284ca38bbe7e96cce4f036d66a6093752778fb61a2ec1a5171de9",
+  "config_sha256": "5b05747f8b30eaf3d95993e545c1b3ef3ca37ac7cfe2c7c06f0aca2235fb8b4f",
+  "created_ns": 1786393500981132234,
+  "launcher_sha256": "76b2003221000a50e0995956751c720cc50bb4e5df9a683db27d06494b89eeaa",
+  "method_table_sha256": "affe6667d4c9adf276b4907fdef23d1d8862355ea9185dd226f7d44f0d216ff2",
+  "plan_sha256": "b1517af2216689792fdf2ab6498847722b583c8ebe86c723675fed54fbb417b5",
+  "r4_failure_preservation_sha256": "d20827522352b69e4ed883215f863697ea566b19c57c6eed57c4903be9dc0099",
+  "r4_freeze_sha256": "0680044e923752c2f375a3da225a8a436d41f230efa5fd993423c3a51f3e5899",
+  "r5_source_sha256": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8",
+  "schema_version": "trained_copy_method_benchmark_v1_r4_1_generator_lock",
+  "source_sha256": "c9e87f30e9234ea50b75ef1cb5f55e45306b3e2afff119f8f6df9d0ac1714c1c",
+  "test_sha256": "604ffa90672eea1c714fd59ee9c2fac57d0b55bc3efb2c0ffa6fe2c85709e13f"
+}

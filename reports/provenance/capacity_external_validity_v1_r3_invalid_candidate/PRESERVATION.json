@@ -1,0 +1,24 @@
+{
+  "adversarial_verdict": "BLOCK",
+  "candidate_manifests": [
+    {
+      "bytes": 11302,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r3_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "b6877be1b1c22edb8eddd407fec32a54a001da2903282dac653f0a1a71e167e2"
+    },
+    {
+      "bytes": 11302,
+      "path": "reports/provenance/trained_copy_external_v1_r3_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "2cdcb5fa1d298c9d7d6b42163ee0e5bbafbe3849962a0e1f024b79bda49f1536"
+    }
+  ],
+  "created_ns": 1786351567865773166,
+  "freezes_created": false,
+  "reason": "Adversarial review found pre-worker failures outside terminal boundary and incomplete JSONL guard coverage for os.open/scandir.",
+  "recovery_bindings_created": false,
+  "replacement_namespace": "capacity_external_validity_v1_r4",
+  "results_created": false,
+  "schema_version": "capacity_external_validity_v1_r3_invalid_candidate_preservation",
+  "scientific_run_started": false,
+  "status": "REJECTED_PREBIND_CANDIDATE"
+}

@@ -1,0 +1,7 @@
+{
+  "gate_sha256": "ad49cc2262df58ac96bd8147ebb217a912645484d82b1d62d2570e9731b75d0e",
+  "payload_access_may_have_occurred": false,
+  "schema_version": "constructed_copy_circuit_v1_1_authorization_event",
+  "state": "PHASE1_PASS_NO_ACCESS",
+  "time_ns": 1786328658221236959
+}

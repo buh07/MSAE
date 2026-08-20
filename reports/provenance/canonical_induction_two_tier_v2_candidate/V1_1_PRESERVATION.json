@@ -1,0 +1,191 @@
+{
+  "expected": {
+    "confirmation_authorized": false,
+    "confirmation_blocked_files": 1,
+    "confirmation_complete_files": 0,
+    "confirmation_model_loaded": false,
+    "confirmation_rows_loaded": false,
+    "final_status": "DEVELOPMENT_STOP",
+    "representation_methods_evaluated": false,
+    "technical_positive_control_confirmed": false,
+    "training_performed": false
+  },
+  "files": [
+    {
+      "bytes": 3292,
+      "path": "PLAN_CANONICAL_INDUCTION_CIRCUIT_V1_1.md",
+      "sha256": "0ac6ecaec21ecdca6a84744e0dd3978fe837923a4cdd21272802c13eb0c26c6f"
+    },
+    {
+      "bytes": 3663,
+      "path": "configs/canonical_induction_circuit_v1_1/FREEZE.json",
+      "sha256": "df37204cc7d0e3fb0504e53dfabe78c0057dd5217fa4a162aa2c3074766eb350"
+    },
+    {
+      "bytes": 6643,
+      "path": "configs/canonical_induction_circuit_v1_1/run.json",
+      "sha256": "abf1f48f16bc8c68b179389a86015a79e681adc65062d8c908b71e922afd02e7"
+    },
+    {
+      "bytes": 428,
+      "path": "data/canonical_induction_circuit_v1_prepared/PRESCORE.json",
+      "sha256": "75ac376c97aeb4002aa90b7f88f1f47aee2ea891455a67178c8e33f95d847423"
+    },
+    {
+      "bytes": 104484,
+      "path": "data/canonical_induction_circuit_v1_prepared/confirmation.jsonl",
+      "sha256": "63d667baa0f160a38fb711cf361845b9328739c429ed41ffa57d27e202f21c0a"
+    },
+    {
+      "bytes": 98235,
+      "path": "data/canonical_induction_circuit_v1_prepared/development.jsonl",
+      "sha256": "3f5fb8274dff742d1eda16c0453aa14f05add26aeb731589dd9d9a35d25dbb45"
+    },
+    {
+      "bytes": 4996,
+      "path": "reports/adversarial/canonical_induction_circuit_v1_1_candidate_review.md",
+      "sha256": "0b69f00015b18a5c0bcf29d51aedd66d215f1c8b987ac6ca25f96eb7e7f31eda"
+    },
+    {
+      "bytes": 4147,
+      "path": "reports/adversarial/canonical_induction_circuit_v1_1_frozen_review.md",
+      "sha256": "8fdaa12468043b49e2c2d336daa486f5b0c0d13daa2e8af99cb90c8b103b65f5"
+    },
+    {
+      "bytes": 1808,
+      "path": "reports/canonical_induction_circuit_v1_1_analysis/result.json",
+      "sha256": "342efacdc4d7a43a042ff03c20c532ea140590b914390f461470513b569bbb97"
+    },
+    {
+      "bytes": 5377,
+      "path": "reports/claim_review/canonical_induction_circuit_v1_1_post_result_claim_review.md",
+      "sha256": "a2120754001fc04e79d9a0e7af5532f4f90f0aec37fc90f2379b917ee064dbef"
+    },
+    {
+      "bytes": 335,
+      "path": "reports/provenance/canonical_induction_circuit_v1_1_candidate/FROZEN_REVIEW_BINDING.json",
+      "sha256": "266fc9a131b4893086e34c0c0b0b81efd1779b6ba63cff294281106b48b458a8"
+    },
+    {
+      "bytes": 451,
+      "path": "reports/provenance/canonical_induction_circuit_v1_1_run_20260809/handoff_status.json",
+      "sha256": "ffca24d7592f4298dc28cbe185e18166a9e36e6278bcaa4d31eb394c40495f15"
+    },
+    {
+      "bytes": 842,
+      "path": "reports/provenance/canonical_induction_circuit_v1_1_run_20260809/launch_manifest.json",
+      "sha256": "624bb5a5c53961ba88d1f4bd3dc83686874123857a7b93e0f9e3171d7353d806"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/canonical_induction_circuit_v1_1_run_20260809/logs/confirmation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2231,
+      "path": "reports/provenance/canonical_induction_circuit_v1_1_run_20260809/logs/development.log",
+      "sha256": "c294c9c0176fe1b3b980985622096f93b84d16886f845a31a391a36992d91b0f"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/canonical_induction_circuit_v1_1_run_20260809/logs/development_gate.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/canonical_induction_circuit_v1_1_run_20260809/logs/final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 660,
+      "path": "reports/provenance/canonical_induction_two_tier_v2_candidate/PAPER_ATTESTATION.json",
+      "sha256": "88849724a9c3f91dbd08afc9a54b481241bd665cf9652006205576424dd579f9"
+    },
+    {
+      "bytes": 105825,
+      "path": "reports/provenance/canonical_induction_two_tier_v2_candidate/PRELAUNCH_CLAIM_LEDGER.json",
+      "sha256": "33aa0c41130ff88ea1d5ea7250e2f2e28eaaa4b38bb88b735c959f2e554fe487"
+    },
+    {
+      "bytes": 61151,
+      "path": "reports/provenance/canonical_induction_two_tier_v2_candidate/PRELAUNCH_PAPER.md",
+      "sha256": "23db8441bb5a78898b67bd9cd661136816bfc1cc0b3cf9aebb1cbe8fc1e2f177"
+    },
+    {
+      "bytes": 4902,
+      "path": "reports/provenance/canonical_induction_two_tier_v2_candidate/V1_1_CLAIMS.json",
+      "sha256": "6899ccefca6e6b8167a8687197de6532919d38288141463ac51e59547807ae45"
+    },
+    {
+      "bytes": 439,
+      "path": "results/canonical_induction_circuit_v1_1_20260809/confirmation/BLOCKED.json",
+      "sha256": "b26a5e2f1307c8768d32ec041c4da3ad9177f46dda7100a9db284012fc1adf45"
+    },
+    {
+      "bytes": 481,
+      "path": "results/canonical_induction_circuit_v1_1_20260809/development/COMPLETE.json",
+      "sha256": "d3228ea7ae3e02cfcebe595f3fb0b3e12bee0d366681f2b560cc1f33ebd6c72e"
+    },
+    {
+      "bytes": 152,
+      "path": "results/canonical_induction_circuit_v1_1_20260809/development/QA.json",
+      "sha256": "be00a7c1f832a52df8f3d5b8c7f445cc618cb9734aff6c82c85a6b9988c862ae"
+    },
+    {
+      "bytes": 195,
+      "path": "results/canonical_induction_circuit_v1_1_20260809/development/STARTED.json",
+      "sha256": "63bc24703b8236d6f2f15e573a263c0596b661a5230d37ea62d9971cd31df183"
+    },
+    {
+      "bytes": 90060,
+      "path": "results/canonical_induction_circuit_v1_1_20260809/development/metrics.jsonl",
+      "sha256": "1c23d3ca6bb0d7ccdc4d94d019ef617561231a2c14b639862d9a83995d27a8b6"
+    },
+    {
+      "bytes": 1436,
+      "path": "results/canonical_induction_circuit_v1_1_20260809/development_gate/result.json",
+      "sha256": "79def72e37641acfba4e76c90fb5416630adc9176f1fb941b2a6c42c0ded9292"
+    },
+    {
+      "bytes": 1432,
+      "path": "results/canonical_induction_circuit_v1_1_20260809/final/result.json",
+      "sha256": "84fff9f1f3e8b84265664d8334cd6396a4c385f8d6ef6d4f40de2e01cc407097"
+    },
+    {
+      "bytes": 42509,
+      "path": "scripts/canonical_induction_circuit_v1_1.py",
+      "sha256": "0e747c91a795182de240a194ddcf2f949ad6c82b21ed1ecc3e18032064bec370"
+    },
+    {
+      "bytes": 6492,
+      "path": "scripts/launch_canonical_induction_circuit_v1_1_tmux.sh",
+      "sha256": "d814bddd54611583e10aaad8dbc6d3787e667265780f8f570f97d63400b7eb20"
+    },
+    {
+      "bytes": 21650,
+      "path": "tests/test_canonical_induction_circuit_v1_1.py",
+      "sha256": "f0b56aaa1821f81e2c802c35e986a4e17256f7ed7cae488e70ffd217eb847ff7"
+    }
+  ],
+  "freeze_inventory_sha256": "e5eb75cec2f1b03ca5a8251ab5989d085b5aabbf3d03bf2c9da998d8f07d75db",
+  "freeze_sha256": "df37204cc7d0e3fb0504e53dfabe78c0057dd5217fa4a162aa2c3074766eb350",
+  "paper_claim_snapshot": {
+    "attestation_sha256": "88849724a9c3f91dbd08afc9a54b481241bd665cf9652006205576424dd579f9",
+    "claim_ids": [
+      "C067",
+      "C068",
+      "C069"
+    ],
+    "claims_sha256": "6899ccefca6e6b8167a8687197de6532919d38288141463ac51e59547807ae45",
+    "ledger_sha256": "33aa0c41130ff88ea1d5ea7250e2f2e28eaaa4b38bb88b735c959f2e554fe487",
+    "paper_sha256": "23db8441bb5a78898b67bd9cd661136816bfc1cc0b3cf9aebb1cbe8fc1e2f177"
+  },
+  "schema_version": "canonical_induction_circuit_v1_1_preservation",
+  "status": "PRESERVED_FORMAL_DEVELOPMENT_STOP",
+  "tree_roots": [
+    "configs/canonical_induction_circuit_v1_1",
+    "data/canonical_induction_circuit_v1_prepared",
+    "reports/provenance/canonical_induction_circuit_v1_1_run_20260809",
+    "results/canonical_induction_circuit_v1_1_20260809"
+  ]
+}

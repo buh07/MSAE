@@ -1,0 +1,56 @@
+{
+  "capacity_status": "CAPACITY_DIAGNOSTIC_COMPLETE",
+  "estimated_controller_evaluated_on_trained_copy": false,
+  "external_all_seeds_both_panels_pass": true,
+  "external_authorized": true,
+  "external_collateral_upper_max": 5.180393941016844e-08,
+  "external_eligible_min": 192,
+  "external_endpoints": 6,
+  "external_recovery_min": 1.0,
+  "external_sham_specificity_lower_min": 0.9732974782586098,
+  "external_status": "TRAINED_COPY_EXTERNAL_QUALIFIED",
+  "global_family_pass": {
+    "closed_form_linear_full64": true,
+    "exact_delta_gt": true,
+    "paired_linear_rank16": true,
+    "paired_linear_rank32": true,
+    "paired_linear_rank4": false,
+    "paired_linear_rank64": true,
+    "paired_linear_rank8": false,
+    "random_rank64": false,
+    "target_nonlinear_rank16": false,
+    "target_nonlinear_rank32": true,
+    "unpaired_pca_rank64": false
+  },
+  "schema_version": "capacity_external_validity_v1_r5_postresult_summary",
+  "scope": {
+    "k2_evaluated": false,
+    "natural_language_claim": false,
+    "pretrained_model_claim": false,
+    "synthetic_only": true
+  },
+  "source_hashes": {
+    "capacity": "4b6ecaee10b0c19130b07a445df58e60f84fb6e960889dcdadc0925d3290a927",
+    "external": "ae94256e519e5a65fdca585b6787b93d816bff285ff37fe7797772a662f9c83f"
+  },
+  "target_linear_rank8": {
+    "collateral_error": {
+      "max": 0.29721040811131677,
+      "min": 0.286486326523164
+    },
+    "full_vocab_recovery": {
+      "max": 0.6166232445634445,
+      "min": 0.6085268953153087
+    },
+    "recovery": {
+      "max": 1.078899366670615,
+      "min": 1.0733336453520632
+    },
+    "sham_specificity": {
+      "max": 0.8694796415192617,
+      "min": 0.8611356624375045
+    }
+  },
+  "target_nonlinear_rank16_endpoint_passes": 16,
+  "target_nonlinear_rank16_endpoint_total": 18
+}

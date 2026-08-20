@@ -1,0 +1,18 @@
+{
+  "created_ns": 1786352915931545335,
+  "reviews": [
+    {
+      "freeze_sha256": "801aea5be2133570e21091bc1c6e71169cc8a8340a293508030627676dada8ea",
+      "kind": "capacity",
+      "review_path": "reports/adversarial/capacity_controller_diagnostic_v1_r5_frozen_review.md",
+      "review_sha256": "2cf70bec27ef9a7bfd67e45531075ffc300c6a82839528d9680aa4138420c799"
+    },
+    {
+      "freeze_sha256": "a59246d2d06e3fa8f14dcb290b6fdf2f9d73607e39ab93da55f1c41f02d6f758",
+      "kind": "external",
+      "review_path": "reports/adversarial/trained_copy_external_v1_r5_frozen_review.md",
+      "review_sha256": "d5b57be6fb72b7b11dbefe42e32d9ca35056602bc8248eba55e7af4052ec9eb4"
+    }
+  ],
+  "schema_version": "capacity_external_review_binding_v1_r5"
+}

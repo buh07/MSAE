@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_ROOT="/jumbo/lisp/f004ndc"
-MSAE_ROOT="${REPO_ROOT}/MSAE"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+MSAE_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+REPO_ROOT="${MSAE_ROOT}"
 SCRIPT="${MSAE_ROOT}/scripts/raw_activation_separability_pilot.py"
 SUMMARIZER="${MSAE_ROOT}/scripts/summarize_pilot_run.py"
 

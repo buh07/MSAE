@@ -1,0 +1,37 @@
+{
+  "schema_version": "atlas_context_local_v10_attempt14_source_selection_v3",
+  "status": "FROZEN_BEFORE_JOINT_COMPONENT_OR_ACTIVATION_INSPECTION",
+  "created_date": "2026-08-04",
+  "model_forward_performed": false,
+  "activation_or_endpoint_outcome_used": false,
+  "supersedes": [
+    "reports/provenance/atlas_v3_10_attempt14_source_candidates_preinspection.json",
+    "reports/provenance/atlas_v3_10_attempt14_source_candidates_amendment_v2.json"
+  ],
+  "label_text_census": "reports/provenance/atlas_v3_10_attempt14_label_text_source_census_v1.json",
+  "treebank": {
+    "repository": "UD_Spanish-AnCora",
+    "revision": "20adddbfcdd773c6dc97ba48ea11ca9364e74185",
+    "splits": ["dev", "test", "train"]
+  },
+  "sources": {
+    "ANCORA_3LB": {
+      "document_id_prefix": "3LB-",
+      "authentic_multi_sentence_documents": 279,
+      "upstream_corpus": "3LB"
+    },
+    "ANCORA_CESS": {
+      "document_id_prefix": "CESS-",
+      "authentic_multi_sentence_documents": 1325,
+      "upstream_corpus": "CESS-CAST"
+    }
+  },
+  "justification": "Every source unit is an explicit AnCora newdoc group. The two non-overlapping prefixes identify separately named upstream corpora rather than post hoc random splits. Selection used only repository metadata, UD text/labels, and document counts; no activation or endpoint outcome was inspected.",
+  "joint_component_rule": "Each source partition must independently provide at least 64 document-disjoint joint context-plus-lexical components using the frozen builder. If either fails, stop prescore-ineligible without replacement or model forward.",
+  "claim_scope": "exploratory_same_language_cross_upstream_corpus_transfer",
+  "limitations": [
+    "Both source partitions share one UD treebank release and annotation pipeline.",
+    "The transfer test is across upstream corpora, not across independently maintained treebanks.",
+    "No confirmatory claim is authorized."
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "analysis": {
+    "bootstrap_draws": 500,
+    "epsilon": 1e-08,
+    "maximum_collateral_ci_upper": 0.02,
+    "maximum_sham_fraction": 0.25,
+    "maximum_sham_fraction_ci": 0.35,
+    "minimum_effect_eligibility": 0.8,
+    "minimum_eigenvalue": 1e-08,
+    "minimum_eligible_rows": 103,
+    "minimum_full_effect": 0.25,
+    "minimum_recovery_ci_lower": 0.1,
+    "minimum_replicating_model_families": 2,
+    "minimum_specificity_ci_lower": 0.1,
+    "nuisance_penalty": 1.0,
+    "rank": 16,
+    "ridge_alpha": 10.0,
+    "sham_population": "behavior_eligible_rows_only"
+  },
+  "budgets": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "claim_limits": {
+    "automatic_training_authorization": false,
+    "cross_domain_replication": false,
+    "universal_sae_claim": false
+  },
+  "development_gate": {
+    "bootstrap_draws": 500,
+    "epsilon": 1e-08,
+    "maximum_sham_fraction": 0.2,
+    "maximum_sham_fraction_ci": 0.3,
+    "minimum_effect_eligibility": 0.85,
+    "minimum_eligible_rows": 55,
+    "minimum_full_effect": 0.25,
+    "require_all_models_and_sources": true,
+    "sham_population": "full_effect_eligible_rows_only"
+  },
+  "exploratory": false,
+  "method_notes": {
+    "public_sae_primary": "prespecified released-SAE class; architecture differs by model and supports class-level, not architecture-specific, replication",
+    "reft_style_r1": "development-only rank-one behavior-gradient comparator; not a reproduction of the ReFT-r1 training algorithm",
+    "task_projection": "rank-one paired mean projection and therefore estimator-equivalent to DiffMean in this one-factor task; retained as a named comparator, not independent evidence"
+  },
+  "methods": [
+    "diffmean_caa",
+    "paired_delta_svd",
+    "task_projection",
+    "leace",
+    "pca",
+    "random",
+    "reft_style_r1",
+    "supervised_skyline",
+    "public_sae_primary"
+  ],
+  "models": [
+    {
+      "batch_size": 16,
+      "key": "gpt2",
+      "layers": [
+        1,
+        6,
+        10
+      ],
+      "name": "gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "sae": {
+        "format": "saelens_topk",
+        "k": 32,
+        "normalize": "layer_norm",
+        "path_template": "v5_32k_layer_{layer}.pt",
+        "repo": "jbloom/GPT2-Small-OAI-v5-32k-resid-post-SAEs",
+        "revision": "21df74db7b9f690cd2403a20485cf75f46330d0d"
+      }
+    },
+    {
+      "batch_size": 16,
+      "key": "pythia160",
+      "layers": [
+        8
+      ],
+      "name": "EleutherAI/pythia-160m-deduped",
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+      "sae": {
+        "architectures": [
+          "TopK",
+          "Standard",
+          "GatedSAE",
+          "JumpRelu",
+          "MatryoshkaBatchTopK"
+        ],
+        "format": "dictionary_learning",
+        "layer": 8,
+        "primary": "TopK",
+        "repo": "adamkarvonen/saebench_pythia-160m-deduped_width-2pow12_date-0108",
+        "revision": "ede0e8b18119ee7d77b0f21d928383a00c73843d",
+        "trainer": 2
+      }
+    },
+    {
+      "batch_size": 4,
+      "key": "gemma2",
+      "layers": [
+        0,
+        12,
+        25
+      ],
+      "name": "google/gemma-2-2b",
+      "revision": "c5ebcd40d208330abc697524c919956e692655cf",
+      "sae": {
+        "format": "gemma_scope_jumprelu",
+        "paths": {
+          "0": "layer_0/width_16k/average_l0_46/params.npz",
+          "12": "layer_12/width_16k/average_l0_41/params.npz",
+          "25": "layer_25/width_16k/average_l0_55/params.npz"
+        },
+        "repo": "google/gemma-scope-2b-pt-res",
+        "revision": "fd571b47c1c64851e9b1989792367b9babb4af63"
+      }
+    }
+  ],
+  "namespace": "joint_controllability_benchmark_v4_1_launch_recovery_20260808",
+  "positive_control": {
+    "ground_collateral_max": 0.02,
+    "ground_recovery_min": 0.9,
+    "ground_specificity_min": 0.8,
+    "hidden": 64,
+    "random_specificity_max": 0.25,
+    "rank": 4,
+    "rows": 512,
+    "skyline_recovery_min": 0.7,
+    "skyline_specificity_min": 0.5
+  },
+  "preservation": {
+    "closure": "reports/architecture_program_closure_v2.json",
+    "closure_sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a",
+    "k2_training_authorized": false,
+    "launch_recovery_only": true,
+    "predecessor_aggregate": "results/joint_controllability_benchmark_v4_20260808/aggregate/BLOCKED.json",
+    "predecessor_error_log": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/task_gpt2.log",
+    "predecessor_failure": "results/joint_controllability_benchmark_v4_20260808/task_gate/FAIL.json",
+    "predecessor_freeze": "configs/joint_controllability_benchmark_v4/FREEZE.json",
+    "predecessor_launch_manifest": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/launch_manifest.json",
+    "predecessor_tree_manifest": "configs/joint_controllability_benchmark_v4_1/PREDECESSOR_TREE.json",
+    "sae_training_authorized": false,
+    "scientific_protocol_changes": false,
+    "v3_claim_review": "reports/claim_review/joint_controllability_v3_analysis_recovery.md",
+    "v3_recovery": "results/joint_controllability_benchmark_v3_analysis_recovery_20260808/COMPLETE.json",
+    "v3_source_freeze": "configs/joint_controllability_benchmark_v3/FREEZE.json"
+  },
+  "prospective": true,
+  "question": "Do released interpretability methods jointly provide potency, signed-sham specificity, collateral safety, and replication?",
+  "runtime": {
+    "asset_manifest": "reports/provenance/joint_controllability_benchmark_v3/public_sae_manifest.json",
+    "cache_attestation": "reports/provenance/joint_controllability_benchmark_v4_1_candidate/cache_preflight.json",
+    "deterministic": true,
+    "dtype": "float32",
+    "freeze": "configs/joint_controllability_benchmark_v4_1/FREEZE.json",
+    "gate_poll_seconds": 10,
+    "gate_timeout_seconds": 7200,
+    "maximum_length": 192,
+    "model_cache_root": "${HF_HOME}/hub",
+    "output_root": "results/joint_controllability_benchmark_v4_1_20260808",
+    "prepared_root": "data/joint_controllability_benchmark_v4_prepared",
+    "provenance_root": "reports/provenance/joint_controllability_benchmark_v4_1_run_20260808",
+    "tmux_prefix": "msae_joint_control_v4_1",
+    "worker_timeout_seconds": 86400
+  },
+  "schema_version": "joint_control_v4_1_config",
+  "seed": 20260809,
+  "task": {
+    "answer_words": [
+      "red",
+      "blue",
+      "green",
+      "gold",
+      "silver",
+      "black",
+      "white",
+      "orange"
+    ],
+    "config": "wikitext-103-raw-v1",
+    "dataset": "Salesforce/wikitext",
+    "development_per_source": 64,
+    "exclude_v3_rows": "data/joint_controllability_benchmark_v3_prepared/rows.jsonl",
+    "fingerprint": "7dabb830ac9ebb0d",
+    "key_words": [
+      "alpha",
+      "delta",
+      "gamma",
+      "omega",
+      "maple",
+      "river",
+      "stone",
+      "cloud"
+    ],
+    "minimum_words": 140,
+    "natural_filler_words": 32,
+    "prompt_template": "Reference: the password for {reference_key} is {answer}. {filler} Question: the password for {query_key} is",
+    "sources": [
+      "WIKI_CTX_A",
+      "WIKI_CTX_B"
+    ],
+    "split": "train",
+    "task_label": "controlled-natural key-value context retrieval",
+    "teacher_forced_tokens": 1,
+    "test_per_source": 128,
+    "within_corpus_transfer": true
+  }
+}

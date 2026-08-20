@@ -1,0 +1,10 @@
+{
+  "status": "ARCHIVED_BLOCKED_UNSIGNED_CANDIDATE",
+  "candidate_sha256": "295ac69a9eb70dce82dafa4a365b3763501a839b6544a26d8775512fc29f7099",
+  "review_sha256": "dc8dc66ddcb796c499eb2873bcb57767af74dfee29262a3e2b07272c2b8649f6",
+  "review_evidence_note": "The quoted 37901fc3 PLAN hash belonged to the prior archived 44ac candidate; nevertheless the proposed report-to-inventory equality check is adopted fail-closed.",
+  "signed_attempt9_artifacts_created": false,
+  "model_weights_loaded": false,
+  "neural_inference_run": false,
+  "neural_training_run": false
+}

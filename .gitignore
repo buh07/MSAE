@@ -20,12 +20,34 @@ pilot_outputs/
 logs/
 outputs/
 intermediates/
+results/
+data/
+.generated/
 *.log
+
+# Model/checkpoint and array artifacts
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.tar
+*.tar.gz
+*.zip
 
 # HuggingFace / model caches
 .huggingface/
 .cache/
 hf_cache/
+
+# Blind atlas final-test material (local M8-only; never stage by default)
+data/atlas_v1/private/
 
 # OS
 .DS_Store

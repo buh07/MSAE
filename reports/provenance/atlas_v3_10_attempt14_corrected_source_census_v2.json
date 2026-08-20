@@ -1,0 +1,50 @@
+{
+  "activation_read": false,
+  "cross_partition_form_normalized_collision_summary": {
+    "distinct_signature_values": 2,
+    "maximum_normalized_characters": 8,
+    "note": "A later canonical three-signature census must include FORM JSON, normalized # text, and pinned-tokenizer input IDs before component construction.",
+    "whole_document_collisions": 0
+  },
+  "endpoint_outcome_used": false,
+  "model_forward_performed": false,
+  "raw_files": [
+    {
+      "bytes": 5121417,
+      "name": "es_ancora-ud-dev.conllu",
+      "sha256": "1a132068062edf2654fb45b41cd4c59ba7e5c18e7c5f642ed5a9cc351fd9f0fe"
+    },
+    {
+      "bytes": 5123220,
+      "name": "es_ancora-ud-test.conllu",
+      "sha256": "679f1c05ca654aa26801c80319df45f8f97606718fb534b91755b48f3e67fa6f"
+    },
+    {
+      "bytes": 43100702,
+      "name": "es_ancora-ud-train.conllu",
+      "sha256": "47b6fc49d6ed48a016e7fa5ad9f5c7ecf3ec21e9db005df3ea14d10f07c6deb6"
+    }
+  ],
+  "repository": "UD_Spanish-AnCora",
+  "revision": "20adddbfcdd773c6dc97ba48ea11ca9364e74185",
+  "schema_version": "atlas_context_local_v10_attempt14_corrected_source_census_v2",
+  "sources": {
+    "ANCORA_3LB": {
+      "document_id_prefix": "3LB-",
+      "multi_sentence_documents": 276,
+      "sentences": 3503,
+      "single_sentence_documents": 3,
+      "total_documents": 279
+    },
+    "ANCORA_CESS": {
+      "document_id_prefix": "CESS-",
+      "multi_sentence_documents": 1328,
+      "sentences": 14159,
+      "single_sentence_documents": 28,
+      "total_documents": 1356
+    }
+  },
+  "status": "COMPLETE_LABEL_TEXT_ONLY_NO_MODEL_FORWARD",
+  "superseded_census_sha256": "adff50aa3a894cbd02bc459bd921e3f19b8269caf04278b42d151d3e36f5d1ad",
+  "supersedes_incorrect_census": "reports/provenance/atlas_v3_10_attempt14_label_text_source_census_v1.json"
+}

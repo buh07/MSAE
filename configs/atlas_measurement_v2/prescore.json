@@ -1,0 +1,1014 @@
+{
+  "allowed_input_roots": [
+    "data/atlas_v1/analysis_rows",
+    "data/atlas_completion_v1"
+  ],
+  "blind_final": {
+    "cryptographic_verification_implemented": false,
+    "on_missing_or_invalid_attestation": "retire_unopened",
+    "payload_access": "forbidden",
+    "schema": "atlas_measurement_v2_attestation",
+    "state": "locked",
+    "support_attestation_status": "unset"
+  },
+  "bootstrap": {
+    "digest_bytes": "first_8_big_endian",
+    "draws": "0..499",
+    "finite_rule": "all_retained_classes_present_per_source_except_pooled_nuisance",
+    "group_order": "utf8",
+    "payload": "atlas_measurement_v2|{seed}|{role}|{task}|{source}|{draw}|{slot}",
+    "replacement": true,
+    "sample_size": "source_group_count",
+    "schema": "sha256_modulo_group_map_v1"
+  },
+  "endpoint_statuses": [
+    "eligible",
+    "ineligible",
+    "not_run"
+  ],
+  "families": {
+    "absolute_position": {
+      "representatives": {
+        "absolute_bucket": "abs_pos_16",
+        "controlled_position_shift": null
+      },
+      "required_constructs": [
+        "absolute_bucket",
+        "controlled_position_shift"
+      ],
+      "task_constructs": {
+        "abs_pos_16": "absolute_bucket",
+        "abs_pos_8": "absolute_bucket"
+      }
+    },
+    "lexical_semantic_content": {
+      "representatives": {
+        "entity_substitution": null,
+        "identity": "token_identity_256"
+      },
+      "required_constructs": [
+        "identity",
+        "entity_substitution"
+      ],
+      "task_constructs": {
+        "lemma_identity_256": "identity",
+        "ner_coarse": "entity_label",
+        "token_identity_256": "identity"
+      }
+    },
+    "relative_structural_position": {
+      "representatives": {
+        "dependency_relation": "head_signed_distance",
+        "head_token_contrast": null,
+        "token_relative": "relative_quartile"
+      },
+      "required_constructs": [
+        "token_relative",
+        "dependency_relation"
+      ],
+      "task_constructs": {
+        "boundary_state": "token_relative",
+        "dependency_depth": "dependency_relation",
+        "head_signed_distance": "dependency_relation",
+        "relative_quartile": "token_relative"
+      }
+    }
+  },
+  "freeze_record": {
+    "path": "configs/atlas_completion/freeze_record.json",
+    "sha256": "a6a632f243b30530b164be25c224daabeb5a300b6fed1957feb504f9bb1064f6"
+  },
+  "inputs": [
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "absolute_position_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.abs_pos_16.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "914604f23b64fa7562764041e810019887d1664e15d1c59141652d327af7e9eb",
+      "task": "abs_pos_16",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.abs_pos_8.jsonl",
+      "required_for_task_measurability": false,
+      "role": "calibration",
+      "sha256": "34752f472ed2fa3f340c97ea57ada463e0c1ab24d054963f2b00c64a774861a2",
+      "task": "abs_pos_8",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.boundary_state.jsonl",
+      "required_for_task_measurability": false,
+      "role": "calibration",
+      "sha256": "817489aff713187df986dcf7e3e5877c09c93f2bb54c92fc5e7056b58eb55515",
+      "task": "boundary_state",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.dependency_depth.jsonl",
+      "required_for_task_measurability": false,
+      "role": "calibration",
+      "sha256": "0e87b7b50daf6f286acd28b93a08d6c50bfcfc49dfe13bfc235f188a9b36cbd3",
+      "task": "dependency_depth",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.head_signed_distance.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "306c2aaba546f632e1e947532096123fb9416343572c8c44acd9d53b0f21df71",
+      "task": "head_signed_distance",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "identity_df20",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.lemma_identity_256.jsonl",
+      "required_for_task_measurability": false,
+      "role": "calibration",
+      "sha256": "51fe50ec19f95f18e3081e430d1583ec8cd5eb1ca21d4a0c81bf5465c7781748",
+      "task": "lemma_identity_256",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.ner_coarse.jsonl",
+      "required_for_task_measurability": false,
+      "role": "calibration",
+      "sha256": "bc52fb1ed2c564f44f4396529d8df68ecb70fd1eb16f1000f57e3602671102b3",
+      "task": "ner_coarse",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.relative_quartile.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "f7c7e3257807e90e41dca3e31e7124fbacf15378b2e035693580fca2aa6be8ae",
+      "task": "relative_quartile",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "identity_df20",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/calibration.token_identity_256.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "8d734bcf3e896a5cf14cade25433d93bad755ee7497ba441ec55c0b813ebcec8",
+      "task": "token_identity_256",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "absolute_position_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.abs_pos_16.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "4b57c8ef38f6d2e3b01f67e4e4d6652c859c608344d21b64c1e50e35de68c932",
+      "task": "abs_pos_16",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.abs_pos_8.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C1",
+      "sha256": "cd97b5bf24465b4e56f7e303c3f5c634c2b257ea388ac076c9136745f999fa1c",
+      "task": "abs_pos_8",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.boundary_state.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C1",
+      "sha256": "2ad973c977a181d8aa5561d1b75c69831b5295c76db9aedff16eb87d06df887a",
+      "task": "boundary_state",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.dependency_depth.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C1",
+      "sha256": "6620ec9f15f67afe96e8e65558bd281ce6de063573f9ab512d5b070f1209a892",
+      "task": "dependency_depth",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.head_signed_distance.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "b7a0750e2f5ef7eb2db1e054cb50f1d8f6b42c499b442d7d34049e5631816db9",
+      "task": "head_signed_distance",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "identity_df20",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.lemma_identity_256.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C1",
+      "sha256": "aae8eb89c16a1c5247af943139c789956ca09944e4fe6357d6dfbd57d46d34ea",
+      "task": "lemma_identity_256",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.ner_coarse.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C1",
+      "sha256": "62f3f898259766f1fe7efac235af3e4d874b4f98a4e5a7fcbd18c34ccda7473d",
+      "task": "ner_coarse",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.relative_quartile.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "f5c304d3394cf1e7242c2e7324dace63ca11abc7b3d2c7bd3a7ab1d6553e18bb",
+      "task": "relative_quartile",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "identity_df20",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C1.token_identity_256.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "2aaef81ae45ad3faefc27710102d5c7a47913acdbe3e7e093b3957dde67ee272",
+      "task": "token_identity_256",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "absolute_position_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.abs_pos_16.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "dd98dae33b514769bfbf2203c6580510e3bedef1fb92202fb1aec3cd62e10088",
+      "task": "abs_pos_16",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.abs_pos_8.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C2",
+      "sha256": "beb03c8589fe449cadd159370d3e46658de86a22113622e5f262dfc343497f56",
+      "task": "abs_pos_8",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.boundary_state.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C2",
+      "sha256": "7e1fd0bed49f98bf4cd21c90072bc45dc4a391c76bc0aa686de376b3fe319616",
+      "task": "boundary_state",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.dependency_depth.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C2",
+      "sha256": "25c05c78edfb49e0e3de38dd43780c4fb22c6bce8304d2a403236a240dd4dc0f",
+      "task": "dependency_depth",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.head_signed_distance.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "6ff468e32d41ef3d7aa6ae7daafdfe0437055e2002ba09f8338f1f72862d2dd2",
+      "task": "head_signed_distance",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "identity_df20",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.lemma_identity_256.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C2",
+      "sha256": "62076a130a9096df736dac177b5aea15ed89f610e6c02167597a901e5cc89065",
+      "task": "lemma_identity_256",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.ner_coarse.jsonl",
+      "required_for_task_measurability": false,
+      "role": "C2",
+      "sha256": "9ed4e5b299ddadb0b46a7713cf114cbb03b7ebf170aef78c5d4fede20fb60e0e",
+      "task": "ner_coarse",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.relative_quartile.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "6608f985cd24800b22cd0b9ea8ec1240a1df381c712cba020104ef29e07cad02",
+      "task": "relative_quartile",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "identity_df20",
+      "nuisance_pooled": false,
+      "path": "data/atlas_v1/analysis_rows/C2.token_identity_256.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "39c98e9f5ed4654e376b7b6e58508d6ee536dff8c3c7be73032a470062e6ed89",
+      "task": "token_identity_256",
+      "tier": "tier1"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "capitalization_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/calibration.capitalization.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "c8b073dbbb8b302328f3eaa820648410bc37cdc0b59eb87d50637b26d54a59f1",
+      "task": "capitalization",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/calibration.context_offset.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "d7bf59167e295ebc2bc6023eff6f2b5d6b646900f464db48c24a7c890c6df7da",
+      "task": "context_offset",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/calibration.continuation_status.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "2d9ca6eba9baa09a6ea005520dda37040035e43ada0d37f130eff470ccec96e4",
+      "task": "continuation_status",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM"
+      ],
+      "label_contract": "deprel_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/calibration.deprel_coarse.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "97f20531991465f10f58aa3715dfc0ef6dfe05be7f90e69a3976ff884d3dce60",
+      "task": "deprel_coarse",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/calibration.frequency_bin.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "252aaee8623de6aab82bbecefac7bbb2858c4eea7a60a1b7623bb93057d88dbc",
+      "task": "frequency_bin",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/calibration.number.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "a8e217abc7122aef88e6e8c444989837cf5ecfb45ba06e05bfc8d6352051cc8c",
+      "task": "number",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": true,
+      "path": "data/atlas_completion_v1/calibration.source_type.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "a81cea9b7781560cb2e6679af59c9d061c82a7d20baabe0bff155fe1646abd60",
+      "task": "source_type",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM"
+      ],
+      "label_contract": "upos_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/calibration.upos.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "8e4d731de00793120f83aaf80373cbe5972f8211902da5661f3237c4acf34f27",
+      "task": "upos",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-GUM",
+        "flaitenberger/wnut_17"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/calibration.word_length.jsonl",
+      "required_for_task_measurability": true,
+      "role": "calibration",
+      "sha256": "aaf91e6e20769fbb8bbb6a7506c564dfa86bb858e7192e56cd41d5701c51e3d7",
+      "task": "word_length",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "capitalization_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C1.capitalization.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "0f6090381d5cebb6b374f1210f729774bb61732e1508d2ba70a74cfcc170e3c3",
+      "task": "capitalization",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C1.context_offset.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "382238f32bad25bdc9417f28d2bd771396020eaf224bce7bc87962f59904b8e2",
+      "task": "context_offset",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C1.continuation_status.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "57db3ff3583f6f493ef47a095694498179bbdadd4bc361687536c30fafacba65",
+      "task": "continuation_status",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "deprel_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C1.deprel_coarse.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "00dbdd01aa6e3b02195d91d13efc48065ae91c9421be9703f72b16e96ababea2",
+      "task": "deprel_coarse",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C1.frequency_bin.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "71f631fb09a4e82d770b8fbe93eead8a4c18d0639c16158cd8cb9920ed16ee12",
+      "task": "frequency_bin",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C1.number.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "292639fbc4ce7f4a0bf236222739365625869ce9587e0757bd6139fa85f310a3",
+      "task": "number",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": true,
+      "path": "data/atlas_completion_v1/C1.source_type.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "e8e250f22ada8c5d61d266aadb54e98d7e0f1759c64c3abc17ef1645d02c6171",
+      "task": "source_type",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "upos_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C1.upos.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "34e44b62d0ab0b5e73ae6b9e9803dd9b9582a801791c88a9477085f01cf16038",
+      "task": "upos",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C1.word_length.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C1",
+      "sha256": "0ae8a7b03bbdbadcd0b9b51035df797e4ca11adec78da366f6e1114132793702",
+      "task": "word_length",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "capitalization_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C2.capitalization.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "2d436a28afc17cce465d86c9a33facb98567d9b7d9e7e9de7c421ec3364fb45f",
+      "task": "capitalization",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C2.context_offset.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "184015142e87eef78241ea968e9b7e34308ae09bc8882e7807f94d667a44bae7",
+      "task": "context_offset",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C2.continuation_status.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "2e80451f3cee458362521e4913469d1734560a720c4d4c93a211d94214a2bc7f",
+      "task": "continuation_status",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "deprel_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C2.deprel_coarse.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "fb2b3b4d9b74d6c19fc4e47d45cb0cc23eac3616c03ab41e6496eedd48bc36e6",
+      "task": "deprel_coarse",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C2.frequency_bin.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "b49d4ef3446233f82c52f0f0f2833384aedf99b7bb9db0e317ed01df09e2a4d9",
+      "task": "frequency_bin",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C2.number.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "9338b0fae738bbf1bc0c5f96d6bf9f4dc838263f88671249fb200f9cbd51ffc7",
+      "task": "number",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": true,
+      "path": "data/atlas_completion_v1/C2.source_type.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "67712f116d075364f9ffbdb53ebc377a527716f44886dd20d544a55f5892bb0f",
+      "task": "source_type",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES"
+      ],
+      "label_contract": "upos_coarse_v2",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C2.upos.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "0f4175fd167576d18ab0545372893c7f76524ff54e10c6b7b436cd6d7127efcf",
+      "task": "upos",
+      "tier": "tier2"
+    },
+    {
+      "expected_sources": [
+        "UD_English-LinES",
+        "Babelscape/wikineural"
+      ],
+      "label_contract": "raw",
+      "nuisance_pooled": false,
+      "path": "data/atlas_completion_v1/C2.word_length.jsonl",
+      "required_for_task_measurability": true,
+      "role": "C2",
+      "sha256": "46b453ceadeffb33965de69d2bd0f818eba07bb2de3247a637ed652f5b89b9a2",
+      "task": "word_length",
+      "tier": "tier2"
+    }
+  ],
+  "label_contracts": {
+    "absolute_position_v2": {
+      "mapping": {
+        "0": "0",
+        "1": "0",
+        "10": "5",
+        "11": "5",
+        "12": "6",
+        "13": "6",
+        "14": "6",
+        "15": "6",
+        "2": "1",
+        "3": "1",
+        "4": "2",
+        "5": "2",
+        "6": "3",
+        "7": "3",
+        "8": "4",
+        "9": "4"
+      },
+      "type": "mapping",
+      "unknown_policy": "error"
+    },
+    "capitalization_coarse_v2": {
+      "mapping": {
+        "lower": "lower",
+        "mixed": "other",
+        "nonalpha": "nonalpha",
+        "title": "title",
+        "upper": "other"
+      },
+      "type": "mapping",
+      "unknown_policy": "error"
+    },
+    "deprel_coarse_v2": {
+      "mapping": {
+        "acl": "NOMINAL",
+        "advcl": "ADVERBIAL",
+        "advmod": "ADVERBIAL",
+        "amod": "NOMINAL",
+        "appos": "NOMINAL",
+        "aux": "FUNCTION",
+        "case": "NOMINAL",
+        "cc": "COORD",
+        "ccomp": "CLAUSAL_COMPLEMENT",
+        "clf": "NOMINAL",
+        "compound": "MWE",
+        "conj": "COORD",
+        "cop": "FUNCTION",
+        "csubj": "CORE",
+        "dep": "REPAIR_OTHER",
+        "det": "NOMINAL",
+        "discourse": "ADVERBIAL",
+        "dislocated": "OBLIQUE",
+        "expl": "OBLIQUE",
+        "fixed": "MWE",
+        "flat": "MWE",
+        "goeswith": "REPAIR_OTHER",
+        "iobj": "CORE",
+        "list": "MWE",
+        "mark": "FUNCTION",
+        "nmod": "NOMINAL",
+        "nsubj": "CORE",
+        "nummod": "NOMINAL",
+        "obj": "CORE",
+        "obl": "OBLIQUE",
+        "orphan": "REPAIR_OTHER",
+        "parataxis": "REPAIR_OTHER",
+        "punct": "punct",
+        "reparandum": "REPAIR_OTHER",
+        "root": "root",
+        "vocative": "OBLIQUE",
+        "xcomp": "CLAUSAL_COMPLEMENT"
+      },
+      "strip_subtype": true,
+      "type": "mapping",
+      "unknown_policy": "error"
+    },
+    "identity_df20": {
+      "maximum_vocabulary": 256,
+      "minimum_document_frequency_each_source": 20,
+      "ranking": [
+        "minimum_source_df_desc",
+        "total_df_desc",
+        "utf8_label_asc"
+      ],
+      "type": "identity_vocabulary",
+      "unknown_policy": "error"
+    },
+    "raw": {
+      "type": "raw",
+      "unknown_policy": "error"
+    },
+    "upos_coarse_v2": {
+      "mapping": {
+        "ADJ": "MODIFIER",
+        "ADP": "FUNCTION",
+        "ADV": "MODIFIER",
+        "AUX": "VERBAL",
+        "CCONJ": "FUNCTION",
+        "DET": "FUNCTION",
+        "INTJ": "OTHER",
+        "NOUN": "NOMINAL",
+        "NUM": "QUANTITY",
+        "PART": "FUNCTION",
+        "PRON": "NOMINAL",
+        "PROPN": "NOMINAL",
+        "PUNCT": "PUNCT",
+        "SCONJ": "FUNCTION",
+        "SYM": "OTHER",
+        "VERB": "VERBAL",
+        "X": "OTHER"
+      },
+      "type": "mapping",
+      "unknown_policy": "error"
+    }
+  },
+  "output_root": "reports/atlas_measurement_v2",
+  "protocol": {
+    "path": "docs/rfc-atlas-v2-prescore-measurement.md",
+    "sha256": "3ffbccafc7a4486f1c56f32f28a9cbe119fe361de72fa533c437243661cf26d2"
+  },
+  "replacement_confirmation": {
+    "promotion_allowed": false,
+    "required_artifact": "signed_grouping_provenance_manifest",
+    "retired_source": "UD_English-LinES",
+    "source": null,
+    "status": "unset"
+  },
+  "required_endpoints": [
+    "task_measurability",
+    "family_localization",
+    "family_stability",
+    "collateral_validity",
+    "counterfactual_validity"
+  ],
+  "roles": [
+    "calibration",
+    "C1",
+    "C2"
+  ],
+  "schema_version": "atlas_measurement_v2_prescore_draft",
+  "sentinels": {
+    "nuisance_non_introduction": {
+      "interval": "paired_document_bootstrap_95pct",
+      "metric": "paired_macro_f1_difference_representation_minus_raw",
+      "raw_denominator_required": false,
+      "upper_interval_max": 0.02
+    },
+    "retention": [
+      "upos",
+      "deprel_coarse",
+      "number",
+      "capitalization",
+      "word_length",
+      "frequency_bin",
+      "continuation_status",
+      "context_offset"
+    ],
+    "source_type": {
+      "role": "nuisance",
+      "stratification": "pooled"
+    }
+  },
+  "source_prefix_map": {
+    "C1": {
+      "Babelscape/wikineural:": "Babelscape/wikineural",
+      "UD_English-LinES:": "UD_English-LinES"
+    },
+    "C2": {
+      "Babelscape/wikineural:": "Babelscape/wikineural",
+      "UD_English-LinES:": "UD_English-LinES"
+    },
+    "calibration": {
+      "UD_English-GUM:": "UD_English-GUM",
+      "flaitenberger/wnut_17:": "flaitenberger/wnut_17"
+    }
+  },
+  "status": "draft_prescore_only_no_scoring",
+  "status_precedence": [
+    "ineligible",
+    "not_run",
+    "eligible"
+  ],
+  "thresholds": {
+    "bootstrap_draws": 500,
+    "max_rows_per_group": 256,
+    "maximum_support_preserving_rejection_rate": 0.1,
+    "min_class_groups": 20,
+    "min_finite_draws": 490,
+    "min_groups": 25,
+    "seed": 20260802
+  }
+}

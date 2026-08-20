@@ -1,0 +1,103 @@
+{
+  "comparators": {
+    "ablation_norm_ratio": {
+      "above": false,
+      "below": false,
+      "inside": true,
+      "lower_equal": true,
+      "upper_equal": true
+    },
+    "circuit_recovery": {
+      "lower_above": true,
+      "lower_equal": false,
+      "point_above": true,
+      "point_below": false,
+      "point_equal": true
+    },
+    "collateral_error": {
+      "point_above": false,
+      "point_below": true,
+      "point_equal": true,
+      "upper_below": true,
+      "upper_equal": false
+    },
+    "control_margin": {
+      "lower_above": true,
+      "lower_equal": false,
+      "point_above": true,
+      "point_below": false,
+      "point_equal": true
+    },
+    "edge_necessity": {
+      "lower_above": true,
+      "lower_equal": false,
+      "point_above": true,
+      "point_below": false,
+      "point_equal": true
+    },
+    "full_vocab_recovery": {
+      "lower_above": true,
+      "lower_equal": false,
+      "point_above": true,
+      "point_below": false,
+      "point_equal": true
+    },
+    "necessity_advantage": {
+      "lower_above": true,
+      "lower_equal": false,
+      "point_above": true,
+      "point_below": false,
+      "point_equal": true
+    },
+    "patch_norm_ratio": {
+      "above": false,
+      "below": false,
+      "inside": true,
+      "lower_equal": true,
+      "upper_equal": true
+    },
+    "sham_specificity": {
+      "lower_above": true,
+      "lower_equal": false,
+      "point_above": true,
+      "point_below": false,
+      "point_equal": true
+    },
+    "skyline_recovery": {
+      "lower_above": true,
+      "lower_equal": false,
+      "point_above": true,
+      "point_below": false,
+      "point_equal": true
+    },
+    "source_necessity": {
+      "lower_above": true,
+      "lower_equal": false,
+      "point_above": true,
+      "point_below": false,
+      "point_equal": true
+    }
+  },
+  "fixture_sha256": "1cd9427405e8a5b5baea3d00fc2ccaec09e74c10455fd26c4a7f25b7c2dcb1db",
+  "general_natural_model_claim": false,
+  "implementation_sha256": "a82b49bfcdab1a2bb38240bb7c4e5751b915a47707592cac4f7fe4c05909f6fe",
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "outcomes": {
+    "ablation_norm_mismatch": "TECHNICAL_INVALID_STOP",
+    "degraded_recovery": "SCIENTIFIC_STOP",
+    "high_collateral": "SCIENTIFIC_STOP",
+    "insufficient_support": "SCIENTIFIC_STOP",
+    "invalid_denominator": "SCIENTIFIC_STOP",
+    "nonfinite": "TECHNICAL_INVALID_STOP",
+    "nonspecific_sham": "SCIENTIFIC_STOP",
+    "pass": "PASS",
+    "patch_norm_mismatch": "TECHNICAL_INVALID_STOP",
+    "potent_control": "SCIENTIFIC_STOP"
+  },
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_1_calibration",
+  "single_constructed_model": true,
+  "status": "PASS",
+  "training_performed": false
+}

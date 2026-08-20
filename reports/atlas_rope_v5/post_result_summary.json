@@ -1,0 +1,469 @@
+{
+  "calibration": {
+    "caps": {
+      "atol": 2e-05,
+      "cosine_distance": 1e-11,
+      "relative_l2": 1e-05
+    },
+    "diagnostic_values_used": false,
+    "observed_maxima": {
+      "cosine_distance": 6.61326549078467e-12,
+      "relative_l2": 4.050714244725923e-06,
+      "required_atol": 1.3512020111083984e-05
+    },
+    "rows": 1272,
+    "rtol": 5e-06
+  },
+  "claim_boundary": "Attempt 9 validates technical replay/repeat determinism and diagnoses finite-precision RoPE non-equivariance, but does not validate the numerical protocol or run the scientific atlas.",
+  "diagnostic": {
+    "aggregate": {
+      "aligned_total_post": {
+        "earliest_layer_above_reporting_floor": 0,
+        "maximum_absolute": {
+          "count": 4,
+          "head": 9,
+          "layer": 9,
+          "length_bin": "65-128",
+          "max_abs": 0.3270263671875,
+          "max_cosine_distance": 3.6864279406856326e-09,
+          "max_relative_l2": 8.594541230850203e-05,
+          "residual": "aligned_total_post",
+          "shift": 16,
+          "tensor": "Q"
+        },
+        "maximum_cosine_distance": {
+          "count": 4,
+          "head": 1,
+          "layer": 9,
+          "length_bin": "33-64",
+          "max_abs": 0.1126251220703125,
+          "max_cosine_distance": 7.414904412694767e-08,
+          "max_relative_l2": 0.0004072923937342177,
+          "residual": "aligned_total_post",
+          "shift": 64,
+          "tensor": "Q"
+        },
+        "maximum_relative_l2": {
+          "count": 4,
+          "head": 1,
+          "layer": 9,
+          "length_bin": "33-64",
+          "max_abs": 0.1126251220703125,
+          "max_cosine_distance": 7.414904412694767e-08,
+          "max_relative_l2": 0.0004072923937342177,
+          "residual": "aligned_total_post",
+          "shift": 64,
+          "tensor": "Q"
+        }
+      },
+      "hidden_state": {
+        "earliest_layer_above_reporting_floor": 1,
+        "maximum_absolute": {
+          "count": 4,
+          "head": -1,
+          "layer": 11,
+          "length_bin": "33-64",
+          "max_abs": 0.00096893310546875,
+          "max_cosine_distance": 6.149987075154684e-09,
+          "max_relative_l2": 0.00011119532126834193,
+          "residual": "hidden_state",
+          "shift": 1,
+          "tensor": "hidden"
+        },
+        "maximum_cosine_distance": {
+          "count": 4,
+          "head": -1,
+          "layer": 10,
+          "length_bin": "33-64",
+          "max_abs": 0.0007863044738769531,
+          "max_cosine_distance": 8.329754108693521e-09,
+          "max_relative_l2": 0.00012921900283316168,
+          "residual": "hidden_state",
+          "shift": 1,
+          "tensor": "hidden"
+        },
+        "maximum_relative_l2": {
+          "count": 4,
+          "head": -1,
+          "layer": 10,
+          "length_bin": "33-64",
+          "max_abs": 0.0007863044738769531,
+          "max_cosine_distance": 8.329754108693521e-09,
+          "max_relative_l2": 0.00012921900283316168,
+          "residual": "hidden_state",
+          "shift": 1,
+          "tensor": "hidden"
+        }
+      },
+      "invariant_logits": {
+        "earliest_layer_above_reporting_floor": 0,
+        "maximum_absolute": {
+          "count": 4,
+          "head": 9,
+          "layer": 9,
+          "length_bin": "65-128",
+          "max_abs": 19.417177065442957,
+          "max_cosine_distance": 4.145881193906575e-09,
+          "max_relative_l2": 9.115569240620325e-05,
+          "residual": "invariant_logits",
+          "shift": 16,
+          "tensor": "QK"
+        },
+        "maximum_cosine_distance": {
+          "count": 4,
+          "head": 1,
+          "layer": 9,
+          "length_bin": "33-64",
+          "max_abs": 11.977463875424291,
+          "max_cosine_distance": 8.525928718583486e-08,
+          "max_relative_l2": 0.00043111083991703524,
+          "residual": "invariant_logits",
+          "shift": 64,
+          "tensor": "QK"
+        },
+        "maximum_relative_l2": {
+          "count": 4,
+          "head": 1,
+          "layer": 9,
+          "length_bin": "33-64",
+          "max_abs": 11.977463875424291,
+          "max_cosine_distance": 8.525928718583486e-08,
+          "max_relative_l2": 0.00043111083991703524,
+          "residual": "invariant_logits",
+          "shift": 64,
+          "tensor": "QK"
+        }
+      },
+      "local_rotary": {
+        "earliest_layer_above_reporting_floor": 0,
+        "maximum_absolute": {
+          "count": 4,
+          "head": 11,
+          "layer": 8,
+          "length_bin": "65-128",
+          "max_abs": 9.101821946444488e-05,
+          "max_cosine_distance": 1.4654943925052066e-14,
+          "max_relative_l2": 1.7504269750316843e-07,
+          "residual": "local_rotary",
+          "shift": 64,
+          "tensor": "K"
+        },
+        "maximum_cosine_distance": {
+          "count": 4,
+          "head": 0,
+          "layer": 3,
+          "length_bin": "65-128",
+          "max_abs": 8.269478189770751e-06,
+          "max_cosine_distance": 3.963496197911809e-14,
+          "max_relative_l2": 2.8136760634794513e-07,
+          "residual": "local_rotary",
+          "shift": 64,
+          "tensor": "Q"
+        },
+        "maximum_relative_l2": {
+          "count": 4,
+          "head": 0,
+          "layer": 3,
+          "length_bin": "65-128",
+          "max_abs": 8.269478189770751e-06,
+          "max_cosine_distance": 3.963496197911809e-14,
+          "max_relative_l2": 2.8136760634794513e-07,
+          "residual": "local_rotary",
+          "shift": 64,
+          "tensor": "Q"
+        }
+      },
+      "propagated_pre": {
+        "earliest_layer_above_reporting_floor": 1,
+        "maximum_absolute": {
+          "count": 4,
+          "head": 9,
+          "layer": 9,
+          "length_bin": "65-128",
+          "max_abs": 0.3270263671875,
+          "max_cosine_distance": 3.68642782966333e-09,
+          "max_relative_l2": 8.594541231730239e-05,
+          "residual": "propagated_pre",
+          "shift": 16,
+          "tensor": "Q"
+        },
+        "maximum_cosine_distance": {
+          "count": 4,
+          "head": 1,
+          "layer": 9,
+          "length_bin": "33-64",
+          "max_abs": 0.1126251220703125,
+          "max_cosine_distance": 7.414904157343472e-08,
+          "max_relative_l2": 0.0004072923969580265,
+          "residual": "propagated_pre",
+          "shift": 64,
+          "tensor": "Q"
+        },
+        "maximum_relative_l2": {
+          "count": 4,
+          "head": 1,
+          "layer": 9,
+          "length_bin": "33-64",
+          "max_abs": 0.1126251220703125,
+          "max_cosine_distance": 7.414904157343472e-08,
+          "max_relative_l2": 0.0004072923969580265,
+          "residual": "propagated_pre",
+          "shift": 64,
+          "tensor": "Q"
+        }
+      }
+    },
+    "observer_checks": {
+      "array_equal": true,
+      "c_order_bytes_equal": true,
+      "population_equal": true,
+      "row_ids_equal": true
+    },
+    "reporting_floors": {
+      "cosine_distance": 1e-12,
+      "relative_l2": 1e-08
+    },
+    "status": "PASS",
+    "threshold_tuning_authorized": false
+  },
+  "downstream": {
+    "gentle_grid_exists": false,
+    "gentle_pass_exists": false,
+    "gum_pass_exists": false,
+    "neural_training_run": false,
+    "science_authorization_exists": false,
+    "science_run_exists": false,
+    "scientific_result_exists": false
+  },
+  "gum_grid": {
+    "cells_with_coordinate_failures": {
+      "9-16|shift=16": {
+        "budgets": {
+          "coordinate_failing_elements": 30,
+          "coordinate_failing_rows": 2,
+          "cosine_failing_rows": 0,
+          "relative_l2_failing_rows": 0
+        },
+        "coordinate_failing_elements": 1,
+        "coordinate_failing_rows": 1,
+        "cosine_failing_rows": 0,
+        "maxima": {
+          "absolute_difference": 9.1552734375e-05,
+          "cosine_distance": 9.23250365048034e-12,
+          "relative_l2": 5.800419845875069e-06,
+          "required_atol": 3.3267278671264645e-05
+        },
+        "nonfinite_rows": 0,
+        "relative_l2_failing_rows": 0,
+        "rows": 40,
+        "status": "PASS",
+        "width": 768
+      },
+      "9-16|shift=64": {
+        "budgets": {
+          "coordinate_failing_elements": 30,
+          "coordinate_failing_rows": 2,
+          "cosine_failing_rows": 0,
+          "relative_l2_failing_rows": 0
+        },
+        "coordinate_failing_elements": 1,
+        "coordinate_failing_rows": 1,
+        "cosine_failing_rows": 1,
+        "maxima": {
+          "absolute_difference": 0.000152587890625,
+          "cosine_distance": 2.8322344469700056e-11,
+          "relative_l2": 1.0243788529525084e-05,
+          "required_atol": 9.811713218688964e-05
+        },
+        "nonfinite_rows": 0,
+        "relative_l2_failing_rows": 1,
+        "rows": 40,
+        "status": "FAIL",
+        "width": 768
+      }
+    },
+    "exact_cached_replay": {
+      "checks": {
+        "array_equal": true,
+        "c_contiguous": true,
+        "c_order_bytes_equal": true,
+        "canonical_hash_equal": true,
+        "declared_child_hashes_present": true,
+        "dtype_float32": true,
+        "row_ids_equal": true,
+        "row_ids_match_array_rows": true,
+        "row_ids_unique": true,
+        "shape_equal": true
+      },
+      "left_child_sha256": "c0c0e388bae6e58396c51a0ba07acaaa55982883864fd56520722e747979e106",
+      "right_child_sha256": "c0c0e388bae6e58396c51a0ba07acaaa55982883864fd56520722e747979e106",
+      "status": "PASS"
+    },
+    "failing_cells": {
+      "9-16|shift=64": {
+        "budgets": {
+          "coordinate_failing_elements": 30,
+          "coordinate_failing_rows": 2,
+          "cosine_failing_rows": 0,
+          "relative_l2_failing_rows": 0
+        },
+        "coordinate_failing_elements": 1,
+        "coordinate_failing_rows": 1,
+        "cosine_failing_rows": 1,
+        "maxima": {
+          "absolute_difference": 0.000152587890625,
+          "cosine_distance": 2.8322344469700056e-11,
+          "relative_l2": 1.0243788529525084e-05,
+          "required_atol": 9.811713218688964e-05
+        },
+        "nonfinite_rows": 0,
+        "relative_l2_failing_rows": 1,
+        "rows": 40,
+        "status": "FAIL",
+        "width": 768
+      }
+    },
+    "fatal_row_details": [
+      {
+        "candidate_unit_id": "atlas_rope_v5:GUM_fresh_validation:base:0558a970c8b3eba52a2ecdbd:shift:64",
+        "cosine_distance": 2.8322344469700056e-11,
+        "difference_l2": 0.00017617410059119864,
+        "failing_coordinates": [
+          {
+            "absolute_difference": 0.0001506805419921875,
+            "bound": 7.256340980529785e-05,
+            "candidate": -10.512832641601562,
+            "index": 393,
+            "reference": -10.51268196105957
+          }
+        ],
+        "reference_l2": 17.19813915363658,
+        "reference_unit_id": "atlas_rope_v5:GUM_fresh_validation:base:0558a970c8b3eba52a2ecdbd:reference",
+        "relative_l2": 1.0243788529525084e-05,
+        "required_atol": 9.811713218688964e-05,
+        "row": {
+          "base_id": "atlas_rope_v5:GUM_fresh_validation:base:0558a970c8b3eba52a2ecdbd",
+          "document_id": "GUM_podcast_wrestling",
+          "length_bin": "9-16",
+          "row_id": "atlas_rope_v5:GUM_fresh_validation:base:0558a970c8b3eba52a2ecdbd:row:0:2",
+          "selected_position": 2,
+          "sent_id": "GUM_podcast_wrestling-68",
+          "source": "GUM_fresh_validation"
+        },
+        "shift": 64
+      }
+    ],
+    "live_reference_repeats_byte_identical": true,
+    "pass_cells": 29,
+    "required_cells": 30,
+    "score_status": "FAIL",
+    "status": "FAIL",
+    "totals": {
+      "coordinate_failing_elements": 2,
+      "coordinate_failing_rows": 2,
+      "cosine_failing_rows": 1,
+      "relative_l2_failing_rows": 1
+    }
+  },
+  "gum_sentinel": {
+    "exact_cached_replay": {
+      "checks": {
+        "array_equal": true,
+        "c_contiguous": true,
+        "c_order_bytes_equal": true,
+        "canonical_hash_equal": true,
+        "declared_child_hashes_present": true,
+        "dtype_float32": true,
+        "row_ids_equal": true,
+        "row_ids_match_array_rows": true,
+        "row_ids_unique": true,
+        "shape_equal": true
+      },
+      "left_child_sha256": "3219c046bb9f0b7c69885b9b7188ab722d59898c2f27349c8a0883725287e4a5",
+      "right_child_sha256": "3219c046bb9f0b7c69885b9b7188ab722d59898c2f27349c8a0883725287e4a5",
+      "status": "PASS"
+    },
+    "families": {
+      "prefix_position_only": {
+        "all_pass": true,
+        "max_cosine_distance": 1.219913059458122e-12,
+        "max_relative_l2": 1.9444645666704894e-06,
+        "max_required_atol": 1.9133840501308443e-06,
+        "pairs": 8,
+        "rows": 8
+      },
+      "uniform_shift": {
+        "all_pass": true,
+        "max_cosine_distance": 6.178391132038996e-13,
+        "max_relative_l2": 1.1129261885638303e-06,
+        "max_required_atol": 1.2047994136810303e-06,
+        "pairs": 8,
+        "rows": 16
+      }
+    },
+    "live_reference_repeats_byte_identical": true,
+    "status": "PASS"
+  },
+  "interpretation_limits": [
+    "The GUM grid failure is one held-out numerical-QA failure, not evidence about position/content decomposition.",
+    "The EWT diagnostic supports a finite-precision propagation mechanism but did not hook the failing GUM row, so causal localization to a specific kernel remains inferential.",
+    "No GENTLE validation or scientific atlas outcome exists."
+  ],
+  "schema_version": "atlas_rope_v5_attempt9_post_result_summary_v1",
+  "signed_lineage": {
+    "calibration_cap_candidate": {
+      "path": "configs/atlas_rope_v5/CALIBRATION_CAP_CANDIDATE.json",
+      "sha256": "8085d9125c55c300e68c9dd98e10482f3a2b33da6cc8ab8b05fd43c64cef4037"
+    },
+    "diagnostic_complete": {
+      "path": "pilot_runs/20260803_atlas_rope_technical_v5/diagnostic/DIAGNOSTIC_COMPLETE.json",
+      "sha256": "88953f05969479311842fdf207530a8b37378442612000daa53859627645ff80"
+    },
+    "gum_grid_complete": {
+      "path": "pilot_runs/20260803_atlas_rope_technical_v5/validation/GUM_grid/COMPLETE.json",
+      "sha256": "0d0c4da9b77ae0e78b2545d808ec0488342492c10cce9780361b70fb2c66fec6"
+    },
+    "gum_sentinel_complete": {
+      "path": "pilot_runs/20260803_atlas_rope_technical_v5/validation/GUM_sentinel/COMPLETE.json",
+      "sha256": "30bfddc077db6ae900c5b9d82afadb34461af76959a49364f0ff497ac936fa87"
+    },
+    "terminal": {
+      "path": "pilot_runs/20260803_atlas_rope_technical_v5/TERMINAL.json",
+      "payload": {
+        "lineage": {
+          "diagnostic_complete": {
+            "path": "pilot_runs/20260803_atlas_rope_technical_v5/diagnostic/DIAGNOSTIC_COMPLETE.json",
+            "sha256": "88953f05969479311842fdf207530a8b37378442612000daa53859627645ff80"
+          },
+          "ewt_authorization": {
+            "path": "configs/atlas_rope_v5/EWT_DIAGNOSTIC_AUTHORIZATION.json",
+            "sha256": "a1708a9e173a115e3aeb01a23ba2839570c90cf411a91c7408c6c483c1373398"
+          },
+          "freeze_candidate": {
+            "path": "configs/atlas_rope_v5/validation_freeze_candidate.json",
+            "sha256": "93704e024275eb134f7d32e4e2bf48c6588575550132f50a55f46ce97b325a42"
+          },
+          "gum_grid_complete": {
+            "path": "pilot_runs/20260803_atlas_rope_technical_v5/validation/GUM_grid/COMPLETE.json",
+            "sha256": "0d0c4da9b77ae0e78b2545d808ec0488342492c10cce9780361b70fb2c66fec6"
+          },
+          "gum_sentinel_complete": {
+            "path": "pilot_runs/20260803_atlas_rope_technical_v5/validation/GUM_sentinel/COMPLETE.json",
+            "sha256": "30bfddc077db6ae900c5b9d82afadb34461af76959a49364f0ff497ac936fa87"
+          },
+          "validation_authorization": {
+            "path": "configs/atlas_rope_v5/VALIDATION_AUTHORIZATION.json",
+            "sha256": "87d4d265dbc07a4f5059425e2f976cb81329a9f28a2b29525e588cfbba31983d"
+          }
+        },
+        "neural_training_authorized": false,
+        "no_retry_authorized": true,
+        "reason": "fresh GUM validation failed: RuntimeError: grid bundle did not pass: FAIL",
+        "schema_version": "atlas_rope_v5_attempt9_terminal_v1",
+        "status": "TERMINAL_GUM_VALIDATION_FAILED"
+      },
+      "sha256": "83a369af693019c768284adfef5811bf7cc56eb9d226d8449e514abf12ecbf06"
+    }
+  },
+  "status": "TERMINAL_TECHNICAL_VALIDATION_FAILED"
+}

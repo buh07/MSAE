@@ -1,0 +1,8 @@
+{
+  "gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+  "launch_token": "71973f8fe1f54a9836107787c83ee5d9c5887d449967b5da",
+  "physical_gpu_index": 0,
+  "session": "transformer_realistic_bridge_v1_20260810",
+  "status": "TMUX_START_REQUESTED",
+  "time_ns": 1786335915933606620
+}

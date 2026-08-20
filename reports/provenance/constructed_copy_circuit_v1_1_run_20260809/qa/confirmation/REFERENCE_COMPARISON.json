@@ -1,0 +1,15 @@
+{
+  "bitwise": true,
+  "fields": 50,
+  "general_natural_model_claim": false,
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "reference_1_sha256": "e40caba0c7972f899c2c8c3043a2feb644c1f26c05b4adf31870bc69abdd6394",
+  "reference_2_sha256": "e40caba0c7972f899c2c8c3043a2feb644c1f26c05b4adf31870bc69abdd6394",
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_1_reference_comparison",
+  "single_constructed_model": true,
+  "stage": "confirmation",
+  "status": "PASS",
+  "training_performed": false
+}

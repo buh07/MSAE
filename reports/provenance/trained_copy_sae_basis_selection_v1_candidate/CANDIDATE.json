@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "authorization_outcome_independent": true,
+    "finite": true,
+    "sae_parameter_count": true,
+    "selector_permutation": true,
+    "topk": true
+  },
+  "config_sha256": "fa55f6dc57989cc72195fa5d2eeadf37a13b9388d16be1f2e2bddb01d5e9c167",
+  "expected_method_count_per_checkpoint": 507,
+  "launcher_sha256": "f1e8368cdd3adfc1e35cef405a14b24c0c4634102c400481766d23bf7719ad90",
+  "method_inventory_sha256": "5a7c1fdd679e77893ee8dff8fad98687f4543439bef0c7c97934f7e3a4a0108a",
+  "plan_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "protocol_parity_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "recovery_lineage": {
+    "pass": true,
+    "r2_preservation_sha256": "f097b38b8b499be04cfdac944e3271337cbc0a214ec48f180f49e17053c5de97"
+  },
+  "runtime_profile": {
+    "below_half_timeout_budget": true,
+    "cached_sae_codes": 108,
+    "estimated_all_27_omp_seconds": 263.7290421864018,
+    "fit_rows": 64,
+    "method_records_per_checkpoint": 507,
+    "omp_features": 256,
+    "representative_omp_seconds": 9.767742303200066
+  },
+  "schema_version": "trained_copy_sae_basis_selection_v1_candidate",
+  "scientific_panel_accessed": false,
+  "source_sha256": "b5c23f36d9984defb2e3ab9aa2f0ee2e773812e6946b166c4311401353e961d4",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "ddfa891c14448b4311cb94a0fe920d497295714325f4f95a7bae93f56a8b4650",
+    "study": "bf0b7c2e3cf33d2656875fb1f643ccb9c262838cfacfcb5ee45da589dd1e3d5d"
+  },
+  "transitive_runtime_hashes": {
+    "base_source": "40851316c0ecdb2e052126fc421b462e9b298746810597758c07661f40c5e361",
+    "r2_preservation_source": "2cd3dd24294a7e328203369d8a9d8b2814a81e86fed25eae73cf49b34b0a38de",
+    "r5_config": "ae80b44d3735eaa055008617ba316679e8841d197eb9cd3bd64acdf28c2b6598",
+    "r5_freeze": "a59246d2d06e3fa8f14dcb290b6fdf2f9d73607e39ab93da55f1c41f02d6f758",
+    "r5_source": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8"
+  }
+}

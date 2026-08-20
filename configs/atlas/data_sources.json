@@ -1,0 +1,40 @@
+{
+  "schema_version": "atlas_v1_sources",
+  "seed": 20260731,
+  "model": {
+    "name": "EleutherAI/pythia-160m-deduped",
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+  },
+  "packing": {
+    "add_special_tokens": false,
+    "max_length": 128,
+    "offsets": [0, 16, 32, 48],
+    "padding_side": "right"
+  },
+  "roles": {
+    "discovery": {
+      "ud": {"repo": "UD_English-EWT", "revision": "4a4d77f599ea53cc405f85d0cec4b2f14f81d42b", "file": "en_ewt-ud-train.conllu", "cap": 4000},
+      "ner": {"repo": "DFKI-SLT/few-nerd", "revision": "205f3e9c9f3577ea2561d43f2f62dc249ab92d5b", "config": "supervised", "split": "train", "cap": 8000}
+    },
+    "calibration": {
+      "ud": {"repo": "UD_English-GUM", "revision": "1fe635509c649e376dfb449d528424ab78f4eaee", "file": "en_gum-ud-train.conllu", "cap": 1500},
+      "ner": {"repo": "flaitenberger/wnut_17", "revision": "d6c9cc3726ab60f77c2b7d95b882adb1b61df5e7", "split": "validation", "cap": 1500}
+    },
+    "architecture_confirmation": {
+      "ud": {"repo": "UD_English-LinES", "revision": "f1e4f1d6d6dd03ee4e5176d6b6a13f694c7efab0", "file": "en_lines-ud-test.conllu", "cap": 1500},
+      "ner": {"repo": "Babelscape/wikineural", "revision": "74c9b9dca034bb1606a6769457983904bd976803", "split": "val_en", "cap": 1500},
+      "subroles": ["C1", "C2"]
+    },
+    "final": {
+      "ud": {"repo": "UD_English-PUD", "revision": "f16eba4ae7f3d161870ed320676c5088b8fa476c", "file": "en_pud-ud-test.conllu", "cap": 2000},
+      "ner": {"repo": "Babelscape/wikineural", "revision": "74c9b9dca034bb1606a6769457983904bd976803", "split": "test_en", "cap": 2000}
+    }
+  },
+  "prefix_vocabularies": {
+    "discovery": ["the", "and", "of", "to"],
+    "calibration": ["in", "for", "with", "from"],
+    "C1": ["a", "an", "this", "that"],
+    "C2": ["it", "he", "she", "they"],
+    "final": ["we", "you", "or", "but"]
+  }
+}

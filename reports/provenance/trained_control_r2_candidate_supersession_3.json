@@ -1,0 +1,32 @@
+{
+  "artifacts": [
+    {
+      "bytes": 14862,
+      "path": "reports/provenance/trained_control_studies_v1_r2_PROTOCOL_PARITY_SUPERSEDED_c70d5cf6.json",
+      "sha256": "c70d5cf68787c0a1b3da3875f61d3720a3ff5db31f9af5311bddf807a7515d58"
+    },
+    {
+      "bytes": 2326,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_r2_candidate/SUPERSEDED_CANDIDATE_85c8f17c.json",
+      "sha256": "85c8f17c1f6d89da5c6a121f536c89e0490ecee9b05cd4584d4d283caf39b04c"
+    },
+    {
+      "bytes": 2468,
+      "path": "reports/provenance/causal_manifold_bridge_v1_r2_candidate/SUPERSEDED_CANDIDATE_b0ceca56.json",
+      "sha256": "b0ceca56e919c1f5e10b1678dc01c796e20022c4c97fbed50e9ab4a70532d227"
+    },
+    {
+      "bytes": 2434,
+      "path": "reports/adversarial/trained_copy_sae_capacity_v1_r2_candidate_review_blocked_2.md",
+      "sha256": "95536cb4e7586a967d13a5ab2a8dbe550e016a561655a05a74c3429e9cac2532"
+    },
+    {
+      "bytes": 1974,
+      "path": "reports/adversarial/causal_manifold_bridge_v1_r2_candidate_review_blocked_2.md",
+      "sha256": "04d22748188aebdc6d267b75198adaca6bb486939cc148a207ff36a8c1bcb1fb"
+    }
+  ],
+  "reason": "Independent adversarial review reproduced an atomic stale-lock reacquisition race; superseded before freeze or scientific execution.",
+  "schema_version": "trained_control_r2_candidate_supersession_v1",
+  "scientific_panel_accessed": false
+}

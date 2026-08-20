@@ -1,0 +1,204 @@
+{
+  "duplicate_exclusions": {
+    "architecture_confirmation": 1,
+    "calibration": 30,
+    "discovery": 150
+  },
+  "environment": {
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]"
+  },
+  "final_unlock_present": false,
+  "firewall": {
+    "failures": [],
+    "passed": true,
+    "role_base_counts": {
+      "C1": 1389,
+      "C2": 1231,
+      "calibration": 2479,
+      "discovery": 11850,
+      "final": 3000
+    },
+    "role_unit_counts": {
+      "C1": 5556,
+      "C2": 4924,
+      "calibration": 9916,
+      "discovery": 47400,
+      "final": 12000
+    }
+  },
+  "prefix_one_token": {
+    "C1": {
+      "a": 1,
+      "an": 1,
+      "that": 1,
+      "this": 1
+    },
+    "C2": {
+      "he": 1,
+      "it": 1,
+      "she": 1,
+      "they": 1
+    },
+    "calibration": {
+      "for": 1,
+      "from": 1,
+      "in": 1,
+      "with": 1
+    },
+    "discovery": {
+      "and": 1,
+      "of": 1,
+      "the": 1,
+      "to": 1
+    },
+    "final": {
+      "but": 1,
+      "or": 1,
+      "we": 1,
+      "you": 1
+    }
+  },
+  "render_stats": {
+    "C1": {
+      "model_tokens": 290131,
+      "tail_truncated_words": 269,
+      "word_rows": 120183
+    },
+    "C2": {
+      "model_tokens": 246762,
+      "tail_truncated_words": 131,
+      "word_rows": 98205
+    },
+    "calibration": {
+      "model_tokens": 450660,
+      "tail_truncated_words": 430,
+      "word_rows": 169010
+    },
+    "discovery": {
+      "model_tokens": 2556547,
+      "tail_truncated_words": 5736,
+      "word_rows": 1041768
+    },
+    "final": {
+      "model_tokens": 645286,
+      "tail_truncated_words": 227,
+      "word_rows": 269089
+    }
+  },
+  "schema_version": "atlas_v1_data_qa",
+  "source_evidence": {
+    "architecture_confirmation": {
+      "ner_fingerprint": "2be683fa89136a8d",
+      "ner_repo": "Babelscape/wikineural",
+      "ner_revision": "74c9b9dca034bb1606a6769457983904bd976803",
+      "ner_selected": 1500,
+      "ner_split": "val_en",
+      "ud_file_sha256": "46cb8e412aab30725acfb916fdb092672597e12eef511165f0843efaf6c6926a",
+      "ud_selected": 1121,
+      "ud_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-LinES/f1e4f1d6d6dd03ee4e5176d6b6a13f694c7efab0/en_lines-ud-test.conllu"
+    },
+    "calibration": {
+      "ner_fingerprint": "de62a1d5d44a940e",
+      "ner_repo": "flaitenberger/wnut_17",
+      "ner_revision": "d6c9cc3726ab60f77c2b7d95b882adb1b61df5e7",
+      "ner_selected": 1009,
+      "ner_split": "validation",
+      "ud_file_sha256": "88c410ca6a51ccc79f9536d75feb1633421691165cd191f8137f8b37569a0329",
+      "ud_selected": 1500,
+      "ud_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-GUM/1fe635509c649e376dfb449d528424ab78f4eaee/en_gum-ud-train.conllu"
+    },
+    "discovery": {
+      "ner_fingerprint": "31859e2d8d4cde15",
+      "ner_repo": "DFKI-SLT/few-nerd",
+      "ner_revision": "205f3e9c9f3577ea2561d43f2f62dc249ab92d5b",
+      "ner_selected": 8000,
+      "ner_split": "train",
+      "ud_file_sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143",
+      "ud_selected": 4000,
+      "ud_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/4a4d77f599ea53cc405f85d0cec4b2f14f81d42b/en_ewt-ud-train.conllu"
+    },
+    "final": {
+      "ner_fingerprint": "ecb69f22f6921bfa",
+      "ner_repo": "Babelscape/wikineural",
+      "ner_revision": "74c9b9dca034bb1606a6769457983904bd976803",
+      "ner_selected": 2000,
+      "ner_split": "test_en",
+      "ud_file_sha256": "c80584f2bc2b31d5bada78a1136f9feec7ac49e5e18898db02dea434b5b8f0aa",
+      "ud_selected": 1000,
+      "ud_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-PUD/f16eba4ae7f3d161870ed320676c5088b8fa476c/en_pud-ud-test.conllu"
+    }
+  },
+  "transform_qa": {
+    "C1": {
+      "bad_equal_pairs": 0,
+      "bad_invariants": 0,
+      "families": {
+        "lexical_entity_substitution": 32,
+        "position_shift": 32,
+        "punctuation_format": 32,
+        "structural_active_passive": 32
+      },
+      "rows": 128,
+      "token_aligned_lexical": 4,
+      "unique_content_pairs": 128,
+      "unique_ids": 128
+    },
+    "C2": {
+      "bad_equal_pairs": 0,
+      "bad_invariants": 0,
+      "families": {
+        "lexical_entity_substitution": 32,
+        "position_shift": 32,
+        "punctuation_format": 32,
+        "structural_active_passive": 32
+      },
+      "rows": 128,
+      "token_aligned_lexical": 16,
+      "unique_content_pairs": 128,
+      "unique_ids": 128
+    },
+    "calibration": {
+      "bad_equal_pairs": 0,
+      "bad_invariants": 0,
+      "families": {
+        "lexical_entity_substitution": 32,
+        "position_shift": 32,
+        "punctuation_format": 32,
+        "structural_active_passive": 32
+      },
+      "rows": 128,
+      "token_aligned_lexical": 12,
+      "unique_content_pairs": 128,
+      "unique_ids": 128
+    },
+    "discovery": {
+      "bad_equal_pairs": 0,
+      "bad_invariants": 0,
+      "families": {
+        "lexical_entity_substitution": 32,
+        "position_shift": 32,
+        "punctuation_format": 32,
+        "structural_active_passive": 32
+      },
+      "rows": 128,
+      "token_aligned_lexical": 4,
+      "unique_content_pairs": 128,
+      "unique_ids": 128
+    },
+    "final": {
+      "bad_equal_pairs": 0,
+      "bad_invariants": 0,
+      "families": {
+        "lexical_entity_substitution": 32,
+        "position_shift": 32,
+        "punctuation_format": 32,
+        "structural_active_passive": 32
+      },
+      "rows": 128,
+      "token_aligned_lexical": 2,
+      "unique_content_pairs": 128,
+      "unique_ids": 128
+    }
+  }
+}

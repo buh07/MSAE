@@ -1,0 +1,51 @@
+{
+  "payload": {
+    "attempts_per_panel": 1,
+    "authorized_stage": "ONE_SHOT_FRESH_TECHNICAL_VALIDATION",
+    "freeze_candidate_sha256": "ba5acd6620beac3916fb74c3ae5b6868d3062180f3943659007edc3335b330c9",
+    "gate_contract": {
+      "budgets": {
+        "catastrophic": 0,
+        "primary_per_cell": 2,
+        "primary_per_panel": 6
+      },
+      "catastrophic": {
+        "norm_ratio_error": 2e-05,
+        "relative_l2": 5e-05
+      },
+      "descriptive": {
+        "atol": 2e-05,
+        "cosine_product_floor": 1e-24,
+        "cosine_reference": 2.5e-10,
+        "rtol": 5e-06
+      },
+      "primary": {
+        "norm_ratio_error": 1e-05,
+        "relative_l2": 2e-05
+      },
+      "row_norm_floor": 1e-12
+    },
+    "gpu_uuid": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+    "neural_training_authorized": false,
+    "panels": [
+      "ENGLISH_CHILDES_CTETEX",
+      "CZECH_PDT"
+    ],
+    "pud_runtime_authorized": false,
+    "review": {
+      "path": "reports/adversarial/atlas_v3_7_attempt11_freeze_review.md",
+      "reviewed_sha256": "ba5acd6620beac3916fb74c3ae5b6868d3062180f3943659007edc3335b330c9",
+      "sha256": "6990bd69ef01288264d4cc898c25a14c2c7f1ebe54180c3adfdd18c7ca635fda"
+    },
+    "schema_version": "atlas_rope_v7_attempt11_authorization_v1",
+    "science_model_calls_authorized": false,
+    "status": "AUTHORIZED",
+    "threshold_change_authorized": false
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "b3439fdc704f39c8178c48f143d51ee6bc19c7307c102c99790102f2d061662b",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "BSgqjyrEK1EuVwlnnpYPssQX2MQW99GhIRyQQABL2rt6RGPtDwnwwbaD2BN15O5MxJ5Y/+Wep5Txk7puWZmTCw=="
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "both_bindings_before_r5_access": true,
+  "candidate_manifests": [
+    {
+      "files": 15,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "6d20c743018271b3e61c40d36b3c58d5e6181a062b6663c9c778488d7bd0225c"
+    },
+    {
+      "files": 15,
+      "path": "reports/provenance/trained_copy_external_v1_r5_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "8c5da60136460fa7250701dfa28e36a58b95f7f5458f4c7bb59a6fa201014b30"
+    }
+  ],
+  "candidate_reviews": [
+    {
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r5_candidate_review.md",
+      "sha256": "41010d23f9bba436df27fc3ba5fcc2b678e39d9f63383d735c7ecffc556253e2"
+    },
+    {
+      "path": "reports/adversarial/trained_copy_external_v1_r5_candidate_review.md",
+      "sha256": "41010d23f9bba436df27fc3ba5fcc2b678e39d9f63383d735c7ecffc556253e2"
+    }
+  ],
+  "config_sha256": "ae80b44d3735eaa055008617ba316679e8841d197eb9cd3bd64acdf28c2b6598",
+  "created_ns": 1786352778736036066,
+  "failure_preservation_sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96",
+  "invalid_r2_candidate_preservation_sha256": "3dbcc809636353748f54fb27faf5f6e9f44bb2d314e46654372075d923c2e7cd",
+  "invalid_r3_candidate_preservation_sha256": "eec5f489c99a11d9aac9c785c0192045537de7cbb86365998a083b6579add3e5",
+  "invalid_r4_candidate_preservation_sha256": "42581eb0d4e77b45a6cde609b13e8ea0ca2f571b8cabd57c2853abeedcf60881",
+  "payloads_preexisting": true,
+  "recovery_binding": true,
+  "schema_version": "external_recovery_binding_v1_r5",
+  "v1_lineage": {
+    "capacity_freeze_sha256": "e4e33e3b223673aea1c62ffe17e3d029a56cd72582c60a69420a00b23c42404e",
+    "capacity_lock_sha256": "7d7cef8e04dc14b93429a91be169bb696fe17f37276404b148cef6075404384d",
+    "external_freeze_sha256": "77066e7adb5119c353fa3010557a5e05f35a6199c9096189cfd9682efa03df24",
+    "external_lock_sha256": "01242c9eb38d0ab264eebe9057acf61e20eb6e016fa368bba6773a2052520e37",
+    "v1_review_binding_sha256": "1da5b3606a900e66595acb351a78913d60e08152e542be8dd94f03b58937ff48"
+  },
+  "v1_partial_checkpoints_reused": false
+}

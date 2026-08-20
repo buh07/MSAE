@@ -1,0 +1,20 @@
+{
+  "attestation_sha256": "ae3cf9ba118964a2fbde3a1696c3cf6eb4ab6c540a703f0cf87941a2d32c44c9",
+  "authorization_sha256": "fca9c0367255415a665e3ac1d334eb0420e2ac6c2e741dc6ee384e3f95e159f2",
+  "created_time_ns": 1786336424079381784,
+  "old_review_bindings": [
+    {
+      "kind": "bridge",
+      "path": "reports/provenance/transformer_realistic_bridge_v1_candidate_r3/FROZEN_REVIEW_BINDING.json",
+      "sha256": "081041be90d59fd2d8b0b92b0c393eec3eb0de542b8e16cf2bb0acef51d884c3"
+    },
+    {
+      "kind": "methods",
+      "path": "reports/provenance/transformer_realistic_methods_v1_candidate_r3/FROZEN_REVIEW_BINDING.json",
+      "sha256": "7af99aba96dc1ca660ac897d40441e0d48badfbe0edbe6dfeca3f11cfb26a84c"
+    }
+  ],
+  "same_namespace_retry_authorized": false,
+  "schema_version": "transformer_realistic_bridge_v1_r2_review_binding_preservation_supplement",
+  "status": "PRESERVATION_REQUIREMENT_SUPPLEMENT"
+}

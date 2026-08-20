@@ -1,0 +1,46 @@
+{
+  "roles": {
+    "C1": {
+      "base_sentences": 1389,
+      "sources": {
+        "Babelscape/wikineural": 750,
+        "UD_English-LinES": 639
+      },
+      "units": 5556
+    },
+    "C2": {
+      "base_sentences": 1231,
+      "sources": {
+        "Babelscape/wikineural": 750,
+        "UD_English-LinES": 481
+      },
+      "units": 4924
+    },
+    "calibration": {
+      "base_sentences": 2479,
+      "sources": {
+        "UD_English-GUM": 1474,
+        "flaitenberger/wnut_17": 1005
+      },
+      "units": 9916
+    },
+    "discovery": {
+      "base_sentences": 11850,
+      "sources": {
+        "DFKI-SLT/few-nerd": 7975,
+        "UD_English-EWT": 3875
+      },
+      "units": 47400
+    },
+    "final": {
+      "base_sentences": 3000,
+      "labels_exposed_publicly": false,
+      "sources": {
+        "Babelscape/wikineural": 2000,
+        "UD_English-PUD": 1000
+      },
+      "units": 12000
+    }
+  },
+  "schema_version": "atlas_v1_public_split_summary"
+}

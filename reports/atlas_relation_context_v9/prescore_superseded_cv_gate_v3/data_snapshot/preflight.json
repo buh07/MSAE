@@ -1,0 +1,1 @@
+{"endpoint_specific":{"CTETEX":{"relation":true,"secondary":false},"GENTLE":{"relation":true,"secondary":false}},"manifest_sha256":"446fad5d540dc533c62e372d3a9e1bbcc4ac11432c382573318c6346986777b7","model_inference_performed":false,"neural_training_performed":false,"schema_version":"atlas_relation_context_v9_attempt13_preflight_v1","status":"PASS"}

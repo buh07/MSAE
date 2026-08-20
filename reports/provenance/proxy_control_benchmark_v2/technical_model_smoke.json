@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "gradient_shape": [
+    4,
+    768
+  ],
+  "oracle": {
+    "kind": "behavior_gradient_oracle",
+    "rank": 4,
+    "requested_rank": 16,
+    "nuisance_penalty": 1.0,
+    "minimum_eigenvalue": 1e-08,
+    "positive_eigenvalues": 4,
+    "selected_eigenvalues": [
+      0.33902862372993503,
+      0.009202782279476514,
+      0.004413458522946486,
+      0.00112039237814269
+    ]
+  },
+  "mapping_kind": "source_fitted_atom_selection",
+  "zero_patch_exact": true,
+  "scientific_rows_used": false
+}

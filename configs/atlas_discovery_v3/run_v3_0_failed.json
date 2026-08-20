@@ -1,0 +1,107 @@
+{
+  "schema_version": "atlas_discovery_v3_run_v1",
+  "status": "draft_prescore_only_no_representation_scoring",
+  "claim_scope": "reused_public_exploratory_factor_atlas_only",
+  "seed": 20260803,
+  "data_root": "data/atlas_discovery_v3",
+  "run_root": "pilot_runs/20260803_atlas_discovery_v3",
+  "session": "msae_atlas_discovery_v3_20260803",
+  "protocol": {
+    "path": "docs/rfc-atlas-v3-discovery-factor-atlas.md",
+    "sha256": "1a5d16b3e1b1539a60c93a2eaa6d602629397a1e8171ef4d8574665d8f6deb5c"
+  },
+  "sources": {
+    "EWT": {
+      "path": "data/atlas_v1/raw/UD_English-EWT/4a4d77f599ea53cc405f85d0cec4b2f14f81d42b/en_ewt-ud-train.conllu",
+      "sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143",
+      "release": "UD source revision 4a4d77f599ea53cc405f85d0cec4b2f14f81d42b"
+    },
+    "GUM": {
+      "path": "data/atlas_v1/raw/UD_English-GUM/1fe635509c649e376dfb449d528424ab78f4eaee/en_gum-ud-train.conllu",
+      "sha256": "88c410ca6a51ccc79f9536d75feb1633421691165cd191f8137f8b37569a0329",
+      "release": "UD source revision 1fe635509c649e376dfb449d528424ab78f4eaee"
+    }
+  },
+  "exact_source_paths": {
+    "EWT": "data/atlas_v1/raw/UD_English-EWT/4a4d77f599ea53cc405f85d0cec4b2f14f81d42b/en_ewt-ud-train.conllu",
+    "GUM": "data/atlas_v1/raw/UD_English-GUM/1fe635509c649e376dfb449d528424ab78f4eaee/en_gum-ud-train.conllu"
+  },
+  "forbidden_data_tokens": [
+    "c1",
+    "c2",
+    "confirmation",
+    "final",
+    "blind",
+    "private",
+    "eslspok",
+    "lines",
+    "wikineural",
+    "fewnerd",
+    "wnut",
+    "pud"
+  ],
+  "model": {
+    "name": "EleutherAI/pythia-160m-deduped",
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+    "layer": 3,
+    "dtype": "float16",
+    "cached_dtype": "float32"
+  },
+  "data": {
+    "max_length": 128,
+    "folds": 5,
+    "pairs_per_sentence": 32,
+    "separator_token_id": 0
+  },
+  "support": {
+    "min_groups": 100,
+    "min_class_groups": 25,
+    "max_rows_per_group": 128,
+    "bootstrap_draws": 500,
+    "min_finite_draws": 490
+  },
+  "interventions": {
+    "position_shift": 16,
+    "min_components": 50,
+    "proper_noun_donor_reuse_max": 1,
+    "context_donor_reuse_max": 1
+  },
+  "probe": {
+    "alphas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "scale_floor": 1e-08,
+    "raw_signal_normalized_recovery_min": 0.2,
+    "incremental_f1_min": 0.02,
+    "raw_denominator_floor": 1e-06
+  },
+  "numerical_qa": {
+    "set_size_per_source": 32,
+    "repeats": 3,
+    "atol_floor": 5e-07,
+    "atol_hard_ceiling": 2e-05,
+    "atol_multiplier": 2.0,
+    "rtol": 5e-06
+  },
+  "projection": {
+    "primary_rank": 16,
+    "sensitivity_ranks": [
+      8,
+      32
+    ],
+    "minimum_usable_rank": 8,
+    "singular_floor": 1e-08,
+    "assigned_recovery_min": 0.65,
+    "selectivity_min": 0.0
+  },
+  "implementation_inventory": {
+    "docs/rfc-atlas-v3-discovery-factor-atlas.md": "1a5d16b3e1b1539a60c93a2eaa6d602629397a1e8171ef4d8574665d8f6deb5c",
+    "requirements-atlas.lock.txt": "a009136d94bb257430faabe340481cb9528ae76ec3a24143b21da49ce1fd2fa1",
+    "scripts/atlas_discovery_v3.py": "e1b665f092ee80532fe43b7499da639fd06457d7244eaa82abf62551be171a5e",
+    "scripts/run_atlas_discovery_v3.py": "0bc69e9b26f5e9018fea1cc9d6f17db89f31ca110ee3490c437176f1ad290c35",
+    "tests/test_atlas_discovery_v3.py": "82a743c0809801bfad560826c6588f1b6b5f86bee71f5bd0327c999b0f492c1f"
+  }
+}

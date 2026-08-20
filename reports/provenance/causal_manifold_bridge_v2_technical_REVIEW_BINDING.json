@@ -1,0 +1,5 @@
+{
+  "candidate_bound_sha256": "c7a5c2d07e15374cc5eb57a76eeaa1c7cf23386c59b98899c8753ca37389076d",
+  "freeze_bound_sha256": "ffeee585d3793bb5561b6d9a40d0ce6e4b08c243eb9867fbfce63acb6605613a",
+  "schema_version": "adversarial_review_binding_v1"
+}

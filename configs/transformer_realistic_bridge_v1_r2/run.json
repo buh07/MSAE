@@ -1,0 +1,177 @@
+{
+  "attention_checks": {
+    "causal_max": 0.9,
+    "causal_min": 0.3,
+    "minimum_noncausal_above": 3,
+    "noncausal_weight_min": 0.01
+  },
+  "bootstrap": {
+    "draws": 1000,
+    "method": "linear",
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "weighting": "equal_block_paired_hierarchical"
+  },
+  "eligibility": {
+    "centered_scale_strict": 0.0001,
+    "corrupt_margin_strict_upper": 0.0,
+    "denominator_strict": 0.0001,
+    "effect_strict": 1.0,
+    "hybrid_margin_strict": 1.0,
+    "maximum_exclusion_rate": 0.04,
+    "minimum_per_block": 7,
+    "minimum_total_per_regime": 185
+  },
+  "gates": {
+    "collateral_error": {
+      "point_max": 0.05,
+      "upper_strict_max": 0.1
+    },
+    "control_margin": {
+      "lower_strict_min": 0.7,
+      "point_min": 0.8
+    },
+    "full_vocab_recovery": {
+      "lower_strict_min": 0.85,
+      "point_min": 0.9
+    },
+    "ground_truth_recovery": {
+      "lower_strict_min": 0.85,
+      "point_min": 0.9
+    },
+    "incomplete_gap": {
+      "lower_strict_min": 0.1,
+      "point_min": 0.15
+    },
+    "joint_necessity": {
+      "lower_strict_min": 0.7,
+      "point_min": 0.8
+    },
+    "routing_necessity": {
+      "lower_strict_min": 0.1,
+      "point_min": 0.2
+    },
+    "sham_specificity": {
+      "lower_strict_min": 0.7,
+      "point_min": 0.8
+    },
+    "value_necessity": {
+      "lower_strict_min": 0.1,
+      "point_min": 0.2
+    }
+  },
+  "model": {
+    "attention_gain": 0.62,
+    "bypass_gain": 0.38,
+    "distractor_score_high": -0.2,
+    "distractor_score_low": -1.5,
+    "layernorm_eps": 1e-05,
+    "learned_parameters": 0,
+    "nuisance_gain": 0.08,
+    "private_dim": 16,
+    "private_gain": 1.0,
+    "query_residual_gain": 0.08,
+    "readout_gain": 8.0,
+    "routing_causal_dim": 16,
+    "routing_nuisance_dim": 8,
+    "routing_observed_dim": 16,
+    "shared_dim": 8,
+    "shared_gain": 1.4,
+    "soft_score": 3.0,
+    "sources": 8,
+    "target_values": 16,
+    "value_nuisance_dim": 32,
+    "value_observed_dim": 48
+  },
+  "namespace": "transformer_realistic_bridge_v1_20260810r2",
+  "panels": {
+    "blocks_per_regime": 24,
+    "confirmation_seed": 2026100102,
+    "development_seed": 2026100101,
+    "noise_strata": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "rows_per_block": 8,
+    "target_values": 16
+  },
+  "qa": {
+    "oracle_atol": 2e-05,
+    "oracle_relative_l2": 1e-05,
+    "repeated_live_exact": true
+  },
+  "regimes": [
+    {
+      "bypass": false,
+      "hard_attention": true,
+      "layernorm": false,
+      "name": "ideal_hard",
+      "noise": 0.0,
+      "superposition": false
+    },
+    {
+      "bypass": false,
+      "hard_attention": false,
+      "layernorm": false,
+      "name": "soft_attention",
+      "noise": 0.0,
+      "superposition": false
+    },
+    {
+      "bypass": true,
+      "hard_attention": false,
+      "layernorm": false,
+      "name": "residual_bypass",
+      "noise": 0.0,
+      "superposition": false
+    },
+    {
+      "bypass": true,
+      "hard_attention": false,
+      "layernorm": true,
+      "name": "layernorm",
+      "noise": 0.0,
+      "superposition": false
+    },
+    {
+      "bypass": true,
+      "hard_attention": false,
+      "layernorm": true,
+      "name": "correlated_superposition",
+      "noise": 0.0,
+      "superposition": true
+    },
+    {
+      "bypass": true,
+      "hard_attention": false,
+      "layernorm": true,
+      "name": "realistic_noisy",
+      "noise": 0.08,
+      "superposition": true
+    }
+  ],
+  "runtime": {
+    "candidate_review": "reports/adversarial/transformer_realistic_bridge_v1_r2_candidate_review.md",
+    "candidate_root": "reports/provenance/transformer_realistic_bridge_v1_candidate_r4",
+    "freeze": "configs/transformer_realistic_bridge_v1_r2/FREEZE.json",
+    "frozen_review": "reports/adversarial/transformer_realistic_bridge_v1_r2_frozen_review.md",
+    "generator_lock": "configs/transformer_realistic_bridge_v1_r2/GENERATOR_LOCK.json",
+    "output_root": "results/transformer_realistic_bridge_v1_20260810r2",
+    "prepared_root": "data/transformer_realistic_bridge_v1_r2_prepared",
+    "provenance_root": "reports/provenance/transformer_realistic_bridge_v1_run_20260810r2"
+  },
+  "schema_version": "transformer_realistic_bridge_v1_config",
+  "scope": {
+    "constructed_synthetic_model": true,
+    "k2_evaluated": false,
+    "natural_model_claim": false,
+    "natural_prompt_assay": false,
+    "representation_methods_evaluated": false,
+    "technical_successor_of_prelaunch_stop": "transformer_realistic_bridge_v1_20260810",
+    "training_performed": false
+  },
+  "seed": 20261001
+}

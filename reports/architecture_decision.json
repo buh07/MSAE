@@ -1,0 +1,36 @@
+{
+  "artifacts": {
+    "k2_audit_sha256": "d1a5f14f64639946f07a7ca134ef0f31782a0528c2d12c63079d4759bdf20c5e",
+    "raw_L3_sha256": "639c89ade9347749454d1695cfa1db6e59ad52aeed2ea7d27b6c77554ee16817",
+    "raw_L4_sha256": "86e7589e659475285920bbb36fcf092397f1b4d71826f2791fc2b03990d8f2e9"
+  },
+  "g1_outcome": "equivocal",
+  "g2_outcome": "equivocal",
+  "final_test_status": "locked_unopened",
+  "g3_paper_branch_selected": false,
+  "joint_decision": "equivocal_no_decision",
+  "new_training_warranted_now": false,
+  "next_required_evidence": [
+    "implement and rerun 500-draw hierarchical discovery-refit inference",
+    "implement Tier-2 collateral and freeze a valid simple baseline",
+    "implement cross-checkpoint stability",
+    "implement matched random/sham counterfactual specificity"
+  ],
+  "not_claimed": [
+    "broad position selected",
+    "split position selected",
+    "simple equivalence",
+    "existing checkpoint validated",
+    "supported negative atlas",
+    "new learned model justified"
+  ],
+  "prescore_bundle_sha256": "e7c12f4407249ccc556c8f56234c8de36af01d29a89de525deed7506876c8c31",
+  "reason": "Mandatory refit/simultaneous inference, Tier-2 collateral, stability, and valid counterfactual specificity are missing; point diagnostics cannot authorize training.",
+  "schema_version": "atlas_v1_architecture_decision",
+  "weaker_point_diagnostics": {
+    "existing_K2_minus_simple": "negative for all four checkpoints",
+    "raw_L3_lexical_complement_selectivity": "strong positive point diagnostic",
+    "raw_L3_positional_selectivity": "negative for both split and broad candidates",
+    "simple_baseline_status": "competitive point diagnostic but formal selection/equivalence failed"
+  }
+}

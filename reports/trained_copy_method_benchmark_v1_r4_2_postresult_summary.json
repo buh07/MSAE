@@ -1,0 +1,239 @@
+{
+  "confirmation_opened": true,
+  "estimated_controller_evaluated_on_trained_copy": true,
+  "family_pass_all_checkpoints_both_panels": {
+    "ambient_pca_rank16": false,
+    "ambient_pca_rank32": true,
+    "ambient_pca_rank4": false,
+    "ambient_pca_rank64": true,
+    "ambient_pca_rank8": false,
+    "exact_head_delta": true,
+    "identity_full64": true,
+    "output_oracle_rank16": false,
+    "output_oracle_rank32": true,
+    "output_oracle_rank4": false,
+    "output_oracle_rank64": true,
+    "output_oracle_rank8": false,
+    "paired_linear_rank16": false,
+    "paired_linear_rank32": true,
+    "paired_linear_rank4": false,
+    "paired_linear_rank64": true,
+    "paired_linear_rank8": false,
+    "random_rank16": false,
+    "random_rank32": false,
+    "random_rank4": false,
+    "random_rank64": true,
+    "random_rank8": false,
+    "readout_task_projection": true,
+    "target_linear_rank16": false,
+    "target_linear_rank32": false,
+    "target_linear_rank4": false,
+    "target_linear_rank8": false,
+    "target_mean_delta": false,
+    "target_nonlinear_rank16": false,
+    "target_nonlinear_rank32": true,
+    "target_nonlinear_rank4": false,
+    "target_nonlinear_rank8": false,
+    "topk_sae_paired_selector": false,
+    "topk_sae_unpaired_selector": false,
+    "within_target_permutation": false,
+    "zero": false
+  },
+  "information_contracts": {
+    "ambient_pca": {
+      "class": "donor_compression",
+      "fit": [
+        "unordered_ambient_states"
+      ],
+      "inference": [
+        "donor_state",
+        "corrupt_state"
+      ]
+    },
+    "exact_head_delta": {
+      "class": "donor_compression",
+      "fit": "none",
+      "inference": [
+        "true_donor_delta"
+      ]
+    },
+    "identity_full64": {
+      "class": "donor_compression",
+      "fit": "none",
+      "inference": [
+        "donor_delta"
+      ]
+    },
+    "output_oracle": {
+      "class": "donor_compression",
+      "fit": [
+        "paired_delta"
+      ],
+      "inference": [
+        "donor_delta"
+      ]
+    },
+    "paired_linear": {
+      "class": "donor_compression",
+      "fit": [
+        "paired_delta"
+      ],
+      "inference": [
+        "donor_delta"
+      ]
+    },
+    "random": {
+      "class": "negative_control",
+      "fit": "none",
+      "inference": [
+        "donor_delta"
+      ]
+    },
+    "readout_task_projection": {
+      "class": "task_aware",
+      "fit": "none",
+      "inference": [
+        "donor_delta",
+        "target",
+        "contrast",
+        "readout"
+      ]
+    },
+    "target_linear": {
+      "class": "task_aware",
+      "fit": [
+        "paired_delta",
+        "target"
+      ],
+      "inference": [
+        "donor_delta",
+        "target"
+      ]
+    },
+    "target_mean_delta": {
+      "class": "label_mean_no_donor",
+      "fit": [
+        "paired_delta",
+        "target"
+      ],
+      "inference": [
+        "target"
+      ]
+    },
+    "target_nonlinear": {
+      "class": "task_aware",
+      "fit": [
+        "paired_delta",
+        "target"
+      ],
+      "inference": [
+        "donor_delta",
+        "target"
+      ]
+    },
+    "topk_sae_paired_selector": {
+      "class": "paired_donor_compression",
+      "inference": [
+        "donor_state",
+        "corrupt_state"
+      ],
+      "representation_fit": [
+        "unordered_ambient_states"
+      ],
+      "selector_fit": [
+        "paired_states"
+      ]
+    },
+    "topk_sae_unpaired_selector": {
+      "class": "donor_compression",
+      "inference": [
+        "donor_state",
+        "corrupt_state"
+      ],
+      "representation_fit": [
+        "unordered_ambient_states"
+      ],
+      "selector_fit": [
+        "unordered_ambient_states"
+      ]
+    },
+    "within_target_permutation": {
+      "class": "negative_control",
+      "fit": [
+        "permuted_paired_delta",
+        "target"
+      ],
+      "inference": [
+        "donor_delta"
+      ]
+    },
+    "zero": {
+      "class": "negative_control",
+      "fit": "none",
+      "inference": "none"
+    }
+  },
+  "passed_families": [
+    "ambient_pca_rank32",
+    "ambient_pca_rank64",
+    "exact_head_delta",
+    "identity_full64",
+    "output_oracle_rank32",
+    "output_oracle_rank64",
+    "paired_linear_rank32",
+    "paired_linear_rank64",
+    "random_rank64",
+    "readout_task_projection",
+    "target_nonlinear_rank32"
+  ],
+  "random_rank64_identity_equivalent": true,
+  "sae_scope": {
+    "selected_features": 16,
+    "token_topk": 16,
+    "width": 256
+  },
+  "schema_version": "trained_copy_method_benchmark_v1_r4_2_postresult_summary",
+  "scope": {
+    "copy_model_retraining": false,
+    "counterfactual_donor_required": true,
+    "k2_evaluated": false,
+    "natural_language_claim": false,
+    "pretrained_model": false,
+    "synthetic_only": true
+  },
+  "source_path": "results/trained_copy_method_benchmark_v1_20260810r4_2/final/result.json",
+  "source_sha256": "817afa4c2c2bccc543d92ec0975f3e1db619d5e78b29883c269fe07aca5e22f8",
+  "status": "METHOD_BENCHMARK_COMPLETE",
+  "sufficient_global_rank_bracket": {
+    "lower_exclusive": 16,
+    "upper_inclusive": 32
+  },
+  "target_nonlinear_rank16": {
+    "collateral_error": {
+      "max": 0.2098389405873604,
+      "min": 0.17346897211973555
+    },
+    "recovery": {
+      "max": 0.9532303810119629,
+      "min": 0.9276555776596069
+    },
+    "sham_specificity": {
+      "max": 0.5026484727859497,
+      "min": 0.4384896755218506
+    }
+  },
+  "target_nonlinear_rank32": {
+    "collateral_error": {
+      "max": 0.06756882859917823,
+      "min": 0.05623247473704396
+    },
+    "full_vocab_recovery": {
+      "max": 0.9431539177894592,
+      "min": 0.9314557909965515
+    },
+    "recovery": {
+      "max": 0.9959759712219238,
+      "min": 0.9932567477226257
+    }
+  }
+}

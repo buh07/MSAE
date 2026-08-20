@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "bytes": 316996,
+    "path": "data/transformer_realistic_bridge_v1_r2_prepared/development.jsonl",
+    "rows": 1152,
+    "sha256": "86026aaf762cb5e0975dbf7da6ad91ad4422d63e8ab94e279fa83f26ad2cfbec"
+  },
+  "payload_access_may_have_occurred": false,
+  "state": "PRECHECK_JOURNALED_NO_ACCESS",
+  "time_ns": 1786336933621270731
+}

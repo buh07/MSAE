@@ -1,0 +1,44 @@
+from __future__ import annotations
+import importlib.util,sys
+from pathlib import Path
+import torch
+ROOT=Path(__file__).resolve().parents[1];SPEC=importlib.util.spec_from_file_location("saecap",ROOT/"scripts/trained_copy_sae_capacity_v1.py");assert SPEC and SPEC.loader;m=importlib.util.module_from_spec(SPEC);sys.modules["saecap"]=m;SPEC.loader.exec_module(m)
+
+def test_fresh_panels():
+ c=m.cfg();ps=m.panel_set(c);a=m.freshness_audit(ps,c)
+ assert a["pass"] and {k:len(v) for k,v in ps.items()}=={"fit":2048,"development":256,"confirmation":256}
+
+def test_topk_and_orders():
+ sae=m.TopKSAE(16,7,torch.device("cpu"));x=torch.randn(12,64);assert torch.all((sae.encode(x)!=0).sum(1)<=16)
+ score=torch.tensor([2.,2.,1.]);assert m.stable_order(score)==[0,1,2]
+ cc=torch.randn(5,256);rc=torch.randn(5,256);truth=torch.randn(5,64);order=m.greedy_reconstruction_order(cc,rc,sae.decoder,truth);assert sorted(order)==list(range(256))
+ # The chunked formula must equal the direct registered greedy objective on a small prefix.
+ contrib=(cc-rc)[:,:,None]*sae.decoder[None];res=truth.clone();remain=set(range(256));ref=[]
+ for _ in range(3):
+  scored=[(float(torch.sum((res-contrib[:,j])**2)),j) for j in sorted(remain)];_,j=min(scored,key=lambda x:(x[0],x[1]));ref.append(j);res-=contrib[:,j];remain.remove(j)
+ assert order[:3]==ref
+
+def test_candidate_no_scientific_access():
+ x=m.candidate("cpu",False);assert x["status"]=="PASS" and x["scientific_panel_accessed"] is False and all(x["checks"].values())
+ assert x["expected_method_count_per_checkpoint"]==323
+
+def test_config_scope_and_crossed_budgets():
+ c=m.cfg();assert c["scope"]["k2_evaluated"] is False and c["sae"]["topks"]==c["sae"]["selector_budgets"]==[16,32,64,128,256]
+ assert len(c["sae"]["selectors"])==4 and c["sae"]["seeds"]==[9601,9602,9603]
+ assert c["linear"]["random_ranks"]==[16,32] and c["linear"]["random_seed"]==9651
+ assert len(m.expected_method_names(c))==m.expected_method_count(c)==323
+ assert sum(p.numel() for p in m.TopKSAE(16,1,torch.device("cpu")).parameters())==32832
+ assert m.confirmation_authorization(True,True,{"all_failed":True}) and not m.confirmation_authorization(False,True,{})
+
+def test_launch_contract_and_clean_namespace():
+ text=m.LAUNCHER.read_text();assert "GPU_LOCK_OWNERSHIP_TRANSFERRED" in text and "FIT_ACCESS_MAY_HAVE_OCCURRED" in text and "query-compute-apps=gpu_uuid,pid" in text
+ c=m.cfg();assert not m.rp(c,"output_root").exists() and not m.rp(c,"provenance_root").exists()
+
+def test_greedy_behavior_selector_is_complete_and_deterministic():
+ class Toy:
+  def readout(self,x):return x[...,:32]
+ n=8;g=torch.Generator().manual_seed(44);sae=m.TopKSAE(16,9,torch.device("cpu"));states={k:torch.randn(n,64,generator=g) for k in ("clean","corrupt","sham")}
+ t=torch.zeros(n,dtype=torch.long);co=torch.ones(n,dtype=torch.long);clean=torch.zeros(n,32);corrupt=torch.zeros(n,32);clean[:,0]=5;corrupt[:,1]=5
+ z={**states,"delta":states["clean"]-states["corrupt"],"sham_delta":states["sham"]-states["corrupt"],"target":t,"contrast":co,"logits_clean":clean,"logits_corrupt":corrupt}
+ one=m.greedy_behavior_order(sae,Toy(),z)
+ assert sorted(one)==list(range(256))

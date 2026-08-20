@@ -1,0 +1,39 @@
+{
+  "payload": {
+    "development_complete_absent": true,
+    "fresh_validation_values_inspected": false,
+    "model_inference_performed": false,
+    "neural_training_run": false,
+    "old_authorization_reuse_authorized": false,
+    "old_authorized_stage": "OPENED_TECHNICAL_DEVELOPMENT_ONLY",
+    "old_development_authorization": {
+      "message_sha256": "e5557c30b76634b08b4c7d928d3721f5de67e9fc4ee42cd0ec12d7ce9aafdaf5",
+      "path": "reports/atlas_rope_v7/preinference_superseded_81507aa3590a/DEVELOPMENT_AUTHORIZATION.json",
+      "sha256": "ad2fd3e235c22db7bbf74ba805275b53c6f2493633abba2a98cc895701ddbf20"
+    },
+    "old_implementation_candidate": {
+      "path": "reports/atlas_rope_v7/preinference_superseded_81507aa3590a/implementation_candidate.json",
+      "sha256": "81507aa3590a7c743aad4a55e1dbf7f707ce87d8e5cd15ecf52f3d33ad252df9"
+    },
+    "old_run_tree_inventory": {
+      "locks/": {
+        "type": "directory"
+      },
+      "locks/attempt-lifecycle.lock": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "reason": "retire-attempt10 accessed signature metadata on a verified payload and raised KeyError before development started",
+    "schema_version": "atlas_rope_v7_attempt11_preinference_supersession_v1",
+    "science_outputs_absent": true,
+    "status": "SUPERSEDED_PRE_INFERENCE_CONTROLLER_FAILURE",
+    "validation_outputs_absent": true
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "d9a2da56f8b30f97ec753258dc067b1d7b963cd99019ff1d9307fe0f45a0b945",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "ml2YnxEWHclX19dyHgs4WiWZx9ya6uLS4eFOhqDk+X4ROD1qO4oKW08AWwO9KRc28PekTmMuzypPKFT5K9ZqAw=="
+  }
+}

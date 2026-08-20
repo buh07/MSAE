@@ -1,0 +1,221 @@
+{
+  "schema_version": "proxy_control_benchmark_v2_config",
+  "namespace": "proxy_control_benchmark_v2_20260808",
+  "prospective": true,
+  "exploratory": true,
+  "seed": 20260808,
+  "models": [
+    {
+      "key": "pythia160",
+      "name": "EleutherAI/pythia-160m-deduped",
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+      "layers": [
+        1,
+        6,
+        10
+      ]
+    },
+    {
+      "key": "pythia410",
+      "name": "EleutherAI/pythia-410m",
+      "revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+      "layers": [
+        2,
+        12,
+        22
+      ]
+    },
+    {
+      "key": "qwen05",
+      "name": "Qwen/Qwen2.5-0.5B",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "layers": [
+        2,
+        12,
+        22
+      ]
+    }
+  ],
+  "imported_v1": {
+    "root": "results/proxy_control_benchmark_v1_20260808",
+    "manifest": "results/proxy_control_benchmark_v1_analysis_20260808/V1_IMPORT_MANIFEST.json",
+    "analysis_result": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+    "checkpoint_dtype": "float16_serialized_loaded_float32",
+    "methods": {
+      "k1": {
+        "branches": 1,
+        "width_multiplier": 4,
+        "topk": [
+          32
+        ],
+        "incoherence_weight": 0.0
+      },
+      "k2_equal": {
+        "branches": 2,
+        "width_multiplier": [
+          2,
+          2
+        ],
+        "topk": [
+          16,
+          16
+        ],
+        "incoherence_weight": 0.01
+      },
+      "k2_asymmetric": {
+        "branches": 2,
+        "width_multiplier": [
+          1,
+          4
+        ],
+        "topk": [
+          8,
+          24
+        ],
+        "incoherence_weight": 0.01
+      },
+      "k2_swapped": {
+        "branches": 2,
+        "width_multiplier": [
+          4,
+          1
+        ],
+        "topk": [
+          24,
+          8
+        ],
+        "incoherence_weight": 0.01
+      }
+    },
+    "seeds": [
+      101,
+      202,
+      303
+    ]
+  },
+  "panels": {
+    "prepared_root": "data/proxy_control_benchmark_v2_prepared",
+    "controlled_sources": [
+      "SOURCE_C",
+      "SOURCE_D"
+    ],
+    "concepts": [
+      "relative_position",
+      "lexical",
+      "context"
+    ],
+    "development_blocks": 16,
+    "test_blocks": 32,
+    "surfaces_per_block": 4,
+    "maximum_controlled_length": 128,
+    "maximum_model_length": 320,
+    "batch_size": 16,
+    "minimum_full_logodds_effect": 0.25,
+    "maximum_patch_norm_ratio": 2.0,
+    "natural_context_head_tokens": 96,
+    "natural_context_tail_tokens": 96,
+    "natural_minimum_documents": 30,
+    "natural_datasets": [
+      {
+        "dataset": "THUDM/LongBench",
+        "config": "qasper",
+        "split": "test",
+        "cache_fingerprint": "5d819b628bed8654"
+      },
+      {
+        "dataset": "THUDM/LongBench",
+        "config": "hotpotqa",
+        "split": "test",
+        "cache_fingerprint": "56143f1837aa3639"
+      }
+    ]
+  },
+  "linear_methods": [
+    "pca",
+    "random",
+    "task_projection",
+    "linear_erasure",
+    "paired_delta_oracle",
+    "behavior_gradient_oracle"
+  ],
+  "analysis": {
+    "rank": 16,
+    "ridge_alpha": 10.0,
+    "oracle_nuisance_penalty": 1.0,
+    "oracle_minimum_eigenvalue": 1e-08,
+    "bootstrap_draws": 500,
+    "specificity_smallest_effect": 0.1,
+    "minimum_eligibility": 0.8,
+    "minimum_recovery_ci_lower": 0.1,
+    "minimum_specificity_ci_lower": 0.1,
+    "maximum_collateral_ci_upper": 0.02,
+    "association_material_rho": 0.2,
+    "minimum_replicating_models": 2,
+    "epsilon": 1e-08,
+    "proxy_classes": {
+      "learned": [
+        "reconstruction_quality",
+        "sparsity",
+        "probe_recovery",
+        "geometric_stability"
+      ],
+      "linear": [
+        "captured_variance",
+        "rank_sparsity",
+        "probe_recovery"
+      ]
+    },
+    "decision_table": {
+      "oracle_only": "SEPARABLE_WITH_BEHAVIOR_GRADIENT_SUPERVISION_NOT_UNSUPERVISED_IDENTIFICATION",
+      "early_only": "SEPARABILITY_DECREASES_WITH_CONTEXTUAL_INTEGRATION",
+      "potency_not_precision": "PROXIES_TRACK_POTENCY_BUT_NOT_COLLATERAL_SAFE_PRECISION",
+      "all_fail": "LOCAL_LINEAR_SELECTIVE_MANIPULABILITY_UNSUPPORTED_AT_TESTED_SITES",
+      "equal_k2_passes": "HISTORICAL_K2_CAPACITY_CONFOUND_MERITS_NEW_STUDY",
+      "endpoint_ineligible": "REPORT_ENDPOINT_SPECIFIC_MISSINGNESS_WITHOUT_GLOBAL_INVALIDATION"
+    },
+    "block_estimator": "mean_of_component_block_means",
+    "hierarchical_bootstrap": {
+      "factors": [
+        "model",
+        "layer_within_model",
+        "seed_within_method",
+        "vocabulary_component_block",
+        "template_family_within_block"
+      ],
+      "transfer_directions": "fixed_required_pair",
+      "point_estimator": "equal_weight_nested_mean"
+    }
+  },
+  "synthetic_gate": {
+    "width": 128,
+    "rows": 4096,
+    "test_rows": 1024,
+    "latent": 8,
+    "ground_capture_min": 0.9,
+    "ground_leakage_max": 0.1,
+    "ground_recovery_min": 0.9,
+    "ground_specificity_min": 0.8,
+    "ground_collateral_max": 0.05,
+    "oracle_recovery_min": 0.7,
+    "oracle_specificity_min": 0.5,
+    "oracle_target_cka_min": 0.75,
+    "random_specificity_max": 0.25
+  },
+  "runtime": {
+    "dtype": "float32",
+    "deterministic": true,
+    "cublas_workspace_config": ":4096:8",
+    "offline": true,
+    "output_root": "results/proxy_control_benchmark_v2_20260808",
+    "freeze": "configs/proxy_control_benchmark_v2/FREEZE.json",
+    "tmux_prefix": "msae_proxy_control_v2",
+    "gate_poll_seconds": 10
+  },
+  "preservation": {
+    "v1_complete": "results/proxy_control_benchmark_v1_20260808/aggregate/COMPLETE.json",
+    "v1_analysis_complete": "results/proxy_control_benchmark_v1_analysis_20260808/COMPLETE.json",
+    "v4_authorization": "reports/provenance/relational_measurement_v4_authorization_v1.json",
+    "v4_closure": "reports/provenance/relational_measurement_v4_closure_v1.json",
+    "v5_authorized": false
+  }
+}

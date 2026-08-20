@@ -1,0 +1,13 @@
+{
+  "byte_identical": true,
+  "entry_count": 15,
+  "manifest_sha256": "d8ec3e714f6bac7b48ccd7a5e6ff9182101b4f5d422b3110dd46416fbbfd9de7",
+  "model_inference_performed": false,
+  "neural_training_performed": false,
+  "primary_inventory_digest": "f71b59ef0ab4fb5ee9256f3adfb4a7f2f89ccf8da543a3e2db78cf9188e2f960",
+  "primary_root": "data/atlas_relation_context_v9_attempt13/prepared",
+  "rebuilt_inventory_digest": "f71b59ef0ab4fb5ee9256f3adfb4a7f2f89ccf8da543a3e2db78cf9188e2f960",
+  "schema_version": "atlas_relation_context_v9_attempt13_label_only_rebuild_check_v1",
+  "status": "PASS",
+  "temporary_rebuild_removed": true
+}

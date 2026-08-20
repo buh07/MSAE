@@ -1,0 +1,21 @@
+{
+  "all_endpoint_smoke_checks": 512,
+  "config_sha256": "8af822e7de2be10ecc5d5545adf5f34ab0551331602c692b038d359dca5fc0e9",
+  "estimated_methods_present": false,
+  "launcher_sha256": "b5bc970d28b0e880ed43ca66c6d0d58142588b55811982626db591148a225032",
+  "method_inventory": [
+    "exact_controller",
+    "identity_full640"
+  ],
+  "plan_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "schema_version": "causal_manifold_bridge_v2_technical_candidate",
+  "scientific_panel_accessed": false,
+  "shared_bank_golden_sha256": "64c5f6eb43454654c04aa961fb07d483032a7acb5637f0fd7f576577c68089c7",
+  "source_sha256": "39156126318078c0afc4f8e6915b684ec40ca7e32c73e9b2e8903081bcc766c2",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "9aafbea7949855f698c3bf73e29e31ae7de959b8a5a4c43feceafccca650a0ac",
+    "study": "515baeb7ce300c56bab8a209fb825a2c4efe630d37b0d9e784533ab111e3d3dc"
+  },
+  "training_path_present": false
+}

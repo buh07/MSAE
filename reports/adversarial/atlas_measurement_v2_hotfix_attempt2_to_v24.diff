@@ -1,0 +1,134 @@
+--- scripts/run_msae_measurement_v2.py@attempt2
++++ scripts/run_msae_measurement_v2.py@v2.4
+@@ -286,8 +286,17 @@
+ def _fit_ridge(x: np.ndarray, labels: np.ndarray, classes: int, alphas: Sequence[float],
+                x_cal: np.ndarray, y_cal: np.ndarray, device: str) -> tuple[np.ndarray, np.ndarray, float, dict[str, float]]:
+     import torch
++    label_array=np.asarray(labels);cal_label_array=np.asarray(y_cal)
++    if (label_array.ndim!=1 or cal_label_array.ndim!=1 or len(label_array)!=len(x) or len(cal_label_array)!=len(x_cal)
++            or not np.issubdtype(label_array.dtype,np.integer) or not np.issubdtype(cal_label_array.dtype,np.integer)
++            or np.any(label_array<0) or np.any(label_array>=classes)
++            or np.any(cal_label_array<0) or np.any(cal_label_array>=classes)):
++        raise ValueError("ridge labels must be in-range integer class indices")
+     xt = torch.as_tensor(np.asarray(x, np.float32), device=device)
+-    yt = torch.nn.functional.one_hot(torch.as_tensor(labels, device=device), classes).float()
++    # Prepared labels use compact integer dtypes; one_hot requires torch.long.
++    yt = torch.nn.functional.one_hot(
++        torch.as_tensor(label_array.astype(np.int64,copy=False), device=device), classes
++    ).float()
+     xmean = xt.mean(0); ymean = yt.mean(0); xc = xt-xmean; yc = yt-ymean
+     gram = xc.T@xc; rhs = xc.T@yc
+     eig, vec = torch.linalg.eigh(gram)
+@@ -856,7 +865,7 @@
+         verify_file(root/"transforms"/spec["id"]/"COMPLETE.json",analysis["input_inventory"]["transforms"][spec["id"]])
+         for role in ROLES:
+             for branch in ("pos","content"):cache_manifest(root/"transforms"/spec["id"]/role/branch)
+-    report={"schema_version":"atlas_measurement_v2_report_v1","run_id":"20260802_atlas_measurement_v2",
++    report={"schema_version":"atlas_measurement_v2_report_v1","run_id":Path(str(cfg["run_root"])).name,
+             "claim_scope":cfg["claim_scope"],"inputs":inputs,"data":prepared,"analysis":analysis,
+             "terminal_validation":terminal_validation,"final_environment":runtime_environment(),
+             "claim_review_status":"not_run_required_before_claim"}
+--- scripts/run_msae_measurement_v2_pipeline.sh@attempt2
++++ scripts/run_msae_measurement_v2_pipeline.sh@v2.4
+@@ -5,12 +5,16 @@
+ cd "$ROOT"
+ CONFIG=${MSAE_V2_CONFIG:-configs/atlas_measurement_v2/run.json}
+ PY=.venv-atlas/bin/python
+-RUN_ROOT=$($PY - "$CONFIG" <<'PY'
++readarray -t CONFIG_VALUES < <($PY - "$CONFIG" <<'PY'
+ import json,sys
+ from pathlib import Path
+-root=Path.cwd(); cfg=json.load(open(sys.argv[1])); print((root/cfg["run_root"]).resolve())
++root=Path.cwd();cfg=json.load(open(sys.argv[1]))
++print((root/cfg["run_root"]).resolve())
++print((root/cfg["data_root"]).resolve())
++print(cfg["session"])
+ PY
+ )
++RUN_ROOT=${CONFIG_VALUES[0]};DATA_ROOT=${CONFIG_VALUES[1]};SESSION=${CONFIG_VALUES[2]}
+ CONFIG_SHA=$(sha256sum "$CONFIG" | awk '{print $1}')
+ export MSAE_V2_CONFIG_SHA256=$CONFIG_SHA
+ ATTEMPT=${MSAE_V2_ATTEMPT:-1}
+@@ -34,7 +38,7 @@
+ OWNER_PID=$$
+ OWNER_TICKS=$(pid_ticks $$)
+ HOST=$(hostname)
+-atomic_state "$RUN_ROOT/owner.json" "{\"schema_version\":\"atlas_measurement_v2_owner_v1\",\"host\":\"$HOST\",\"pid\":$OWNER_PID,\"start_ticks\":$OWNER_TICKS,\"config_sha256\":\"$CONFIG_SHA\",\"session\":\"msae_atlas_measurement_v2_20260802\",\"attempt\":$ATTEMPT}"
++atomic_state "$RUN_ROOT/owner.json" "{\"schema_version\":\"atlas_measurement_v2_owner_v1\",\"host\":\"$HOST\",\"pid\":$OWNER_PID,\"start_ticks\":$OWNER_TICKS,\"config_sha256\":\"$CONFIG_SHA\",\"session\":\"$SESSION\",\"attempt\":$ATTEMPT}"
+ 
+ active_pids=()
+ stage=starting
+@@ -91,10 +95,10 @@
+ heartbeat & HEARTBEAT_PID=$!
+ 
+ # Fail before materializing neural outputs unless there is room for two complete copies.
+-"$PY" - "$RUN_ROOT" <<'PY'
++"$PY" - "$RUN_ROOT" "$DATA_ROOT/prepared/manifest.json" <<'PY'
+ import json,shutil,sys
+ from pathlib import Path
+-root=Path(sys.argv[1]); prepared=json.load(open(Path("data/atlas_measurement_v2/prepared/manifest.json")))
++root=Path(sys.argv[1]);prepared=json.load(open(Path(sys.argv[2])))
+ rows=sum(role["activation_rows"] for role in prepared["roles"].values())
+ projected=rows*768*4*(1+2*4) + 2_000_000_000
+ free=shutil.disk_usage(root).free
+--- docs/rfc-atlas-v2-execution.md@attempt2
++++ docs/rfc-atlas-v2-execution.md@v2.4
+@@ -323,8 +323,8 @@
+ 
+ ## Staged tmux execution
+ 
+-The sole launcher is `scripts/launch_msae_measurement_v2_tmux.sh`. It creates
+-`msae_atlas_measurement_v2_20260802` and starts one coordinator process which owns the full DAG:
++The sole launcher is `scripts/launch_msae_measurement_v2_tmux.sh`. It creates the session named by
++the frozen config and starts one coordinator process which owns the full DAG:
+ 
+ 1. `prepare`: revalidate the already downloaded, digest-checked, independently signed public-source
+    grouping; build roles/pairs/rows, run prescore gates, and freeze the input inventory; inference
+@@ -437,8 +437,8 @@
+ - Invoke the sole launcher once.
+ - Verify the tmux owner marker, coordinator PID/command, live first-stage children, run config hash,
+   logs, and absence of an immediate failure marker.
+-- **Acceptance:** the complete stage DAG is owned by
+-  `msae_atlas_measurement_v2_20260802`, the coordinator is live, at least one real stage is running,
++- **Acceptance:** the complete stage DAG is owned by the config-declared tmux session, the
++  coordinator is live, at least one real stage is running,
+   and the session can proceed without Codex.
+ 
+ ### M6 — Automated terminal validation (runs after the Codex handoff)
+@@ -505,17 +505,27 @@
+ After launch (observation only):
+ 
+ ```bash
+-tmux list-windows -t msae_atlas_measurement_v2_20260802 \
++readarray -t RUN_IDENTITY < <(.venv-atlas/bin/python - <<'PY'
++import json
++from pathlib import Path
++cfg=json.load(open('configs/atlas_measurement_v2/run.json'))
++print(cfg['session'])
++print((Path.cwd()/cfg['run_root']).resolve())
++PY
++)
++SESSION=${RUN_IDENTITY[0]}; RUN_ROOT=${RUN_IDENTITY[1]}
++tmux list-windows -t "$SESSION" \
+   -F '#I #W #{pane_pid} #{pane_current_command}'
+-tmux capture-pane -pt msae_atlas_measurement_v2_20260802:coordinator -S -80
+-cat pilot_runs/20260802_atlas_measurement_v2/tmux_owner.json
+-python - <<'PY'
+-import json, os
+-p=json.load(open('pilot_runs/20260802_atlas_measurement_v2/tmux_owner.json'))
+-os.kill(int(p['coordinator_pid']), 0)
+-assert p['config_sha256']
++tmux capture-pane -pt "$SESSION":coordinator -S -80
++cat "$RUN_ROOT/owner.json"
++.venv-atlas/bin/python - "$RUN_ROOT" <<'PY'
++import json, os, sys
++from pathlib import Path
++p=json.load(open(Path(sys.argv[1])/'owner.json'))
++os.kill(int(p['pid']), 0)
++assert p['config_sha256'] and p['session']
+ PY
+-test ! -e pilot_runs/20260802_atlas_measurement_v2/FAILED.json
++test ! -e "$RUN_ROOT/FAILED.json"
+ ```
+ 
+ ## Risks and mitigations

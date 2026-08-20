@@ -1,0 +1,181 @@
+{
+  "absolute_position": {
+    "reason": "model_architecture_symmetry",
+    "required_for_revised_question": false,
+    "status": "ineligible"
+  },
+  "bootstrap": {
+    "draws": 500,
+    "interval": [
+      0.025,
+      0.975
+    ],
+    "minimum_finite": 490,
+    "quantile_method": "linear"
+  },
+  "checkpoints": [
+    {
+      "id": "g4",
+      "path": "pilot_runs/20260601_132158_k2_msae_wave2_fastdata_stream/outputs/k2_wave2_fast_g4_L3_s42_inc1e2/checkpoints/final_step249244_tok1000000016.pt",
+      "role": "candidate",
+      "sha256": "00714ca209027d418156f65dda55b90e6f1887a75ef412acb43a61359d711e97"
+    },
+    {
+      "id": "g5",
+      "path": "pilot_runs/20260601_132158_k2_msae_wave2_fastdata_stream/outputs/k2_wave2_fast_g5_L3_s43_inc1e2/checkpoints/final_step249244_tok1000000016.pt",
+      "role": "candidate",
+      "sha256": "933120800d5861dddbe99f725c04467c0684bbd069b6d9f345d2b202a43003ef"
+    },
+    {
+      "id": "g6",
+      "path": "pilot_runs/20260601_132158_k2_msae_wave2_fastdata_stream/outputs/k2_wave2_fast_g6_L3_s44_inc1e2/checkpoints/final_step249675_tok1000000042.pt",
+      "role": "candidate",
+      "sha256": "d4cd3ac52805f70bbcec60857a3c4afd6361248038a541f63a0cfcfe1b5b3e43"
+    },
+    {
+      "id": "g7",
+      "path": "pilot_runs/20260601_132158_k2_msae_wave2_fastdata_stream/outputs/k2_wave2_fast_g7_L3_s42_inc0/checkpoints/final_step249244_tok1000000016.pt",
+      "role": "negative_control",
+      "sha256": "76474c4576e024d13d6ae9a3b43f38ac51918c84db1b75121932709d5f8dbc49"
+    }
+  ],
+  "claim_scope": "broad_structural_context_position_vs_lexical_content",
+  "data": {
+    "context_pair_minimum": 20,
+    "entity_pair_minimum": 20,
+    "identity_vocabulary_max": 256,
+    "max_length": 128,
+    "sentences_per_group": 2,
+    "separator_token_id": 0
+  },
+  "data_root": "data/atlas_measurement_v2_4",
+  "existing_public_records": {
+    "calibration": {
+      "path": "data/atlas_v1/partitions/calibration.records.jsonl",
+      "sha256": "e82f0a228c91b4c6e34d632107949606879c773b5f7aea450b8a62da1d1de0ae",
+      "source": "UD_English-GUM"
+    },
+    "discovery": {
+      "path": "data/atlas_v1/partitions/discovery.records.jsonl",
+      "sha256": "12b3e8506531b0282b8faeec9ccb9700e4b328211cf2ea5522118ae69d4e36c3",
+      "source": "UD_English-EWT"
+    }
+  },
+  "gpu_uuids": [
+    "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+    "GPU-6af2c6b0-92ad-e10e-33d2-8345f38dc9a8",
+    "GPU-0782e780-b5b4-d703-844d-91b15b873591"
+  ],
+  "implementation_inventory": {
+    "docs/rfc-atlas-v2-execution.md": "7a493107579416aed86456523e1125a31a4a6336fccd058a2efce845c3c9dd72",
+    "requirements-atlas.lock.txt": "a009136d94bb257430faabe340481cb9528ae76ec3a24143b21da49ce1fd2fa1",
+    "scripts/launch_msae_measurement_v2_tmux.sh": "6bf2499ca5a6d3e56a5fe5b1cb51995280085d6eb19c6d73e29f7aed38752f67",
+    "scripts/msae_measurement_v2.py": "fc0daa2b78391340bf2e35fe4ea4792262ff8554cb3c7cb873bba12178479936",
+    "scripts/msae_measurement_v2_gpu_runner.py": "be7f577336886b28da39682c86490a8b08939d81f472e1adfd971860bff83d7c",
+    "scripts/msae_measurement_v2_run.py": "18248c54db6fc7480593aa866d301636b99faf5080b09896c4cec24010e1fdc5",
+    "scripts/run_msae_measurement_v2.py": "5a26b044a18d1a6b369d970e24248032f65aa08bc41b7761fb3ca494445eee1d",
+    "scripts/run_msae_measurement_v2_pipeline.sh": "3c1716bdfba4cbcfaf648ded32b35cda450756fe3416c3f7a3c520659079711a",
+    "scripts/train_msae_k2.py": "e29612f733efda1bd71ccaf75ab4ca23713d9d3812123c9dd7f76a0a7d431ddc",
+    "scripts/validate_msae_measurement_v2_terminal.py": "1d53be0facc300612335a8c0fa6d4e663465311842903ff17272cbac13f053e7"
+  },
+  "model": {
+    "cached_dtype": "float32",
+    "dtype": "float16",
+    "layer": 3,
+    "name": "EleutherAI/pythia-160m-deduped",
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+  },
+  "numerical_qa": {
+    "atol_floor": 5e-07,
+    "atol_hard_ceiling": 2e-05,
+    "atol_multiplier": 2.0,
+    "repeats": 3,
+    "rtol": 5e-06,
+    "set_size": 16
+  },
+  "probe": {
+    "alphas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "projection_gap_relative": 1e-06,
+    "projection_rank": 16,
+    "projection_singular_floor": 1e-08,
+    "raw_denominator_floor": 1e-06,
+    "zero_scale": 1e-08
+  },
+  "protocol": "docs/rfc-atlas-v2-execution.md",
+  "replacement_source": {
+    "files": [
+      {
+        "name": "en_eslspok-ud-train.conllu",
+        "sha256": "2d98d2a9520fbc9e20154ab0b51bb688d704c3c59b0e9ae09d82df0a4b1c6330",
+        "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-ESLSpok/f4d0ebe5eae0bc179a988934e15f018dcacfe73b/en_eslspok-ud-train.conllu"
+      },
+      {
+        "name": "en_eslspok-ud-dev.conllu",
+        "sha256": "7034c651d3deec369149139a75da31a61e673b9735ae88589695ab1d2d235000",
+        "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-ESLSpok/f4d0ebe5eae0bc179a988934e15f018dcacfe73b/en_eslspok-ud-dev.conllu"
+      },
+      {
+        "name": "en_eslspok-ud-test.conllu",
+        "sha256": "7d3b37af353205dc3b2964937e7c511e7763cdca25ec9c830638a2540ffe04be",
+        "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-ESLSpok/f4d0ebe5eae0bc179a988934e15f018dcacfe73b/en_eslspok-ud-test.conllu"
+      }
+    ],
+    "id": "UD_English-ESLSpok",
+    "release": "r2.18",
+    "revision": "f4d0ebe5eae0bc179a988934e15f018dcacfe73b"
+  },
+  "reviewer_trust": {
+    "canonical_task_identity": "/root/adversarial_plan2",
+    "raw_public_key_base64": "jHFISi2QFekAnQKa0heuqx3Mp2pBzVadjyxOTc97BEA=",
+    "sha256_fingerprint": "668e132b5263caa9082f23c25d599250cb88adaa95d662c7498ecc1245c64dac"
+  },
+  "roles": [
+    "discovery",
+    "calibration",
+    "C1",
+    "C2"
+  ],
+  "run_root": "pilot_runs/20260802_atlas_measurement_v2_4",
+  "schema_version": "atlas_measurement_v2_run_v1",
+  "seed": 20260802,
+  "session": "msae_atlas_measurement_v2_4_20260802",
+  "specificity": {
+    "branch_margin_lcb": 0.05,
+    "control_margin_lcb": 0.0,
+    "minimum_finite_fraction": 0.9,
+    "minimum_finite_pairs": 20,
+    "raw_distance_floor": 1e-08
+  },
+  "stability": {
+    "identity_margin_minimum": 0.0,
+    "nuisance_max_columns": 128,
+    "rows_per_task": 4096,
+    "same_branch_minimum": 0.9
+  },
+  "support": {
+    "max_rows_per_group": 256,
+    "min_class_groups": 20,
+    "min_finite_draws": 490,
+    "min_groups": 25
+  },
+  "tasks": {
+    "assigned_recovery_lcb": 0.65,
+    "diagnostic": [
+      "deprel_coarse",
+      "dependency_depth"
+    ],
+    "primary": [
+      "relative_quartile",
+      "head_signed_distance",
+      "token_identity_v2"
+    ],
+    "raw_signal_minimum": 0.02,
+    "selectivity_lcb": 0.0
+  }
+}

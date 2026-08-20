@@ -1,0 +1,14 @@
+{
+  "exact_child_files_compared": 36,
+  "manifest_sources_exactly_equal": true,
+  "mismatched_child_files": [],
+  "normalized_preflight_exactly_equal": true,
+  "preflight_sha256": "acab5629e7de91e901567da380c559769914e3bb7b95f0bd6528eb357a72ee4e",
+  "prepared_manifest_sha256": "b3c5e7604e5a8cdb8003526e5ed03e28a6aed103457061afce6d6fc61cfad522",
+  "primary_config_sha256": "382ca8b47560a288b20c5c0ea4b4c749d4c0c097ea19333fb92554f7a0baac11",
+  "primary_root": "data/atlas_discovery_v3_3_attempt7",
+  "rebuild_config_sha256": "17980b9baa36d7c8ee29497c61b2f6359c76086036295522ba40f67b5b5189bf",
+  "rebuild_root": "data/atlas_discovery_v3_3_attempt7_rebuild1",
+  "schema_version": "atlas_discovery_v3_3_attempt7_rebuild_check_v1",
+  "status": "PASS"
+}

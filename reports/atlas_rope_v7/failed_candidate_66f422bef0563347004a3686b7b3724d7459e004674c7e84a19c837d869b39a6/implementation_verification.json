@@ -1,0 +1,79 @@
+{
+  "bindings": {
+    "attempt10_terminal": {
+      "path": "pilot_runs/20260803_atlas_rope_technical_v6/TERMINAL.json",
+      "sha256": "9e11622335af072f6f273596917fd729fe38cfd4c65dd18b883fd43cc06dc109"
+    },
+    "czech_panel": {
+      "path": "data/atlas_rope_v7_attempt11/CZECH_PDT/panel.json",
+      "sha256": "a426eecefa94e21d5f09ab01601d2c3d43e376a3f591e2fdd8e060037114e1b0"
+    },
+    "data_manifest": {
+      "path": "data/atlas_rope_v7_attempt11/manifest.json",
+      "sha256": "08ff19d75de3a68f4c912262062c72052d0a8329cb55185ebe4180f806db2f1e"
+    },
+    "english_panel": {
+      "path": "data/atlas_rope_v7_attempt11/ENGLISH_CHILDES_CTETEX/panel.json",
+      "sha256": "471ccaf83f7f06b961a2cc0258f92c8ad682c711b97c9c77c49072a69bbcce51"
+    },
+    "plan": {
+      "path": "PLAN_ATTEMPT11.md",
+      "sha256": "d1ae2531a7e95731d9f3b06de5b95b88cdc33aad1ffb64d5addddebc76912fa7"
+    }
+  },
+  "checks": [
+    {
+      "detail": "PLAN: PASS; renewed source-amendment adversarial plan verdict SHIP",
+      "name": "plan_check",
+      "status": "PASS"
+    },
+    {
+      "files": 6,
+      "name": "python_compile",
+      "status": "PASS"
+    },
+    {
+      "files": 3,
+      "name": "shell_syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "attempt11_tests",
+      "status": "PASS",
+      "tests": 12
+    },
+    {
+      "name": "frozen_regressions",
+      "status": "PASS",
+      "tests": 155,
+      "warning": "transformers TRANSFORMERS_CACHE deprecation only"
+    },
+    {
+      "name": "frozen_science_contract",
+      "schema": "atlas_rope_v6_attempt10_science_adapter_v1",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh_output_absence",
+      "status": "PASS"
+    },
+    {
+      "name": "no_training_primitive_scan",
+      "status": "PASS"
+    },
+    {
+      "data": "raw and panel hashes bound",
+      "determinism": "frozen runtime",
+      "environment": "requirements-atlas.lock.txt",
+      "name": "repro_guard",
+      "paths": "no local home/mnt literals",
+      "secrets": "none",
+      "seeds": "config/frozen",
+      "status": "PASS"
+    }
+  ],
+  "model_inference_run": false,
+  "neural_training_run": false,
+  "schema_version": "atlas_rope_v7_attempt11_implementation_verification_v1",
+  "status": "PASS"
+}

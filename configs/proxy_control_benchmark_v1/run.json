@@ -1,0 +1,135 @@
+{
+  "schema_version": "proxy_control_benchmark_v1_config",
+  "namespace": "proxy_control_benchmark_v1_20260808",
+  "exploratory": true,
+  "seed": 20260808,
+  "models": [
+    {
+      "key": "pythia160",
+      "name": "EleutherAI/pythia-160m-deduped",
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+      "layers": [1, 6, 10]
+    },
+    {
+      "key": "pythia410",
+      "name": "EleutherAI/pythia-410m",
+      "revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+      "layers": [2, 12, 22]
+    },
+    {
+      "key": "qwen05",
+      "name": "Qwen/Qwen2.5-0.5B",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "layers": [2, 12, 22]
+    }
+  ],
+  "development_corpora": [
+    {
+      "key": "wikitext103",
+      "dataset": "wikitext",
+      "config": "wikitext-103-raw-v1",
+      "split": "train",
+      "text_fields": ["text"],
+      "cache_fingerprint": "b08601e04326c79dfdd32d625aee71d232d685c3"
+    },
+    {
+      "key": "dolly15k",
+      "dataset": "databricks/databricks-dolly-15k",
+      "config": null,
+      "split": "train",
+      "text_fields": ["instruction", "context", "response"],
+      "cache_fingerprint": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a"
+    }
+  ],
+  "controlled_sources": ["SOURCE_A", "SOURCE_B"],
+  "concepts": ["relative_position", "lexical", "context"],
+  "panel": {
+    "development_components_per_concept": 48,
+    "test_components_per_concept": 128,
+    "candidate_multiplier": 4,
+    "maximum_length": 128,
+    "batch_size": 24,
+    "minimum_full_logodds_effect": 0.25,
+    "maximum_patch_norm_ratio": 2.0
+  },
+  "training": {
+    "activation_tokens_per_corpus": 2048,
+    "maximum_text_rows_per_corpus": 4096,
+    "batch_size": 256,
+    "steps": 600,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "seeds": [101, 202, 303],
+    "log_every": 50,
+    "methods": {
+      "k1": {"branches": 1, "width_multiplier": 4, "topk": [32], "incoherence_weight": 0.0},
+      "k2_equal": {"branches": 2, "width_multiplier": [2, 2], "topk": [16, 16], "incoherence_weight": 0.01},
+      "k2_asymmetric": {"branches": 2, "width_multiplier": [1, 4], "topk": [8, 24], "incoherence_weight": 0.01},
+      "k2_swapped": {"branches": 2, "width_multiplier": [4, 1], "topk": [24, 8], "incoherence_weight": 0.01}
+    }
+  },
+  "linear_methods": ["pca", "random", "task_projection", "linear_erasure", "paired_delta_oracle"],
+  "analysis": {
+    "rank": 16,
+    "bootstrap_draws": 500,
+    "confidence_quantiles": [0.025, 0.5, 0.975],
+    "specificity_smallest_effect": 0.1,
+    "finite_fraction_minimum": 0.98,
+    "ridge_alpha": 10.0,
+    "epsilon": 1e-8,
+    "decision_table": {
+      "proxy_high_control_low": "PROXIES_SYSTEMATICALLY_OVERSTATE_CONTROLLABILITY",
+      "oracle_only": "SEPARABLE_WITH_COUNTERFACTUAL_SUPERVISION_NOT_UNSUPERVISED_IDENTIFICATION",
+      "early_only": "SEPARABILITY_DECREASES_WITH_CONTEXTUAL_INTEGRATION",
+      "all_fail": "NOT_LINEARLY_SELECTIVELY_MANIPULABLE_AT_TESTED_SITES",
+      "equal_k2_passes": "HISTORICAL_K2_CAPACITY_CONFOUND"
+    }
+  },
+  "synthetic": {
+    "width": 128,
+    "rows": 4096,
+    "test_rows": 1024,
+    "correlations": [0.0, 0.5, 0.9],
+    "shared_scales": [0.0, 0.5],
+    "nonlinear": [false, true],
+    "noise_scale": 0.05,
+    "training_steps": 500
+  },
+  "runtime": {
+    "dtype": "float32",
+    "deterministic": true,
+    "cublas_workspace_config": ":4096:8",
+    "offline": true,
+    "output_root": "results/proxy_control_benchmark_v1_20260808",
+    "freeze": "configs/proxy_control_benchmark_v1/FREEZE_v3.json",
+    "heartbeat_seconds": 30,
+    "tmux_prefix": "msae_proxy_control_v1"
+  },
+  "preservation": {
+    "retired_preopening_freeze_v1": {
+      "path": "configs/proxy_control_benchmark_v1/FREEZE.json",
+      "sha256": "175e07227e5cd92f8da7dcb0742a9706c89a49a3f1ad279fe9d0bf975742682a"
+    },
+    "retired_preopening_freeze_v2": {
+      "path": "configs/proxy_control_benchmark_v1/FREEZE_v2.json",
+      "sha256": "8d9baf8f541b73bb35db43e1529e6a5e4933835d5accea229a326478df907913"
+    },
+    "v4_prepared": {
+      "path": "data/relational_measurement_v4/prepared.json",
+      "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+    },
+    "v4_result": {
+      "path": "results/relational_measurement_v4_opened_development1/result.json",
+      "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+    },
+    "v4_authorization": {
+      "path": "reports/provenance/relational_measurement_v4_authorization_v1.json",
+      "sha256": "d4c914b2d0ae2d41eaccb1aeb24765b979fdb8bb4a56074b1d7df55c58a558ab"
+    },
+    "v4_closure": {
+      "path": "reports/provenance/relational_measurement_v4_closure_v1.json",
+      "sha256": "a23d0fe2063ff34c273ba053614bd885b728af689d88933ad07cd12ed019a3b3"
+    },
+    "v5_authorized": false
+  }
+}

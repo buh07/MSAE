@@ -1,0 +1,26 @@
+{
+  "command": [
+    ".venv-atlas/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_msae_measurement_v2.py",
+    "tests/test_msae_measurement_v2_run.py"
+  ],
+  "config_sha256": "1a38042004ae18f34524508dda5d26d836530a16910a42b6259cfaf4cae3b86e",
+  "ended_unix": 1785716211.6180646,
+  "exit_code": 0,
+  "output": "......................................................                   [100%]\n54 passed in 2.66s\n",
+  "pipeline_implementation_sha256": "3c1716bdfba4cbcfaf648ded32b35cda450756fe3416c3f7a3c520659079711a",
+  "protocol_sha256": "7a493107579416aed86456523e1125a31a4a6336fccd058a2efce845c3c9dd72",
+  "regression_contracts": [
+    "production np.int32 labels are numerically identical to np.int64 labels",
+    "all training/calibration label dtype/range/rank/length contract failures reject",
+    "pipeline data root and session plus final report run_id are derived from config",
+    "operator documentation derives run identity from config"
+  ],
+  "run_implementation_sha256": "5a26b044a18d1a6b369d970e24248032f65aa08bc41b7761fb3ca494445eee1d",
+  "schema_version": "atlas_measurement_v2_hotfix_tests_v1",
+  "started_unix": 1785716208.2354202,
+  "test_file_sha256": "2dca2133375ed4a6f0551d1fa94f47a9ff8aab9242d184596646a1fa12fd07bc"
+}

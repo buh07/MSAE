@@ -1,0 +1,9 @@
+{
+  "authorization_sha256": "f1d35e9fbaaf9d30e189a87bd0c2a4164d5f5b3dda7138753e5f67d304bde89f",
+  "payload_access_may_have_occurred": true,
+  "payload_bytes": 136836,
+  "payload_sha256": "3a04e8b5f9931963da78934f1decce15fa90182b351d9ff5188579dd520a55a3",
+  "schema_version": "constructed_copy_circuit_v1_1_authorization_event",
+  "state": "CLOSED_AUTHORIZED",
+  "time_ns": 1786328658234788538
+}

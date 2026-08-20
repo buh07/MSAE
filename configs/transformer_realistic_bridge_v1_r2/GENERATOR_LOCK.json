@@ -1,0 +1,126 @@
+{
+  "candidate_inventory": [
+    {
+      "bytes": 67479,
+      "path": "PAPER.md",
+      "sha256": "86b4e561ecb6136915785d80accb2a474fc7ccb3a509df5453636e6ac22e631e"
+    },
+    {
+      "bytes": 31906,
+      "path": "PLAN_TRANSFORMER_REALISTIC_BRIDGE_V1_R2.md",
+      "sha256": "50f1706ac7e9fd544e932b0096cbc4635a27cfbf44a5f5dae5aa0c417735a4e0"
+    },
+    {
+      "bytes": 4570,
+      "path": "configs/transformer_realistic_bridge_v1_r2/run.json",
+      "sha256": "0da936cc6a060ab56b02574f6d298602658815ddc96f9ebcac481f4d7d890650"
+    },
+    {
+      "bytes": 2672,
+      "path": "reports/adversarial/transformer_realistic_bridge_v1_r2_candidate_review.md",
+      "sha256": "3a65809a2d632943c6bc63669dbdbac361bd14c2acc9a43a716fef37d704579a"
+    },
+    {
+      "bytes": 2509,
+      "path": "reports/adversarial/transformer_realistic_bridge_v1_r2_plan_review.md",
+      "sha256": "8fab129c3c233f2f71a47fa58a6db14472f42866b1c65e9ec63a239b1315c786"
+    },
+    {
+      "bytes": 1133,
+      "path": "reports/claim_review/constructed_copy_circuit_v1_1_post_result_claim_review.md",
+      "sha256": "7966477d753f48fe7b9d930584c3bb048cac44b5922f89eca4cd7bfa8bf1b7c2"
+    },
+    {
+      "bytes": 124002,
+      "path": "reports/paper_claim_ledger_v1.json",
+      "sha256": "be7d189591ec83aa31f4241e16f007b18319713fb216b381c07586ee1342057b"
+    },
+    {
+      "bytes": 23995,
+      "path": "reports/provenance/constructed_copy_circuit_v1_1_postresult/PRESERVATION.json",
+      "sha256": "9e29143713438daea839fd89616a27fe9b7bd2934220474e8806a9ecfc15d561"
+    },
+    {
+      "bytes": 503,
+      "path": "reports/provenance/constructed_copy_circuit_v1_1_postresult/PRESERVATION_FIELD_CLARIFICATION.json",
+      "sha256": "c8b99c7a3caf7ab364189b062d5bca12e2aab38195b294be5187f5ad99296dcd"
+    },
+    {
+      "bytes": 956,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_candidate_r4/CALIBRATION.json",
+      "sha256": "d425550c5b5125e72b34bc40e2468d7cddc350de91522c7bcae78e16378d3231"
+    },
+    {
+      "bytes": 174162,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_candidate_r4/SMOKE_CPU.json",
+      "sha256": "22103077b9fe1682cb80b149a8baeb4c4f780ec95daf35eeb7c11e9d32bbe3bc"
+    },
+    {
+      "bytes": 174840,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_candidate_r4/SMOKE_GPU.json",
+      "sha256": "bca59605552c05c4dea2734fec05db2f8e65076cae442cfeb381be20bf21bbce"
+    },
+    {
+      "bytes": 1190,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_recovery/PRELOCK_PARITY.json",
+      "sha256": "f21df200be8600d01eb5f001a4eb3ea23e615e37fee76df848aa20fc79534952"
+    },
+    {
+      "bytes": 1703,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_recovery/RECOVERY_AUTHORIZATION.json",
+      "sha256": "fca9c0367255415a665e3ac1d334eb0420e2ac6c2e741dc6ee384e3f95e159f2"
+    },
+    {
+      "bytes": 912,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_recovery/REVIEW_BINDING_PRESERVATION_SUPPLEMENT.json",
+      "sha256": "77a3faf06cf3c5b80de41cf2dd3e8240c897c2bd20b6451f771523a7fbaa6310"
+    },
+    {
+      "bytes": 1217,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_recovery/SUPERSEDED_PARITY_INDEX.json",
+      "sha256": "efff54774b1390960a3b4f50d73d0a315830667089b6bdced49a1161940ba7f3"
+    },
+    {
+      "bytes": 402,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_run_20260810/PRELAUNCH_TERMINAL.json",
+      "sha256": "2d5c669c70384de34ac168aab82a7aa1769afbbce515e4a01b09228bbee44798"
+    },
+    {
+      "bytes": 402,
+      "path": "reports/provenance/transformer_realistic_methods_v1_run_20260810/PRELAUNCH_TERMINAL.json",
+      "sha256": "f9ace4749d38a8ecc9ba8eaaafad1becd63c87d724c9798dd1f492832abcaad9"
+    },
+    {
+      "bytes": 3559,
+      "path": "scripts/launch_transformer_realistic_bridge_v1_r2_tmux.sh",
+      "sha256": "1a0155622d788d60311e1807d7bf3cc9af790cb856bd57b395c8759c3177b588"
+    },
+    {
+      "bytes": 5563,
+      "path": "scripts/preserve_constructed_copy_circuit_v1_1.py",
+      "sha256": "0a9cb83038a6e80521a7686f0ef315cd1d21052c77f2c5252ea061f7117f2ec5"
+    },
+    {
+      "bytes": 102113,
+      "path": "scripts/transformer_realistic_bridge_v1_r2.py",
+      "sha256": "1d37abb9b68056b1d22521a6415b952942b1bff41ae13ebd12660e5bbc94c46d"
+    },
+    {
+      "bytes": 8725,
+      "path": "scripts/verify_transformer_realistic_bridge_v1_r2_recovery.py",
+      "sha256": "375f427d056c78376da21e201180900762f74a02c9c5c965f8b41267fac20af9"
+    },
+    {
+      "bytes": 10206,
+      "path": "tests/test_transformer_realistic_bridge_v1_r2.py",
+      "sha256": "66be8267c79f665649ab5d144903bef222cebbf38fe6a41b138ed39bb6cd2435"
+    }
+  ],
+  "candidate_inventory_sha256": "2496952c6717f3b8d584df724ba7fffc4125b26c636c0de0784aef810de66c59",
+  "config_sha256": "0da936cc6a060ab56b02574f6d298602658815ddc96f9ebcac481f4d7d890650",
+  "kind": "bridge",
+  "schema_version": "transformer_realistic_bridge_v1_generator_lock",
+  "scientific_payloads_generated": false,
+  "scientific_seed_values_locked": true,
+  "status": "LOCKED_BEFORE_SCIENTIFIC_PAYLOAD_GENERATION"
+}

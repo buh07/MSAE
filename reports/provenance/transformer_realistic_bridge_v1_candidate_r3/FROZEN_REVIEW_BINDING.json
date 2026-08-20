@@ -1,0 +1,8 @@
+{
+  "candidate_inventory_sha256": "08d5727a9784bee0926b19c0ceda87c27acf28ff65ecd1e2695a9f8177139f95",
+  "freeze_sha256": "59491a943d612f8d394dbfe2263a73bd87edb5e0debb17dec7efc36e20ec841a",
+  "review_path": "reports/adversarial/transformer_realistic_bridge_v1_frozen_review.md",
+  "review_sha256": "204cad34d2bd6ab4fb59569d230187db78b610a8857c549a12f09719064f4dee",
+  "schema_version": "transformer_realistic_bridge_v1_frozen_review_binding",
+  "status": "BOUND"
+}

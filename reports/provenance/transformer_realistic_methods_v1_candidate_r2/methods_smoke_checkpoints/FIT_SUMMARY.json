@@ -1,0 +1,84 @@
+{
+  "learned": {
+    "sae_seed1701": {
+      "final_loss": 0.21617698669433594,
+      "initial_loss": 0.21957598626613617,
+      "seed": 1701,
+      "selected_features": [
+        90,
+        52,
+        153,
+        31,
+        85,
+        139,
+        39,
+        115
+      ],
+      "steps": 2
+    },
+    "sae_seed1702": {
+      "final_loss": 0.2188595086336136,
+      "initial_loss": 0.21860849857330322,
+      "seed": 1702,
+      "selected_features": [
+        79,
+        69,
+        180,
+        50,
+        250,
+        34,
+        98,
+        71
+      ],
+      "steps": 2
+    },
+    "sae_seed1703": {
+      "final_loss": 0.21174591779708862,
+      "initial_loss": 0.21472051739692688,
+      "seed": 1703,
+      "selected_features": [
+        122,
+        33,
+        223,
+        179,
+        19,
+        16,
+        170,
+        60
+      ],
+      "steps": 2
+    },
+    "supervised_seed2701": {
+      "final_loss": 236.62611389160156,
+      "initial_loss": 236.2016143798828,
+      "seed": 2701,
+      "steps": 2
+    },
+    "supervised_seed2702": {
+      "final_loss": 239.97227478027344,
+      "initial_loss": 238.06887817382812,
+      "seed": 2702,
+      "steps": 2
+    },
+    "supervised_seed2703": {
+      "final_loss": 238.088623046875,
+      "initial_loss": 234.76321411132812,
+      "seed": 2703,
+      "steps": 2
+    }
+  },
+  "nonlearned": [
+    "ground_truth",
+    "incomplete_routing_only",
+    "incomplete_private_only",
+    "incomplete_shared_only",
+    "incomplete_routing_private",
+    "incomplete_routing_shared",
+    "incomplete_attention_only",
+    "incomplete_bypass_only",
+    "random_rank8",
+    "pca_rank8",
+    "diffmean",
+    "leace_style"
+  ]
+}

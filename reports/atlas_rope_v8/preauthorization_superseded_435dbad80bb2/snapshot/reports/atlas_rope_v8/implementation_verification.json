@@ -1,0 +1,139 @@
+{
+  "activation_extraction_performed": false,
+  "checks": {
+    "basedpyright": {
+      "status": "UNAVAILABLE"
+    },
+    "deep_import_cache_source_verification": {
+      "activation_complete_sha256": {
+        "EWT": "2c6f57f788981198d2537fd605d2dadef491febc844938c3d4e5fc3b8aa6b88a",
+        "GUM": "65c29542bea7badb84694755774f62da95eefb40e7082a3dcac113b6c5b9791a"
+      },
+      "adapter_sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0",
+      "attempt11_terminal_sha256": "ad7fd3b4de265879737774df38220956a4947298f3122f37b207c2bea46285d1",
+      "attempt11_tree_inventory_sha256": "7e6c0006ddf8800d4fcda2ef759f6e00ddf16d817b61542e60e6125e0791c591",
+      "cache_rows": {
+        "EWT": 183771,
+        "GUM": 157398
+      },
+      "config_sha256": "406270b0f81ce487f22d230ddc4b0fc025ac99de131181b5454e8d348b6be3c2",
+      "cross_panel": {
+        "baseline_runtime_pass": true,
+        "rope_translation_pass": true
+      },
+      "deep_cache_verified": true,
+      "panel_complete_sha256": {
+        "CZECH_PDT": "b226437653617a1c0df5be6acb2fadac33b12da450f9e32c6fd76f230b1dbce4",
+        "ENGLISH_CHILDES_CTETEX": "bf5b79715655bb5b32e26ba6918f25568464288103d95f35bf3c538033fab0bf"
+      },
+      "panel_names": [
+        "CZECH_PDT",
+        "ENGLISH_CHILDES_CTETEX"
+      ],
+      "qa_complete_sha256": {
+        "EWT": "a767ddcb595de1ebcc3ad2dd86c7f541260b32a0473ff370569d860575aa3b44",
+        "GUM": "3b4520b392cddf190dcbbfd3813f16b11e11c8c4aba8e5ffa99d326205935400"
+      }
+    },
+    "full_historical_suite": {
+      "attempt12_test_failures": 0,
+      "command": ".venv-atlas/bin/python -m pytest -q -p no:cacheprovider tests",
+      "failed": 11,
+      "failure_groups": [
+        "Attempt-9/10 historical tree-identity tests reject subsequently terminalized artifact trees",
+        "MSAE completion continuation tests assume an absent run root that now exists from completed history",
+        "MSAE completion summary tests detect a pre-existing requirements-atlas.lock.txt freeze mismatch"
+      ],
+      "passed": 496,
+      "status": "KNOWN_PREEXISTING_FAILURES_OUTSIDE_ATTEMPT12_SCOPE",
+      "warnings": 1
+    },
+    "gpu0_mapping_dry_preflight": {
+      "command": "CUDA_VISIBLE_DEVICES=0 verify_gpu_mapping (Torch device query only; no model load/forward)",
+      "physical_gpu0_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+      "status": "PASS",
+      "visible_cuda0_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+      "visible_device_count": 1
+    },
+    "plan_adversarial": {
+      "path": "reports/adversarial/atlas_v3_8_attempt12_plan_review.md",
+      "sha256": "4703e1fe07efc0bd41a6f36fe253b28f77d31867ffc2a8bca84ce768ab504c8d",
+      "status": "SHIP"
+    },
+    "plan_gate": {
+      "command": "check-plan --path PLAN_ATTEMPT12.md",
+      "plan_sha256": "905a7545db682c473a4dad0904a18fbab19be49d5e6d86de099efccc34f2d067",
+      "status": "PASS"
+    },
+    "python_compile": {
+      "command": ".venv-atlas/bin/python -m py_compile scripts/atlas_rope_v8.py scripts/run_atlas_rope_v8.py",
+      "status": "PASS"
+    },
+    "ruff": {
+      "status": "UNAVAILABLE"
+    },
+    "shell_syntax": {
+      "command": "bash -n scripts/run_atlas_rope_v8_pipeline.sh scripts/launch_atlas_rope_v8_tmux.sh",
+      "status": "PASS"
+    },
+    "static_operation_audit": {
+      "activation_extraction_path": false,
+      "fresh_validation_path": false,
+      "model_forward_path": false,
+      "neural_training_path": false,
+      "reviewed_paths": [
+        "PLAN_ATTEMPT12.md",
+        "scripts/atlas_rope_v8.py",
+        "scripts/run_atlas_rope_v8.py",
+        "scripts/run_atlas_rope_v8_pipeline.sh",
+        "scripts/launch_atlas_rope_v8_tmux.sh",
+        "tests/test_atlas_rope_v8.py",
+        "configs/atlas_rope_v8/recovery.json"
+      ],
+      "status": "PASS"
+    },
+    "targeted_tests": {
+      "command": ".venv-atlas/bin/python -m pytest -q -p no:cacheprovider tests/test_atlas_rope_v8.py tests/test_atlas_rope_v7.py",
+      "passed": 35,
+      "status": "PASS",
+      "warnings": 1
+    }
+  },
+  "fresh_validation_performed": false,
+  "implementation_inventory": {
+    "PLAN_ATTEMPT12.md": {
+      "bytes": 14880,
+      "sha256": "905a7545db682c473a4dad0904a18fbab19be49d5e6d86de099efccc34f2d067"
+    },
+    "configs/atlas_rope_v8/recovery.json": {
+      "bytes": 26957,
+      "sha256": "406270b0f81ce487f22d230ddc4b0fc025ac99de131181b5454e8d348b6be3c2"
+    },
+    "scripts/atlas_rope_v8.py": {
+      "bytes": 22829,
+      "sha256": "3c4395b68bd38b7bfc0a71a7c7ccf512e1afdb59163c5df72286adc02caba40a"
+    },
+    "scripts/launch_atlas_rope_v8_tmux.sh": {
+      "bytes": 849,
+      "sha256": "db917b29705aa7784fd9bfaf18fbd103b254313ceaee0d8c2f67ca70dd34b769"
+    },
+    "scripts/run_atlas_rope_v8.py": {
+      "bytes": 30128,
+      "sha256": "c696750da67df6bc529e858c26a3aa0ab010343e575b75cf586f34e2c9b2f895"
+    },
+    "scripts/run_atlas_rope_v8_pipeline.sh": {
+      "bytes": 1294,
+      "sha256": "452eaf75247301fc6108d5d5d7292e03d85cad6aacf264a19646c6270d14f115"
+    },
+    "tests/test_atlas_rope_v8.py": {
+      "bytes": 6939,
+      "sha256": "892ef7be007f1a8573716d41cf719f0b8ec01d569f6d282f915e2b5c09cc4215"
+    }
+  },
+  "model_forward_performed": false,
+  "neural_training_run": false,
+  "schema_version": "atlas_rope_v8_attempt12_implementation_verification_v1",
+  "scientific_scoring_performed": false,
+  "scope": "ATTEMPT12_ANALYSIS_ONLY_RECOVERY",
+  "status": "PASS"
+}

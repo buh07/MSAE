@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_ROOT="/jumbo/lisp/f004ndc"
-MSAE_ROOT="${REPO_ROOT}/MSAE"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+MSAE_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+REPO_ROOT="${MSAE_ROOT}"
 TRAIN_SCRIPT="${MSAE_ROOT}/scripts/train_msae_k2.py"
 WORKER_SCRIPT="${MSAE_ROOT}/scripts/run_msae_k2_worker.py"
 EVAL_WAVE1_SCRIPT="${MSAE_ROOT}/scripts/evaluate_msae_k2_wave1.py"

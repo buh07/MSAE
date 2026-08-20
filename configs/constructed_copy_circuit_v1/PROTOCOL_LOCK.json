@@ -1,0 +1,59 @@
+{
+  "confirmation_payload": {
+    "bytes": 136420,
+    "path": "data/constructed_copy_circuit_v1_prepared/confirmation.jsonl",
+    "sha256": "79fe34ff4c931abb2ddb4f27bf2558de162af8a58b9fcfd85e8c20401d13e899"
+  },
+  "equations": "PLAN_CONSTRUCTED_COPY_CIRCUIT_V1.md",
+  "general_natural_model_claim": false,
+  "items": [
+    {
+      "bytes": 4035,
+      "path": "configs/constructed_copy_circuit_v1/run.json",
+      "sha256": "a0a93859fe804d4735e8a3e098bf5e7e82e57d6098a5e3eb7ab1752f986cd1a8"
+    },
+    {
+      "bytes": 22435,
+      "path": "PLAN_CONSTRUCTED_COPY_CIRCUIT_V1.md",
+      "sha256": "000267cb66cb2088fb7fa3b830e447b55585f7202a84f6404021d338fba73d91"
+    },
+    {
+      "bytes": 133359,
+      "path": "data/constructed_copy_circuit_v1_prepared/development.jsonl",
+      "sha256": "3f0b3f1f9a31241f2161279aee998a716363296e8418169405c1e8c66327ae5b"
+    },
+    {
+      "bytes": 136420,
+      "path": "data/constructed_copy_circuit_v1_prepared/confirmation.jsonl",
+      "sha256": "79fe34ff4c931abb2ddb4f27bf2558de162af8a58b9fcfd85e8c20401d13e899"
+    },
+    {
+      "bytes": 8136,
+      "path": "data/constructed_copy_circuit_v1_prepared/smoke_fixture.jsonl",
+      "sha256": "a1bee7b9a355abbd681db97504d5d35c2b69cd05bbe5f85e198c7488a0367ea7"
+    },
+    {
+      "bytes": 133366,
+      "path": "data/constructed_copy_circuit_v1_prepared/calibration_rows.jsonl",
+      "sha256": "445944e6f8a0f8a5b5b1256ab19c3ae1885619114d6d77c063ac53622a6af3fa"
+    },
+    {
+      "bytes": 597,
+      "path": "data/constructed_copy_circuit_v1_prepared/calibration_fixture.json",
+      "sha256": "e98399d4519d7b779cb31dbfa0af49000857b597a8e199373b2662dc4339ce8b"
+    },
+    {
+      "bytes": 932,
+      "path": "data/constructed_copy_circuit_v1_prepared/PREPARED.json",
+      "sha256": "0edd5e8d0d456ba530dc763ecb7fdd1c9a6f11baab7051a96796a3122f02ead9"
+    }
+  ],
+  "items_sha256": "097466e31bd925a702462843cf7d4b2254ccf56f2bb10daddbfb7e009f704a2f",
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_protocol_lock",
+  "single_constructed_model": true,
+  "status": "LOCKED_BEFORE_MODEL_SMOKE",
+  "training_performed": false
+}

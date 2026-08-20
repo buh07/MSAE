@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSAE Project Presentation</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap");
+
+    :root {
+      --bg-1: #f7f2e8;
+      --bg-2: #eef6f3;
+      --ink: #11263b;
+      --ink-soft: #3d5870;
+      --panel: rgba(255, 255, 255, 0.88);
+      --panel-strong: rgba(255, 255, 255, 0.94);
+      --line: rgba(17, 38, 59, 0.13);
+      --teal: #0b8f7d;
+      --teal-soft: rgba(11, 143, 125, 0.13);
+      --gold: #c58b11;
+      --gold-soft: rgba(197, 139, 17, 0.12);
+      --red: #c75353;
+      --red-soft: rgba(199, 83, 83, 0.12);
+      --blue: #2d79c7;
+      --blue-soft: rgba(45, 121, 199, 0.11);
+      --shadow: 0 18px 48px rgba(35, 63, 94, 0.14);
+      --mono: "JetBrains Mono", monospace;
+      --sans: "Source Sans 3", "Segoe UI", sans-serif;
+      --display: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      color: var(--ink);
+      font-family: var(--sans);
+      background:
+        radial-gradient(circle at 10% 8%, rgba(38, 156, 142, 0.18), transparent 34%),
+        radial-gradient(circle at 88% 12%, rgba(222, 169, 82, 0.18), transparent 30%),
+        linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(17, 38, 59, 0.028) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(17, 38, 59, 0.02) 1px, transparent 1px);
+      background-size: 26px 26px;
+      mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+      z-index: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(247, 242, 232, 0.78);
+      border-bottom: 1px solid rgba(17, 38, 59, 0.09);
+    }
+
+    .topbar-inner {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0.8rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 1rem;
+      color: #153450;
+      letter-spacing: 0.02em;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .nav a {
+      text-decoration: none;
+      font-size: 0.82rem;
+      color: #45617b;
+      padding: 0.38rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(17, 38, 59, 0.11);
+      background: rgba(255, 255, 255, 0.72);
+      transition: 160ms ease;
+    }
+
+    .nav a:hover {
+      color: #113556;
+      border-color: rgba(11, 143, 125, 0.34);
+      transform: translateY(-1px);
+    }
+
+    .deck {
+      position: relative;
+      z-index: 1;
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .slide {
+      min-height: calc(100vh - 5rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 0;
+      scroll-margin-top: 5rem;
+    }
+
+    .panel {
+      width: 100%;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: clamp(1.15rem, 2.4vw, 2rem);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(130deg, rgba(255, 255, 255, 0.42), transparent 36%),
+        radial-gradient(circle at 100% 0%, rgba(11, 143, 125, 0.08), transparent 32%);
+      opacity: 0.95;
+    }
+
+    .panel > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-bottom: 0.85rem;
+      color: #1a6784;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 1.6rem;
+      height: 1px;
+      background: currentColor;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--display);
+      color: #102941;
+      line-height: 1.08;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.8vw, 4rem);
+      max-width: 12ch;
+      margin-bottom: 0.8rem;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2.45rem);
+      margin-bottom: 0.9rem;
+      max-width: 23ch;
+    }
+
+    h3 {
+      font-size: clamp(1.05rem, 1.7vw, 1.34rem);
+      margin-bottom: 0.4rem;
+    }
+
+    h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #355474;
+    }
+
+    p,
+    li {
+      color: var(--ink-soft);
+      font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+      line-height: 1.52;
+    }
+
+    .lead {
+      font-size: clamp(1.05rem, 1.45vw, 1.22rem);
+      color: #193750;
+      max-width: 72ch;
+    }
+
+    .caption {
+      font-size: 0.9rem;
+      color: #607690;
+    }
+
+    .mono {
+      font-family: var(--mono);
+      font-size: 0.92em;
+      color: #163958;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 1rem;
+    }
+
+    .chip {
+      border-radius: 999px;
+      padding: 0.42rem 0.78rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 1px solid transparent;
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .chip.teal {
+      color: var(--teal);
+      background: var(--teal-soft);
+      border-color: rgba(11, 143, 125, 0.22);
+    }
+
+    .chip.gold {
+      color: #956300;
+      background: var(--gold-soft);
+      border-color: rgba(197, 139, 17, 0.22);
+    }
+
+    .chip.red {
+      color: #993939;
+      background: var(--red-soft);
+      border-color: rgba(199, 83, 83, 0.22);
+    }
+
+    .chip.blue {
+      color: #1f5f9c;
+      background: var(--blue-soft);
+      border-color: rgba(45, 121, 199, 0.22);
+    }
+
+    .hero-grid,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-auto {
+      display: grid;
+      gap: 0.95rem;
+      margin-top: 1rem;
+    }
+
+    .hero-grid,
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .grid-auto {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(17, 38, 59, 0.1);
+      border-radius: 18px;
+      padding: 0.95rem;
+    }
+
+    .card.strong {
+      background: var(--panel-strong);
+    }
+
+    .stat {
+      font-family: var(--display);
+      font-size: clamp(1.35rem, 2.6vw, 2.15rem);
+      color: #0f2a42;
+      margin-bottom: 0.2rem;
+    }
+
+    .split-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 1rem;
+      align-items: start;
+      margin-top: 1rem;
+    }
+
+    .story {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .story-step {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.8rem;
+      align-items: start;
+    }
+
+    .story-num {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-family: var(--display);
+      font-weight: 800;
+      color: white;
+      background: linear-gradient(135deg, #0b8f7d, #2b6da9);
+      box-shadow: 0 10px 22px rgba(18, 63, 90, 0.16);
+    }
+
+    .definition {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .definition .card p strong {
+      color: #153452;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-top: 1rem;
+      align-items: stretch;
+    }
+
+    .flow-box {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(17, 38, 59, 0.11);
+      border-radius: 16px;
+      padding: 0.85rem;
+      position: relative;
+    }
+
+    .flow-box:not(:last-child)::after {
+      content: ">";
+      position: absolute;
+      right: -0.46rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--display);
+      font-weight: 800;
+      color: #7e94aa;
+      background: #f4f7f8;
+      border-radius: 999px;
+      padding: 0.08rem 0.32rem;
+    }
+
+    .mini-note,
+    .footnote {
+      margin-top: 0.9rem;
+      font-size: 0.88rem;
+      color: #677f96;
+    }
+
+    .callout {
+      border-left: 4px solid var(--teal);
+      background: rgba(11, 143, 125, 0.08);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+      margin-top: 1rem;
+    }
+
+    .callout.warn {
+      border-left-color: var(--gold);
+      background: rgba(197, 139, 17, 0.08);
+    }
+
+    .callout.red {
+      border-left-color: var(--red);
+      background: rgba(199, 83, 83, 0.08);
+    }
+
+    .metric-list {
+      display: grid;
+      gap: 0.55rem;
+      margin-top: 0.9rem;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 180px 1fr auto;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    .bar {
+      position: relative;
+      height: 0.72rem;
+      border-radius: 999px;
+      background: rgba(17, 38, 59, 0.08);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      position: absolute;
+      inset: 0 auto 0 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #167e91, #1cbe8a);
+    }
+
+    .bar.red > span {
+      background: linear-gradient(90deg, #c8674f, #d54444);
+    }
+
+    .bar.gold > span {
+      background: linear-gradient(90deg, #bb7b17, #d7b43f);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 118px 1fr;
+      gap: 0.9rem;
+      align-items: start;
+    }
+
+    .timeline-date {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: #365a79;
+      background: rgba(45, 121, 199, 0.08);
+      border: 1px solid rgba(45, 121, 199, 0.14);
+      border-radius: 999px;
+      padding: 0.35rem 0.55rem;
+      text-align: center;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      margin-right: 0.3rem;
+      margin-top: 0.3rem;
+      background: rgba(17, 38, 59, 0.08);
+      color: #264967;
+    }
+
+    .pill.pass {
+      background: rgba(11, 143, 125, 0.12);
+      color: #0b7b6d;
+    }
+
+    .pill.stop {
+      background: rgba(199, 83, 83, 0.12);
+      color: #9b3f3f;
+    }
+
+    .pill.live {
+      background: rgba(197, 139, 17, 0.14);
+      color: #8a620c;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 1rem;
+      border-radius: 16px;
+      border: 1px solid rgba(17, 38, 59, 0.1);
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th,
+    td {
+      padding: 0.72rem 0.78rem;
+      border-bottom: 1px solid rgba(17, 38, 59, 0.09);
+      text-align: left;
+      vertical-align: top;
+      color: var(--ink-soft);
+      font-size: 0.97rem;
+    }
+
+    th {
+      font-family: var(--display);
+      font-size: 0.92rem;
+      color: #173a58;
+      background: rgba(245, 248, 250, 0.95);
+      white-space: nowrap;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    ul {
+      margin: 0.55rem 0 0;
+      padding-left: 1.05rem;
+    }
+
+    .columns {
+      columns: 2;
+      column-gap: 1.4rem;
+      margin-top: 0.9rem;
+    }
+
+    .columns p,
+    .columns ul,
+    .columns .card {
+      break-inside: avoid;
+    }
+
+    .source-list {
+      display: grid;
+      gap: 0.65rem;
+      margin-top: 1rem;
+    }
+
+    .source-item {
+      padding: 0.8rem 0.9rem;
+      border-radius: 14px;
+      border: 1px solid rgba(17, 38, 59, 0.1);
+      background: rgba(255, 255, 255, 0.74);
+    }
+
+    @media (max-width: 1080px) {
+      .hero-grid,
+      .grid-3,
+      .grid-4,
+      .flow,
+      .split-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .flow-box:not(:last-child)::after {
+        display: none;
+      }
+
+      .columns {
+        columns: 1;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .slide {
+        min-height: auto;
+      }
+
+      .panel {
+        padding: 1rem;
+        border-radius: 18px;
+      }
+
+      .metric-row,
+      .timeline-item,
+      .story-step {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        gap: 0.35rem;
+      }
+
+      .nav a {
+        font-size: 0.76rem;
+      }
+    }
+
+    @media print {
+      .topbar {
+        display: none;
+      }
+
+      body {
+        background: white;
+      }
+
+      body::before {
+        display: none;
+      }
+
+      .slide {
+        min-height: auto;
+        padding: 0.2rem 0;
+      }
+
+      .panel {
+        box-shadow: none;
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">MSAE Presentation</div>
+      <nav class="nav" aria-label="Presentation sections">
+        <a href="#title">Title</a>
+        <a href="#headlines">Headlines</a>
+        <a href="#question">Question</a>
+        <a href="#basics">Basics</a>
+        <a href="#related">Related Work</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#evidence">Certainty</a>
+        <a href="#pilot">Pilot</a>
+        <a href="#prek2">Pre-K2</a>
+        <a href="#training">Training</a>
+        <a href="#results">Results</a>
+        <a href="#separated">What Separated</a>
+        <a href="#examples">Concrete Examples</a>
+        <a href="#benefits">Why Better</a>
+        <a href="#findings">Key Findings</a>
+        <a href="#implications">Implications</a>
+        <a href="#pcc">PCC</a>
+        <a href="#ongoing">Ongoing</a>
+        <a href="#takeaways">Takeaways</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="deck">
+    <section class="slide" id="title">
+      <div class="panel">
+        <div class="eyebrow">Project Walkthrough</div>
+        <h1>Morphological Sparse Autoencoders</h1>
+        <p class="lead">
+          This presentation explains the full <span class="mono">MSAE</span> project in simple English for people who know the basics of AI and machine learning, but are not deep in mechanistic interpretability.
+        </p>
+        <div class="chip-row">
+          <span class="chip teal">Paper 1 concept gate cleared</span>
+          <span class="chip blue">K=2 trainer works at 1B tokens</span>
+          <span class="chip gold">PCC bridge program is active</span>
+        </div>
+        <div class="callout">
+          <p><strong>Main result in one sentence:</strong> on <span class="mono">Pythia-160M</span> residual activations, especially layer 3, the project found a robust way to separate a smaller position dictionary from a larger content dictionary, and then trained that two-branch system stably through a full 1B-token run.</p>
+          <p class="mini-note"><strong>Important nuance:</strong> the strongest current win is cleaner separation and specialization, not universal improvement on every metric.</p>
+        </div>
+        <div class="hero-grid">
+          <div class="card strong">
+            <h3>Main idea</h3>
+            <p>Instead of asking one sparse autoencoder to explain every kind of structure inside a model, MSAE gives different kinds of structure their own branches.</p>
+          </div>
+          <div class="card strong">
+            <h3>Current strongest evidence</h3>
+            <p>The project has strong evidence that <strong>position</strong> and <strong>content</strong> can be separated cleanly on <span class="mono">Pythia-160M</span>, especially at layer 3.</p>
+          </div>
+          <div class="card strong">
+            <h3>Where the project stands</h3>
+            <p>Paper 1 is partially realized in experiments. Paper 2 and Paper 3 are still planned. A new bridge program now asks whether syntax lives in a shared crossover signal.</p>
+          </div>
+        </div>
+        <p class="footnote">
+          Snapshot date: <strong>June 5, 2026</strong>. This page was built from the local project sources
+          <span class="mono">MSAE_revised.md</span>,
+          <span class="mono">RESULTS.md</span>,
+          <span class="mono">ANALYSIS.md</span>,
+          <span class="mono">TODO.md</span>,
+          and <span class="mono">TODO_pcc.md</span>.
+        </p>
+      </div>
+    </section>
+
+    <section class="slide" id="headlines">
+      <div class="panel">
+        <div class="eyebrow">Results First</div>
+        <h2>If you remember only four results, remember these</h2>
+        <p class="lead">
+          The deck contains a lot of setup and nuance, but these are the load-bearing conclusions. Everything later in the presentation is mainly there to explain <em>how</em> the team reached these points and <em>what they imply</em>.
+        </p>
+
+        <div class="grid-4">
+          <div class="card strong">
+            <div class="stat">Pythia-160M<br />L3</div>
+            <h3>Clearest successful site</h3>
+            <p>The cleanest position/content separation shows up on the residual stream of <span class="mono">Pythia-160M</span>, especially layer 3. Layer 4 is a real fallback, but layer 3 is the main story.</p>
+          </div>
+          <div class="card strong">
+            <div class="stat">92 / 92</div>
+            <h3>Headline gate passes</h3>
+            <p>Every headline pre-K2 case passed at ranks 8 and 16 across IID, source-holdout, and corpus-holdout settings. Here, "pass" means the split stayed visible under the project's actual stress tests, not just on one easy sample.</p>
+          </div>
+          <div class="card strong">
+            <div class="stat">0 / 46</div>
+            <h3>Boundary rank stops cleanly</h3>
+            <p>Rank 32 fails across the board. That is useful because it shows a sharp boundary instead of a vague maybe, which supports the idea that position lives in a relatively small subspace compared with content.</p>
+          </div>
+          <div class="card strong">
+            <div class="stat">1B<br />tokens</div>
+            <h3>K=2 trains at scale</h3>
+            <p>The corrected fastdata-stream wave completed a full billion-token run. So MSAE is not just a probe result or toy demo; it is a working two-branch training system.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card strong">
+            <h3>The clearest positive claim</h3>
+            <p>
+              The project was able to split activations into a smaller <strong>position dictionary</strong> and a larger <strong>content dictionary</strong>, rather than forcing both jobs into one latent pool.
+            </p>
+            <ul>
+              <li>Position branch: <span class="mono">8,192</span> atoms, <span class="mono">TopK = 8</span></li>
+              <li>Content branch: <span class="mono">32,768</span> atoms, <span class="mono">TopK = 24</span></li>
+              <li>The low-rank gate at 8 and 16 is the main reason the smaller position side looks scientifically justified.</li>
+            </ul>
+          </div>
+          <div class="card strong">
+            <h3>The clearest caveat</h3>
+            <p>
+              The regularizer clearly helps the two branches overlap less, but it does not yet give a free win on reconstruction.
+            </p>
+            <ul>
+              <li>Matched-seed regularized vs no-regularizer comparison shows about <strong>3.3x</strong> lower incoherence.</li>
+              <li>The regularized runs are still slightly worse on FVU than the matched control.</li>
+              <li>So the main open question is now the <strong>separation-versus-reconstruction tradeoff</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <p><strong>Reading rule for the rest of the deck:</strong> treat the robust pre-K2 gate and the 1B-token K=2 run as the headline evidence. Later PCC material is useful and interesting, but it is a follow-on analysis program, not a stronger result than those two anchor packages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="question">
+      <div class="panel">
+        <div class="eyebrow">Experimental Question</div>
+        <h2>What question is the whole project trying to answer?</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Core scientific question</h3>
+            <p>Can transformer activations be understood better if we split them into multiple kinds of structure, instead of forcing one dictionary of features to explain everything?</p>
+          </div>
+          <div class="card">
+            <h3>First concrete version</h3>
+            <p>Can we separate <strong>where a token is</strong> from <strong>what the token is</strong> inside the residual stream of a language model?</p>
+          </div>
+          <div class="card">
+            <h3>Longer-term version</h3>
+            <p>If that works, can the same idea grow into richer decompositions that handle dense residual structure, hierarchical features, and multi-dimensional features?</p>
+          </div>
+        </div>
+
+        <div class="split-layout">
+          <div class="card strong">
+            <h3>Why this matters</h3>
+            <p>
+              Sparse autoencoders are supposed to give us human-usable features. But recent work showed that standard SAEs often
+              overlap too much, change a lot across random seeds, miss useful downstream signal, and leave a large structured residual unexplained.
+            </p>
+            <div class="callout">
+              <p><strong>The project hypothesis:</strong> some of those failures happen because the model is being forced to compress very different kinds of structure into one feature system.</p>
+            </div>
+          </div>
+
+          <div class="card strong">
+            <h3>What counts as success right now</h3>
+            <ul>
+              <li>Show that position and content are separable before full MSAE training.</li>
+              <li>Train a two-branch MSAE stably at scale.</li>
+              <li>Show that the branch-separation regularizer changes geometry in a real way.</li>
+              <li>Find out whether useful linguistic structure is purely private to one branch, or partly shared.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="basics">
+      <div class="panel">
+        <div class="eyebrow">Plain English Basics</div>
+        <h2>SAE vs MSAE in one minute</h2>
+        <div class="grid-2 definition">
+          <div class="card">
+            <h3>What is an activation?</h3>
+            <p>An activation is the model's internal numeric state at some point in the network. You can think of it as a high-dimensional summary of what the model is "thinking about" right then.</p>
+          </div>
+          <div class="card">
+            <h3>What is a sparse autoencoder?</h3>
+            <p>A sparse autoencoder tries to rebuild that activation using only a small number of learned feature directions. In plain English: it tries to explain a messy vector using a short list of reusable parts.</p>
+          </div>
+          <div class="card">
+            <h3>What is a dictionary here?</h3>
+            <p>A dictionary is just the library of possible feature directions. One dictionary means one shared toolbox for every kind of structure the model contains.</p>
+          </div>
+          <div class="card">
+            <h3>What makes MSAE different?</h3>
+            <p>MSAE uses <strong>multiple dictionaries</strong> in parallel. Each branch gets to specialize, and the training objective pushes the branches not to collapse into the same solution.</p>
+          </div>
+        </div>
+
+        <div class="flow" aria-label="Simple MSAE flow">
+          <div class="flow-box">
+            <h4>Input activation</h4>
+            <p>Take one internal vector from the language model.</p>
+          </div>
+          <div class="flow-box">
+            <h4>Branch 1</h4>
+            <p>Try to capture position-like structure.</p>
+          </div>
+          <div class="flow-box">
+            <h4>Branch 2</h4>
+            <p>Try to capture content-like structure.</p>
+          </div>
+          <div class="flow-box">
+            <h4>Low overlap pressure</h4>
+            <p>Penalize branches if they become too similar.</p>
+          </div>
+          <div class="flow-box">
+            <h4>Recombine</h4>
+            <p>Add both branches back together to reconstruct the original activation.</p>
+          </div>
+        </div>
+
+        <div class="grid-auto">
+          <div class="card">
+            <h3>Position</h3>
+            <p>Information about where a token sits in the sequence.</p>
+          </div>
+          <div class="card">
+            <h3>Content</h3>
+            <p>Information about the identity or meaning-carrying side of the token.</p>
+          </div>
+          <div class="card">
+            <h3>Incoherence</h3>
+            <p>How much the branches overlap. Lower is better if we want the branches to specialize.</p>
+          </div>
+          <div class="card">
+            <h3>FVU</h3>
+            <p>Fraction of variance unexplained. Lower means the model is reconstructing activations better.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="related">
+      <div class="panel">
+        <div class="eyebrow">Related Work</div>
+        <h2>Why MSAE exists at all</h2>
+        <p class="lead">
+          The project is a direct response to several negative or cautionary results about standard sparse autoencoders. The goal is not "a new architecture because new architectures are fun." The goal is "fix specific things that look broken."
+        </p>
+
+        <div class="grid-4">
+          <div class="card">
+            <h3>Feature absorption</h3>
+            <p>Standard SAEs can merge parent and child concepts together, which makes features look cleaner than they really are.</p>
+          </div>
+          <div class="card">
+            <h3>Seed instability</h3>
+            <p>If you retrain with a different random seed, many "features" do not come back. That weakens the idea that the dictionary is finding one canonical truth.</p>
+          </div>
+          <div class="card">
+            <h3>Weak downstream probes</h3>
+            <p>On many tasks, probing SAE features performs worse than probing raw activations directly with logistic regression.</p>
+          </div>
+          <div class="card">
+            <h3>Dark matter</h3>
+            <p>A large part of the residual error is still linearly predictable from the input. That suggests the SAE is not just missing a few sparse features. It may be missing a whole different kind of structure.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Multi-dimensional features</h3>
+            <p>Some circuits seem to use circles or other structured geometric objects, not one-dimensional feature directions. A one-direction SAE may shatter those into fragments.</p>
+          </div>
+          <div class="card">
+            <h3>Closest baseline families</h3>
+            <p>The project compares itself conceptually to JumpReLU SAEs, TopK SAEs, BatchTopK, and Matryoshka SAEs, with Matryoshka treated as a key later baseline.</p>
+          </div>
+          <div class="card">
+            <h3>The older theory behind the idea</h3>
+            <p>MSAE borrows from morphological component analysis in signal processing: if different kinds of structure are sparse in different bases, it can be easier to separate them with multiple dictionaries than with one.</p>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <p><strong>Important framing:</strong> the project is not claiming that all SAE problems are solved already. It is testing whether "multiple specialized dictionaries" is a better starting point than "one dictionary tries to do everything."</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="roadmap">
+      <div class="panel">
+        <div class="eyebrow">Whole Program</div>
+        <h2>The project is organized as three dependent papers</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Paper</th>
+                <th>Main claim</th>
+                <th>Main experiment</th>
+                <th>Current state</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Paper 1</strong><br />K=2 position vs content</td>
+                <td>Two branches with low overlap can separate position-like and content-like structure in transformer activations.</td>
+                <td><span class="mono">Pythia-160M</span>, mainly layer 3, with raw-activation gates, K=2 training, baselines, and stability checks.</td>
+                <td>Most current results live here. The key gate has been cleared, and K=2 training works at scale.</td>
+              </tr>
+              <tr>
+                <td><strong>Paper 2</strong><br />K=3 generalized MSAE</td>
+                <td>The idea extends beyond position/content and can compete with strong SAE baselines on broad benchmarks.</td>
+                <td><span class="mono">Gemma-2-2B</span> layer 12, K=3 sparse-sparse-dense model, full SAEBench, plus the 113-task probing benchmark.</td>
+                <td>Planned, not completed.</td>
+              </tr>
+              <tr>
+                <td><strong>Paper 3</strong><br />Structured branches</td>
+                <td>Some failures need richer atoms, like subspace-valued or multiscale branches, not just more linear dictionaries.</td>
+                <td>Circular features, hierarchical absorption, and circuit case studies.</td>
+                <td>Planned, not completed.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <p><strong>Dependency rule:</strong> Paper 2 is only supposed to become a full project if Paper 1 hits its success gate. Paper 3 waits on Paper 2. So the current MSAE repository is best understood as a strong Paper 1 story plus a bridge toward later work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="evidence">
+      <div class="panel">
+        <div class="eyebrow">Reading Guide</div>
+        <h2>Not every part of the project is equally settled</h2>
+        <p class="lead">
+          One reason the presentation can feel dense is that it contains results, interpretations, bridge analyses, and future plans in one place. This slide separates those certainty levels so the audience knows what to trust most strongly.
+        </p>
+
+        <div class="grid-3">
+          <div class="card strong">
+            <h3>Established now</h3>
+            <ul>
+              <li>The position/content split is robust on <span class="mono">Pythia-160M</span>, especially layer 3.</li>
+              <li>The headline pre-K2 gate passed at ranks 8 and 16 and failed cleanly at rank 32.</li>
+              <li>The K=2 trainer works through a corrected 1B-token run.</li>
+              <li>The incoherence penalty clearly changes branch geometry.</li>
+            </ul>
+          </div>
+          <div class="card strong">
+            <h3>Emerging but not final</h3>
+            <ul>
+              <li>The idea that some syntax-like structure is partly shared across branches.</li>
+              <li>The task-level branch examples used to interpret what the two dictionaries do in practice.</li>
+              <li>The exact best value of <span class="mono">lambda_inc</span> and the best way to balance separation against reconstruction.</li>
+            </ul>
+          </div>
+          <div class="card strong">
+            <h3>Still future work</h3>
+            <ul>
+              <li>A matched head-to-head standard SAE comparator.</li>
+              <li>The broader K=3 Paper 2 program.</li>
+              <li>The structured-branch Paper 3 program with richer atoms and multiscale branches.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Authoritative package A: the final pre-K2 suite</h3>
+            <p>
+              This package answers the first crucial question: <strong>is the position/content separation real enough to justify training a two-branch model at all?</strong>
+            </p>
+            <p class="mini-note">This is where the <strong>92/92</strong>, <strong>0/46</strong>, and layer-3 recommendation come from.</p>
+          </div>
+          <div class="card">
+            <h3>Authoritative package B: the corrected 1B-token K=2 run</h3>
+            <p>
+              This package answers the second crucial question: <strong>once we commit to K=2, does the trainer actually work at realistic scale and does the regularizer do anything measurable?</strong>
+            </p>
+            <p class="mini-note">This is where the stable billion-token training result and the <strong>3.3x</strong> incoherence story come from.</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Best way to understand the whole project:</strong> first accept those two anchor packages, then read the later PCC and future-work sections as the project's attempt to figure out what the current K=2 result still leaves unresolved.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="pilot">
+      <div class="panel">
+        <div class="eyebrow">Experiment Set 1</div>
+        <h2>Raw-activation separability pilot: test the premise before training MSAE</h2>
+        <div class="split-layout">
+          <div class="story">
+            <div class="story-step">
+              <div class="story-num">1</div>
+              <div>
+                <h3>Question</h3>
+                <p>Do the raw activations already show signs that position-related and token-related information live in different directions?</p>
+              </div>
+            </div>
+            <div class="story-step">
+              <div class="story-num">2</div>
+              <div>
+                <h3>Method</h3>
+                <p>Train simple linear probes on raw activations only. One probe predicts token position. Another predicts token identity. Then turn those probe weights into low-dimensional subspaces.</p>
+              </div>
+            </div>
+            <div class="story-step">
+              <div class="story-num">3</div>
+              <div>
+                <h3>Key test</h3>
+                <p>Project the activation into the position subspace and the token subspace. If the theory is right, position should survive much better in the position subspace, token identity should survive much better in the token subspace, and the subspaces should not lie on top of each other.</p>
+              </div>
+            </div>
+            <div class="story-step">
+              <div class="story-num">4</div>
+              <div>
+                <h3>Why this experiment matters</h3>
+                <p>If this pilot fails, then training a full two-branch MSAE may be solving the wrong problem. So this pilot is a de-risking gate, not a side quest.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card strong">
+            <h3>What the pilot checked in plain English</h3>
+            <ul>
+              <li>Can a "position-only" projection still predict where the token is?</li>
+              <li>Can a "content-only" projection still predict what the token is?</li>
+              <li>Does each projection hurt the other job enough to show real separation?</li>
+              <li>Are the two subspaces separated by meaningful angles, instead of being almost the same thing?</li>
+            </ul>
+            <div class="callout">
+              <p><strong>Interpretation rule:</strong> the early raw-activation runs were useful, but the project treats the final pre-K2 suite as the authoritative gate because the early criteria and tooling changed during development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2026-05-26</div>
+            <div class="card">
+              <h3>Initial raw-activation pilot</h3>
+              <p>Established that the basic probing pipeline could run across several models and rank settings.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026-05-27</div>
+            <div class="card">
+              <h3>GPU-probe migration and rank curves</h3>
+              <p>Improved speed and helped the team learn which metrics were stable and which gates were too brittle.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026-05-27</div>
+            <div class="card">
+              <h3>v5 multiseed sweep</h3>
+              <p>The results started showing a structured pass pattern instead of noisy hints, especially around <span class="mono">Pythia-160M</span> at layers 3 and 4.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="prek2">
+      <div class="panel">
+        <div class="eyebrow">Experiment Set 2</div>
+        <h2>Pre-K2 full suite: decide whether real two-branch training is justified</h2>
+        <p class="lead">
+          After the pilot stage, the project ran a larger and more disciplined suite whose whole job was to answer one question:
+          <strong>Is the position-vs-content split robust enough to justify full K=2 MSAE training?</strong>
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>What was swept</h3>
+            <p>Layers 3 and 4, ranks 8, 16, and 32, multiple random seeds, and multiple dataset split modes.</p>
+          </div>
+          <div class="card">
+            <h3>What "holdout" means here</h3>
+            <p><strong>IID</strong> means ordinary in-distribution testing. <strong>Source holdout</strong> changes the text source. <strong>Corpus holdout</strong> checks whether the signal survives a broader data shift.</p>
+          </div>
+          <div class="card">
+            <h3>What the suite is really asking</h3>
+            <p>Is the separation just a fragile artifact of one setup, or is it reproducible across seeds, layers, and data splits?</p>
+          </div>
+        </div>
+
+        <div class="split-layout">
+          <div class="card strong">
+            <h3>Why the rank sweep matters</h3>
+            <p>Rank controls how many directions are allowed in the probe-derived subspace. If the split is real, there should be a good zone where the representation works, and then a boundary where it stops looking clean.</p>
+            <div class="callout warn">
+              <p><strong>The project wanted a clean boundary, not just a best-case number.</strong> A strong scientific result looks better when success at the good ranks and failure at the boundary rank are both clear.</p>
+            </div>
+          </div>
+
+          <div class="card strong">
+            <h3>Why layer choice matters</h3>
+            <p>Too early in the model and the representation may be too shallow. Too late and everything may already be heavily mixed together. The project treated layer 3 as the likely best site, but kept layer 4 as a fallback candidate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="training">
+      <div class="panel">
+        <div class="eyebrow">Experiment Set 3</div>
+        <h2>K=2 training runs: from smoke tests to a 1B-token wave</h2>
+        <div class="grid-2">
+          <div class="card strong">
+            <h3>What the training stage is trying to answer</h3>
+            <ul>
+              <li>Can a two-branch MSAE be trained stably instead of collapsing?</li>
+              <li>Can the code checkpoint, resume, and scale cleanly?</li>
+              <li>Does the incoherence regularizer really make the branches more different?</li>
+              <li>What tradeoff, if any, appears between separation and reconstruction quality?</li>
+            </ul>
+          </div>
+          <div class="card strong">
+            <h3>Simple explanation of the run design</h3>
+            <ul>
+              <li>Start with small smoke and resume tests so the trainer itself can be trusted.</li>
+              <li>Run a 100M-token wave to check stability before the largest run.</li>
+              <li>Run a 1B-token wave with three regularized seeds and one matched no-regularizer control.</li>
+              <li>Watch reconstruction, branch overlap, and active-latent usage all the way through.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">Smoke</div>
+            <div class="card">
+              <h3>Trainer validation</h3>
+              <p>The project first proved that the custom trainer worked at all, then proved that checkpoint resume logic worked correctly.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Wave 1</div>
+            <div class="card">
+              <h3>100M-token scale-up</h3>
+              <p>All jobs completed stably, which justified moving on to the long wave.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Wave 2</div>
+            <div class="card">
+              <h3>1B-token long run</h3>
+              <p>An initial long run hit a data-pipeline problem and was later marked superseded. A fastdata-stream rerun fixed that and became the authoritative large-scale result.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>FVU</h3>
+            <p>Lower FVU means the model is doing a better job rebuilding the original activation.</p>
+          </div>
+          <div class="card">
+            <h3>Incoherence</h3>
+            <p>Lower incoherence means the dictionaries overlap less, so the branches are more specialized.</p>
+          </div>
+          <div class="card">
+            <h3>Active-latent fraction</h3>
+            <p>This checks whether the learned dictionaries are actually being used, instead of most atoms sitting dead or nearly dead.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="results">
+      <div class="panel">
+        <div class="eyebrow">Experimental Results</div>
+        <h2>What the experiments show so far</h2>
+
+        <div class="grid-3">
+          <div class="card strong">
+            <div class="stat">92 / 92</div>
+            <h3>Headline pass rate</h3>
+            <p>The final pre-K2 suite passed every <span class="mono">Pythia-160M</span> headline case at ranks 8 and 16 across IID, source-holdout, and corpus-holdout settings. In practice, that means the position/content split stayed visible under the project's real holdout checks instead of disappearing outside one easy setup.</p>
+          </div>
+          <div class="card strong">
+            <div class="stat">0 / 46</div>
+            <h3>Boundary rank passes</h3>
+            <p>Rank 32 failed across the board in the boundary diagnostic. This is useful because it shows a crisp success region instead of a vague maybe, and because it supports the claim that position is concentrated in a meaningfully smaller slice of the activation space.</p>
+          </div>
+          <div class="card strong">
+            <div class="stat">L3</div>
+            <h3>Primary training site</h3>
+            <p>Layer 3 became the main recommendation, with layer 4 kept as a real fallback instead of being discarded. So the project now has a concrete default place to train and evaluate K=2 MSAE.</p>
+          </div>
+        </div>
+
+        <div class="metric-list">
+          <div class="metric-row">
+           <div><strong>Headline regime</strong></div>
+            <div class="bar">
+              <span style="width: 100%;">&nbsp;</span>
+            </div>
+            <div><strong>100%</strong></div>
+          </div>
+          <div class="metric-row">
+            <div><strong>Boundary rank</strong></div>
+            <div class="bar red">
+              <span style="width: 0%;">&nbsp;</span>
+            </div>
+            <div><strong>0%</strong></div>
+          </div>
+          <div class="metric-row">
+            <div><strong>Wave 1 stability</strong></div>
+            <div class="bar gold">
+              <span style="width: 100%;">&nbsp;</span>
+            </div>
+            <div><strong>4 / 4 stable</strong></div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Best plain-English summary of the pre-K2 results:</strong> the project is past the "is this even real?" stage. The position/content split is not a one-off artifact from one seed or one data split. It looks reproducible and sharply bounded.</p>
+          <p class="mini-note"><strong>Even plainer version:</strong> the team found evidence that a small positional branch and a larger content branch are not arbitrary design choices. They match real structure already visible in the underlying activations.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Wave 2 job</th>
+                <th>Regularized?</th>
+                <th>Tokens</th>
+                <th>Tail-100 FVU</th>
+                <th>Tail-100 incoherence</th>
+                <th>Active position</th>
+                <th>Active content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="mono">g4</span></td>
+                <td>Yes, <span class="mono">lambda_inc = 0.01</span></td>
+                <td>1,000,000,016</td>
+                <td>0.076385</td>
+                <td>0.004643</td>
+                <td>0.887024</td>
+                <td>0.911224</td>
+              </tr>
+              <tr>
+                <td><span class="mono">g5</span></td>
+                <td>Yes, <span class="mono">lambda_inc = 0.01</span></td>
+                <td>1,000,000,016</td>
+                <td>0.071359</td>
+                <td>0.003150</td>
+                <td>0.897339</td>
+                <td>0.925735</td>
+              </tr>
+              <tr>
+                <td><span class="mono">g6</span></td>
+                <td>Yes, <span class="mono">lambda_inc = 0.01</span></td>
+                <td>1,000,000,042</td>
+                <td>0.073543</td>
+                <td>0.002811</td>
+                <td>0.895935</td>
+                <td>0.934631</td>
+              </tr>
+              <tr>
+                <td><span class="mono">g7</span></td>
+                <td>No, control run</td>
+                <td>1,000,000,016</td>
+                <td>0.069778</td>
+                <td>0.015200</td>
+                <td>0.923279</td>
+                <td>0.929779</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>What this says about regularization</h3>
+            <p>Compared with the matched no-regularizer control, the regularized model cuts incoherence by about <strong>3.3x</strong>. So the penalty is clearly doing real geometric work.</p>
+          </div>
+          <div class="card">
+            <h3>What it does not say</h3>
+            <p>The regularized runs are slightly worse on reconstruction than the no-regularizer control. So the current best claim is <strong>better branch separation</strong>, not "free improvement on every metric."</p>
+          </div>
+          <div class="card">
+            <h3>Why active-latent usage matters</h3>
+            <p>Both branches stay heavily used. That means the trainer is not surviving only because a tiny subset of atoms do all the work while the rest die.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="separated">
+      <div class="panel">
+        <div class="eyebrow">What Was Separated</div>
+        <h2>Be explicit: what activations were separated, and into what?</h2>
+        <p class="lead">
+          The strongest current supported result is not "we solved all models." It is much more specific:
+          <strong>on the residual-stream activations of Pythia-160M, especially layer 3, the project found a robust position-vs-content demixing regime and trained a two-dictionary MSAE in that regime.</strong>
+        </p>
+
+        <div class="grid-2">
+          <div class="card strong">
+            <h3>The model and site</h3>
+            <ul>
+              <li><strong>Model:</strong> <span class="mono">EleutherAI/pythia-160m-deduped</span></li>
+              <li><strong>Primary site:</strong> residual stream, <strong>layer 3</strong></li>
+              <li><strong>Fallback site:</strong> residual stream, <strong>layer 4</strong></li>
+              <li><strong>Why this site:</strong> it keeps strong positional signal while still containing rich token/content structure</li>
+            </ul>
+          </div>
+
+          <div class="card strong">
+            <h3>The two learned dictionaries</h3>
+            <ul>
+              <li><strong>Position dictionary:</strong> <span class="mono">8,192</span> atoms, <span class="mono">TopK = 8</span></li>
+              <li><strong>Content dictionary:</strong> <span class="mono">32,768</span> atoms, <span class="mono">TopK = 24</span></li>
+              <li><strong>Meaning of that asymmetry:</strong> the project gives the content side much more capacity than the position side on purpose</li>
+              <li><strong>Regularizer:</strong> cross-branch incoherence pressure so the two dictionaries do not collapse into the same feature family</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Main low-dimensionality claim</h3>
+            <p>
+              The pre-K2 gate works cleanly at low headline ranks <strong>8</strong> and <strong>16</strong>, and then fails at boundary rank <strong>32</strong>. In plain English: the project found evidence that the position side lives in a relatively small subspace compared with the richer content side.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What that does not mean</h3>
+            <p>
+              It does <strong>not</strong> mean the entire model is only 8 or 16 dimensional. It means the <em>probe-visible positional structure used for the gate</em> appears to be concentrated in a small number of directions.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Why the larger content dictionary makes sense</h3>
+            <p>
+              Token identity, lexical variation, and semantics are much more varied than pure position. So giving content <span class="mono">4x</span> as many atoms as position is not arbitrary; it matches the hypothesis that content needs more representational capacity.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Clear version of the main point:</strong> the project found a setting where one smaller, sparser dictionary can specialize toward positional structure while a larger dictionary carries the more varied content side, instead of forcing both jobs into one shared latent pool.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="examples">
+      <div class="panel">
+        <div class="eyebrow">Concrete Examples</div>
+        <h2>What do the two dictionaries seem to be doing in practice?</h2>
+        <p class="lead">
+          The repo currently gives its strongest concrete evidence at the <strong>branch and task level</strong>, not as a finished catalog of named individual atom cards. So the most honest examples are task-level behaviors of the learned position/content representations.
+        </p>
+
+        <div class="callout warn">
+          <p><strong>Important honesty note:</strong> the current project record supports strong claims about what the <em>position dictionary</em> and <em>content dictionary</em> do as groups. It does not yet contain a polished set of individual “this exact atom means X” case studies for the K=2 model.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card strong">
+            <h3>Example 1: entity-type information is much more content-side than position-side</h3>
+            <p>
+              On the PCC follow-up tasks, content-private representations beat position-private ones very clearly on semantic labeling.
+            </p>
+            <ul>
+              <li><strong>FewNERD coarse binary:</strong> content-private <span class="mono">0.8965</span> vs position-private <span class="mono">0.7541</span></li>
+              <li><strong>WikiNeural English binary:</strong> content-private <span class="mono">0.9453</span> vs position-private <span class="mono">0.7570</span></li>
+              <li><strong>WNUT17 type-only:</strong> content-private <span class="mono">0.1994</span> vs position-private <span class="mono">0.1508</span></li>
+            </ul>
+            <p class="mini-note">Interpretation: if you want entity-type-like information, the content dictionary is the far more useful place to look.</p>
+          </div>
+
+          <div class="card strong">
+            <h3>Example 2: some syntax is not owned by one branch alone</h3>
+            <p>
+              For syntax-facing tasks, the best result often comes from using the branches together, not from treating either private branch as fully sufficient.
+            </p>
+            <ul>
+              <li><strong>POS tagging family:</strong> mean joint gain about <span class="mono">+0.0057</span> in A1c</li>
+              <li><strong>Coarse dependency labels:</strong> mean joint gain about <span class="mono">+0.0049</span> in A1c</li>
+              <li><strong>B-light controls:</strong> syntax_pos stays positive under full, token, and coarse position controls</li>
+            </ul>
+            <p class="mini-note">Interpretation: syntax-like structure seems partly interaction-based, which is exactly why the PCC bridge program now exists.</p>
+          </div>
+
+          <div class="card strong">
+            <h3>Example 3: not every "language" property is position-heavy</h3>
+            <p>
+              A naive story would say “the position dictionary handles syntax.” The repo does not support that simple version. In several PCC tables, the content-private branch is the stronger single private branch even on some syntax-facing tasks.
+            </p>
+            <p class="mini-note">Interpretation: this is useful, not disappointing. It tells us the split is subtle: pure position is one component, rich content is another, and some relational structure may need both.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>What a position-side atom family likely buys you</h3>
+            <ul>
+              <li>A smaller, lower-rank home for where-in-sequence information</li>
+              <li>A branch that can be separately regularized and separately tested</li>
+              <li>A cleaner way to ask “what happens if we suppress positional structure?”</li>
+              <li>A way to avoid letting positional signal dominate a general-purpose content dictionary</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What a content-side atom family likely buys you</h3>
+            <ul>
+              <li>Much more capacity for token identity and lexical/semantic variation</li>
+              <li>A natural home for content-private semantic tasks like NER-style labeling</li>
+              <li>A branch that can absorb varied token-conditioned structure without pretending it is “just position”</li>
+              <li>A clearer way to test what stays intact when position-like structure is separated off</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="benefits">
+      <div class="panel">
+        <div class="eyebrow">Why This Helps</div>
+        <h2>Concrete benefits of the two-dictionary setup compared with a normal SAE</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Normal single-dictionary SAE</th>
+                <th>Current K=2 MSAE setup</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Where does position live?</td>
+                <td>It is mixed into one shared latent pool and has to be separated after the fact.</td>
+                <td>There is an explicit branch intended to specialize toward positional structure.</td>
+              </tr>
+              <tr>
+                <td>Where does content live?</td>
+                <td>It competes directly with position and everything else for the same dictionary budget.</td>
+                <td>It gets its own larger dictionary and higher-capacity branch.</td>
+              </tr>
+              <tr>
+                <td>How do we test specialization?</td>
+                <td>Mostly post-hoc: inspect mixed latents and try to cluster or relabel them.</td>
+                <td>Directly: compare branches, clamp branches, ablate the incoherence term, and inspect private vs joint behavior.</td>
+              </tr>
+              <tr>
+                <td>Can we tell whether the split is real?</td>
+                <td>Harder. A clean post-hoc story can still come from a mixed latent pool.</td>
+                <td>Easier. The no-regularizer control and the branch-level audits test whether the split survives without just being storytelling.</td>
+              </tr>
+              <tr>
+                <td>Does the capacity match the hypothesis?</td>
+                <td>No. One pool has to serve low-dimensional position and high-variation content at once.</td>
+                <td>Yes. The design intentionally uses a small/sparse position side and a larger content side.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid-3">
+          <div class="card strong">
+            <h3>Benefit 1: branch identity itself is useful scientific structure</h3>
+            <p>
+              Even before individual atom cards exist, the split into position and content dictionaries gives the project a built-in experimental language: private position, private content, joint, and residual.
+            </p>
+          </div>
+          <div class="card strong">
+            <h3>Benefit 2: the architecture matches the asymmetry in the data</h3>
+            <p>
+              Position appears lower-dimensional and more compressible. Content is broader and more varied. A normal SAE hides that asymmetry; MSAE encodes it directly.
+            </p>
+          </div>
+          <div class="card strong">
+            <h3>Benefit 3: it exposes new questions a normal SAE blurs away</h3>
+            <p>
+              The PCC results are a good example. Once position and content are partially separated, you can ask whether syntax lives in one branch, the other, or in their interaction.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Most concrete current advantage over a normal SAE</h3>
+            <p>
+              The project can now say something much sharper than “some latents look positional.” It can say:
+              <strong>we trained a model on Pythia-160M layer 3 with a smaller position dictionary and a larger content dictionary, and we can measure what each side contributes, what stays private, and what only appears when the two are combined.</strong>
+            </p>
+          </div>
+          <div class="card">
+            <h3>What still has to be proved against normal SAEs</h3>
+            <p>
+              The project still needs a direct matched standard-SAE comparator before it can make the strongest publication claim. So the benefit today is clearest on <strong>interpretive structure and testability</strong>, not yet on every downstream score.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Short version:</strong> a normal SAE gives one undifferentiated feature soup. The current MSAE gives two named soups with different capacities, explicit pressure not to overlap, and a way to ask much more targeted scientific questions about what each side is doing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="findings">
+      <div class="panel">
+        <div class="eyebrow">Key Findings</div>
+        <h2>The strongest findings, stated as directly as possible</h2>
+        <p class="lead">
+          If someone only remembers a few things from this project, these are the findings that matter most. They are stronger than "we ran some promising pilots" and more specific than "MSAE seems interesting."
+        </p>
+
+        <div class="grid-2">
+          <div class="card strong">
+            <h3>Finding 1: the basic premise survived serious stress testing</h3>
+            <p>
+              The position-vs-content split held up across seeds, across layers 3 and 4, and across three data regimes. The clearest evidence is the
+              <strong>92/92</strong> perfect pass rate at the headline ranks and the <strong>0/46</strong> failure rate at the boundary rank.
+            </p>
+            <div class="callout">
+              <p><strong>Why that matters:</strong> this is the difference between a fragile demo and a real empirical gate. The project did not just find one lucky configuration.</p>
+            </div>
+          </div>
+
+          <div class="card strong">
+            <h3>Finding 2: the project found a real operating regime, not just a theory</h3>
+            <p>
+              The work did not stop at probe geometry. The K=2 trainer passed smoke tests, resume tests, a 100M-token wave, and then a corrected 1B-token wave.
+            </p>
+            <div class="callout">
+              <p><strong>Why that matters:</strong> this turns MSAE from an idea about how things might work into an actual trainable system with a usable experimental stack.</p>
+            </div>
+          </div>
+
+          <div class="card strong">
+            <h3>Finding 3: the incoherence regularizer is not cosmetic</h3>
+            <p>
+              In the matched-seed comparison, the regularized run achieves much lower branch overlap than the no-regularizer control. The approximate <strong>3.3x incoherence reduction</strong> is the cleanest causal evidence in the current project.
+            </p>
+            <div class="callout">
+              <p><strong>Why that matters:</strong> it answers the obvious skeptic question, "did you really learn two different branches, or just train two SAEs side by side?"</p>
+            </div>
+          </div>
+
+          <div class="card strong">
+            <h3>Finding 4: separation improved more clearly than reconstruction</h3>
+            <p>
+              The regularized runs are better on branch specialization, but slightly worse on reconstruction than the matched no-inc control. So the present evidence is a tradeoff story, not an everything-got-better story.
+            </p>
+            <div class="callout warn">
+              <p><strong>Why that matters:</strong> the project now has a precise modeling question to solve next, instead of a vague "keep scaling and hope."</p>
+            </div>
+          </div>
+
+          <div class="card strong">
+            <h3>Finding 5: the first split may not be the whole story</h3>
+            <p>
+              The PCC follow-up suggests that some syntax-like information may not live neatly inside a private position branch or a private content branch. It may partly live in shared or interaction-heavy structure.
+            </p>
+            <div class="callout">
+              <p><strong>Why that matters:</strong> even a successful K=2 decomposition may be only the first layer of the full representational story.</p>
+            </div>
+          </div>
+
+          <div class="card strong">
+            <h3>Finding 6: semantics currently looks more content-private than syntax</h3>
+            <p>
+              In the ongoing PCC analysis, semantic families mostly remain content-private, while some syntax families retain modest positive joint gains under stronger controls.
+            </p>
+            <div class="callout">
+              <p><strong>Why that matters:</strong> this is exactly the kind of asymmetry that could motivate later multi-branch or structured-branch designs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="implications">
+      <div class="panel">
+        <div class="eyebrow">Implications</div>
+        <h2>What these findings imply for the science, not just the code</h2>
+
+        <div class="grid-3">
+          <div class="card strong">
+            <h3>Implication 1: some SAE failures may be geometry mismatches</h3>
+            <p>
+              The results support the idea that at least part of the SAE problem is not just bad optimization or insufficient width. It may be that one dictionary is being asked to model signals with genuinely different geometric structure.
+            </p>
+          </div>
+          <div class="card strong">
+            <h3>Implication 2: separation is a measurable target, not just a qualitative feeling</h3>
+            <p>
+              Because the project used explicit gates, holdouts, and controls, it can talk about separation as something tested quantitatively rather than narrated after the fact.
+            </p>
+          </div>
+          <div class="card strong">
+            <h3>Implication 3: the next bottleneck is now sharply defined</h3>
+            <p>
+              The main open question is no longer "does MSAE basically work?" The main open question is "what is the best tradeoff between cleaner specialization and faithful reconstruction?"
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Implication for Paper 1</h3>
+            <p>
+              Paper 1 now has a credible empirical backbone. The project can reasonably claim that a position/content demixing regime exists and is trainable. What it still needs is the strongest publication-facing comparator work, especially against a matched standard SAE baseline.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Implication for Paper 2</h3>
+            <p>
+              Paper 2 is no longer motivated by pure speculation. It is motivated by a concrete observation: K=2 can separate branches, but K=2 may still leave structured residuals, tradeoffs, and shared signal that a richer decomposition might handle better.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Implication for interpretability practice</h3>
+            <p>
+              If MSAE keeps working, it suggests that future interpretability tools may need to treat "what kind of structure is this?" as a first-class design question, rather than assuming every interpretable thing should be a sparse one-dimensional feature.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Implication for skepticism</h3>
+            <p>
+              The current evidence does not justify saying standard SAEs are obsolete or that MSAE already wins everywhere. It does justify saying that the multiple-dictionary approach has earned the right to be taken seriously as a competing research direction.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <p><strong>The most important strategic implication:</strong> the project should not spend its next large block of effort merely repeating the same K=2 run at larger scale. The stronger move is targeted follow-up: matched SAE comparison, small regularization calibration, and careful PCC control work.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card strong">
+            <h3>What changed because of these findings</h3>
+            <ul>
+              <li>Layer 3 became the default Paper 1 site.</li>
+              <li>Ranks 8 and 16 became the headline regime.</li>
+              <li>The no-inc control became scientifically important, not just a formality.</li>
+              <li>The project shifted from premise validation to tradeoff analysis.</li>
+            </ul>
+          </div>
+          <div class="card strong">
+            <h3>What would count as the next real upgrade</h3>
+            <ul>
+              <li>Show that MSAE beats or matches a standard SAE in a fair head-to-head comparison.</li>
+              <li>Show that the separation is useful for downstream interpretability tasks, not just internal geometry metrics.</li>
+              <li>Show whether shared syntax-like crossover structure is robust enough to justify a new branch family.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="pcc">
+      <div class="panel">
+        <div class="eyebrow">Bridge Program</div>
+        <h2>PCC: the new question about shared crossover structure</h2>
+        <p class="lead">
+          After separating position-private and content-private signal, the team asked a new question:
+          <strong>what if some important linguistic structure, especially syntax, is not private to either branch, but shared between them?</strong>
+        </p>
+
+        <div class="chip-row">
+          <span class="chip gold">Emerging analysis, not a headline result</span>
+          <span class="chip blue">Based on existing checkpoints, not a new PCC model</span>
+        </div>
+
+        <div class="callout warn">
+          <p><strong>How to read this section:</strong> PCC matters because it may explain what the current K=2 split still misses. But it is a follow-on interpretation program, not stronger evidence than the pre-K2 gate or the 1B-token K=2 run.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>PCC stands for</h3>
+            <p><strong>Position-Content Crossover.</strong> The hypothesis is that some structure may depend on both where something is and what it is.</p>
+          </div>
+          <div class="card">
+            <h3>What is being tested</h3>
+            <p>Whether syntax looks more "joint" or shared, while semantics stays more content-private.</p>
+          </div>
+          <div class="card">
+            <h3>Why not train a new model immediately?</h3>
+            <p>The team chose to begin with analysis on existing checkpoints so it could measure the signal first before committing to a new architecture.</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">A0</div>
+            <div class="card">
+              <h3>Initial observational audit</h3>
+              <p>Found small but real signs that some syntax tasks might benefit from joint position-content information.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">A1</div>
+            <div class="card">
+              <h3>Expanded audit</h3>
+              <p>The frozen original rule said <span class="mono">proceed_to_stage_b = false</span>. So under the first gate, PCC did not move forward.</p>
+              <span class="pill stop">Frozen no-go preserved</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">A1b</div>
+            <div class="card">
+              <h3>Diagnostic follow-up</h3>
+              <p>This stage argued that some task families had been grouped in a slightly misleading way, especially dependency labels and NER variants.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">A1c</div>
+            <div class="card">
+              <h3>Prospective confirmation</h3>
+              <p>Using the amended gate, the project now records a prospective <span class="mono">proceed_to_stage_b = true</span> decision for the same checkpoint family.</p>
+              <span class="pill pass">Amended gate confirmed</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">B-light</div>
+            <div class="card">
+              <h3>Control audit</h3>
+              <p>The project added matched-token controls, coarse matched-position controls, residual-vs-joint comparisons, and regularizer sensitivity checks, but still did not launch a new PCC model.</p>
+              <span class="pill live">Analysis-only stage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Current PCC readout</th>
+                <th>What it means in plain English</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="mono">syntax_pos</span> stays positive under controls</td>
+                <td>Some syntax-related structure still seems to benefit from joint information even after shortcut checks.</td>
+              </tr>
+              <tr>
+                <td><span class="mono">syntax_dep_coarse</span> weakens under matched-token control</td>
+                <td>Part of the signal may be genuine structure, but part may also depend on lexical shortcuts.</td>
+              </tr>
+              <tr>
+                <td>Semantic families remain content-private</td>
+                <td>So far, the evidence still says semantics sits more naturally in the content side than in a shared crossover side.</td>
+              </tr>
+              <tr>
+                <td><span class="mono">g7 &gt; g4</span> on key syntax crossover measures</td>
+                <td>The no-regularizer control may preserve more syntax crossover signal, which is scientifically interesting and not yet fully explained.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="ongoing">
+      <div class="panel">
+        <div class="eyebrow">Ongoing Work</div>
+        <h2>What is still unfinished and why it matters</h2>
+        <div class="grid-2">
+          <div class="card strong">
+            <h3>Immediate model-side follow-ups</h3>
+            <ul>
+              <li>Run a small <span class="mono">lambda_inc</span> calibration check. The current value works, but may not be the best tradeoff point.</li>
+              <li>Run a standard single-branch SAE comparator at matched scale. This is essential for publication-quality claims.</li>
+              <li>Study why regularization helps separation clearly but slightly hurts reconstruction.</li>
+            </ul>
+          </div>
+          <div class="card strong">
+            <h3>Immediate PCC follow-ups</h3>
+            <ul>
+              <li>Interpret the completed B-light control audit carefully before launching any new PCC branch training.</li>
+              <li>Decide whether a curated contrast-set stage is justified.</li>
+              <li>Keep the frozen original A1 no-go and the amended A1r proceed path distinct in the governance record.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>What has not happened yet</h3>
+            <p>No new PCC branch model has been trained. The bridge program is still in the measurement and control phase.</p>
+          </div>
+          <div class="card">
+            <h3>What Paper 2 would add</h3>
+            <p>A dense third branch for dark matter, broader K-component experiments, SAEBench, and the difficult 113-task probing benchmark.</p>
+          </div>
+          <div class="card">
+            <h3>What Paper 3 would add</h3>
+            <p>Subspace-valued atoms and multiscale branches for cases where even K linear branches are not enough.</p>
+          </div>
+        </div>
+
+        <div class="callout red">
+          <p><strong>Most honest current limitation:</strong> the project has stronger evidence about <strong>separation</strong> than about <strong>overall superiority to standard SAEs on every metric</strong>. That is a strong result, but it is not the final story yet.</p>
+        </div>
+
+        <div class="source-list">
+          <div class="source-item">
+            <strong>Current authoritative pre-K2 evidence:</strong>
+            <span class="mono">pilot_runs/20260528_001543_v6_prek2_fullsuite</span> and
+            <span class="mono">reports/pre_k2_suite_v6/</span>
+          </div>
+          <div class="source-item">
+            <strong>Current authoritative K=2 training evidence:</strong>
+            <span class="mono">pilot_runs/20260601_132158_k2_msae_wave2_fastdata_stream</span>
+          </div>
+          <div class="source-item">
+            <strong>Current authoritative PCC bridge evidence:</strong>
+            <span class="mono">pilot_runs/20260605_034815_pcc_stage_a1c</span> and
+            <span class="mono">pilot_runs/20260605_040323_pcc_stage_b_light_controls</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="takeaways">
+      <div class="panel">
+        <div class="eyebrow">Takeaways</div>
+        <h2>The simplest fair summary of the whole project</h2>
+        <div class="grid-2">
+          <div class="card strong">
+            <h3>What MSAE has shown</h3>
+            <ul>
+              <li>The project's starting premise looks real: position and content can be separated in a robust way on the chosen model and layer.</li>
+              <li>The K=2 trainer is stable, resumable, and works all the way through a 1B-token run.</li>
+              <li>The incoherence regularizer clearly makes branches more specialized.</li>
+              <li>The project has opened a credible new question about shared syntax-like crossover structure.</li>
+            </ul>
+          </div>
+          <div class="card strong">
+            <h3>What MSAE has not shown yet</h3>
+            <ul>
+              <li>It has not yet proved that MSAE is broadly better than the strongest SAE baselines on every benchmark.</li>
+              <li>It has not yet settled the best regularizer strength or penalty family.</li>
+              <li>It has not yet completed the larger K=3 and structured-branch programs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Bottom line:</strong> today, the safest strong claim is that MSAE is a promising and empirically supported way to get cleaner branch separation inside transformer activations. The next phase is about deciding whether that cleaner separation turns into stronger downstream interpretability tools.</p>
+        </div>
+
+        <p class="footnote">
+          Suggested use: open this file in a browser and scroll section by section. The page is designed to function like a vertical slide deck.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

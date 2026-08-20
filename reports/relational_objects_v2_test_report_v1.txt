@@ -1,0 +1,8 @@
+.....................................................                    [100%]
+=============================== warnings summary ===============================
+.venv-atlas/lib/python3.12/site-packages/transformers/utils/hub.py:111
+  /jumbo/lisp/f004ndc/experiments/wip/MSAE/.venv-atlas/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+53 passed, 1 warning in 6.06s

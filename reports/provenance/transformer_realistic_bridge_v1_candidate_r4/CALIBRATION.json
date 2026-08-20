@@ -1,0 +1,36 @@
+{
+  "outcomes": {
+    "correlated_superposition": {
+      "incomplete_mutation_rejected": true,
+      "passing": true,
+      "routing_mutation_rejected": true
+    },
+    "ideal_hard": {
+      "incomplete_mutation_rejected": true,
+      "passing": true,
+      "routing_mutation_rejected": true
+    },
+    "layernorm": {
+      "incomplete_mutation_rejected": true,
+      "passing": true,
+      "routing_mutation_rejected": true
+    },
+    "realistic_noisy": {
+      "incomplete_mutation_rejected": true,
+      "passing": true,
+      "routing_mutation_rejected": true
+    },
+    "residual_bypass": {
+      "incomplete_mutation_rejected": true,
+      "passing": true,
+      "routing_mutation_rejected": true
+    },
+    "soft_attention": {
+      "incomplete_mutation_rejected": true,
+      "passing": true,
+      "routing_mutation_rejected": true
+    }
+  },
+  "schema_version": "transformer_realistic_bridge_v1_calibration",
+  "scientific_panels_read": false
+}

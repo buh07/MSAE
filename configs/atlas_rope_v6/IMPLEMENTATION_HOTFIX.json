@@ -1,0 +1,24 @@
+{
+  "payload": {
+    "base_implementation_candidate_sha256": "c1025bfb85778550293dde3ae2c233a1b05549fa9c8eaf2875a1c7c636fe19ce",
+    "gentle_model_calls_existed_at_signature": false,
+    "hotfix_candidate_sha256": "93edc29b9ba4c02da0e350a86f7e8c048f50461422d50edcbde8c06eafa02bee",
+    "neural_training_authorized": false,
+    "new_sha256": "0d9f89bb618b6c94c3077c22a7dca70be248fc281b9dea838d3de13d90793d9c",
+    "old_sha256": "8aacc345272149441cafb899983477a215c4c0021f325e77c0e7a26875a5c92a",
+    "review": {
+      "path": "reports/adversarial/atlas_v3_6_attempt10_hotfix_review.md",
+      "sha256": "fa6f0bda92ff14747b27beb8c13cf2fb5a590f5dd96d5d910ff5b52010e02566"
+    },
+    "schema_version": "atlas_rope_v6_attempt10_prevalidation_hotfix_v1",
+    "status": "AUTHORIZED_PREVALIDATION_HOTFIX",
+    "target": "scripts/run_atlas_rope_v6.py",
+    "validation_authorization_existed_at_signature": false
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "a9bca58d8782c40cb777f99589808b5f16d77af885ded819ef99ef50bc20a97d",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "vXleieyw4JVDmK7E8XhA3u/MNNLtFAJ9a0hrQBEw++oidNdYD3C9Ivpajia72J/R9U0IpxzTqQFOEkNOK6JmAA=="
+  }
+}

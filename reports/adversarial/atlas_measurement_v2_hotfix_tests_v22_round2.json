@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".venv-atlas/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_msae_measurement_v2.py",
+    "tests/test_msae_measurement_v2_run.py"
+  ],
+  "config_sha256": "c3d7a16b122501d8945ed04e42fda1cc15ec9adc89d1e4f906eab99d8dcd0f98",
+  "ended_unix": 1785715616.7898798,
+  "exit_code": 0,
+  "implementation_sha256": "dbb50b7c35b1ea176b87e7a35dfc57a87fb89d44bb2128ffe8c64ae1d361a7b1",
+  "output": "..........................................                               [100%]\n42 passed in 2.60s\n",
+  "regression_contract": "production np.int32 labels are numerically identical to np.int64 labels",
+  "schema_version": "atlas_measurement_v2_hotfix_tests_v1",
+  "started_unix": 1785715613.6584115,
+  "test_file_sha256": "03692dd3f9a89f79acfbcdc44a3148dd36b56ea0b653ad1b13a537b14652324b"
+}

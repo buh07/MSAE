@@ -1,0 +1,104 @@
+{
+  "alpha_tie": 0.005,
+  "boundary_tolerance": 0.01,
+  "budgets": {
+    "maximum_host_ram_gib": 256,
+    "maximum_new_storage_gib": 250,
+    "maximum_stage_wall_hours": 24,
+    "maximum_total_gpu_hours": 192
+  },
+  "descriptive_checkpoints": [
+    "k2_wave2_fast_g7_L3_s42_inc0"
+  ],
+  "diagnostic_continuation": {
+    "base_completion_bundle_sha256": "0aac744d4d10f56cafae645fdc71ea8348bec743a5c20561d4649aedac0503ee",
+    "base_config_sha256": "99d4f094da4eb38b6fa021967dee18e155698cdbd4cd155761a0c130b90e6e1d",
+    "base_l3_selector_sha256": "c210d6d44ef8702a4cf391480ce1497a6648fe991103b5c60c1c3977f14af06e",
+    "base_l3_stop_sha256": "612d94df5970236323110e6b6e050d900477738c4488e5d284aa21169becc31c",
+    "base_not_launched_sha256": "85656dd825c90e76d0fb9614a791586105175daf9507026fc7865758a43a9dd4",
+    "base_run_root": "pilot_runs/20260801_atlas_completion_v1",
+    "decision_promotion_allowed": false,
+    "diagnostic_continuation_only": true,
+    "resource_job_caps_gpu_hours": {
+      "k2": 5.0,
+      "specificity": 0.3,
+      "stability": 3.25
+    },
+    "termination_grace_seconds": 300,
+    "timeout_accounting_margin_seconds": 5,
+    "result_review_sha256": "7dba52503d9f1ca86cc209d05267737be5cd984b2859c77534a35e978112f172",
+    "schema_version": "atlas_completion_diagnostic_continuation_v1"
+  },
+  "draws": 500,
+  "eligibility_floor": 0.02,
+  "evidence_class": "postscore_amended_architecture_evidence",
+  "family_rank": 8,
+  "layers": [
+    3,
+    4
+  ],
+  "minimum_complete_draws": 450,
+  "minimum_family_tasks": 2,
+  "minimum_groups_per_hypothesis": 20,
+  "minimum_groups_per_task_source": 10,
+  "norm_ratio_tolerance": 1e-05,
+  "orthogonality_tolerance": 1e-06,
+  "parent_bundle_sha256": "e7c12f4407249ccc556c8f56234c8de36af01d29a89de525deed7506876c8c31",
+  "position_rank": 16,
+  "primary_checkpoints": [
+    "k2_wave2_fast_g4_L3_s42_inc1e2",
+    "k2_wave2_fast_g5_L3_s43_inc1e2",
+    "k2_wave2_fast_g6_L3_s44_inc1e2"
+  ],
+  "primary_layer": 3,
+  "randomization_draws": 9999,
+  "ridge_alphas": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "roundtrip_tolerance": 1e-05,
+  "run_root": "pilot_runs/20260802_atlas_completion_diagnostic_continuation_v1",
+  "scaler_rows": 50000,
+  "schema_version": "atlas_completion_v1",
+  "seed": 20260731,
+  "sentinel_mapping": {
+    "capitalization": "content",
+    "context_offset": "position",
+    "continuation_status": "position",
+    "deprel_coarse": "content",
+    "frequency_bin": "content",
+    "number": "content",
+    "source_type": "content",
+    "upos": "content",
+    "word_length": "content"
+  },
+  "sentinel_max_degradation": 0.1,
+  "sentinel_min_support": {
+    "default": 100,
+    "deprel_coarse": 50,
+    "upos": 50
+  },
+  "sentinels": [
+    "upos",
+    "deprel_coarse",
+    "number",
+    "capitalization",
+    "word_length",
+    "frequency_bin",
+    "source_type",
+    "continuation_status",
+    "context_offset"
+  ],
+  "sham_distance_ceiling": 1e-06,
+  "source_run_root": "pilot_runs/20260731_atlas_v1_architecture_selection",
+  "specificity_margin": 0.05,
+  "specificity_raw_distance_floor": 0.0001,
+  "task_row_caps": {
+    "C1": 20000,
+    "C2": 20000,
+    "calibration": 20000,
+    "discovery": 50000
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "architecture_outcome_recomputed": "K2_broad_position_content_selective_not_supported",
+  "artifact_chain_verified": true,
+  "checkpoint_digests_verified": true,
+  "checkpoint_pass_recomputed": {
+    "g4": false,
+    "g5": false,
+    "g6": false,
+    "g7": false
+  },
+  "claim": "K2_broad_position_content_selective_not_supported",
+  "config_implementation_inventory_verified": true,
+  "decisive_failure_draw_maxima": {
+    "g4": {
+      "head_signed_distance": {
+        "assigned_draw_max": 0.3823488460407928,
+        "pass": false,
+        "selectivity_draw_max": -0.34433533584769876
+      },
+      "relative_quartile": {
+        "assigned_draw_max": 1.0381433347872366,
+        "pass": false,
+        "selectivity_draw_max": -0.008498044026067575
+      },
+      "token_identity_v2": {
+        "assigned_draw_max": 0.8826730134572779,
+        "pass": true,
+        "selectivity_draw_max": 0.48373643330787547
+      }
+    },
+    "g5": {
+      "head_signed_distance": {
+        "assigned_draw_max": 0.46715759677880947,
+        "pass": false,
+        "selectivity_draw_max": -0.20430974674810432
+      },
+      "relative_quartile": {
+        "assigned_draw_max": 1.0426433707236324,
+        "pass": false,
+        "selectivity_draw_max": 0.009068531128498925
+      },
+      "token_identity_v2": {
+        "assigned_draw_max": 0.8736046189037153,
+        "pass": true,
+        "selectivity_draw_max": 0.318348511204413
+      }
+    },
+    "g6": {
+      "head_signed_distance": {
+        "assigned_draw_max": 0.513248929999345,
+        "pass": false,
+        "selectivity_draw_max": -0.27688172388244786
+      },
+      "relative_quartile": {
+        "assigned_draw_max": 1.0816472886369586,
+        "pass": false,
+        "selectivity_draw_max": 0.10867346222036756
+      },
+      "token_identity_v2": {
+        "assigned_draw_max": 0.8536284320785313,
+        "pass": true,
+        "selectivity_draw_max": 0.34115307433080116
+      }
+    },
+    "g7": {
+      "head_signed_distance": {
+        "assigned_draw_max": 0.4601704961756284,
+        "pass": false,
+        "selectivity_draw_max": -0.2811683318008207
+      },
+      "relative_quartile": {
+        "assigned_draw_max": 1.1031711619965385,
+        "pass": false,
+        "selectivity_draw_max": 0.06552012560932763
+      },
+      "token_identity_v2": {
+        "assigned_draw_max": 0.8779879527885858,
+        "pass": true,
+        "selectivity_draw_max": 0.23527768425153417
+      }
+    }
+  },
+  "geometry_summary_recomputations": 9,
+  "hashes": {
+    "config": "1a38042004ae18f34524508dda5d26d836530a16910a42b6259cfaf4cae3b86e",
+    "final_manifest": "a54a76bf8b923e4cb65f94161965e5409806ef35cb93862851a1fde150cdd7e8",
+    "prepared_manifest": "c9c50245c858f9881458dfcb1e935f0f767b070db727f82c2575227d7201ae1e",
+    "probe_models": "c90f747082c2a4b116e87365156e7996d62c66732642a41faab46eb90d99cf7c",
+    "protocol": "7a493107579416aed86456523e1125a31a4a6336fccd058a2efce845c3c9dd72",
+    "report_json": "e55655b9a7f1b47ac6866ef08c86fed2bed8d9237e5cf3dab33f822299bdcd25",
+    "report_md": "aa06be96aa83617be2031d0f10c39764bfded123742abfbcbc16b90430cc0fa1",
+    "results": "c982eade2616cf2bf0fc8f772448b7a0fcad76ce1d57700975054ca1436328cf",
+    "terminal_complete": "1d48b0f216cc2afa56b6ba99ffe439e8bfa9f6da94f03dcc15a40dd8221b324f"
+  },
+  "interpretation": "prespecified conjunctive support rule failed for frozen g4/g5/g6 under v2.4; not evidence that all K2 models lack selective separation",
+  "licensed_claims": [
+    "The eligible v2.4 run yields the preregistered not-supported decision for frozen g4/g5/g6.",
+    "All three candidates fail broad structural/context probe localization, decisively on head_signed_distance.",
+    "All three candidates pass token-identity probe localization but fail entity-substitution cross-family control specificity.",
+    "Candidate geometry is complete and passes its separate descriptive gate.",
+    "g7 also fails and is diagnostic only."
+  ],
+  "localization_endpoint_recomputations": 12,
+  "measurement_eligible_recomputed": true,
+  "prepared_file_hashes_verified": true,
+  "probe_metric_recomputation": {
+    "bootstrap_draw_checks": 27000,
+    "max_draw_abs_error": 0.0,
+    "max_point_abs_error": 0.0,
+    "point_checks": 54
+  },
+  "schema_version": "atlas_measurement_v2_v24_claim_audit_v1",
+  "specificity": {
+    "construct_recomputations": 8,
+    "max_pair_response_abs_error": 0.0
+  },
+  "split_audit": {
+    "C1_C2_main_group_overlap": 0,
+    "C1_C2_pair_group_overlap": 0,
+    "main_group_counts": {
+      "C1": 436,
+      "C2": 436,
+      "calibration": 194,
+      "discovery": 508
+    },
+    "pair_counts": {
+      "C1": {
+        "document_context_anchor": 236,
+        "entity_substitution": 26
+      },
+      "C2": {
+        "document_context_anchor": 211,
+        "entity_substitution": 24
+      },
+      "calibration": {
+        "document_context_anchor": 109,
+        "entity_substitution": 40
+      },
+      "discovery": {}
+    },
+    "within_role_context_entity_group_overlap": 0
+  },
+  "terminal_job_count_exit_zero": 9,
+  "unlicensed_claims": [
+    "K2 architectures generally cannot learn position/content selectivity.",
+    "Strict absolute position was tested or disproved.",
+    "The incoherence regularizer caused the failures or has no causal effect.",
+    "The candidates are inferior/equivalent to an equal-capacity baseline.",
+    "The result generalizes beyond the frozen layer/model/checkpoints/tasks and ESLSpok transcript-file estimand.",
+    "The intervals include training/checkpoint-selection uncertainty or multiplicity-adjusted family-wide inference."
+  ],
+  "verdict": "SUPPORTED",
+  "verdict_basis": "independent artifact-chain and arithmetic recomputation; frozen artifacts unchanged"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "atlas_context_local_v10_attempt14_source_candidates_v2",
+  "status": "FROZEN_BEFORE_COSER_CONTENT_OR_LABEL_INSPECTION",
+  "created_date": "2026-08-04",
+  "model_forward_performed": false,
+  "activation_or_endpoint_outcome_used": false,
+  "supersedes": "reports/provenance/atlas_v3_10_attempt14_source_candidates_preinspection.json",
+  "reason": "The v1 label/text-only census found exactly one eligible source, Spanish AnCora. The v1 rule required a design amendment before any model forward if no language group supplied two sources. This amendment adds one same-language candidate before inspecting its contents.",
+  "fixed_language": "Spanish",
+  "fixed_sources": [
+    {
+      "repository": "UD_Spanish-AnCora",
+      "revision": "20adddbfcdd773c6dc97ba48ea11ca9364e74185",
+      "prior_label_only_census": {
+        "newdoc_ids": 1635,
+        "multi_sentence_documents": 1604,
+        "word_rows": 560137,
+        "redacted_forms": 0
+      }
+    },
+    {
+      "repository": "UD_Spanish-COSER",
+      "revision": "01b43bdd30e3e2081613052fff33277083f00fe9",
+      "prior_label_only_census": null
+    }
+  ],
+  "selection_rule": "Use AnCora and COSER only if COSER has recoverable surface forms, at least 80 authentic upstream multi-sentence documents, and the later joint text/label/tokenizer builder finds at least 40 disjoint context-plus-lexical components in each source. Otherwise terminate prescore-ineligible; do not add another source.",
+  "cross_language_pairing_forbidden": true
+}

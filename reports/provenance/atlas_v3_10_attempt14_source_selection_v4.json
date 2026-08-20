@@ -1,0 +1,65 @@
+{
+  "activation_or_endpoint_outcome_used": false,
+  "claim_scope": "exploratory_same_language_cross_upstream_corpus_transfer_shared_ud_pipeline",
+  "collision_policy": {
+    "no_bridging": "Adjacent context sentences must remain adjacent in original upstream order; an excluded sentence creates a permanent gap.",
+    "post_removal_rule": "Recheck 128-document and 64-component floors with no replacement source and no backfill after inference.",
+    "precedence": [
+      "whole-document signature collision => remove both documents",
+      "collided normalized sentence with at least 20 characters => remove every affected document",
+      "at least two distinct collision identities in one document => remove that document",
+      "otherwise remove the isolated short sentence from every model-input and lexical-donor role"
+    ],
+    "signatures": [
+      "compact JSON of original-case integer-row FORM sequence",
+      "NFKC lowercase whitespace-collapsed # text",
+      "compact JSON of pinned-tokenizer input IDs for the complete sentence"
+    ],
+    "symmetric": true,
+    "trigger": "equality of any signature across source partitions"
+  },
+  "corrected_census_path": "reports/provenance/atlas_v3_10_attempt14_corrected_source_census_v2.json",
+  "corrected_census_sha256": "eb5278bb15763f91c6569d7ce9f8729e5699f330d16e48071f386603b5227d09",
+  "created_date": "2026-08-04",
+  "joint_component_rule": "Each partition must supply at least 64 document-disjoint components after canonical collision removal. Failure stops prescore without model inference.",
+  "model_forward_performed": false,
+  "raw_files": [
+    {
+      "bytes": 5121417,
+      "name": "es_ancora-ud-dev.conllu",
+      "sha256": "1a132068062edf2654fb45b41cd4c59ba7e5c18e7c5f642ed5a9cc351fd9f0fe"
+    },
+    {
+      "bytes": 5123220,
+      "name": "es_ancora-ud-test.conllu",
+      "sha256": "679f1c05ca654aa26801c80319df45f8f97606718fb534b91755b48f3e67fa6f"
+    },
+    {
+      "bytes": 43100702,
+      "name": "es_ancora-ud-train.conllu",
+      "sha256": "47b6fc49d6ed48a016e7fa5ad9f5c7ecf3ec21e9db005df3ea14d10f07c6deb6"
+    }
+  ],
+  "repository": "UD_Spanish-AnCora",
+  "revision": "20adddbfcdd773c6dc97ba48ea11ca9364e74185",
+  "schema_version": "atlas_context_local_v10_attempt14_source_selection_v4",
+  "sources": {
+    "ANCORA_3LB": {
+      "document_id_prefix": "3LB-",
+      "multi_sentence_documents": 276,
+      "sentences": 3503,
+      "single_sentence_documents": 3,
+      "total_documents": 279
+    },
+    "ANCORA_CESS": {
+      "document_id_prefix": "CESS-",
+      "multi_sentence_documents": 1328,
+      "sentences": 14159,
+      "single_sentence_documents": 28,
+      "total_documents": 1356
+    }
+  },
+  "status": "FROZEN_BEFORE_CANONICAL_COLLISION_OR_JOINT_COMPONENT_INSPECTION",
+  "superseded_selection_sha256": "eae9cf39f359272a2771e66bce9879159e958af8897a4feb0cb13a3b1d3653f9",
+  "supersedes_incorrect_selection": "reports/provenance/atlas_v3_10_attempt14_source_selection_v3.json"
+}

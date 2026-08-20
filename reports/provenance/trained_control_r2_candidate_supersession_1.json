@@ -1,0 +1,31 @@
+{
+  "artifacts": [
+    {
+      "bytes": 14343,
+      "path": "reports/provenance/trained_control_studies_v1_r2_PROTOCOL_PARITY_SUPERSEDED_e69ca2ee.json",
+      "sha256": "e69ca2ee2663a151fc3e9ba6949f6634dc5590e61619a075f3d7b18a1fa94515"
+    },
+    {
+      "bytes": 2326,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_r2_candidate/SUPERSEDED_CANDIDATE_ed139c5b.json",
+      "sha256": "ed139c5b7168f8176879759d1a64be090b45695a167beb904eb7dd6d31067671"
+    },
+    {
+      "bytes": 2468,
+      "path": "reports/provenance/causal_manifold_bridge_v1_r2_candidate/SUPERSEDED_CANDIDATE_a91d8fd6.json",
+      "sha256": "a91d8fd65841ba8e06f9e44dba05ff15071e8a786605bec2c26aabd1ca5f85f8"
+    },
+    {
+      "bytes": 254,
+      "path": "reports/adversarial/trained_copy_sae_capacity_v1_r2_candidate_review_blocked_1.md",
+      "sha256": "906dbf0526be70a781fe3e53bdf305ac25289a0005ab493df8fabaabfb6a6720"
+    },
+    {
+      "bytes": 288,
+      "path": "reports/adversarial/causal_manifold_bridge_v1_r2_candidate_review_blocked_1.md",
+      "sha256": "5af12a4af3cbb9befb32ea19c801a2a4b7dd4c53bef91c428a2f0838be41696c"
+    }
+  ],
+  "schema_version": "trained_control_r2_candidate_supersession_v1",
+  "scientific_panel_accessed": false
+}

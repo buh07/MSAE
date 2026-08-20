@@ -1,0 +1,8 @@
+{
+  "candidate_inventory_sha256": "96bb24c1adce172ec4c62318f3b8169bc618a24ec416a3163eab85c1eb806ecb",
+  "freeze_sha256": "32da54a8eaf2c56d2871ed865a82c700b4e56f165aefdfa2eec0b07ed39f529e",
+  "review_path": "reports/adversarial/transformer_realistic_methods_v1_frozen_review.md",
+  "review_sha256": "204cad34d2bd6ab4fb59569d230187db78b610a8857c549a12f09719064f4dee",
+  "schema_version": "transformer_realistic_methods_v1_frozen_review_binding",
+  "status": "BOUND"
+}

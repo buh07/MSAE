@@ -1,0 +1,28 @@
+{
+  "both_locks_before_payload": true,
+  "candidate_manifests": [
+    {
+      "files": 10,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "e6f1e8d2e08fa6a3c663bcda74cc6c5e856f8fccfd6ee1265907d34f2eb7ed34"
+    },
+    {
+      "files": 10,
+      "path": "reports/provenance/trained_copy_external_v1_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "bfbe73a341bb3a07ce6b0129cc303234caaf74bcc21222819d47a34b8cfcde55"
+    }
+  ],
+  "candidate_reviews": [
+    {
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_candidate_review.md",
+      "sha256": "8c930fb757bf4dc857d7e34af3814391af28dbbcde6117529a4dadfa62ec145f"
+    },
+    {
+      "path": "reports/adversarial/trained_copy_external_v1_candidate_review.md",
+      "sha256": "8c930fb757bf4dc857d7e34af3814391af28dbbcde6117529a4dadfa62ec145f"
+    }
+  ],
+  "config_sha256": "4938ae66616da9ab48dd64dccaa885dab3d5cf8bfac13aa845b513322be0d59f",
+  "created_ns": 1786343902448275643,
+  "schema_version": "external_generator_lock"
+}

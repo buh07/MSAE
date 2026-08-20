@@ -1,0 +1,21 @@
+{
+  "freeze_sha256": "d208922048cb60dc215371682ae2bad4a24215b848f98ba981e5069c4e87e60c",
+  "ioi_v1_retry_authorized": false,
+  "records": [
+    {
+      "frozen_sha256": "21a8a023a7a11e8236531fd556238a815dcd3d3bedc4e67927b3001d1c11cece",
+      "original_path": "PAPER.md",
+      "snapshot_path": "reports/provenance/known_mechanism_ioi_v1_post_result/FROZEN_PAPER.md",
+      "snapshot_sha256": "21a8a023a7a11e8236531fd556238a815dcd3d3bedc4e67927b3001d1c11cece"
+    },
+    {
+      "frozen_sha256": "9d7c5c1fe15e7c83cdceba81b495d3be8887a076753374e5fe896304f0c1d945",
+      "original_path": "reports/paper_claim_ledger_v1.json",
+      "snapshot_path": "reports/provenance/known_mechanism_ioi_v1_post_result/FROZEN_CLAIM_LEDGER.json",
+      "snapshot_sha256": "9d7c5c1fe15e7c83cdceba81b495d3be8887a076753374e5fe896304f0c1d945"
+    }
+  ],
+  "schema_version": "known_mechanism_ioi_v1_post_result_paper_migration",
+  "scientific_result_artifacts_modified": false,
+  "status": "ORIGINAL_FROZEN_MANUSCRIPT_BYTES_PRESERVED_BEFORE_POST_RESULT_UPDATE"
+}

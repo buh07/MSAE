@@ -1,0 +1,15 @@
+{
+  "candidate_review_sha256": "239f5c7e329621f44c4d07ed9745ad76e70dbaa82d665e93919625203859ed91",
+  "candidate_sha256": "5f649577f164db1d68a2fca45b5679f742d2cfbd0840109323f578f14e3d4b74",
+  "config_sha256": "f12baf6b66d936fa8192c5385a48dc864a77ca3e4cb691cdfd5387df4f7a1dd9",
+  "launcher_sha256": "dd92ebaefe4db8749e85bf9028a5da3c413b1895edff7222df07c10ff7365fca",
+  "method_table_sha256": "55e091d274bce150abe773cd3ffa9e117c8dc66104f546e1ff210db8559af73f",
+  "plan_sha256": "696dddc0041fdc23f61cefa215ddee941186e22599ce9313308b7bdeff35ac6a",
+  "protocol_parity_sha256": "1f9cca990fd6f2b83ca4468f030d5077389972f88fc7c9bea444751d722f698c",
+  "schema_version": "trained_copy_sae_capacity_v1_generator_lock",
+  "source_sha256": "8a9063b8247123b5b5bf2d95fef4161dc943e9512bb0d3bff7f5cdb103ae0552",
+  "tests_sha256": {
+    "launcher": "c5dbbe8f18164d057b1e52a4d234b2c15aa1b1675d2827b120ca78f4898c26cb",
+    "study": "4f5bb0f9e70bdd1bce8e61d5f6117671eb9caba5ee84c653bd83a5b712facc38"
+  }
+}

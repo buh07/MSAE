@@ -1,0 +1,180 @@
+{
+  "activation_extraction_performed": false,
+  "checks": {
+    "basedpyright": {
+      "status": "UNAVAILABLE"
+    },
+    "blocked_candidate_supersession": {
+      "authorization_created": false,
+      "path": "reports/atlas_rope_v8/preauthorization_superseded_435dbad80bb2/SUPERSESSION.json",
+      "scientific_scoring_performed": false,
+      "sha256": "428de12d26a19294fd9b1c1d13c94f1ad0f0f42feb6ec664d39c8c5d3f20fd11",
+      "status": "PASS"
+    },
+    "deep_import_cache_source_verification": {
+      "activation_complete_sha256": {
+        "EWT": "2c6f57f788981198d2537fd605d2dadef491febc844938c3d4e5fc3b8aa6b88a",
+        "GUM": "65c29542bea7badb84694755774f62da95eefb40e7082a3dcac113b6c5b9791a"
+      },
+      "adapter_sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0",
+      "attempt11_terminal_sha256": "ad7fd3b4de265879737774df38220956a4947298f3122f37b207c2bea46285d1",
+      "attempt11_tree_inventory_sha256": "7e6c0006ddf8800d4fcda2ef759f6e00ddf16d817b61542e60e6125e0791c591",
+      "cache_rows": {
+        "EWT": 183771,
+        "GUM": 157398
+      },
+      "config_sha256": "a3f82acb881e7164f523f06f1ed1ff0445d05003189c95f067da3fb75e1f2bad",
+      "cross_panel": {
+        "baseline_runtime_pass": true,
+        "rope_translation_pass": true
+      },
+      "deep_cache_verified": true,
+      "panel_complete_sha256": {
+        "CZECH_PDT": "b226437653617a1c0df5be6acb2fadac33b12da450f9e32c6fd76f230b1dbce4",
+        "ENGLISH_CHILDES_CTETEX": "bf5b79715655bb5b32e26ba6918f25568464288103d95f35bf3c538033fab0bf"
+      },
+      "panel_names": [
+        "CZECH_PDT",
+        "ENGLISH_CHILDES_CTETEX"
+      ],
+      "qa_complete_sha256": {
+        "EWT": "a767ddcb595de1ebcc3ad2dd86c7f541260b32a0473ff370569d860575aa3b44",
+        "GUM": "3b4520b392cddf190dcbbfd3813f16b11e11c8c4aba8e5ffa99d326205935400"
+      }
+    },
+    "full_historical_suite": {
+      "attempt12_test_failures": 0,
+      "failed": 11,
+      "failure_groups": [
+        "Attempt-9/10 historical tree-identity tests reject subsequently terminalized artifact trees",
+        "MSAE completion continuation test assumes an absent completed-history run root",
+        "MSAE completion summary tests detect a pre-existing requirements-atlas.lock.txt freeze mismatch"
+      ],
+      "passed": 496,
+      "status": "KNOWN_PREEXISTING_FAILURES_OUTSIDE_ATTEMPT12_SCOPE",
+      "warnings": 1
+    },
+    "gpu_mapping_dry_preflight": {
+      "mapping": {
+        "cuda": "12.8",
+        "cuda_visible_devices": "0",
+        "cudnn": 90800,
+        "extraction_physical_index": 1,
+        "extraction_physical_uuid": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+        "name": "NVIDIA RTX 6000 Ada Generation",
+        "physical_index": 0,
+        "physical_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+        "torch": "2.7.0",
+        "visible_device_count": 1,
+        "visible_index": 0,
+        "visible_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15"
+      },
+      "model_forward_performed": false,
+      "model_loaded": false,
+      "status": "PASS"
+    },
+    "new_failure_injection_coverage": {
+      "cases": [
+        "all three post-link signing fault branches stay under Attempt-12",
+        "safe shim excludes legacy extractor and Transformers in a fresh process",
+        "safe source-bundle shim equals the frozen loader on EWT and GUM",
+        "physical GPU0/GPU1 roles are both live-checked",
+        "attempt lock rejects concurrency",
+        "crash after promotion reconciles to success",
+        "pre-start is create-once",
+        "overlay equality is unconditional"
+      ],
+      "status": "PASS"
+    },
+    "plan_adversarial": {
+      "path": "reports/adversarial/atlas_v3_8_attempt12_plan_review.md",
+      "sha256": "4703e1fe07efc0bd41a6f36fe253b28f77d31867ffc2a8bca84ce768ab504c8d",
+      "status": "SHIP"
+    },
+    "plan_gate": {
+      "plan_sha256": "905a7545db682c473a4dad0904a18fbab19be49d5e6d86de099efccc34f2d067",
+      "status": "PASS"
+    },
+    "python_compile": {
+      "command": ".venv-atlas/bin/python -m py_compile scripts/atlas_rope_v8.py scripts/atlas_rope_v8_analysis_shim.py scripts/run_atlas_rope_v8.py",
+      "status": "PASS"
+    },
+    "ruff": {
+      "status": "UNAVAILABLE"
+    },
+    "shell_syntax": {
+      "command": "bash -n scripts/run_atlas_rope_v8_pipeline.sh scripts/launch_atlas_rope_v8_tmux.sh",
+      "status": "PASS"
+    },
+    "static_operation_audit": {
+      "activation_extraction_path": false,
+      "fresh_validation_path": false,
+      "model_forward_path": false,
+      "neural_training_path": false,
+      "reviewed_paths": [
+        "scripts/atlas_rope_v8.py",
+        "scripts/atlas_rope_v8_analysis_shim.py",
+        "scripts/run_atlas_rope_v8.py",
+        "scripts/run_atlas_rope_v8_pipeline.sh",
+        "scripts/launch_atlas_rope_v8_tmux.sh"
+      ],
+      "status": "PASS",
+      "transitive_analysis_loader": {
+        "extraction_cli_exposed": false,
+        "frozen_analyzer_sha256": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031",
+        "legacy_extractor_loaded": false,
+        "model_forward_callable_exposed": false,
+        "safe_shim_sha256": "0a33a5545d163f95aa92a0f16e840d3eaf5f57747f7101fe3e4b9b5b150ca2f1",
+        "status": "PASS",
+        "transformers_loaded": false
+      }
+    },
+    "targeted_tests": {
+      "command": ".venv-atlas/bin/python -m pytest -q -p no:cacheprovider tests/test_atlas_rope_v8.py tests/test_atlas_rope_v7.py",
+      "passed": 46,
+      "status": "PASS",
+      "warnings": 1
+    }
+  },
+  "fresh_validation_performed": false,
+  "implementation_inventory": {
+    "PLAN_ATTEMPT12.md": {
+      "bytes": 14880,
+      "sha256": "905a7545db682c473a4dad0904a18fbab19be49d5e6d86de099efccc34f2d067"
+    },
+    "configs/atlas_rope_v8/recovery.json": {
+      "bytes": 27185,
+      "sha256": "a3f82acb881e7164f523f06f1ed1ff0445d05003189c95f067da3fb75e1f2bad"
+    },
+    "scripts/atlas_rope_v8.py": {
+      "bytes": 30563,
+      "sha256": "6a0f133a7a2743c498310442253a0ba81ebb1765c3d6deea532ec435c1cc729e"
+    },
+    "scripts/atlas_rope_v8_analysis_shim.py": {
+      "bytes": 4364,
+      "sha256": "0a33a5545d163f95aa92a0f16e840d3eaf5f57747f7101fe3e4b9b5b150ca2f1"
+    },
+    "scripts/launch_atlas_rope_v8_tmux.sh": {
+      "bytes": 849,
+      "sha256": "db917b29705aa7784fd9bfaf18fbd103b254313ceaee0d8c2f67ca70dd34b769"
+    },
+    "scripts/run_atlas_rope_v8.py": {
+      "bytes": 34400,
+      "sha256": "feed92896b025584f1e78d0d879003f0eb9f6e93be06b68c8c21313ff5355f0c"
+    },
+    "scripts/run_atlas_rope_v8_pipeline.sh": {
+      "bytes": 1078,
+      "sha256": "967ebc9e6525d8d58731fd755ef113b938a71d0ce918e492ac764764270e4123"
+    },
+    "tests/test_atlas_rope_v8.py": {
+      "bytes": 15763,
+      "sha256": "567d81c50cc414da1a3192683240fe57d03a111b4f6488ad976ecd6f558de6e0"
+    }
+  },
+  "model_forward_performed": false,
+  "neural_training_run": false,
+  "schema_version": "atlas_rope_v8_attempt12_implementation_verification_v2",
+  "scientific_scoring_performed": false,
+  "scope": "ATTEMPT12_ANALYSIS_ONLY_RECOVERY_REVISED_AFTER_ADVERSARIAL_BLOCK",
+  "status": "PASS"
+}

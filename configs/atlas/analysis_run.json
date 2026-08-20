@@ -1,0 +1,25 @@
+{
+  "schema_version": "atlas_v1_analysis_run",
+  "seed": 20260731,
+  "layers": [3, 4],
+  "primary_layer": 3,
+  "dtype": "float16",
+  "base_sentence_caps_per_source_type": {
+    "discovery": {"UD": 1000, "NER": 1000},
+    "calibration": {"UD": 500, "NER": 500},
+    "C1": {"UD": -1, "NER": -1},
+    "C2": {"UD": -1, "NER": -1}
+  },
+  "task_row_caps": {
+    "discovery": 50000,
+    "calibration": 20000,
+    "C1": 20000,
+    "C2": 20000
+  },
+  "ridge_alphas": [0.1, 1.0, 10.0, 100.0],
+  "family_rank": 8,
+  "broad_position_rank": 16,
+  "bootstrap_draws": 500,
+  "randomization_draws": 9999,
+  "batch_size": 24
+}

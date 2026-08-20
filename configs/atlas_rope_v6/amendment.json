@@ -1,0 +1,45 @@
+{
+  "attempt9_terminal": {
+    "path": "pilot_runs/20260803_atlas_rope_technical_v5/TERMINAL.json",
+    "sha256": "83a369af693019c768284adfef5811bf7cc56eb9d226d8449e514abf12ecbf06"
+  },
+  "budgets": {
+    "cosine_failures": 0,
+    "failing_elements_per_cell": 30,
+    "failing_rows_per_cell": 2,
+    "relative_l2_failures": 0
+  },
+  "calibration_union": {
+    "EWT_attempt8_cells": 30,
+    "GUM_attempt9_cells": 30,
+    "attempt7_rows_separate": 72,
+    "total_cells": 60
+  },
+  "caps": {
+    "cosine_inner": [
+      1e-11,
+      5e-11,
+      1e-10
+    ],
+    "fixed_atol": 2e-05,
+    "fixed_rtol": 5e-06,
+    "relative_l2_outer": [
+      2e-06,
+      5e-06,
+      1e-05,
+      2e-05
+    ],
+    "required_selected": {
+      "atol": 2e-05,
+      "cosine_distance": 5e-11,
+      "relative_l2": 2e-05
+    }
+  },
+  "neural_training_authorized": false,
+  "new_ewt_or_gum_forward_authorized": false,
+  "schema_version": "atlas_rope_v6_attempt10_budget_amendment_v1",
+  "science_claim_class": "EXPLORATORY_GUM_TECHNICAL_CALIBRATION_DUAL_ROLE",
+  "status": "FROZEN_IMPLEMENTATION_INPUT",
+  "validation_attempts": 1,
+  "validation_source": "GENTLE_validation"
+}

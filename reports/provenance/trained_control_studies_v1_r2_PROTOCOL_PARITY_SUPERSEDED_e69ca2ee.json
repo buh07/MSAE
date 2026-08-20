@@ -1,0 +1,349 @@
+{
+  "allowed_config_pointers": [
+    "/namespace",
+    "/runtime/candidate_manifest",
+    "/runtime/candidate_review",
+    "/runtime/freeze",
+    "/runtime/frozen_review",
+    "/runtime/generator_lock",
+    "/runtime/launch_manifest",
+    "/runtime/launcher_log",
+    "/runtime/output_root",
+    "/runtime/provenance_root",
+    "/runtime/review_binding",
+    "/runtime/tmux_session"
+  ],
+  "bound_artifacts": [
+    {
+      "bytes": 9086,
+      "path": "PLAN_TRAINED_CONTROL_STUDIES_R2_TECHNICAL_RECOVERY.md",
+      "sha256": "696dddc0041fdc23f61cefa215ddee941186e22599ce9313308b7bdeff35ac6a"
+    },
+    {
+      "bytes": 8226,
+      "path": "scripts/preserve_trained_control_r1_failures.py",
+      "sha256": "024c321e5a1ac8a13fe418a197371b5d8cdcc9a5bfced0a54b9c82bea1018d54"
+    },
+    {
+      "bytes": 8507,
+      "path": "scripts/build_trained_control_r2_protocol_parity.py",
+      "sha256": "f3ecb4c88ff4a9f81a3122b217679c554e0e1b77459e31b607951a19aab53004"
+    },
+    {
+      "bytes": 36174,
+      "path": "reports/provenance/trained_control_next_studies_v1_r1_failures_preservation.json",
+      "sha256": "006985fbe7ac9521cc5220daf1f510c3867bc5cd778d4ed1a87dfe201133451c"
+    },
+    {
+      "bytes": 854,
+      "path": "reports/provenance/trained_control_next_studies_v1_r1_exposure_attestation.json",
+      "sha256": "263e480ecf0baab03f123cd49c4e71fa9fe559a6f42c05360a5a126128eba3bf"
+    },
+    {
+      "bytes": 34897,
+      "path": "scripts/trained_copy_sae_capacity_v1_r1.py",
+      "sha256": "8619cfba4ab2e1f0093aa9b9936dd8a9a6e78a0ef7c9d5b8969b12a44048ef97"
+    },
+    {
+      "bytes": 36403,
+      "path": "scripts/trained_copy_sae_capacity_v1_r2.py",
+      "sha256": "8a9063b8247123b5b5bf2d95fef4161dc943e9512bb0d3bff7f5cdb103ae0552"
+    },
+    {
+      "bytes": 60570,
+      "path": "scripts/causal_manifold_bridge_v1_r1.py",
+      "sha256": "27883b82166754bf30d28ec4229567c056b5a06746b6109c344b6c8b34c0f9de"
+    },
+    {
+      "bytes": 61976,
+      "path": "scripts/causal_manifold_bridge_v1_r2.py",
+      "sha256": "320700d1144cf11e97926a268ba8b0f15958f0f2a326e842a7f4e0355a91d1ee"
+    },
+    {
+      "bytes": 7167,
+      "path": "configs/trained_copy_sae_capacity_v1_r1/run.json",
+      "sha256": "5c6b91cdef19a013dcfa02e2fc39684845e56aa72f6e8f07e6383ea05c7725e9"
+    },
+    {
+      "bytes": 7852,
+      "path": "configs/trained_copy_sae_capacity_v1_r2/run.json",
+      "sha256": "f12baf6b66d936fa8192c5385a48dc864a77ca3e4cb691cdfd5387df4f7a1dd9"
+    },
+    {
+      "bytes": 41441,
+      "path": "configs/causal_manifold_bridge_v1_r1/run.json",
+      "sha256": "ce6cda9a01f01ef0df9bb7e3d9f1a1381cbd2a8599aee15109d179da7f1d1090"
+    },
+    {
+      "bytes": 42126,
+      "path": "configs/causal_manifold_bridge_v1_r2/run.json",
+      "sha256": "c56477621a14dbde73a63b2e9b28854ab2f01e2a5a77845e03635ca498c4e469"
+    },
+    {
+      "bytes": 5855,
+      "path": "tests/test_trained_copy_sae_capacity_v1_r2.py",
+      "sha256": "8836d430de082b523a6cc0ece64828fa178e1bb42e6bfc50531c767b87fa7077"
+    },
+    {
+      "bytes": 8789,
+      "path": "tests/test_causal_manifold_bridge_v1_r2.py",
+      "sha256": "23ed26b37188f35554f882169b634681cabe51c89f085b0124972901711db7c6"
+    },
+    {
+      "bytes": 7320,
+      "path": "tests/test_launch_trained_control_next_studies_v1_r2.py",
+      "sha256": "f8f4f0a2e55200a77f5b2d3f831247bb9e6e5144b8845035476c55a3526c99dd"
+    },
+    {
+      "bytes": 1756,
+      "path": "tests/test_trained_control_r1_failure_preservation.py",
+      "sha256": "50b5b145b8bdd7801cd51a6daac3cd51c0f062d7365e7d215b7c7e87ec6a56d6"
+    },
+    {
+      "bytes": 7661,
+      "path": "scripts/launch_trained_control_next_studies_v1_r2_tmux.sh",
+      "sha256": "b34c6705dfa7bfb85052dc054d80d80823c01e0b12523c7bef032dade68a2718"
+    }
+  ],
+  "r2_only_config_pointers": [
+    "/recovery_lineage/r1_freezes"
+  ],
+  "schema_version": "trained_control_studies_v1_r2_protocol_parity_v1",
+  "status": "PASS",
+  "studies": {
+    "causal_manifold": {
+      "config": {
+        "allowed_pointer_values": {
+          "/namespace": {
+            "r1": "causal_manifold_bridge_v1_r1_20260813",
+            "r2": "causal_manifold_bridge_v1_r2_20260813"
+          },
+          "/recovery_lineage/r1_freezes": {
+            "r1": "ABSENT",
+            "r2": {
+              "items": {
+                "causal_manifold_bridge_v1_r1": {
+                  "path": "configs/causal_manifold_bridge_v1_r1/FREEZE.json",
+                  "sha256": "658e9134f7ecb353b129026e190d9fe8f2034898435f072ae2df66d65315ec4e"
+                },
+                "trained_copy_sae_capacity_v1_r1": {
+                  "path": "configs/trained_copy_sae_capacity_v1_r1/FREEZE.json",
+                  "sha256": "b62dbe4ae01b93847986f155aaf73be8e1e5ab0363c28afa3e95e01229335501"
+                }
+              },
+              "preservation_path": "reports/provenance/trained_control_next_studies_v1_r1_failures_preservation.json",
+              "preservation_sha256": "006985fbe7ac9521cc5220daf1f510c3867bc5cd778d4ed1a87dfe201133451c"
+            }
+          },
+          "/runtime/candidate_manifest": {
+            "r1": "reports/provenance/causal_manifold_bridge_v1_r1_candidate/CANDIDATE.json",
+            "r2": "reports/provenance/causal_manifold_bridge_v1_r2_candidate/CANDIDATE.json"
+          },
+          "/runtime/candidate_review": {
+            "r1": "reports/adversarial/causal_manifold_bridge_v1_r1_candidate_review.md",
+            "r2": "reports/adversarial/causal_manifold_bridge_v1_r2_candidate_review.md"
+          },
+          "/runtime/freeze": {
+            "r1": "configs/causal_manifold_bridge_v1_r1/FREEZE.json",
+            "r2": "configs/causal_manifold_bridge_v1_r2/FREEZE.json"
+          },
+          "/runtime/frozen_review": {
+            "r1": "reports/adversarial/causal_manifold_bridge_v1_r1_frozen_review.md",
+            "r2": "reports/adversarial/causal_manifold_bridge_v1_r2_frozen_review.md"
+          },
+          "/runtime/generator_lock": {
+            "r1": "configs/causal_manifold_bridge_v1_r1/GENERATOR_LOCK.json",
+            "r2": "configs/causal_manifold_bridge_v1_r2/GENERATOR_LOCK.json"
+          },
+          "/runtime/launch_manifest": {
+            "r1": "reports/provenance/causal_manifold_bridge_v1_r1_LAUNCH.json",
+            "r2": "reports/provenance/causal_manifold_bridge_v1_r2_LAUNCH.json"
+          },
+          "/runtime/launcher_log": {
+            "r1": "reports/provenance/causal_manifold_bridge_v1_r1_launcher_20260813.log",
+            "r2": "reports/provenance/causal_manifold_bridge_v1_r2_launcher_20260813.log"
+          },
+          "/runtime/output_root": {
+            "r1": "results/causal_manifold_bridge_v1_r1_20260813",
+            "r2": "results/causal_manifold_bridge_v1_r2_20260813"
+          },
+          "/runtime/provenance_root": {
+            "r1": "reports/provenance/causal_manifold_bridge_v1_r1_run_20260813",
+            "r2": "reports/provenance/causal_manifold_bridge_v1_r2_run_20260813"
+          },
+          "/runtime/review_binding": {
+            "r1": "reports/provenance/causal_manifold_bridge_v1_r1_REVIEW_BINDING.json",
+            "r2": "reports/provenance/causal_manifold_bridge_v1_r2_REVIEW_BINDING.json"
+          },
+          "/runtime/tmux_session": {
+            "r1": "causal_manifold_bridge_v1_r1_20260813",
+            "r2": "causal_manifold_bridge_v1_r2_20260813"
+          }
+        },
+        "normalized_sha256": "e59eeadc4b07d23b83f2e2b522b0ffba5aeb954b4ebfd623672cb7a4b38855eb",
+        "pass": true,
+        "protected_values": {
+          "hard_timeout_hours": 36,
+          "original_freezes": {
+            "causal_manifold_bridge_v1": {
+              "path": "configs/causal_manifold_bridge_v1/FREEZE.json",
+              "sha256": "12e72f1fc8bc4e6ebf992ff18b7791898868c89801931b5185b14e9df76975b2"
+            },
+            "trained_copy_sae_capacity_v1": {
+              "path": "configs/trained_copy_sae_capacity_v1/FREEZE.json",
+              "sha256": "431ba6af471b08eeb130066ea4d1705df0af1fa787c37a15c78257aa8c67dbc4"
+            }
+          },
+          "prepared_root": "data/causal_manifold_bridge_v1_prepared"
+        }
+      },
+      "source": {
+        "allowed_changed_definitions": [
+          "candidate",
+          "create_lock",
+          "fit_registry",
+          "freeze",
+          "validate_recovery_lineage",
+          "verify_frozen",
+          "verify_protocol_parity"
+        ],
+        "changed_definitions": [
+          "candidate",
+          "create_lock",
+          "fit_registry",
+          "freeze",
+          "validate_recovery_lineage",
+          "verify_frozen",
+          "verify_protocol_parity"
+        ],
+        "governance_changes": [
+          "R2 module/config/test/launcher/plan/parity bindings",
+          "R1 failure preservation and R1-freeze validation",
+          "candidate/lock/freeze parity binding"
+        ],
+        "pass": true,
+        "unchanged_definition_count": 58,
+        "unified_diff_lines": 90,
+        "unified_diff_sha256": "e628ab97098d57c4323ec5950d50a2de42a7079203277425d37f4fb874604155"
+      }
+    },
+    "sae_capacity": {
+      "config": {
+        "allowed_pointer_values": {
+          "/namespace": {
+            "r1": "trained_copy_sae_capacity_v1_r1_20260813",
+            "r2": "trained_copy_sae_capacity_v1_r2_20260813"
+          },
+          "/recovery_lineage/r1_freezes": {
+            "r1": "ABSENT",
+            "r2": {
+              "items": {
+                "causal_manifold_bridge_v1_r1": {
+                  "path": "configs/causal_manifold_bridge_v1_r1/FREEZE.json",
+                  "sha256": "658e9134f7ecb353b129026e190d9fe8f2034898435f072ae2df66d65315ec4e"
+                },
+                "trained_copy_sae_capacity_v1_r1": {
+                  "path": "configs/trained_copy_sae_capacity_v1_r1/FREEZE.json",
+                  "sha256": "b62dbe4ae01b93847986f155aaf73be8e1e5ab0363c28afa3e95e01229335501"
+                }
+              },
+              "preservation_path": "reports/provenance/trained_control_next_studies_v1_r1_failures_preservation.json",
+              "preservation_sha256": "006985fbe7ac9521cc5220daf1f510c3867bc5cd778d4ed1a87dfe201133451c"
+            }
+          },
+          "/runtime/candidate_manifest": {
+            "r1": "reports/provenance/trained_copy_sae_capacity_v1_r1_candidate/CANDIDATE.json",
+            "r2": "reports/provenance/trained_copy_sae_capacity_v1_r2_candidate/CANDIDATE.json"
+          },
+          "/runtime/candidate_review": {
+            "r1": "reports/adversarial/trained_copy_sae_capacity_v1_r1_candidate_review.md",
+            "r2": "reports/adversarial/trained_copy_sae_capacity_v1_r2_candidate_review.md"
+          },
+          "/runtime/freeze": {
+            "r1": "configs/trained_copy_sae_capacity_v1_r1/FREEZE.json",
+            "r2": "configs/trained_copy_sae_capacity_v1_r2/FREEZE.json"
+          },
+          "/runtime/frozen_review": {
+            "r1": "reports/adversarial/trained_copy_sae_capacity_v1_r1_frozen_review.md",
+            "r2": "reports/adversarial/trained_copy_sae_capacity_v1_r2_frozen_review.md"
+          },
+          "/runtime/generator_lock": {
+            "r1": "configs/trained_copy_sae_capacity_v1_r1/GENERATOR_LOCK.json",
+            "r2": "configs/trained_copy_sae_capacity_v1_r2/GENERATOR_LOCK.json"
+          },
+          "/runtime/launch_manifest": {
+            "r1": "reports/provenance/trained_copy_sae_capacity_v1_r1_LAUNCH.json",
+            "r2": "reports/provenance/trained_copy_sae_capacity_v1_r2_LAUNCH.json"
+          },
+          "/runtime/launcher_log": {
+            "r1": "reports/provenance/trained_copy_sae_capacity_v1_r1_launcher_20260813.log",
+            "r2": "reports/provenance/trained_copy_sae_capacity_v1_r2_launcher_20260813.log"
+          },
+          "/runtime/output_root": {
+            "r1": "results/trained_copy_sae_capacity_v1_r1_20260813",
+            "r2": "results/trained_copy_sae_capacity_v1_r2_20260813"
+          },
+          "/runtime/provenance_root": {
+            "r1": "reports/provenance/trained_copy_sae_capacity_v1_r1_run_20260813",
+            "r2": "reports/provenance/trained_copy_sae_capacity_v1_r2_run_20260813"
+          },
+          "/runtime/review_binding": {
+            "r1": "reports/provenance/trained_copy_sae_capacity_v1_r1_REVIEW_BINDING.json",
+            "r2": "reports/provenance/trained_copy_sae_capacity_v1_r2_REVIEW_BINDING.json"
+          },
+          "/runtime/tmux_session": {
+            "r1": "trained_copy_sae_capacity_v1_r1_20260813",
+            "r2": "trained_copy_sae_capacity_v1_r2_20260813"
+          }
+        },
+        "normalized_sha256": "fd5c0d7e152e92c56744e8d8401516a53db90ef1aff5fe0d20cea8eec46ad120",
+        "pass": true,
+        "protected_values": {
+          "hard_timeout_hours": 24,
+          "original_freezes": {
+            "causal_manifold_bridge_v1": {
+              "path": "configs/causal_manifold_bridge_v1/FREEZE.json",
+              "sha256": "12e72f1fc8bc4e6ebf992ff18b7791898868c89801931b5185b14e9df76975b2"
+            },
+            "trained_copy_sae_capacity_v1": {
+              "path": "configs/trained_copy_sae_capacity_v1/FREEZE.json",
+              "sha256": "431ba6af471b08eeb130066ea4d1705df0af1fa787c37a15c78257aa8c67dbc4"
+            }
+          },
+          "prepared_root": "data/trained_copy_sae_capacity_v1_prepared"
+        }
+      },
+      "source": {
+        "allowed_changed_definitions": [
+          "candidate",
+          "create_lock",
+          "freeze",
+          "run",
+          "sae_prediction",
+          "validate_recovery_lineage",
+          "verify_frozen",
+          "verify_protocol_parity"
+        ],
+        "changed_definitions": [
+          "candidate",
+          "create_lock",
+          "freeze",
+          "run",
+          "sae_prediction",
+          "validate_recovery_lineage",
+          "verify_frozen",
+          "verify_protocol_parity"
+        ],
+        "governance_changes": [
+          "R2 module/config/test/launcher/plan/parity bindings",
+          "R1 failure preservation and R1-freeze validation",
+          "candidate/lock/freeze parity binding"
+        ],
+        "pass": true,
+        "unchanged_definition_count": 28,
+        "unified_diff_lines": 113,
+        "unified_diff_sha256": "be738d0ccee0691496f7d6ed4d1bedd5a4887b1eee7b11b88badf04f93a12266"
+      }
+    }
+  }
+}

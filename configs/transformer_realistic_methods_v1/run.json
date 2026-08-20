@@ -1,0 +1,113 @@
+{
+  "schema_version": "transformer_realistic_methods_v1_config",
+  "namespace": "transformer_realistic_methods_v1_20260810",
+  "seed": 20261002,
+  "scope": {
+    "constructed_synthetic_model": true,
+    "natural_model_claim": false,
+    "natural_prompt_assay": false,
+    "k2_evaluated": false,
+    "representation_methods_evaluated": true
+  },
+  "panels": {
+    "train": {
+      "blocks": 32,
+      "rows_per_block": 16,
+      "seed": 2026100201
+    },
+    "development": {
+      "blocks": 24,
+      "rows_per_block": 8,
+      "seed": 2026100202
+    },
+    "confirmation": {
+      "blocks": 24,
+      "rows_per_block": 8,
+      "seed": 2026100203
+    },
+    "target_values": 16,
+    "minimum_train_rows_per_target": 24,
+    "minimum_train_blocks_per_target": 24,
+    "minimum_eval_total": 185,
+    "minimum_eval_per_block": 7,
+    "minimum_eval_rows_per_target": 11,
+    "minimum_eval_blocks_per_target": 11,
+    "maximum_exclusion_rate": 0.04
+  },
+  "methods": {
+    "rank": 8,
+    "leace_ridge": 0.0001,
+    "random_seed": 1301,
+    "sae": {
+      "width_multiplier": 4,
+      "topk": 8,
+      "steps": 2000,
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "seeds": [
+        1701,
+        1702,
+        1703
+      ]
+    },
+    "supervised": {
+      "rank": 8,
+      "steps": 2000,
+      "learning_rate": 0.0005,
+      "batch_size": 128,
+      "collateral_weight": 2.0,
+      "sham_weight": 1.0,
+      "norm_weight": 0.001,
+      "seeds": [
+        2701,
+        2702,
+        2703
+      ]
+    }
+  },
+  "bootstrap": {
+    "draws": 1000,
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "method": "linear",
+    "weighting": "equal_block_paired_hierarchical"
+  },
+  "gates": {
+    "recovery": {
+      "point_min": 0.7,
+      "lower_strict_min": 0.6
+    },
+    "sham_specificity": {
+      "point_min": 0.5,
+      "lower_strict_min": 0.4
+    },
+    "control_margin": {
+      "point_min": 0.5,
+      "lower_strict_min": 0.4
+    },
+    "collateral_error": {
+      "point_max": 0.1,
+      "upper_strict_max": 0.15
+    },
+    "necessity": {
+      "point_min": 0.5,
+      "lower_strict_min": 0.4
+    },
+    "full_vocab_recovery": {
+      "point_min": 0.7,
+      "lower_strict_min": 0.6
+    }
+  },
+  "runtime": {
+    "prepared_root": "data/transformer_realistic_methods_v1_prepared",
+    "candidate_root": "reports/provenance/transformer_realistic_methods_v1_candidate_r3",
+    "provenance_root": "reports/provenance/transformer_realistic_methods_v1_run_20260810",
+    "output_root": "results/transformer_realistic_methods_v1_20260810",
+    "generator_lock": "configs/transformer_realistic_methods_v1/GENERATOR_LOCK.json",
+    "freeze": "configs/transformer_realistic_methods_v1/FREEZE.json",
+    "candidate_review": "reports/adversarial/transformer_realistic_methods_v1_candidate_review.md",
+    "frozen_review": "reports/adversarial/transformer_realistic_methods_v1_frozen_review.md"
+  }
+}

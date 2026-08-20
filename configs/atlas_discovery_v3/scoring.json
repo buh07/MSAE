@@ -1,0 +1,59 @@
+{
+  "extraction": {
+    "batch_size": 64,
+    "cublas_workspace_config": ":4096:8",
+    "full_devices": {
+      "EWT": "cuda:0",
+      "GUM": "cuda:1"
+    },
+    "full_gpu_uuids": {
+      "EWT": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+      "GUM": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e"
+    },
+    "qa_devices": {
+      "EWT": "cuda:0",
+      "GUM": "cuda:1"
+    },
+    "qa_gpu_uuids": {
+      "EWT": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+      "GUM": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e"
+    }
+  },
+  "extraction_adversarial_review": {
+    "path": "reports/adversarial/atlas_v3_1_attempt5_extraction_ship_review.md",
+    "sha256": "a16c00806bada36bdb23af9eea8ac30ae71e71dfdfe12176abd009943838d3a8",
+    "verdict": "SHIP"
+  },
+  "full_authorization_path": "configs/atlas_discovery_v3/full_extraction_authorization.json",
+  "implementation_inventory": {
+    "configs/atlas_discovery_v3/attempt5_common_joint_cells.json": "765aad9bfd1314ed12b6059ddbdeec8e8e174b4e6a14cdbc6369b24747d0935d",
+    "docs/rfc-atlas-v3-1-attempt5-discovery-factor-atlas.md": "105e9977871aa1d7cf94cee72aaf17dccd4b97aad073c82e0e445cce094533d2",
+    "requirements-atlas.lock.txt": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834",
+    "scripts/atlas_discovery_v3_scoring.py": "0e9980c689f3cd6f058c7a3051f43946777e0db248c220c69d1ececcccc6860c",
+    "scripts/extract_atlas_discovery_v3.py": "23968b478d5650c8d47fa4114c6400a5819eeae79261da8b6f4666d27126c273",
+    "tests/test_atlas_discovery_v3_scoring.py": "f719dba4f0ba9258829de0c4f053e8af15aecdac6c72e45ce1d8bcb5d43cc08e"
+  },
+  "neural_training_authorized": false,
+  "preflight_sha256": "f0bc4a235d5aa0f529f81d81cf3810b945bdb3665b839b24388b252bd60e9592",
+  "prepared_manifest_sha256": "ff5e2925dfa3fce57d0cf427a61fc304f659b853b759bc833a108b9ced1265ca",
+  "prescore_adversarial_review": {
+    "path": "reports/adversarial/atlas_v3_1_attempt5_final_prescore_review.md",
+    "sha256": "1bd5cd4240402c758e5772919200afe4662ecb9b592765903b8a65aa23d6f9be",
+    "verdict": "SHIP"
+  },
+  "prescore_config": {
+    "path": "configs/atlas_discovery_v3/run.json",
+    "sha256": "34d92d79f2076a09762f9393cd01f88f9d3b19a50e0625d6715be254d568fbc0"
+  },
+  "qa_signer": {
+    "algorithm": "Ed25519",
+    "public_key_base64": "TTupMmkJYG7oNU26egYLWutbxM2sWzkLCn7xI9TwHXc=",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d"
+  },
+  "rebuild_check": {
+    "path": "reports/atlas_v3_1_attempt5_rebuild_check.json",
+    "sha256": "5994ec41394273bedfe1b257f6282418515da9574e654a4a4c346f172c1ed837"
+  },
+  "schema_version": "atlas_discovery_v3_1_attempt5_scoring_v2",
+  "status": "frozen_numerical_qa_authorized"
+}

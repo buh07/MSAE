@@ -1,0 +1,5215 @@
+{
+  "device": "cuda",
+  "numpy": "1.26.4",
+  "qa": {
+    "correlated_superposition": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 9.387452383236413e-08
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 7.450580596923828e-08,
+          "pass": true,
+          "relative_l2": 1.0204516090574482e-07
+        },
+        "attention_transport_clean": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.840053324799248e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 1.2357110642133415e-07
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 7.450580596923828e-08,
+          "pass": true,
+          "relative_l2": 1.0204516090574482e-07
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 9.387452383236413e-08
+        },
+        "attention_transport_private_only": {
+          "max_abs": 7.450580596923828e-08,
+          "pass": true,
+          "relative_l2": 1.0283276182718452e-07
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 7.450580596923828e-08,
+          "pass": true,
+          "relative_l2": 1.0159338621161222e-07
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 9.483409166319973e-08
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 9.3310145072399e-08
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 9.361168049141259e-08
+        },
+        "attention_transport_sham": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 9.347684182114095e-08
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 7.450580596923828e-08,
+          "pass": true,
+          "relative_l2": 1.019969101745461e-07
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.840053324799248e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 9.483409166319973e-08
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 8.0211167092938e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 4.172325134277344e-07,
+          "pass": true,
+          "relative_l2": 9.295824597135493e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.7190413717892647e-07
+        },
+        "logits_bypass_only": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.799836024396771e-07
+        },
+        "logits_clean": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.5349111357517796e-07
+        },
+        "logits_control": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.8655068642180387e-07
+        },
+        "logits_corrupt": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.745084190503491e-07
+        },
+        "logits_hybrid": {
+          "max_abs": 1.52587890625e-05,
+          "pass": true,
+          "relative_l2": 1.6190917125664326e-07
+        },
+        "logits_output_skyline": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.5349111357517796e-07
+        },
+        "logits_private_only": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.7340048261502348e-07
+        },
+        "logits_routing_omitted": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.725542832781551e-07
+        },
+        "logits_routing_only": {
+          "max_abs": 1.33514404296875e-05,
+          "pass": true,
+          "relative_l2": 1.5751054058045449e-07
+        },
+        "logits_routing_private": {
+          "max_abs": 1.52587890625e-05,
+          "pass": true,
+          "relative_l2": 1.7195981613653047e-07
+        },
+        "logits_routing_shared": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.716276490716495e-07
+        },
+        "logits_sham": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.47967889136199e-07
+        },
+        "logits_shared_only": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.8053697769100915e-07
+        },
+        "logits_state_skyline": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.5349111357517796e-07
+        },
+        "logits_value_omitted": {
+          "max_abs": 1.33514404296875e-05,
+          "pass": true,
+          "relative_l2": 1.5751054058045449e-07
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.520884363710754e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.163207573695308e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.179410613766006e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.89775867198202e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.036986838731472e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.872706185522313e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.086990074479886e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.017324325253478e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.954230969815984e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.793345255079199e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.777109133451615e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.781417554923484e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.038888016019668e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.179410613766006e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.954230969815984e-08
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 1.0296204894377338e-07
+        },
+        "state_bypass_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.834900578768478e-08
+        },
+        "state_clean": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.317922873692893e-08
+        },
+        "state_control": {
+          "max_abs": 8.344650268554688e-07,
+          "pass": true,
+          "relative_l2": 1.1477240056653989e-07
+        },
+        "state_corrupt": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 1.0018322738406145e-07
+        },
+        "state_hybrid": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 9.150327990047988e-08
+        },
+        "state_private_only": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 1.0210018820972246e-07
+        },
+        "state_routing_omitted": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 1.0047725981883666e-07
+        },
+        "state_routing_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.392061904736061e-08
+        },
+        "state_routing_private": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.134877902802825e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.238263379484173e-08
+        },
+        "state_sham": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.382005850074869e-08
+        },
+        "state_shared_only": {
+          "max_abs": 5.960464477539062e-07,
+          "pass": true,
+          "relative_l2": 9.891327112323235e-08
+        },
+        "state_state_skyline": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.317922873692893e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.392061904736061e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.068085956647982e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.498752309051675e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.57840623640507e-08
+        },
+        "weights_control": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.498752309051675e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.498752309051675e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.068085956647982e-08
+        },
+        "weights_private_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.498752309051675e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.498752309051675e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.068085956647982e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.068085956647982e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.068085956647982e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.068085956647982e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.498752309051675e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.57840623640507e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.068085956647982e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "query": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "ideal_hard": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_control": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.701100902403044e-08
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.575638223667724e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.466714671832454e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.286216972336077e-08
+        },
+        "logits_bypass_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.216018326900226e-08
+        },
+        "logits_clean": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.691950410044219e-08
+        },
+        "logits_control": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 6.113627584714476e-08
+        },
+        "logits_corrupt": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.216018326900226e-08
+        },
+        "logits_hybrid": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.286216972336077e-08
+        },
+        "logits_output_skyline": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.691950410044219e-08
+        },
+        "logits_private_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.216018326900226e-08
+        },
+        "logits_routing_omitted": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.216018326900226e-08
+        },
+        "logits_routing_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.822252788955716e-08
+        },
+        "logits_routing_private": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 3.4235593436766037e-08
+        },
+        "logits_routing_shared": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 3.894628163850839e-08
+        },
+        "logits_sham": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.396850909632214e-08
+        },
+        "logits_shared_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.216018326900226e-08
+        },
+        "logits_state_skyline": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.691950410044219e-08
+        },
+        "logits_value_omitted": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.822252788955716e-08
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_control": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.975457972777208e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_control": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.975457972777208e-08
+        },
+        "state_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "query": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "layernorm": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 1.018093269547673e-07
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.305035163214147e-08
+        },
+        "attention_transport_clean": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 9.438335697791349e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 1.0231790911144912e-07
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.305035163214147e-08
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 1.018093269547673e-07
+        },
+        "attention_transport_private_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.304996557718365e-08
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.317539203019793e-08
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0167508432277309e-07
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0154881232264958e-07
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 1.0193593210841605e-07
+        },
+        "attention_transport_sham": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 9.810654069980282e-08
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.317578030945971e-08
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 9.438335697791349e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0167508432277309e-07
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 4.776225985066371e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.801418303611404e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.0382057546231641e-07
+        },
+        "logits_bypass_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.0721448916030595e-07
+        },
+        "logits_clean": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.690677146075875e-08
+        },
+        "logits_control": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.1393461723996905e-07
+        },
+        "logits_corrupt": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0855223052812396e-07
+        },
+        "logits_hybrid": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.0528378603994598e-07
+        },
+        "logits_output_skyline": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.690677146075875e-08
+        },
+        "logits_private_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.1091168459407932e-07
+        },
+        "logits_routing_omitted": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.1221945948744703e-07
+        },
+        "logits_routing_only": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 9.479542417936743e-08
+        },
+        "logits_routing_private": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.717830318817349e-08
+        },
+        "logits_routing_shared": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.717719694721517e-08
+        },
+        "logits_sham": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0242252088904084e-07
+        },
+        "logits_shared_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.120865175936956e-07
+        },
+        "logits_state_skyline": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.690677146075875e-08
+        },
+        "logits_value_omitted": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 9.479542417936743e-08
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 8.666389860623432e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.6823189937219e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.990037655747162e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.705139383062564e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.6325410323268994e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 6.880999812168486e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.60424050642812e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.7583543022588216e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.807688438509711e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.828899126159578e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 6.859904189311287e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.116318131087148e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.786774315929203e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.990037655747162e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.807688438509711e-08
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 9.724812315294517e-08
+        },
+        "state_bypass_only": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 1.0223028000673724e-07
+        },
+        "state_clean": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.035520445199388e-08
+        },
+        "state_control": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 1.0753559788126753e-07
+        },
+        "state_corrupt": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.0236907955228764e-07
+        },
+        "state_hybrid": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.134970648319517e-08
+        },
+        "state_private_only": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 1.0413470802485237e-07
+        },
+        "state_routing_omitted": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 1.025531970797501e-07
+        },
+        "state_routing_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.184927090547669e-08
+        },
+        "state_routing_private": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.14386208468068e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 8.468125905351324e-08
+        },
+        "state_sham": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.296298567386121e-08
+        },
+        "state_shared_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.0147719243898873e-07
+        },
+        "state_state_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.035520445199388e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.184927090547669e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.728755948282747e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.553276376483898e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.38287234387133e-08
+        },
+        "weights_control": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.553276376483898e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.553276376483898e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.728755948282747e-08
+        },
+        "weights_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.553276376483898e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.553276376483898e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.728755948282747e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.728755948282747e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.728755948282747e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.728755948282747e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.553276376483898e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.38287234387133e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.728755948282747e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "query": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "realistic_noisy": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 1.0120286903997543e-07
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 1.019263185204025e-07
+        },
+        "attention_transport_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 9.520257599532887e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 1.2859829395624792e-07
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 1.019263185204025e-07
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 1.0120286903997543e-07
+        },
+        "attention_transport_private_only": {
+          "max_abs": 7.450580596923828e-08,
+          "pass": true,
+          "relative_l2": 1.0219221091180409e-07
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 1.0303254335362895e-07
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 1.0059046429574442e-07
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 1.0138232348380216e-07
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 1.0135898881912407e-07
+        },
+        "attention_transport_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 1.013826682194635e-07
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 7.450580596923828e-08,
+          "pass": true,
+          "relative_l2": 1.0209064840766894e-07
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 9.520257599532887e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 1.0059046429574442e-07
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 7.613765944300904e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 9.094592501419027e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.7485399746923873e-07
+        },
+        "logits_bypass_only": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.7223727500215448e-07
+        },
+        "logits_clean": {
+          "max_abs": 1.71661376953125e-05,
+          "pass": true,
+          "relative_l2": 1.495603917426847e-07
+        },
+        "logits_control": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.8144052022406594e-07
+        },
+        "logits_corrupt": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.6730247480703404e-07
+        },
+        "logits_hybrid": {
+          "max_abs": 1.33514404296875e-05,
+          "pass": true,
+          "relative_l2": 1.6185968202621583e-07
+        },
+        "logits_output_skyline": {
+          "max_abs": 1.71661376953125e-05,
+          "pass": true,
+          "relative_l2": 1.495603917426847e-07
+        },
+        "logits_private_only": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.7324990219550892e-07
+        },
+        "logits_routing_omitted": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.7206831283572045e-07
+        },
+        "logits_routing_only": {
+          "max_abs": 1.52587890625e-05,
+          "pass": true,
+          "relative_l2": 1.5895074179696363e-07
+        },
+        "logits_routing_private": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.7828092922260408e-07
+        },
+        "logits_routing_shared": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.7077950667420128e-07
+        },
+        "logits_sham": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.5701762574242795e-07
+        },
+        "logits_shared_only": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.759079831983387e-07
+        },
+        "logits_state_skyline": {
+          "max_abs": 1.71661376953125e-05,
+          "pass": true,
+          "relative_l2": 1.495603917426847e-07
+        },
+        "logits_value_omitted": {
+          "max_abs": 1.52587890625e-05,
+          "pass": true,
+          "relative_l2": 1.5895074179696363e-07
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.000946760012018e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.097379119762632e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.700557648371944e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.975724665927044e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.980037856970143e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.275478536816652e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.98111966723389e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.96812212281875e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.269509411384978e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.285141830998876e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.090089086890844e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.213455571847836e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.921157229645665e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.700557648371944e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.269509411384978e-08
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 1.0454161873396316e-07
+        },
+        "state_bypass_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 1.0330775499076981e-07
+        },
+        "state_clean": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.183529014127228e-08
+        },
+        "state_control": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 1.1405606127487753e-07
+        },
+        "state_corrupt": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.981738051165641e-08
+        },
+        "state_hybrid": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.640537006311055e-08
+        },
+        "state_private_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.809347505259232e-08
+        },
+        "state_routing_omitted": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.932167297880087e-08
+        },
+        "state_routing_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.513432521637548e-08
+        },
+        "state_routing_private": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.356205930831081e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.294760267271664e-08
+        },
+        "state_sham": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.485189794546001e-08
+        },
+        "state_shared_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 1.02732024547607e-07
+        },
+        "state_state_skyline": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.183529014127228e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.513432521637548e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.124897680115926e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.479051140434135e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.317440729957537e-08
+        },
+        "weights_control": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.479051140434135e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.479051140434135e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.124897680115926e-08
+        },
+        "weights_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.479051140434135e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.479051140434135e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.124897680115926e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.124897680115926e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.124897680115926e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.124897680115926e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.479051140434135e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.317440729957537e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.124897680115926e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "query": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "residual_bypass": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 1.0097435856944413e-07
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.272019352388224e-08
+        },
+        "attention_transport_clean": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 9.265519314677162e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0287863785199338e-07
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.272019352388224e-08
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 1.0097435856944413e-07
+        },
+        "attention_transport_private_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.271648108643613e-08
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.263510301733983e-08
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 9.393326131916209e-08
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 9.555556255528315e-08
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 9.943992172044681e-08
+        },
+        "attention_transport_sham": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 9.752330368884138e-08
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 9.263881782172737e-08
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 9.265519314677162e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 9.393326131916209e-08
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.220302045250652e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.287363383055523e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.597596328969074e-08
+        },
+        "logits_bypass_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 7.486456889476574e-08
+        },
+        "logits_clean": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 7.59601145188119e-08
+        },
+        "logits_control": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 8.919323055875932e-08
+        },
+        "logits_corrupt": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 7.409864363000097e-08
+        },
+        "logits_hybrid": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 7.405460995333019e-08
+        },
+        "logits_output_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 7.59601145188119e-08
+        },
+        "logits_private_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.109238344230565e-08
+        },
+        "logits_routing_omitted": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.158768653765491e-08
+        },
+        "logits_routing_only": {
+          "max_abs": 1.9073486328125e-06,
+          "pass": true,
+          "relative_l2": 7.604299805885163e-08
+        },
+        "logits_routing_private": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 7.563026563414176e-08
+        },
+        "logits_routing_shared": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 7.713683477018814e-08
+        },
+        "logits_sham": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 7.821668241381802e-08
+        },
+        "logits_shared_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 7.485136764313406e-08
+        },
+        "logits_state_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 7.59601145188119e-08
+        },
+        "logits_value_omitted": {
+          "max_abs": 1.9073486328125e-06,
+          "pass": true,
+          "relative_l2": 7.604299805885163e-08
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 8.686356689295573e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.912626541480005e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.674667932037028e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 7.970781666609518e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.7742431201569e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.377992505499496e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.7329925592491186e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.7991250176128127e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.437849220223554e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.633822675951898e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.201696134480355e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 6.66523935787769e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.839910405195096e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.674667932037028e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.437849220223554e-08
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 8.686356689295573e-08
+        },
+        "state_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.912626541480005e-08
+        },
+        "state_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.674667932037028e-08
+        },
+        "state_control": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 7.970781666609518e-08
+        },
+        "state_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.7742431201569e-08
+        },
+        "state_hybrid": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.377992505499496e-08
+        },
+        "state_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.7329925592491186e-08
+        },
+        "state_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.7991250176128127e-08
+        },
+        "state_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.437849220223554e-08
+        },
+        "state_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.633822675951898e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.201696134480355e-08
+        },
+        "state_sham": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 6.66523935787769e-08
+        },
+        "state_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.839910405195096e-08
+        },
+        "state_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.674667932037028e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.437849220223554e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.521904043666458e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.329240201915108e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.404841744191038e-08
+        },
+        "weights_control": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.329240201915108e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.329240201915108e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.521904043666458e-08
+        },
+        "weights_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.329240201915108e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.329240201915108e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.521904043666458e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.521904043666458e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.521904043666458e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.521904043666458e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.329240201915108e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.404841744191038e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.521904043666458e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "query": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "soft_attention": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0280306369774396e-07
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.644671528354987e-08
+        },
+        "attention_transport_clean": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 9.954174032081016e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 1.0178929772410514e-07
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.644671528354987e-08
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0280306369774396e-07
+        },
+        "attention_transport_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.644320344719012e-08
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.727618903900341e-08
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0230639296104408e-07
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0103801435437644e-07
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0404948033025386e-07
+        },
+        "attention_transport_sham": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.024836170666494e-07
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.727968435437743e-08
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 9.954174032081016e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0230639296104408e-07
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.0788916694195806e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 5.991428007528097e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.1366384596696495e-07
+        },
+        "logits_bypass_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.062971523476635e-07
+        },
+        "logits_clean": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.113512010778028e-07
+        },
+        "logits_control": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 1.1858933734215569e-07
+        },
+        "logits_corrupt": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.062971523476635e-07
+        },
+        "logits_hybrid": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.1366384596696495e-07
+        },
+        "logits_output_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.113512010778028e-07
+        },
+        "logits_private_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0558549096370616e-07
+        },
+        "logits_routing_omitted": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0661835824049945e-07
+        },
+        "logits_routing_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.1335119221960925e-07
+        },
+        "logits_routing_private": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 1.0645490743628983e-07
+        },
+        "logits_routing_shared": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 1.1518476028750107e-07
+        },
+        "logits_sham": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.1197149102506676e-07
+        },
+        "logits_shared_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 1.0597518750761477e-07
+        },
+        "logits_state_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.113512010778028e-07
+        },
+        "logits_value_omitted": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.1335119221960925e-07
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0627787785344509e-07
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.0463484287282e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0211276226361765e-07
+        },
+        "pre_readout_control": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 1.0496656324184591e-07
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.0463484287282e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0627787785344509e-07
+        },
+        "pre_readout_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.045846052438107e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.077383220637255e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0657784645892006e-07
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0389902074526414e-07
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.088890511989216e-07
+        },
+        "pre_readout_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0572149924743445e-07
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.077882608825563e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0211276226361765e-07
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0657784645892006e-07
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0627787785344509e-07
+        },
+        "state_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.0463484287282e-08
+        },
+        "state_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0211276226361765e-07
+        },
+        "state_control": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 1.0496656324184591e-07
+        },
+        "state_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.0463484287282e-08
+        },
+        "state_hybrid": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0627787785344509e-07
+        },
+        "state_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.045846052438107e-08
+        },
+        "state_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.077383220637255e-08
+        },
+        "state_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0657784645892006e-07
+        },
+        "state_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0389902074526414e-07
+        },
+        "state_routing_shared": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.088890511989216e-07
+        },
+        "state_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0572149924743445e-07
+        },
+        "state_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.077882608825563e-08
+        },
+        "state_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0211276226361765e-07
+        },
+        "state_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 1.0657784645892006e-07
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.138107855352172e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.195594739320682e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.567180678382076e-08
+        },
+        "weights_control": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.195594739320682e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.195594739320682e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.138107855352172e-08
+        },
+        "weights_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.195594739320682e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.195594739320682e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.138107855352172e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.138107855352172e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.138107855352172e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.138107855352172e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.195594739320682e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.567180678382076e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.138107855352172e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "query": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    }
+  },
+  "rows_scored": 1152,
+  "schema_version": "transformer_realistic_bridge_v1_smoke",
+  "summary": {
+    "all_gates_pass": true,
+    "constructed_synthetic_model": true,
+    "first_failure_regime": null,
+    "k2_evaluated": false,
+    "natural_model_claim": false,
+    "natural_prompt_assay": false,
+    "regimes": {
+      "correlated_superposition": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 0.0,
+            "point": 0.0,
+            "upper": 0.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9781155298385825,
+            "point": 0.982976996098975,
+            "upper": 0.987449738764671,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.17897761331726708,
+            "point": 0.18860687074835503,
+            "upper": 0.19713948753899807,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.250132225242167,
+            "point": 0.25606045088869833,
+            "upper": 0.26223418043173774,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9379673084536307,
+            "point": 0.9470627303019183,
+            "upper": 0.9556799914281242,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.941096631861928,
+            "point": 0.9457417377044476,
+            "upper": 0.9499511896951814,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "correlated_superposition",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "ideal_hard": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 0.0,
+            "point": 0.0,
+            "upper": 0.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9941839805347394,
+            "point": 1.001737542207718,
+            "upper": 1.0087101071608473,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.33416767788891755,
+            "point": 0.3591430397941735,
+            "upper": 0.3795835882414891,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9991230299658437,
+            "point": 1.0004259776151678,
+            "upper": 1.0016570493798471,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9990182758832076,
+            "point": 1.0004259761062366,
+            "upper": 1.001591829083466,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "ideal_hard",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "layernorm": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 0.0,
+            "point": 0.0,
+            "upper": 0.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9774911254846188,
+            "point": 0.9807936046614433,
+            "upper": 0.9839032631041653,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.1627040934230964,
+            "point": 0.17348226792951948,
+            "upper": 0.18125569913300862,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.20206083420360155,
+            "point": 0.20872482974797005,
+            "upper": 0.21451202195789762,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9373208371606228,
+            "point": 0.9391059593256665,
+            "upper": 0.9408422364296731,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9372975147257129,
+            "point": 0.9390596158169959,
+            "upper": 0.9408790638112559,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "layernorm",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "realistic_noisy": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 0.0,
+            "point": 0.0,
+            "upper": 0.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.979157261630154,
+            "point": 0.9827094984354598,
+            "upper": 0.9860714780309666,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.18104634032594502,
+            "point": 0.190658651582139,
+            "upper": 0.19919324200879435,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.25197046440194754,
+            "point": 0.25813230658215724,
+            "upper": 0.26434455648945193,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9433378294979915,
+            "point": 0.9491124147715843,
+            "upper": 0.9552661618978391,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9418563503611778,
+            "point": 0.9469706851148835,
+            "upper": 0.9519983410859291,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "realistic_noisy",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "residual_bypass": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 0.0,
+            "point": 0.0,
+            "upper": 0.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9970361422622231,
+            "point": 0.999404821608441,
+            "upper": 1.001571400561904,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.3403352000551938,
+            "point": 0.36519528218430136,
+            "upper": 0.3838734923329747,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.5732533264023829,
+            "point": 0.5735185687965005,
+            "upper": 0.5737918005053861,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9997462910241752,
+            "point": 1.000016472340816,
+            "upper": 1.0003028147968935,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9997071603336892,
+            "point": 1.0000164741400397,
+            "upper": 1.0003007921621674,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "residual_bypass",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "soft_attention": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 0.0,
+            "point": 0.0,
+            "upper": 0.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9942180595774461,
+            "point": 0.9978622895034491,
+            "upper": 1.00124741492592,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.3465187038146298,
+            "point": 0.3714893917097008,
+            "upper": 0.39021251471640567,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.9823511568311977,
+            "point": 0.9825342172884509,
+            "upper": 0.9826984130177784,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9996549293749076,
+            "point": 1.0001616345609723,
+            "upper": 1.0006698447084696,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9996451108490844,
+            "point": 1.0001616330800862,
+            "upper": 1.0006717615230962,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "soft_attention",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      }
+    },
+    "representation_methods_evaluated": false,
+    "schema_version": "transformer_realistic_bridge_v1_stage_summary",
+    "stage": "nonpanel_smoke",
+    "status": "NONPANEL_SMOKE_PASS",
+    "technical_valid": true,
+    "training_performed": false
+  },
+  "torch": "2.7.0"
+}

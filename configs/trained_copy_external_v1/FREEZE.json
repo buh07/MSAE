@@ -1,0 +1,73 @@
+{
+  "created_ns": 1786343914879922557,
+  "inventory": [
+    {
+      "bytes": 23463,
+      "path": "PLAN_CAPACITY_EXTERNAL_VALIDITY_V1.md",
+      "sha256": "b672ec6f79169b70a442862d9b949a8fd5c058689b6a85698fc83006a2846be6"
+    },
+    {
+      "bytes": 1067,
+      "path": "configs/trained_copy_external_v1/GENERATOR_LOCK.json",
+      "sha256": "01242c9eb38d0ab264eebe9057acf61e20eb6e016fa368bba6773a2052520e37"
+    },
+    {
+      "bytes": 2967,
+      "path": "configs/trained_copy_external_v1/run.json",
+      "sha256": "4938ae66616da9ab48dd64dccaa885dab3d5cf8bfac13aa845b513322be0d59f"
+    },
+    {
+      "bytes": 7329,
+      "path": "data/trained_copy_external_v1_prepared/PANEL_METADATA.json",
+      "sha256": "9df6e6c6d75dcc6b0b8f7800b125954089e86c467b462e9efc8eb99f77ab29e2"
+    },
+    {
+      "bytes": 70,
+      "path": "data/trained_copy_external_v1_prepared/PREPARED.json",
+      "sha256": "befd3dedc30f5166a73dc7a052b318a28dfbf298498ea734196e774cd84fd9fa"
+    },
+    {
+      "bytes": 738,
+      "path": "reports/adversarial/capacity_external_validity_v1_plan_review.md",
+      "sha256": "adbff9c6fea461daf0fd0683cdb4e86a1e39fd5ed2d2f9b171e286ff6d3cdace"
+    },
+    {
+      "bytes": 17145,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_postresult/PRESERVATION.json",
+      "sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2"
+    },
+    {
+      "bytes": 59188,
+      "path": "scripts/capacity_external_validity_v1.py",
+      "sha256": "0de71873feffb463f8ecde96e6db642cae18c145c42d9e76fe971999bd7185c7"
+    },
+    {
+      "bytes": 3116,
+      "path": "scripts/launch_capacity_external_validity_v1_tmux.sh",
+      "sha256": "e120b3993baf4f5a12ba5b43eda097eaa37787b7ea485ebb519ca0da782f60cd"
+    },
+    {
+      "bytes": 3977,
+      "path": "tests/test_capacity_external_validity_v1.py",
+      "sha256": "c13fa5a8ff4bee09bb0545536fa888e50895aa4751c5170fad54020cb85564cc"
+    }
+  ],
+  "kind": "external",
+  "payload_hash_source": "PANEL_METADATA.json written during generation; freeze did not stat/glob/read payloads",
+  "payloads": [
+    {
+      "path": "data/trained_copy_external_v1_prepared/train.jsonl",
+      "sha256": "208d1cd6a0c43faee32d111624f6b86c62175d1232e569c213a6eea44cf1dc4b"
+    },
+    {
+      "path": "data/trained_copy_external_v1_prepared/development.jsonl",
+      "sha256": "b1c32094844745fea7f6718282cb2a4b8bcb52a55dc7144a9c41df52e5f406c8"
+    },
+    {
+      "path": "data/trained_copy_external_v1_prepared/confirmation.jsonl",
+      "sha256": "a707f73851455b54b759cc4ec21dbb1002425258179ca09f6975f431b76cc508"
+    }
+  ],
+  "schema_version": "external_freeze",
+  "status": "FROZEN_UNOPENED"
+}

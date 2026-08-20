@@ -1,0 +1,5827 @@
+{
+  "device": "cpu",
+  "numpy": "1.26.4",
+  "qa": {
+    "correlated_superposition": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.752474948285897e-08
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 9.845554411771277e-08
+        },
+        "attention_transport_clean": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.454161693172138e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 1.0031275674228468e-07
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 9.845554411771277e-08
+        },
+        "attention_transport_ground_truth_patch": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.733482906705613e-08
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.752474948285897e-08
+        },
+        "attention_transport_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 9.94810299094075e-08
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 9.731940222663092e-08
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.882878636046692e-08
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.8134426732922e-08
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.797869981427315e-08
+        },
+        "attention_transport_sham": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 7.783408581154577e-08
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 9.883737289176196e-08
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.454161693172138e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.882878636046692e-08
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 5.960464477539062e-07,
+          "pass": true,
+          "relative_l2": 8.369933924110912e-08
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.47355215617263e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 4.172325134277344e-07,
+          "pass": true,
+          "relative_l2": 1.0501530789266263e-07
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.220143206025833e-07
+        },
+        "logits_bypass_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.2623990939921267e-07
+        },
+        "logits_clean": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0771404639766195e-07
+        },
+        "logits_control": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.4892841545662786e-07
+        },
+        "logits_corrupt": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.2282871190264072e-07
+        },
+        "logits_ground_truth_patch": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.0207191467857158e-07
+        },
+        "logits_hybrid": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.069897964458138e-07
+        },
+        "logits_output_skyline": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0771404639766195e-07
+        },
+        "logits_private_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.3017355621878447e-07
+        },
+        "logits_routing_omitted": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.230552051515817e-07
+        },
+        "logits_routing_only": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0084139946721363e-07
+        },
+        "logits_routing_private": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.138190626812127e-07
+        },
+        "logits_routing_shared": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.0845561842690588e-07
+        },
+        "logits_sham": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.0595893936287412e-07
+        },
+        "logits_shared_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.3518201127594355e-07
+        },
+        "logits_state_skyline": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0771404639766195e-07
+        },
+        "logits_value_omitted": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0084139946721363e-07
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 6.965264428244555e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.888778093149645e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.050278798076212e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 9.220375067461337e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.719579619639069e-08
+        },
+        "pre_readout_ground_truth_patch": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.458989157512027e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.479389641470449e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.729396178797095e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.642692730650438e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.61565857629365e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.5336133477338336e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.5639722530060716e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.6000286884618834e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.805451652268627e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 6.050278798076212e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.61565857629365e-08
+        },
+        "private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.799100890720549e-08
+        },
+        "state_bypass_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 9.503851155622352e-08
+        },
+        "state_clean": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 8.172715100554525e-08
+        },
+        "state_control": {
+          "max_abs": 5.960464477539062e-07,
+          "pass": true,
+          "relative_l2": 9.654859227938007e-08
+        },
+        "state_corrupt": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.21108008865578e-08
+        },
+        "state_ground_truth_patch": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 7.879315524464586e-08
+        },
+        "state_hybrid": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 7.976852400022895e-08
+        },
+        "state_private_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.226351759087091e-08
+        },
+        "state_routing_omitted": {
+          "max_abs": 5.960464477539062e-07,
+          "pass": true,
+          "relative_l2": 9.157997938627934e-08
+        },
+        "state_routing_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 7.967615336830769e-08
+        },
+        "state_routing_private": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 7.892344095775607e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 7.71544402167318e-08
+        },
+        "state_sham": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 8.124228328165979e-08
+        },
+        "state_shared_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 9.474637237055888e-08
+        },
+        "state_state_skyline": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 8.172715100554525e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 7.967615336830769e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.064540748189294e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.997862400590006e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.787081557233153e-08
+        },
+        "weights_control": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.997862400590006e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.997862400590006e-08
+        },
+        "weights_ground_truth_patch": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.064540748189294e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.064540748189294e-08
+        },
+        "weights_private_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.997862400590006e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.997862400590006e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.064540748189294e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.064540748189294e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.064540748189294e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.064540748189294e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.997862400590006e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.787081557233153e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.064540748189294e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_ground_truth_patch": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_ground_truth_patch": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_ground_truth_patch": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_ground_truth_patch": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "private_delta": true,
+        "query": true,
+        "routing_delta": true,
+        "routing_private_delta": true,
+        "routing_shared_delta": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_ground_truth_patch": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "sham_private_delta": true,
+        "sham_routing_delta": true,
+        "sham_routing_private_delta": true,
+        "sham_routing_shared_delta": true,
+        "sham_shared_delta": true,
+        "shared_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_ground_truth_patch": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_ground_truth_patch": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "ideal_hard": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 5.290202473764343e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.742870303577592e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_output_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_ground_truth_patch": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_ground_truth_patch": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_ground_truth_patch": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_ground_truth_patch": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "private_delta": true,
+        "query": true,
+        "routing_delta": true,
+        "routing_private_delta": true,
+        "routing_shared_delta": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_ground_truth_patch": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "sham_private_delta": true,
+        "sham_routing_delta": true,
+        "sham_routing_private_delta": true,
+        "sham_routing_shared_delta": true,
+        "sham_shared_delta": true,
+        "shared_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_ground_truth_patch": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_ground_truth_patch": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "layernorm": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.625453984926609e-08
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.526325409625077e-08
+        },
+        "attention_transport_clean": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.869531569691263e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.500960658585813e-08
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.526325409625077e-08
+        },
+        "attention_transport_ground_truth_patch": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.625450314429758e-08
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.625453984926609e-08
+        },
+        "attention_transport_private_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.526571128084652e-08
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.53855182437512e-08
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.44859563164572e-08
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.448241965998532e-08
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.625816870059301e-08
+        },
+        "attention_transport_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.119278434666618e-08
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.538306046345521e-08
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.869531569691263e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.44859563164572e-08
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.0140403011847946e-08
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.202275844363643e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.159280296391241e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.637542688119996e-08
+        },
+        "logits_bypass_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 9.834896590529422e-08
+        },
+        "logits_clean": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.0002989574600073e-07
+        },
+        "logits_control": {
+          "max_abs": 3.814697265625e-06,
+          "pass": true,
+          "relative_l2": 9.117874406030136e-08
+        },
+        "logits_corrupt": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 9.623822823617584e-08
+        },
+        "logits_ground_truth_patch": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.80146417813918e-08
+        },
+        "logits_hybrid": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.959790041972998e-08
+        },
+        "logits_output_skyline": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.0002989574600073e-07
+        },
+        "logits_private_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 9.533715419976302e-08
+        },
+        "logits_routing_omitted": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0871973250242214e-07
+        },
+        "logits_routing_only": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 9.459219917356e-08
+        },
+        "logits_routing_private": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 8.488856155142362e-08
+        },
+        "logits_routing_shared": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 8.961746260559028e-08
+        },
+        "logits_sham": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0252190896694892e-07
+        },
+        "logits_shared_only": {
+          "max_abs": 3.814697265625e-06,
+          "pass": true,
+          "relative_l2": 1.0202171562558997e-07
+        },
+        "logits_state_skyline": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.0002989574600073e-07
+        },
+        "logits_value_omitted": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 9.459219917356e-08
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.286830905804093e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.331595340512684e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.8485795322436905e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.008438938731293e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.186779182844184e-08
+        },
+        "pre_readout_ground_truth_patch": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.192327624550138e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.204078881096467e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.174101124064635e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.1938198298239674e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.426487900719221e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.4600827502515546e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.174557548212762e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.926770506972052e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.206834372231127e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.8485795322436905e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.426487900719221e-08
+        },
+        "private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.486214807008184e-08
+        },
+        "state_bypass_only": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 9.811594380050346e-08
+        },
+        "state_clean": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.299415101201233e-08
+        },
+        "state_control": {
+          "max_abs": 5.960464477539062e-07,
+          "pass": true,
+          "relative_l2": 8.214153650339338e-08
+        },
+        "state_corrupt": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 9.61639684430801e-08
+        },
+        "state_ground_truth_patch": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.921668638298658e-08
+        },
+        "state_hybrid": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.824693327711376e-08
+        },
+        "state_private_only": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 9.219994926023684e-08
+        },
+        "state_routing_omitted": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 1.0533354603220189e-07
+        },
+        "state_routing_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.266563168629047e-08
+        },
+        "state_routing_private": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 8.072184946876739e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 8.599348300771493e-08
+        },
+        "state_sham": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.319900796183934e-08
+        },
+        "state_shared_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.452828496162045e-08
+        },
+        "state_state_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.299415101201233e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 9.266563168629047e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.841993436262078e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 8.034874722609277e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.01676528871302e-08
+        },
+        "weights_control": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 8.034874722609277e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 8.034874722609277e-08
+        },
+        "weights_ground_truth_patch": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.841993436262078e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.841993436262078e-08
+        },
+        "weights_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 8.034874722609277e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 8.034874722609277e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.841993436262078e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.841993436262078e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.841993436262078e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.841993436262078e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 8.034874722609277e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.01676528871302e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.841993436262078e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_ground_truth_patch": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_ground_truth_patch": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_ground_truth_patch": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_ground_truth_patch": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "private_delta": true,
+        "query": true,
+        "routing_delta": true,
+        "routing_private_delta": true,
+        "routing_shared_delta": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_ground_truth_patch": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "sham_private_delta": true,
+        "sham_routing_delta": true,
+        "sham_routing_private_delta": true,
+        "sham_routing_shared_delta": true,
+        "sham_shared_delta": true,
+        "shared_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_ground_truth_patch": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_ground_truth_patch": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "realistic_noisy": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.942409322826293e-08
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.775007112973505e-08
+        },
+        "attention_transport_clean": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 7.410095091637235e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 9.952285083251411e-08
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.775007112973505e-08
+        },
+        "attention_transport_ground_truth_patch": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.942052791443842e-08
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.942409322826293e-08
+        },
+        "attention_transport_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.759768170382337e-08
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 9.855356913750755e-08
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.032901302511863e-08
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.089322768850173e-08
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.95912011963256e-08
+        },
+        "attention_transport_sham": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.020897381057956e-08
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 9.728868899573543e-08
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 7.410095091637235e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.032901302511863e-08
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.64686140463894e-08
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.699294144215702e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 9.225892689177147e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.2251164878487825e-07
+        },
+        "logits_bypass_only": {
+          "max_abs": 9.5367431640625e-06,
+          "pass": true,
+          "relative_l2": 1.2381760802918736e-07
+        },
+        "logits_clean": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.74317599675763e-08
+        },
+        "logits_control": {
+          "max_abs": 6.67572021484375e-06,
+          "pass": true,
+          "relative_l2": 1.4445828137149006e-07
+        },
+        "logits_corrupt": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.2908003640018115e-07
+        },
+        "logits_ground_truth_patch": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.1094138732913012e-07
+        },
+        "logits_hybrid": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.0687123537766029e-07
+        },
+        "logits_output_skyline": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.74317599675763e-08
+        },
+        "logits_private_only": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.3072399994719083e-07
+        },
+        "logits_routing_omitted": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.3152692210822282e-07
+        },
+        "logits_routing_only": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.051923294081619e-07
+        },
+        "logits_routing_private": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 1.1179808622315098e-07
+        },
+        "logits_routing_shared": {
+          "max_abs": 5.7220458984375e-06,
+          "pass": true,
+          "relative_l2": 1.1590904336130563e-07
+        },
+        "logits_sham": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.97653980078733e-08
+        },
+        "logits_shared_only": {
+          "max_abs": 3.814697265625e-06,
+          "pass": true,
+          "relative_l2": 1.3277234114943822e-07
+        },
+        "logits_state_skyline": {
+          "max_abs": 7.62939453125e-06,
+          "pass": true,
+          "relative_l2": 9.74317599675763e-08
+        },
+        "logits_value_omitted": {
+          "max_abs": 1.1444091796875e-05,
+          "pass": true,
+          "relative_l2": 1.051923294081619e-07
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.019922106101644e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.703518304537601e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.2649275207901255e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 9.495822311179008e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.61600932825516e-08
+        },
+        "pre_readout_ground_truth_patch": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.7436742903206204e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.6850980647795595e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.504280629178242e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.598298662390241e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.766277091270831e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.793753794372125e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.725648095356876e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.7020566116889996e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 6.493383666500408e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.2649275207901255e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 5.766277091270831e-08
+        },
+        "private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 5.960464477539062e-07,
+          "pass": true,
+          "relative_l2": 9.154561844266071e-08
+        },
+        "state_bypass_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.280011883002518e-08
+        },
+        "state_clean": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.055713108083996e-08
+        },
+        "state_control": {
+          "max_abs": 5.960464477539062e-07,
+          "pass": true,
+          "relative_l2": 9.775691863950667e-08
+        },
+        "state_corrupt": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 9.432700305477256e-08
+        },
+        "state_ground_truth_patch": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.592374705198419e-08
+        },
+        "state_hybrid": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.507790948474687e-08
+        },
+        "state_private_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 9.488057749166374e-08
+        },
+        "state_routing_omitted": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 9.638571843972544e-08
+        },
+        "state_routing_only": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.347830621543951e-08
+        },
+        "state_routing_private": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.270757109956862e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.387928887222647e-08
+        },
+        "state_sham": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 8.054454650099164e-08
+        },
+        "state_shared_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 9.676161952943867e-08
+        },
+        "state_state_skyline": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.055713108083996e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.347830621543951e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.248907004775294e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.810976171318714e-08
+        },
+        "weights_clean": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 6.729732229508116e-08
+        },
+        "weights_control": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.810976171318714e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.810976171318714e-08
+        },
+        "weights_ground_truth_patch": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.248907004775294e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.248907004775294e-08
+        },
+        "weights_private_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.810976171318714e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.810976171318714e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.248907004775294e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.248907004775294e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.248907004775294e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.248907004775294e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.810976171318714e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 6.729732229508116e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.248907004775294e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_ground_truth_patch": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_ground_truth_patch": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_ground_truth_patch": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_ground_truth_patch": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "private_delta": true,
+        "query": true,
+        "routing_delta": true,
+        "routing_private_delta": true,
+        "routing_shared_delta": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_ground_truth_patch": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "sham_private_delta": true,
+        "sham_routing_delta": true,
+        "sham_routing_private_delta": true,
+        "sham_routing_shared_delta": true,
+        "sham_shared_delta": true,
+        "shared_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_ground_truth_patch": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_ground_truth_patch": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "residual_bypass": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.132339328760959e-08
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 8.42907799874743e-08
+        },
+        "attention_transport_clean": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.952317016518941e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 8.61049435143642e-08
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 8.42907799874743e-08
+        },
+        "attention_transport_ground_truth_patch": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.132227744734348e-08
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.132339328760959e-08
+        },
+        "attention_transport_private_only": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 8.42924317731244e-08
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 8.420495160474117e-08
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.084806361514733e-08
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.08492005022574e-08
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.13222485937006e-08
+        },
+        "attention_transport_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.025989864915538e-08
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 1.4901161193847656e-07,
+          "pass": true,
+          "relative_l2": 8.420329683794913e-08
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 7.952317016518941e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.084806361514733e-08
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.6599327121371636e-08
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.741316168354508e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.524717345327478e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 6.262921420372689e-08
+        },
+        "logits_bypass_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 5.358597410525843e-08
+        },
+        "logits_clean": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 6.472224571026576e-08
+        },
+        "logits_control": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 6.231844827423334e-08
+        },
+        "logits_corrupt": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 5.48824186227205e-08
+        },
+        "logits_ground_truth_patch": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 5.534851750715797e-08
+        },
+        "logits_hybrid": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 5.440529099699523e-08
+        },
+        "logits_output_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 6.472224571026576e-08
+        },
+        "logits_private_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 5.717621869195838e-08
+        },
+        "logits_routing_omitted": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 5.392516879702497e-08
+        },
+        "logits_routing_only": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 4.404469411646373e-08
+        },
+        "logits_routing_private": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 5.3970399886288025e-08
+        },
+        "logits_routing_shared": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 5.179275111614198e-08
+        },
+        "logits_sham": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 5.760695660740164e-08
+        },
+        "logits_shared_only": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 5.917066373625549e-08
+        },
+        "logits_state_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 6.472224571026576e-08
+        },
+        "logits_value_omitted": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 4.404469411646373e-08
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.04334354599298e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.179226263872762e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.970815627514029e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.558142904050169e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.204182783367682e-08
+        },
+        "pre_readout_ground_truth_patch": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.2728722771235535e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.187362303827114e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.164025850015577e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.2514285376985524e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.40998601184899e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.511729781079817e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.098599979698844e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.16087889308953e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.2909027101092336e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.970815627514029e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.40998601184899e-08
+        },
+        "private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 6.04334354599298e-08
+        },
+        "state_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.179226263872762e-08
+        },
+        "state_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.970815627514029e-08
+        },
+        "state_control": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.558142904050169e-08
+        },
+        "state_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.204182783367682e-08
+        },
+        "state_ground_truth_patch": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.2728722771235535e-08
+        },
+        "state_hybrid": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.187362303827114e-08
+        },
+        "state_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.164025850015577e-08
+        },
+        "state_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.2514285376985524e-08
+        },
+        "state_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.40998601184899e-08
+        },
+        "state_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.511729781079817e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.098599979698844e-08
+        },
+        "state_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.16087889308953e-08
+        },
+        "state_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 5.2909027101092336e-08
+        },
+        "state_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 5.970815627514029e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 4.40998601184899e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.786763679967237e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.918503068693898e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.471261260338476e-08
+        },
+        "weights_control": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.918503068693898e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.918503068693898e-08
+        },
+        "weights_ground_truth_patch": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.786763679967237e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.786763679967237e-08
+        },
+        "weights_private_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.918503068693898e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.918503068693898e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.786763679967237e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.786763679967237e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.786763679967237e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.786763679967237e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 5.960464477539063e-08,
+          "pass": true,
+          "relative_l2": 7.918503068693898e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.471261260338476e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 6.786763679967237e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_ground_truth_patch": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_ground_truth_patch": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_ground_truth_patch": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_ground_truth_patch": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "private_delta": true,
+        "query": true,
+        "routing_delta": true,
+        "routing_private_delta": true,
+        "routing_shared_delta": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_ground_truth_patch": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "sham_private_delta": true,
+        "sham_routing_delta": true,
+        "sham_routing_private_delta": true,
+        "sham_routing_shared_delta": true,
+        "sham_shared_delta": true,
+        "shared_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_ground_truth_patch": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_ground_truth_patch": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    },
+    "soft_attention": {
+      "oracle_fields": {
+        "attention_transport_attention_only": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.356869500448594e-08
+        },
+        "attention_transport_bypass_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.879462105361529e-08
+        },
+        "attention_transport_clean": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.593836156437939e-08
+        },
+        "attention_transport_control": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 8.106617158472475e-08
+        },
+        "attention_transport_corrupt": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.879462105361529e-08
+        },
+        "attention_transport_ground_truth_patch": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.356821884637435e-08
+        },
+        "attention_transport_hybrid": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.356869500448594e-08
+        },
+        "attention_transport_private_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.879739801368422e-08
+        },
+        "attention_transport_routing_omitted": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.89106870596599e-08
+        },
+        "attention_transport_routing_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.826314861074993e-08
+        },
+        "attention_transport_routing_private": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.826011633160727e-08
+        },
+        "attention_transport_routing_shared": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.35719328363509e-08
+        },
+        "attention_transport_sham": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.603746708945569e-08
+        },
+        "attention_transport_shared_only": {
+          "max_abs": 1.1920928955078125e-07,
+          "pass": true,
+          "relative_l2": 7.890791741801737e-08
+        },
+        "attention_transport_state_skyline": {
+          "max_abs": 3.5762786865234375e-07,
+          "pass": true,
+          "relative_l2": 8.593836156437939e-08
+        },
+        "attention_transport_value_omitted": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 7.826314861074993e-08
+        },
+        "bypass_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "bypass_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "contrast_id": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "control_delta": {
+          "max_abs": 4.76837158203125e-07,
+          "pass": true,
+          "relative_l2": 4.4144600724596956e-08
+        },
+        "control_norm_ratio": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.325351676974924e-08
+        },
+        "ground_truth_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "hybrid_nuisance_preserved": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "j": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "k": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "keys_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "logits_attention_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.963251128568696e-08
+        },
+        "logits_bypass_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.722852029222116e-08
+        },
+        "logits_clean": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.566381831388303e-08
+        },
+        "logits_control": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 8.822330283658716e-08
+        },
+        "logits_corrupt": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.722852029222116e-08
+        },
+        "logits_ground_truth_patch": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.821643955916464e-08
+        },
+        "logits_hybrid": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.963251128568696e-08
+        },
+        "logits_output_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.566381831388303e-08
+        },
+        "logits_private_only": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 8.801279796968005e-08
+        },
+        "logits_routing_omitted": {
+          "max_abs": 2.980232238769531e-07,
+          "pass": true,
+          "relative_l2": 8.723711317823723e-08
+        },
+        "logits_routing_only": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.862982216448265e-08
+        },
+        "logits_routing_private": {
+          "max_abs": 9.5367431640625e-07,
+          "pass": true,
+          "relative_l2": 8.561140510305541e-08
+        },
+        "logits_routing_shared": {
+          "max_abs": 7.152557373046875e-07,
+          "pass": true,
+          "relative_l2": 8.938760100849827e-08
+        },
+        "logits_sham": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 7.844553929291038e-08
+        },
+        "logits_shared_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.700402271872395e-08
+        },
+        "logits_state_skyline": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.566381831388303e-08
+        },
+        "logits_value_omitted": {
+          "max_abs": 1.430511474609375e-06,
+          "pass": true,
+          "relative_l2": 8.862982216448265e-08
+        },
+        "pre_readout_attention_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.288231236301601e-08
+        },
+        "pre_readout_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.171397919169662e-08
+        },
+        "pre_readout_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.593087758662882e-08
+        },
+        "pre_readout_control": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.138518424914099e-08
+        },
+        "pre_readout_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.171397919169662e-08
+        },
+        "pre_readout_ground_truth_patch": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.275702874990406e-08
+        },
+        "pre_readout_hybrid": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.288231236301601e-08
+        },
+        "pre_readout_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.171386900948964e-08
+        },
+        "pre_readout_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.123438809907129e-08
+        },
+        "pre_readout_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.180170687480054e-08
+        },
+        "pre_readout_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.959978906803917e-08
+        },
+        "pre_readout_routing_shared": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.499071124550893e-08
+        },
+        "pre_readout_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.548344272870998e-08
+        },
+        "pre_readout_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.123451454593692e-08
+        },
+        "pre_readout_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.593087758662882e-08
+        },
+        "pre_readout_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.180170687480054e-08
+        },
+        "private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "query": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_attention_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_bypass_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_control": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_ground_truth_patch": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_private_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_private": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_routing_shared": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_shared_only": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_state_skyline": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "scores_value_omitted": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_private_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_routing_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "sham_shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "shared_delta": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "state_attention_only": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.288231236301601e-08
+        },
+        "state_bypass_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.171397919169662e-08
+        },
+        "state_clean": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.593087758662882e-08
+        },
+        "state_control": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.138518424914099e-08
+        },
+        "state_corrupt": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.171397919169662e-08
+        },
+        "state_ground_truth_patch": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.275702874990406e-08
+        },
+        "state_hybrid": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.288231236301601e-08
+        },
+        "state_private_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.171386900948964e-08
+        },
+        "state_routing_omitted": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.123438809907129e-08
+        },
+        "state_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.180170687480054e-08
+        },
+        "state_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.959978906803917e-08
+        },
+        "state_routing_shared": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.499071124550893e-08
+        },
+        "state_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.548344272870998e-08
+        },
+        "state_shared_only": {
+          "max_abs": 8.940696716308594e-08,
+          "pass": true,
+          "relative_l2": 8.123451454593692e-08
+        },
+        "state_state_skyline": {
+          "max_abs": 2.384185791015625e-07,
+          "pass": true,
+          "relative_l2": 8.593087758662882e-08
+        },
+        "state_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 8.180170687480054e-08
+        },
+        "target": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_clean": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_corrupt": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_hybrid": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "values_sham": {
+          "max_abs": 0.0,
+          "pass": true,
+          "relative_l2": 0.0
+        },
+        "weights_attention_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.500471657506775e-08
+        },
+        "weights_bypass_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.601833316253416e-08
+        },
+        "weights_clean": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.84186355257049e-08
+        },
+        "weights_control": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.601833316253416e-08
+        },
+        "weights_corrupt": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.601833316253416e-08
+        },
+        "weights_ground_truth_patch": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.500471657506775e-08
+        },
+        "weights_hybrid": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.500471657506775e-08
+        },
+        "weights_private_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.601833316253416e-08
+        },
+        "weights_routing_omitted": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.601833316253416e-08
+        },
+        "weights_routing_only": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.500471657506775e-08
+        },
+        "weights_routing_private": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.500471657506775e-08
+        },
+        "weights_routing_shared": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.500471657506775e-08
+        },
+        "weights_sham": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.500471657506775e-08
+        },
+        "weights_shared_only": {
+          "max_abs": 4.470348358154297e-08,
+          "pass": true,
+          "relative_l2": 7.601833316253416e-08
+        },
+        "weights_state_skyline": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.84186355257049e-08
+        },
+        "weights_value_omitted": {
+          "max_abs": 1.7881393432617188e-07,
+          "pass": true,
+          "relative_l2": 7.500471657506775e-08
+        }
+      },
+      "oracle_pass": true,
+      "repeated_fields": {
+        "attention_transport_attention_only": true,
+        "attention_transport_bypass_only": true,
+        "attention_transport_clean": true,
+        "attention_transport_control": true,
+        "attention_transport_corrupt": true,
+        "attention_transport_ground_truth_patch": true,
+        "attention_transport_hybrid": true,
+        "attention_transport_private_only": true,
+        "attention_transport_routing_omitted": true,
+        "attention_transport_routing_only": true,
+        "attention_transport_routing_private": true,
+        "attention_transport_routing_shared": true,
+        "attention_transport_sham": true,
+        "attention_transport_shared_only": true,
+        "attention_transport_state_skyline": true,
+        "attention_transport_value_omitted": true,
+        "bypass_attention_only": true,
+        "bypass_bypass_only": true,
+        "bypass_clean": true,
+        "bypass_control": true,
+        "bypass_corrupt": true,
+        "bypass_ground_truth_patch": true,
+        "bypass_hybrid": true,
+        "bypass_private_only": true,
+        "bypass_routing_omitted": true,
+        "bypass_routing_only": true,
+        "bypass_routing_private": true,
+        "bypass_routing_shared": true,
+        "bypass_sham": true,
+        "bypass_shared_only": true,
+        "bypass_state_skyline": true,
+        "bypass_value_omitted": true,
+        "contrast_id": true,
+        "control_delta": true,
+        "control_norm_ratio": true,
+        "ground_truth_delta": true,
+        "hybrid_nuisance_preserved": true,
+        "j": true,
+        "k": true,
+        "keys_clean": true,
+        "keys_corrupt": true,
+        "keys_hybrid": true,
+        "logits_attention_only": true,
+        "logits_bypass_only": true,
+        "logits_clean": true,
+        "logits_control": true,
+        "logits_corrupt": true,
+        "logits_ground_truth_patch": true,
+        "logits_hybrid": true,
+        "logits_output_skyline": true,
+        "logits_private_only": true,
+        "logits_routing_omitted": true,
+        "logits_routing_only": true,
+        "logits_routing_private": true,
+        "logits_routing_shared": true,
+        "logits_sham": true,
+        "logits_shared_only": true,
+        "logits_state_skyline": true,
+        "logits_value_omitted": true,
+        "pre_readout_attention_only": true,
+        "pre_readout_bypass_only": true,
+        "pre_readout_clean": true,
+        "pre_readout_control": true,
+        "pre_readout_corrupt": true,
+        "pre_readout_ground_truth_patch": true,
+        "pre_readout_hybrid": true,
+        "pre_readout_private_only": true,
+        "pre_readout_routing_omitted": true,
+        "pre_readout_routing_only": true,
+        "pre_readout_routing_private": true,
+        "pre_readout_routing_shared": true,
+        "pre_readout_sham": true,
+        "pre_readout_shared_only": true,
+        "pre_readout_state_skyline": true,
+        "pre_readout_value_omitted": true,
+        "private_delta": true,
+        "query": true,
+        "routing_delta": true,
+        "routing_private_delta": true,
+        "routing_shared_delta": true,
+        "scores_attention_only": true,
+        "scores_bypass_only": true,
+        "scores_clean": true,
+        "scores_control": true,
+        "scores_corrupt": true,
+        "scores_ground_truth_patch": true,
+        "scores_hybrid": true,
+        "scores_private_only": true,
+        "scores_routing_omitted": true,
+        "scores_routing_only": true,
+        "scores_routing_private": true,
+        "scores_routing_shared": true,
+        "scores_sham": true,
+        "scores_shared_only": true,
+        "scores_state_skyline": true,
+        "scores_value_omitted": true,
+        "sham_delta": true,
+        "sham_private_delta": true,
+        "sham_routing_delta": true,
+        "sham_routing_private_delta": true,
+        "sham_routing_shared_delta": true,
+        "sham_shared_delta": true,
+        "shared_delta": true,
+        "state_attention_only": true,
+        "state_bypass_only": true,
+        "state_clean": true,
+        "state_control": true,
+        "state_corrupt": true,
+        "state_ground_truth_patch": true,
+        "state_hybrid": true,
+        "state_private_only": true,
+        "state_routing_omitted": true,
+        "state_routing_only": true,
+        "state_routing_private": true,
+        "state_routing_shared": true,
+        "state_sham": true,
+        "state_shared_only": true,
+        "state_state_skyline": true,
+        "state_value_omitted": true,
+        "target": true,
+        "values_clean": true,
+        "values_corrupt": true,
+        "values_hybrid": true,
+        "values_sham": true,
+        "weights_attention_only": true,
+        "weights_bypass_only": true,
+        "weights_clean": true,
+        "weights_control": true,
+        "weights_corrupt": true,
+        "weights_ground_truth_patch": true,
+        "weights_hybrid": true,
+        "weights_private_only": true,
+        "weights_routing_omitted": true,
+        "weights_routing_only": true,
+        "weights_routing_private": true,
+        "weights_routing_shared": true,
+        "weights_sham": true,
+        "weights_shared_only": true,
+        "weights_state_skyline": true,
+        "weights_value_omitted": true
+      },
+      "repeated_live_exact": true
+    }
+  },
+  "rows_scored": 1152,
+  "schema_version": "transformer_realistic_bridge_v1_smoke",
+  "summary": {
+    "all_gates_pass": true,
+    "constructed_synthetic_model": true,
+    "first_failure_regime": null,
+    "k2_evaluated": false,
+    "natural_model_claim": false,
+    "natural_prompt_assay": false,
+    "regimes": {
+      "correlated_superposition": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 3.886584868457769e-08,
+            "point": 4.188977317276058e-08,
+            "upper": 4.509376025429856e-08,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9147306111116909,
+            "point": 0.9237912867875965,
+            "upper": 0.9325447820319688,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999454542368,
+            "point": 0.9999999504130673,
+            "upper": 0.9999999551664034,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999959747053,
+            "point": 1.0000000053415123,
+            "upper": 1.0000000149616648,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.17897760311928687,
+            "point": 0.18860686730688214,
+            "upper": 0.1971394933059192,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.25013222334041335,
+            "point": 0.256060447600158,
+            "upper": 0.2622341845248421,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9379673187237106,
+            "point": 0.947062735807708,
+            "upper": 0.9556800025486683,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9410966389031351,
+            "point": 0.9457417386474689,
+            "upper": 0.9499511929269477,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "correlated_superposition",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "ideal_hard": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 9.38150290299687e-09,
+            "point": 1.0685204893579548e-08,
+            "upper": 1.2166918749516988e-08,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9999999957137414,
+            "point": 1.0000000000180507,
+            "upper": 1.0000000042285717,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999788266685,
+            "point": 0.9999999818057912,
+            "upper": 0.9999999844493979,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999961073944,
+            "point": 1.0000000000180507,
+            "upper": 1.0000000043044455,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.33416768266689056,
+            "point": 0.3591430426549964,
+            "upper": 0.3795835954703474,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9991230278013764,
+            "point": 1.000425977924407,
+            "upper": 1.0016570497371384,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.999018275506723,
+            "point": 1.0004259769324164,
+            "upper": 1.0015918295305482,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "ideal_hard",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "layernorm": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 9.117002900514396e-09,
+            "point": 1.1227593687254646e-08,
+            "upper": 1.3632885001650479e-08,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9129280889770213,
+            "point": 0.9177448216301013,
+            "upper": 0.9223996547895189,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999771538994,
+            "point": 0.9999999812381025,
+            "upper": 0.9999999847549308,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999958934039,
+            "point": 0.9999999992977342,
+            "upper": 1.0000000029298777,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.16270410079841224,
+            "point": 0.17348227470848812,
+            "upper": 0.18125571181393,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.20206084486095263,
+            "point": 0.20872483785162377,
+            "upper": 0.21451204439148605,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.937320831591615,
+            "point": 0.9391059565849121,
+            "upper": 0.9408422363807802,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9372975132619235,
+            "point": 0.9390596137377601,
+            "upper": 0.9408790636996034,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "layernorm",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "realistic_noisy": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 4.006102298773625e-08,
+            "point": 4.294842371637737e-08,
+            "upper": 4.571438592934958e-08,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9174513721532987,
+            "point": 0.9234552369099093,
+            "upper": 0.9299765672166523,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999392058606,
+            "point": 0.9999999465411022,
+            "upper": 0.9999999521956308,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999943086298,
+            "point": 1.0000000031558354,
+            "upper": 1.0000000117948449,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.18104630303942892,
+            "point": 0.19065864878131278,
+            "upper": 0.1991932416898497,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.25197044125685714,
+            "point": 0.2581322990045492,
+            "upper": 0.26434456755179525,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9433378391066818,
+            "point": 0.9491124178678582,
+            "upper": 0.9552661672348798,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9418563541109137,
+            "point": 0.9469706863984698,
+            "upper": 0.9519983416421498,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "realistic_noisy",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "residual_bypass": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 1.1985833529279661e-08,
+            "point": 1.4111987826701531e-08,
+            "upper": 1.6559882005941105e-08,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.9889067618172845,
+            "point": 0.9972799385244188,
+            "upper": 1.0050677943644937,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999723913447,
+            "point": 0.9999999760076618,
+            "upper": 0.9999999791418914,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999938336537,
+            "point": 0.9999999974716296,
+            "upper": 1.0000000012161998,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.3403351936097581,
+            "point": 0.3651952782480114,
+            "upper": 0.3838734919677151,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.5732533306608486,
+            "point": 0.5735185730768441,
+            "upper": 0.5737918060089549,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9997462878038831,
+            "point": 1.0000164709722092,
+            "upper": 1.0003028121589925,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.999707160427088,
+            "point": 1.0000164731205554,
+            "upper": 1.0003007889979258,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "residual_bypass",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      },
+      "soft_attention": {
+        "all_gates_pass": true,
+        "common_cohort_per_block": {
+          "0": 8,
+          "1": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8,
+          "13": 8,
+          "14": 8,
+          "15": 8,
+          "16": 8,
+          "17": 8,
+          "18": 8,
+          "19": 8,
+          "2": 8,
+          "20": 8,
+          "21": 8,
+          "22": 8,
+          "23": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8
+        },
+        "common_cohort_total": 192,
+        "constructed_synthetic_model": true,
+        "exclusion_rate": 0.0,
+        "gate_decisions": {
+          "collateral_error": true,
+          "control_margin": true,
+          "full_vocab_recovery": true,
+          "ground_truth_recovery": true,
+          "incomplete_gap": true,
+          "joint_necessity": true,
+          "routing_necessity": true,
+          "sham_specificity": true,
+          "value_necessity": true
+        },
+        "k2_evaluated": false,
+        "metrics": {
+          "collateral_error": {
+            "draws": 1000,
+            "lower": 1.1688442191432572e-08,
+            "point": 1.38628976075926e-08,
+            "upper": 1.623789660299943e-08,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "control_margin": {
+            "draws": 1000,
+            "lower": 0.99952430560013,
+            "point": 0.9998607207293784,
+            "upper": 1.0001802816361152,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "full_vocab_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999740448513,
+            "point": 0.9999999776935873,
+            "upper": 0.9999999810221161,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "ground_truth_recovery": {
+            "draws": 1000,
+            "lower": 0.9999999938614391,
+            "point": 0.9999999977058772,
+            "upper": 1.000000001106822,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "incomplete_gap": {
+            "draws": 1000,
+            "lower": 0.3465187091727113,
+            "point": 0.37148939312312024,
+            "upper": 0.3902125100180404,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "joint_necessity": {
+            "draws": 1000,
+            "lower": 1.0,
+            "point": 1.0,
+            "upper": 1.0,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "routing_necessity": {
+            "draws": 1000,
+            "lower": 0.9823511570167006,
+            "point": 0.9825342177381179,
+            "upper": 0.9826984136520682,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "sham_specificity": {
+            "draws": 1000,
+            "lower": 0.9996549303292107,
+            "point": 1.0001616336865153,
+            "upper": 1.0006698449071738,
+            "weighting": "equal_block_paired_hierarchical"
+          },
+          "value_necessity": {
+            "draws": 1000,
+            "lower": 0.9996451132037872,
+            "point": 1.0001616349225124,
+            "upper": 1.00067176179951,
+            "weighting": "equal_block_paired_hierarchical"
+          }
+        },
+        "natural_model_claim": false,
+        "natural_prompt_assay": false,
+        "regime": "soft_attention",
+        "representation_methods_evaluated": false,
+        "schema_version": "transformer_realistic_bridge_v1_regime_summary",
+        "stage": "nonpanel_smoke",
+        "status": "PASS",
+        "support_pass": true,
+        "technical_valid": true,
+        "training_performed": false
+      }
+    },
+    "representation_methods_evaluated": false,
+    "schema_version": "transformer_realistic_bridge_v1_stage_summary",
+    "stage": "nonpanel_smoke",
+    "status": "NONPANEL_SMOKE_PASS",
+    "technical_valid": true,
+    "training_performed": false
+  },
+  "torch": "2.7.0"
+}

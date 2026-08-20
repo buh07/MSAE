@@ -1,0 +1,28 @@
+{
+  "payload": {
+    "architecture_promotion_if_rope_fails": "technically_ineligible",
+    "authorized_stage": "EXPLORATORY_FROZEN_SCIENCE_WITH_ELIGIBILITY_OVERLAY",
+    "cross_panel": {
+      "baseline_runtime_pass": true,
+      "rope_translation_pass": true
+    },
+    "frozen_science_semantics_changed": false,
+    "gpu_uuid": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+    "implementation_candidate_sha256": "1dafa6d4ad2eff2d1020db1589ebbd6c519de829acc890e94d1546d7dc121683",
+    "neural_training_authorized": false,
+    "panel_complete_sha256": {
+      "CZECH_PDT": "b226437653617a1c0df5be6acb2fadac33b12da450f9e32c6fd76f230b1dbce4",
+      "ENGLISH_CHILDES_CTETEX": "bf5b79715655bb5b32e26ba6918f25568464288103d95f35bf3c538033fab0bf"
+    },
+    "pud_runtime_authorized": false,
+    "schema_version": "atlas_rope_v7_attempt11_authorization_v1",
+    "status": "AUTHORIZED",
+    "validation_authorization_sha256": "caeb5db67f3525e6ab5577abaee7710cbc03561dabf1f2a7248cf74a9ed41e3a"
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "52a39409b1bd03b2e8b17255bd8208fa49f023e6caa19fea38fda99a553af305",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "qHU+3r4qIzjxWZXaOXCjZRurZV4mW0QRFjXe1pMpbkgMX92nQ3tEPxzZar6FdEEyeFXgMTodsuYCyRh6uE2VBg=="
+  }
+}

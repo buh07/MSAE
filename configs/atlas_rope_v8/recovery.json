@@ -1,0 +1,573 @@
+{
+  "analysis_attempts": 1,
+  "attempt11_tree": {
+    "entries": 64,
+    "inventory_sha256": "7e6c0006ddf8800d4fcda2ef759f6e00ddf16d817b61542e60e6125e0791c591"
+  },
+  "claim_class": "EXPLORATORY_ANALYSIS_ONLY_RECOVERY",
+  "fixed_lineage_files": {
+    "configs/atlas_discovery_v3_3/run_final_v3.json": {
+      "bytes": 7778,
+      "sha256": "4c780b3a3fbcc5b1cf1a6fa57c0226d26fe2f9bcddb56c4f1393e9bbe31a45ed"
+    },
+    "configs/atlas_discovery_v3_3/scoring.json": {
+      "bytes": 9009,
+      "sha256": "2cc24b036a00cae9e96c42404b6b0b9c211e3059f5f0a32876a15bf1b6fb19aa"
+    },
+    "configs/atlas_rope_v6/science_adapter.json": {
+      "bytes": 10248,
+      "sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0"
+    },
+    "configs/atlas_rope_v7/SCIENCE_AUTHORIZATION.json": {
+      "bytes": 1349,
+      "sha256": "e2a0eb1650e61ea0bb74645e55ce3e01681ac07da78024cfab9ba4b8161305b4"
+    },
+    "configs/atlas_rope_v7/VALIDATION_AUTHORIZATION.json": {
+      "bytes": 1758,
+      "sha256": "caeb5db67f3525e6ab5577abaee7710cbc03561dabf1f2a7248cf74a9ed41e3a"
+    },
+    "configs/atlas_rope_v7/implementation_candidate.json": {
+      "bytes": 7855,
+      "sha256": "1dafa6d4ad2eff2d1020db1589ebbd6c519de829acc890e94d1546d7dc121683"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/manifest.json": {
+      "bytes": 545556,
+      "sha256": "87cdf01c48428cf1d1cdab7a9324865d3db8e44408e997f1045123bb23ec5ee4"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/TERMINAL.json": {
+      "bytes": 1493,
+      "sha256": "ad7fd3b4de265879737774df38220956a4947298f3122f37b207c2bea46285d1"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/EWT/COMPLETE.json": {
+      "bytes": 17681,
+      "sha256": "2c6f57f788981198d2537fd605d2dadef491febc844938c3d4e5fc3b8aa6b88a"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/EWT/activations.float32.npy": {
+      "bytes": 564544640,
+      "sha256": "7ef549aadb289795c4dd2fdd36e1fd53e3da76baa53129d70a894158e486dcd3"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/EWT/row_ids.jsonl": {
+      "bytes": 18188630,
+      "sha256": "c6c8a99ba1a04ceebb303decf31ee126d2fea45cfdabb0e3f4e65169dfbc6bd5"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/GUM/COMPLETE.json": {
+      "bytes": 17680,
+      "sha256": "65c29542bea7badb84694755774f62da95eefb40e7082a3dcac113b6c5b9791a"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/GUM/activations.float32.npy": {
+      "bytes": 483526784,
+      "sha256": "35ffcba5e603f5ef64848cdb31674adcb929bb699e8964aaa36f0454cd433755"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/GUM/row_ids.jsonl": {
+      "bytes": 12090428,
+      "sha256": "7cb94d935c3aaf40939e139c2dadd6467b15f804ef1dadd6e1af24d0f06c0c08"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/numerical_qa/EWT/QA_COMPLETE.json": {
+      "bytes": 2034,
+      "sha256": "a767ddcb595de1ebcc3ad2dd86c7f541260b32a0473ff370569d860575aa3b44"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/numerical_qa/GUM/QA_COMPLETE.json": {
+      "bytes": 2034,
+      "sha256": "3b4520b392cddf190dcbbfd3813f16b11e11c8c4aba8e5ffa99d326205935400"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/validation/CZECH_PDT/COMPLETE.json": {
+      "bytes": 38854,
+      "sha256": "b226437653617a1c0df5be6acb2fadac33b12da450f9e32c6fd76f230b1dbce4"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/validation/ENGLISH_CHILDES_CTETEX/COMPLETE.json": {
+      "bytes": 38884,
+      "sha256": "bf5b79715655bb5b32e26ba6918f25568464288103d95f35bf3c538033fab0bf"
+    },
+    "reports/atlas_v3_3_attempt7_final_v3_rebuild_check.json": {
+      "bytes": 840,
+      "sha256": "9964fee1b7990e6e0a35b66fcc8482e57593d6054fe9aff812a1faf6139a2f79"
+    },
+    "requirements-atlas.lock.txt": {
+      "bytes": 417,
+      "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+    },
+    "scripts/analyze_atlas_discovery_v3_3.py": {
+      "bytes": 66806,
+      "sha256": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031"
+    },
+    "scripts/atlas_discovery_v3_3.py": {
+      "bytes": 97642,
+      "sha256": "5a42b8180ace22e85d9a185fa5c2447be233ae9186ff42d4c97d78fa63478ef7"
+    },
+    "scripts/atlas_discovery_v3_3_analysis.py": {
+      "bytes": 7240,
+      "sha256": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266"
+    },
+    "scripts/atlas_discovery_v3_scoring.py": {
+      "bytes": 2782,
+      "sha256": "0e9980c689f3cd6f058c7a3051f43946777e0db248c220c69d1ececcccc6860c"
+    },
+    "scripts/atlas_rope_v6.py": {
+      "bytes": 45675,
+      "sha256": "0a26e76c698397e8d103615eb872a6c20d9648410b16957b66faeadf4cdb0f75"
+    },
+    "scripts/atlas_rope_v7.py": {
+      "bytes": 14505,
+      "sha256": "8d7ce4dad6197b99e2a69ecb1ffb4ac15536c0a17bb4633593bf296ea3c5673a"
+    },
+    "scripts/extract_atlas_discovery_v3_3.py": {
+      "bytes": 53804,
+      "sha256": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+    }
+  },
+  "frozen_science": {
+    "adapter_path": "configs/atlas_rope_v6/science_adapter.json",
+    "adapter_sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0",
+    "analysis_settings_sha256": "ac2301ba1cb7221edfb7fbea1ca0dae69d2c12472f9adc1d7fb0c6eeb21b251d",
+    "analyzer_run_function_sha256": "0b03a1b54597130891a29086e293725663bd1c32387a7fd4ad4b17ff76b5d3b1",
+    "cache_root": "pilot_runs/20260803_atlas_rope_technical_v7/science",
+    "overlay_function_path": "scripts/atlas_rope_v7.py",
+    "panels": [
+      "ENGLISH_CHILDES_CTETEX",
+      "CZECH_PDT"
+    ],
+    "rows_labels_estimators_thresholds_interventions_projections_decision_logic_changed": false,
+    "sources": [
+      "EWT",
+      "GUM"
+    ]
+  },
+  "gpu_roles": {
+    "analysis_gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "analysis_physical_index": 0,
+    "analysis_visible_index": 0,
+    "extraction_gpu_uuid": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+    "extraction_physical_index": 1,
+    "required_cuda_visible_devices": "0"
+  },
+  "imported_files": {
+    "configs/atlas_discovery_v3_3/run_final_v3.json": {
+      "bytes": 7778,
+      "sha256": "4c780b3a3fbcc5b1cf1a6fa57c0226d26fe2f9bcddb56c4f1393e9bbe31a45ed"
+    },
+    "configs/atlas_discovery_v3_3/scoring.json": {
+      "bytes": 9009,
+      "sha256": "2cc24b036a00cae9e96c42404b6b0b9c211e3059f5f0a32876a15bf1b6fb19aa"
+    },
+    "configs/atlas_rope_v6/science_adapter.json": {
+      "bytes": 10248,
+      "sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0"
+    },
+    "configs/atlas_rope_v7/SCIENCE_AUTHORIZATION.json": {
+      "bytes": 1349,
+      "sha256": "e2a0eb1650e61ea0bb74645e55ce3e01681ac07da78024cfab9ba4b8161305b4"
+    },
+    "configs/atlas_rope_v7/VALIDATION_AUTHORIZATION.json": {
+      "bytes": 1758,
+      "sha256": "caeb5db67f3525e6ab5577abaee7710cbc03561dabf1f2a7248cf74a9ed41e3a"
+    },
+    "configs/atlas_rope_v7/implementation_candidate.json": {
+      "bytes": 7855,
+      "sha256": "1dafa6d4ad2eff2d1020db1589ebbd6c519de829acc890e94d1546d7dc121683"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/activation_rows.jsonl": {
+      "bytes": 124730325,
+      "sha256": "e9258cf7d6b4bdc1fcab82a51f41a6cb76d0c1a8f29c11ea57f604b442592e1e"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/cross_family_rows.jsonl": {
+      "bytes": 368553,
+      "sha256": "218a4c88bd56232d24f7c627f6d73e50411b61f6140912cda7f67a2bb4682560"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/inference_units.jsonl": {
+      "bytes": 22250461,
+      "sha256": "e83064b23a2d9d15c410b77dd7ac971ce2c8d550692fb28af33a68c42767df45"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/intervention_pairs.jsonl": {
+      "bytes": 977510,
+      "sha256": "5dfde015856abb0e00a347d20cfd94fd371eb44da5f710a0d980fec19981b243"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/pair_rows.jsonl": {
+      "bytes": 28228788,
+      "sha256": "ac20a317ad644ee7d76e12bdf22caff5fcba3ae228eb4faf90e4bfbfc44a62e6"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/relation_rows.jsonl": {
+      "bytes": 21479764,
+      "sha256": "0829235d995b65cf2f3fff035c32a272c443570f1d7e0ea60ab780b4e07cb645"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/capitalization.jsonl": {
+      "bytes": 12984305,
+      "sha256": "052b45e8ddbf974ffabd905c774cf8d879d31b741b963b54524dacbe908ec696"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/dependency_depth.jsonl": {
+      "bytes": 12756427,
+      "sha256": "b7c48a2e8123a161038fbf875212f3d90a66376cdd66d061a607545beccdf5d0"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/deprel_coarse.jsonl": {
+      "bytes": 13041948,
+      "sha256": "02240f4f589c6cf22fdb2d64cc195626bb3a93b19d63e98d5176e2c596a891bf"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/head_signed_distance.jsonl": {
+      "bytes": 12836969,
+      "sha256": "5820a6560a6ba1d2d364b4adebbaacffddec4401e5085aa376092c0c5568fd63"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/lemma_identity.jsonl": {
+      "bytes": 12897406,
+      "sha256": "edd848a9f999c1cf5d5314edf9a03e32d4211cf7a4b40625256cf5e18aa1add8"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/number.jsonl": {
+      "bytes": 9010530,
+      "sha256": "374ad2697393a62345803984c74d513dd1e601403853fc6a2345d3fd4cbde7cd"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/punctuation.jsonl": {
+      "bytes": 13110161,
+      "sha256": "510e48bd46e98648fce821b4b728e4ec1b0fc9b50c165964f1b91138a5eea6ef"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/relative_quartile.jsonl": {
+      "bytes": 12746633,
+      "sha256": "a7646d415c9094241c3a11cf851dbfa7544d7e6642c15e9afea7af71a87e71a4"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/start_distance.jsonl": {
+      "bytes": 12884809,
+      "sha256": "48c8cb699ad6b14177882dabb5b3bf6e3ccffe604234b4f5a0bf9bf85ce29850"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/token_identity.jsonl": {
+      "bytes": 6710007,
+      "sha256": "6b7e097502f683202d9c75ec566e2e7c147071d63e3c26b74954d6623fc7c664"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/upos_coarse.jsonl": {
+      "bytes": 13072138,
+      "sha256": "034d18cb60da5d8a5e7fed874e179fc58d06617ddb60d5f6280b65b527af6879"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/word_length.jsonl": {
+      "bytes": 12816619,
+      "sha256": "3dcdc1c1058c27ca2c8dc26b2582986ade85f94364aa232818253543c17f594f"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/activation_rows.jsonl": {
+      "bytes": 94841163,
+      "sha256": "52f2f21dcffafe7b446390361049fbfb2150a153aad79ed19337652f26e4f7bd"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/cross_family_rows.jsonl": {
+      "bytes": 156670,
+      "sha256": "69ee92fb8e0566d7e8c1ca6b36c702e1cb11bdd126dc00968e9bf0f2ff9fa604"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/inference_units.jsonl": {
+      "bytes": 14632092,
+      "sha256": "177cf191125445dc4f97ac525ee9be86c3c1f34c3259f1d52df15dc1e18e993b"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/intervention_pairs.jsonl": {
+      "bytes": 321304,
+      "sha256": "f6654bf168fe3cbfa8934abf56d23ed1ad6a500fe5cad94be323bf1829c07815"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/pair_rows.jsonl": {
+      "bytes": 8237798,
+      "sha256": "d8469d727b9454ad01a7e9373d2a29d8fa13e23f599f771e26234618dc4b3a73"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/relation_rows.jsonl": {
+      "bytes": 12838853,
+      "sha256": "9332a3951d298330ab1fcce14708b07931be3f376556af8866ae8e0dd7b27a10"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/capitalization.jsonl": {
+      "bytes": 4090551,
+      "sha256": "eae67a6f95ce7ade833f0510603db4bb682fbab1e7250d230e81b253567d8be7"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/dependency_depth.jsonl": {
+      "bytes": 4008043,
+      "sha256": "5970512e25c14fc9de91b9c9d5aca79e63a4682c98a8cfa412f645bd623f331d"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/deprel_coarse.jsonl": {
+      "bytes": 4109147,
+      "sha256": "6b9d3f0021264c33ef64e9639d0b4c39a5371a93d96acea8fac97c3e4e7c180a"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/head_signed_distance.jsonl": {
+      "bytes": 4035764,
+      "sha256": "6763b237a0c6bb14337d26197d0d2230e6a407df09c7249177f95fb681fcd844"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/lemma_identity.jsonl": {
+      "bytes": 4060954,
+      "sha256": "1fbf31f1c882a9cf2bb8a7aa57ed14768c645ac1db340b59f7d7845251999670"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/number.jsonl": {
+      "bytes": 4040298,
+      "sha256": "19cd73c5d3de890f74c2db4697723bc9fcd9f13071b6307963df0896d62fccff"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/punctuation.jsonl": {
+      "bytes": 4132716,
+      "sha256": "c036832015d9789c023860b5f1c75fd9e964bc93146b6e4540c988dd913b7bdf"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/relative_quartile.jsonl": {
+      "bytes": 4003470,
+      "sha256": "8ebda722502744cb3aaabe8404fc936dafef68ffc83bcef26eac6818b67321fd"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/start_distance.jsonl": {
+      "bytes": 4053704,
+      "sha256": "2e54dba0b84fcdc923d1b4058ccdbbd86e20daabe6fdead57ccaa88ec4a45979"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/token_identity.jsonl": {
+      "bytes": 3950919,
+      "sha256": "0d9235e4772eb678e22b13edc4e0aa787731c035bc11666b98c8de6232865249"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/upos_coarse.jsonl": {
+      "bytes": 4119656,
+      "sha256": "39e6818b1df0f27f8c1a642baf42ecb2c459d778425649efc83cfb4f5a959248"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/word_length.jsonl": {
+      "bytes": 4027488,
+      "sha256": "4d073f793e1bdfd34eafcacb4b894db84051667219be7af5c053e94c259e8ebc"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/manifest.json": {
+      "bytes": 545556,
+      "sha256": "87cdf01c48428cf1d1cdab7a9324865d3db8e44408e997f1045123bb23ec5ee4"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/TERMINAL.json": {
+      "bytes": 1493,
+      "sha256": "ad7fd3b4de265879737774df38220956a4947298f3122f37b207c2bea46285d1"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/EWT/COMPLETE.json": {
+      "bytes": 17681,
+      "sha256": "2c6f57f788981198d2537fd605d2dadef491febc844938c3d4e5fc3b8aa6b88a"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/EWT/activations.float32.npy": {
+      "bytes": 564544640,
+      "sha256": "7ef549aadb289795c4dd2fdd36e1fd53e3da76baa53129d70a894158e486dcd3"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/EWT/row_ids.jsonl": {
+      "bytes": 18188630,
+      "sha256": "c6c8a99ba1a04ceebb303decf31ee126d2fea45cfdabb0e3f4e65169dfbc6bd5"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/GUM/COMPLETE.json": {
+      "bytes": 17680,
+      "sha256": "65c29542bea7badb84694755774f62da95eefb40e7082a3dcac113b6c5b9791a"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/GUM/activations.float32.npy": {
+      "bytes": 483526784,
+      "sha256": "35ffcba5e603f5ef64848cdb31674adcb929bb699e8964aaa36f0454cd433755"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/activations/GUM/row_ids.jsonl": {
+      "bytes": 12090428,
+      "sha256": "7cb94d935c3aaf40939e139c2dadd6467b15f804ef1dadd6e1af24d0f06c0c08"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/numerical_qa/EWT/QA_COMPLETE.json": {
+      "bytes": 2034,
+      "sha256": "a767ddcb595de1ebcc3ad2dd86c7f541260b32a0473ff370569d860575aa3b44"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/science/numerical_qa/GUM/QA_COMPLETE.json": {
+      "bytes": 2034,
+      "sha256": "3b4520b392cddf190dcbbfd3813f16b11e11c8c4aba8e5ffa99d326205935400"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/validation/CZECH_PDT/COMPLETE.json": {
+      "bytes": 38854,
+      "sha256": "b226437653617a1c0df5be6acb2fadac33b12da450f9e32c6fd76f230b1dbce4"
+    },
+    "pilot_runs/20260803_atlas_rope_technical_v7/validation/ENGLISH_CHILDES_CTETEX/COMPLETE.json": {
+      "bytes": 38884,
+      "sha256": "bf5b79715655bb5b32e26ba6918f25568464288103d95f35bf3c538033fab0bf"
+    },
+    "reports/atlas_v3_3_attempt7_final_v3_rebuild_check.json": {
+      "bytes": 840,
+      "sha256": "9964fee1b7990e6e0a35b66fcc8482e57593d6054fe9aff812a1faf6139a2f79"
+    },
+    "requirements-atlas.lock.txt": {
+      "bytes": 417,
+      "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+    },
+    "scripts/analyze_atlas_discovery_v3_3.py": {
+      "bytes": 66806,
+      "sha256": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031"
+    },
+    "scripts/atlas_discovery_v3_3.py": {
+      "bytes": 97642,
+      "sha256": "5a42b8180ace22e85d9a185fa5c2447be233ae9186ff42d4c97d78fa63478ef7"
+    },
+    "scripts/atlas_discovery_v3_3_analysis.py": {
+      "bytes": 7240,
+      "sha256": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266"
+    },
+    "scripts/atlas_discovery_v3_scoring.py": {
+      "bytes": 2782,
+      "sha256": "0e9980c689f3cd6f058c7a3051f43946777e0db248c220c69d1ececcccc6860c"
+    },
+    "scripts/atlas_rope_v6.py": {
+      "bytes": 45675,
+      "sha256": "0a26e76c698397e8d103615eb872a6c20d9648410b16957b66faeadf4cdb0f75"
+    },
+    "scripts/atlas_rope_v7.py": {
+      "bytes": 14505,
+      "sha256": "8d7ce4dad6197b99e2a69ecb1ffb4ac15536c0a17bb4633593bf296ea3c5673a"
+    },
+    "scripts/extract_atlas_discovery_v3_3.py": {
+      "bytes": 53804,
+      "sha256": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+    }
+  },
+  "interpretation": {
+    "architecture_training_authorized": false,
+    "confirmatory_claim_authorized": false,
+    "exploratory_only": true,
+    "fresh_scientific_confirmation_required_after_nomination": true
+  },
+  "namespaces": {
+    "attempt11_result_root": "results/atlas_rope_v7_attempt11_science",
+    "attempt11_run_root": "pilot_runs/20260803_atlas_rope_technical_v7",
+    "attempt12_result_root": "results/atlas_rope_v8_attempt12_analysis_recovery",
+    "attempt12_run_root": "pilot_runs/20260803_atlas_rope_analysis_recovery_v8",
+    "attempt12_tmux_session": "atlas_rope_v8_attempt12_20260803"
+  },
+  "permissions": {
+    "activation_extraction_authorized": false,
+    "checkpoint_creation_authorized": false,
+    "fresh_validation_authorized": false,
+    "model_forward_authorized": false,
+    "neural_training_authorized": false,
+    "optimizer_authorized": false
+  },
+  "prepared_source_files": {
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/activation_rows.jsonl": {
+      "bytes": 124730325,
+      "sha256": "e9258cf7d6b4bdc1fcab82a51f41a6cb76d0c1a8f29c11ea57f604b442592e1e"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/cross_family_rows.jsonl": {
+      "bytes": 368553,
+      "sha256": "218a4c88bd56232d24f7c627f6d73e50411b61f6140912cda7f67a2bb4682560"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/inference_units.jsonl": {
+      "bytes": 22250461,
+      "sha256": "e83064b23a2d9d15c410b77dd7ac971ce2c8d550692fb28af33a68c42767df45"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/intervention_pairs.jsonl": {
+      "bytes": 977510,
+      "sha256": "5dfde015856abb0e00a347d20cfd94fd371eb44da5f710a0d980fec19981b243"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/pair_rows.jsonl": {
+      "bytes": 28228788,
+      "sha256": "ac20a317ad644ee7d76e12bdf22caff5fcba3ae228eb4faf90e4bfbfc44a62e6"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/relation_rows.jsonl": {
+      "bytes": 21479764,
+      "sha256": "0829235d995b65cf2f3fff035c32a272c443570f1d7e0ea60ab780b4e07cb645"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/capitalization.jsonl": {
+      "bytes": 12984305,
+      "sha256": "052b45e8ddbf974ffabd905c774cf8d879d31b741b963b54524dacbe908ec696"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/dependency_depth.jsonl": {
+      "bytes": 12756427,
+      "sha256": "b7c48a2e8123a161038fbf875212f3d90a66376cdd66d061a607545beccdf5d0"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/deprel_coarse.jsonl": {
+      "bytes": 13041948,
+      "sha256": "02240f4f589c6cf22fdb2d64cc195626bb3a93b19d63e98d5176e2c596a891bf"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/head_signed_distance.jsonl": {
+      "bytes": 12836969,
+      "sha256": "5820a6560a6ba1d2d364b4adebbaacffddec4401e5085aa376092c0c5568fd63"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/lemma_identity.jsonl": {
+      "bytes": 12897406,
+      "sha256": "edd848a9f999c1cf5d5314edf9a03e32d4211cf7a4b40625256cf5e18aa1add8"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/number.jsonl": {
+      "bytes": 9010530,
+      "sha256": "374ad2697393a62345803984c74d513dd1e601403853fc6a2345d3fd4cbde7cd"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/punctuation.jsonl": {
+      "bytes": 13110161,
+      "sha256": "510e48bd46e98648fce821b4b728e4ec1b0fc9b50c165964f1b91138a5eea6ef"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/relative_quartile.jsonl": {
+      "bytes": 12746633,
+      "sha256": "a7646d415c9094241c3a11cf851dbfa7544d7e6642c15e9afea7af71a87e71a4"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/start_distance.jsonl": {
+      "bytes": 12884809,
+      "sha256": "48c8cb699ad6b14177882dabb5b3bf6e3ccffe604234b4f5a0bf9bf85ce29850"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/token_identity.jsonl": {
+      "bytes": 6710007,
+      "sha256": "6b7e097502f683202d9c75ec566e2e7c147071d63e3c26b74954d6623fc7c664"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/upos_coarse.jsonl": {
+      "bytes": 13072138,
+      "sha256": "034d18cb60da5d8a5e7fed874e179fc58d06617ddb60d5f6280b65b527af6879"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/EWT/tasks/word_length.jsonl": {
+      "bytes": 12816619,
+      "sha256": "3dcdc1c1058c27ca2c8dc26b2582986ade85f94364aa232818253543c17f594f"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/activation_rows.jsonl": {
+      "bytes": 94841163,
+      "sha256": "52f2f21dcffafe7b446390361049fbfb2150a153aad79ed19337652f26e4f7bd"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/cross_family_rows.jsonl": {
+      "bytes": 156670,
+      "sha256": "69ee92fb8e0566d7e8c1ca6b36c702e1cb11bdd126dc00968e9bf0f2ff9fa604"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/inference_units.jsonl": {
+      "bytes": 14632092,
+      "sha256": "177cf191125445dc4f97ac525ee9be86c3c1f34c3259f1d52df15dc1e18e993b"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/intervention_pairs.jsonl": {
+      "bytes": 321304,
+      "sha256": "f6654bf168fe3cbfa8934abf56d23ed1ad6a500fe5cad94be323bf1829c07815"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/pair_rows.jsonl": {
+      "bytes": 8237798,
+      "sha256": "d8469d727b9454ad01a7e9373d2a29d8fa13e23f599f771e26234618dc4b3a73"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/relation_rows.jsonl": {
+      "bytes": 12838853,
+      "sha256": "9332a3951d298330ab1fcce14708b07931be3f376556af8866ae8e0dd7b27a10"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/capitalization.jsonl": {
+      "bytes": 4090551,
+      "sha256": "eae67a6f95ce7ade833f0510603db4bb682fbab1e7250d230e81b253567d8be7"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/dependency_depth.jsonl": {
+      "bytes": 4008043,
+      "sha256": "5970512e25c14fc9de91b9c9d5aca79e63a4682c98a8cfa412f645bd623f331d"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/deprel_coarse.jsonl": {
+      "bytes": 4109147,
+      "sha256": "6b9d3f0021264c33ef64e9639d0b4c39a5371a93d96acea8fac97c3e4e7c180a"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/head_signed_distance.jsonl": {
+      "bytes": 4035764,
+      "sha256": "6763b237a0c6bb14337d26197d0d2230e6a407df09c7249177f95fb681fcd844"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/lemma_identity.jsonl": {
+      "bytes": 4060954,
+      "sha256": "1fbf31f1c882a9cf2bb8a7aa57ed14768c645ac1db340b59f7d7845251999670"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/number.jsonl": {
+      "bytes": 4040298,
+      "sha256": "19cd73c5d3de890f74c2db4697723bc9fcd9f13071b6307963df0896d62fccff"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/punctuation.jsonl": {
+      "bytes": 4132716,
+      "sha256": "c036832015d9789c023860b5f1c75fd9e964bc93146b6e4540c988dd913b7bdf"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/relative_quartile.jsonl": {
+      "bytes": 4003470,
+      "sha256": "8ebda722502744cb3aaabe8404fc936dafef68ffc83bcef26eac6818b67321fd"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/start_distance.jsonl": {
+      "bytes": 4053704,
+      "sha256": "2e54dba0b84fcdc923d1b4058ccdbbd86e20daabe6fdead57ccaa88ec4a45979"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/token_identity.jsonl": {
+      "bytes": 3950919,
+      "sha256": "0d9235e4772eb678e22b13edc4e0aa787731c035bc11666b98c8de6232865249"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/upos_coarse.jsonl": {
+      "bytes": 4119656,
+      "sha256": "39e6818b1df0f27f8c1a642baf42ecb2c459d778425649efc83cfb4f5a959248"
+    },
+    "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/GUM/tasks/word_length.jsonl": {
+      "bytes": 4027488,
+      "sha256": "4d073f793e1bdfd34eafcacb4b894db84051667219be7af5c053e94c259e8ebc"
+    }
+  },
+  "retry_authorized": false,
+  "reuse_decision_frozen_before_outcome": true,
+  "schema_version": "atlas_rope_v8_attempt12_analysis_recovery_v1",
+  "scientific_protocol_changed": false,
+  "status": "FROZEN_BEFORE_SCIENTIFIC_OUTCOME",
+  "superseded_pre_authorization_candidate": {
+    "path": "reports/atlas_rope_v8/preauthorization_superseded_435dbad80bb2/SUPERSESSION.json",
+    "sha256": "428de12d26a19294fd9b1c1d13c94f1ad0f0f42feb6ec664d39c8c5d3f20fd11"
+  }
+}

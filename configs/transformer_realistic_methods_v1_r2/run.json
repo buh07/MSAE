@@ -1,0 +1,114 @@
+{
+  "bootstrap": {
+    "draws": 1000,
+    "method": "linear",
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "weighting": "equal_block_paired_hierarchical"
+  },
+  "gates": {
+    "collateral_error": {
+      "point_max": 0.1,
+      "upper_strict_max": 0.15
+    },
+    "control_margin": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    },
+    "full_vocab_recovery": {
+      "lower_strict_min": 0.6,
+      "point_min": 0.7
+    },
+    "necessity": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    },
+    "recovery": {
+      "lower_strict_min": 0.6,
+      "point_min": 0.7
+    },
+    "sham_specificity": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    }
+  },
+  "methods": {
+    "leace_ridge": 0.0001,
+    "random_seed": 1301,
+    "rank": 8,
+    "sae": {
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "seeds": [
+        1701,
+        1702,
+        1703
+      ],
+      "steps": 2000,
+      "topk": 8,
+      "width_multiplier": 4
+    },
+    "supervised": {
+      "batch_size": 128,
+      "collateral_weight": 2.0,
+      "learning_rate": 0.0005,
+      "norm_weight": 0.001,
+      "rank": 8,
+      "seeds": [
+        2701,
+        2702,
+        2703
+      ],
+      "sham_weight": 1.0,
+      "steps": 2000
+    }
+  },
+  "namespace": "transformer_realistic_methods_v1_20260810r2",
+  "panels": {
+    "confirmation": {
+      "blocks": 24,
+      "rows_per_block": 8,
+      "seed": 2026100203
+    },
+    "development": {
+      "blocks": 24,
+      "rows_per_block": 8,
+      "seed": 2026100202
+    },
+    "maximum_exclusion_rate": 0.04,
+    "minimum_eval_blocks_per_target": 11,
+    "minimum_eval_per_block": 7,
+    "minimum_eval_rows_per_target": 11,
+    "minimum_eval_total": 185,
+    "minimum_train_blocks_per_target": 24,
+    "minimum_train_rows_per_target": 24,
+    "target_values": 16,
+    "train": {
+      "blocks": 32,
+      "rows_per_block": 16,
+      "seed": 2026100201
+    }
+  },
+  "runtime": {
+    "candidate_review": "reports/adversarial/transformer_realistic_methods_v1_r2_candidate_review.md",
+    "candidate_root": "reports/provenance/transformer_realistic_methods_v1_candidate_r4",
+    "freeze": "configs/transformer_realistic_methods_v1_r2/FREEZE.json",
+    "frozen_review": "reports/adversarial/transformer_realistic_methods_v1_r2_frozen_review.md",
+    "generator_lock": "configs/transformer_realistic_methods_v1_r2/GENERATOR_LOCK.json",
+    "output_root": "results/transformer_realistic_methods_v1_20260810r2",
+    "prepared_root": "data/transformer_realistic_methods_v1_r2_prepared",
+    "provenance_root": "reports/provenance/transformer_realistic_methods_v1_run_20260810r2"
+  },
+  "schema_version": "transformer_realistic_methods_v1_config",
+  "scope": {
+    "constructed_synthetic_model": true,
+    "k2_evaluated": false,
+    "natural_model_claim": false,
+    "natural_prompt_assay": false,
+    "representation_methods_evaluated": true,
+    "technical_successor_of_prelaunch_stop": "transformer_realistic_bridge_v1_20260810"
+  },
+  "seed": 20261002
+}

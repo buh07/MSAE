@@ -1,0 +1,7 @@
+{
+  "items": {
+    "reports/trained_copy_sae_geometry_v1/figures/pca_coverage_by_budget.png": "38a2e1052405fddfd6f7901009103adbae193b5e98b423788c5241b2c275782e",
+    "reports/trained_copy_sae_geometry_v1/figures/recovery_collateral_pareto_topk16.png": "c53f283602870e034c8cd7116e8b5882c2bd6cf7aab9e19506c41a1494670a88",
+    "reports/trained_copy_sae_geometry_v1/summary.json": "a90536097f0578246872755a4afe54074bec7e2d26187135aa25a173f8857003"
+  }
+}

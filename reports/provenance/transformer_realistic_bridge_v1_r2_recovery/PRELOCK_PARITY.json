@@ -1,0 +1,18 @@
+{
+  "authorization_sha256": "fca9c0367255415a665e3ac1d334eb0420e2ac6c2e741dc6ee384e3f95e159f2",
+  "launcher_only_lineage_and_deferred_expansion": true,
+  "new_launcher_sha256": "1a0155622d788d60311e1807d7bf3cc9af790cb856bd57b395c8759c3177b588",
+  "new_source_sha256": "1d37abb9b68056b1d22521a6415b952942b1bff41ae13ebd12660e5bbc94c46d",
+  "old_bridge_freeze_sha256": "59491a943d612f8d394dbfe2263a73bd87edb5e0debb17dec7efc36e20ec841a",
+  "old_launcher_sha256": "6a7e84c0bf85a850bfd6f678981d3edb9487846bb021d78d47ac2da7dd0c6ba6",
+  "old_methods_freeze_sha256": "32da54a8eaf2c56d2871ed865a82c700b4e56f165aefdfa2eec0b07ed39f529e",
+  "old_source_sha256": "52bb59d774e08eb76b511bbcfaa3068af9846d32ff85ec57319bbfdc9a8a4396",
+  "payloads_accessed": false,
+  "review_binding_supplement_sha256": "77a3faf06cf3c5b80de41cf2dd3e8240c897c2bd20b6451f771523a7fbaa6310",
+  "same_namespace_retry": false,
+  "schema_version": "transformer_realistic_bridge_v1_r2_prelock_parity",
+  "scientific_config_equal": true,
+  "scientific_implementation_equal_after_lineage_normalization": true,
+  "status": "PASS",
+  "superseded_parity_index_sha256": "efff54774b1390960a3b4f50d73d0a315830667089b6bdced49a1161940ba7f3"
+}

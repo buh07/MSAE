@@ -1,0 +1,60 @@
+{
+  "schema_version": "atlas_completion_summary_recovery_v1",
+  "evidence_class": "postscore_amended_architecture_evidence",
+  "diagnostic_continuation_only": true,
+  "decision_promotion_allowed": false,
+  "scientific_retry_allowed": false,
+  "original_continuation_bundle_sha256": "ce5fa9826904f2e7c9bda614e4fb4a7dfb24b59b2a210383e9f8222ecc57f038",
+  "original_continuation_freeze_path": "configs/atlas_completion_continuation/freeze_record.json",
+  "original_continuation_freeze_sha256": "89587d36178be223dd32305e821dde18b6ce2d5bee8fbab2e9750b6cee4d6213",
+  "original_summarizer_path": "scripts/summarize_msae_completion_continuation.py",
+  "original_summarizer_sha256": "f0014cc193e2382cd83ca35f8f0fddbf3fbab8b394062df0d51d0040362b2f66",
+  "original_verifier_path": "scripts/verify_msae_completion.py",
+  "original_verifier_sha256": "7ca5fafd701857be706e8f0b5db2fd5d4c8345f4e2bbafefab29bc4bc5c09dc9",
+  "original_k2_producer_path": "scripts/run_msae_refit_worker.py",
+  "original_k2_producer_sha256": "c11c343d5b5af85b81ce25aaa5c877d091d9d77de1796c7b7856dd42f68b4a5e",
+  "collection_path": "pilot_runs/20260802_atlas_completion_diagnostic_continuation_v1/COLLECTION_COMPLETE.json",
+  "collection_sha256": "adf2c0f09784d8e8fcaacd07188c9fa27d215f5b8c1520ba5244f31360e5a2e2",
+  "failed_summarize_terminal_path": "pilot_runs/20260802_atlas_completion_diagnostic_continuation_v1/job_manifests/summarize.terminal.json",
+  "failed_summarize_terminal_sha256": "f5b78e87f8166c4197ce6f79f8cf65541811a30c7730de113ea5716971218422",
+  "failed_summarize_log_path": "pilot_runs/20260802_atlas_completion_diagnostic_continuation_v1/logs/summarize.log",
+  "failed_summarize_log_sha256": "a11ebb2036a0e3d443bfb4608adfd023c791b58463b8108ba57596e317e13958",
+  "task_row_manifest_path": "configs/atlas/task_row_manifest.json",
+  "task_row_manifest_sha256": "55e6255cf4e75d3d3b42d119443cbb657d2838b402bec654c66a8b8da7ca14aa",
+  "roles": [
+    "calibration",
+    "C1",
+    "C2"
+  ],
+  "partition_lineage": {
+    "calibration": {
+      "records_path": "data/atlas_v1/partitions/calibration.records.jsonl",
+      "records_sha256": "e82f0a228c91b4c6e34d632107949606879c773b5f7aea450b8a62da1d1de0ae",
+      "units_path": "data/atlas_v1/partitions/calibration.units.jsonl",
+      "units_sha256": "7a1e3b8d48f8b5f70417cb6a942669910c8251e8398f75e2b53203d7f6e73484"
+    },
+    "C1": {
+      "records_path": "data/atlas_v1/partitions/C1.records.jsonl",
+      "records_sha256": "7ba75002a828197ac46f5b27a7ac9058347479750962793edba0ae39ac15e676",
+      "units_path": "data/atlas_v1/partitions/C1.units.jsonl",
+      "units_sha256": "9b1f4e25b6ccd378cbfe3b6afaf14619ee902b51aa2df65cc57142cac63b38ae"
+    },
+    "C2": {
+      "records_path": "data/atlas_v1/partitions/C2.records.jsonl",
+      "records_sha256": "b8578872e839a55dda0dfc7b1095b93f177db370d12b48968558ffe46bd1b1f7",
+      "units_path": "data/atlas_v1/partitions/C2.units.jsonl",
+      "units_sha256": "2863b1f02930f4a1f9e65c64162686cd0dced758c6d08cbbb74ab7c98e7ec03d"
+    }
+  },
+  "source_run_root": "pilot_runs/20260731_atlas_v1_architecture_selection",
+  "continuation_run_root": "pilot_runs/20260802_atlas_completion_diagnostic_continuation_v1",
+  "recovery_run_root": "pilot_runs/20260802_atlas_completion_summary_recovery_v1",
+  "candidate_root": "results/atlas/completion_diagnostic_summary_candidate_v1",
+  "canonical_root": "results/atlas/completion_diagnostic_v1",
+  "tmux_session": "msae_atlas_summary_recovery_20260802",
+  "plan_path": "docs/rfc-atlas-v1-diagnostic-summary-recovery.md",
+  "plan_sha256": "9c0f1e18f9810a580045a051bad2ce72ef01782e3ba3aaae3d7c3ee45ceeebd3",
+  "plan_review_path": "reports/adversarial/atlas_completion_summary_recovery_test_exception_plan_review_20260802.md",
+  "plan_review_sha256": "1a773b8dfbeece8e243baa910ac67484ede961c44bbbe1e75b950f6b9707b309",
+  "plan_review_record_path": "reports/adversarial/atlas_completion_summary_recovery_test_exception_plan_review_20260802.json"
+}

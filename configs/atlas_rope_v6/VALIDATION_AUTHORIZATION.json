@@ -1,0 +1,30 @@
+{
+  "payload": {
+    "EWT_model_calls_authorized": false,
+    "GENTLE_model_calls_authorized_once": true,
+    "GUM_model_calls_authorized": false,
+    "authorized_stage": "GENTLE_ONLY_VALIDATION_ONCE",
+    "caps": {
+      "atol": 2e-05,
+      "cosine_distance": 5e-11,
+      "relative_l2": 2e-05
+    },
+    "freeze_candidate_sha256": "83fe201d511047cc0bb313cbf45c91f1da491d5292ee253a216fde02402fc1a4",
+    "neural_training_authorized": false,
+    "review": {
+      "path": "reports/adversarial/atlas_v3_6_attempt10_freeze_review.md",
+      "reviewed_sha256": "83fe201d511047cc0bb313cbf45c91f1da491d5292ee253a216fde02402fc1a4",
+      "sha256": "cc983d015bd9c59b19dfd0f74be1258d8814e7ccd3f5990dc228ffc519bb8c78"
+    },
+    "schema_version": "atlas_rope_v6_attempt10_stage_authorization_v1",
+    "science_model_calls_authorized": false,
+    "status": "AUTHORIZED",
+    "threshold_change_authorized": false
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "dcb5fa477e4d865058b1d6024cd59b418f531dafa198c3f286ab9024d2d72471",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "6lD5C5MSrwytwhQNsghqma32RMs7HOL2xcfM47gdtOufZsCdTqbMbuuXrp7D8pAKdvAzPTfFE+c7VCtnEqX2DQ=="
+  }
+}

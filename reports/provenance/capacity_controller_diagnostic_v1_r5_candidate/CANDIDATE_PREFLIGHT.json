@@ -1,0 +1,420 @@
+{
+  "basis_checks": [
+    {
+      "condition": 1.6666666666666652,
+      "instance": 41011,
+      "max_abs": 1.0307214248095852e-15,
+      "pass": true
+    },
+    {
+      "condition": 1.6666666666666659,
+      "instance": 41037,
+      "max_abs": 1.1102230246251565e-15,
+      "pass": true
+    },
+    {
+      "condition": 1.6666666666666656,
+      "instance": 41081,
+      "max_abs": 1.0026219061033527e-15,
+      "pass": true
+    }
+  ],
+  "compatibility_smoke": {
+    "cpu": {
+      "all_target_jacobian_ranks": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "device": "cpu",
+      "fit_families": [
+        "closed_form_linear_full64",
+        "exact_delta_gt",
+        "label_only",
+        "observed_input_transplant",
+        "paired_linear_rank4",
+        "random_rank4",
+        "reduced_rank_regression_rank4",
+        "target_linear_rank4",
+        "target_nonlinear_rank4",
+        "unpaired_pca_rank4",
+        "within_target_delta_permutation",
+        "zero"
+      ],
+      "numpy_version": "1.26.4",
+      "scored_methods": 12,
+      "technical_valid": true,
+      "torch_version": "2.7.0"
+    },
+    "cuda": {
+      "all_target_jacobian_ranks": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "device": "cuda",
+      "fit_families": [
+        "closed_form_linear_full64",
+        "exact_delta_gt",
+        "label_only",
+        "observed_input_transplant",
+        "paired_linear_rank4",
+        "random_rank4",
+        "reduced_rank_regression_rank4",
+        "target_linear_rank4",
+        "target_nonlinear_rank4",
+        "unpaired_pca_rank4",
+        "within_target_delta_permutation",
+        "zero"
+      ],
+      "numpy_version": "1.26.4",
+      "scored_methods": 12,
+      "technical_valid": true,
+      "torch_version": "2.7.0"
+    }
+  },
+  "environment_absence": {
+    "gpu_lock_glob": "msae_capacity_external_r5_*.lockdir",
+    "gpu_locks_absent": true,
+    "tmux_absent": true,
+    "tmux_session": "capacity_external_validity_v1_20260810r5"
+  },
+  "failure_preservation": {
+    "facts": {
+      "capacity_confirmation_opened": false,
+      "capacity_development_complete": false,
+      "capacity_development_opened": true,
+      "capacity_final_exists": false,
+      "capacity_train_opened": true,
+      "external_access_may_have_occurred": false,
+      "external_payload_accessed": false,
+      "external_status": "BLOCKED_UNOPENED",
+      "external_train_opened": false,
+      "external_training_performed": false
+    },
+    "files": 58,
+    "manifest_sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96",
+    "partial_checkpoints": 27,
+    "status": "PASS"
+  },
+  "files": [
+    {
+      "bytes": 72165,
+      "path": "PAPER.md",
+      "sha256": "512cb8014c51f44c0680adbb34a23e3ef7ba115081d80a009de00849d252a2cc"
+    },
+    {
+      "bytes": 11682,
+      "path": "PLAN_CAPACITY_EXTERNAL_VALIDITY_V1_R5.md",
+      "sha256": "e0e25310a171d54c3151b7193216ad4f8e5705fdead19accb2c15ce52091ea42"
+    },
+    {
+      "bytes": 6246,
+      "path": "configs/capacity_controller_diagnostic_v1_r5/run.json",
+      "sha256": "978e23c3cd51c6fad54d54f130b6596a718252db9c143e87fb21e60e421cacd9"
+    },
+    {
+      "bytes": 3708,
+      "path": "configs/trained_copy_external_v1_r5/run.json",
+      "sha256": "ae80b44d3735eaa055008617ba316679e8841d197eb9cd3bd64acdf28c2b6598"
+    },
+    {
+      "bytes": 619,
+      "path": "reports/adversarial/capacity_external_validity_v1_r5_plan_review.md",
+      "sha256": "36992a27f2621fa34e8b8f33cda994ee326393ba6ecea49bfef15151b2d9f194"
+    },
+    {
+      "bytes": 134879,
+      "path": "reports/paper_claim_ledger_v1.json",
+      "sha256": "6e3d132d63ca6651a9e5c5c9c7c95b17b7ff60cb13facf673a371e0cddd846e2"
+    },
+    {
+      "bytes": 21741,
+      "path": "reports/provenance/capacity_external_validity_v1_failure_preservation/PRESERVATION.json",
+      "sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96"
+    },
+    {
+      "bytes": 1033,
+      "path": "reports/provenance/capacity_external_validity_v1_r2_invalid_candidate/PRESERVATION.json",
+      "sha256": "3dbcc809636353748f54fb27faf5f6e9f44bb2d314e46654372075d923c2e7cd"
+    },
+    {
+      "bytes": 1012,
+      "path": "reports/provenance/capacity_external_validity_v1_r3_invalid_candidate/PRESERVATION.json",
+      "sha256": "eec5f489c99a11d9aac9c785c0192045537de7cbb86365998a083b6579add3e5"
+    },
+    {
+      "bytes": 1032,
+      "path": "reports/provenance/capacity_external_validity_v1_r4_invalid_candidate/PRESERVATION.json",
+      "sha256": "42581eb0d4e77b45a6cde609b13e8ea0ca2f571b8cabd57c2853abeedcf60881"
+    },
+    {
+      "bytes": 17145,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_postresult/PRESERVATION.json",
+      "sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2"
+    },
+    {
+      "bytes": 84714,
+      "path": "scripts/capacity_external_validity_v1_r5.py",
+      "sha256": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8"
+    },
+    {
+      "bytes": 3410,
+      "path": "scripts/launch_capacity_external_validity_v1_r5_tmux.sh",
+      "sha256": "cea8706c42eb8c45525d54e5e498b86a5716972972f50518b0ddfcc46fa28d17"
+    },
+    {
+      "bytes": 5260,
+      "path": "scripts/preserve_capacity_external_validity_v1_failure.py",
+      "sha256": "5d9f9a423f0a82dd33b9bdea4a1b2e191bb4b5fcd619517befaa4ea609b957d8"
+    },
+    {
+      "bytes": 10081,
+      "path": "tests/test_capacity_external_validity_v1_r5.py",
+      "sha256": "6769fe1b905b43e50255d33e3197de7cebbb27b94b0664c0c8c7fbd022f503c5"
+    }
+  ],
+  "kind": "capacity",
+  "nonpanel_ols_max_abs": 2.970818036018841e-13,
+  "paper": {
+    "claims": 80,
+    "evidence_bindings": 385,
+    "paper_selectors": 22,
+    "status": "PASS"
+  },
+  "parity": {
+    "config_pairs": [
+      {
+        "allowed_pointer_prefixes": [
+          "/namespace",
+          "/runtime",
+          "/recovery"
+        ],
+        "new": "configs/capacity_controller_diagnostic_v1_r5/run.json",
+        "old": "configs/capacity_controller_diagnostic_v1/run.json",
+        "scientific_sha256": "c7530f43acf52dc82a1371e37426ab7a3a620567ec47b28afe086c1dbdc3584a"
+      },
+      {
+        "allowed_pointer_prefixes": [
+          "/namespace",
+          "/runtime",
+          "/recovery"
+        ],
+        "new": "configs/trained_copy_external_v1_r5/run.json",
+        "old": "configs/trained_copy_external_v1/run.json",
+        "scientific_sha256": "f48f55d262fb171869a41bc546b6ccd1dc8d47df65af42944efcb84c8d9b10e8"
+      }
+    ],
+    "exact_derived_ast_sha256": {
+      "capacity_pipeline": "727e375fb04fc94ee7d13117af7baa543b3f59e363b6c4766530f7f4c788493d",
+      "external_pipeline": "9aed68e08c9d173bcbae8e7b5a4bf235b89bc8ece4a46a0090ec03d7b5eb25f9",
+      "fit_methods": "1fc72d80a7c5e9fdccdce94eb70374d6897e8ec1a68bd3aba705a5695239423f",
+      "v1_fit_methods": "50c4765b3eea25ed2f6dd12607a90c6f58fcbae25640c73b5eac12cbff976250"
+    },
+    "r5_source_sha256": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8",
+    "restore_paths_forbidden": true,
+    "scientific_symbols_verified": [
+      "CopyTransformer",
+      "FactorLinear",
+      "Method",
+      "TargetLinear",
+      "TargetMLP",
+      "atomic_json",
+      "atomic_text",
+      "canon",
+      "capacity_arrays",
+      "capacity_basis_check",
+      "capacity_mats",
+      "centered",
+      "cfg",
+      "control_delta",
+      "direction_metrics",
+      "eval_methods",
+      "event",
+      "external_blocked",
+      "external_metric_summary",
+      "external_qualification",
+      "external_rows",
+      "gate",
+      "interval",
+      "inventory",
+      "loadj",
+      "make_capacity_rows",
+      "mutation_suite",
+      "norm_match",
+      "open_rows",
+      "paper_verify",
+      "payload_creation_allowed",
+      "payload_records_from_metadata",
+      "predict",
+      "prepare",
+      "qr_canonical",
+      "read_jsonl",
+      "rng",
+      "row_margin",
+      "rows_tensors",
+      "rp",
+      "safe_event",
+      "score_copy_model",
+      "score_prediction",
+      "seed32",
+      "sha",
+      "support",
+      "svd_canonical",
+      "timed_smoke",
+      "train_copy",
+      "train_model",
+      "verify_candidate_manifest",
+      "verify_review",
+      "write_external_failure_if_unopened",
+      "write_jsonl"
+    ],
+    "source_allowlist": {
+      "compatibility": [
+        "first_true_index",
+        "empirical_jacobian_ranks",
+        "deterministic v1 fit_methods rewrite"
+      ],
+      "exact_lifecycle_rewrites": [
+        "capacity_pipeline",
+        "external_pipeline"
+      ],
+      "recovery_lifecycle": [
+        "bind_reviews",
+        "binding_path",
+        "candidate_files",
+        "candidate_preflight",
+        "create_locks",
+        "freeze_both",
+        "freeze_one",
+        "gpu_validate",
+        "launch_preflight",
+        "launcher_render",
+        "locks_valid",
+        "main",
+        "preservation_verify",
+        "run_pipeline",
+        "signal_terminal",
+        "verify_binding",
+        "verify_freeze"
+      ]
+    },
+    "status": "PASS",
+    "v1_source_sha256": "0de71873feffb463f8ecde96e6db642cae18c145c42d9e76fe971999bd7185c7"
+  },
+  "preservation": {
+    "files_declared": 76,
+    "inventory_traversed": false,
+    "manifest_sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2",
+    "status": "PASS_NONPAYLOAD_MANIFEST_ONLY"
+  },
+  "r5_absence_checks": [
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_candidate"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r5_candidate_review.md"
+    },
+    {
+      "absent": true,
+      "path": "configs/capacity_controller_diagnostic_v1_r5/RECOVERY_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "configs/capacity_controller_diagnostic_v1_r5/FREEZE.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r5_frozen_review.md"
+    },
+    {
+      "absent": true,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/trained_copy_external_v1_r5_candidate"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/trained_copy_external_v1_r5_candidate_review.md"
+    },
+    {
+      "absent": true,
+      "path": "configs/trained_copy_external_v1_r5/RECOVERY_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "configs/trained_copy_external_v1_r5/FREEZE.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/trained_copy_external_v1_r5_frozen_review.md"
+    },
+    {
+      "absent": true,
+      "path": "results/trained_copy_external_v1_20260810r5"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_external_validity_v1_r5_REVIEW_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_external_validity_v1_r5_launcher_20260810r5.log"
+    }
+  ],
+  "scientific_jsonl_accessed": false,
+  "status": "PASS",
+  "timed_smoke": {
+    "checkpoint_bytes": 74147,
+    "device": "cuda",
+    "external_100_steps_final_loss": 0.013484921306371689,
+    "peak_gpu_bytes": 68313600,
+    "projected_disk_bytes": 150222441,
+    "rank_sweep_mse": {
+      "16": 0.0256087174717997,
+      "32": 0.010075242554450907,
+      "4": 0.3898103987675022,
+      "64": 3.7222270138361065e-30,
+      "8": 0.24886367541903726
+    },
+    "wall_seconds": 2.0355184078216553
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mismatched_paths": [],
+  "primary_inventory_sha256": "e6992d27997fd7b7c5fbdf579465662759266f1ed459f769c56ef518fc1d2337",
+  "primary_root": "data/atlas_rope_v4_attempt8",
+  "rebuilt_inventory_sha256": "e6992d27997fd7b7c5fbdf579465662759266f1ed459f769c56ef518fc1d2337",
+  "rebuilt_root": "data/atlas_rope_v4_attempt8_rebuild1",
+  "schema_version": "atlas_rope_v4_attempt8_rebuild_check_v1",
+  "status": "PASS"
+}

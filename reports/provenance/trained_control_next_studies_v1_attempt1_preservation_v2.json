@@ -1,0 +1,132 @@
+{
+  "artifacts": [
+    {
+      "bytes": 190,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_run_20260813/events/000_RUN_START_NO_PANEL_ACCESS.json",
+      "sha256": "0edeb5fc9ceb528460bfb0f853d0bc77814d6545af88542e69b48fbadeef2ef8"
+    },
+    {
+      "bytes": 175,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_run_20260813/events/001_GPU_LOCK_OWNERSHIP_TRANSFERRED.json",
+      "sha256": "2f45ab84900946ff32221c3a57543880e9335ebbf23f26309a494952a2d2a1d7"
+    },
+    {
+      "bytes": 95,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_run_20260813/events/010_FIT_ACCESS_MAY_HAVE_OCCURRED.json",
+      "sha256": "d85eb6188a6c6b851e4e64f848bb55a8eb83b971c230a6d42772230b3a7ba691"
+    },
+    {
+      "bytes": 93,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_run_20260813/events/011_FIT_OPENED.json",
+      "sha256": "e7da66140f74e201470002813ab3a709a81510cb8eac978385cf84f6144737af"
+    },
+    {
+      "bytes": 190,
+      "path": "reports/provenance/causal_manifold_bridge_v1_run_20260813/events/000_RUN_START_NO_PANEL_ACCESS.json",
+      "sha256": "66df2bf8f3651cfcc2d1913132525f9efa873a1daa47685a729dab1bce55870e"
+    },
+    {
+      "bytes": 175,
+      "path": "reports/provenance/causal_manifold_bridge_v1_run_20260813/events/001_GPU_LOCK_OWNERSHIP_TRANSFERRED.json",
+      "sha256": "24e29f30b7f487d8f143eab75f8d535e49e79bf8c5ecc6ee2eba89584af5272c"
+    },
+    {
+      "bytes": 95,
+      "path": "reports/provenance/causal_manifold_bridge_v1_run_20260813/events/010_FIT_ACCESS_MAY_HAVE_OCCURRED.json",
+      "sha256": "a601b940dda3b0ada0522f757a520a315e0bad76df237012209ff0ff7651a007"
+    },
+    {
+      "bytes": 94,
+      "path": "reports/provenance/causal_manifold_bridge_v1_run_20260813/events/011_FIT_OPENED.json",
+      "sha256": "7ad4f41ea29ec8f32182bb6dbd261f398ff4d6b420bfd92a5f4764659c44f95f"
+    },
+    {
+      "bytes": 235,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_LAUNCH.json",
+      "sha256": "3959eb5e82351166956426ea419b7889ed47facdc8d17fed21fbc5c863f63472"
+    },
+    {
+      "bytes": 232,
+      "path": "reports/provenance/causal_manifold_bridge_v1_LAUNCH.json",
+      "sha256": "5d6baf8fb382b0e25c2aa6def621cbcc25c920d714f30870c5981093865922b7"
+    },
+    {
+      "bytes": 1485,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_launcher_20260813.log",
+      "sha256": "b0d409042a85417970de2957f0acfb7f58a5ea2d4d48bc5b29bd6b20c3d827c4"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/causal_manifold_bridge_v1_launcher_20260813.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1086,
+      "path": "configs/trained_copy_sae_capacity_v1/FREEZE.json",
+      "sha256": "431ba6af471b08eeb130066ea4d1705df0af1fa787c37a15c78257aa8c67dbc4"
+    },
+    {
+      "bytes": 12960,
+      "path": "configs/causal_manifold_bridge_v1/FREEZE.json",
+      "sha256": "12e72f1fc8bc4e6ebf992ff18b7791898868c89801931b5185b14e9df76975b2"
+    },
+    {
+      "bytes": 887,
+      "path": "configs/trained_copy_sae_capacity_v1/GENERATOR_LOCK.json",
+      "sha256": "dd541d232240ce6968b99854b4df462a5770cc1e9609a8cd64e751c44941a415"
+    },
+    {
+      "bytes": 974,
+      "path": "configs/causal_manifold_bridge_v1/GENERATOR_LOCK.json",
+      "sha256": "390a3204ff8a35d00b80686ef091e3e921bb9fcc5751d36061bce7e8f25e6a77"
+    },
+    {
+      "bytes": 974,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_candidate/CANDIDATE.json",
+      "sha256": "b844770e8cf8264f92b0d209f0fa994a113333c96583606e8586c95eba0967b3"
+    },
+    {
+      "bytes": 1116,
+      "path": "reports/provenance/causal_manifold_bridge_v1_candidate/CANDIDATE.json",
+      "sha256": "31b4d165f7b5ee57c7464b8a622a32fa81462fb5c730d22a35e249b184751411"
+    }
+  ],
+  "original_freezes": {
+    "causal_manifold_bridge_v1": {
+      "path": "configs/causal_manifold_bridge_v1/FREEZE.json",
+      "sha256": "12e72f1fc8bc4e6ebf992ff18b7791898868c89801931b5185b14e9df76975b2"
+    },
+    "trained_copy_sae_capacity_v1": {
+      "path": "configs/trained_copy_sae_capacity_v1/FREEZE.json",
+      "sha256": "431ba6af471b08eeb130066ea4d1705df0af1fa787c37a15c78257aa8c67dbc4"
+    }
+  },
+  "reason": "A checkpoint loader invoked an incompatible ancestor config validator; coupled coordinator terminated B. No fit completed and no development or confirmation outcome exists.",
+  "recovery_policy": "isolated r1 namespace; exact frozen payloads/estimators/thresholds/seeds; technical code fix only; no outcome inspected",
+  "root_inventories": [
+    {
+      "exists": true,
+      "files": 0,
+      "path": "results/trained_copy_sae_capacity_v1_20260813"
+    },
+    {
+      "exists": true,
+      "files": 0,
+      "path": "results/causal_manifold_bridge_v1_20260813"
+    },
+    {
+      "exists": true,
+      "files": 4,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_run_20260813"
+    },
+    {
+      "exists": true,
+      "files": 4,
+      "path": "reports/provenance/causal_manifold_bridge_v1_run_20260813"
+    }
+  ],
+  "schema_version": "trained_control_next_studies_v1_attempt1_preservation_v2",
+  "scientific_results_available": false,
+  "status": "PRESERVED_TECHNICAL_FAILURE_AFTER_FIT_ACCESS",
+  "supersedes": "reports/provenance/trained_control_next_studies_v1_attempt1_technical_failure.json"
+}

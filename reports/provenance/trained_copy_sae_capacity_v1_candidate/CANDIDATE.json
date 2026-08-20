@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "authorization_outcome_independent": true,
+    "finite": true,
+    "sae_parameter_count": true,
+    "selector_permutation": true,
+    "topk": true
+  },
+  "config_sha256": "e71123e7eff3c135596f16943a9bae01749119e8340b93a78b431c95f435510c",
+  "expected_method_count_per_checkpoint": 323,
+  "launcher_sha256": "81949b593762a2a88eebdf152b5e827814d213bc037867fc44ea5b18e9f61b2b",
+  "method_inventory_sha256": "8631cc3bf2c9ef3be0bb379cfddbf7714cbae51ea3a276d4b71051d961857f28",
+  "plan_sha256": "d6032a48b50ae56be3e7a662f0141e01778c063cf0884849ebe1bd8f1b3c1ac5",
+  "schema_version": "trained_copy_sae_capacity_v1_candidate",
+  "scientific_panel_accessed": false,
+  "source_sha256": "9c26eabbc177b728d3904d35ba5508886cc55278a7eb80cf4104fb9150c33bea",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "94d44765b3d2f19c3466980a91e99ef4768b2687d67ca2078bf63cc8caa49d78",
+    "study": "fb657dfaef9ef2ae266dfe9ce71655f8101bf9d5c3d7aac38854436a753e4b16"
+  }
+}

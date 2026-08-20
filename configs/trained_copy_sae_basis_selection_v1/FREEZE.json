@@ -1,0 +1,41 @@
+{
+  "freshness": {
+    "complete_state_triple_overlap": 0,
+    "fresh_rows": 832,
+    "full_condition_overlap": 0,
+    "marginals_recur_by_design": true,
+    "opened_rows": 13696,
+    "pass": true,
+    "row_id_overlap": 0,
+    "row_seed_overlap": 0
+  },
+  "generator_lock_sha256": "2efdc5933edffffe70a039b2cc09957367be6a40f5a41bee959f1e8f8889e5f9",
+  "method_inventory_sha256": "5a7c1fdd679e77893ee8dff8fad98687f4543439bef0c7c97934f7e3a4a0108a",
+  "payloads": [
+    {
+      "path": "data/trained_copy_sae_basis_selection_v1_prepared/fit.jsonl",
+      "rows": 64,
+      "sha256": "a9536ca91326ebbadf93a6f4f5e7d1ddbe7a00efb4582fa8470da64a759589b2",
+      "stage": "fit"
+    },
+    {
+      "path": "data/trained_copy_sae_basis_selection_v1_prepared/selector_fit.jsonl",
+      "rows": 256,
+      "sha256": "fd185b7ea472a3ae903cc69bfd0e5e07ddf01a35f4e03fd87ead8aea9647496d",
+      "stage": "selector_fit"
+    },
+    {
+      "path": "data/trained_copy_sae_basis_selection_v1_prepared/development.jsonl",
+      "rows": 256,
+      "sha256": "83cd2d2f31b60ea6666a780b385fddf7840b2e4631224561ee3d379b50976a90",
+      "stage": "development"
+    },
+    {
+      "path": "data/trained_copy_sae_basis_selection_v1_prepared/confirmation.jsonl",
+      "rows": 256,
+      "sha256": "c22d3cd02e18f4623d2526f5b1eab277aa346a05fb1108efbce9c17cd1d95a63",
+      "stage": "confirmation"
+    }
+  ],
+  "schema_version": "trained_copy_sae_basis_selection_v1_freeze"
+}

@@ -1,0 +1,6 @@
+{
+  "freeze_sha256": "75bbb7b00b9c18d41ea5a6d7ec26aef7798d1f1e4ae2c04bf5e81f0fd5e258d6",
+  "review_path": "reports/adversarial/trained_copy_method_benchmark_v1_r4_2_frozen_review.md",
+  "review_sha256": "a6907752c0e6f226e9e09dcda854ffc5964f38151eedeba2096248277bdbaa0d",
+  "schema_version": "trained_copy_method_benchmark_v1_review_binding"
+}

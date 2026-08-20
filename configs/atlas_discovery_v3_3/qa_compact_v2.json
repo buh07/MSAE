@@ -1,0 +1,84 @@
+{
+  "claim_scope": "technical_numerical_qa_pool_only_never_scientific",
+  "data": {
+    "folds": 5,
+    "max_length": 128,
+    "pairs_per_sentence": 32,
+    "separator_token_id": 0
+  },
+  "data_root": "data/atlas_discovery_v3_3_attempt7_qa_compact_v2",
+  "exact_source_paths": {
+    "EWT": "data/atlas_discovery_v3_3_attempt7_qa_raw/EWT/en_ewt-ud-devtest.conllu",
+    "GUM": "data/atlas_discovery_v3_3_attempt7_qa_raw/GUM/en_gum-ud-devtest.conllu"
+  },
+  "forbidden_cache_roots": [
+    "data/atlas_discovery_v3",
+    "data/atlas_discovery_v3_1_attempt1_prescore",
+    "data/atlas_discovery_v3_1_attempt2_prescore",
+    "data/atlas_discovery_v3_1_attempt2_rebuild",
+    "data/atlas_discovery_v3_1_attempt3_prescore",
+    "data/atlas_discovery_v3_1_attempt4_failed_prescore",
+    "data/atlas_discovery_v3_v30_failed_prescore"
+  ],
+  "forbidden_data_tokens": [
+    "c1",
+    "c2",
+    "confirmation",
+    "final",
+    "blind",
+    "private",
+    "eslspok",
+    "lines",
+    "wikineural",
+    "fewnerd",
+    "wnut",
+    "pud"
+  ],
+  "implementation_inventory": {
+    "data/atlas_discovery_v3_3_attempt7_qa_raw/PROVENANCE.json": "3c4e6d3a87465c61277c218706fa08d86162fe246f212be1806054c432e85494",
+    "docs/rfc-atlas-v3-3-attempt7-discovery-factor-atlas.md": "3175bd96c6ab116e5e950fa69e6651d6e76ccc0bef61f4074c8cf055c907dc45",
+    "requirements-atlas.lock.txt": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834",
+    "scripts/atlas_discovery_v3_3_qa_pool.py": "9ef70fd4d89ca4628f4ea825862c22a86c7efd593df34ee810006495b7cc1cd7",
+    "scripts/run_atlas_discovery_v3_3_qa_pool.py": "664f16563b5f61a259923ef5213dc1d0a62ff98d216d131e7ef539f1f22c98bc"
+  },
+  "interventions": {
+    "position_shift": 16
+  },
+  "model": {
+    "cached_dtype": "float32",
+    "dtype": "float32",
+    "layer": 3,
+    "name": "EleutherAI/pythia-160m-deduped",
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+  },
+  "numerical_qa": {
+    "atol_floor": 5e-07,
+    "atol_hard_ceiling": 2e-05,
+    "atol_multiplier": 2.0,
+    "repeats": 3,
+    "rtol": 5e-06,
+    "set_size_per_source": 32
+  },
+  "protocol": {
+    "path": "docs/rfc-atlas-v3-3-attempt7-discovery-factor-atlas.md",
+    "sha256": "3175bd96c6ab116e5e950fa69e6651d6e76ccc0bef61f4074c8cf055c907dc45"
+  },
+  "qa_only_compact": true,
+  "run_root": "pilot_runs/20260803_atlas_discovery_v3_3_attempt7",
+  "schema_version": "atlas_discovery_v3_3_attempt7_qa_pool_run_v1",
+  "seed": 20260803,
+  "session": "msae_atlas_discovery_v3_3_attempt7_20260803",
+  "sources": {
+    "EWT": {
+      "path": "data/atlas_discovery_v3_3_attempt7_qa_raw/EWT/en_ewt-ud-devtest.conllu",
+      "release": "official UD EWT dev+test at 4a4d77f599ea53cc405f85d0cec4b2f14f81d42b; technical QA only",
+      "sha256": "4e2c70ee827c9db783e0b0756650872eac7236acb5e50fa1287cc271cafeaa37"
+    },
+    "GUM": {
+      "path": "data/atlas_discovery_v3_3_attempt7_qa_raw/GUM/en_gum-ud-devtest.conllu",
+      "release": "official UD GUM dev+test at 1fe635509c649e376dfb449d528424ab78f4eaee; technical QA only",
+      "sha256": "6214d40d9db2d8ab939fa596f82e0ae82154c3041f86c9dc18f6378199191fea"
+    }
+  },
+  "status": "attempt7_compact_v2_qa_pool_label_only_no_neural_inference"
+}

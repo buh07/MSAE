@@ -1,0 +1,13 @@
+{
+  "config_sha256": "6dd137d9a391a5fb7ecb21f3aaa09a099e397ff4e37752b8bf706d415acd39b6",
+  "confirmation_opened": true,
+  "final_sha256": "817afa4c2c2bccc543d92ec0975f3e1db619d5e78b29883c269fe07aca5e22f8",
+  "freeze_sha256": "75bbb7b00b9c18d41ea5a6d7ec26aef7798d1f1e4ae2c04bf5e81f0fd5e258d6",
+  "no_retry_authorized": true,
+  "panel_accessed": true,
+  "phase": "complete",
+  "schema_version": "trained_copy_method_benchmark_v1_r4_2_terminal",
+  "source_sha256": "40851316c0ecdb2e052126fc421b462e9b298746810597758c07661f40c5e361",
+  "status": "METHOD_BENCHMARK_COMPLETE",
+  "time_ns": 1786396315525382745
+}

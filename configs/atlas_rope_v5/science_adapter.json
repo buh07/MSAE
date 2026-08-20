@@ -1,0 +1,277 @@
+{
+  "allowed_adapter_changes": [
+    "config_schema",
+    "run_result_namespace",
+    "technical_qa_verification",
+    "science_authorization_verification",
+    "post_load_sdpa_assertion",
+    "signed_artifact_schema"
+  ],
+  "analysis_output": "results/atlas_rope_v5_attempt9_science",
+  "attempt9_run_root": "pilot_runs/20260803_atlas_rope_technical_v5",
+  "extraction": {
+    "batch_size": 64,
+    "device": "cuda:0",
+    "hidden_state_index": 4,
+    "order": [
+      "EWT",
+      "GUM"
+    ],
+    "sources": [
+      "EWT",
+      "GUM"
+    ]
+  },
+  "forbidden_scientific_changes": [
+    "task_definitions",
+    "relation_definitions",
+    "intervention_definitions",
+    "projection_organizations",
+    "projection_ranks",
+    "ridge_alphas",
+    "nuisance_columns",
+    "bootstrap",
+    "decision_thresholds"
+  ],
+  "frozen_analysis_settings": {
+    "alphas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "assigned_recovery_min": 0.65,
+    "delta_basis_rank": 16,
+    "incremental_f1_min": 0.02,
+    "minimum_usable_rank": 8,
+    "nuisance_columns": {
+      "capitalization": [
+        "start_distance",
+        "relative_quartile",
+        "sentence_length",
+        "upos_coarse"
+      ],
+      "dependency_depth": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "deprel_coarse": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "head_signed_distance": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "lemma_identity": [
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "number": [
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "pair_distance": [
+        "left_token_class",
+        "right_token_class",
+        "left_lemma_class",
+        "right_lemma_class",
+        "left_upos_coarse",
+        "right_upos_coarse",
+        "left_punctuation",
+        "right_punctuation",
+        "left_capitalization",
+        "right_capitalization",
+        "left_word_length",
+        "right_word_length",
+        "sentence_length",
+        "left_start_distance"
+      ],
+      "punctuation": [
+        "start_distance",
+        "relative_quartile",
+        "sentence_length",
+        "upos_coarse"
+      ],
+      "relative_quartile": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length"
+      ],
+      "start_distance": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length"
+      ],
+      "token_identity": [
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "upos_coarse": [
+        "token_class",
+        "lemma_class",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "word_length": [
+        "start_distance",
+        "relative_quartile",
+        "sentence_length",
+        "upos_coarse"
+      ]
+    },
+    "organizations": {
+      "broad_position_vs_lexical": [
+        "sequential",
+        "syntax_child",
+        "relative_gap",
+        "context"
+      ],
+      "sequential_context_vs_lexical_plus_relational_syntax": [
+        "sequential",
+        "relative_gap",
+        "context"
+      ],
+      "token_local_vs_context_dependent": [
+        "sequential",
+        "context",
+        "relation"
+      ]
+    },
+    "output_path": "results/atlas_discovery_v3_3_attempt7_v3",
+    "primary_rank": 16,
+    "projection_ranks": [
+      8,
+      16,
+      32
+    ],
+    "raw_denominator_floor": 1e-06,
+    "raw_recovery_min": 0.2,
+    "ridge_device": "cuda:0",
+    "ridge_gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "scale_floor": 1e-08,
+    "seed": 20260803,
+    "singular_floor": 1e-08
+  },
+  "frozen_analysis_settings_sha256": "ac2301ba1cb7221edfb7fbea1ca0dae69d2c12472f9adc1d7fb0c6eeb21b251d",
+  "frozen_files": {
+    "scripts/analyze_atlas_discovery_v3_3.py": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031",
+    "scripts/atlas_discovery_v3_3_analysis.py": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266",
+    "scripts/extract_atlas_discovery_v3_3.py": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+  },
+  "frozen_function_hashes": {
+    "scripts/analyze_atlas_discovery_v3_3.py": {
+      "bootstrap_metrics": "4b12e4e9ccd2641818bc460f253e320972a4576fc3d51f2e22fc5b389c8e2e81",
+      "cross_family_direction": "e97b8c488fff2a4e6fce1b048d33c82a216aef2bf27c020409466e10b02b1ba2",
+      "delta_for_pair": "30a2ca46df2834a1039e4096cc68b4adc7b833e83f577f73a9d0c903e78bf6ac",
+      "evaluate_direction": "b6cf7e459e4fecabd0b06eac7fcba3267aee80c37731a06cc4d020bc465e0d50",
+      "evaluate_relation_direction": "8f9c62d4bde9d6b345074a5403b816f1de102182dd49bef57d1d4ed6472464aa",
+      "fit_lemma_vocab": "6dce789996fd85ebdf30b4d85a66c371fa57c675e03d6ec44c209cb8a179e484",
+      "intervention_atlas": "4e1870f197959511bbf183ed207eb960fbdf46a761411d891b45752c1f1c44dc",
+      "json_safe": "7a44f454ecaadb94b717fd0b025597388f2108cbdd1a8f53843cd1a211795191",
+      "load_source": "87ca2e355440ee50bdbbf35747e8411bdd03e3c0c6c34d45b8b6ac1c5d45cd69",
+      "nuisance_rows": "c43c41042b47fbff5dbd7e136a940ef396a181f567fdc928fde6db390bd8e75d",
+      "projection_capture_controls": "b66d743a2657bc0a893eb4dd9496ef1c4d0480736c04bb8e4c3ddc0a53938281",
+      "projection_direction": "4de39e0e89d5dd7cbf2af7839b6d0ac4981244acf1ed174173e0781408d17c31",
+      "raw_delta_covariance_spectrum": "cfbb97b5b2197310691525b9d77f7eba9a8f69b2bca8f89340e885430b2e48b7",
+      "relation_matrix": "80adba7fd3fc117c264b43516190ee54b66793e80993072fad686385c75f4d32",
+      "run": "0b03a1b54597130891a29086e293725663bd1c32387a7fd4ad4b17ff76b5d3b1",
+      "state_pair_for": "374b302c35b94c3d64141679cf1cf93258588b98646e6cf3b1885719d462874a",
+      "task_matrix": "9131261812853d62a96ae9ce7cae38b4bd14450710bd52137d3a236e0739c727",
+      "task_rows": "794bd710d5d9d22076dd7a57156b94de46c09b6436eee63a7b292dd10314c07c"
+    },
+    "scripts/atlas_discovery_v3_3_analysis.py": {
+      "balanced_accuracy": "211f214964e427e09cd428707c92419496db953c634680fe0faf72cc65f9feb0",
+      "basis_overlap": "91618c1982bf46cc067d2329bf62b7aef545a71f77d6969316131f52366e6a57",
+      "choose_alpha": "5681a907cc30304cae3c9807b01b66f98c6087c58c1430f15ac78738286b35e3",
+      "delta_basis": "9237c07331fc5df8a7e778aa2e5fbb05cdbc343114e269f6698f3b5001345a1a",
+      "fit_ridge": "af8e51c5e63c81c919f37a9ff86ed7d73b8b9b89112b2f6cc6580613fcf5847a",
+      "interval": "5857fad949a24499e5456108652b1db327c450da32102a2db51bd0d2b668f7e4",
+      "macro_f1": "5eef770693dd8618884ae1b42f314564eb97856625c47bf6462a5092b81ba6f7",
+      "make_projector": "be5add0b44468c48318e850fbc31a9040b6368bac66288e9b2d5c6243a7a8988",
+      "normalized_recovery": "a7007eb23b8f1774361171b277aad497fc4c9aae69085342bda43cdf17e96993",
+      "prior_chance": "a53b0dd1286aa5c66520767a04410896de91ed223ad89aacd26b551db68dc2e6",
+      "row_normalize": "b2ebc9dce29cd54a177dc8f30a4e6c1228b6f692bc1e0e55400ee6342ff84b0c"
+    },
+    "scripts/extract_atlas_discovery_v3_3.py": {
+      "_forward_units": "3a4b938bddd32e72074134bbbe23abf683c4dd43d7c0476d3d54f0043df24ac4",
+      "_load_source_bundle": "424fddb1a4e261e34087157df89adb58889a775e6b3f4992ac4b54c98808f024"
+    }
+  },
+  "frozen_prepared_manifest": {
+    "path": "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/manifest.json",
+    "sha256": "87cdf01c48428cf1d1cdab7a9324865d3db8e44408e997f1045123bb23ec5ee4"
+  },
+  "frozen_rebuild": {
+    "path": "reports/atlas_v3_3_attempt7_final_v3_rebuild_check.json",
+    "sha256": "9964fee1b7990e6e0a35b66fcc8482e57593d6054fe9aff812a1faf6139a2f79"
+  },
+  "frozen_science_prescore": {
+    "path": "configs/atlas_discovery_v3_3/run_final_v3.json",
+    "sha256": "4c780b3a3fbcc5b1cf1a6fa57c0226d26fe2f9bcddb56c4f1393e9bbe31a45ed"
+  },
+  "frozen_scoring_config": {
+    "path": "configs/atlas_discovery_v3_3/scoring.json",
+    "sha256": "2cc24b036a00cae9e96c42404b6b0b9c211e3059f5f0a32876a15bf1b6fb19aa"
+  },
+  "model": {
+    "cached_dtype": "float32",
+    "dtype": "float32",
+    "layer": 3,
+    "name": "EleutherAI/pythia-160m-deduped",
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+  },
+  "neural_training_authorized": false,
+  "schema_version": "atlas_rope_v5_attempt9_science_adapter_v1",
+  "science_run_root": "pilot_runs/20260803_atlas_rope_technical_v5/science",
+  "status": "FROZEN_BEFORE_HELDOUT_VALIDATION",
+  "technical_science_authorization": "configs/atlas_rope_v5/SCIENCE_AUTHORIZATION.json"
+}

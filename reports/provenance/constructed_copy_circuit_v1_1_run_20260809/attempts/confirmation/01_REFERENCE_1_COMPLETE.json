@@ -1,0 +1,8 @@
+{
+  "attempt_token": "0957aaa052315f894d63d2f8e30d31c4388716dd4cb99a1af26227ed167513e7",
+  "launch_manifest_sha256": "2b2261390534a87a03565ffa0f03912343a242e02da2d5f0669d0b8621d6a356",
+  "schema_version": "constructed_copy_circuit_v1_1_attempt_event",
+  "stage": "confirmation",
+  "state": "REFERENCE_1_COMPLETE",
+  "time_ns": 1786328662773467787
+}

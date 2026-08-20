@@ -1,0 +1,9 @@
+{
+  "status": "ARCHIVED_SELF_BLOCKED_UNSIGNED_CANDIDATE",
+  "candidate_sha256": "44ac6b12dd93b4efdeab369f85e4368222a295fc42d4257d1f8a7cd4b919be51",
+  "reason": "Pre-review audit found the EWT Attempt-8 QA bridge passed a 1200-row expanded reference to score_grid, whose contract requires the 200-row base reference.",
+  "signed_attempt9_artifacts_created": false,
+  "model_weights_loaded": false,
+  "neural_inference_run": false,
+  "neural_training_run": false
+}

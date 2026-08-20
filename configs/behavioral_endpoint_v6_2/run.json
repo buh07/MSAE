@@ -1,0 +1,504 @@
+{
+  "agreement": {
+    "confirmation_templates": [
+      "The {subject} opposite the {attractor}",
+      "The {subject} before the {attractor}",
+      "The {subject} around the {attractor}"
+    ],
+    "confirmation_verb_pairs": [
+      [
+        "appears",
+        "appear"
+      ],
+      [
+        "remains",
+        "remain"
+      ],
+      [
+        "looks",
+        "look"
+      ],
+      [
+        "sounds",
+        "sound"
+      ]
+    ],
+    "confirmation_vocab_sets": [
+      [
+        [
+          "farmer",
+          "farmers"
+        ],
+        [
+          "singer",
+          "singers"
+        ],
+        [
+          "dancer",
+          "dancers"
+        ],
+        [
+          "pilot",
+          "pilots"
+        ]
+      ],
+      [
+        [
+          "actor",
+          "actors"
+        ],
+        [
+          "player",
+          "players"
+        ],
+        [
+          "fruit",
+          "fruits"
+        ],
+        [
+          "plant",
+          "plants"
+        ]
+      ],
+      [
+        [
+          "robot",
+          "robots"
+        ],
+        [
+          "machine",
+          "machines"
+        ],
+        [
+          "engine",
+          "engines"
+        ],
+        [
+          "device",
+          "devices"
+        ]
+      ],
+      [
+        [
+          "river",
+          "rivers"
+        ],
+        [
+          "mountain",
+          "mountains"
+        ],
+        [
+          "forest",
+          "forests"
+        ],
+        [
+          "island",
+          "islands"
+        ]
+      ]
+    ],
+    "development_templates": [
+      "The {subject} near the {attractor}",
+      "The {subject} beside the {attractor}",
+      "The {subject} behind the {attractor}",
+      "The {subject} with the {attractor}",
+      "The {subject} alongside the {attractor}",
+      "The {subject} beyond the {attractor}"
+    ],
+    "development_verb_pairs": [
+      [
+        "is",
+        "are"
+      ],
+      [
+        "was",
+        "were"
+      ],
+      [
+        "has",
+        "have"
+      ],
+      [
+        "seems",
+        "seem"
+      ]
+    ],
+    "development_vocab_sets": [
+      [
+        [
+          "cat",
+          "cats"
+        ],
+        [
+          "dog",
+          "dogs"
+        ],
+        [
+          "bird",
+          "birds"
+        ],
+        [
+          "horse",
+          "horses"
+        ]
+      ],
+      [
+        [
+          "teacher",
+          "teachers"
+        ],
+        [
+          "student",
+          "students"
+        ],
+        [
+          "doctor",
+          "doctors"
+        ],
+        [
+          "lawyer",
+          "lawyers"
+        ]
+      ],
+      [
+        [
+          "car",
+          "cars"
+        ],
+        [
+          "truck",
+          "trucks"
+        ],
+        [
+          "boat",
+          "boats"
+        ],
+        [
+          "train",
+          "trains"
+        ]
+      ],
+      [
+        [
+          "key",
+          "keys"
+        ],
+        [
+          "box",
+          "boxes"
+        ],
+        [
+          "book",
+          "books"
+        ],
+        [
+          "chair",
+          "chairs"
+        ]
+      ]
+    ],
+    "prompt_template": "{filler} Sentence: {construction}"
+  },
+  "endpoints": [
+    "retrieval",
+    "agreement"
+  ],
+  "gate": {
+    "bootstrap_draws": 500,
+    "components_per_set": 16,
+    "empty_stratum": "INFINITY_AND_FAIL",
+    "maximum_ratio_point": 0.2,
+    "maximum_ratio_upper": 0.3,
+    "minimum_effect": 0.25,
+    "minimum_eligible_per_set": 14,
+    "minimum_eligible_per_template": 56,
+    "minimum_families": 2,
+    "quantile": 0.975,
+    "quantile_method": "higher",
+    "sets_per_template": 4
+  },
+  "models": [
+    {
+      "batch_size": 16,
+      "family": "gpt2",
+      "key": "gpt2",
+      "layers": [
+        1,
+        6,
+        10
+      ],
+      "name": "gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+    },
+    {
+      "batch_size": 16,
+      "family": "pythia",
+      "key": "pythia160",
+      "layers": [
+        8
+      ],
+      "name": "EleutherAI/pythia-160m-deduped",
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+    },
+    {
+      "batch_size": 4,
+      "family": "gemma",
+      "key": "gemma2",
+      "layers": [
+        0,
+        12,
+        25
+      ],
+      "name": "google/gemma-2-2b",
+      "revision": "c5ebcd40d208330abc697524c919956e692655cf"
+    }
+  ],
+  "namespace": "behavioral_endpoint_v6_2_20260809",
+  "outcome_table": {
+    "agreement_only": "CONFIRM_AGREEMENT_ONLY",
+    "both": "CONFIRM_BOTH",
+    "confirmation_fail_both": "STOP_NATURALISTIC_CONTROL",
+    "future_methods": "ONLY_SEPARATELY_FROZEN_CONFIRMED_ENDPOINTS",
+    "neither_development_pass": "BOTH_ENDPOINTS_STOP",
+    "one_family_all_templates": "INSUFFICIENT_MODEL_REPLICATION",
+    "one_or_more_but_not_all_templates": "TEMPLATE_CONDITIONED",
+    "retrieval_only": "CONFIRM_RETRIEVAL_ONLY"
+  },
+  "panel": {
+    "components_per_template": 64,
+    "confirmation_corpora": [
+      {
+        "config": "dbpedia_14",
+        "dataset": "fancyzhx/dbpedia_14",
+        "fields": [
+          "title",
+          "content"
+        ],
+        "fingerprint": "beedf461d6a52841",
+        "key": "DBPEDIA_CONFIRMATION",
+        "revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+        "separator": "\n",
+        "split": "train"
+      },
+      {
+        "config": "plain_text",
+        "dataset": "stanfordnlp/imdb",
+        "fields": [
+          "text"
+        ],
+        "fingerprint": "b22c1504b46f1653",
+        "key": "IMDB_CONFIRMATION",
+        "revision": "e6281661ce1c48d982bc483cf8a173c1bbeb5d31",
+        "separator": "\n",
+        "split": "train"
+      }
+    ],
+    "confirmation_sources": [
+      "DBPEDIA_CONFIRMATION",
+      "IMDB_CONFIRMATION"
+    ],
+    "confirmation_templates": 3,
+    "development_sources": [
+      "WIKITEXT_DEV_OPENED",
+      "AGNEWS_DEV_OPENED"
+    ],
+    "development_templates": 6,
+    "filler_words": 32,
+    "opened_predecessor_rows": [
+      {
+        "id_fields": [
+          "document_id",
+          "donor_base_id",
+          "donor_sham_id"
+        ],
+        "path": "data/joint_controllability_benchmark_v3_prepared/rows.jsonl",
+        "text_fields": [
+          "base_prefix",
+          "true_prefix",
+          "sham_prefix",
+          "local_suffix"
+        ]
+      },
+      {
+        "id_fields": [
+          "document_id"
+        ],
+        "path": "data/joint_controllability_benchmark_v4_prepared/rows.jsonl",
+        "text_fields": [
+          "filler"
+        ]
+      }
+    ],
+    "v5_accepted": "data/joint_controllability_assay_v5_prepared/accepted_documents.jsonl",
+    "v5_confirmation_line_ranges": [
+      [
+        193,
+        384
+      ],
+      [
+        577,
+        768
+      ]
+    ],
+    "v5_development_line_ranges": [
+      [
+        1,
+        192
+      ],
+      [
+        385,
+        576
+      ]
+    ],
+    "v5_rows": "data/joint_controllability_assay_v5_prepared/rows.jsonl"
+  },
+  "preservation": {
+    "architecture_closure": "reports/architecture_program_closure_v2.json",
+    "architecture_closure_sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a",
+    "representation_methods_authorized": false,
+    "training_authorized": false,
+    "v5_analysis": "reports/behavioral_endpoint_v5_analysis/v1/analysis.json",
+    "v5_confirmation_open_authorized": false,
+    "v5_development_gate": "results/joint_controllability_assay_v5_20260808/development_gate/result.json",
+    "v5_final": "results/joint_controllability_assay_v5_20260808/final/result.json",
+    "v5_freeze": "configs/joint_controllability_assay_v5/FREEZE.json",
+    "v5_manifest": "reports/provenance/behavioral_endpoint_v6_candidate/V5_PRESERVATION.json"
+  },
+  "prospective": true,
+  "question": "Which of counterbalanced retrieval or controlled agreement yields template-robust, cross-checkpoint behavioral validity?",
+  "recovery": {
+    "failed_v6_1_freeze": "configs/behavioral_endpoint_v6_1/FREEZE.json",
+    "failed_v6_1_freeze_sha256": "df66957ca97e05dc963b606bd428bc84cc9aada19fb2da9964e76cebf5eb741e",
+    "failed_v6_1_frozen_review": "reports/adversarial/behavioral_endpoint_v6_1_frozen_review.md",
+    "failed_v6_1_frozen_review_sha256": "cdaef625316997d1ae6eb22c0a03b0e6d6f95d05ceb4581c0f543370a6479ca8",
+    "failed_v6_1_preservation": "reports/provenance/behavioral_endpoint_v6_2_candidate/V6_1_FAILURE_PRESERVATION.json",
+    "failed_v6_1_preservation_sha256": "1fe62ed9b176746915938d40d9d9a811328e19c4f189fc9afa30ed4bcc7b91a2",
+    "failed_v6_1_review_binding": "reports/provenance/behavioral_endpoint_v6_1_candidate/FROZEN_REVIEW_BINDING.json",
+    "failed_v6_1_review_binding_sha256": "4ffc41f112239b581708fd1b3051d6054e616a92544380061fbaf5ea3d9ae775",
+    "failure": "BATCH_ACCUMULATION_INDEX_ERROR_BEFORE_ANY_METRIC_ROW",
+    "new_model_forwards_after_v6_1_terminal": false,
+    "permitted_code_repairs": [
+      "condition_logits",
+      "merge_condition_batches",
+      "final_aggregate"
+    ],
+    "required_dependency_closure": [
+      "scripts/behavioral_endpoint_v6_1.py",
+      "scripts/behavioral_endpoint_v6_2.py",
+      "scripts/joint_controllability_assay_v5.py",
+      "scripts/joint_controllability_benchmark_v3.py",
+      "scripts/joint_controllability_benchmark_v4_1.py",
+      "scripts/proxy_control_benchmark_v1.py",
+      "scripts/proxy_control_benchmark_v2.py"
+    ],
+    "scientific_protocol_changed": false,
+    "type": "TECHNICAL_EXECUTION_REPAIR_NO_SCIENTIFIC_CHANGE"
+  },
+  "retrieval": {
+    "confirmation_key_sets": [
+      [
+        "winter",
+        "summer",
+        "spring",
+        "autumn"
+      ],
+      [
+        "north",
+        "south",
+        "east",
+        "west"
+      ],
+      [
+        "iron",
+        "copper",
+        "steel",
+        "brass"
+      ],
+      [
+        "wolf",
+        "lion",
+        "duck",
+        "bear"
+      ]
+    ],
+    "confirmation_no_binding_scaffold_words": [
+      17,
+      18,
+      18
+    ],
+    "confirmation_templates": [
+      "{table} Background: {filler} Answer the lookup for {query}:",
+      "Read the registry and passage. {table} {filler} {query} maps to",
+      "{filler} Database entry: {table} Return the value linked with {query}:"
+    ],
+    "development_key_sets": [
+      [
+        "alpha",
+        "delta",
+        "gamma",
+        "omega"
+      ],
+      [
+        "maple",
+        "river",
+        "stone",
+        "cloud"
+      ],
+      [
+        "apple",
+        "lemon",
+        "grape",
+        "orange"
+      ],
+      [
+        "chair",
+        "table",
+        "lamp",
+        "clock"
+      ]
+    ],
+    "development_no_binding_scaffold_words": [
+      18,
+      17,
+      18,
+      17,
+      18,
+      18
+    ],
+    "development_templates": [
+      "{filler} {table} Query: the value for {query} is",
+      "{table} {filler} Lookup: the value assigned to {query} is",
+      "{filler} Consult the following registry. {table} Result for {query}:",
+      "{table} {filler} After reading the passage, report the entry for {query}:",
+      "Context: {filler} {table} Complete the mapping for {query}:",
+      "{filler} Stored records follow. {table} The recorded value of {query} is"
+    ],
+    "filler_sanitization_replacement": "neutral",
+    "no_binding_query": "item",
+    "null_value": "unknown",
+    "ordinary_values": [
+      "red",
+      "blue",
+      "green",
+      "gold"
+    ]
+  },
+  "runtime": {
+    "cache_attestation": "reports/provenance/behavioral_endpoint_v6_2_candidate/cache_preflight.json",
+    "candidate_review": "reports/adversarial/behavioral_endpoint_v6_2_candidate_review.md",
+    "deterministic": true,
+    "dtype": "float32",
+    "freeze": "configs/behavioral_endpoint_v6_2/FREEZE.json",
+    "gate_poll_seconds": 10,
+    "gate_timeout_seconds": 7200,
+    "maximum_length": 192,
+    "model_cache_root": "${HF_HOME}/hub",
+    "output_root": "results/behavioral_endpoint_v6_2_20260809",
+    "prepared_root": "data/behavioral_endpoint_v6_prepared",
+    "provenance_root": "reports/provenance/behavioral_endpoint_v6_2_run_20260809",
+    "tmux_prefix": "msae_behavior_v6_2",
+    "worker_timeout_seconds": 86400
+  },
+  "schema_version": "behavioral_endpoint_v6_2_config",
+  "seed": 20260811
+}

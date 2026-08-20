@@ -1,0 +1,33 @@
+{
+  "base_source_sha256": "40851316c0ecdb2e052126fc421b462e9b298746810597758c07661f40c5e361",
+  "checks": {
+    "authorization_outcome_independent": true,
+    "finite": true,
+    "sae_parameter_count": true,
+    "selector_permutation": true,
+    "topk": true
+  },
+  "config_sha256": "d947e11a7af64d084d18caf85b236885950dca824bdfcccce15a335e12fb9071",
+  "expected_method_count_per_checkpoint": 507,
+  "launcher_sha256": "551ad6bd94872b034a99def2b0324fc37a1b077d597c4f8f6abd25d55958e73d",
+  "method_inventory_sha256": "5a7c1fdd679e77893ee8dff8fad98687f4543439bef0c7c97934f7e3a4a0108a",
+  "plan_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "protocol_parity_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "recovery_lineage": {
+    "pass": true,
+    "r2_preservation_sha256": "f097b38b8b499be04cfdac944e3271337cbc0a214ec48f180f49e17053c5de97"
+  },
+  "runtime_profile": {
+    "cached_sae_codes": 108,
+    "fit_rows": 128,
+    "method_records_per_checkpoint": 507
+  },
+  "schema_version": "trained_copy_sae_basis_selection_v1_candidate",
+  "scientific_panel_accessed": false,
+  "source_sha256": "d0ccaff98c88ece7bf26a2d87127f35ad7741f3c53e56c384204b37ee73a7633",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "ddfa891c14448b4311cb94a0fe920d497295714325f4f95a7bae93f56a8b4650",
+    "study": "56202c1d68288afd13c924e0c81ab249c0a3a58049b606b933640e33c3c70c11"
+  }
+}

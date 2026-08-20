@@ -1,0 +1,73 @@
+{
+  "all_endpoint_smoke_checks": 512,
+  "bootstrap_golden": {
+    "lower": 0.0,
+    "point": 5.5,
+    "upper": 10.0
+  },
+  "config_sha256": "ca2b351f661b6ebf9d47946fc0ae929651715bb2f796d41534a4e1c8e2c2d6ad",
+  "estimated_methods_present": false,
+  "generator_axes": [
+    {
+      "effective_generator_seed": 11301,
+      "graph_seed": 1413625432,
+      "parameter_seed": 11201,
+      "structural_seed": 11101
+    },
+    {
+      "effective_generator_seed": 11302,
+      "graph_seed": 1324569239,
+      "parameter_seed": 11202,
+      "structural_seed": 11102
+    },
+    {
+      "effective_generator_seed": 11303,
+      "graph_seed": 1090448651,
+      "parameter_seed": 11203,
+      "structural_seed": 11103
+    },
+    {
+      "effective_generator_seed": 11304,
+      "graph_seed": 846431269,
+      "parameter_seed": 11204,
+      "structural_seed": 11104
+    }
+  ],
+  "launcher_sha256": "9cab99f10003502f5e5d3a92b8d87d18d73cbda4c9ee3addedd87c2ab1c310c3",
+  "method_inventory": [
+    "exact_controller",
+    "identity_full640"
+  ],
+  "plan_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "runtime_profile": {
+    "control_vectors": 6291456,
+    "disk_free_bytes": 10438309838848,
+    "estimated_all_control_seconds": 663.8545532226562,
+    "estimated_control_storage_bytes": 16106127360,
+    "representative_vector_seconds": 0.0001055168395396322,
+    "scientific_rows": 24576,
+    "within_80pct_timeout_and_1_5x_disk": true
+  },
+  "schema_version": "causal_manifold_bridge_v2_technical_candidate",
+  "scientific_panel_accessed": false,
+  "shared_bank_golden_sha256": "1aa2959478e905103b07adfb8b660e1b7d1cee9f3dbbe605bb0e2c69f26724b1",
+  "shared_bank_incomplete_smoke_pass": true,
+  "shared_bank_technical_score_smoke_pass": true,
+  "source_sha256": "eafc77bc63bf82f36d638cdbdf2d9f78225edb639d9dd608f009769da45041c2",
+  "status": "PASS",
+  "target_contrast_sham_distinct": true,
+  "tests_sha256": {
+    "launcher": "ddfa891c14448b4311cb94a0fe920d497295714325f4f95a7bae93f56a8b4650",
+    "study": "aa152f77e6ebb884536e5f6fe06a90b5c56a27f3315d562f35e1441392fbc360"
+  },
+  "training_path_present": false,
+  "transitive_runtime_hashes": {
+    "base_source": "40851316c0ecdb2e052126fc421b462e9b298746810597758c07661f40c5e361",
+    "preserve_r1_source": "024c321e5a1ac8a13fe418a197371b5d8cdcc9a5bfced0a54b9c82bea1018d54",
+    "r2_source": "9fdb0f2cc4d9741fd04263ab4af237448b624b797843e8204b53e4f3cbaf4349",
+    "r5_config": "ae80b44d3735eaa055008617ba316679e8841d197eb9cd3bd64acdf28c2b6598",
+    "r5_freeze": "a59246d2d06e3fa8f14dcb290b6fdf2f9d73607e39ab93da55f1c41f02d6f758",
+    "r5_source": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8"
+  },
+  "view_firewall_smoke_pass": true
+}

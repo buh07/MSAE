@@ -1,0 +1,15 @@
+{
+  "classification": "SOFTWARE_PRELAUNCH_ABORT",
+  "confirmation_payload_opened_by_runtime": false,
+  "development_model_forward_started": false,
+  "experiment_output_namespace_created": false,
+  "failure": "GPU selector pipeline returned status 141 under set -o pipefail because awk exited after the first eligible GPU",
+  "freeze_sha256": "2d40f1d58e60ea5b6fa5dc45c7ad72e7a0cdee11656490fc2d61073394659354",
+  "ioi_v1_modified": false,
+  "namespace": "canonical_induction_circuit_v1_20260809",
+  "provenance_namespace_created": false,
+  "representation_methods_evaluated": false,
+  "schema_version": "canonical_induction_circuit_v1_prelaunch_failure",
+  "status": "RETIRED_BEFORE_EXPERIMENT_START",
+  "training_performed": false
+}

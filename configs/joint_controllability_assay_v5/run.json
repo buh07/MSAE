@@ -1,0 +1,147 @@
+{
+  "claim_limits": {
+    "method_comparison": false,
+    "positive_requires_two_model_families_both_directions": true,
+    "task_assay_only": true,
+    "unseen_distribution": false
+  },
+  "gate": {
+    "bootstrap": "template_stratified_document_component_percentile_95",
+    "bootstrap_draws": 500,
+    "epsilon": 1e-08,
+    "maximum_sham_fraction": 0.2,
+    "maximum_sham_fraction_ci": 0.3,
+    "minimum_effect_eligibility": 0.85,
+    "minimum_eligible_per_template": 55,
+    "minimum_eligible_total": 165,
+    "minimum_full_effect": 0.25,
+    "minimum_replicating_model_families": 2
+  },
+  "models": [
+    {
+      "batch_size": 16,
+      "family": "gpt2",
+      "key": "gpt2",
+      "layers": [
+        1,
+        6,
+        10
+      ],
+      "name": "gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+    },
+    {
+      "batch_size": 16,
+      "family": "pythia",
+      "key": "pythia160",
+      "layers": [
+        8
+      ],
+      "name": "EleutherAI/pythia-160m-deduped",
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+    },
+    {
+      "batch_size": 4,
+      "family": "gemma",
+      "key": "gemma2",
+      "layers": [
+        0,
+        12,
+        25
+      ],
+      "name": "google/gemma-2-2b",
+      "revision": "c5ebcd40d208330abc697524c919956e692655cf"
+    }
+  ],
+  "namespace": "joint_controllability_assay_v5_20260808",
+  "preservation": {
+    "automatic_method_launch": false,
+    "closure": "reports/architecture_program_closure_v2.json",
+    "closure_sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a",
+    "confirmation_requires_two_development_families": true,
+    "k2_training_authorized": false,
+    "representation_method_evaluation_authorized": false,
+    "sae_training_authorized": false,
+    "v4_1_claim_review": "reports/claim_review/joint_controllability_v4_1.md",
+    "v4_1_diagnostic": "reports/joint_controllability_v4_1_diagnostic/v1/diagnostic.json",
+    "v4_1_freeze": "configs/joint_controllability_benchmark_v4_1/FREEZE.json",
+    "v4_1_result": "results/joint_controllability_benchmark_v4_1_20260808/task_gate/result.json",
+    "v4_1_tree": "reports/provenance/joint_controllability_assay_v5_candidate/V4_1_PRESERVATION.json"
+  },
+  "prospective": true,
+  "question": "Does complete key-role counterbalancing yield a model-specific, cross-corpus valid controlled-retrieval assay?",
+  "runtime": {
+    "cache_attestation": "reports/provenance/joint_controllability_assay_v5_candidate/cache_preflight.json",
+    "candidate_review": "reports/adversarial/joint_controllability_assay_v5_candidate_review.md",
+    "deterministic": true,
+    "dtype": "float32",
+    "freeze": "configs/joint_controllability_assay_v5/FREEZE.json",
+    "gate_poll_seconds": 10,
+    "gate_timeout_seconds": 7200,
+    "maximum_length": 192,
+    "model_cache_root": "${HF_HOME}/hub",
+    "output_root": "results/joint_controllability_assay_v5_20260808",
+    "prepared_root": "data/joint_controllability_assay_v5_prepared",
+    "provenance_root": "reports/provenance/joint_controllability_assay_v5_run_20260808",
+    "tmux_prefix": "msae_joint_control_v5",
+    "worker_timeout_seconds": 86400
+  },
+  "schema_version": "joint_control_assay_v5_config",
+  "seed": 20260810,
+  "task": {
+    "ag_news": {
+      "dataset": "fancyzhx/ag_news",
+      "fingerprint": "2bc1e2be15d7f2ee",
+      "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+      "split": "train"
+    },
+    "answers": [
+      "red",
+      "blue",
+      "green",
+      "gold",
+      "silver",
+      "black",
+      "white",
+      "orange"
+    ],
+    "components_per_source_split": 192,
+    "components_per_template": 64,
+    "filler_words": 32,
+    "keys": [
+      "alpha",
+      "delta",
+      "gamma",
+      "omega",
+      "maple",
+      "river",
+      "stone",
+      "cloud"
+    ],
+    "minimum_filler_words": 32,
+    "predecessor_rows": [
+      "data/joint_controllability_benchmark_v3_prepared/rows.jsonl",
+      "data/joint_controllability_benchmark_v4_prepared/rows.jsonl"
+    ],
+    "sources": [
+      "WIKITEXT_FRESH",
+      "AGNEWS_FRESH"
+    ],
+    "splits": [
+      "development",
+      "confirmation"
+    ],
+    "templates": [
+      "Reference: the password for {reference_key} is {answer}. {filler} Question: the password for {query_key} is",
+      "Record: {reference_key} has code {answer}. {filler} Query: the code for {query_key} is",
+      "Note: associate {reference_key} with {answer}. {filler} Complete: {query_key} is associated with"
+    ],
+    "wikitext": {
+      "config": "wikitext-103-raw-v1",
+      "dataset": "Salesforce/wikitext",
+      "fingerprint": "7dabb830ac9ebb0d",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "split": "train"
+    }
+  }
+}

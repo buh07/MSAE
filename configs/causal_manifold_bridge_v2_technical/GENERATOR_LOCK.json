@@ -1,0 +1,24 @@
+{
+  "candidate_review_sha256": "69b8ce92396ce2e633c89a0d052494b3fadd8bc633228addc0680c23af2843bf",
+  "candidate_sha256": "c7a5c2d07e15374cc5eb57a76eeaa1c7cf23386c59b98899c8753ca37389076d",
+  "config_sha256": "345678e0baee4f02b12e38b254a63dcdf5cb4ee75425ee8f34c8dfb8f9465b19",
+  "control_contract_sha256": "154ab1761c11d3ddd641feb4ff9ed4cf823ae896d0bf36c4c7232746fd7f5810",
+  "freshness_audit_sha256": "428f8988e441181508b41fc8ed40f70602e0cadca8488eb6d75bf96eb44ea023",
+  "launcher_sha256": "f1e8368cdd3adfc1e35cef405a14b24c0c4634102c400481766d23bf7719ad90",
+  "plan_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "schema_version": "causal_manifold_bridge_v2_technical_generator_lock",
+  "source_sha256": "2f34872abce875334be228004ac4a7c841d0c5f5d52df49ade56a59d0961780e",
+  "tests_sha256": {
+    "launcher": "ddfa891c14448b4311cb94a0fe920d497295714325f4f95a7bae93f56a8b4650",
+    "study": "a360ff37099f98c3bd89e39e10b8d471c245411014620c1e33d494cc8ca40fc6"
+  },
+  "transitive_runtime_hashes": {
+    "base_source": "40851316c0ecdb2e052126fc421b462e9b298746810597758c07661f40c5e361",
+    "preserve_r1_source": "024c321e5a1ac8a13fe418a197371b5d8cdcc9a5bfced0a54b9c82bea1018d54",
+    "r2_outcomes_preservation_source": "2cd3dd24294a7e328203369d8a9d8b2814a81e86fed25eae73cf49b34b0a38de",
+    "r2_source": "9fdb0f2cc4d9741fd04263ab4af237448b624b797843e8204b53e4f3cbaf4349",
+    "r5_config": "ae80b44d3735eaa055008617ba316679e8841d197eb9cd3bd64acdf28c2b6598",
+    "r5_freeze": "a59246d2d06e3fa8f14dcb290b6fdf2f9d73607e39ab93da55f1c41f02d6f758",
+    "r5_source": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8"
+  }
+}

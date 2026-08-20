@@ -1,0 +1,18 @@
+{
+  "cublas_workspace_config": ":4096:8",
+  "cuda_visible_devices": "1",
+  "freeze_sha256": "6d2c8b1b35c4bd2238abd90c509a0d7f35f2e049ec54fc43f098e61b4f359c7a",
+  "generator_lock_sha256": "cd1740561d983f127c3f35ec41a3a11b1f54a7ad35b986b622f4299281b4c139",
+  "gpu_uuid": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+  "kind": "methods",
+  "launch_token": "de78b1c1658cf16453b7835f2b9723c21486b2f61edd8410",
+  "numpy": "1.26.4",
+  "physical_gpu_index": 1,
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "review_binding_sha256": "4e2ca98b72bcc169eb8c4159c26b935c3882362df833263bfb714e26334ce66c",
+  "schema_version": "transformer_realistic_methods_v1_launch_manifest",
+  "status": "LAUNCHED",
+  "time_ns": 1786336933602224222,
+  "torch": "2.7.0"
+}

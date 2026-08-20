@@ -1,0 +1,9 @@
+{
+  "origin": "forked",
+  "plan_path": "docs/rfc-atlas-v1-diagnostic-summary-recovery.md",
+  "plan_sha256": "b263d4203f20f52fa576d682db851676d8fd9ffa2323b89bbef30abbcdf1ffcb",
+  "schema_version": "atlas_completion_summary_recovery_plan_review_v1",
+  "transcript_path": "reports/adversarial/atlas_completion_summary_recovery_plan_amendment_review_20260802.md",
+  "transcript_sha256": "bb98592954dd11b4c9c63f8b77256d3ae374dd4ef8397297d3e1b23e0b53c3ea",
+  "verdict": "SHIP"
+}

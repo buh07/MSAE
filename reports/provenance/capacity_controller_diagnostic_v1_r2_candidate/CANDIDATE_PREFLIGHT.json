@@ -1,0 +1,333 @@
+{
+  "basis_checks": [
+    {
+      "condition": 1.6666666666666652,
+      "instance": 41011,
+      "max_abs": 1.0307214248095852e-15,
+      "pass": true
+    },
+    {
+      "condition": 1.6666666666666659,
+      "instance": 41037,
+      "max_abs": 1.1102230246251565e-15,
+      "pass": true
+    },
+    {
+      "condition": 1.6666666666666656,
+      "instance": 41081,
+      "max_abs": 1.0026219061033527e-15,
+      "pass": true
+    }
+  ],
+  "compatibility_smoke": {
+    "cpu": {
+      "all_target_jacobian_ranks": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "device": "cpu",
+      "fit_families": [
+        "closed_form_linear_full64",
+        "exact_delta_gt",
+        "label_only",
+        "observed_input_transplant",
+        "paired_linear_rank4",
+        "random_rank4",
+        "reduced_rank_regression_rank4",
+        "target_linear_rank4",
+        "target_nonlinear_rank4",
+        "unpaired_pca_rank4",
+        "within_target_delta_permutation",
+        "zero"
+      ],
+      "numpy_version": "1.26.4",
+      "scored_methods": 12,
+      "technical_valid": true,
+      "torch_version": "2.7.0"
+    },
+    "cuda": {
+      "all_target_jacobian_ranks": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "device": "cuda",
+      "fit_families": [
+        "closed_form_linear_full64",
+        "exact_delta_gt",
+        "label_only",
+        "observed_input_transplant",
+        "paired_linear_rank4",
+        "random_rank4",
+        "reduced_rank_regression_rank4",
+        "target_linear_rank4",
+        "target_nonlinear_rank4",
+        "unpaired_pca_rank4",
+        "within_target_delta_permutation",
+        "zero"
+      ],
+      "numpy_version": "1.26.4",
+      "scored_methods": 12,
+      "technical_valid": true,
+      "torch_version": "2.7.0"
+    }
+  },
+  "failure_preservation": {
+    "facts": {
+      "capacity_confirmation_opened": false,
+      "capacity_development_complete": false,
+      "capacity_development_opened": true,
+      "capacity_final_exists": false,
+      "capacity_train_opened": true,
+      "external_access_may_have_occurred": false,
+      "external_payload_accessed": false,
+      "external_status": "BLOCKED_UNOPENED",
+      "external_train_opened": false,
+      "external_training_performed": false
+    },
+    "files": 58,
+    "manifest_sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96",
+    "partial_checkpoints": 27,
+    "status": "PASS"
+  },
+  "files": [
+    {
+      "bytes": 72165,
+      "path": "PAPER.md",
+      "sha256": "512cb8014c51f44c0680adbb34a23e3ef7ba115081d80a009de00849d252a2cc"
+    },
+    {
+      "bytes": 8010,
+      "path": "PLAN_CAPACITY_EXTERNAL_VALIDITY_V1_R2.md",
+      "sha256": "6b7de808ef3f0a950270ffe758e6a9f5711937044a767426ddcaae0b5cd82cfb"
+    },
+    {
+      "bytes": 5850,
+      "path": "configs/capacity_controller_diagnostic_v1_r2/run.json",
+      "sha256": "89afc5b5146b2fa2835bfcfb1aaf82152768acc5cdaf86477d4e62531d6c7eb9"
+    },
+    {
+      "bytes": 3312,
+      "path": "configs/trained_copy_external_v1_r2/run.json",
+      "sha256": "eb3b5ed10884a24b9686e81dbd401505ff8291bf202d36220b6c344ca3998e5b"
+    },
+    {
+      "bytes": 555,
+      "path": "reports/adversarial/capacity_external_validity_v1_r2_plan_review.md",
+      "sha256": "0096c2166c5372e410f14505d12b7c22c995d2973b2681dacbf8a7e095f50e92"
+    },
+    {
+      "bytes": 134879,
+      "path": "reports/paper_claim_ledger_v1.json",
+      "sha256": "6e3d132d63ca6651a9e5c5c9c7c95b17b7ff60cb13facf673a371e0cddd846e2"
+    },
+    {
+      "bytes": 21741,
+      "path": "reports/provenance/capacity_external_validity_v1_failure_preservation/PRESERVATION.json",
+      "sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96"
+    },
+    {
+      "bytes": 17145,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_postresult/PRESERVATION.json",
+      "sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2"
+    },
+    {
+      "bytes": 67462,
+      "path": "scripts/capacity_external_validity_v1_r2.py",
+      "sha256": "4f2ba3761e493472765cf455cb332ecf4b304b914a1ce4f6d582eeb4ad83e3b2"
+    },
+    {
+      "bytes": 3146,
+      "path": "scripts/launch_capacity_external_validity_v1_r2_tmux.sh",
+      "sha256": "7671da12e91780d9391c47b8bcfa4e868b17e12a67e300d98d86239c2c857873"
+    },
+    {
+      "bytes": 5260,
+      "path": "scripts/preserve_capacity_external_validity_v1_failure.py",
+      "sha256": "5d9f9a423f0a82dd33b9bdea4a1b2e191bb4b5fcd619517befaa4ea609b957d8"
+    },
+    {
+      "bytes": 5398,
+      "path": "tests/test_capacity_external_validity_v1_r2.py",
+      "sha256": "47e53dd990ddbfb175038e719d2e35b5922e2d4dfb6075b03e87db4aa2b905f7"
+    }
+  ],
+  "kind": "capacity",
+  "nonpanel_ols_max_abs": 2.970818036018841e-13,
+  "paper": {
+    "claims": 80,
+    "evidence_bindings": 385,
+    "paper_selectors": 22,
+    "status": "PASS"
+  },
+  "parity": {
+    "config_pairs": [
+      {
+        "allowed_pointer_prefixes": [
+          "/namespace",
+          "/runtime",
+          "/recovery"
+        ],
+        "new": "configs/capacity_controller_diagnostic_v1_r2/run.json",
+        "old": "configs/capacity_controller_diagnostic_v1/run.json",
+        "scientific_sha256": "c7530f43acf52dc82a1371e37426ab7a3a620567ec47b28afe086c1dbdc3584a"
+      },
+      {
+        "allowed_pointer_prefixes": [
+          "/namespace",
+          "/runtime",
+          "/recovery"
+        ],
+        "new": "configs/trained_copy_external_v1_r2/run.json",
+        "old": "configs/trained_copy_external_v1/run.json",
+        "scientific_sha256": "f48f55d262fb171869a41bc546b6ccd1dc8d47df65af42944efcb84c8d9b10e8"
+      }
+    ],
+    "r2_source_sha256": "4f2ba3761e493472765cf455cb332ecf4b304b914a1ce4f6d582eeb4ad83e3b2",
+    "scientific_symbols_verified": [
+      "capacity_mats",
+      "make_capacity_rows",
+      "capacity_arrays",
+      "row_margin",
+      "centered",
+      "interval",
+      "gate",
+      "norm_match",
+      "direction_metrics",
+      "control_delta",
+      "score_prediction",
+      "FactorLinear",
+      "TargetLinear",
+      "TargetMLP",
+      "train_model",
+      "predict",
+      "eval_methods",
+      "external_rows",
+      "CopyTransformer",
+      "rows_tensors",
+      "train_copy",
+      "external_metric_summary",
+      "score_copy_model"
+    ],
+    "source_allowlist": {
+      "compatibility": [
+        "first_true_index",
+        "empirical_jacobian_ranks",
+        "fit_methods jacobian call"
+      ],
+      "recovery_lifecycle": [
+        "constants",
+        "preservation/parity/candidate/binding/freeze/main"
+      ]
+    },
+    "status": "PASS",
+    "v1_source_sha256": "0de71873feffb463f8ecde96e6db642cae18c145c42d9e76fe971999bd7185c7"
+  },
+  "preservation": {
+    "files": 76,
+    "manifest_sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2",
+    "status": "PASS"
+  },
+  "r2_absence_checks": [
+    {
+      "absent": true,
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r2_candidate_review.md"
+    },
+    {
+      "absent": true,
+      "path": "configs/capacity_controller_diagnostic_v1_r2/RECOVERY_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "configs/capacity_controller_diagnostic_v1_r2/FREEZE.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r2_frozen_review.md"
+    },
+    {
+      "absent": true,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r2"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r2_run_20260810r2"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/trained_copy_external_v1_r2_candidate_review.md"
+    },
+    {
+      "absent": true,
+      "path": "configs/trained_copy_external_v1_r2/RECOVERY_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "configs/trained_copy_external_v1_r2/FREEZE.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/trained_copy_external_v1_r2_frozen_review.md"
+    },
+    {
+      "absent": true,
+      "path": "results/trained_copy_external_v1_20260810r2"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/trained_copy_external_v1_r2_run_20260810r2"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_external_validity_v1_r2_REVIEW_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_external_validity_v1_r2_launcher_20260810r2.log"
+    }
+  ],
+  "scientific_payload_accessed": false,
+  "status": "PASS",
+  "timed_smoke": {
+    "checkpoint_bytes": 74147,
+    "device": "cuda",
+    "external_100_steps_final_loss": 0.013484921306371689,
+    "peak_gpu_bytes": 68313600,
+    "projected_disk_bytes": 150222441,
+    "rank_sweep_mse": {
+      "16": 0.0256087174717997,
+      "32": 0.010075242554450907,
+      "4": 0.3898103987675022,
+      "64": 3.7222270138361065e-30,
+      "8": 0.24886367541903726
+    },
+    "wall_seconds": 2.1613590717315674
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "payload": {
+    "activation_extraction_performed": false,
+    "adversarial_block_sha256": "bbd0f4a2bb5bf3ea80d55daab2e7cd52c339c906bb36bb4baed9cb4c4caa297e",
+    "authorization_created": false,
+    "fresh_validation_performed": false,
+    "implementation_candidate_sha256": "cd9d9f52adb9ba9b50e6c0093fc9580c9aa126ebad17f2af528ee188a8a4dc86",
+    "model_forward_performed": false,
+    "neural_training_run": false,
+    "reviewed_recovery_freeze_sha256": "435dbad80bb2f4567d28e556be5301d166b9781fca7819c7d92d3ef9423e3dad",
+    "schema_version": "atlas_rope_v8_attempt12_pre_authorization_supersession_v1",
+    "scientific_scoring_performed": false,
+    "signed_preflight_sha256": "57a68a4f36c99d9b78a4dfffec5f7428750c97100a166b487c207b471c3dfba0",
+    "snapshot_checksums_sha256": "cf43b9d1a92f68527831842e20da78e0a42938c31ffaabf7c06f47115105e4b0",
+    "started_created": false,
+    "status": "SUPERSEDED_BEFORE_AUTHORIZATION",
+    "successor_revision_authorized": true
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "ebdf00e5cd1951f2c29cc0ad76f70cbbf2eea0e00a43c56551a7afffe50b8e90",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "jHj/Tdz4RCLvOxFIwJIdHW0Dcp1SUG4LCN6HrshV9arC7Ip1rdQ1puQK+ok+z7RHGj7MgVRllYEOsNhK0nInBQ=="
+  }
+}

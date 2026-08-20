@@ -1,0 +1,155 @@
+{
+  "candidate_files": [
+    "PLAN_CANONICAL_INDUCTION_CIRCUIT_V1.md",
+    "configs/canonical_induction_circuit_v1/run.json",
+    "scripts/canonical_induction_circuit_v1.py",
+    "tests/test_canonical_induction_circuit_v1.py",
+    "scripts/launch_canonical_induction_circuit_v1_tmux.sh",
+    "reports/provenance/canonical_induction_circuit_v1_candidate/IOI_V1_PRESERVATION.json",
+    "reports/provenance/canonical_induction_circuit_v1_candidate/cache_preflight.json",
+    "reports/provenance/canonical_induction_circuit_v1_candidate/PRELAUNCH_PAPER.md",
+    "reports/provenance/canonical_induction_circuit_v1_candidate/PRELAUNCH_CLAIM_LEDGER.json",
+    "reports/provenance/canonical_induction_circuit_v1_candidate/PAPER_ATTESTATION.json",
+    "reports/adversarial/canonical_induction_circuit_v1_candidate_block_review.md",
+    "reports/adversarial/canonical_induction_circuit_v1_candidate_block_review_2.md",
+    "reports/adversarial/canonical_induction_circuit_v1_candidate_block_review_3.md",
+    "reports/adversarial/canonical_induction_circuit_v1_candidate_review.md"
+  ],
+  "confirmation": {
+    "future_methods_automatically_launched": false,
+    "general_method_claim_authorized": false,
+    "requires_development_gate": true,
+    "same_estimators_and_thresholds": true
+  },
+  "gate": {
+    "attention_known_lower_strict": 0.2,
+    "attention_known_point_min_inclusive": 0.3,
+    "attention_margin_lower_strict": 0.1,
+    "attention_margin_point_min_inclusive": 0.2,
+    "behavior_effect_floor_strict": 0.5,
+    "bootstrap_draws": 500,
+    "confidence": 0.95,
+    "estimand_weighting": "equal_block",
+    "minimum_informative_per_block": 12,
+    "minimum_informative_total": 96,
+    "necessity_known_point_min_inclusive": 0.05,
+    "necessity_margin_lower_strict": 0.0,
+    "necessity_margin_point_min_inclusive": 0.05,
+    "selectivity_lower_strict": 0.05,
+    "selectivity_point_min_inclusive": 0.15,
+    "sufficiency_recovery_lower_strict": 0.1,
+    "sufficiency_recovery_point_min_inclusive": 0.25
+  },
+  "literature_basis": [
+    {
+      "role": "externally fixed repeated-token induction algorithm",
+      "title": "In-context Learning and Induction Heads",
+      "url": "https://arxiv.org/abs/2209.11895"
+    },
+    {
+      "location": "Figure 2 (Induction Heads class) and Appendix H, Figures 17\u201318 (prefix-matching/copying validation); zero-based Layer.Head indexing L5H5 and L6H9",
+      "role": "prespecified GPT-2 induction heads L5H5 and L6H9",
+      "title": "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small",
+      "url": "https://arxiv.org/abs/2211.00593"
+    }
+  ],
+  "model": {
+    "batch_size": 16,
+    "family": "gpt2",
+    "head_indexing": "zero_based_layer_and_head",
+    "head_size": 64,
+    "heads": 12,
+    "hidden_size": 768,
+    "key": "gpt2",
+    "known_heads": [
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        9
+      ]
+    ],
+    "layers": 12,
+    "matched_control_heads": [
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "name": "gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+  },
+  "namespace": "canonical_induction_circuit_v1_20260809",
+  "panel": {
+    "blocks": 8,
+    "confirmation": {
+      "seed": 2026081502,
+      "token_id_high_exclusive": 45000,
+      "token_id_low": 25000
+    },
+    "development": {
+      "seed": 2026081501,
+      "token_id_high_exclusive": 20000,
+      "token_id_low": 1000
+    },
+    "prompt_length": 31,
+    "rows_per_block": 16,
+    "rows_per_stage": 128,
+    "sequence_length": 16,
+    "unique_tokens_per_row": 18
+  },
+  "preservation": {
+    "ioi_v1_manifest": "reports/provenance/canonical_induction_circuit_v1_candidate/IOI_V1_PRESERVATION.json",
+    "ioi_v1_manifest_sha256": "a012958999e0f888c0c0abaddb912f26f24cfd9d1cc845836888ac4a8fc1b832",
+    "post_result_paper_migration": "reports/provenance/known_mechanism_ioi_v1_post_result/MANIFEST.json",
+    "post_result_paper_migration_sha256": "e866738c0bd8cae8f0c5397e2a53d929b56d6f808570b980982d7c4c2d99f25b",
+    "required_ioi_final_status": "DEVELOPMENT_STOP"
+  },
+  "prospective": true,
+  "qa": {
+    "cublas_workspace_config": ":4096:8",
+    "max_abs_difference": 0.0,
+    "require_exact_known_head_outputs": true,
+    "require_exact_logits": true,
+    "rows": 16
+  },
+  "question": "Can the end-to-end intervention pipeline recover a prespecified canonical GPT-2 induction circuit under matched causal controls?",
+  "runtime": {
+    "cache_attestation": "reports/provenance/canonical_induction_circuit_v1_candidate/cache_preflight.json",
+    "candidate_review": "reports/adversarial/canonical_induction_circuit_v1_candidate_review.md",
+    "candidate_root": "reports/provenance/canonical_induction_circuit_v1_candidate",
+    "freeze": "configs/canonical_induction_circuit_v1/FREEZE.json",
+    "frozen_review": "reports/adversarial/canonical_induction_circuit_v1_frozen_review.md",
+    "gate_poll_seconds": 5,
+    "gate_timeout_seconds": 21600,
+    "ledger_snapshot": "reports/provenance/canonical_induction_circuit_v1_candidate/PRELAUNCH_CLAIM_LEDGER.json",
+    "maximum_length": 64,
+    "model_cache_root": "${HF_HOME}/hub",
+    "output_root": "results/canonical_induction_circuit_v1_20260809",
+    "paper_attestation": "reports/provenance/canonical_induction_circuit_v1_candidate/PAPER_ATTESTATION.json",
+    "paper_snapshot": "reports/provenance/canonical_induction_circuit_v1_candidate/PRELAUNCH_PAPER.md",
+    "prepared_root": "data/canonical_induction_circuit_v1_prepared",
+    "provenance_root": "reports/provenance/canonical_induction_circuit_v1_run_20260809",
+    "review_binding": "reports/provenance/canonical_induction_circuit_v1_candidate/FROZEN_REVIEW_BINDING.json",
+    "tmux_prefix": "msae_induction_v1"
+  },
+  "schema_version": "canonical_induction_circuit_v1_config",
+  "scope": {
+    "automatic_future_method_authorization": false,
+    "general_method_claim": false,
+    "ioi_v1_retry": false,
+    "minimum_families_for_any_future_general_claim": 2,
+    "natural_language_prompt_endpoint": false,
+    "representation_methods": false,
+    "single_model_only": true,
+    "technical_positive_control_only": true,
+    "training": false
+  },
+  "seed": 20260815
+}

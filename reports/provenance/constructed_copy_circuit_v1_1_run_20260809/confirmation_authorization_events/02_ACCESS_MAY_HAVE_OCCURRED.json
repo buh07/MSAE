@@ -1,0 +1,6 @@
+{
+  "payload_access_may_have_occurred": true,
+  "schema_version": "constructed_copy_circuit_v1_1_authorization_event",
+  "state": "ACCESS_MAY_HAVE_OCCURRED",
+  "time_ns": 1786328658225025415
+}

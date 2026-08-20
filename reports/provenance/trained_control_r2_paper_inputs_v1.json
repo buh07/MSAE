@@ -1,0 +1,7 @@
+{
+  "items": {
+    "PAPER.md": "0ba735c44bd3e0ff07d83499e69dcb2303a70110f56d95787f4d04b4712be90e",
+    "reports/paper_claim_ledger_v1.json": "2d4527ee9fcda62d4002d8ebfdef9455b83031a8d7935bc8c5e8a8292166471d"
+  },
+  "schema_version": "trained_control_r2_paper_inputs_v1"
+}

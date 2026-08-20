@@ -1,0 +1,7 @@
+{
+  "candidate_review_sha256": "1ef5575ce66d52ecdccb4bab33cb775c3f9fb80fe9356545cf36af1412ed071a",
+  "freeze_sha256": "a7256809c32d5e20ac651bf3b5779e8dc993ce1945234f275aaffa672f456d9f",
+  "frozen_review_sha256": "082cb637c59ac6c1ef1eda4f0b4682724bcee29076ba935a6a6eb6195327f923",
+  "schema_version": "constructed_copy_circuit_v1_1_review_binding",
+  "status": "SHIP"
+}

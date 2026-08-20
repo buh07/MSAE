@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "bytes": 56463,
+    "path": "data/transformer_realistic_methods_v1_r2_prepared/confirmation.jsonl",
+    "rows": 192,
+    "sha256": "1a160f3696a0b0a7dbf8b32e28a887841eeb4fac020b24de27baa1532bfbab0e"
+  },
+  "payload_access_may_have_occurred": false,
+  "state": "PRECHECK_JOURNALED_NO_ACCESS",
+  "time_ns": 1786337099422889444
+}

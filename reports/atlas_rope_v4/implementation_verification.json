@@ -1,0 +1,102 @@
+{
+  "blocked_candidate_archive": "pilot_runs/20260803_atlas_rope_technical_v4/failed_implementation_candidates/cc62c33e_BLOCK_v1",
+  "blocked_review_sha256": "3fc89a8d6f0e335e1f9773ceec1791174eb1ace3fdafe4128a65357df8917847",
+  "commands": [
+    {
+      "command": ".venv-atlas/bin/python -m py_compile scripts/atlas_rope_v4.py scripts/build_atlas_rope_v4.py scripts/probe_atlas_rope_v4_runtime.py scripts/run_atlas_rope_v4.py scripts/diagnose_atlas_rope_v4.py tests/test_atlas_rope_v4.py",
+      "status": "PASS"
+    },
+    {
+      "command": ".venv-atlas/bin/python -m pytest -q tests/test_atlas_rope_v4.py",
+      "status": "PASS",
+      "tests": 27
+    },
+    {
+      "command": ".venv-atlas/bin/python -m pytest -q tests/test_atlas_discovery_v3_3.py tests/test_atlas_discovery_v3_3_implementation.py tests/test_atlas_discovery_v3_3_scoring.py",
+      "status": "PASS",
+      "tests": 44
+    },
+    {
+      "command": "/jumbo/lisp/f004ndc/.agent-workspace/bin/check-plan --path PLAN.md",
+      "status": "PASS"
+    },
+    {
+      "command": "run_atlas_rope_v4._verify_prescore plus static_no_training_scan plus retained attempt-7 semantic recomputation",
+      "status": "PASS"
+    }
+  ],
+  "implementation_hashes": {
+    "PLAN.md": "a468e0495c1db1eab15ace5bc721d3e6c7e373469c8d658da86e402f88b2e5cf",
+    "configs/atlas_rope_v4/prescore.json": "2a3de6ea6bb6eb64bcfbcfebc0ed1e1560278bc41f9d68f131e85ae7e0768fb9",
+    "docs/rfc-atlas-v3-4-attempt8-rope-technical.md": "9c1d991f832a5bcf0f00365fb278ee4617db9cc08b7643da79c67c265409a03d",
+    "reports/adversarial/atlas_v3_4_attempt8_plan_review_v9.md": "fe28be86143567ac0e726243fbe234413e88cd2c99325f1646d6a6a312b94e4c",
+    "requirements-atlas.lock.txt": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834",
+    "scripts/atlas_rope_v4.py": "c9fd84ba444900c486eb2ea841c636aac051f21e66582587d8a863c39574e471",
+    "scripts/build_atlas_rope_v4.py": "1af3b782fe0835de8fd9d76ff3cf9e896867116723475df91a461fa41d21efb9",
+    "scripts/diagnose_atlas_rope_v4.py": "2e4ce9121b09a99033976c5b6028de7e52276e6e6cb40e6390b87d1f71684818",
+    "scripts/extract_atlas_discovery_v3_3.py": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508",
+    "scripts/probe_atlas_rope_v4_runtime.py": "4a3fc32f27cd0e63a8e633dc520917abcdf82bd59377f09b1b859c81420601d5",
+    "scripts/run_atlas_rope_v4.py": "12b884e82f768b848d91aa7a9af7f0e8f93b249ca3964b0666f305e164ad4899",
+    "tests/test_atlas_discovery_v3_3_scoring.py": "4058fbc194ba051904949609fb9da807ab68e342f7ad50dad575ddb6bdfc4431",
+    "tests/test_atlas_rope_v4.py": "36026c8c2b71ad991ace899c4174e1123849bcd5ef7fbeff8612e6c6d816e212"
+  },
+  "model_weights_loaded": false,
+  "neural_inference_run": false,
+  "neural_training_run": false,
+  "panel_support": {
+    "EWT_calibration": {
+      "bases": 100,
+      "panel_sha256": "ff299bfe936744ea6f1c8761134901d1185d201e365c97658fde403fb0e98dc3",
+      "selected_document_union": 80
+    },
+    "GENTLE_validation": {
+      "bases": 100,
+      "panel_sha256": "491a6c1449a302bfb272d477c5d22347c425b02c23e8948c888d693cfd4d2b13",
+      "selected_document_union": 24
+    },
+    "GUM_fresh_validation": {
+      "bases": 100,
+      "panel_sha256": "8ebf571f42016e97b07443967c32328cfcf8eb3ff5c7214f471fb7e2fda7005f",
+      "selected_document_union": 47
+    }
+  },
+  "prescore_manifest_sha256": "a8e4824589bc4dff9e83a1aa1e5731a097d1a9312c66191a76dec0548f5a340b",
+  "prescore_rebuild_report_sha256": "b46de7fe9ab0ab7f77908c12655fc0bf1cc286a6d68ae5e21110052a8b99da6a",
+  "primary_rebuild_inventory_sha256": "e6992d27997fd7b7c5fbdf579465662759266f1ed459f769c56ef518fc1d2337",
+  "rebuilt_inventory_sha256": "e6992d27997fd7b7c5fbdf579465662759266f1ed459f769c56ef518fc1d2337",
+  "retained_attempt7_candidate_shape": [
+    72,
+    768
+  ],
+  "retained_attempt7_ewt_semantic_verification": {
+    "expanded_mapping_sha256": "bf19563208363a73a3052ed42a56e7debc220a40527f4bbeb15f4e664d93bcfd",
+    "expanded_rows": 72,
+    "qa_arrays_sha256": "f39d29856a0c50e165528b4a5d69524453a3e0dcd8d775f123e4adfe919ed1f5",
+    "qa_complete_sha256": "d75a45ff38e6cc914d7236cad634fc92725e21ea0f1316ab707229c29f0b5d48",
+    "qa_rows_sha256": "e79571ee88ff5356402a2f582deea143f5167d272fbfd2040d748e951464ca33",
+    "semantic_verification": "PASS"
+  },
+  "retained_attempt7_reference_shape": [
+    72,
+    768
+  ],
+  "row_manifest_misalignment_builds_archived": "pilot_runs/20260803_atlas_rope_technical_v4/failed_prescore_builds/row_manifest_misalignment_detected_before_inference",
+  "runtime_preflight_required_before_forward": true,
+  "schema_version": "atlas_rope_v4_attempt8_implementation_verification_v2",
+  "science_activations_opened": false,
+  "static_no_training_scan": {
+    "findings": [],
+    "paths": [
+      "scripts/atlas_rope_v4.py",
+      "scripts/build_atlas_rope_v4.py",
+      "scripts/probe_atlas_rope_v4_runtime.py",
+      "scripts/run_atlas_rope_v4.py",
+      "scripts/diagnose_atlas_rope_v4.py",
+      "tests/test_atlas_rope_v4.py"
+    ],
+    "status": "PASS"
+  },
+  "status": "PASS_NO_MODEL_CALLS",
+  "validation_activations_opened": false,
+  "validation_binds_exact_implementation_inventory": true
+}

@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "authorization_outcome_independent": true,
+    "finite": true,
+    "sae_parameter_count": true,
+    "selector_permutation": true,
+    "topk": true
+  },
+  "config_sha256": "7b70743ec0c4fbc6bea2dbeded342137cc01b85f0e1c5a632ccf898fb2a6b580",
+  "expected_method_count_per_checkpoint": 552,
+  "launcher_sha256": "b5bc970d28b0e880ed43ca66c6d0d58142588b55811982626db591148a225032",
+  "method_inventory_sha256": "bdd6127ff809376b1c31868620e09e6296a49dca55efc31e4b0e1e13ddfe0814",
+  "plan_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "protocol_parity_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "recovery_lineage": {
+    "pass": true,
+    "r2_preservation_sha256": "f097b38b8b499be04cfdac944e3271337cbc0a214ec48f180f49e17053c5de97"
+  },
+  "schema_version": "trained_copy_sae_basis_selection_v1_candidate",
+  "scientific_panel_accessed": false,
+  "source_sha256": "9c9ec8c5515bf6e3ffef1103bc24be2d0edfa65925978eaf8073d0a49a93db92",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "9aafbea7949855f698c3bf73e29e31ae7de959b8a5a4c43feceafccca650a0ac",
+    "study": "a5660505d353319f6e2d61a1a8b5b9cead90cb9f4daef0b983d381ec8de67e59"
+  }
+}

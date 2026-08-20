@@ -1,0 +1,63 @@
+{
+  "confirmation_opened": false,
+  "cublas_exact_reproducibility_warning_all_models": true,
+  "eligible_families": 0,
+  "eligible_models": 0,
+  "input_hashes": {
+    "behavior_gate": "78813d8aef359c65e6f4b7c13f7c644463ac0156fc631193e3ed9d4ee9e79c66",
+    "final": "534ac5cfbe3707a43ba2a264d604b0014200ffcbfa800920ae3670eb58147f1c",
+    "patch_gate": "456113d270fcaebfe1038d42d283a2c152de22f667c1aaccbeb39b440e123f49"
+  },
+  "interpretation": "SUBSTANTIAL_DIRECTIONAL_IOI_BEHAVIOR_BUT_NO_CHECKPOINT_QUALIFIED_THE_FROZEN_CROSS_TEMPLATE_SHAM_HIERARCHY; INTERVENTION_REMAINS_UNMEASURED",
+  "logs": {
+    "gemma2": {
+      "cublas_nondeterminism_warning": true,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/behavior_gemma2.log",
+      "sha256": "bdcd2a3f2a7d46e17d44165ed3d5ed22e8ef91ac98042f52473dad8a0fc80f52"
+    },
+    "gpt2": {
+      "cublas_nondeterminism_warning": true,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/behavior_gpt2.log",
+      "sha256": "0b7b53381e2a8a346239e2b1de9f8c06f14c501d7c34ca8ef07ef32d5cea3563"
+    },
+    "pythia160": {
+      "cublas_nondeterminism_warning": true,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/behavior_pythia160.log",
+      "sha256": "53c08490f253f09a12543df283ef037a1351f6ce0ed772dfe4d2b7e16c5281ef"
+    }
+  },
+  "models": [
+    {
+      "base_direction_correct": 249,
+      "counterfactual_direction_correct": 250,
+      "informative_rows": 227,
+      "model": "gpt2",
+      "passing_templates": 1,
+      "rows": 256,
+      "total_templates": 4
+    },
+    {
+      "base_direction_correct": 241,
+      "counterfactual_direction_correct": 223,
+      "informative_rows": 172,
+      "model": "pythia160",
+      "passing_templates": 0,
+      "rows": 256,
+      "total_templates": 4
+    },
+    {
+      "base_direction_correct": 256,
+      "counterfactual_direction_correct": 256,
+      "informative_rows": 256,
+      "model": "gemma2",
+      "passing_templates": 1,
+      "rows": 256,
+      "total_templates": 4
+    }
+  ],
+  "patch_workers_loaded_model": false,
+  "representation_methods_evaluated": false,
+  "schema_version": "known_mechanism_ioi_v1_analysis_only",
+  "status": "DEVELOPMENT_QUALIFICATION_STOP",
+  "training_performed": false
+}

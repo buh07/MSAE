@@ -1,0 +1,220 @@
+{
+  "created_from_preserved_namespace": "results/joint_controllability_benchmark_v3_20260808",
+  "expected_metric_rows": 51456,
+  "expected_shards": {
+    "gemma2_layer0": {
+      "complete_sha256": "da0dfa25893fa4935215f1d7bf0c141f13a76867b3794736ec399623a284bd8f",
+      "hook_qa_sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79",
+      "layer": 0,
+      "metrics_sha256": "2c0bfbf9e177eb6356f3f50f41e91b5420cfea660cde43975b1d91255ac944aa",
+      "model": "gemma2",
+      "rows": 6912
+    },
+    "gemma2_layer12": {
+      "complete_sha256": "e755b75868da799d5782ad2bfc9d4a71ff4c65ab0d486a63d4ee8507644c88d9",
+      "hook_qa_sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79",
+      "layer": 12,
+      "metrics_sha256": "534124bd7b54abc1c19dfaccc49d28ca08492053bd515201fd6d7529f0fd4342",
+      "model": "gemma2",
+      "rows": 6912
+    },
+    "gemma2_layer25": {
+      "complete_sha256": "7fdfd0d07076a4b2f64c9a4f5c4be4dc7a22b647934d8fabf94fdfef0babc528",
+      "hook_qa_sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79",
+      "layer": 25,
+      "metrics_sha256": "f320d318be14775a83f22e1c65d9c49780bd3eb5aa361e91e58749d4dd54e780",
+      "model": "gemma2",
+      "rows": 6912
+    },
+    "gpt2_layer1": {
+      "complete_sha256": "873f1929e4b2f8668bcea73bb7caa961cd12f28ad8db245ab2f7e6a7b53f896c",
+      "hook_qa_sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79",
+      "layer": 1,
+      "metrics_sha256": "007aa1c78fe53bf215d986fce70a070e7b9daeb2d2f71f2f178343d7e1920bf0",
+      "model": "gpt2",
+      "rows": 6912
+    },
+    "gpt2_layer10": {
+      "complete_sha256": "095e9a723a9511d2fd46e760bd2df1f4fda42261a6428dd56d326bc5d3cc97ed",
+      "hook_qa_sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79",
+      "layer": 10,
+      "metrics_sha256": "e809799d9df0f53a4f4115c9698faff49df667a0c0e2f730a30c80df872e8aa1",
+      "model": "gpt2",
+      "rows": 6912
+    },
+    "gpt2_layer6": {
+      "complete_sha256": "d1e05c5f1b637269a8bdfd6b4db12495ac6755984d6122277d061cfdd3f705df",
+      "hook_qa_sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79",
+      "layer": 6,
+      "metrics_sha256": "86faa4eb00d29f6e575bf6b00e89925fe40c4fc18afb12f327fbf17381388de1",
+      "model": "gpt2",
+      "rows": 6912
+    },
+    "pythia160_layer8": {
+      "complete_sha256": "181423b5a6fda5344cf3032177f276f206c726264ca2b36de755c6aae4cca1c7",
+      "hook_qa_sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79",
+      "layer": 8,
+      "metrics_sha256": "5299db3362da9be89f41be03ab5a985ac2db0939cc0edab99d1019a6802b4248",
+      "model": "pythia160",
+      "rows": 9984
+    }
+  },
+  "expected_summary_cells": 402,
+  "files": [
+    {
+      "bytes": 2895,
+      "path": "configs/joint_controllability_benchmark_v3/FREEZE.json",
+      "sha256": "395aa2829a4763c972f1381069e0461e6b458f81995e6aad34c41f248a3b1f24"
+    },
+    {
+      "bytes": 4951,
+      "path": "configs/joint_controllability_benchmark_v3/run.json",
+      "sha256": "4c5ed62b3dd25d50f5d262658be6ef7011e6843750ad2f4dacf0ec28f48d854d"
+    },
+    {
+      "bytes": 1866,
+      "path": "reports/provenance/joint_controllability_benchmark_v3/aggregate.log",
+      "sha256": "b1ca79f806e7af237b959f11086eb8fd468d7aed2f05e70e0547d3f9885647b6"
+    },
+    {
+      "bytes": 0,
+      "path": "results/joint_controllability_benchmark_v3_20260808/aggregate/result.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 503,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer0/COMPLETE.json",
+      "sha256": "da0dfa25893fa4935215f1d7bf0c141f13a76867b3794736ec399623a284bd8f"
+    },
+    {
+      "bytes": 55,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer0/HOOK_QA.json",
+      "sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79"
+    },
+    {
+      "bytes": 5697182,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer0/metrics.jsonl",
+      "sha256": "2c0bfbf9e177eb6356f3f50f41e91b5420cfea660cde43975b1d91255ac944aa"
+    },
+    {
+      "bytes": 504,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer12/COMPLETE.json",
+      "sha256": "e755b75868da799d5782ad2bfc9d4a71ff4c65ab0d486a63d4ee8507644c88d9"
+    },
+    {
+      "bytes": 55,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer12/HOOK_QA.json",
+      "sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79"
+    },
+    {
+      "bytes": 5677576,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer12/metrics.jsonl",
+      "sha256": "534124bd7b54abc1c19dfaccc49d28ca08492053bd515201fd6d7529f0fd4342"
+    },
+    {
+      "bytes": 504,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer25/COMPLETE.json",
+      "sha256": "7fdfd0d07076a4b2f64c9a4f5c4be4dc7a22b647934d8fabf94fdfef0babc528"
+    },
+    {
+      "bytes": 55,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer25/HOOK_QA.json",
+      "sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79"
+    },
+    {
+      "bytes": 5626887,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gemma2_layer25/metrics.jsonl",
+      "sha256": "f320d318be14775a83f22e1c65d9c49780bd3eb5aa361e91e58749d4dd54e780"
+    },
+    {
+      "bytes": 501,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer1/COMPLETE.json",
+      "sha256": "873f1929e4b2f8668bcea73bb7caa961cd12f28ad8db245ab2f7e6a7b53f896c"
+    },
+    {
+      "bytes": 55,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer1/HOOK_QA.json",
+      "sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79"
+    },
+    {
+      "bytes": 42,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer1/WAITING.json",
+      "sha256": "604408ad77923553a9256017b0032696d5fbf77582c63327d05100a23216fee6"
+    },
+    {
+      "bytes": 5603308,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer1/metrics.jsonl",
+      "sha256": "007aa1c78fe53bf215d986fce70a070e7b9daeb2d2f71f2f178343d7e1920bf0"
+    },
+    {
+      "bytes": 502,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer10/COMPLETE.json",
+      "sha256": "095e9a723a9511d2fd46e760bd2df1f4fda42261a6428dd56d326bc5d3cc97ed"
+    },
+    {
+      "bytes": 55,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer10/HOOK_QA.json",
+      "sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79"
+    },
+    {
+      "bytes": 5584252,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer10/metrics.jsonl",
+      "sha256": "e809799d9df0f53a4f4115c9698faff49df667a0c0e2f730a30c80df872e8aa1"
+    },
+    {
+      "bytes": 501,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer6/COMPLETE.json",
+      "sha256": "d1e05c5f1b637269a8bdfd6b4db12495ac6755984d6122277d061cfdd3f705df"
+    },
+    {
+      "bytes": 55,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer6/HOOK_QA.json",
+      "sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79"
+    },
+    {
+      "bytes": 5603656,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/gpt2_layer6/metrics.jsonl",
+      "sha256": "86faa4eb00d29f6e575bf6b00e89925fe40c4fc18afb12f327fbf17381388de1"
+    },
+    {
+      "bytes": 506,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/pythia160_layer8/COMPLETE.json",
+      "sha256": "181423b5a6fda5344cf3032177f276f206c726264ca2b36de755c6aae4cca1c7"
+    },
+    {
+      "bytes": 55,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/pythia160_layer8/HOOK_QA.json",
+      "sha256": "fc25368a42999d4e45702789b31527efa813c0af590f48a3beb9f4c53c527c79"
+    },
+    {
+      "bytes": 8159280,
+      "path": "results/joint_controllability_benchmark_v3_20260808/shards/pythia160_layer8/metrics.jsonl",
+      "sha256": "5299db3362da9be89f41be03ab5a985ac2db0939cc0edab99d1019a6802b4248"
+    },
+    {
+      "bytes": 306,
+      "path": "results/joint_controllability_benchmark_v3_20260808/synthetic/PASS.json",
+      "sha256": "3bcda3bff748794ab833aba180a35b8011f4f754a6297da78a0f6869e1bf9617"
+    },
+    {
+      "bytes": 306,
+      "path": "results/joint_controllability_benchmark_v3_20260808/synthetic/result.json",
+      "sha256": "3bcda3bff748794ab833aba180a35b8011f4f754a6297da78a0f6869e1bf9617"
+    },
+    {
+      "bytes": 34685,
+      "path": "scripts/joint_controllability_benchmark_v3.py",
+      "sha256": "64d0f2bb26cd3e2a1709e9a5c7746abd6d401f0b6388b0f3a96553c5d4e07f0a"
+    },
+    {
+      "bytes": 74066,
+      "path": "scripts/proxy_control_benchmark_v2.py",
+      "sha256": "689a8ba6dffa6822ac90923520ae5c30985e4617d6a3716d1c9ca26edf078735"
+    }
+  ],
+  "notes": [
+    "This prospective recovery manifest binds the observed post-failure artifacts before recovery.",
+    "proxy_control_benchmark_v2.py was not in the original v3 freeze; its current exact hash is bound and block_interval is transcribed into the recovery."
+  ],
+  "schema_version": "joint_control_v3_analysis_recovery_inputs_v1"
+}

@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "authorization_outcome_independent": true,
+    "finite": true,
+    "sae_parameter_count": true,
+    "selector_permutation": true,
+    "topk": true
+  },
+  "config_sha256": "5c6b91cdef19a013dcfa02e2fc39684845e56aa72f6e8f07e6383ea05c7725e9",
+  "expected_method_count_per_checkpoint": 323,
+  "launcher_sha256": "d4dafeb1e2e40617c86308a83e619e3a4e407c15fff4b59c9bb1a5af29631c94",
+  "method_inventory_sha256": "8631cc3bf2c9ef3be0bb379cfddbf7714cbae51ea3a276d4b71051d961857f28",
+  "plan_sha256": "d6032a48b50ae56be3e7a662f0141e01778c063cf0884849ebe1bd8f1b3c1ac5",
+  "recovery_lineage": {
+    "original_freezes": {
+      "causal_manifold_bridge_v1": {
+        "path": "configs/causal_manifold_bridge_v1/FREEZE.json",
+        "sha256": "12e72f1fc8bc4e6ebf992ff18b7791898868c89801931b5185b14e9df76975b2"
+      },
+      "trained_copy_sae_capacity_v1": {
+        "path": "configs/trained_copy_sae_capacity_v1/FREEZE.json",
+        "sha256": "431ba6af471b08eeb130066ea4d1705df0af1fa787c37a15c78257aa8c67dbc4"
+      }
+    },
+    "pass": true,
+    "preservation_sha256": "40b6fb3c59f431318e09e4ba151cbb57e59f0608b98b83499098a802e9062549"
+  },
+  "schema_version": "trained_copy_sae_capacity_v1_candidate",
+  "scientific_panel_accessed": false,
+  "source_sha256": "8619cfba4ab2e1f0093aa9b9936dd8a9a6e78a0ef7c9d5b8969b12a44048ef97",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "359c87eb54125619b652e9a9652826df1562b90aecd314f3477cdb7c531260c9",
+    "study": "e29cc169e9a2a994106bc53200e971f707d12483f4ecd05334a81f61c46605ef"
+  }
+}

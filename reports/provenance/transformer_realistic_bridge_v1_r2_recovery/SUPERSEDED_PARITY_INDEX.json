@@ -1,0 +1,24 @@
+{
+  "attestation_sha256": "7d7e2c07dc078749e795a9a293146b7c332b9519d5a1ea31467a2845f9014f11",
+  "authoritative_report": "reports/provenance/transformer_realistic_bridge_v1_r2_recovery/PRELOCK_PARITY.json",
+  "created_time_ns": 1786336458170019764,
+  "historical_reports": [
+    {
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_recovery/PRELOCK_PARITY_PRE_LIFECYCLE_BINDING.json",
+      "sha256": "6be41d0706d4e041cc5152299abfcaf7872add4be02fcf980bc2ca8bb77732cf",
+      "status": "SUPERSEDED_NONAUTHORITATIVE"
+    },
+    {
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_recovery/PRELOCK_PARITY_BEFORE_FAIL_CLOSED_PREFLIGHT.json",
+      "sha256": "5d8e7c30ae000ea333016cfc955de626c7e9c053b34288352594d8089bfa45c5",
+      "status": "SUPERSEDED_NONAUTHORITATIVE"
+    },
+    {
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_recovery/PRELOCK_PARITY_BEFORE_REVIEW_BINDING_SUPPLEMENT.json",
+      "sha256": "50b3d67da1c68c893248ff9016aa7568ce33203fff20049c7d6e7649cbd084ad",
+      "status": "SUPERSEDED_NONAUTHORITATIVE"
+    }
+  ],
+  "schema_version": "transformer_realistic_bridge_v1_r2_superseded_parity_index",
+  "status": "AUDIT_ONLY_NONAUTHORITATIVE"
+}

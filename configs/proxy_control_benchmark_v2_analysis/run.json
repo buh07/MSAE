@@ -1,0 +1,28 @@
+{
+  "schema_version": "proxy_control_benchmark_v2_analysis_config",
+  "namespace": "proxy_control_benchmark_v2_analysis_20260808",
+  "input_root": "results/proxy_control_benchmark_v2_20260808",
+  "aggregate_result_sha256": "f59b0a0fd3a2f12c764ba9e4977f151552b590c3518405899d0ffa9740c7315b",
+  "aggregate_complete_sha256": "db10bee30d9f3e7a35358cef5cf5d571c8c0fd257e278b263dca205cb5193bb3",
+  "synthetic_result_sha256": "182183b70896a0eac68dff2e42be608cabc836fa53acedc5e18c676f68d23f0a",
+  "synthetic_pass_sha256": "e664752b0e1498b142d616cc94cee753ecf95464fe3d91230071a295a400a7b5",
+  "freeze": "configs/proxy_control_benchmark_v2/FREEZE.json",
+  "freeze_sha256": "6d74a766ff4a1ce51f887a5de44f5939673bfb344dcad188056c863151cc44f3",
+  "output_root": "results/proxy_control_benchmark_v2_analysis_20260808",
+  "thresholds": {
+    "minimum_eligibility": 0.8,
+    "minimum_recovery_ci_lower": 0.1,
+    "minimum_specificity_ci_lower": 0.1,
+    "maximum_collateral_ci_upper": 0.02
+  },
+  "stage_map": {
+    "1": "early",
+    "2": "early",
+    "6": "middle",
+    "12": "middle",
+    "10": "late",
+    "22": "late"
+  },
+  "new_model_forwards": 0,
+  "analysis_only": true
+}

@@ -1,0 +1,114 @@
+{
+  "analysis": {
+    "assignment_margin": 0.05,
+    "bootstrap_draws": 500,
+    "context_capture_minimum": 0.1,
+    "haar_reference": 0.020833333333333332,
+    "lexical_complement_minimum": 0.9,
+    "minimum_finite_draws": 490,
+    "quantile_method": "linear",
+    "quantiles": [
+      0.025,
+      0.5,
+      0.975
+    ],
+    "rank": 16,
+    "rank_ratio_floor": 1e-06,
+    "raw_effect_ci_threshold": 1e-05,
+    "raw_effect_point_threshold": 0.0001,
+    "representation_norm_floor": 1e-12,
+    "scientific_small_delta_threshold": 0.0001,
+    "technical_equivalence_threshold": 1e-05,
+    "technical_max_failure_rate": 0.005,
+    "unrelated_energy_margin": 0.05
+  },
+  "attempt": 14,
+  "exploratory": true,
+  "intervention": {
+    "bootstrap_draws": 500,
+    "downstream_offset_bins": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        8
+      ]
+    ],
+    "minimum_bootstrap_support_draws": 490,
+    "minimum_components": 64,
+    "minimum_distinct_bootstrap_components": 16,
+    "minimum_documents": 128,
+    "natural_boundary": " ",
+    "open_class_upos": [
+      "NOUN",
+      "VERB",
+      "ADJ",
+      "ADV",
+      "PROPN"
+    ]
+  },
+  "model": {
+    "attention_implementation": "eager",
+    "dtype": "float32",
+    "hidden_state_index": 4,
+    "layer": 3,
+    "local_files_only": true,
+    "max_positions": 2048,
+    "name": "EleutherAI/pythia-160m-deduped",
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+    "width": 768
+  },
+  "namespace": "atlas_context_local_v10_attempt14",
+  "neural_training_authorized": false,
+  "no_retry_authorized": true,
+  "paths": {
+    "attempt13_result": "results/atlas_relation_context_v9_attempt13",
+    "attempt13_run": "pilot_runs/20260803_atlas_relation_context_v9_attempt13",
+    "global_opening": "pilot_runs/scientific_source_openings/atlas_context_local_v10_attempt14.OPENED.json",
+    "prepared_root": "data/atlas_context_local_v10_attempt14/prepared",
+    "result_root": "results/atlas_context_local_v10_attempt14",
+    "run_root": "pilot_runs/20260804_atlas_context_local_v10_attempt14"
+  },
+  "raw_files": {
+    "es_ancora-ud-dev.conllu": "1a132068062edf2654fb45b41cd4c59ba7e5c18e7c5f642ed5a9cc351fd9f0fe",
+    "es_ancora-ud-test.conllu": "679f1c05ca654aa26801c80319df45f8f97606718fb534b91755b48f3e67fa6f",
+    "es_ancora-ud-train.conllu": "47b6fc49d6ed48a016e7fa5ad9f5c7ecf3ec21e9db005df3ea14d10f07c6deb6"
+  },
+  "raw_root": "data/atlas_context_local_v10_raw/UD_Spanish-AnCora/20adddbfcdd773c6dc97ba48ea11ca9364e74185",
+  "representation_training_authorized": false,
+  "retry_authorized": false,
+  "runtime": {
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": true,
+    "gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "physical_gpu_index": 0,
+    "visible_device": "cuda:0"
+  },
+  "schema_version": "atlas_context_local_v10_attempt14_config_v1",
+  "seed": 20260804,
+  "signer": {
+    "algorithm": "Ed25519",
+    "public_key_base64": "b/WJqLdV0veGmaeyEwvy05Jpyp1I3N3P7U+ROpiDXWs=",
+    "public_key_fingerprint_sha256": "810ab27af6f8245a784cf5530aea78f4cd3dea937e696d73c600f0fc84a15c48"
+  },
+  "sources": {
+    "ANCORA_3LB": {
+      "expected_multi_docs": 276,
+      "expected_total_docs": 279,
+      "newdoc_prefix": "3LB-"
+    },
+    "ANCORA_CESS": {
+      "expected_multi_docs": 1328,
+      "expected_total_docs": 1356,
+      "newdoc_prefix": "CESS-"
+    }
+  },
+  "supervised_model_training_authorized": false,
+  "tmux_session": "msae_atlas_context_local_attempt14_20260804"
+}

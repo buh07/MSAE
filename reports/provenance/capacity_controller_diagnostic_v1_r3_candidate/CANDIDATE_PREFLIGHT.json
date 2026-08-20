@@ -1,0 +1,406 @@
+{
+  "basis_checks": [
+    {
+      "condition": 1.6666666666666652,
+      "instance": 41011,
+      "max_abs": 1.0307214248095852e-15,
+      "pass": true
+    },
+    {
+      "condition": 1.6666666666666659,
+      "instance": 41037,
+      "max_abs": 1.1102230246251565e-15,
+      "pass": true
+    },
+    {
+      "condition": 1.6666666666666656,
+      "instance": 41081,
+      "max_abs": 1.0026219061033527e-15,
+      "pass": true
+    }
+  ],
+  "compatibility_smoke": {
+    "cpu": {
+      "all_target_jacobian_ranks": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "device": "cpu",
+      "fit_families": [
+        "closed_form_linear_full64",
+        "exact_delta_gt",
+        "label_only",
+        "observed_input_transplant",
+        "paired_linear_rank4",
+        "random_rank4",
+        "reduced_rank_regression_rank4",
+        "target_linear_rank4",
+        "target_nonlinear_rank4",
+        "unpaired_pca_rank4",
+        "within_target_delta_permutation",
+        "zero"
+      ],
+      "numpy_version": "1.26.4",
+      "scored_methods": 12,
+      "technical_valid": true,
+      "torch_version": "2.7.0"
+    },
+    "cuda": {
+      "all_target_jacobian_ranks": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "device": "cuda",
+      "fit_families": [
+        "closed_form_linear_full64",
+        "exact_delta_gt",
+        "label_only",
+        "observed_input_transplant",
+        "paired_linear_rank4",
+        "random_rank4",
+        "reduced_rank_regression_rank4",
+        "target_linear_rank4",
+        "target_nonlinear_rank4",
+        "unpaired_pca_rank4",
+        "within_target_delta_permutation",
+        "zero"
+      ],
+      "numpy_version": "1.26.4",
+      "scored_methods": 12,
+      "technical_valid": true,
+      "torch_version": "2.7.0"
+    }
+  },
+  "environment_absence": {
+    "gpu_lock_glob": "msae_capacity_external_r3_*.lockdir",
+    "gpu_locks_absent": true,
+    "tmux_absent": true,
+    "tmux_session": "capacity_external_validity_v1_20260810r3"
+  },
+  "failure_preservation": {
+    "facts": {
+      "capacity_confirmation_opened": false,
+      "capacity_development_complete": false,
+      "capacity_development_opened": true,
+      "capacity_final_exists": false,
+      "capacity_train_opened": true,
+      "external_access_may_have_occurred": false,
+      "external_payload_accessed": false,
+      "external_status": "BLOCKED_UNOPENED",
+      "external_train_opened": false,
+      "external_training_performed": false
+    },
+    "files": 58,
+    "manifest_sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96",
+    "partial_checkpoints": 27,
+    "status": "PASS"
+  },
+  "files": [
+    {
+      "bytes": 72165,
+      "path": "PAPER.md",
+      "sha256": "512cb8014c51f44c0680adbb34a23e3ef7ba115081d80a009de00849d252a2cc"
+    },
+    {
+      "bytes": 10926,
+      "path": "PLAN_CAPACITY_EXTERNAL_VALIDITY_V1_R3.md",
+      "sha256": "958b38611e27b426b62bf2ebcaa621de24d583c4e3895afe5d047a09f66afd08"
+    },
+    {
+      "bytes": 5982,
+      "path": "configs/capacity_controller_diagnostic_v1_r3/run.json",
+      "sha256": "dd74d3333911605561384d6ebd1bdbe37a54f138a08d261801ec5655f8c38b40"
+    },
+    {
+      "bytes": 3444,
+      "path": "configs/trained_copy_external_v1_r3/run.json",
+      "sha256": "404137c799f40ed7db77001b06beb66ea5856cfefbfb8f9ef982c1efa544541c"
+    },
+    {
+      "bytes": 863,
+      "path": "reports/adversarial/capacity_external_validity_v1_r3_plan_review.md",
+      "sha256": "4d30a787678e07362cd33e79a2714b17060e6a43ba7d67dd7028aedea1435d4d"
+    },
+    {
+      "bytes": 134879,
+      "path": "reports/paper_claim_ledger_v1.json",
+      "sha256": "6e3d132d63ca6651a9e5c5c9c7c95b17b7ff60cb13facf673a371e0cddd846e2"
+    },
+    {
+      "bytes": 21741,
+      "path": "reports/provenance/capacity_external_validity_v1_failure_preservation/PRESERVATION.json",
+      "sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96"
+    },
+    {
+      "bytes": 1033,
+      "path": "reports/provenance/capacity_external_validity_v1_r2_invalid_candidate/PRESERVATION.json",
+      "sha256": "3dbcc809636353748f54fb27faf5f6e9f44bb2d314e46654372075d923c2e7cd"
+    },
+    {
+      "bytes": 17145,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_postresult/PRESERVATION.json",
+      "sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2"
+    },
+    {
+      "bytes": 78734,
+      "path": "scripts/capacity_external_validity_v1_r3.py",
+      "sha256": "743a56bbf192d74ca8a25213797f8ec1be967670e01a30e73fad36dc54324965"
+    },
+    {
+      "bytes": 3410,
+      "path": "scripts/launch_capacity_external_validity_v1_r3_tmux.sh",
+      "sha256": "6ffd1a824c598ef2d9c674434ae3e1084bc088685e4ea3ded87905af2d1d4d5c"
+    },
+    {
+      "bytes": 5260,
+      "path": "scripts/preserve_capacity_external_validity_v1_failure.py",
+      "sha256": "5d9f9a423f0a82dd33b9bdea4a1b2e191bb4b5fcd619517befaa4ea609b957d8"
+    },
+    {
+      "bytes": 7735,
+      "path": "tests/test_capacity_external_validity_v1_r3.py",
+      "sha256": "de57e43101fa8b43ad6dd2443a26bc6440e02316bc277aa753bba7430b9e487b"
+    }
+  ],
+  "kind": "capacity",
+  "nonpanel_ols_max_abs": 2.970818036018841e-13,
+  "paper": {
+    "claims": 80,
+    "evidence_bindings": 385,
+    "paper_selectors": 22,
+    "status": "PASS"
+  },
+  "parity": {
+    "config_pairs": [
+      {
+        "allowed_pointer_prefixes": [
+          "/namespace",
+          "/runtime",
+          "/recovery"
+        ],
+        "new": "configs/capacity_controller_diagnostic_v1_r3/run.json",
+        "old": "configs/capacity_controller_diagnostic_v1/run.json",
+        "scientific_sha256": "c7530f43acf52dc82a1371e37426ab7a3a620567ec47b28afe086c1dbdc3584a"
+      },
+      {
+        "allowed_pointer_prefixes": [
+          "/namespace",
+          "/runtime",
+          "/recovery"
+        ],
+        "new": "configs/trained_copy_external_v1_r3/run.json",
+        "old": "configs/trained_copy_external_v1/run.json",
+        "scientific_sha256": "f48f55d262fb171869a41bc546b6ccd1dc8d47df65af42944efcb84c8d9b10e8"
+      }
+    ],
+    "exact_fit_ast_sha256": {
+      "derived_r3": "1fc72d80a7c5e9fdccdce94eb70374d6897e8ec1a68bd3aba705a5695239423f",
+      "v1": "50c4765b3eea25ed2f6dd12607a90c6f58fcbae25640c73b5eac12cbff976250"
+    },
+    "r3_source_sha256": "743a56bbf192d74ca8a25213797f8ec1be967670e01a30e73fad36dc54324965",
+    "restore_paths_forbidden": true,
+    "scientific_symbols_verified": [
+      "CopyTransformer",
+      "FactorLinear",
+      "Method",
+      "TargetLinear",
+      "TargetMLP",
+      "atomic_json",
+      "atomic_text",
+      "canon",
+      "capacity_arrays",
+      "capacity_basis_check",
+      "capacity_mats",
+      "centered",
+      "cfg",
+      "control_delta",
+      "direction_metrics",
+      "eval_methods",
+      "event",
+      "external_blocked",
+      "external_metric_summary",
+      "external_qualification",
+      "external_rows",
+      "gate",
+      "interval",
+      "inventory",
+      "loadj",
+      "make_capacity_rows",
+      "mutation_suite",
+      "norm_match",
+      "open_rows",
+      "paper_verify",
+      "payload_creation_allowed",
+      "payload_records_from_metadata",
+      "predict",
+      "prepare",
+      "qr_canonical",
+      "read_jsonl",
+      "rng",
+      "row_margin",
+      "rows_tensors",
+      "rp",
+      "safe_event",
+      "score_copy_model",
+      "score_prediction",
+      "seed32",
+      "sha",
+      "support",
+      "svd_canonical",
+      "timed_smoke",
+      "train_copy",
+      "train_model",
+      "verify_candidate_manifest",
+      "verify_review",
+      "write_external_failure_if_unopened",
+      "write_jsonl"
+    ],
+    "source_allowlist": {
+      "compatibility": [
+        "first_true_index",
+        "empirical_jacobian_ranks",
+        "deterministic v1 fit_methods rewrite"
+      ],
+      "recovery_lifecycle": [
+        "bind_reviews",
+        "binding_path",
+        "candidate_files",
+        "candidate_preflight",
+        "capacity_pipeline",
+        "create_locks",
+        "external_pipeline",
+        "freeze_both",
+        "freeze_one",
+        "gpu_validate",
+        "launch_preflight",
+        "launcher_render",
+        "locks_valid",
+        "main",
+        "preservation_verify",
+        "run_pipeline",
+        "signal_terminal",
+        "verify_binding",
+        "verify_freeze"
+      ]
+    },
+    "status": "PASS",
+    "v1_source_sha256": "0de71873feffb463f8ecde96e6db642cae18c145c42d9e76fe971999bd7185c7"
+  },
+  "preservation": {
+    "files_declared": 76,
+    "inventory_traversed": false,
+    "manifest_sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2",
+    "status": "PASS_NONPAYLOAD_MANIFEST_ONLY"
+  },
+  "r3_absence_checks": [
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r3_candidate"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r3_candidate_review.md"
+    },
+    {
+      "absent": true,
+      "path": "configs/capacity_controller_diagnostic_v1_r3/RECOVERY_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "configs/capacity_controller_diagnostic_v1_r3/FREEZE.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r3_frozen_review.md"
+    },
+    {
+      "absent": true,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r3"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r3_run_20260810r3"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/trained_copy_external_v1_r3_candidate"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/trained_copy_external_v1_r3_candidate_review.md"
+    },
+    {
+      "absent": true,
+      "path": "configs/trained_copy_external_v1_r3/RECOVERY_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "configs/trained_copy_external_v1_r3/FREEZE.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/adversarial/trained_copy_external_v1_r3_frozen_review.md"
+    },
+    {
+      "absent": true,
+      "path": "results/trained_copy_external_v1_20260810r3"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/trained_copy_external_v1_r3_run_20260810r3"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_external_validity_v1_r3_REVIEW_BINDING.json"
+    },
+    {
+      "absent": true,
+      "path": "reports/provenance/capacity_external_validity_v1_r3_launcher_20260810r3.log"
+    }
+  ],
+  "scientific_jsonl_accessed": false,
+  "status": "PASS",
+  "timed_smoke": {
+    "checkpoint_bytes": 74147,
+    "device": "cuda",
+    "external_100_steps_final_loss": 0.013484921306371689,
+    "peak_gpu_bytes": 68313600,
+    "projected_disk_bytes": 150222441,
+    "rank_sweep_mse": {
+      "16": 0.0256087174717997,
+      "32": 0.010075242554450907,
+      "4": 0.3898103987675022,
+      "64": 3.7222270138361065e-30,
+      "8": 0.24886367541903726
+    },
+    "wall_seconds": 2.075791358947754
+  }
+}

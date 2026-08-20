@@ -1,0 +1,63 @@
+{
+  "attempt13": {
+    "decision": "RELATIONAL_DECODABILITY_NOT_DEMONSTRATED_FOR_ALL_PRESPECIFIED_TASKS",
+    "result_files": 3,
+    "result_inventory_sha256": "686a6634974692553adb61f78961e35f7f30fb05a411220636bb5e400e57fd42",
+    "run_files": 8,
+    "run_inventory_sha256": "ff73bd6c11c45c38d67b467b04c42b8436bac6b24eb3e8ce4b087bcee1924b52",
+    "terminal_path": "pilot_runs/20260803_atlas_relation_context_v9_attempt13/TERMINAL.json",
+    "terminal_sha256": "ca3e139b3fecc7da008321b19d81de52f11db56dee74d6ec78ebd9fa9385c8bc",
+    "terminal_status": "TERMINAL_COMPLETE"
+  },
+  "attempt14": {
+    "decision": "CONTEXT_DETECTABLE_BUT_NOT_CLEANLY_SEPARABLE_AT_THIS_LAYER",
+    "gate4_preserved_unfavorable": true,
+    "result_files": 4,
+    "result_inventory_sha256": "aec77c7c5078dff3f0ccf5b8e3fc8c230cdd390a70a138a43e8b7b47529d7e4a",
+    "run_files": 6,
+    "run_inventory_sha256": "fe49ff2583f1362a950b19e4f2474c982b83f7e12887e4716260a5b4a6bfc8ac",
+    "terminal_path": "pilot_runs/20260804_atlas_context_local_v10_attempt14/TERMINAL.json",
+    "terminal_sha256": "a0a3fd158feccdaae9aa1a621b110a91fd21746e519592a949de19f32ceb0185",
+    "terminal_status": "TERMINAL_COMPLETE"
+  },
+  "central_conclusion": "These activations contain the information, but containing information is not the same as organizing it into clean causal modules.",
+  "closed_utc": "2026-08-04",
+  "failed_gates": [
+    "Attempt 13 did not demonstrate strong recovery and relation-specific isolation for every prespecified relational task.",
+    "Attempt 14 failed coherent-context versus unrelated-context specificity Gate 4 in both transfer directions."
+  ],
+  "forbidden_actions": {
+    "added_branch_capacity": false,
+    "additional_k2_seeds": false,
+    "attempt14_gate4_relaxation": false,
+    "higher_incoherence": false,
+    "shared_branch_training": false,
+    "supervised_context_local_training": false
+  },
+  "forbidden_claims": [
+    "The Attempt-14 projection matched or beat a learned context/local model.",
+    "The context subspace was isolated or causal.",
+    "Attempts 13/14 established transformer-wide absence of separability."
+  ],
+  "formal_conclusion": "Context is encoded, but the proposed projection is not specific enough to serve as a context-private component.",
+  "future_program_boundary": {
+    "continuation_of_attempt14": false,
+    "namespace": "relational_attention_edges_v1_discovery1",
+    "neural_training_authorized": false,
+    "representation_training_authorized": false
+  },
+  "learned_projection_comparator_claim_authorized": false,
+  "preservation_manifest_path": "reports/preservation_attempt13_attempt14_v1.json",
+  "preservation_manifest_sha256": "d765f8a48b00a1c51b3b19f8198572e7e5511757aa8b34ee45ff6423876ec644",
+  "running_forbidden_training_processes": [],
+  "schema_version": "msae_architecture_program_closure_v1",
+  "status": "POSITION_CONTEXT_ARCHITECTURE_PROGRAM_CLOSED",
+  "supported_positive_claims": [
+    "Positional, contextual, lexical, and syntactic information was recoverable under at least some frozen protocols.",
+    "Attempt 14 found transferable rank-16 context-difference variance and passed context/lexical assignment plus lexical preservation gates."
+  ],
+  "unmeasured_claims": [
+    "No directly supervised context/local learned comparator was trained.",
+    "Nonlinear, other-layer, larger-model, and attention-link separation were not tested by Attempt 14."
+  ]
+}

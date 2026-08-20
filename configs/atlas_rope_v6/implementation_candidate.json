@@ -1,0 +1,72 @@
+{
+  "attempt10_run_root_absent": true,
+  "implementation_inventory": {
+    "PLAN_ATTEMPT10.md": {
+      "bytes": 9247,
+      "sha256": "e7dbf19071cc1471957ee51cc6560301b6003600a16c41fad20de08535b6b40a"
+    },
+    "configs/atlas_rope_v6/amendment.json": {
+      "bytes": 1153,
+      "sha256": "aa2a8b41100b926ead8012ce1035f7c3e5572e0027543fc9da6e7f440e3994e0"
+    },
+    "configs/atlas_rope_v6/science_adapter.json": {
+      "bytes": 10248,
+      "sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0"
+    },
+    "docs/rfc-atlas-v3-6-attempt10-budget-amendment.md": {
+      "bytes": 1383,
+      "sha256": "6e8469869c08e26b41fb83aa3cd2b9bf959b4ef0e31d1e2559b73e9fd5348b7f"
+    },
+    "requirements-atlas.lock.txt": {
+      "bytes": 417,
+      "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+    },
+    "scripts/atlas_rope_v6.py": {
+      "bytes": 45675,
+      "sha256": "0a26e76c698397e8d103615eb872a6c20d9648410b16957b66faeadf4cdb0f75"
+    },
+    "scripts/launch_atlas_rope_v6_tmux.sh": {
+      "bytes": 1895,
+      "sha256": "9633eff694579f8b9a845a603bcd278d93d9b34e43a9cb6af4d9fa14c486116f"
+    },
+    "scripts/run_atlas_rope_v6.py": {
+      "bytes": 45453,
+      "sha256": "8aacc345272149441cafb899983477a215c4c0021f325e77c0e7a26875a5c92a"
+    },
+    "scripts/run_atlas_rope_v6_pipeline.sh": {
+      "bytes": 1596,
+      "sha256": "b3a0edb1fd3e12d8b2a11808ee5c92c0e72e5a83b7f50373ef5e965bb1632402"
+    },
+    "scripts/run_atlas_rope_v6_science.py": {
+      "bytes": 23312,
+      "sha256": "4f85d1b31778d757de55a0c727156645c8b377162e537ce5e19c4af7c57f9047"
+    },
+    "tests/test_atlas_rope_v6.py": {
+      "bytes": 5147,
+      "sha256": "cadfffb670efa934bee8bc66993c9db919574476ddda480bf960138ff360b9c6"
+    },
+    "tests/test_atlas_rope_v6_science.py": {
+      "bytes": 2237,
+      "sha256": "2bbc82e32da3e8dab0df3d5ba3ce248980996ef9732cfbecfb3b68a4b03cebb4"
+    }
+  },
+  "implementation_inventory_sha256": "9fcb42f7225341fa19016ab651f136ba7b89c5ad0ce30f2f234f7e2b20930f2b",
+  "neural_training_authorized": false,
+  "schema_version": "atlas_rope_v6_attempt10_implementation_candidate_v1",
+  "static_no_training_scan": {
+    "findings": [],
+    "paths": [
+      "scripts/atlas_rope_v6.py",
+      "scripts/run_atlas_rope_v6.py",
+      "scripts/run_atlas_rope_v6_science.py",
+      "tests/test_atlas_rope_v6.py",
+      "tests/test_atlas_rope_v6_science.py"
+    ],
+    "status": "PASS"
+  },
+  "status": "READY_FOR_IMPLEMENTATION_ADVERSARIAL_REVIEW",
+  "verification_report": {
+    "path": "reports/atlas_rope_v6/implementation_verification.json",
+    "sha256": "1b71b73775fb39977964ccbc2b246b2923a178f2934a8857c162b82e33af785a"
+  }
+}

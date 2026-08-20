@@ -1,0 +1,2066 @@
+{
+  "claims": [
+    {
+      "claim": "Pre-K2 rank/layer screen passed all rank-8/rank-16 headline rows, no rank-32 boundary rows, and selected layer 3.",
+      "evidence": [
+        {
+          "path": "reports/pre_k2_suite_v6/RESULTS.md",
+          "selector": "- Headline all-pass-v2 rate (`r8/r16`, all split modes): `1.000` (92/92)",
+          "sha256": "f67ed5b976082ac8c313432fe0762019d41d0a76ed4a6467522974c141301b3d"
+        },
+        {
+          "expected": 3,
+          "path": "reports/pre_k2_suite_v6/pre_k2_decision.json",
+          "pointer": "/primary_layer_recommendation",
+          "sha256": "43281025944f9a6392e74755ec4caf6ccf9e3658e577b475005fdd40ac616c18"
+        }
+      ],
+      "id": "C001",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Raw L3 atlas positional projections had negative selectivity while lexical complement selectivity was strongly positive.",
+      "evidence": [
+        {
+          "path": "reports/raw_atlas_results.md",
+          "selector": "| split absolute position | 0.930 | 1.065 | -0.135 |",
+          "sha256": "653b8f04acaed3acb3d2ee9888f8dfc0f29a8f51c45b3d2ab355812ed6223329"
+        },
+        {
+          "path": "reports/raw_atlas_results.md",
+          "selector": "| split structural position | 0.863 | 0.989 | -0.126 |",
+          "sha256": "653b8f04acaed3acb3d2ee9888f8dfc0f29a8f51c45b3d2ab355812ed6223329"
+        },
+        {
+          "path": "reports/raw_atlas_results.md",
+          "selector": "| split lexical/semantic | 1.000 | 0.012 | +0.988 |",
+          "sha256": "653b8f04acaed3acb3d2ee9888f8dfc0f29a8f51c45b3d2ab355812ed6223329"
+        },
+        {
+          "path": "reports/raw_atlas_results.md",
+          "selector": "| broad absolute position | 0.935 | 1.068 | -0.133 |",
+          "sha256": "653b8f04acaed3acb3d2ee9888f8dfc0f29a8f51c45b3d2ab355812ed6223329"
+        },
+        {
+          "path": "reports/raw_atlas_results.md",
+          "selector": "| broad structural position | 0.979 | 0.991 | -0.013 |",
+          "sha256": "653b8f04acaed3acb3d2ee9888f8dfc0f29a8f51c45b3d2ab355812ed6223329"
+        },
+        {
+          "path": "reports/raw_atlas_results.md",
+          "selector": "| broad-complement lexical/semantic | 0.999 | 0.070 | +0.929 |",
+          "sha256": "653b8f04acaed3acb3d2ee9888f8dfc0f29a8f51c45b3d2ab355812ed6223329"
+        }
+      ],
+      "id": "C002",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Raw atlas probes decoded nine tasks but structural intervals depended on five LinES documents.",
+      "evidence": [
+        {
+          "path": "reports/raw_atlas_results.md",
+          "selector": "All nine raw tasks were decodable above analytic chance under the fixed-probe diagnostic. Examples: absolute-16 macro-F1 `0.1165` vs chance `0.0623`; relative quartile `0.5342` vs `0.2500`; head signed distance `0.4080` vs `0.1093`; token identity `1.0000` vs `0.0251`; NER `0.6584` vs `0.1988`. Dependency-depth and head-distance intervals, however, resample only **five LinES documents**, so token counts do not remove the power limitation.",
+          "sha256": "653b8f04acaed3acb3d2ee9888f8dfc0f29a8f51c45b3d2ab355812ed6223329"
+        }
+      ],
+      "id": "C003",
+      "status": "exploratory"
+    },
+    {
+      "claim": "K2 training achieved low reconstruction error and geometric incoherence but did not supervise branch semantics.",
+      "evidence": [
+        {
+          "path": "reports/k2_postwave_comparison.md",
+          "selector": "| g4 | 42 | 0.01 | 400,016,486 | 1,000,000,016 | 0.076385 | 0.004643 | 0.8870 | 0.9112 |",
+          "sha256": "07462cea01438250e42db61f0e72aeef2aef9049015c8be59815eb3b13dca87d"
+        },
+        {
+          "path": "scripts/train_msae_k2.py",
+          "selector": "    p.add_argument(\"--m_pos\", type=int, default=8192)\n    p.add_argument(\"--k_pos\", type=int, default=8)\n    p.add_argument(\"--m_content\", type=int, default=32768)\n    p.add_argument(\"--k_content\", type=int, default=24)",
+          "sha256": "e29612f733efda1bd71ccaf75ab4ca23713d9d3812123c9dd7f76a0a7d431ddc"
+        },
+        {
+          "path": "reports/k2_postwave_comparison.md",
+          "selector": "| g5 | 43 | 0.01 | 400,016,486 | 1,000,000,016 | 0.071359 | 0.003150 | 0.8973 | 0.9257 |",
+          "sha256": "07462cea01438250e42db61f0e72aeef2aef9049015c8be59815eb3b13dca87d"
+        },
+        {
+          "path": "reports/k2_postwave_comparison.md",
+          "selector": "| g6 | 44 | 0.01 | 300,016,447 | 1,000,000,042 | 0.073543 | 0.002811 | 0.8959 | 0.9346 |",
+          "sha256": "07462cea01438250e42db61f0e72aeef2aef9049015c8be59815eb3b13dca87d"
+        },
+        {
+          "path": "reports/k2_postwave_comparison.md",
+          "selector": "| g7 | 42 | 0 | 400,016,486 | 1,000,000,016 | 0.069778 | 0.015200 | 0.9233 | 0.9298 |",
+          "sha256": "07462cea01438250e42db61f0e72aeef2aef9049015c8be59815eb3b13dca87d"
+        }
+      ],
+      "id": "C004",
+      "status": "valid"
+    },
+    {
+      "claim": "Fixed-probe K2 branch selectivity was negative for all four checkpoints despite low C2 FVU.",
+      "evidence": [
+        {
+          "path": "reports/k2_atlas_audit_results.md",
+          "selector": "| g4, regularized seed 42 | -0.103 | +0.304 | -0.407 | 0.0324 |",
+          "sha256": "c924d7a1e1352dca9c85de64b3d244d70bc0f6fd0db0b80f2af891bdf2bdbfba"
+        },
+        {
+          "path": "reports/k2_atlas_audit_results.md",
+          "selector": "| g5, regularized seed 43 | -0.107 | +0.304 | -0.411 | 0.0504 |",
+          "sha256": "c924d7a1e1352dca9c85de64b3d244d70bc0f6fd0db0b80f2af891bdf2bdbfba"
+        },
+        {
+          "path": "reports/k2_atlas_audit_results.md",
+          "selector": "| g6, regularized seed 44 | -0.146 | +0.304 | -0.450 | 0.0208 |",
+          "sha256": "c924d7a1e1352dca9c85de64b3d244d70bc0f6fd0db0b80f2af891bdf2bdbfba"
+        },
+        {
+          "path": "reports/k2_atlas_audit_results.md",
+          "selector": "| g7, no-incoherence seed 42 | -0.042 | +0.304 | -0.346 | 0.0258 |",
+          "sha256": "c924d7a1e1352dca9c85de64b3d244d70bc0f6fd0db0b80f2af891bdf2bdbfba"
+        }
+      ],
+      "id": "C005",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Atlas completion stopped with 414 of 500 scientifically finite L3 draws because resamples omitted frozen classes.",
+      "evidence": [
+        {
+          "path": "reports/atlas_completion_results.md",
+          "selector": "All 500 registered L3 draw artifacts were produced and no worker draw failed\ntechnically. However, 86 draws were scientifically nonfinite because a\ndocument/source bootstrap omitted at least one frozen truth class in a required\nTier-2 sentinel evaluation.",
+          "sha256": "c41eec6df564e5ebb85bef0e722dcee604ffa38bc2a1d4035bcea2a6b46c0db0"
+        }
+      ],
+      "id": "C006",
+      "status": "technical-invalid"
+    },
+    {
+      "claim": "Calibration eligibility failed for four tasks due sparse independent-document class support.",
+      "evidence": [
+        {
+          "path": "reports/atlas_completion_results.md",
+          "selector": "| `abs_pos_16` | 316 |",
+          "sha256": "c41eec6df564e5ebb85bef0e722dcee604ffa38bc2a1d4035bcea2a6b46c0db0"
+        },
+        {
+          "path": "reports/atlas_completion_results.md",
+          "selector": "| `abs_pos_8` | 438 |",
+          "sha256": "c41eec6df564e5ebb85bef0e722dcee604ffa38bc2a1d4035bcea2a6b46c0db0"
+        },
+        {
+          "path": "reports/atlas_completion_results.md",
+          "selector": "| `lemma_identity_256` | 320 |",
+          "sha256": "c41eec6df564e5ebb85bef0e722dcee604ffa38bc2a1d4035bcea2a6b46c0db0"
+        },
+        {
+          "path": "reports/atlas_completion_results.md",
+          "selector": "| `token_identity_256` | 314 |",
+          "sha256": "c41eec6df564e5ebb85bef0e722dcee604ffa38bc2a1d4035bcea2a6b46c0db0"
+        }
+      ],
+      "id": "C007",
+      "status": "technical-invalid"
+    },
+    {
+      "claim": "Diagnostic completion had identical 414/500 K2 completeness, no joint stability draws, and invalid specificity replays.",
+      "evidence": [
+        {
+          "path": "reports/atlas_completion_results.md",
+          "selector": "| Four K2 point/refit series | four points and `4 \u00d7 500` draws produced | every series `414/500` scientifically finite; stopped below `>=450` |",
+          "sha256": "c41eec6df564e5ebb85bef0e722dcee604ffa38bc2a1d4035bcea2a6b46c0db0"
+        }
+      ],
+      "id": "C008",
+      "status": "technical-invalid"
+    },
+    {
+      "claim": "Measurement v2.4 was eligible and rejected the K2 selective-decomposition conjunction.",
+      "evidence": [
+        {
+          "expected": "eligible",
+          "path": "pilot_runs/20260802_atlas_measurement_v2_4/analysis/results.json",
+          "pointer": "/overall_decision_eligibility",
+          "sha256": "c982eade2616cf2bf0fc8f772448b7a0fcad76ce1d57700975054ca1436328cf"
+        },
+        {
+          "expected": "K2_broad_position_content_selective_not_supported",
+          "path": "pilot_runs/20260802_atlas_measurement_v2_4/analysis/results.json",
+          "pointer": "/architecture_outcome",
+          "sha256": "c982eade2616cf2bf0fc8f772448b7a0fcad76ce1d57700975054ca1436328cf"
+        }
+      ],
+      "id": "C009",
+      "status": "valid"
+    },
+    {
+      "claim": "Head signed distance localized poorly in every regularized checkpoint.",
+      "evidence": [
+        {
+          "expected": -0.4111894704294118,
+          "path": "pilot_runs/20260802_atlas_measurement_v2_4/analysis/results.json",
+          "pointer": "/localization/g4/tasks/head_signed_distance/selectivity/point",
+          "sha256": "c982eade2616cf2bf0fc8f772448b7a0fcad76ce1d57700975054ca1436328cf"
+        },
+        {
+          "expected": -0.3353045339254733,
+          "path": "pilot_runs/20260802_atlas_measurement_v2_4/analysis/results.json",
+          "pointer": "/localization/g6/tasks/head_signed_distance/selectivity/point",
+          "sha256": "c982eade2616cf2bf0fc8f772448b7a0fcad76ce1d57700975054ca1436328cf"
+        }
+      ],
+      "id": "C010",
+      "status": "valid"
+    },
+    {
+      "claim": "Relative quartile was recoverable from position but leaked equally or more into content.",
+      "evidence": [
+        {
+          "expected": 0.9317590133658475,
+          "path": "pilot_runs/20260802_atlas_measurement_v2_4/analysis/results.json",
+          "pointer": "/localization/g4/tasks/relative_quartile/assigned_recovery/point",
+          "sha256": "c982eade2616cf2bf0fc8f772448b7a0fcad76ce1d57700975054ca1436328cf"
+        },
+        {
+          "expected": 1.0384891477979434,
+          "path": "pilot_runs/20260802_atlas_measurement_v2_4/analysis/results.json",
+          "pointer": "/localization/g4/tasks/relative_quartile/leakage/point",
+          "sha256": "c982eade2616cf2bf0fc8f772448b7a0fcad76ce1d57700975054ca1436328cf"
+        }
+      ],
+      "id": "C011",
+      "status": "valid"
+    },
+    {
+      "claim": "Token identity localized to content for all regularized checkpoints, while the lexical cross-control failed.",
+      "evidence": [
+        {
+          "path": "reports/adversarial/atlas_measurement_v2_v24_claim_review.md",
+          "selector": "- Token-identity probe localization passes for all candidates (assigned-recovery points `0.834`\u2013`0.862`,",
+          "sha256": "639ea11beb1d45080828bb84f8d2e5088cd39e0c86fbc990702c256e1acab346"
+        }
+      ],
+      "id": "C012",
+      "status": "valid"
+    },
+    {
+      "claim": "Cross-checkpoint geometry was extremely similar but did not establish selective identity.",
+      "evidence": [
+        {
+          "path": "reports/atlas_completion_results.md",
+          "selector": "The relative/structural stability point recorded learned mean pairwise CKA\n`0.9982635047210163` and simple A/B CKA `1.0`. These values are descriptive only:",
+          "sha256": "c41eec6df564e5ebb85bef0e722dcee604ffa38bc2a1d4035bcea2a6b46c0db0"
+        }
+      ],
+      "id": "C013",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Attempts 7, 9 and 10 were numerical/protocol stops and did not test the scientific atlas.",
+      "evidence": [
+        {
+          "path": "reports/claim_review/atlas_v3_3_attempt7_post_result_claim_review.md",
+          "selector": "Attempt 7 stopped at technical QA before decomposition measurements, so its signed failure cannot support the scientific claim.",
+          "sha256": "66794a2ae6579c8019ab8afe7b6fc65f02df5c2e0b343de5c76b773e00f36773"
+        },
+        {
+          "path": "reports/claim_review/atlas_v3_6_attempt10_post_result_claim_review.md",
+          "selector": "The scientific atlas outcome, because it never ran.",
+          "sha256": "f16815b46131d6a95a6617c4ca13fa5b764df00575bc9aedae42218b9a3f9ce1"
+        },
+        {
+          "path": "reports/claim_review/atlas_v3_5_attempt9_post_result_claim_review.md",
+          "selector": "the protocol stopped before GENTLE and before the scientific atlas.",
+          "sha256": "e5e512b440ef4362d66eccd2f10fd06b2e87e93133849168226be1080f8c4209"
+        }
+      ],
+      "id": "C014",
+      "status": "technical-invalid"
+    },
+    {
+      "claim": "Attempt 12 completed its analysis-only recovery but was technically ineligible, with every candidate organization ineligible.",
+      "evidence": [
+        {
+          "expected": "COMPLETE",
+          "path": "results/atlas_rope_v8_attempt12_analysis_recovery/frozen_result.json",
+          "pointer": "/status",
+          "sha256": "339f76e894264d4c6b966ba7141b7d96dd2fc41d8eec88dbe997eb87a27f5a9c"
+        },
+        {
+          "expected": "technically_ineligible",
+          "path": "results/atlas_rope_v8_attempt12_analysis_recovery/frozen_result.json",
+          "pointer": "/outcome",
+          "sha256": "339f76e894264d4c6b966ba7141b7d96dd2fc41d8eec88dbe997eb87a27f5a9c"
+        },
+        {
+          "expected": "ineligible",
+          "path": "results/atlas_rope_v8_attempt12_analysis_recovery/frozen_result.json",
+          "pointer": "/candidate_statuses/token_local_vs_context_dependent",
+          "sha256": "339f76e894264d4c6b966ba7141b7d96dd2fc41d8eec88dbe997eb87a27f5a9c"
+        }
+      ],
+      "id": "C015",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Attempt 13 was eligible but failed its complete relational recovery/isolation rule.",
+      "evidence": [
+        {
+          "expected": true,
+          "path": "results/atlas_relation_context_v9_attempt13/result.json",
+          "pointer": "/primary_relational_syntax/eligible",
+          "sha256": "9821e9669acc477888c16edfd994b32a635c26718b1986b8529ab34b3613ec7d"
+        },
+        {
+          "expected": "RELATIONAL_DECODABILITY_NOT_DEMONSTRATED_FOR_ALL_PRESPECIFIED_TASKS",
+          "path": "results/atlas_relation_context_v9_attempt13/result.json",
+          "pointer": "/decision",
+          "sha256": "9821e9669acc477888c16edfd994b32a635c26718b1986b8529ab34b3613ec7d"
+        }
+      ],
+      "id": "C016",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Attempt 14 captured transferable context variance in both directions.",
+      "evidence": [
+        {
+          "expected": 0.16195866010732032,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/directions/0/points/gate1_capture",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        },
+        {
+          "expected": 0.19171850750995323,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/directions/1/points/gate1_capture",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        }
+      ],
+      "id": "C017",
+      "status": "valid"
+    },
+    {
+      "claim": "Attempt 14 failed coherent-versus-unrelated context specificity in both directions.",
+      "evidence": [
+        {
+          "expected": 0.008742088980015075,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/directions/0/points/gate4_unrelated_energy_margin",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        },
+        {
+          "expected": 0.013550607531369878,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/directions/1/points/gate4_unrelated_energy_margin",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        }
+      ],
+      "id": "C018",
+      "status": "valid"
+    },
+    {
+      "claim": "Attempt 14 decision was context detectable but not cleanly separable.",
+      "evidence": [
+        {
+          "expected": "CONTEXT_DETECTABLE_BUT_NOT_CLEANLY_SEPARABLE_AT_THIS_LAYER",
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/decision",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        }
+      ],
+      "id": "C019",
+      "status": "valid"
+    },
+    {
+      "claim": "The position/context architecture program is closed and no supervised comparator was trained.",
+      "evidence": [
+        {
+          "expected": "POSITION_CONTEXT_ARCHITECTURE_PROGRAM_CLOSED",
+          "path": "reports/architecture_program_closure_v1.json",
+          "pointer": "/status",
+          "sha256": "9727cded086a83a130c7515d851faf98c7f1815558ccc67efd2cce2627b4ae6c"
+        },
+        {
+          "expected": false,
+          "path": "reports/architecture_program_closure_v1.json",
+          "pointer": "/learned_projection_comparator_claim_authorized",
+          "sha256": "9727cded086a83a130c7515d851faf98c7f1815558ccc67efd2cce2627b4ae6c"
+        }
+      ],
+      "id": "C020",
+      "status": "valid"
+    },
+    {
+      "claim": "Relational Discovery 2 stopped on a valid sentence-initial 0.1 empty node before any forward or score.",
+      "evidence": [
+        {
+          "path": "reports/relational_attention_edges_v1_discovery2_prescore_postmortem.md",
+          "selector": "The historical-artifact exposure audit stopped before completion at Spanish-AnCora dev line 11538.",
+          "sha256": "a36e84c40390dc8fdf6d7687f7b3e392d49f7e803803e018d03f6e7bc66f02d6"
+        }
+      ],
+      "id": "C021",
+      "status": "technical-invalid"
+    },
+    {
+      "claim": "The replacement parser passed 14 opened-development hashes and the exact two-file forward panel.",
+      "evidence": [
+        {
+          "expected": 14,
+          "path": "reports/opened_development_conllu_validation_v1.json",
+          "pointer": "/strict_pass_hashes",
+          "sha256": "2d9b0faea81a7d52f3c645056ccd2638a41f8661fa70b215455029fab60e86c1"
+        },
+        {
+          "expected": 2,
+          "path": "reports/opened_development2_forward_conllu_validation_v1.json",
+          "pointer": "/strict_pass_hashes",
+          "sha256": "1c08674afdf1a6193fb0da9e1ab43608dfb75a96089a587fe84c1a3c12b4ac9d"
+        }
+      ],
+      "id": "C022",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "The parser and relational harness test suites passed 53 tests before the relational prescore stop.",
+      "evidence": [
+        {
+          "path": "tests/test_conllu_spec.py",
+          "sha256": "a41f2aaa4be663e3cdef6d1330b1e6cf52bf5b1bf731fa3114c0e6b2e00c660b"
+        },
+        {
+          "path": "tests/test_relational_objects_v2.py",
+          "sha256": "3dc47e2e0eaefff3062209ba773e52aabf0dfad4c1b638db760777c59b0c8838"
+        },
+        {
+          "path": "reports/relational_objects_v2_test_report_v1.txt",
+          "selector": "53 passed, 1 warning",
+          "sha256": "7f3a8bdd17252ef172df1bf7d090d667c4bc56fa3eb9d252622dbaca4adbfb18"
+        }
+      ],
+      "id": "C023",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "Correct morphology-value control left EWT eligible but Latvian at 77 components and 196 pairs, forcing a preforward stop.",
+      "evidence": [
+        {
+          "expected": true,
+          "path": "reports/provenance/relational_objects_v2_development2_prescore_terminal_v2.json",
+          "pointer": "/payload/sources/ENGLISH_EWT/eligible",
+          "sha256": "0fc6521c09069a29dd733062e68d8d73cd336b87d4b56a28a55ef656d7f27f50"
+        },
+        {
+          "expected": 77,
+          "path": "reports/provenance/relational_objects_v2_development2_prescore_terminal_v2.json",
+          "pointer": "/payload/sources/LATVIAN_LVTB/components",
+          "sha256": "0fc6521c09069a29dd733062e68d8d73cd336b87d4b56a28a55ef656d7f27f50"
+        },
+        {
+          "expected": 196,
+          "path": "reports/provenance/relational_objects_v2_development2_prescore_terminal_v2.json",
+          "pointer": "/payload/sources/LATVIAN_LVTB/pairs",
+          "sha256": "0fc6521c09069a29dd733062e68d8d73cd336b87d4b56a28a55ef656d7f27f50"
+        }
+      ],
+      "id": "C024",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "No relational-object model forward, endpoint score, training, or fresh-corpus access occurred.",
+      "evidence": [
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v2_development2_prescore_terminal_v2.json",
+          "pointer": "/payload/model_forward_run",
+          "sha256": "0fc6521c09069a29dd733062e68d8d73cd336b87d4b56a28a55ef656d7f27f50"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v2_development2_prescore_terminal_v2.json",
+          "pointer": "/payload/endpoint_scores_computed",
+          "sha256": "0fc6521c09069a29dd733062e68d8d73cd336b87d4b56a28a55ef656d7f27f50"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v2_development2_prescore_terminal_v2.json",
+          "pointer": "/payload/fresh_scientific_source_accessed",
+          "sha256": "0fc6521c09069a29dd733062e68d8d73cd336b87d4b56a28a55ef656d7f27f50"
+        }
+      ],
+      "id": "C025",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "Attempt 11 terminated at the science-analysis/overlay stage under a signed no-retry terminal.",
+      "evidence": [
+        {
+          "expected": "TERMINAL_PIPELINE_STAGE_FAILED",
+          "path": "pilot_runs/20260803_atlas_rope_technical_v7/TERMINAL.json",
+          "pointer": "/payload/status",
+          "sha256": "ad7fd3b4de265879737774df38220956a4947298f3122f37b207c2bea46285d1"
+        },
+        {
+          "expected": true,
+          "path": "pilot_runs/20260803_atlas_rope_technical_v7/TERMINAL.json",
+          "pointer": "/payload/no_retry_authorized",
+          "sha256": "ad7fd3b4de265879737774df38220956a4947298f3122f37b207c2bea46285d1"
+        }
+      ],
+      "id": "C026",
+      "status": "technical-invalid"
+    },
+    {
+      "claim": "Attempt 13 coarse dependency-relation decoding was strong in both directions but did not beat all relation controls.",
+      "evidence": [
+        {
+          "expected": 0.6513143489442782,
+          "path": "results/atlas_relation_context_v9_attempt13/result.json",
+          "pointer": "/primary_relational_syntax/directions/CTETEX_to_GENTLE/deprel_coarse/macro_f1/true",
+          "sha256": "9821e9669acc477888c16edfd994b32a635c26718b1986b8529ab34b3613ec7d"
+        },
+        {
+          "expected": 0.6592661454360539,
+          "path": "results/atlas_relation_context_v9_attempt13/result.json",
+          "pointer": "/primary_relational_syntax/directions/CTETEX_to_GENTLE/deprel_coarse/macro_f1/sequential_offset",
+          "sha256": "9821e9669acc477888c16edfd994b32a635c26718b1986b8529ab34b3613ec7d"
+        },
+        {
+          "expected": 0.6572967546407604,
+          "path": "results/atlas_relation_context_v9_attempt13/result.json",
+          "pointer": "/primary_relational_syntax/directions/GENTLE_to_CTETEX/deprel_coarse/macro_f1/true",
+          "sha256": "9821e9669acc477888c16edfd994b32a635c26718b1986b8529ab34b3613ec7d"
+        },
+        {
+          "expected": 0.6644611030659104,
+          "path": "results/atlas_relation_context_v9_attempt13/result.json",
+          "pointer": "/primary_relational_syntax/directions/GENTLE_to_CTETEX/deprel_coarse/macro_f1/sham",
+          "sha256": "9821e9669acc477888c16edfd994b32a635c26718b1986b8529ab34b3613ec7d"
+        }
+      ],
+      "id": "C027",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Attempt 14 used 136 and 648 supported components; true- and unrelated-context raw changes were nearly equal within each source.",
+      "evidence": [
+        {
+          "expected": 136,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/source_results/ANCORA_3LB/context_count",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        },
+        {
+          "expected": 648,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/source_results/ANCORA_CESS/context_count",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        },
+        {
+          "expected": 0.25667015600207954,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/source_results/ANCORA_3LB/raw_dtrue/point_median",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        },
+        {
+          "expected": 0.25399045732721004,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/source_results/ANCORA_3LB/raw_dunrelated_descriptive/point_median",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        },
+        {
+          "expected": 0.2485293566504247,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/source_results/ANCORA_CESS/raw_dtrue/point_median",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        },
+        {
+          "expected": 0.24559395840786374,
+          "path": "results/atlas_context_local_v10_attempt14/result.json",
+          "pointer": "/source_results/ANCORA_CESS/raw_dunrelated_descriptive/point_median",
+          "sha256": "2c16a42ea6d0d4029733ada3d71b5a14ef344978e3466b95dd5a069b10469349"
+        }
+      ],
+      "id": "C028",
+      "status": "valid"
+    },
+    {
+      "claim": "The relational-object successor prospectively made nonlearned baselines primary and prohibited learned representation training without complete cross-source recovery and functional specificity.",
+      "evidence": [
+        {
+          "path": "PLAN_RELATIONAL_OBJECTS_V2.md",
+          "selector": "The primary nonlearned baseline `B` is a deterministic feature map: residual concatenation plus one",
+          "sha256": "0c45e39ee7ae4d1b7650fff8967103c8967e7e6eb0fea5990ab204d0428d7224"
+        },
+        {
+          "path": "PLAN_RELATIONAL_OBJECTS_V2.md",
+          "selector": "- Do not train K2, a supervised context/local decomposition, a shared branch, an SAE, or any neural",
+          "sha256": "0c45e39ee7ae4d1b7650fff8967103c8967e7e6eb0fea5990ab204d0428d7224"
+        }
+      ],
+      "id": "C029",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "All regularized candidates passed document-context specificity, whereas entity substitution failed the required cross-family control.",
+      "evidence": [
+        {
+          "path": "reports/adversarial/atlas_measurement_v2_v24_claim_review.md",
+          "selector": "  - Document-context specificity passes for g4/g5/g6, but entity-substitution specificity fails the required cross-family control despite positive within-construct branch margins: control margins are g4 `-0.784 [-0.971,-0.494]`, g5 `-0.555 [-0.711,-0.409]`, and g6 `-1.062 [-1.288,-0.845]`.",
+          "sha256": "639ea11beb1d45080828bb84f8d2e5088cd39e0c86fbc990702c256e1acab346"
+        }
+      ],
+      "id": "C030",
+      "status": "valid"
+    },
+    {
+      "claim": "Eligible candidate geometry had same-branch CKA above 0.995 and positive but small branch-identity margins; geometry did not rescue localization or specificity.",
+      "evidence": [
+        {
+          "path": "reports/adversarial/atlas_measurement_v2_v24_claim_review.md",
+          "selector": "  - Candidate geometry passes separately: candidate-pair same-branch CKA minima exceed `0.995`, and all preregistered identity margins are positive, albeit small (minimum `0.000131`). Geometry therefore neither causes nor rescues the functional/localization failures.",
+          "sha256": "639ea11beb1d45080828bb84f8d2e5088cd39e0c86fbc990702c256e1acab346"
+        }
+      ],
+      "id": "C031",
+      "status": "valid"
+    },
+    {
+      "claim": "Relational Attention-Edge Discovery 1 retired at prescore because an overbroad exposure audit propagated already-excluded collision hashes; no model forward, score, or training occurred.",
+      "evidence": [
+        {
+          "expected": "RETIRED_PRESCORE_INELIGIBLE_UNCHANGED",
+          "path": "reports/provenance/relational_attention_edges_v1_discovery1_retirement.json",
+          "pointer": "/payload/status",
+          "sha256": "dda53fab4d24d59fcf13f5433cc9f7a7db0d36988264ea5704c6dc7f97b7e360"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_attention_edges_v1_discovery1_retirement.json",
+          "pointer": "/payload/discovery1_candidate_source_model_forward_run",
+          "sha256": "dda53fab4d24d59fcf13f5433cc9f7a7db0d36988264ea5704c6dc7f97b7e360"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_attention_edges_v1_discovery1_retirement.json",
+          "pointer": "/payload/discovery1_endpoint_scores_computed",
+          "sha256": "dda53fab4d24d59fcf13f5433cc9f7a7db0d36988264ea5704c6dc7f97b7e360"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_attention_edges_v1_discovery1_retirement.json",
+          "pointer": "/payload/discovery1_neural_training_run",
+          "sha256": "dda53fab4d24d59fcf13f5433cc9f7a7db0d36988264ea5704c6dc7f97b7e360"
+        }
+      ],
+      "id": "C032",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "All eight exact v3 opened-development source files passed strict CoNLL-U parsing before feasibility scouting.",
+      "evidence": [
+        {
+          "expected": 8,
+          "path": "reports/relational_objects_v3_source_pool_conllu_validation_v1.json",
+          "pointer": "/physical_files",
+          "sha256": "5af12b21fcc34a42f586152eed261062f521849db0c668ad2a5d242ea3d4faa3"
+        },
+        {
+          "expected": 8,
+          "path": "reports/relational_objects_v3_source_pool_conllu_validation_v1.json",
+          "pointer": "/strict_pass_hashes",
+          "sha256": "5af12b21fcc34a42f586152eed261062f521849db0c668ad2a5d242ea3d4faa3"
+        },
+        {
+          "expected": 0,
+          "path": "reports/relational_objects_v3_source_pool_conllu_validation_v1.json",
+          "pointer": "/strict_failure_count",
+          "sha256": "5af12b21fcc34a42f586152eed261062f521849db0c668ad2a5d242ea3d4faa3"
+        }
+      ],
+      "id": "C033",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "Under the complete morphology-value matcher, only EWT cleared the v3 capped support floor; every other opened source was ineligible.",
+      "evidence": [
+        {
+          "expected": [
+            "ENGLISH_EWT"
+          ],
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/eligible_sources",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 8,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ARABIC_PADT/capped/components",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 16,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ARABIC_PADT/capped/pairs",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ARABIC_PADT/capped/eligible",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 150,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/CZECH_PDT/capped/components",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 405,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/CZECH_PDT/capped/pairs",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/CZECH_PDT/capped/eligible",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 150,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_EWT/capped/components",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 500,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_EWT/capped/pairs",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": true,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_EWT/capped/eligible",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 12,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_GENTLE/capped/components",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 219,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_GENTLE/capped/pairs",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_GENTLE/capped/eligible",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 97,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_GUM/capped/components",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 500,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_GUM/capped/pairs",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/ENGLISH_GUM/capped/eligible",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 77,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/LATVIAN_LVTB/capped/components",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 196,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/LATVIAN_LVTB/capped/pairs",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/LATVIAN_LVTB/capped/eligible",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 150,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/SPANISH_ANCORA/capped/components",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 356,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/SPANISH_ANCORA/capped/pairs",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/SPANISH_ANCORA/capped/eligible",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 14,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/UKRAINIAN_IU/capped/components",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": 43,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/UKRAINIAN_IU/capped/pairs",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/sources/UKRAINIAN_IU/capped/eligible",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        }
+      ],
+      "id": "C034",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "Relational objects v3 stopped before opening, model-weight loading, model forward, endpoint scoring, training, or fresh scientific-source access.",
+      "evidence": [
+        {
+          "expected": "TERMINAL_PRESCORE_INELIGIBLE",
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/status",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/opening_created",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/model_weights_loaded",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/model_forward_run",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/endpoint_scores_computed",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/neural_training_run",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/fresh_scientific_source_accessed",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        }
+      ],
+      "id": "C035",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "The two v3 label/tokenizer-only feasibility rebuilds were byte-identical.",
+      "evidence": [
+        {
+          "expected": true,
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/scout_rebuild_byte_identical",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": "47e2286f4906f29182622c607af2db8d50873e8ada32e71409fd2bcb4f350d00",
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/scout_builds/0/sha256",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        },
+        {
+          "expected": "47e2286f4906f29182622c607af2db8d50873e8ada32e71409fd2bcb4f350d00",
+          "path": "reports/provenance/relational_objects_v3_prescore_terminal_v1.json",
+          "pointer": "/payload/scout_builds/1/sha256",
+          "sha256": "b318f2b98de04c639942c8f220ee09d2c1a00f22cad8bbc4d3837611a45c4c76"
+        }
+      ],
+      "id": "C036",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "V4 exact-v3 matching left one structurally eligible source, while coarse-exact and optimal-caliper matching each recovered structural support in the same five sources.",
+      "evidence": [
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/exact_v3_reference/sources/ARABIC_PADT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/exact_v3_reference/sources/CZECH_PDT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/exact_v3_reference/sources/ENGLISH_EWT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/exact_v3_reference/sources/ENGLISH_GENTLE/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/exact_v3_reference/sources/ENGLISH_GUM/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/exact_v3_reference/sources/LATVIAN_LVTB/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/exact_v3_reference/sources/SPANISH_ANCORA/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/exact_v3_reference/sources/UKRAINIAN_IU/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/coarse_exact/sources/ARABIC_PADT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/coarse_exact/sources/CZECH_PDT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/coarse_exact/sources/ENGLISH_EWT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/coarse_exact/sources/ENGLISH_GENTLE/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/coarse_exact/sources/ENGLISH_GUM/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/coarse_exact/sources/LATVIAN_LVTB/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/coarse_exact/sources/SPANISH_ANCORA/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/coarse_exact/sources/UKRAINIAN_IU/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/optimal_caliper/sources/ARABIC_PADT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/optimal_caliper/sources/CZECH_PDT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/optimal_caliper/sources/ENGLISH_EWT/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/optimal_caliper/sources/ENGLISH_GENTLE/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": false,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/optimal_caliper/sources/ENGLISH_GUM/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/optimal_caliper/sources/LATVIAN_LVTB/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/optimal_caliper/sources/SPANISH_ANCORA/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        },
+        {
+          "expected": true,
+          "path": "data/relational_measurement_v4/prepared.json",
+          "pointer": "/methods/optimal_caliper/sources/UKRAINIAN_IU/support_eligible",
+          "sha256": "0002353cae82e35482288720c39a265aa60251785017f9982219ae38f92ab803"
+        }
+      ],
+      "id": "C037",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "V4 had zero balance-and-overlap-eligible or selected sources, scheduled zero synthetic panels, made no nomination, and closed without retry authorization.",
+      "evidence": [
+        {
+          "expected": "STOP_MEASUREMENT_DESIGN_UNCALIBRATED",
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/decision",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": 0,
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/benchmark/scheduled_panels",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": null,
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/nomination",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": {},
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/simulations",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": [],
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/methods/exact_v3_reference/eligible_sources",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": [],
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/methods/exact_v3_reference/selected_sources",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": [],
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/methods/coarse_exact/eligible_sources",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": [],
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/methods/coarse_exact/selected_sources",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": [],
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/methods/optimal_caliper/eligible_sources",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": [],
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/methods/optimal_caliper/selected_sources",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": "TERMINAL_COMPLETE",
+          "path": "reports/provenance/relational_measurement_v4_closure_v1.json",
+          "pointer": "/payload/terminal/status",
+          "sha256": "a23d0fe2063ff34c273ba053614bd885b728af689d88933ad07cd12ed019a3b3"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_measurement_v4_closure_v1.json",
+          "pointer": "/payload/terminal/retry_authorized",
+          "sha256": "a23d0fe2063ff34c273ba053614bd885b728af689d88933ad07cd12ed019a3b3"
+        },
+        {
+          "expected": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac",
+          "path": "reports/provenance/relational_measurement_v4_closure_v1.json",
+          "pointer": "/payload/terminal/result/sha256",
+          "sha256": "a23d0fe2063ff34c273ba053614bd885b728af689d88933ad07cd12ed019a3b3"
+        }
+      ],
+      "id": "C038",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "V4 alternative matchers recovered sample support but failed complete morphology-indicator balance and propensity overlap; optimal caliper improved continuous-covariate balance without making a source eligible.",
+      "evidence": [
+        {
+          "expected": 0.1,
+          "path": "configs/relational_measurement_v4/run.json",
+          "pointer": "/diagnostics/maximum_smd",
+          "sha256": "bb88ae56ed18541f2d27ee49edd2ac33b5269ba00231810daf9095c81e1ac636"
+        },
+        {
+          "expected": 0.99,
+          "path": "configs/relational_measurement_v4/run.json",
+          "pointer": "/diagnostics/propensity_central_fraction",
+          "sha256": "bb88ae56ed18541f2d27ee49edd2ac33b5269ba00231810daf9095c81e1ac636"
+        },
+        {
+          "path": "reports/claim_review/relational_measurement_v4_post_result_claim_review.md",
+          "selector": "  - `data/relational_measurement_v4/prepared.json` \u2014 the dominant failures were morphology-indicator\n    imbalance and propensity overlap: coarse-exact maximum eligible-panel indicator SMDs ranged\n    0.1443\u20130.5101 and propensity central fractions 0.824\u20130.946; optimal-caliper improved numeric\n    balance but indicator SMDs remained 0.1255\u20130.3712 and propensity central fractions 0.839\u20130.930,\n    against frozen limits 0.10 and 0.99 respectively.",
+          "sha256": "c8495d68bbba562833eb0e6de57975a119bd4ea7b401a1445a6981c9ea5fdd5a"
+        }
+      ],
+      "id": "C039",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "V4 accessed no activation cache or fresh corpus, loaded no model weights, ran no model forward or training, and authorized no learned model.",
+      "evidence": [
+        {
+          "expected": false,
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/activation_cache_accessed",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": false,
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/fresh_corpus_accessed",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": false,
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/model_forward_run",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": false,
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/model_weights_loaded",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": false,
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/training_run",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": false,
+          "path": "results/relational_measurement_v4_opened_development1/result.json",
+          "pointer": "/learned_model_authorized",
+          "sha256": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_measurement_v4_closure_v1.json",
+          "pointer": "/payload/terminal/model_forward_run",
+          "sha256": "a23d0fe2063ff34c273ba053614bd885b728af689d88933ad07cd12ed019a3b3"
+        },
+        {
+          "expected": false,
+          "path": "reports/provenance/relational_measurement_v4_closure_v1.json",
+          "pointer": "/payload/terminal/training_run",
+          "sha256": "a23d0fe2063ff34c273ba053614bd885b728af689d88933ad07cd12ed019a3b3"
+        }
+      ],
+      "id": "C040",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "V4 emitted six weighted-scaler warnings during preparation/rebuild; frozen finite checks and the signed verifier nevertheless passed.",
+      "evidence": [
+        {
+          "path": "reports/claim_review/relational_measurement_v4_post_result_claim_review.md",
+          "selector": "  - `reports/provenance/relational_measurement_v4_tmux.log` \u2014 create-once execution completed without\n    a failure artifact; six weighted-scaler numerical warnings occurred during preparation/rebuild,\n    but no nonfinite result survived the frozen checks.",
+          "sha256": "c8495d68bbba562833eb0e6de57975a119bd4ea7b401a1445a6981c9ea5fdd5a"
+        },
+        {
+          "expected": "TERMINAL_COMPLETE",
+          "path": "reports/provenance/relational_measurement_v4_closure_v1.json",
+          "pointer": "/payload/terminal/status",
+          "sha256": "a23d0fe2063ff34c273ba053614bd885b728af689d88933ad07cd12ed019a3b3"
+        },
+        {
+          "expected": "95fd7a6e01daf97eb71e0968132054c1e814c58a9e71f5dce325bd4af600baac",
+          "path": "reports/provenance/relational_measurement_v4_closure_v1.json",
+          "pointer": "/payload/terminal/result/sha256",
+          "sha256": "a23d0fe2063ff34c273ba053614bd885b728af689d88933ad07cd12ed019a3b3"
+        }
+      ],
+      "id": "C041",
+      "status": "development-prescore"
+    },
+    {
+      "claim": "Proxy-control v1 completed 918 rows across nine model/layer clusters and required claim review.",
+      "evidence": [
+        {
+          "expected": 918,
+          "path": "results/proxy_control_benchmark_v1_20260808/aggregate/result.json",
+          "pointer": "/metric_rows",
+          "sha256": "0576471dcf0e6d20157ee5bbb52f0ea46736feb059c9693a9e56dafd413df622"
+        },
+        {
+          "expected": 9,
+          "path": "results/proxy_control_benchmark_v1_20260808/aggregate/result.json",
+          "pointer": "/model_layer_clusters",
+          "sha256": "0576471dcf0e6d20157ee5bbb52f0ea46736feb059c9693a9e56dafd413df622"
+        },
+        {
+          "expected": "EXPLORATORY_COMPLETE_REQUIRES_CLAIM_REVIEW",
+          "path": "results/proxy_control_benchmark_v1_20260808/aggregate/result.json",
+          "pointer": "/status",
+          "sha256": "0576471dcf0e6d20157ee5bbb52f0ea46736feb059c9693a9e56dafd413df622"
+        }
+      ],
+      "id": "C042",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Frozen v1 probe recovery and CKA predicted behavioral recovery but not frozen behavioral specificity.",
+      "evidence": [
+        {
+          "expected": 0.5390959684292433,
+          "path": "results/proxy_control_benchmark_v1_20260808/aggregate/result.json",
+          "pointer": "/associations/12/rho",
+          "sha256": "0576471dcf0e6d20157ee5bbb52f0ea46736feb059c9693a9e56dafd413df622"
+        },
+        {
+          "expected": -0.0865469852246249,
+          "path": "results/proxy_control_benchmark_v1_20260808/aggregate/result.json",
+          "pointer": "/associations/13/rho",
+          "sha256": "0576471dcf0e6d20157ee5bbb52f0ea46736feb059c9693a9e56dafd413df622"
+        },
+        {
+          "expected": 0.5031531614201243,
+          "path": "results/proxy_control_benchmark_v1_20260808/aggregate/result.json",
+          "pointer": "/associations/17/rho",
+          "sha256": "0576471dcf0e6d20157ee5bbb52f0ea46736feb059c9693a9e56dafd413df622"
+        }
+      ],
+      "id": "C043",
+      "status": "exploratory"
+    },
+    {
+      "claim": "The cached sign-aligned learned-only sensitivity found positive proxy-specificity associations.",
+      "evidence": [
+        {
+          "expected": 0.4058282738162126,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/learned_associations/probe_recovery|aligned_behavioral_specificity/rho",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        },
+        {
+          "expected": 0.37133228600837404,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/learned_associations/geometric_stability|aligned_behavioral_specificity/rho",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        }
+      ],
+      "id": "C044",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Learned-only probe recovery and CKA were negatively associated with collateral safety.",
+      "evidence": [
+        {
+          "expected": -0.6004596962613413,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/learned_associations/probe_recovery|collateral_safety/rho",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        },
+        {
+          "expected": -0.7074501514044795,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/learned_associations/geometric_stability|collateral_safety/rho",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        }
+      ],
+      "id": "C045",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Across depth, v1 recovery and CKA increased while leakage, negative selectivity, and collateral KL increased.",
+      "evidence": [
+        {
+          "expected": 0.7265625,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/stage_means/early/probe_recovery",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        },
+        {
+          "expected": 0.8612642973856209,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/stage_means/late/probe_recovery",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        },
+        {
+          "expected": 0.05018740531695584,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/stage_means/late/collateral_kl",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        }
+      ],
+      "id": "C046",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Asymmetric K2 assignments followed the larger branch; equal K2 lacked stable global identity.",
+      "evidence": [
+        {
+          "expected": 1.0,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/branch_capacity.json",
+          "pointer": "/methods/0/larger_branch_fraction",
+          "sha256": "2ffb46f058b75bc7dddf0a7a92b5d3fb7151d994c7ae3324c9b24493a465da63"
+        },
+        {
+          "expected": 0.1111111111111111,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/branch_capacity.json",
+          "pointer": "/methods/1/global_identity_fraction",
+          "sha256": "2ffb46f058b75bc7dddf0a7a92b5d3fb7151d994c7ae3324c9b24493a465da63"
+        },
+        {
+          "expected": 1.0,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/branch_capacity.json",
+          "pointer": "/methods/2/larger_branch_fraction",
+          "sha256": "2ffb46f058b75bc7dddf0a7a92b5d3fb7151d994c7ae3324c9b24493a465da63"
+        }
+      ],
+      "id": "C047",
+      "status": "exploratory"
+    },
+    {
+      "claim": "The v1 analysis companion used zero new forwards and labels factor cycles as non-independent sensitivity.",
+      "evidence": [
+        {
+          "expected": 0,
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/new_model_forwards",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        },
+        {
+          "expected": "POSTHOC_EIGHT_CYCLE_SENSITIVITY_NOT_INDEPENDENT_SUPPORT",
+          "path": "results/proxy_control_benchmark_v1_analysis_20260808/result.json",
+          "pointer": "/factor_cycle_warning",
+          "sha256": "d67e9ab59449457fca3e4791f0fad128930291fc3dc7157ee2749ee13a0b8be5"
+        }
+      ],
+      "id": "C048",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Prospective v2 completed nine model-layer clusters, 1,296 metrics, 972 controlled summaries, and 324 naturalistic summaries after its synthetic controls passed.",
+      "evidence": [
+        {
+          "expected": 9,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/formal/model_layer_clusters",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 1296,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/formal/metric_rows",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 972,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/formal/controlled_metric_rows",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 324,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/formal/naturalistic_metric_rows",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": "PASS",
+          "path": "results/proxy_control_benchmark_v2_20260808/synthetic/result.json",
+          "pointer": "/status",
+          "sha256": "182183b70896a0eac68dff2e42be608cabc836fa53acedc5e18c676f68d23f0a"
+        }
+      ],
+      "id": "C049",
+      "status": "exploratory"
+    },
+    {
+      "claim": "No v2 method decision or controlled summary passed the complete frozen conjunction.",
+      "evidence": [
+        {
+          "expected": 90,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/formal/method_decisions",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/formal/passing_method_decisions",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/formal/joint_controlled_row_passes",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        }
+      ],
+      "id": "C050",
+      "status": "exploratory"
+    },
+    {
+      "claim": "The v2 behavior-gradient oracle showed positive relative-position recovery and signed specificity but unsafe collateral KL.",
+      "evidence": [
+        {
+          "expected": 0.3301514208540952,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/behavior_gradient_oracle|relative_position|behavioral_recovery/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": [
+            0.10369714455193603,
+            0.31934051828096865,
+            0.6201382697663524
+          ],
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/behavior_gradient_oracle|relative_position|behavioral_recovery/ci",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.31892294589747144,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/behavior_gradient_oracle|relative_position|behavioral_specificity/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": [
+            0.09045633460573163,
+            0.29256933120770223,
+            0.6732924491894444
+          ],
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/behavior_gradient_oracle|relative_position|behavioral_specificity/ci",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.058373235449971576,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/behavior_gradient_oracle|relative_position|collateral_kl/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": [
+            0.018863394205120277,
+            0.055507639088404906,
+            0.13113460341369607
+          ],
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/behavior_gradient_oracle|relative_position|collateral_kl/ci",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        }
+      ],
+      "id": "C051",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Task projection and linear erasure isolated relative-position changes geometrically with low collateral but negligible behavioral recovery.",
+      "evidence": [
+        {
+          "expected": 0.23395696757587658,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/task_projection|relative_position|intervention_specificity/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.23903131569042876,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/linear_erasure|relative_position|intervention_specificity/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.008448315455563238,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/task_projection|relative_position|behavioral_recovery/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.01129393762915677,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/linear_erasure|relative_position|behavioral_recovery/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.0049646444321280745,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/task_projection|relative_position|collateral_kl/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.004873865695559111,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/linear_erasure|relative_position|collateral_kl/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        }
+      ],
+      "id": "C052",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Within v2 linear methods, captured variance predicted behavioral potency and worse collateral safety.",
+      "evidence": [
+        {
+          "expected": 0.38882061866582,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/linear_only|captured_variance|behavioral_recovery/rho",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": [
+            0.18207459020153385,
+            0.3952290325746646,
+            0.5487995292977622
+          ],
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/linear_only|captured_variance|behavioral_recovery/ci",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.39078687165374476,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/linear_only|captured_variance|behavioral_specificity/rho",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": [
+            0.19485271012926975,
+            0.40005684262709207,
+            0.549994622413328
+          ],
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/linear_only|captured_variance|behavioral_specificity/ci",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": -0.5684037645647553,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/linear_only|captured_variance|collateral_safety/rho",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": [
+            -0.6787102040848992,
+            -0.5703955739848403,
+            -0.4603437736754779
+          ],
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/linear_only|captured_variance|collateral_safety/ci",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        }
+      ],
+      "id": "C053",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Within v2 learned methods, probe recovery predicted recovery but worse intervention specificity, while geometric stability predicted worse recovery and intervention specificity.",
+      "evidence": [
+        {
+          "expected": 0.24088214602752514,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/learned_only|probe_recovery|behavioral_recovery/rho",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": -0.3213472500439899,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/learned_only|probe_recovery|intervention_specificity/rho",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": -0.25441289983322024,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/learned_only|geometric_stability|behavioral_recovery/rho",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": -0.49214758260237396,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/associations/learned_only|geometric_stability|intervention_specificity/rho",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        }
+      ],
+      "id": "C054",
+      "status": "exploratory"
+    },
+    {
+      "claim": "V2 behavioral recovery and collateral KL increased from early to late sites for learned and linear methods.",
+      "evidence": [
+        {
+          "expected": 0.001147845876030148,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/depth_means/learned|early/behavioral_recovery",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.08874567572197732,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/depth_means/learned|late/behavioral_recovery",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.0019248151774310096,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/depth_means/learned|early/collateral_kl",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.05863869838380965,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/depth_means/learned|late/collateral_kl",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.0028102021613927333,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/depth_means/linear|early/behavioral_recovery",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.14164522385058376,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/depth_means/linear|late/behavioral_recovery",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.0009170119907381905,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/depth_means/linear|early/collateral_kl",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.04200014500757393,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/depth_means/linear|late/collateral_kl",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        }
+      ],
+      "id": "C055",
+      "status": "exploratory"
+    },
+    {
+      "claim": "V2 K2 assignments followed the larger branch under both capacity orientations and all K2 variants had negative relative-position intervention specificity.",
+      "evidence": [
+        {
+          "expected": 1.0,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/k2/asymmetric_larger_branch_fraction",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 1.0,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/k2/swapped_larger_branch_fraction",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": -0.40891186522613115,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/k2_equal|relative_position|intervention_specificity/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": -0.6359548382159254,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/k2_asymmetric|relative_position|intervention_specificity/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": -0.6359346779483732,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/hierarchical/k2_swapped|relative_position|intervention_specificity/point",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        }
+      ],
+      "id": "C056",
+      "status": "exploratory"
+    },
+    {
+      "claim": "The v2 naturalistic QA endpoint was ineligible because mean effect support was below its frozen floor.",
+      "evidence": [
+        {
+          "expected": 0.6540316358024691,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/naturalistic/eligibility_mean",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": 0.8,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/naturalistic/frozen_eligibility_floor",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        },
+        {
+          "expected": false,
+          "path": "results/proxy_control_benchmark_v2_analysis_20260808/result.json",
+          "pointer": "/naturalistic/eligible",
+          "sha256": "240adef425b55599dbfe1f14415dfd05e217602c38c8c067e87e175b35c15e0e"
+        }
+      ],
+      "id": "C057",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Architecture program closure v2 authorizes no additional current-program K2, shared, context-local, or supervised-controller training.",
+      "evidence": [
+        {
+          "expected": "CURRENT_K2_POSITION_CONTENT_PROGRAM_CLOSED",
+          "path": "reports/architecture_program_closure_v2.json",
+          "pointer": "/status",
+          "sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a"
+        },
+        {
+          "expected": false,
+          "path": "reports/architecture_program_closure_v2.json",
+          "pointer": "/training_authorization/additional_k2_seeds",
+          "sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a"
+        },
+        {
+          "expected": false,
+          "path": "reports/architecture_program_closure_v2.json",
+          "pointer": "/training_authorization/private_private_shared",
+          "sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a"
+        },
+        {
+          "expected": false,
+          "path": "reports/architecture_program_closure_v2.json",
+          "pointer": "/training_authorization/supervised_context_local",
+          "sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a"
+        },
+        {
+          "expected": false,
+          "path": "reports/architecture_program_closure_v2.json",
+          "pointer": "/training_authorization/collateral_constrained_controller_under_current_protocol",
+          "sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a"
+        }
+      ],
+      "id": "C058",
+      "status": "valid"
+    },
+    {
+      "claim": "Behavioral endpoint v6.2 retrieval failed the frozen development gate in every model/source/template cell and authorized no confirmation.",
+      "evidence": [
+        {
+          "expected": "FAIL",
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/retrieval/status",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/retrieval/eligible_families",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": false,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/retrieval/confirmation_authorized",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/retrieval/models/0/passing_cells",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/retrieval/models/1/passing_cells",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/retrieval/models/2/passing_cells",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        }
+      ],
+      "id": "C059",
+      "status": "exploratory"
+    },
+    {
+      "claim": "Agreement had high development-panel potency but was template-conditioned and failed the frozen nuisance-specificity hierarchy.",
+      "evidence": [
+        {
+          "expected": "TEMPLATE_CONDITIONED",
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/classification",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/eligible_families",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 745,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/0/eligible_rows",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 621,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/1/eligible_rows",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 663,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/2/eligible_rows",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 2,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/0/passing_cells",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/1/passing_cells",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/2/passing_cells",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0.21890079566414977,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/0/source_overall_ratio_points/WIKITEXT_DEV_OPENED",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0.2327522218127105,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/0/source_overall_ratio_points/AGNEWS_DEV_OPENED",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0.3650454322141261,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/1/source_overall_ratio_points/WIKITEXT_DEV_OPENED",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0.4323587192065996,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/1/source_overall_ratio_points/AGNEWS_DEV_OPENED",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0.35640974243613144,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/2/source_overall_ratio_points/WIKITEXT_DEV_OPENED",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        },
+        {
+          "expected": 0.4066623736718921,
+          "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+          "pointer": "/endpoints/agreement/models/2/source_overall_ratio_points/AGNEWS_DEV_OPENED",
+          "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+        }
+      ],
+      "id": "C060",
+      "status": "exploratory"
+    },
+    {
+      "claim": "V6.2 stopped both endpoint candidates without opening confirmation, evaluating representation methods, or training.",
+      "evidence": [
+        {
+          "expected": "BOTH_ENDPOINTS_STOP",
+          "path": "results/behavioral_endpoint_v6_2_20260809/final/result.json",
+          "pointer": "/decision",
+          "sha256": "3bd678fd91e124d2d4c92b7d050de99dbacc3ee7a6e4ea6a7b5fa15111c646fa"
+        },
+        {
+          "expected": false,
+          "path": "results/behavioral_endpoint_v6_2_20260809/final/result.json",
+          "pointer": "/future_method_authorization",
+          "sha256": "3bd678fd91e124d2d4c92b7d050de99dbacc3ee7a6e4ea6a7b5fa15111c646fa"
+        },
+        {
+          "expected": false,
+          "path": "results/behavioral_endpoint_v6_2_20260809/final/result.json",
+          "pointer": "/representation_methods_evaluated",
+          "sha256": "3bd678fd91e124d2d4c92b7d050de99dbacc3ee7a6e4ea6a7b5fa15111c646fa"
+        },
+        {
+          "expected": false,
+          "path": "results/behavioral_endpoint_v6_2_20260809/final/result.json",
+          "pointer": "/training_performed",
+          "sha256": "3bd678fd91e124d2d4c92b7d050de99dbacc3ee7a6e4ea6a7b5fa15111c646fa"
+        },
+        {
+          "expected": "CURRENT_RETRIEVAL_AGREEMENT_ENDPOINT_LINE_CLOSED",
+          "path": "reports/naturalistic_endpoint_program_closure_v1.json",
+          "pointer": "/status",
+          "sha256": "b3f8d57e2261d9bbbb34d53ba050400cc15d000cb9c68ceb13b66c166dbbc09e"
+        },
+        {
+          "expected": false,
+          "path": "reports/naturalistic_endpoint_program_closure_v1.json",
+          "pointer": "/v6_3_prompt_retry_authorized",
+          "sha256": "b3f8d57e2261d9bbbb34d53ba050400cc15d000cb9c68ceb13b66c166dbbc09e"
+        }
+      ],
+      "id": "C061",
+      "status": "valid"
+    },
+    {
+      "claim": "Joint-controllability v3 constructed linear positive controls passed while the random negative remained small.",
+      "evidence": [
+        {
+          "expected": "PASS",
+          "path": "results/joint_controllability_benchmark_v3_20260808/synthetic/result.json",
+          "pointer": "/status",
+          "sha256": "3bcda3bff748794ab833aba180a35b8011f4f754a6297da78a0f6869e1bf9617"
+        },
+        {
+          "expected": 1.0,
+          "path": "results/joint_controllability_benchmark_v3_20260808/synthetic/result.json",
+          "pointer": "/ground/recovery",
+          "sha256": "3bcda3bff748794ab833aba180a35b8011f4f754a6297da78a0f6869e1bf9617"
+        },
+        {
+          "expected": 1.0,
+          "path": "results/joint_controllability_benchmark_v3_20260808/synthetic/result.json",
+          "pointer": "/ground/specificity",
+          "sha256": "3bcda3bff748794ab833aba180a35b8011f4f754a6297da78a0f6869e1bf9617"
+        },
+        {
+          "expected": 1.0,
+          "path": "results/joint_controllability_benchmark_v3_20260808/synthetic/result.json",
+          "pointer": "/supervised_skyline/recovery",
+          "sha256": "3bcda3bff748794ab833aba180a35b8011f4f754a6297da78a0f6869e1bf9617"
+        },
+        {
+          "expected": 0.05849585426822842,
+          "path": "results/joint_controllability_benchmark_v3_20260808/synthetic/result.json",
+          "pointer": "/random/specificity",
+          "sha256": "3bcda3bff748794ab833aba180a35b8011f4f754a6297da78a0f6869e1bf9617"
+        }
+      ],
+      "id": "C062",
+      "status": "valid"
+    },
+    {
+      "claim": "Joint-controllability v3 naturalistic method comparisons were not adjudicable because the common task gate was ineligible.",
+      "evidence": [
+        {
+          "expected": "ANALYSIS_RECOVERED_REQUIRES_CLAIM_REVIEW",
+          "path": "results/joint_controllability_benchmark_v3_analysis_recovery_20260808/result.json",
+          "pointer": "/status",
+          "sha256": "654b4101c20eb630d14a7b277233786bddb9923fb8a465428b97b468c5df816d"
+        },
+        {
+          "expected": 0,
+          "path": "results/joint_controllability_benchmark_v3_analysis_recovery_20260808/result.json",
+          "pointer": "/passing_method_decisions",
+          "sha256": "654b4101c20eb630d14a7b277233786bddb9923fb8a465428b97b468c5df816d"
+        },
+        {
+          "expected": false,
+          "path": "results/joint_controllability_benchmark_v3_analysis_recovery_20260808/result.json",
+          "pointer": "/training_authorized",
+          "sha256": "654b4101c20eb630d14a7b277233786bddb9923fb8a465428b97b468c5df816d"
+        },
+        {
+          "expected": false,
+          "path": "results/joint_controllability_benchmark_v3_analysis_recovery_20260808/result.json",
+          "pointer": "/cross_domain_replication",
+          "sha256": "654b4101c20eb630d14a7b277233786bddb9923fb8a465428b97b468c5df816d"
+        }
+      ],
+      "id": "C063",
+      "status": "exploratory"
+    }
+  ],
+  "paper": "PAPER.md",
+  "schema_version": "paper_claim_ledger_v1",
+  "scope": "MSAE project through behavioral endpoint v6.2 and current endpoint-line closure"
+}

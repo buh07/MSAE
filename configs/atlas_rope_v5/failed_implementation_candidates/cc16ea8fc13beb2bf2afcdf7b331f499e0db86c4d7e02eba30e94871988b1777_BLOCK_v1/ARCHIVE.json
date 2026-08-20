@@ -1,0 +1,9 @@
+{
+  "status": "ARCHIVED_BLOCKED_UNSIGNED_CANDIDATE",
+  "candidate_sha256": "cc16ea8fc13beb2bf2afcdf7b331f499e0db86c4d7e02eba30e94871988b1777",
+  "review_sha256": "f5878ac7689f559da947d304e7cc75747ad199b2570362000b35159f98834663",
+  "signed_attempt9_artifacts_created": false,
+  "model_weights_loaded": false,
+  "neural_inference_run": false,
+  "neural_training_run": false
+}

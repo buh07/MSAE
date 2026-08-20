@@ -1,0 +1,16 @@
+{
+  "arrays_sha256": "f21e8be2cc687ebee5b7e30b62b3d5a12d24b7df757ae73b04295607d8b1cb65",
+  "fields": 50,
+  "general_natural_model_claim": false,
+  "gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "oracle_exact": true,
+  "replicate": 1,
+  "representation_methods_evaluated": false,
+  "rows_sha256": "7c86bfdc4b0b24055b5f6bd05e7b0e98c10b206d78e951046657ebf854101d05",
+  "schema_version": "constructed_copy_circuit_v1_1_reference",
+  "single_constructed_model": true,
+  "stage": "development",
+  "training_performed": false
+}

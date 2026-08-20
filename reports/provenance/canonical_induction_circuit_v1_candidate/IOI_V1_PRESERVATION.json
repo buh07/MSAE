@@ -1,0 +1,257 @@
+{
+  "expected": {
+    "behavior_eligible_models": 0,
+    "confirmation_blocked_files": 3,
+    "confirmation_complete_files": 0,
+    "final_status": "DEVELOPMENT_STOP",
+    "ioi_v1_retry_authorized": false,
+    "methods_evaluated": false,
+    "patch_blocked_files": 3,
+    "patch_complete_files": 0,
+    "training_performed": false
+  },
+  "files": [
+    {
+      "bytes": 4532,
+      "path": "configs/known_mechanism_ioi_v1/FREEZE.json",
+      "sha256": "d208922048cb60dc215371682ae2bad4a24215b848f98ba981e5069c4e87e60c"
+    },
+    {
+      "bytes": 8257,
+      "path": "configs/known_mechanism_ioi_v1/run.json",
+      "sha256": "5994bb4c2df74e48de1ff27e2f84f48d0177a9ed8dca1c3b439339d7cd4a233b"
+    },
+    {
+      "bytes": 3863,
+      "path": "reports/adversarial/known_mechanism_ioi_v1_candidate_block_review.md",
+      "sha256": "6e54505d019016a8d08eea3a92b87dae3f4564b4a6972605033a203da2adf960"
+    },
+    {
+      "bytes": 4399,
+      "path": "reports/adversarial/known_mechanism_ioi_v1_candidate_block_review_2.md",
+      "sha256": "b1f2a682eca377b4778b6652964e27417e78ab17efded6e9bad7dc76e21dbc76"
+    },
+    {
+      "bytes": 2725,
+      "path": "reports/adversarial/known_mechanism_ioi_v1_candidate_review.md",
+      "sha256": "3409d9e5f7f3aeba0fba0f08b5823e01fb8d64a2d50685b5f683846b62877b0c"
+    },
+    {
+      "bytes": 3781,
+      "path": "reports/adversarial/known_mechanism_ioi_v1_frozen_review.md",
+      "sha256": "dd53db79c7e7693c60261793a32a55655fb2b8aa344dd3f7c50460d50c14feaf"
+    },
+    {
+      "bytes": 3418,
+      "path": "reports/claim_review/known_mechanism_ioi_v1_post_result_claim_review.md",
+      "sha256": "483b3cc55dee79c9237d3538ff63d4a38ed5a4af5562abd146e7a70563bb80a1"
+    },
+    {
+      "bytes": 2275,
+      "path": "reports/known_mechanism_ioi_v1_analysis/result.json",
+      "sha256": "0e05430531006c903fca05f9e2139ae4a757ae25184b4f087bf5fb502a5e46e6"
+    },
+    {
+      "bytes": 341,
+      "path": "reports/provenance/known_mechanism_ioi_v1_candidate/FROZEN_REVIEW_BINDING.json",
+      "sha256": "2cd0c13538366207bf33e734b5ab87d17a9cf3daf0aa2933bfcf21429a8084c6"
+    },
+    {
+      "bytes": 95652,
+      "path": "reports/provenance/known_mechanism_ioi_v1_post_result/FROZEN_CLAIM_LEDGER.json",
+      "sha256": "9d7c5c1fe15e7c83cdceba81b495d3be8887a076753374e5fe896304f0c1d945"
+    },
+    {
+      "bytes": 56391,
+      "path": "reports/provenance/known_mechanism_ioi_v1_post_result/FROZEN_PAPER.md",
+      "sha256": "21a8a023a7a11e8236531fd556238a815dcd3d3bedc4e67927b3001d1c11cece"
+    },
+    {
+      "bytes": 1041,
+      "path": "reports/provenance/known_mechanism_ioi_v1_post_result/MANIFEST.json",
+      "sha256": "e866738c0bd8cae8f0c5397e2a53d929b56d6f808570b980982d7c4c2d99f25b"
+    },
+    {
+      "bytes": 928,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/handoff_status.json",
+      "sha256": "5dbdae07444999e67b31e7fdf64fb1e451ac1a903001b314ccf93971f1324633"
+    },
+    {
+      "bytes": 1271,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/launch_manifest.json",
+      "sha256": "e6cda2905ceeba8efba4d0f9205298514f36fc8f77e5e1b5bc7c3302ac3d4bcb"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/behavior_gate.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5756,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/behavior_gemma2.log",
+      "sha256": "bdcd2a3f2a7d46e17d44165ed3d5ed22e8ef91ac98042f52473dad8a0fc80f52"
+    },
+    {
+      "bytes": 4493,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/behavior_gpt2.log",
+      "sha256": "0b7b53381e2a8a346239e2b1de9f8c06f14c501d7c34ca8ef07ef32d5cea3563"
+    },
+    {
+      "bytes": 5334,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/behavior_pythia160.log",
+      "sha256": "53c08490f253f09a12543df283ef037a1351f6ce0ed772dfe4d2b7e16c5281ef"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/confirmation_gemma2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/confirmation_gpt2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/confirmation_pythia160.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/patch_gate.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/patch_gemma2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/patch_gpt2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/known_mechanism_ioi_v1_run_20260809/logs/patch_pythia160.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 146,
+      "path": "results/known_mechanism_ioi_v1_20260809/confirmation/gemma2/BLOCKED.json",
+      "sha256": "0d76da0ff7bd2d036563fad7937085a59945ac6df3739bf035e052c191feb317"
+    },
+    {
+      "bytes": 144,
+      "path": "results/known_mechanism_ioi_v1_20260809/confirmation/gpt2/BLOCKED.json",
+      "sha256": "75cfc4b8b10292b9c25fb9f00f6d3253365db9022b450308b3dc682be87b6d89"
+    },
+    {
+      "bytes": 149,
+      "path": "results/known_mechanism_ioi_v1_20260809/confirmation/pythia160/BLOCKED.json",
+      "sha256": "c422ca98d515fe3c6555c32dccd080bea272d752ebde59817c9ce9da79dbed9e"
+    },
+    {
+      "bytes": 508,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/gemma2/COMPLETE.json",
+      "sha256": "5097001d787f7d5e4250ca93f935249a30ae82b327993cbc31de9cf864eb8d10"
+    },
+    {
+      "bytes": 321,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/gemma2/STARTED.json",
+      "sha256": "7a22b79df0cc43b14ddceb4b33a6cb255dda7e4f3ab58bd225349056590950ce"
+    },
+    {
+      "bytes": 6570181,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/gemma2/activations.npz",
+      "sha256": "eb88dbb453ce51efe8e2a368d43ce1af000486e08d5404d5d7d8938802f58391"
+    },
+    {
+      "bytes": 102760,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/gemma2/metrics.jsonl",
+      "sha256": "25bd5d64c07da263f93da1045c948830eb975b9e920a3c813e3af523f72fdd73"
+    },
+    {
+      "bytes": 506,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/gpt2/COMPLETE.json",
+      "sha256": "85f340f88acb7114396d760f0b4d05b7876b3cc0429c6e4c5793bed0bd136c48"
+    },
+    {
+      "bytes": 319,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/gpt2/STARTED.json",
+      "sha256": "4694da2cfc4c8822e929da498cfe0c96e18edb19586a810b9e0d622cbecf3153"
+    },
+    {
+      "bytes": 2189972,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/gpt2/activations.npz",
+      "sha256": "a289e0216b8cf41204063aac1fc0518e911584551057c30e5a0fbd54bd2cc3da"
+    },
+    {
+      "bytes": 102642,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/gpt2/metrics.jsonl",
+      "sha256": "7dbc03942f83226265c1c1d38b5058b730f3a474ecaa13183c51e31d9f131bc0"
+    },
+    {
+      "bytes": 511,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/pythia160/COMPLETE.json",
+      "sha256": "2ca6f4a64f4515635c9a096f5b835a2fee6335c7734417728b11d4142e7422e0"
+    },
+    {
+      "bytes": 324,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/pythia160/STARTED.json",
+      "sha256": "58a959fb0f2dd74b096ef0b962d22605da846d9c7411da4a643c704ee8d1be7f"
+    },
+    {
+      "bytes": 2088131,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/pythia160/activations.npz",
+      "sha256": "1cb4c6482777238979534e43f3a23fbc122b54aec8e28155ec32874ea2f6a612"
+    },
+    {
+      "bytes": 98821,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/behavior/pythia160/metrics.jsonl",
+      "sha256": "f7252b4263955abf85c9a68129e6ab1c8afea16b2dd579296e81cc0efdff6c1e"
+    },
+    {
+      "bytes": 121,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/patch/gemma2/BLOCKED.json",
+      "sha256": "529f9e16118984f79a86ad003c82688beaeb0e05aa5ca589fed079bb116f35b4"
+    },
+    {
+      "bytes": 119,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/patch/gpt2/BLOCKED.json",
+      "sha256": "ad162d2ea5dd017e3b49a855da8e898bae27ed6328bbd1d42a7048972704bf43"
+    },
+    {
+      "bytes": 124,
+      "path": "results/known_mechanism_ioi_v1_20260809/development/patch/pythia160/BLOCKED.json",
+      "sha256": "95693bacaf0365d9bca96d9bdefda3bfdc11f5803b878ac0c7b4d5ff613c889e"
+    },
+    {
+      "bytes": 801,
+      "path": "results/known_mechanism_ioi_v1_20260809/final/result.json",
+      "sha256": "534ac5cfbe3707a43ba2a264d604b0014200ffcbfa800920ae3670eb58147f1c"
+    },
+    {
+      "bytes": 3225,
+      "path": "results/known_mechanism_ioi_v1_20260809/gates/behavior/result.json",
+      "sha256": "78813d8aef359c65e6f4b7c13f7c644463ac0156fc631193e3ed9d4ee9e79c66"
+    },
+    {
+      "bytes": 801,
+      "path": "results/known_mechanism_ioi_v1_20260809/gates/patch/result.json",
+      "sha256": "456113d270fcaebfe1038d42d283a2c152de22f667c1aaccbeb39b440e123f49"
+    }
+  ],
+  "schema_version": "known_mechanism_ioi_v1_preservation",
+  "status": "PRESERVED_FORMAL_DEVELOPMENT_STOP",
+  "tree_roots": [
+    "configs/known_mechanism_ioi_v1",
+    "results/known_mechanism_ioi_v1_20260809",
+    "reports/provenance/known_mechanism_ioi_v1_run_20260809"
+  ]
+}

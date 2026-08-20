@@ -1,0 +1,24 @@
+{
+  "attested_by": "root_execution_audit",
+  "causal_manifold_r1": {
+    "confirmation_opened": false,
+    "development_opened": false,
+    "failure": "runtime_rank_condition_dtype_mismatch",
+    "fit_opened": true,
+    "score_values_inspected": false,
+    "score_values_used_for_recovery_design": false,
+    "serialized_scientific_scores": 0
+  },
+  "sae_capacity_r1": {
+    "confirmation_opened": false,
+    "development_opened": true,
+    "failure": "autograd_tensor_numpy_boundary",
+    "fit_opened": true,
+    "possible_transient_native_development_scores": 1,
+    "score_values_inspected": false,
+    "score_values_used_for_recovery_design": false,
+    "serialized_scientific_scores": 0
+  },
+  "schema_version": "trained_control_r1_exposure_attestation_v1",
+  "statement_sha256": "958e5459bbda814e3783eda8bc5494c2eeb70be40c7a53aed91adb2853b87728"
+}

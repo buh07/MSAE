@@ -1,0 +1,134 @@
+{
+  "created_ns": 1786352784016855375,
+  "failure_preservation_sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96",
+  "invalid_r2_candidate_preservation_sha256": "3dbcc809636353748f54fb27faf5f6e9f44bb2d314e46654372075d923c2e7cd",
+  "invalid_r3_candidate_preservation_sha256": "eec5f489c99a11d9aac9c785c0192045537de7cbb86365998a083b6579add3e5",
+  "invalid_r4_candidate_preservation_sha256": "42581eb0d4e77b45a6cde609b13e8ea0ca2f571b8cabd57c2853abeedcf60881",
+  "inventory": [
+    {
+      "bytes": 11682,
+      "path": "PLAN_CAPACITY_EXTERNAL_VALIDITY_V1_R5.md",
+      "sha256": "e0e25310a171d54c3151b7193216ad4f8e5705fdead19accb2c15ce52091ea42"
+    },
+    {
+      "bytes": 2147,
+      "path": "configs/capacity_controller_diagnostic_v1_r5/RECOVERY_BINDING.json",
+      "sha256": "22d50fa7cd66dfc487cc707b88be523cb8c93cea74fb3a232376169ca691bf47"
+    },
+    {
+      "bytes": 6246,
+      "path": "configs/capacity_controller_diagnostic_v1_r5/run.json",
+      "sha256": "978e23c3cd51c6fad54d54f130b6596a718252db9c143e87fb21e60e421cacd9"
+    },
+    {
+      "bytes": 8321,
+      "path": "data/capacity_controller_diagnostic_v1_prepared/PANEL_METADATA.json",
+      "sha256": "4b04366f8be0a4db8ea293b94a99f37908f733cf72c074a2cb07e959af1fbc7b"
+    },
+    {
+      "bytes": 70,
+      "path": "data/capacity_controller_diagnostic_v1_prepared/PREPARED.json",
+      "sha256": "d6a3bfefaad8546d8bc4bf4c0666ad34098e8f70cc53abc3bffc3a4689ae261a"
+    },
+    {
+      "bytes": 619,
+      "path": "reports/adversarial/capacity_external_validity_v1_r5_plan_review.md",
+      "sha256": "36992a27f2621fa34e8b8f33cda994ee326393ba6ecea49bfef15151b2d9f194"
+    },
+    {
+      "bytes": 21741,
+      "path": "reports/provenance/capacity_external_validity_v1_failure_preservation/PRESERVATION.json",
+      "sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96"
+    },
+    {
+      "bytes": 1033,
+      "path": "reports/provenance/capacity_external_validity_v1_r2_invalid_candidate/PRESERVATION.json",
+      "sha256": "3dbcc809636353748f54fb27faf5f6e9f44bb2d314e46654372075d923c2e7cd"
+    },
+    {
+      "bytes": 1012,
+      "path": "reports/provenance/capacity_external_validity_v1_r3_invalid_candidate/PRESERVATION.json",
+      "sha256": "eec5f489c99a11d9aac9c785c0192045537de7cbb86365998a083b6579add3e5"
+    },
+    {
+      "bytes": 1032,
+      "path": "reports/provenance/capacity_external_validity_v1_r4_invalid_candidate/PRESERVATION.json",
+      "sha256": "42581eb0d4e77b45a6cde609b13e8ea0ca2f571b8cabd57c2853abeedcf60881"
+    },
+    {
+      "bytes": 17145,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_postresult/PRESERVATION.json",
+      "sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2"
+    },
+    {
+      "bytes": 84714,
+      "path": "scripts/capacity_external_validity_v1_r5.py",
+      "sha256": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8"
+    },
+    {
+      "bytes": 3410,
+      "path": "scripts/launch_capacity_external_validity_v1_r5_tmux.sh",
+      "sha256": "cea8706c42eb8c45525d54e5e498b86a5716972972f50518b0ddfcc46fa28d17"
+    },
+    {
+      "bytes": 5260,
+      "path": "scripts/preserve_capacity_external_validity_v1_failure.py",
+      "sha256": "5d9f9a423f0a82dd33b9bdea4a1b2e191bb4b5fcd619517befaa4ea609b957d8"
+    },
+    {
+      "bytes": 10081,
+      "path": "tests/test_capacity_external_validity_v1_r5.py",
+      "sha256": "6769fe1b905b43e50255d33e3197de7cebbb27b94b0664c0c8c7fbd022f503c5"
+    }
+  ],
+  "kind": "capacity",
+  "panel_access_state": {
+    "confirmation": "UNOPENED",
+    "development": "PRIORLY_OPENED_TECHNICAL_RECOVERY",
+    "train": "PRIORLY_OPENED_TECHNICAL_RECOVERY"
+  },
+  "payload_hash_source": "existing v1 PANEL_METADATA.json; r5 freeze did not stat/glob/hash/read payloads",
+  "payloads": [
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41011_train.jsonl",
+      "sha256": "8e083ec879db1e4ef55b98984c36a5f5b7e9ba2f1e07bf580eb68b08f0029302"
+    },
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41011_development.jsonl",
+      "sha256": "c85e5bb4b8ee3b9025aed292022cd34b8bbc92b87489de0bfea6f225939d0616"
+    },
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41011_confirmation.jsonl",
+      "sha256": "2ca257cd8a91e54b55fe6fdf43b7cb52a10f3b43c6fc6e0d8ee3c1be5eda3a6d"
+    },
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41037_train.jsonl",
+      "sha256": "c0e83062c28bdbb77c810e943427b68b1150facec5b28068032becc644fecb7d"
+    },
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41037_development.jsonl",
+      "sha256": "d34a7e62c24a0b51952593b3dfcd0c0a2e6db975b6a4e5a1e68b2a32dc52d19c"
+    },
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41037_confirmation.jsonl",
+      "sha256": "ab568a1aa0e973dd0dca443b87bc8050986eb7bc15ed3641fc7d73ffa06d2ae5"
+    },
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41081_train.jsonl",
+      "sha256": "0852c94878820185d4b69ea751cda69c73d311b322518057b2524eae4b0cf179"
+    },
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41081_development.jsonl",
+      "sha256": "e46d8330d60abf298a5c3d38d89967ebf6d505b193d3a7377fd257bf60287139"
+    },
+    {
+      "path": "data/capacity_controller_diagnostic_v1_prepared/instance_41081_confirmation.jsonl",
+      "sha256": "5d290f4e85c2e9fe020e0d7801a6c3ea1b2107cbd07bbb63f0ff8e3228147db1"
+    }
+  ],
+  "payloads_preexisting": true,
+  "recovery_binding_sha256": "22d50fa7cd66dfc487cc707b88be523cb8c93cea74fb3a232376169ca691bf47",
+  "schema_version": "capacity_recovery_freeze_v1_r5",
+  "status": "FROZEN_PANEL_SPECIFIC_RECOVERY",
+  "v1_partial_checkpoints_reused": false
+}

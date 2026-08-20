@@ -1,0 +1,141 @@
+{
+  "schema_version": "constructed_copy_circuit_v1_1_config",
+  "namespace": "constructed_copy_circuit_v1_1_20260809",
+  "seed": 20260911,
+  "model": {
+    "kind": "analytic_two_stage_hard_attention_copy",
+    "vocab_size": 1024,
+    "bindings": 8,
+    "readout_gain": 12.0,
+    "learned_parameters": 0,
+    "natural_prompt_assay": false
+  },
+  "panels": {
+    "rows_per_stage": 256,
+    "blocks": 8,
+    "rows_per_block": 32,
+    "development_seed": 2026091101,
+    "confirmation_seed": 2026091102,
+    "development_key_range": [
+      1,
+      129
+    ],
+    "development_value_range": [
+      129,
+      513
+    ],
+    "confirmation_key_range": [
+      513,
+      641
+    ],
+    "confirmation_value_range": [
+      641,
+      1024
+    ]
+  },
+  "eligibility": {
+    "clean_margin_strict": 6.0,
+    "corrupt_margin_strict_upper": 0.0,
+    "effect_strict": 6.0,
+    "denominator_strict": 1e-08,
+    "centered_scale_strict": 1e-08,
+    "minimum_total": 240,
+    "minimum_per_block": 28
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "method": "linear",
+    "weighting": "equal_block_paired_hierarchical"
+  },
+  "gates": {
+    "skyline_recovery": {
+      "point_min": 0.999999,
+      "lower_strict_min": 0.99999
+    },
+    "circuit_recovery": {
+      "point_min": 0.95,
+      "lower_strict_min": 0.9
+    },
+    "sham_specificity": {
+      "point_min": 0.9,
+      "lower_strict_min": 0.85
+    },
+    "control_margin": {
+      "point_min": 0.9,
+      "lower_strict_min": 0.85
+    },
+    "edge_necessity": {
+      "point_min": 0.9,
+      "lower_strict_min": 0.85
+    },
+    "source_necessity": {
+      "point_min": 0.9,
+      "lower_strict_min": 0.85
+    },
+    "necessity_advantage": {
+      "point_min": 0.85,
+      "lower_strict_min": 0.8
+    },
+    "full_vocab_recovery": {
+      "point_min": 0.95,
+      "lower_strict_min": 0.9
+    },
+    "collateral_error": {
+      "point_max": 0.02,
+      "upper_strict_max": 0.05
+    },
+    "patch_norm_ratio": {
+      "row_min": 0.999999,
+      "row_max": 1.000001
+    },
+    "ablation_norm_ratio": {
+      "row_min": 0.999999,
+      "row_max": 1.000001
+    }
+  },
+  "runtime": {
+    "prepared_root": "data/constructed_copy_circuit_v1_1_prepared",
+    "candidate_root": "reports/provenance/constructed_copy_circuit_v1_1_candidate",
+    "protocol_lock": "configs/constructed_copy_circuit_v1_1/PROTOCOL_LOCK.json",
+    "freeze": "configs/constructed_copy_circuit_v1_1/FREEZE.json",
+    "candidate_review": "reports/adversarial/constructed_copy_circuit_v1_1_candidate_review.md",
+    "frozen_review": "reports/adversarial/constructed_copy_circuit_v1_1_frozen_review.md",
+    "review_binding": "reports/provenance/constructed_copy_circuit_v1_1_candidate/FROZEN_REVIEW_BINDING.json",
+    "output_root": "results/constructed_copy_circuit_v1_1_20260809",
+    "provenance_root": "reports/provenance/constructed_copy_circuit_v1_1_run_20260809",
+    "tmux_session": "msae_constructed_copy_circuit_v1_1",
+    "gpu_memory_used_max_mib_exclusive": 2048,
+    "gpu_utilization_max_percent_exclusive": 10,
+    "stage_timeout_seconds": 900,
+    "v2_preservation": "reports/provenance/canonical_induction_two_tier_v2_postresult_preservation.json",
+    "smoke_cpu": "reports/provenance/constructed_copy_circuit_v1_1_candidate/SMOKE_CPU.json",
+    "smoke_gpu": "reports/provenance/constructed_copy_circuit_v1_1_candidate/SMOKE_GPU.json",
+    "calibration": "reports/provenance/constructed_copy_circuit_v1_1_candidate/CALIBRATION.json"
+  },
+  "scope": {
+    "single_constructed_model": true,
+    "general_natural_model_claim": false,
+    "representation_methods_evaluated": false,
+    "training_performed": false,
+    "natural_prompt_assay": false,
+    "method_benchmark_automatically_authorized": false
+  },
+  "candidate_files": [
+    "PLAN_CONSTRUCTED_COPY_CIRCUIT_V1_1.md",
+    "configs/constructed_copy_circuit_v1_1/run.json",
+    "scripts/constructed_copy_circuit_v1_1.py",
+    "scripts/launch_constructed_copy_circuit_v1_1_tmux.sh",
+    "tests/test_constructed_copy_circuit_v1_1.py",
+    "tests/test_verify_paper_claims_v2.py",
+    "scripts/verify_paper_claims.py",
+    "PAPER.md",
+    "reports/paper_claim_ledger_v1.json",
+    "configs/constructed_copy_circuit_v1/run.json",
+    "reports/provenance/canonical_induction_two_tier_v2_postresult_preservation.json",
+    "reports/adversarial/constructed_copy_circuit_v1_1_plan_review.md"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "confirmation_payload": {
+    "bytes": 136836,
+    "path": "data/constructed_copy_circuit_v1_1_prepared/confirmation.jsonl",
+    "sha256": "3a04e8b5f9931963da78934f1decce15fa90182b351d9ff5188579dd520a55a3"
+  },
+  "development_payload": {
+    "bytes": 133847,
+    "path": "data/constructed_copy_circuit_v1_1_prepared/development.jsonl",
+    "sha256": "7c86bfdc4b0b24055b5f6bd05e7b0e98c10b206d78e951046657ebf854101d05"
+  },
+  "equations": "PLAN_CONSTRUCTED_COPY_CIRCUIT_V1_1.md",
+  "fresh_seed_provenance": {
+    "predecessor_config_path": "configs/constructed_copy_circuit_v1/run.json",
+    "predecessor_config_sha256": "a0a93859fe804d4735e8a3e098bf5e7e82e57d6098a5e3eb7ab1752f986cd1a8",
+    "retired_scientific_seeds": [
+      2026083101,
+      2026083102
+    ],
+    "seed_sets_disjoint": true,
+    "successor_scientific_seeds": [
+      2026091101,
+      2026091102
+    ]
+  },
+  "general_natural_model_claim": false,
+  "items": [
+    {
+      "bytes": 4412,
+      "path": "configs/constructed_copy_circuit_v1_1/run.json",
+      "sha256": "2af462340cf1697d072f62bb2624714a92a91703244b8e8f3e8412f31a24b4ac"
+    },
+    {
+      "bytes": 24396,
+      "path": "PLAN_CONSTRUCTED_COPY_CIRCUIT_V1_1.md",
+      "sha256": "5cc0fd1babb2f1939d04813fdbc10ab9691e19098ade893d47ba9b5f351294ba"
+    },
+    {
+      "bytes": 133847,
+      "path": "data/constructed_copy_circuit_v1_1_prepared/development.jsonl",
+      "sha256": "7c86bfdc4b0b24055b5f6bd05e7b0e98c10b206d78e951046657ebf854101d05"
+    },
+    {
+      "bytes": 136836,
+      "path": "data/constructed_copy_circuit_v1_1_prepared/confirmation.jsonl",
+      "sha256": "3a04e8b5f9931963da78934f1decce15fa90182b351d9ff5188579dd520a55a3"
+    },
+    {
+      "bytes": 8168,
+      "path": "data/constructed_copy_circuit_v1_1_prepared/smoke_fixture.jsonl",
+      "sha256": "acc355d83abce793bf2d383f4dc82d301ed707a68fc061da1c12afecc480f2fe"
+    },
+    {
+      "bytes": 133878,
+      "path": "data/constructed_copy_circuit_v1_1_prepared/calibration_rows.jsonl",
+      "sha256": "32a53f3ee7412dc9731e65bef15465ab14f66132142405907574c9cc357f7166"
+    },
+    {
+      "bytes": 599,
+      "path": "data/constructed_copy_circuit_v1_1_prepared/calibration_fixture.json",
+      "sha256": "1cd9427405e8a5b5baea3d00fc2ccaec09e74c10455fd26c4a7f25b7c2dcb1db"
+    },
+    {
+      "bytes": 1017,
+      "path": "data/constructed_copy_circuit_v1_1_prepared/GENERATOR_ATTESTATION.json",
+      "sha256": "06787caf6434674a728bb0ec6591f9c264761ba1d74a2b5ff8391288e80fee48"
+    },
+    {
+      "bytes": 1036,
+      "path": "data/constructed_copy_circuit_v1_1_prepared/PREPARED.json",
+      "sha256": "3b2c950c5a167a07bfc8e5ee1576d8a50b5f478b34c0d414af30725b5cb18a36"
+    }
+  ],
+  "items_sha256": "487294bf7b35df3c99c63432d06133b45c711b0d9274efb12edd65ef6aa9d647",
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_1_protocol_lock",
+  "single_constructed_model": true,
+  "status": "LOCKED_BEFORE_MODEL_SMOKE",
+  "training_performed": false
+}

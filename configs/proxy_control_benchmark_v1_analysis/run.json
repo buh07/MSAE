@@ -1,0 +1,12 @@
+{
+  "schema_version": "proxy_control_benchmark_v1_analysis_config",
+  "namespace": "proxy_control_benchmark_v1_analysis_20260808",
+  "v1_root": "results/proxy_control_benchmark_v1_20260808",
+  "output_root": "results/proxy_control_benchmark_v1_analysis_20260808",
+  "seed": 20260808,
+  "bootstrap_draws": 500,
+  "factor_cycles": 8,
+  "patch_norm_bins": [0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0000001],
+  "learned_methods": ["k1", "k2_equal", "k2_asymmetric", "k2_swapped"],
+  "linear_methods": ["pca", "random", "task_projection", "linear_erasure", "paired_delta_oracle"]
+}

@@ -1,0 +1,17 @@
+{
+  "device": "cuda",
+  "exact_oracle": true,
+  "fixture_sha256": "acc355d83abce793bf2d383f4dc82d301ed707a68fc061da1c12afecc480f2fe",
+  "full_clean_donor_bitwise": true,
+  "full_sham_donor_bitwise": true,
+  "general_natural_model_claim": false,
+  "implementation_sha256": "a82b49bfcdab1a2bb38240bb7c4e5751b915a47707592cac4f7fe4c05909f6fe",
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_1_smoke",
+  "scientific_support_expected": false,
+  "single_constructed_model": true,
+  "status": "PASS",
+  "training_performed": false
+}

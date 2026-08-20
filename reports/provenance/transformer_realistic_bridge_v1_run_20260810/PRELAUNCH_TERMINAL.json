@@ -1,0 +1,11 @@
+{
+  "model_forward_run": false,
+  "no_retry_under_namespace": true,
+  "reason": "launcher here-document expanded RUN_ROOT under set -u before tmux creation",
+  "schema_version": "transformer_realistic_bridge_v1_prelaunch_terminal",
+  "scientific_payload_accessed": false,
+  "status": "PRELAUNCH_SOFTWARE_STOP",
+  "time_ns": 1786335945999249815,
+  "tmux_started": false,
+  "training_performed": false
+}

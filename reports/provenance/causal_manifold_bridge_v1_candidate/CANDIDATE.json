@@ -1,0 +1,24 @@
+{
+  "all_cell_exact_checks": 512,
+  "config_sha256": "9fe7c9ec7b627284549290aae317a573dc29ae0eb6a31eae492c444d3ff67ffc",
+  "exact_qa_max_abs": 1.1920928955078125e-07,
+  "exact_qa_max_relative_l2": 2.819506050855125e-07,
+  "factorial_cells": 128,
+  "generators": 4,
+  "incomplete_mutations_detected": true,
+  "launcher_sha256": "81949b593762a2a88eebdf152b5e827814d213bc037867fc44ea5b18e9f61b2b",
+  "method_registry_sha256": "57fa4387af96bb83ae8621252dbe50908ec534bdd0626cc34fc5132fc5fadb8e",
+  "patch_mutations_rejected": true,
+  "plan_sha256": "d6032a48b50ae56be3e7a662f0141e01778c063cf0884849ebe1bd8f1b3c1ac5",
+  "realized_design_qa_pass": true,
+  "schema_version": "causal_manifold_bridge_v1_candidate",
+  "scientific_panel_accessed": false,
+  "smoke_seed_namespace": "bridge-smoke",
+  "source_sha256": "4b10b55682b08f353a84d0619b04bfd0dcc926abf7b749091d4d5046e37d2c61",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "94d44765b3d2f19c3466980a91e99ef4768b2687d67ca2078bf63cc8caa49d78",
+    "study": "c203f7edc3d96a8dac4b6ee89635f8201d24da4057aef7958c02104ce8aad90b"
+  },
+  "view_firewall_qa_pass": true
+}

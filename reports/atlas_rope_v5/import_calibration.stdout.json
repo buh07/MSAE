@@ -1,0 +1,97 @@
+{
+  "attempt8_retirement_sha256": "6bc19447431666ce06827e7d7db71ccb810eeefa9b818c309c8c26271f95ef27",
+  "calibration_only": true,
+  "candidate_shape": [
+    1200,
+    768
+  ],
+  "exact_cached_replay": true,
+  "history": {
+    "candidate_canonical_sha256": "f14247654ed0aa7578a2f0c894d5c2bab5c1c2fdaa96f74f172da62fe6952adf",
+    "old_raw_cap_inputs": {
+      "calibration_rows": 1200,
+      "caps": {
+        "atol": null,
+        "cosine_distance": 1e-11,
+        "relative_l2": 1e-05
+      },
+      "grids": {
+        "atol": [
+          5e-07,
+          1e-06,
+          2e-06,
+          4e-06,
+          8e-06
+        ],
+        "cosine_distance": [
+          1e-11,
+          5e-11,
+          1e-10
+        ],
+        "relative_l2": [
+          2e-06,
+          5e-06,
+          1e-05
+        ]
+      },
+      "observed_maxima": {
+        "cosine_distance": 6.61326549078467e-12,
+        "relative_l2": 4.050714244725923e-06,
+        "required_atol": 1.3512020111083984e-05
+      },
+      "rtol": 5e-06,
+      "safety_factor": 1.25,
+      "status": "INELIGIBLE"
+    },
+    "reference_canonical_sha256": "8493d132327eb059db73a128a55476cb0328f3fa3cab4d4f5b2a2abac9d31581",
+    "staging_complete_sha256": "cb258db29525c444b4a2b451521365e3e6932413da4ca8b2f22273658d67081a",
+    "staging_tree_inventory": {
+      "COMPLETE.json": {
+        "bytes": 20703,
+        "sha256": "cb258db29525c444b4a2b451521365e3e6932413da4ca8b2f22273658d67081a"
+      },
+      "candidate.float32.npy": {
+        "bytes": 3686528,
+        "sha256": "0792e6cb97f66dbf0d537c7d1820d031dc5119ad6eb984c3bb79c9a704a7d801"
+      },
+      "reference.float32.npy": {
+        "bytes": 614528,
+        "sha256": "76c7e21aa6ca4a0f2454ce59dfde26e1790a5927663c9ed3045aaaa71aaa398e"
+      },
+      "reference_cached_replay.float32.npy": {
+        "bytes": 614528,
+        "sha256": "76c7e21aa6ca4a0f2454ce59dfde26e1790a5927663c9ed3045aaaa71aaa398e"
+      },
+      "reference_repeat_1.float32.npy": {
+        "bytes": 614528,
+        "sha256": "76c7e21aa6ca4a0f2454ce59dfde26e1790a5927663c9ed3045aaaa71aaa398e"
+      },
+      "reference_repeat_2.float32.npy": {
+        "bytes": 614528,
+        "sha256": "76c7e21aa6ca4a0f2454ce59dfde26e1790a5927663c9ed3045aaaa71aaa398e"
+      },
+      "row_ids.json": {
+        "bytes": 116022,
+        "sha256": "e8406589fc01b7eb592612f920a7fbb57c5b9252f32568ede0a3b4d4c74aea51"
+      }
+    },
+    "staging_tree_inventory_sha256": "bda14e939a348ee82819176b79c4a8e8f1942250b0f9478e6ea9b3a05017043b",
+    "status": "VERIFIED_OPENED_CALIBRATION_HISTORY",
+    "terminal_sha256": "3e152d2f5397d805af53a3ab7e358275990bbf4881b30f3706ad3e1a2901f180"
+  },
+  "implementation_candidate_sha256": "b79124938859886fca11c41e100ae72ef943feb74dc38200052b9a44ebe783a7",
+  "neural_training_authorized": false,
+  "reference_shape": [
+    200,
+    768
+  ],
+  "schema_version": "atlas_rope_v5_attempt9_opened_calibration_import_v1",
+  "source_attempt": "atlas_rope_v4_attempt8",
+  "source_attempt_status": "TERMINAL_EWT_CALIBRATION_INVALID",
+  "source_bundle_promoted": false,
+  "source_bundle_represented_as_attempt8_pass": false,
+  "source_staging_path": "pilot_runs/20260803_atlas_rope_technical_v4/staging/minimal-EWT_calibration-67f720a9b43d-2654766",
+  "status": "VERIFIED_OPENED_CALIBRATION_HISTORY",
+  "three_live_references_byte_identical": true,
+  "validation_model_calls_recorded": false
+}

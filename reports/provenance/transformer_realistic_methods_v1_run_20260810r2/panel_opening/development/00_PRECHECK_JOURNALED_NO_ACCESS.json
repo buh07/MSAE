@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "bytes": 56095,
+    "path": "data/transformer_realistic_methods_v1_r2_prepared/development.jsonl",
+    "rows": 192,
+    "sha256": "a2af3bc876589b27d7868dbca3445225da6ccb7d0e132f488241021150d3abc3"
+  },
+  "payload_access_may_have_occurred": false,
+  "state": "PRECHECK_JOURNALED_NO_ACCESS",
+  "time_ns": 1786337032096884537
+}

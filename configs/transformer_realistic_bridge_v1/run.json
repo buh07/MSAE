@@ -1,0 +1,176 @@
+{
+  "schema_version": "transformer_realistic_bridge_v1_config",
+  "namespace": "transformer_realistic_bridge_v1_20260810",
+  "seed": 20261001,
+  "scope": {
+    "constructed_synthetic_model": true,
+    "natural_model_claim": false,
+    "natural_prompt_assay": false,
+    "k2_evaluated": false,
+    "representation_methods_evaluated": false,
+    "training_performed": false
+  },
+  "model": {
+    "sources": 8,
+    "target_values": 16,
+    "routing_causal_dim": 16,
+    "routing_nuisance_dim": 8,
+    "routing_observed_dim": 16,
+    "private_dim": 16,
+    "shared_dim": 8,
+    "value_nuisance_dim": 32,
+    "value_observed_dim": 48,
+    "soft_score": 3.0,
+    "distractor_score_low": -1.5,
+    "distractor_score_high": -0.2,
+    "attention_gain": 0.62,
+    "bypass_gain": 0.38,
+    "query_residual_gain": 0.08,
+    "private_gain": 1.0,
+    "shared_gain": 1.4,
+    "nuisance_gain": 0.08,
+    "readout_gain": 8.0,
+    "layernorm_eps": 1e-05,
+    "learned_parameters": 0
+  },
+  "regimes": [
+    {
+      "name": "ideal_hard",
+      "hard_attention": true,
+      "bypass": false,
+      "layernorm": false,
+      "superposition": false,
+      "noise": 0.0
+    },
+    {
+      "name": "soft_attention",
+      "hard_attention": false,
+      "bypass": false,
+      "layernorm": false,
+      "superposition": false,
+      "noise": 0.0
+    },
+    {
+      "name": "residual_bypass",
+      "hard_attention": false,
+      "bypass": true,
+      "layernorm": false,
+      "superposition": false,
+      "noise": 0.0
+    },
+    {
+      "name": "layernorm",
+      "hard_attention": false,
+      "bypass": true,
+      "layernorm": true,
+      "superposition": false,
+      "noise": 0.0
+    },
+    {
+      "name": "correlated_superposition",
+      "hard_attention": false,
+      "bypass": true,
+      "layernorm": true,
+      "superposition": true,
+      "noise": 0.0
+    },
+    {
+      "name": "realistic_noisy",
+      "hard_attention": false,
+      "bypass": true,
+      "layernorm": true,
+      "superposition": true,
+      "noise": 0.08
+    }
+  ],
+  "panels": {
+    "blocks_per_regime": 24,
+    "rows_per_block": 8,
+    "development_seed": 2026100101,
+    "confirmation_seed": 2026100102,
+    "target_values": 16,
+    "noise_strata": [
+      0.5,
+      1.0,
+      1.5
+    ]
+  },
+  "eligibility": {
+    "hybrid_margin_strict": 1.0,
+    "corrupt_margin_strict_upper": 0.0,
+    "effect_strict": 1.0,
+    "denominator_strict": 0.0001,
+    "centered_scale_strict": 0.0001,
+    "minimum_total_per_regime": 185,
+    "minimum_per_block": 7,
+    "maximum_exclusion_rate": 0.04
+  },
+  "attention_checks": {
+    "causal_min": 0.3,
+    "causal_max": 0.9,
+    "noncausal_weight_min": 0.01,
+    "minimum_noncausal_above": 3
+  },
+  "bootstrap": {
+    "draws": 1000,
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "method": "linear",
+    "weighting": "equal_block_paired_hierarchical"
+  },
+  "gates": {
+    "ground_truth_recovery": {
+      "point_min": 0.9,
+      "lower_strict_min": 0.85
+    },
+    "full_vocab_recovery": {
+      "point_min": 0.9,
+      "lower_strict_min": 0.85
+    },
+    "sham_specificity": {
+      "point_min": 0.8,
+      "lower_strict_min": 0.7
+    },
+    "control_margin": {
+      "point_min": 0.8,
+      "lower_strict_min": 0.7
+    },
+    "collateral_error": {
+      "point_max": 0.05,
+      "upper_strict_max": 0.1
+    },
+    "joint_necessity": {
+      "point_min": 0.8,
+      "lower_strict_min": 0.7
+    },
+    "routing_necessity": {
+      "point_min": 0.2,
+      "lower_strict_min": 0.1
+    },
+    "value_necessity": {
+      "point_min": 0.2,
+      "lower_strict_min": 0.1
+    },
+    "incomplete_gap": {
+      "point_min": 0.15,
+      "lower_strict_min": 0.1
+    }
+  },
+  "qa": {
+    "oracle_atol": 2e-05,
+    "oracle_relative_l2": 1e-05,
+    "repeated_live_exact": true
+  },
+  "runtime": {
+    "prepared_root": "data/transformer_realistic_bridge_v1_prepared",
+    "candidate_root": "reports/provenance/transformer_realistic_bridge_v1_candidate_r3",
+    "provenance_root": "reports/provenance/transformer_realistic_bridge_v1_run_20260810",
+    "output_root": "results/transformer_realistic_bridge_v1_20260810",
+    "generator_lock": "configs/transformer_realistic_bridge_v1/GENERATOR_LOCK.json",
+    "freeze": "configs/transformer_realistic_bridge_v1/FREEZE.json",
+    "candidate_review": "reports/adversarial/transformer_realistic_bridge_v1_candidate_review.md",
+    "frozen_review": "reports/adversarial/transformer_realistic_bridge_v1_frozen_review.md"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "cublas_workspace_config": ":4096:8",
+  "cuda_visible_devices": "1",
+  "freeze_sha256": "47086bb1059fa9f568699e2c9adae762a75bc1428ab30711a1b3253c5cebcc0f",
+  "generator_lock_sha256": "0d73edd193ee8a63ce0b5b2cee95ecef863e38ac7e6591e60fa05225a1965b3b",
+  "gpu_uuid": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+  "kind": "bridge",
+  "launch_token": "de78b1c1658cf16453b7835f2b9723c21486b2f61edd8410",
+  "numpy": "1.26.4",
+  "physical_gpu_index": 1,
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "review_binding_sha256": "72220ca5eb8cdc34752e04ac0a1a4b79e4631906121cbe418de8ad72300d8b2e",
+  "schema_version": "transformer_realistic_bridge_v1_launch_manifest",
+  "status": "LAUNCHED",
+  "time_ns": 1786336933589579015,
+  "torch": "2.7.0"
+}

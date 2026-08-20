@@ -1,0 +1,24 @@
+{
+  "adversarial_verdict": "BLOCK",
+  "candidate_manifests": [
+    {
+      "bytes": 9247,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r2_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "38e6a7c267281994d11daf1d7e4a7c3edabcf34ec6820b64f97f7beb99786c2a"
+    },
+    {
+      "bytes": 9247,
+      "path": "reports/provenance/trained_copy_external_v1_r2_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "d7662ce1708035ce4703f175b95dc41036d16825d01b4310c4e015f0fdc0145f"
+    }
+  ],
+  "created_ns": 1786349973133811143,
+  "freezes_created": false,
+  "reason": "Adversarial review found forbidden prior-bridge JSONL access through preservation_verify, unsound fit_methods parity, UUID binding and lifecycle gaps.",
+  "recovery_bindings_created": false,
+  "replacement_namespace": "capacity_external_validity_v1_r3",
+  "results_created": false,
+  "schema_version": "capacity_external_validity_v1_r2_invalid_candidate_preservation",
+  "scientific_run_started": false,
+  "status": "REJECTED_PREBIND_CANDIDATE"
+}

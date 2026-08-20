@@ -1,0 +1,400 @@
+{
+  "artifacts": {
+    "hidden.float32.npy": {
+      "bytes": 860288,
+      "sha256": "1c44d956aeb78eab4f48d7e2ef95e537667dc29973b39604ccf1c55851a20160"
+    },
+    "population.json": {
+      "bytes": 12617,
+      "sha256": "131359c13654a494b4ec8d96b48dc0871576d00d5457e8787630846ff2c1c5cd"
+    },
+    "row_ids.json": {
+      "bytes": 25982,
+      "sha256": "5b820b5c125961b0096c6ff606924afd47eb2be3c9518be2bf4d4c75864700f8"
+    }
+  },
+  "attention_backend_switched": false,
+  "bundle_kind": "diagnostic_unhooked",
+  "calibration_cap_candidate_sha256": "8085d9125c55c300e68c9dd98e10482f3a2b33da6cc8ab8b05fd43c64cef4037",
+  "checkpoint_created": false,
+  "condition_units": 140,
+  "elapsed_seconds": 4.393567800521851,
+  "estimator_created": false,
+  "hidden_array_sha256": "c209c2b67772b1cddcc980560c9d87c1103b326206430d74016a70418b3966fc",
+  "hooks": "none",
+  "inference_mode": true,
+  "labels_loaded": false,
+  "model_eval": true,
+  "neural_training_run": false,
+  "output_attentions": false,
+  "parameter_update_run": false,
+  "population_sha256": "131359c13654a494b4ec8d96b48dc0871576d00d5457e8787630846ff2c1c5cd",
+  "requires_grad": false,
+  "runtime_postflight": {
+    "attention_backend": "sdpa",
+    "autocast": false,
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "12.8",
+    "cudnn": 90800,
+    "deterministic_algorithms": true,
+    "gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "observed_libraries": [
+      {
+        "bytes": 255649752,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_adv.so.9",
+        "sha256": "fe1f1468f2af89ebb80446cbb822d823ebf01509111faed8c271131ef53f0db2",
+        "soname": "libcudnn_adv.so.9"
+      },
+      {
+        "bytes": 4903984,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_cnn.so.9",
+        "sha256": "39f017b44b7a1b17b2a8ce8d139b3b7e71e7c6f73eb2e3393b828edfc516753a",
+        "soname": "libcudnn_cnn.so.9"
+      },
+      {
+        "bytes": 581665056,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_engines_precompiled.so.9",
+        "sha256": "ea76b125b1f43d123d8501339578af615af71765d7cb586dbdcb231ed338ce06",
+        "soname": "libcudnn_engines_precompiled.so.9"
+      },
+      {
+        "bytes": 26951112,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_engines_runtime_compiled.so.9",
+        "sha256": "7304751cddcc95e7a30b1cb8fe9ce82c9146862ed5882f245c2572994db58f9f",
+        "soname": "libcudnn_engines_runtime_compiled.so.9"
+      },
+      {
+        "bytes": 3134416,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_graph.so.9",
+        "sha256": "8adf356b5509ee8b5f28846a81387ebca6de12ea6b19858f9b2f43c0f0e3fe2b",
+        "soname": "libcudnn_graph.so.9"
+      },
+      {
+        "bytes": 56541008,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_heuristic.so.9",
+        "sha256": "7a6044a3df8e5642cc7356aff57c856fcc06ff37c8dd932de4540b47325050a0",
+        "soname": "libcudnn_heuristic.so.9"
+      },
+      {
+        "bytes": 118055872,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_ops.so.9",
+        "sha256": "3d50a4f59aeb54dfc01ef66489e48925156c083e20e1ece423eb388f9e60d013",
+        "soname": "libcudnn_ops.so.9"
+      },
+      {
+        "bytes": 14184,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/_C.cpython-312-x86_64-linux-gnu.so",
+        "sha256": "972834e3d19b9a3efee9d69cf8c62916038832f9fc27d56866c92ce507bfd549",
+        "soname": "_C.cpython-312-x86_64-linux-gnu.so"
+      },
+      {
+        "bytes": 125136,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libcudnn.so.9",
+        "sha256": "72f74476dcdc074b9d56f8c5cf576ceff6a595989832b9b0798478dc48a4ffcd",
+        "soname": "libcudnn.so.9"
+      },
+      {
+        "bytes": 13952,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch.so",
+        "sha256": "9b05015fa2d0a7f2d9650e996365609613353e8ff9ea424e33c965a94770bc7d",
+        "soname": "libtorch.so"
+      },
+      {
+        "bytes": 228886968,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch_cpu.so",
+        "sha256": "26c58823d939764d3ddd8ebc2dd9e9a779298fbb4b1f83c84b2200ef2358d1e5",
+        "soname": "libtorch_cpu.so"
+      },
+      {
+        "bytes": 2017851936,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch_cuda.so",
+        "sha256": "4c8e3981131dbec5f724a7002ad99cb1473706cab37ef80885497e3dddaa6c74",
+        "soname": "libtorch_cuda.so"
+      },
+      {
+        "bytes": 14104,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch_global_deps.so",
+        "sha256": "d60273072fdbddf6d9f4cd517d388e33872798044576d0b2d20114c3e04c4187",
+        "soname": "libtorch_global_deps.so"
+      },
+      {
+        "bytes": 19434752,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch_python.so",
+        "sha256": "3e9fa0c9de9931b7ffb9dda7c80673cddb71d29447d9bf4b72d6d86614892edd",
+        "soname": "libtorch_python.so"
+      },
+      {
+        "bytes": 116388640,
+        "canonical_path": "/usr/lib/x86_64-linux-gnu/libcublas.so.12.8.4.1",
+        "sha256": "031ce6c2cbfbb9468f040527cab5c599069ce5609e73e28f87503881063eac21",
+        "soname": "libcublas.so.12"
+      },
+      {
+        "bytes": 751771728,
+        "canonical_path": "/usr/lib/x86_64-linux-gnu/libcublasLt.so.12.8.4.1",
+        "sha256": "10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c",
+        "soname": "libcublasLt.so.12"
+      },
+      {
+        "bytes": 71373816,
+        "canonical_path": "/usr/lib/x86_64-linux-gnu/libcuda.so.570.207",
+        "sha256": "28887ba6683cb4044cdbcef5d299bc40baa21e28dacc561b1ded1a6e75da4572",
+        "soname": "libcuda.so.1"
+      },
+      {
+        "bytes": 728800,
+        "canonical_path": "/usr/lib/x86_64-linux-gnu/libcudart.so.12.8.90",
+        "sha256": "c3a75b33af334a3486d197dbd1584a2985183ba4688d237a2be5f2f679329920",
+        "soname": "libcudart.so.12"
+      }
+    ],
+    "python": "3.12.3",
+    "required_library_check": {
+      "conflicting_duplicate_sonames": {},
+      "extra_observed": [
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_adv.so.9",
+          "libcudnn_adv.so.9",
+          "fe1f1468f2af89ebb80446cbb822d823ebf01509111faed8c271131ef53f0db2"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_cnn.so.9",
+          "libcudnn_cnn.so.9",
+          "39f017b44b7a1b17b2a8ce8d139b3b7e71e7c6f73eb2e3393b828edfc516753a"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_engines_precompiled.so.9",
+          "libcudnn_engines_precompiled.so.9",
+          "ea76b125b1f43d123d8501339578af615af71765d7cb586dbdcb231ed338ce06"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_engines_runtime_compiled.so.9",
+          "libcudnn_engines_runtime_compiled.so.9",
+          "7304751cddcc95e7a30b1cb8fe9ce82c9146862ed5882f245c2572994db58f9f"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_graph.so.9",
+          "libcudnn_graph.so.9",
+          "8adf356b5509ee8b5f28846a81387ebca6de12ea6b19858f9b2f43c0f0e3fe2b"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_heuristic.so.9",
+          "libcudnn_heuristic.so.9",
+          "7a6044a3df8e5642cc7356aff57c856fcc06ff37c8dd932de4540b47325050a0"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_ops.so.9",
+          "libcudnn_ops.so.9",
+          "3d50a4f59aeb54dfc01ef66489e48925156c083e20e1ece423eb388f9e60d013"
+        ]
+      ],
+      "forbidden_present": [],
+      "missing_required": [],
+      "status": "PASS"
+    },
+    "sdpa_flags": {
+      "cudnn": true,
+      "flash": true,
+      "math": true,
+      "mem_efficient": true
+    },
+    "source_hashes": {
+      "GPTNeoXAttention": "46a09756ea4c6804a205ec754f4fbf7f6df47b819d199006c6024990d0b01b0e",
+      "GPTNeoXRotaryEmbedding": "b8650f86b61c6f7ca0b8b692e7d40e08a9be37bbf70724812036ea13ba40080e",
+      "_autoset_attn_implementation": "574b00831199f419a24669d08d9bbd16d239024f2c979d03085df3a2ccbe56fb",
+      "apply_rotary_pos_emb": "473b44bd10c3afd9bb8eb2bd7d383b4848606f44dd9c958225d65e8df63d5503",
+      "modeling_gpt_neox.py": "8747c839bf7a3bceb05d7f80aad62a67cb83f95cb4ad0535f76eab6c83a84a54",
+      "rotate_half": "f714a4b1160c694e270d9191a9f133e53856e2a1c62f5cd2f85740f7c2692397",
+      "sdpa_attention_forward": "601d992611ca2f1854db8559f146f7b4165af30456e2a686c9f1e741eb77e04b"
+    },
+    "tf32": false,
+    "torch": "2.7.0",
+    "transformers": "4.53.2"
+  },
+  "runtime_preflight": {
+    "attention_backend": "sdpa",
+    "autocast": false,
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "12.8",
+    "cudnn": 90800,
+    "deterministic_algorithms": true,
+    "gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "observed_libraries": [
+      {
+        "bytes": 255649752,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_adv.so.9",
+        "sha256": "fe1f1468f2af89ebb80446cbb822d823ebf01509111faed8c271131ef53f0db2",
+        "soname": "libcudnn_adv.so.9"
+      },
+      {
+        "bytes": 4903984,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_cnn.so.9",
+        "sha256": "39f017b44b7a1b17b2a8ce8d139b3b7e71e7c6f73eb2e3393b828edfc516753a",
+        "soname": "libcudnn_cnn.so.9"
+      },
+      {
+        "bytes": 581665056,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_engines_precompiled.so.9",
+        "sha256": "ea76b125b1f43d123d8501339578af615af71765d7cb586dbdcb231ed338ce06",
+        "soname": "libcudnn_engines_precompiled.so.9"
+      },
+      {
+        "bytes": 26951112,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_engines_runtime_compiled.so.9",
+        "sha256": "7304751cddcc95e7a30b1cb8fe9ce82c9146862ed5882f245c2572994db58f9f",
+        "soname": "libcudnn_engines_runtime_compiled.so.9"
+      },
+      {
+        "bytes": 3134416,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_graph.so.9",
+        "sha256": "8adf356b5509ee8b5f28846a81387ebca6de12ea6b19858f9b2f43c0f0e3fe2b",
+        "soname": "libcudnn_graph.so.9"
+      },
+      {
+        "bytes": 56541008,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_heuristic.so.9",
+        "sha256": "7a6044a3df8e5642cc7356aff57c856fcc06ff37c8dd932de4540b47325050a0",
+        "soname": "libcudnn_heuristic.so.9"
+      },
+      {
+        "bytes": 118055872,
+        "canonical_path": "/usr/lib/python3/dist-packages/tensorflow/libcudnn_ops.so.9",
+        "sha256": "3d50a4f59aeb54dfc01ef66489e48925156c083e20e1ece423eb388f9e60d013",
+        "soname": "libcudnn_ops.so.9"
+      },
+      {
+        "bytes": 14184,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/_C.cpython-312-x86_64-linux-gnu.so",
+        "sha256": "972834e3d19b9a3efee9d69cf8c62916038832f9fc27d56866c92ce507bfd549",
+        "soname": "_C.cpython-312-x86_64-linux-gnu.so"
+      },
+      {
+        "bytes": 125136,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libcudnn.so.9",
+        "sha256": "72f74476dcdc074b9d56f8c5cf576ceff6a595989832b9b0798478dc48a4ffcd",
+        "soname": "libcudnn.so.9"
+      },
+      {
+        "bytes": 13952,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch.so",
+        "sha256": "9b05015fa2d0a7f2d9650e996365609613353e8ff9ea424e33c965a94770bc7d",
+        "soname": "libtorch.so"
+      },
+      {
+        "bytes": 228886968,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch_cpu.so",
+        "sha256": "26c58823d939764d3ddd8ebc2dd9e9a779298fbb4b1f83c84b2200ef2358d1e5",
+        "soname": "libtorch_cpu.so"
+      },
+      {
+        "bytes": 2017851936,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch_cuda.so",
+        "sha256": "4c8e3981131dbec5f724a7002ad99cb1473706cab37ef80885497e3dddaa6c74",
+        "soname": "libtorch_cuda.so"
+      },
+      {
+        "bytes": 14104,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch_global_deps.so",
+        "sha256": "d60273072fdbddf6d9f4cd517d388e33872798044576d0b2d20114c3e04c4187",
+        "soname": "libtorch_global_deps.so"
+      },
+      {
+        "bytes": 19434752,
+        "canonical_path": "/usr/lib/python3/dist-packages/torch/lib/libtorch_python.so",
+        "sha256": "3e9fa0c9de9931b7ffb9dda7c80673cddb71d29447d9bf4b72d6d86614892edd",
+        "soname": "libtorch_python.so"
+      },
+      {
+        "bytes": 116388640,
+        "canonical_path": "/usr/lib/x86_64-linux-gnu/libcublas.so.12.8.4.1",
+        "sha256": "031ce6c2cbfbb9468f040527cab5c599069ce5609e73e28f87503881063eac21",
+        "soname": "libcublas.so.12"
+      },
+      {
+        "bytes": 751771728,
+        "canonical_path": "/usr/lib/x86_64-linux-gnu/libcublasLt.so.12.8.4.1",
+        "sha256": "10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c",
+        "soname": "libcublasLt.so.12"
+      },
+      {
+        "bytes": 71373816,
+        "canonical_path": "/usr/lib/x86_64-linux-gnu/libcuda.so.570.207",
+        "sha256": "28887ba6683cb4044cdbcef5d299bc40baa21e28dacc561b1ded1a6e75da4572",
+        "soname": "libcuda.so.1"
+      },
+      {
+        "bytes": 728800,
+        "canonical_path": "/usr/lib/x86_64-linux-gnu/libcudart.so.12.8.90",
+        "sha256": "c3a75b33af334a3486d197dbd1584a2985183ba4688d237a2be5f2f679329920",
+        "soname": "libcudart.so.12"
+      }
+    ],
+    "python": "3.12.3",
+    "required_library_check": {
+      "conflicting_duplicate_sonames": {},
+      "extra_observed": [
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_adv.so.9",
+          "libcudnn_adv.so.9",
+          "fe1f1468f2af89ebb80446cbb822d823ebf01509111faed8c271131ef53f0db2"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_cnn.so.9",
+          "libcudnn_cnn.so.9",
+          "39f017b44b7a1b17b2a8ce8d139b3b7e71e7c6f73eb2e3393b828edfc516753a"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_engines_precompiled.so.9",
+          "libcudnn_engines_precompiled.so.9",
+          "ea76b125b1f43d123d8501339578af615af71765d7cb586dbdcb231ed338ce06"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_engines_runtime_compiled.so.9",
+          "libcudnn_engines_runtime_compiled.so.9",
+          "7304751cddcc95e7a30b1cb8fe9ce82c9146862ed5882f245c2572994db58f9f"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_graph.so.9",
+          "libcudnn_graph.so.9",
+          "8adf356b5509ee8b5f28846a81387ebca6de12ea6b19858f9b2f43c0f0e3fe2b"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_heuristic.so.9",
+          "libcudnn_heuristic.so.9",
+          "7a6044a3df8e5642cc7356aff57c856fcc06ff37c8dd932de4540b47325050a0"
+        ],
+        [
+          "/usr/lib/python3/dist-packages/tensorflow/libcudnn_ops.so.9",
+          "libcudnn_ops.so.9",
+          "3d50a4f59aeb54dfc01ef66489e48925156c083e20e1ece423eb388f9e60d013"
+        ]
+      ],
+      "forbidden_present": [],
+      "missing_required": [],
+      "status": "PASS"
+    },
+    "sdpa_flags": {
+      "cudnn": true,
+      "flash": true,
+      "math": true,
+      "mem_efficient": true
+    },
+    "source_hashes": {
+      "GPTNeoXAttention": "46a09756ea4c6804a205ec754f4fbf7f6df47b819d199006c6024990d0b01b0e",
+      "GPTNeoXRotaryEmbedding": "b8650f86b61c6f7ca0b8b692e7d40e08a9be37bbf70724812036ea13ba40080e",
+      "_autoset_attn_implementation": "574b00831199f419a24669d08d9bbd16d239024f2c979d03085df3a2ccbe56fb",
+      "apply_rotary_pos_emb": "473b44bd10c3afd9bb8eb2bd7d383b4848606f44dd9c958225d65e8df63d5503",
+      "modeling_gpt_neox.py": "8747c839bf7a3bceb05d7f80aad62a67cb83f95cb4ad0535f76eab6c83a84a54",
+      "rotate_half": "f714a4b1160c694e270d9191a9f133e53856e2a1c62f5cd2f85740f7c2692397",
+      "sdpa_attention_forward": "601d992611ca2f1854db8559f146f7b4165af30456e2a686c9f1e741eb77e04b"
+    },
+    "tf32": false,
+    "torch": "2.7.0",
+    "transformers": "4.53.2"
+  },
+  "schema_version": "atlas_rope_v5_attempt9_technical_bundle_v1",
+  "selected_rows": 280,
+  "status": "COMPLETE",
+  "summaries_sha256": null,
+  "threshold_tuning_authorized": false
+}

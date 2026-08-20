@@ -1,0 +1,80 @@
+{
+  "files": {
+    "data/atlas_v1/partitions/C1.records.jsonl": {
+      "access": "public_analysis",
+      "rows": 1389,
+      "sha256": "7ba75002a828197ac46f5b27a7ac9058347479750962793edba0ae39ac15e676"
+    },
+    "data/atlas_v1/partitions/C1.units.jsonl": {
+      "access": "public_analysis",
+      "rows": 5556,
+      "sha256": "9b1f4e25b6ccd378cbfe3b6afaf14619ee902b51aa2df65cc57142cac63b38ae"
+    },
+    "data/atlas_v1/partitions/C2.records.jsonl": {
+      "access": "public_analysis",
+      "rows": 1231,
+      "sha256": "b8578872e839a55dda0dfc7b1095b93f177db370d12b48968558ffe46bd1b1f7"
+    },
+    "data/atlas_v1/partitions/C2.units.jsonl": {
+      "access": "public_analysis",
+      "rows": 4924,
+      "sha256": "2863b1f02930f4a1f9e65c64162686cd0dced758c6d08cbbb74ab7c98e7ec03d"
+    },
+    "data/atlas_v1/partitions/calibration.records.jsonl": {
+      "access": "public_analysis",
+      "rows": 2479,
+      "sha256": "e82f0a228c91b4c6e34d632107949606879c773b5f7aea450b8a62da1d1de0ae"
+    },
+    "data/atlas_v1/partitions/calibration.units.jsonl": {
+      "access": "public_analysis",
+      "rows": 9916,
+      "sha256": "7a1e3b8d48f8b5f70417cb6a942669910c8251e8398f75e2b53203d7f6e73484"
+    },
+    "data/atlas_v1/partitions/discovery.records.jsonl": {
+      "access": "public_analysis",
+      "rows": 11850,
+      "sha256": "12b3e8506531b0282b8faeec9ccb9700e4b328211cf2ea5522118ae69d4e36c3"
+    },
+    "data/atlas_v1/partitions/discovery.units.jsonl": {
+      "access": "public_analysis",
+      "rows": 47400,
+      "sha256": "9f033d0daa42cfa1ff40d58196e6da1ead6a68d70583707133e6660823e28f80"
+    },
+    "data/atlas_v1/private/final.jsonl": {
+      "access": "M8_only_unlock_required",
+      "rows": 128,
+      "sha256": "684d48c6fd5fd6a1faec5ca5785eb9a054fc94a603422088c5e9eb6a485c8eee"
+    },
+    "data/atlas_v1/private/final.records.jsonl": {
+      "access": "M8_only_unlock_required",
+      "rows": 3000,
+      "sha256": "5d397a7695bb46d1e0700af9af084272fa627ba815ada8b5197bac740510471e"
+    },
+    "data/atlas_v1/private/final.units.jsonl": {
+      "access": "M8_only_unlock_required",
+      "rows": 12000,
+      "sha256": "3acb17e56fead3c1abc915978ff7733a4ccb0e0c3dcb787410deffbaffc79e23"
+    },
+    "data/atlas_v1/transforms/C1.jsonl": {
+      "access": "public_analysis",
+      "rows": 128,
+      "sha256": "ee110f0918e71792ed043386e6ae45754ec036ce3e33187ade6f481c727473db"
+    },
+    "data/atlas_v1/transforms/C2.jsonl": {
+      "access": "public_analysis",
+      "rows": 128,
+      "sha256": "26ae0e1fb23c194107d1697e55ed657591005e2f7d377713fc3f412be2657638"
+    },
+    "data/atlas_v1/transforms/calibration.jsonl": {
+      "access": "public_analysis",
+      "rows": 128,
+      "sha256": "eca3717f940ab509cb8269b77fcd96debe899b485aff9ba6d8a12b3bd7c51378"
+    },
+    "data/atlas_v1/transforms/discovery.jsonl": {
+      "access": "public_analysis",
+      "rows": 128,
+      "sha256": "ff47eb5b579bcf17ace77ea26c7e8e7c4df19c55db29bd0bed0c3e6d70c1f8f1"
+    }
+  },
+  "schema_version": "atlas_v1_partition_hashes"
+}

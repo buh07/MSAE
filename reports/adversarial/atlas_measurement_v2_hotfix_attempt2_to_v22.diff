@@ -1,0 +1,21 @@
+--- scripts/run_msae_measurement_v2.py@attempt2
++++ scripts/run_msae_measurement_v2.py@v2.2
+@@ -286,8 +286,17 @@
+ def _fit_ridge(x: np.ndarray, labels: np.ndarray, classes: int, alphas: Sequence[float],
+                x_cal: np.ndarray, y_cal: np.ndarray, device: str) -> tuple[np.ndarray, np.ndarray, float, dict[str, float]]:
+     import torch
++    label_array=np.asarray(labels);cal_label_array=np.asarray(y_cal)
++    if (label_array.ndim!=1 or cal_label_array.ndim!=1 or len(label_array)!=len(x) or len(cal_label_array)!=len(x_cal)
++            or not np.issubdtype(label_array.dtype,np.integer) or not np.issubdtype(cal_label_array.dtype,np.integer)
++            or np.any(label_array<0) or np.any(label_array>=classes)
++            or np.any(cal_label_array<0) or np.any(cal_label_array>=classes)):
++        raise ValueError("ridge labels must be in-range integer class indices")
+     xt = torch.as_tensor(np.asarray(x, np.float32), device=device)
+-    yt = torch.nn.functional.one_hot(torch.as_tensor(labels, device=device), classes).float()
++    # Prepared labels use compact integer dtypes; one_hot requires torch.long.
++    yt = torch.nn.functional.one_hot(
++        torch.as_tensor(label_array.astype(np.int64,copy=False), device=device), classes
++    ).float()
+     xmean = xt.mean(0); ymean = yt.mean(0); xc = xt-xmean; yc = yt-ymean
+     gram = xc.T@xc; rhs = xc.T@yc
+     eig, vec = torch.linalg.eigh(gram)

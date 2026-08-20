@@ -1,0 +1,162 @@
+{
+  "schema_version": "joint_controllability_benchmark_v3_config",
+  "namespace": "joint_controllability_benchmark_v3_20260808",
+  "seed": 20260808,
+  "prospective": true,
+  "exploratory": true,
+  "question": "Do released interpretability methods jointly provide potency, signed-sham specificity, collateral safety, and replication?",
+  "task": {
+    "dataset": "Salesforce/wikitext",
+    "config": "wikitext-103-raw-v1",
+    "split": "train",
+    "fingerprint": "7dabb830ac9ebb0d",
+    "development_per_source": 64,
+    "test_per_source": 128,
+    "sources": [
+      "WIKI_A",
+      "WIKI_B"
+    ],
+    "true_prefix_words": 48,
+    "local_suffix_words": 20,
+    "continuation_words": 12,
+    "teacher_forced_tokens": 8,
+    "minimum_words": 140,
+    "within_corpus_transfer": true
+  },
+  "models": [
+    {
+      "key": "gpt2",
+      "name": "gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "layers": [
+        1,
+        6,
+        10
+      ],
+      "batch_size": 16,
+      "sae": {
+        "format": "saelens_topk",
+        "repo": "jbloom/GPT2-Small-OAI-v5-32k-resid-post-SAEs",
+        "revision": "21df74db7b9f690cd2403a20485cf75f46330d0d",
+        "path_template": "v5_32k_layer_{layer}.pt",
+        "k": 32,
+        "normalize": "layer_norm"
+      }
+    },
+    {
+      "key": "pythia160",
+      "name": "EleutherAI/pythia-160m-deduped",
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+      "layers": [
+        8
+      ],
+      "batch_size": 16,
+      "sae": {
+        "format": "dictionary_learning",
+        "repo": "adamkarvonen/saebench_pythia-160m-deduped_width-2pow12_date-0108",
+        "revision": "ede0e8b18119ee7d77b0f21d928383a00c73843d",
+        "layer": 8,
+        "trainer": 2,
+        "primary": "TopK",
+        "architectures": [
+          "TopK",
+          "Standard",
+          "GatedSAE",
+          "JumpRelu",
+          "MatryoshkaBatchTopK"
+        ]
+      }
+    },
+    {
+      "key": "gemma2",
+      "name": "google/gemma-2-2b",
+      "revision": "c5ebcd40d208330abc697524c919956e692655cf",
+      "layers": [
+        0,
+        12,
+        25
+      ],
+      "batch_size": 4,
+      "sae": {
+        "format": "gemma_scope_jumprelu",
+        "repo": "google/gemma-scope-2b-pt-res",
+        "revision": "fd571b47c1c64851e9b1989792367b9babb4af63",
+        "paths": {
+          "0": "layer_0/width_16k/average_l0_46/params.npz",
+          "12": "layer_12/width_16k/average_l0_41/params.npz",
+          "25": "layer_25/width_16k/average_l0_55/params.npz"
+        }
+      }
+    }
+  ],
+  "methods": [
+    "diffmean_caa",
+    "paired_delta_svd",
+    "task_projection",
+    "leace",
+    "pca",
+    "random",
+    "reft_style_r1",
+    "supervised_skyline",
+    "public_sae_primary"
+  ],
+  "budgets": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "analysis": {
+    "rank": 16,
+    "ridge_alpha": 10.0,
+    "nuisance_penalty": 1.0,
+    "minimum_eigenvalue": 1e-08,
+    "bootstrap_draws": 500,
+    "minimum_full_effect": 0.25,
+    "minimum_effect_eligibility": 0.8,
+    "maximum_sham_fraction": 0.25,
+    "maximum_sham_fraction_ci": 0.35,
+    "minimum_recovery_ci_lower": 0.1,
+    "minimum_specificity_ci_lower": 0.1,
+    "maximum_collateral_ci_upper": 0.02,
+    "minimum_replicating_model_families": 2,
+    "epsilon": 1e-08
+  },
+  "positive_control": {
+    "rows": 512,
+    "hidden": 64,
+    "rank": 4,
+    "ground_recovery_min": 0.9,
+    "ground_specificity_min": 0.8,
+    "ground_collateral_max": 0.02,
+    "skyline_recovery_min": 0.7,
+    "skyline_specificity_min": 0.5,
+    "random_specificity_max": 0.25
+  },
+  "runtime": {
+    "dtype": "float32",
+    "maximum_length": 192,
+    "deterministic": true,
+    "prepared_root": "data/joint_controllability_benchmark_v3_prepared",
+    "asset_manifest": "reports/provenance/joint_controllability_benchmark_v3/public_sae_manifest.json",
+    "freeze": "configs/joint_controllability_benchmark_v3/FREEZE.json",
+    "output_root": "results/joint_controllability_benchmark_v3_20260808",
+    "tmux_prefix": "msae_joint_control_v3",
+    "gate_poll_seconds": 10
+  },
+  "preservation": {
+    "closure": "reports/architecture_program_closure_v2.json",
+    "closure_sha256": "98b914d177d1ce9989c0c66e00c1434a1ce6c99aeb6ae0dfd2a5466a084d541a",
+    "k2_training_authorized": false,
+    "sae_training_authorized": false
+  },
+  "claim_limits": {
+    "cross_domain_replication": false,
+    "universal_sae_claim": false,
+    "automatic_training_authorization": false
+  },
+  "method_notes": {
+    "reft_style_r1": "development-only rank-one behavior-gradient comparator; not a reproduction of the ReFT-r1 training algorithm",
+    "task_projection": "rank-one paired mean projection and therefore estimator-equivalent to DiffMean in this one-factor task; retained as a named comparator, not independent evidence",
+    "public_sae_primary": "prespecified released-SAE class; architecture differs by model and supports class-level, not architecture-specific, replication"
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "attempt": "atlas_rope_v4_attempt8",
+  "batch_contract": {
+    "batch_size": 64,
+    "candidate_batches": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      24
+    ],
+    "candidate_order": "reference_base_order_then_shift_order",
+    "reference_batches": [
+      64,
+      36
+    ],
+    "reference_order": "unit_id_utf8",
+    "reference_repeats": 3,
+    "right_padding": {
+      "attention_mask": 0,
+      "input_id": 0,
+      "position_id": 0
+    }
+  },
+  "data_root": "data/atlas_rope_v4_attempt8",
+  "diagnostic": {
+    "bases_per_bin": 4,
+    "batch_size": 1,
+    "capture_axes": [
+      "batch",
+      "head",
+      "token",
+      "head_dim"
+    ],
+    "condition_units": 140,
+    "cosine_reporting_floor": 1e-12,
+    "hooks": "query_key_value_linear_output_only",
+    "maximum_array_bytes": 1541406720,
+    "maximum_length": 128,
+    "output_attentions": false,
+    "relative_l2_reporting_floor": 1e-08,
+    "required_residuals": [
+      "propagated_pre",
+      "local_rotary",
+      "aligned_total_post",
+      "invariant_logits"
+    ],
+    "selected_rows": 280,
+    "threshold_tuning_authorized": false
+  },
+  "lineage": {
+    "attempt7_fresh_qa_manifest": {
+      "path": "data/atlas_discovery_v3_3_attempt7_qa_compact_v3/prepared/manifest.json",
+      "sha256": "77648023ac1a4ef37bece450310c8c09cf08e48a9bb62cfafcce941cd36080b9"
+    },
+    "attempt7_population_split": {
+      "path": "configs/atlas_discovery_v3_3/population_split_v3.json",
+      "sha256": "a7a7fce580121d8fd2e3ccd814894237866f4aab1c7b5bab2aa73a27e0fb91b1"
+    },
+    "attempt7_science_manifest": {
+      "path": "data/atlas_discovery_v3_3_attempt7_final_v3/prepared/manifest.json",
+      "sha256": "87cdf01c48428cf1d1cdab7a9324865d3db8e44408e997f1045123bb23ec5ee4"
+    },
+    "prior_measurement_manifest": {
+      "path": "data/atlas_measurement_v2_4/prepared/manifest.json",
+      "sha256": "c9c50245c858f9881458dfcb1e935f0f767b070db727f82c2575227d7201ae1e"
+    },
+    "requirements_lock": {
+      "path": "requirements-atlas.lock.txt",
+      "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+    },
+    "supplement_source_provenance": {
+      "path": "data/atlas_rope_v4_raw/PROVENANCE.json",
+      "sha256": "703969c8efc709b195bb2fe01223037e841491ec9beb5165d79d89dc63a0d905"
+    }
+  },
+  "metrics": {
+    "atol_grid": [
+      5e-07,
+      1e-06,
+      2e-06,
+      4e-06,
+      8e-06
+    ],
+    "cache_dtype": "float32",
+    "cosine_distance_grid": [
+      1e-11,
+      5e-11,
+      1e-10
+    ],
+    "cosine_product_floor": 1e-24,
+    "maximum_cosine_failures_per_cell": 0,
+    "maximum_failing_elements_per_cell": 30,
+    "maximum_failing_rows_per_cell": 2,
+    "maximum_relative_l2_failures_per_cell": 0,
+    "reduction_dtype": "float64",
+    "relative_l2_denominator_floor": 1e-12,
+    "relative_l2_grid": [
+      2e-06,
+      5e-06,
+      1e-05
+    ],
+    "rtol": 5e-06,
+    "safety_factor": 1.25
+  },
+  "model": {
+    "attention_heads": 12,
+    "cached_dtype": "float32",
+    "dtype": "float32",
+    "head_size": 64,
+    "hidden_state_index": 4,
+    "hidden_width": 768,
+    "layer": 3,
+    "local_files_only": true,
+    "name": "EleutherAI/pythia-160m-deduped",
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+    "rotary_dimension": 16,
+    "rotary_pct": 0.25
+  },
+  "model_calls_authorized": false,
+  "neural_training_authorized": false,
+  "population": {
+    "bases_per_bin": 20,
+    "candidate_rows_per_source": 1200,
+    "candidate_units_per_source": 600,
+    "elements_per_cell": 30720,
+    "length_bins": [
+      [
+        "4-8",
+        4,
+        8
+      ],
+      [
+        "9-16",
+        9,
+        16
+      ],
+      [
+        "17-32",
+        17,
+        32
+      ],
+      [
+        "33-64",
+        33,
+        64
+      ],
+      [
+        "65-128",
+        65,
+        128
+      ]
+    ],
+    "maximum_bases_per_document_per_bin": 2,
+    "minimum_documents_per_bin": 10,
+    "reference_rows_per_source": 200,
+    "reference_units_per_source": 100,
+    "required_cells_per_source": 30,
+    "rows_per_cell": 40,
+    "selected_token_positions": [
+      "floor((L-1)/3)",
+      "L-1"
+    ],
+    "shifts": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ]
+  },
+  "rejected_supplemental_candidates": {
+    "ESLSpok": {
+      "files": [
+        {
+          "path": "data/atlas_measurement_v2_4/raw/UD_English-ESLSpok/f4d0ebe5eae0bc179a988934e15f018dcacfe73b/en_eslspok-ud-dev.conllu",
+          "sha256": "7034c651d3deec369149139a75da31a61e673b9735ae88589695ab1d2d235000"
+        },
+        {
+          "path": "data/atlas_measurement_v2_4/raw/UD_English-ESLSpok/f4d0ebe5eae0bc179a988934e15f018dcacfe73b/en_eslspok-ud-test.conllu",
+          "sha256": "7d3b37af353205dc3b2964937e7c511e7763cdca25ec9c830638a2540ffe04be"
+        },
+        {
+          "path": "data/atlas_measurement_v2_4/raw/UD_English-ESLSpok/f4d0ebe5eae0bc179a988934e15f018dcacfe73b/en_eslspok-ud-train.conllu",
+          "sha256": "2d98d2a9520fbc9e20154ab0b51bb688d704c3c59b0e9ae09d82df0a4b1c6330"
+        }
+      ],
+      "reason": "all 442 otherwise eligible dev/test records have prior document exposure across 872 previously opened documents",
+      "revision": "f4d0ebe5eae0bc179a988934e15f018dcacfe73b"
+    },
+    "GUMReddit": {
+      "files": [
+        {
+          "path": "data/atlas_rope_v4_raw/UD_English-GUMReddit/b23cca5d4f8732b35cbbec070bb2b1d7abe750e1/en_gumreddit-ud-train.conllu",
+          "sha256": "6c360c457d58e1fdcb8eba07ee1f6b352eb7c40f74b00af0872d87cb9388118e"
+        },
+        {
+          "path": "data/atlas_rope_v4_raw/UD_English-GUMReddit/b23cca5d4f8732b35cbbec070bb2b1d7abe750e1/en_gumreddit-ud-dev.conllu",
+          "sha256": "f8bbf1b235557513f606cf147c43d8e70c663db26e929a77eedbe8aa62184625"
+        },
+        {
+          "path": "data/atlas_rope_v4_raw/UD_English-GUMReddit/b23cca5d4f8732b35cbbec070bb2b1d7abe750e1/en_gumreddit-ud-test.conllu",
+          "sha256": "9afecc3c76deea4540a5f1fe6b2c851857ce5d272f78b476949a90352ea4f381"
+        }
+      ],
+      "reason": "all 16364 integer-token forms are redacted underscore placeholders and only 18 genuine documents exist",
+      "revision": "b23cca5d4f8732b35cbbec070bb2b1d7abe750e1",
+      "upstream": "https://github.com/UniversalDependencies/UD_English-GUMReddit"
+    }
+  },
+  "run_root": "pilot_runs/20260803_atlas_rope_technical_v4",
+  "runtime": {
+    "attention_backend": "sdpa",
+    "autocast": false,
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "12.8",
+    "cudnn": 90800,
+    "deterministic_algorithms": true,
+    "forbidden_alternate_sonames": [
+      "libtorch_cuda_cu.so",
+      "libcudnn.so.8",
+      "libcudart.so.11.0",
+      "libcublas.so.11"
+    ],
+    "gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "python_environment": ".venv-atlas",
+    "required_library_attestation": "data/atlas_rope_v4_attempt8_runtime_probe.json",
+    "sdpa_flags": {
+      "cudnn": true,
+      "flash": true,
+      "math": true,
+      "mem_efficient": true
+    },
+    "source_hashes": {
+      "GPTNeoXAttention": "46a09756ea4c6804a205ec754f4fbf7f6df47b819d199006c6024990d0b01b0e",
+      "GPTNeoXRotaryEmbedding": "b8650f86b61c6f7ca0b8b692e7d40e08a9be37bbf70724812036ea13ba40080e",
+      "_autoset_attn_implementation": "574b00831199f419a24669d08d9bbd16d239024f2c979d03085df3a2ccbe56fb",
+      "apply_rotary_pos_emb": "473b44bd10c3afd9bb8eb2bd7d383b4848606f44dd9c958225d65e8df63d5503",
+      "modeling_gpt_neox.py": "8747c839bf7a3bceb05d7f80aad62a67cb83f95cb4ad0535f76eab6c83a84a54",
+      "rotate_half": "f714a4b1160c694e270d9191a9f133e53856e2a1c62f5cd2f85740f7c2692397",
+      "sdpa_attention_forward": "601d992611ca2f1854db8559f146f7b4165af30456e2a686c9f1e741eb77e04b"
+    },
+    "tf32": false,
+    "torch": "2.7.0",
+    "transformers": "4.53.2"
+  },
+  "schema_version": "atlas_rope_v4_attempt8_prescore_v1",
+  "seed": 20260803,
+  "signer": {
+    "algorithm": "Ed25519",
+    "public_key_base64": "TTupMmkJYG7oNU26egYLWutbxM2sWzkLCn7xI9TwHXc=",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d"
+  },
+  "sources": {
+    "EWT_calibration": {
+      "files": [
+        {
+          "path": "data/atlas_discovery_v3_3_attempt7_qa_raw/EWT/en_ewt-ud-devtest.conllu",
+          "sha256": "4e2c70ee827c9db783e0b0756650872eac7236acb5e50fa1287cc271cafeaa37"
+        }
+      ],
+      "role": "technical_calibration_only"
+    },
+    "GENTLE_validation": {
+      "files": [
+        {
+          "path": "data/atlas_rope_v4_raw/UD_English-GENTLE/fd7a1bfc82896e362c66f59492b5525940f52fa7/en_gentle-ud-test.conllu",
+          "sha256": "42d12cdef99bcd3160a3241ba1811fe9e7fd4b37a77f9b9e8c2852f04d69f3fa"
+        }
+      ],
+      "revision": "fd7a1bfc82896e362c66f59492b5525940f52fa7",
+      "role": "supplementary_outcome_new_technical_validation",
+      "upstream": "https://github.com/UniversalDependencies/UD_English-GENTLE"
+    },
+    "GUM_fresh_validation": {
+      "files": [
+        {
+          "path": "data/atlas_discovery_v3_3_attempt7_qa_raw/GUM/en_gum-ud-devtest.conllu",
+          "sha256": "6214d40d9db2d8ab939fa596f82e0ae82154c3041f86c9dc18f6378199191fea"
+        }
+      ],
+      "role": "primary_heldout_technical_validation"
+    }
+  },
+  "stage_order": [
+    "retire_attempt7",
+    "build_prescore",
+    "implementation_review_ship",
+    "authorize_ewt",
+    "run_ewt_minimal",
+    "run_ewt_diagnostic",
+    "freeze_validation",
+    "freeze_review_ship",
+    "run_gum_sentinel_and_grid",
+    "run_gentle",
+    "authorize_science",
+    "run_unchanged_science",
+    "claim_review"
+  ],
+  "status": "draft_no_model_calls_authorized"
+}

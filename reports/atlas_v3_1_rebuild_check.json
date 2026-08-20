@@ -1,0 +1,9 @@
+{
+  "excluded_volatile_artifact": "process_snapshot_preopen.json",
+  "file_count": 37,
+  "inventory_sha256": "2a012db5bd8b7074ccdb02f2d20239ded89fff07db293318c8119652cb758125",
+  "preflight_sha256": "a94ac5f4fe9a219cbb10bf7f1a2c1c993ff985fadb6f27fa6eb33b36b143f8ce",
+  "prepared_manifest_sha256": "99f0b74fad698cd6717d014d206036a4b1560ad78c4bdaef36d226343ad6ebee",
+  "schema_version": "atlas_discovery_v3_1_rebuild_check_v1",
+  "status": "PASS"
+}

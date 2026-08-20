@@ -1,0 +1,793 @@
+{
+  "artifacts": [
+    {
+      "bytes": 11682,
+      "path": "PLAN_CAPACITY_EXTERNAL_VALIDITY_V1_R5.md",
+      "sha256": "e0e25310a171d54c3151b7193216ad4f8e5705fdead19accb2c15ce52091ea42"
+    },
+    {
+      "bytes": 5836,
+      "path": "configs/capacity_controller_diagnostic_v1_r5/FREEZE.json",
+      "sha256": "801aea5be2133570e21091bc1c6e71169cc8a8340a293508030627676dada8ea"
+    },
+    {
+      "bytes": 2147,
+      "path": "configs/capacity_controller_diagnostic_v1_r5/RECOVERY_BINDING.json",
+      "sha256": "22d50fa7cd66dfc487cc707b88be523cb8c93cea74fb3a232376169ca691bf47"
+    },
+    {
+      "bytes": 6246,
+      "path": "configs/capacity_controller_diagnostic_v1_r5/run.json",
+      "sha256": "978e23c3cd51c6fad54d54f130b6596a718252db9c143e87fb21e60e421cacd9"
+    },
+    {
+      "bytes": 4524,
+      "path": "configs/trained_copy_external_v1_r5/FREEZE.json",
+      "sha256": "a59246d2d06e3fa8f14dcb290b6fdf2f9d73607e39ab93da55f1c41f02d6f758"
+    },
+    {
+      "bytes": 2147,
+      "path": "configs/trained_copy_external_v1_r5/RECOVERY_BINDING.json",
+      "sha256": "1065321b62703fd51c38416157e8acb485926c1d15f82492bc251cc3a5e8664f"
+    },
+    {
+      "bytes": 3708,
+      "path": "configs/trained_copy_external_v1_r5/run.json",
+      "sha256": "ae80b44d3735eaa055008617ba316679e8841d197eb9cd3bd64acdf28c2b6598"
+    },
+    {
+      "bytes": 770,
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r5_candidate_review.md",
+      "sha256": "41010d23f9bba436df27fc3ba5fcc2b678e39d9f63383d735c7ecffc556253e2"
+    },
+    {
+      "bytes": 1201,
+      "path": "reports/adversarial/capacity_controller_diagnostic_v1_r5_frozen_review.md",
+      "sha256": "2cf70bec27ef9a7bfd67e45531075ffc300c6a82839528d9680aa4138420c799"
+    },
+    {
+      "bytes": 770,
+      "path": "reports/adversarial/trained_copy_external_v1_r5_candidate_review.md",
+      "sha256": "41010d23f9bba436df27fc3ba5fcc2b678e39d9f63383d735c7ecffc556253e2"
+    },
+    {
+      "bytes": 1192,
+      "path": "reports/adversarial/trained_copy_external_v1_r5_frozen_review.md",
+      "sha256": "d5b57be6fb72b7b11dbefe42e32d9ca35056602bc8248eba55e7af4052ec9eb4"
+    },
+    {
+      "bytes": 694,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/LAUNCH.json",
+      "sha256": "5b082bf917e65c3206813d636214dc4200b512d7eb67a3d11595bc1369cbc287"
+    },
+    {
+      "bytes": 106,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/events/010_CAPACITY_TRAIN_ACCESS_MAY_HAVE_OCCURRED.json",
+      "sha256": "569c45886dea7a130cfaf49a244fd8d5622d0b5cf6851c01261d28a6428ca7c4"
+    },
+    {
+      "bytes": 88,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/events/011_CAPACITY_TRAIN_OPENED.json",
+      "sha256": "480a90c608ebb3e43d400e2072646a556580fcdc3bfeb01b50254912524c0210"
+    },
+    {
+      "bytes": 112,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/events/012_CAPACITY_DEVELOPMENT_ACCESS_MAY_HAVE_OCCURRED.json",
+      "sha256": "cf62675e9108328fdb4d0c26936e537ae54d64e0c48299c92810f48685fae930"
+    },
+    {
+      "bytes": 94,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/events/013_CAPACITY_DEVELOPMENT_OPENED.json",
+      "sha256": "2dd24536308eab3d3cec4cc80c8074bea35bbc6bd282d75a95449f7999ce18c3"
+    },
+    {
+      "bytes": 96,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/events/014_CAPACITY_DEVELOPMENT_COMPLETE.json",
+      "sha256": "90db56642a3ab1968487164eca346d9bcf83db8ee22afbd3f7dad191bbcd69be"
+    },
+    {
+      "bytes": 113,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/events/015_CAPACITY_CONFIRMATION_ACCESS_MAY_HAVE_OCCURRED.json",
+      "sha256": "5f86b949e6fa803c92b7b3fe7fe1a5f902f4d1870c115ae31fd5fa8bb74c5e94"
+    },
+    {
+      "bytes": 95,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/events/016_CAPACITY_CONFIRMATION_OPENED.json",
+      "sha256": "924016307bff16d22fff312386bfd71124314463b92b271de2252b5781ddadd2"
+    },
+    {
+      "bytes": 201,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r5_run_20260810r5/events/017_CAPACITY_COMPLETE.json",
+      "sha256": "67b8f82edcf40a44484dc9697f8c993ca53c61967b4e1b30964c9ef372152b28"
+    },
+    {
+      "bytes": 748,
+      "path": "reports/provenance/capacity_external_validity_v1_r5_REVIEW_BINDING.json",
+      "sha256": "3b0cbfe5b725cec3a4b982e099ace75cbb03720318faf2305fd3604d652f9d3d"
+    },
+    {
+      "bytes": 694,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/LAUNCH.json",
+      "sha256": "fc176e950c75ce755827b303d126b60840536495a55ae2f3a03f5c123f4dc4bd"
+    },
+    {
+      "bytes": 220,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/020_PRECHECK_NO_ACCESS.json",
+      "sha256": "ee5a35ff23337ea2f31409d7b2e0a8f49e06706c05ecea57f00014f4ec0981c6"
+    },
+    {
+      "bytes": 91,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/021_ACCESS_MAY_HAVE_OCCURRED.json",
+      "sha256": "5e48ef29a5868d43943b98805229b41cd6df650ea6a521252bc2651667bf1670"
+    },
+    {
+      "bytes": 88,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/022_EXTERNAL_TRAIN_OPENED.json",
+      "sha256": "a9882a7206869f4e7d30ef562bb628aa966fe0ce2930370b58a9d06811a00109"
+    },
+    {
+      "bytes": 112,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/023_EXTERNAL_DEVELOPMENT_ACCESS_MAY_HAVE_OCCURRED.json",
+      "sha256": "99f330c3daf58875269ac267c563d28731fe7bdae8d167a5f13a710373830b2f"
+    },
+    {
+      "bytes": 94,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/024_EXTERNAL_DEVELOPMENT_OPENED.json",
+      "sha256": "4bf5711dd4bf390d031e2fe2b8f4c904e3a3a18b26d4827dcebf1181180fd40d"
+    },
+    {
+      "bytes": 96,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/025_EXTERNAL_DEVELOPMENT_COMPLETE.json",
+      "sha256": "32b7fa0a2a8c00d7f39b52053b0a2e49b93f30875a87ff39a3a298e77f2455f1"
+    },
+    {
+      "bytes": 113,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/026_EXTERNAL_CONFIRMATION_ACCESS_MAY_HAVE_OCCURRED.json",
+      "sha256": "0b68045f45880272fe81944dafcb8b52aab9e0e89590190a7e3b463ba6d3029c"
+    },
+    {
+      "bytes": 95,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/027_EXTERNAL_CONFIRMATION_OPENED.json",
+      "sha256": "15bf5c814f42e143a4c8112eba4c8c6cf2c3ba8f216a93bdc2cf98ceeefd2dbd"
+    },
+    {
+      "bytes": 217,
+      "path": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5/events/028_EXTERNAL_TERMINAL.json",
+      "sha256": "5e9bcb258eb449176a0d10a4158ceb875a8a16b8d6f0cf478b290fe1277e2852"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank16_seed7101.pt",
+      "sha256": "aa131fa380c9eba034c83c97e5a7f0cba9297439f61b1786fd8ce6f27a07a6f3"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank16_seed7102.pt",
+      "sha256": "334daf4bdabd0d780b479b834e0046e7a5f675cc296aa82c4c1660a979034270"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank16_seed7103.pt",
+      "sha256": "ec64704350fac1ae99553343625a99ff1208b91c4029377d477f8cf8023cf8f6"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank32_seed7101.pt",
+      "sha256": "c3732746b5e197a25b07655eb07cc810d488b012a429ffa73307b384ed4a21eb"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank32_seed7102.pt",
+      "sha256": "afd5c65ae4ff8ef3f9ef563ea8020065b3e35682830f73d1ab7ec320e1240561"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank32_seed7103.pt",
+      "sha256": "3318248658ac088d0db173c063cddc288faa8dcf54ef0f2d959fdf46936ff668"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank4_seed7101.pt",
+      "sha256": "e0b3d1636ac44d95adacdfe60439b514ec85c3fdf3fcc4f4216e0fd80b02da9d"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank4_seed7102.pt",
+      "sha256": "e86c15cc6e774b50bac25b5c01ff4faeee7081ca87e741e555795beb1cb5dd08"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank4_seed7103.pt",
+      "sha256": "a7d81d1121c2e8246d0fc345238198e00ed9f94af2897cad75fcb7d07b9fefb7"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank64_seed7101.pt",
+      "sha256": "e5022374efa377cead6affd33df609cd4dc145614d1ff9aa958372cb33dfa612"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank64_seed7102.pt",
+      "sha256": "ffff98a609e45169d0e3a81c6010019e4cedbf50bd565c669d715d8b531b2dd6"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank64_seed7103.pt",
+      "sha256": "3a441069406418945402dc10978d2f8fd2edcf143db750058231de5e543dd754"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank8_seed7101.pt",
+      "sha256": "64c709fed722104711af4aaddd926d4f7469bb5a18d468cd5aeb4c1f78089065"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank8_seed7102.pt",
+      "sha256": "5237d4c03a19547ecffc35ddcbeb22eeb0d3c9946cb952be527666d448f27cff"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/paired_linear_rank8_seed7103.pt",
+      "sha256": "d6257067c80371f893d158aac0cfc37a1230638ad99fc52da71cf04ee6a59386"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank16_seed7201.pt",
+      "sha256": "7d88fadb0f47e34947fcbbaf109678e06da57339fb4155fe753a2eed66d7f3e2"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank16_seed7202.pt",
+      "sha256": "cddea748fb9b9e348fed35e6f994d686e87825530a525d9edead421d5b834f6b"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank16_seed7203.pt",
+      "sha256": "5e4a55f3c7dbcf619070fd4015cfe2f5a063649df56626a7b3bad3eff5212711"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank32_seed7201.pt",
+      "sha256": "89ac6cbe68603027551d23016395ac0c1612e5565adfcee9f43abec19d49a31c"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank32_seed7202.pt",
+      "sha256": "4a3a1feccf9446218cc3ba823e77a8fe3fb3d18f0b0a7e096d893ccfe29909e1"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank32_seed7203.pt",
+      "sha256": "783dc11ba52879451177120f9d9ee66ddfdff400fa621a1d98b6b9550574b039"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank4_seed7201.pt",
+      "sha256": "4cb9d9b8cd68bd3f01d18fde9ab9bbf99c4e7d24e399221e23a93e15eb2a9607"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank4_seed7202.pt",
+      "sha256": "c87f210b8d7aa43811c579ed534d7403dbb2f50f2ccb1cb914ae38a674e87157"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank4_seed7203.pt",
+      "sha256": "ec5ec01b28bdbaa9521df3570c89eaa3a686656731a688204d4b6c28a1c17367"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank8_seed7201.pt",
+      "sha256": "d5d4f45b847b821758949a82f3acd6f7550611496de436c54bf7bfb56e1940a9"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank8_seed7202.pt",
+      "sha256": "4bac2194751bde1f8a691390757e90eb9539eb323442ed500503db219471c77b"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_linear_rank8_seed7203.pt",
+      "sha256": "6ed54a6806272c6c5c6881c552bf6f96e9f0862f6b72a51b401955ac6ab0b946"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank16_seed7301.pt",
+      "sha256": "729285fb32b726764221ba2369ba27a76a336709b412739c178a1d69194e0b54"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank16_seed7302.pt",
+      "sha256": "d0e8c48013b4cc7c4cc7b79c0b5b394e9b5138d23b8224d99d11657c4d17c333"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank16_seed7303.pt",
+      "sha256": "dc319aedd724bccb51165b5a47911f2dd1b27a1fa911fb0b91d32735fbe66a51"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank32_seed7301.pt",
+      "sha256": "215d1a388452d5828a7602dae00498d43ff59eced443035ca664f158e9d9bd41"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank32_seed7302.pt",
+      "sha256": "669b66bbe164e39a7e3b1051f2da4a5da9f5b128a38b309aa0999623e9fb9497"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank32_seed7303.pt",
+      "sha256": "b7c6faf5ea034f56f5e4207520b154e30b855f5f7d4e18fe3d32169b072f1ea0"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank4_seed7301.pt",
+      "sha256": "339b00aebd463fa59f2b08374890fd0cc809b4e75801277aa8b08c7fc209b6d4"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank4_seed7302.pt",
+      "sha256": "0d9a00e067d9a78f58a48a518fac2da690f4289c94972d8e13b6f7420549e03c"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank4_seed7303.pt",
+      "sha256": "978fc70bbf7a935d29a9bf8272b2e465b4309828c064c75bc2d076b17f5a1c17"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank8_seed7301.pt",
+      "sha256": "c8bf61a247ed886f942c13593247db562c44cd69c8c314aa5f4fc700deef6025"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank8_seed7302.pt",
+      "sha256": "a6dbf4e7563deb87d55c572e68a2c47304ee7565d97facd3a9d450d26a302ccd"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41011/target_nonlinear_rank8_seed7303.pt",
+      "sha256": "de3e2e6abc455ef371d8dfaa312278be9bc675b80a49d07c039fb37121c8bba0"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank16_seed7101.pt",
+      "sha256": "42133fcba164de7cd727a1cd4c904959d674de42a7afd68004df9aa1c7192145"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank16_seed7102.pt",
+      "sha256": "833e99e46dfb416deb1f86603587df638dfd23cde7e503b889f1606797905910"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank16_seed7103.pt",
+      "sha256": "cf44f79bd589a5c6edcc30ad0a46cc0298ae75e7f7188772d469d7e5409f12d7"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank32_seed7101.pt",
+      "sha256": "ede53d0f7b9c8141cf48d0fe4e408c33f18a73d75e1b379fdcd47b7bcbd628b8"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank32_seed7102.pt",
+      "sha256": "75a7269f3251d5fd5ad460a221da1e6aebd74c88d6f804c3af4a91d2f94de7d4"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank32_seed7103.pt",
+      "sha256": "5967f812504c23c8449f1bb0f3f42999693bcbc632c734814a6fa889c9cfbfe0"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank4_seed7101.pt",
+      "sha256": "0dc84fc5d46e2a27bf3f9a450d4c04b9b93b3b9ed64321ce9c9ddfc4c48b3c9a"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank4_seed7102.pt",
+      "sha256": "ddd3a92bb1103351c4b5a6c3af120b9d8b5791ab97b3551eedeabe5af0afee76"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank4_seed7103.pt",
+      "sha256": "65d8dac0c3230cf0097cccbb42c6fdce8bc086fc8415089fdca9f558604fd315"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank64_seed7101.pt",
+      "sha256": "c962b114d6459356931011c8c7f202de1fc3499f5d2ed7a1d2c189d61c4ae58a"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank64_seed7102.pt",
+      "sha256": "35e11c962dc6376d36c0db6efe43fb7ef8cec8da7fd3db5774bfdee6fe47bd91"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank64_seed7103.pt",
+      "sha256": "4223b6d3d96e7b5ce625bc21fc5b3435c1c64bf2b839100affeb35163e1eff9e"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank8_seed7101.pt",
+      "sha256": "5ab73476342ff209a6353b9c031610d0beda15e3b4063e5a847192e5ee4c20c2"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank8_seed7102.pt",
+      "sha256": "b0c9069aa5202ad04ea645adf07d4e41d9f52f37cb11caf1fa8f2f67c06b8d44"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/paired_linear_rank8_seed7103.pt",
+      "sha256": "aa97b679862e490f6bd7d15a2d8b316c41532d5865ca7a0165e0a8ac54ca288e"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank16_seed7201.pt",
+      "sha256": "8f8a35d264eacef5bbb49d3ef4644948793148f21ab48636e9a625e984315731"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank16_seed7202.pt",
+      "sha256": "810c1dfae40327659bfee901faf0b04d0f55acc894c9b49e8bf8a1c6d155ec65"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank16_seed7203.pt",
+      "sha256": "58df4a59b53b037ef4831e056633386b49e803653b98c05eefde42c3ec3a7406"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank32_seed7201.pt",
+      "sha256": "5d46ca146fe022ddc67e87ab35771b0b8a1f6e2ab3da13775d1d34382260e12f"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank32_seed7202.pt",
+      "sha256": "aedd9d2bf9d90e0600fa76604757a53dae7b91e95fe66a31ffd0022947cc52a5"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank32_seed7203.pt",
+      "sha256": "3a0e9ded3952b0bdcc5f19b62346a664e2f9288cfbbe7abe72de0c5f08eff92b"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank4_seed7201.pt",
+      "sha256": "3fddbf3909c2f23efdb2068bb72f6f310c2258cdc487b429e05c004313f833b5"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank4_seed7202.pt",
+      "sha256": "d3b55a3a840c2df7490a1615295fdd2cb54ceb42705ba90627e10544bb117bcd"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank4_seed7203.pt",
+      "sha256": "d8596d647ed17598fc8ccf5f452ac757f95d008a9c3d2cacf9cf8b463c4a6049"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank8_seed7201.pt",
+      "sha256": "e37ae75a90345a7f18850a7c7edd421ba4d9d2993480fc5dbfa56c00cae3deda"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank8_seed7202.pt",
+      "sha256": "d8f869bf7398363763cb5cdb58e118c7cb1371bbaad551669182d528018229cc"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_linear_rank8_seed7203.pt",
+      "sha256": "ed3c6ab8c1ef8fb0097b85209df3c6acece65e22b179895e941a9e1d73656666"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank16_seed7301.pt",
+      "sha256": "98669ebd2e77eefc20c047741caf6c6ee9f2921cb3df3cbbbfddb6dec6134533"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank16_seed7302.pt",
+      "sha256": "919dc69a3e027a35acb3281aa1c264b2f70bfe789598722327b3eb50560f1324"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank16_seed7303.pt",
+      "sha256": "cf7b23a191188dbbec511495f9bc09fa5bfc3d568a2718532ee2ed8840879b5f"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank32_seed7301.pt",
+      "sha256": "f3298efbdabda8b43bdb024748a4e47e784e83c127f573d9f8b1f86ff9c1ab1f"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank32_seed7302.pt",
+      "sha256": "d3d9dce1ad6204a35777adcd652693c743e8e9957d8828577b92679f227fc1c1"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank32_seed7303.pt",
+      "sha256": "7eb0f3b4e9c9d59743250619ae02b8306678994b54343a56a468819ee15e73b0"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank4_seed7301.pt",
+      "sha256": "222bdcc7b38e8ae3c775be3d26a942c986e6477e93027a34dfa8cb96b515f6df"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank4_seed7302.pt",
+      "sha256": "d20c40094c7dc8d46c4cfb545245b52b44e4e0c20edfa21a42b929459a6b6188"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank4_seed7303.pt",
+      "sha256": "0bf7b9d340a89ba8690a44162bb6b227d10f76fe0316e9a28c13b56bc0a66924"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank8_seed7301.pt",
+      "sha256": "c35d62f6fad722883ddfade46025b211d34aea18ed67a0a45de563c854a5f635"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank8_seed7302.pt",
+      "sha256": "e18dd492f504b930b82add70f3f52fe4ccb8e32e050132624ecac1b8380ed9cd"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41037/target_nonlinear_rank8_seed7303.pt",
+      "sha256": "6a8a657d632ceb5468eddb6c25e5c99cad18c01a8abc01b8b566abf6caf0f62c"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank16_seed7101.pt",
+      "sha256": "cf39e096c8658594f1ff7805a1c53f5f5813d2222f1a121ac19f0da984e2984a"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank16_seed7102.pt",
+      "sha256": "34040a2c441a532b90a00868c9f9e1104af2c0a0587d3c09d53182430873f363"
+    },
+    {
+      "bytes": 10837,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank16_seed7103.pt",
+      "sha256": "4de5271e418a8ea1d37df4eb04b0336a0a2dfc9b4ea457786e7a9b1329bc1b2e"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank32_seed7101.pt",
+      "sha256": "4ac1cb9638e50f8299a5978979c80ef9d6937c3f9ef1b1240dbf8eaa1f86bbb6"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank32_seed7102.pt",
+      "sha256": "a5beb6fd00a3256c0e06703468ed8d79c5ce9f1f659301e04523deeb5e78aff1"
+    },
+    {
+      "bytes": 19029,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank32_seed7103.pt",
+      "sha256": "836d6947f63c094a19ebe24b3fa0b169486964de70ef6c4cab3edae61d3a21b2"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank4_seed7101.pt",
+      "sha256": "d539a2efb631916684d38680c0c2c3d14e87746ffdd5065901ba2ea73ed6562a"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank4_seed7102.pt",
+      "sha256": "151255651b7f5c8087031b25fdcf03bb63acc259b6ff17e10b9c0c91a9e390b4"
+    },
+    {
+      "bytes": 4685,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank4_seed7103.pt",
+      "sha256": "56dd9c95fe870cba667f0bb0122763a1127192c90ec9ddd5aaf5828c827570c7"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank64_seed7101.pt",
+      "sha256": "b6d57238060a2a3d135d37e1262d6ab512515419d6a269e678a0750d6768e927"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank64_seed7102.pt",
+      "sha256": "43427572fb7b70151ba0b3d446d04b0c2ccc7eaa4a56906185145b3d602bcff4"
+    },
+    {
+      "bytes": 35413,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank64_seed7103.pt",
+      "sha256": "ca43b8fd33794f811b70dc15e059af23dd0ce0748e9e7325ef95dd8775c97cde"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank8_seed7101.pt",
+      "sha256": "ac7e4ab67e9ebf3dcd94272a1e7a244fe9d8af7d461947bfc0c15acd97fb1b96"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank8_seed7102.pt",
+      "sha256": "0a4e517f9cf0ac8c156bfa923e247520f8ecccc7c8a964b579f9858280ddcb85"
+    },
+    {
+      "bytes": 6733,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/paired_linear_rank8_seed7103.pt",
+      "sha256": "96fdd4fa59afc106402e8d39be3633a513c7c474f5429c68645dd2ab60e9567f"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank16_seed7201.pt",
+      "sha256": "97bb53a49839e823ea466f701c023f02824874bf02d9f5edfe505c379b48eaef"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank16_seed7202.pt",
+      "sha256": "0bf72be1248a74ba47891cef9908cf3cab0e5c73773ca6147cd30ed8be6bd022"
+    },
+    {
+      "bytes": 133781,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank16_seed7203.pt",
+      "sha256": "8016203789f30d7d73968a1739a06e1f5f625f9c6c9ec9afbff0613cf92a92b5"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank32_seed7201.pt",
+      "sha256": "80c5b06da10ab861c8820058ba22487b5717fb8b7aeabccff3108db0086901b7"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank32_seed7202.pt",
+      "sha256": "a1c1787d76fb193d791926e6a99d2f7664b94e6dea6eca1b7034551c5539543f"
+    },
+    {
+      "bytes": 264853,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank32_seed7203.pt",
+      "sha256": "54b5234ed819653934a26a044dae5b1277dfd06555651ce9c9f3181f3e65ff03"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank4_seed7201.pt",
+      "sha256": "13130f66cf5dbea56aae018a4413756ec4bd71e688f97e0510d703403588cb96"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank4_seed7202.pt",
+      "sha256": "58b96bae51fcdce44a6ba382f6598137a87ddbd1ba53eab61b87a84c6b6e9104"
+    },
+    {
+      "bytes": 35469,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank4_seed7203.pt",
+      "sha256": "58441d5c74fc5b265393e204d29d0ee68acf920c9136f5a4a746fbaf2f88349c"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank8_seed7201.pt",
+      "sha256": "d66b14dd315a4e7a24d01d344d5f61f72491643b6fc6c0d7d792e738ca8439d0"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank8_seed7202.pt",
+      "sha256": "fce6472f2e3573652f0cf08fc291d805069687b7ae3f02509da8ebb893f649a2"
+    },
+    {
+      "bytes": 68237,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_linear_rank8_seed7203.pt",
+      "sha256": "ced71eadce075b344f984ae61de9370ad159df5bc432a9c3c88d08af1b4a88b2"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank16_seed7301.pt",
+      "sha256": "ed63becf189110a1c01d006293cf97f452483511c76de521e9e6dfdfe85a254b"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank16_seed7302.pt",
+      "sha256": "6ed1eb6c42466ebbad29838be8aa9010e2e6c2450bdc9bd7967d1769132daa67"
+    },
+    {
+      "bytes": 105728,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank16_seed7303.pt",
+      "sha256": "47109131e02dc7fde42d116997268ccc328fcc246d4323aff3a91dfe8ac94a6c"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank32_seed7301.pt",
+      "sha256": "4ad2065e2d8c2f56bfa7cd987accd64e0fa8e6ab3b1b7ab74e424336e4a320f3"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank32_seed7302.pt",
+      "sha256": "e21204b98bfcab7817b6a92db2a8be32774cf4bf1f53b41a88fb8bbcad4fd8c0"
+    },
+    {
+      "bytes": 122176,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank32_seed7303.pt",
+      "sha256": "078007695f895baaafa6398386a6c7a005bb377f115843ccf20bf3141144b432"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank4_seed7301.pt",
+      "sha256": "774f8d7296845a265c2d79d201373ce62f937d2d4171b9b65996aff528772e54"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank4_seed7302.pt",
+      "sha256": "ec576ec01f005425973cdfa0600a7b9c60815abf3a1de4a4e1f2d6d888e5a916"
+    },
+    {
+      "bytes": 93361,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank4_seed7303.pt",
+      "sha256": "8cba8b269ae4b58a7f676e6add83ceaf6c486db69f48cad8b43141b2da2cddb4"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank8_seed7301.pt",
+      "sha256": "c39ae44386d722ace78042297a001ac94668ec111eae768d2bf36294557357fa"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank8_seed7302.pt",
+      "sha256": "7ad909a4e1d239bb7db1be32a485037a2a185f812d559688325e03a45e78f1e1"
+    },
+    {
+      "bytes": 97457,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/checkpoints/41081/target_nonlinear_rank8_seed7303.pt",
+      "sha256": "7dc08579bf2383b9311efc8f170d336ef3e9d24ef07b85ac3bf205428b92c052"
+    },
+    {
+      "bytes": 3710964,
+      "path": "results/capacity_controller_diagnostic_v1_20260810r5/final/result.json",
+      "sha256": "4b6ecaee10b0c19130b07a445df58e60f84fb6e960889dcdadc0925d3290a927"
+    },
+    {
+      "bytes": 73772,
+      "path": "results/trained_copy_external_v1_20260810r5/checkpoints/model_seed5101.pt",
+      "sha256": "d7c57bcfd845dc57bc438ac66c0a8b527161e4db3eb9411587829243813b2ed1"
+    },
+    {
+      "bytes": 73772,
+      "path": "results/trained_copy_external_v1_20260810r5/checkpoints/model_seed5102.pt",
+      "sha256": "c3e6f1902740f2bfb06fd84dcd45b0c26e65c2b15c6b66cca16c2fa586463a11"
+    },
+    {
+      "bytes": 73772,
+      "path": "results/trained_copy_external_v1_20260810r5/checkpoints/model_seed5103.pt",
+      "sha256": "0af38d7eade3b1bb995b4313ab6a1553e8c87d95cdd892a88e9df84c1985d5e6"
+    },
+    {
+      "bytes": 19995,
+      "path": "results/trained_copy_external_v1_20260810r5/final/result.json",
+      "sha256": "ae94256e519e5a65fdca585b6787b93d816bff285ff37fe7797772a662f9c83f"
+    },
+    {
+      "bytes": 84714,
+      "path": "scripts/capacity_external_validity_v1_r5.py",
+      "sha256": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8"
+    },
+    {
+      "bytes": 3410,
+      "path": "scripts/launch_capacity_external_validity_v1_r5_tmux.sh",
+      "sha256": "cea8706c42eb8c45525d54e5e498b86a5716972972f50518b0ddfcc46fa28d17"
+    },
+    {
+      "bytes": 10081,
+      "path": "tests/test_capacity_external_validity_v1_r5.py",
+      "sha256": "6769fe1b905b43e50255d33e3197de7cebbb27b94b0664c0c8c7fbd022f503c5"
+    }
+  ],
+  "capacity_checkpoint_count": 117,
+  "capacity_result_sha256": "4b6ecaee10b0c19130b07a445df58e60f84fb6e960889dcdadc0925d3290a927",
+  "external_checkpoint_count": 3,
+  "external_result_sha256": "ae94256e519e5a65fdca585b6787b93d816bff285ff37fe7797772a662f9c83f",
+  "no_retry_authorized": true,
+  "r5_mutation_authorized": false,
+  "schema_version": "capacity_external_validity_v1_r5_postresult_preservation",
+  "status": "PRESERVED_COMPLETE_NO_RETRY",
+  "technical_terminal_count": 0
+}

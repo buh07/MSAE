@@ -1,0 +1,91 @@
+{
+  "checks": {
+    "all_32_targets_jacobian_required": true,
+    "evaluation_full_target_query_grid": true,
+    "exact_direction_finite": true,
+    "r5_row_identity_disjoint": true,
+    "rank64_identity": true,
+    "smoke_predictions_finite": true,
+    "smoke_record_reconciliation": true,
+    "tuple_multiplicity_one": true,
+    "zero_direction_finite": true
+  },
+  "compatibility_smoke": {
+    "families": [
+      "ambient_pca_rank4",
+      "exact_head_delta",
+      "identity_full64",
+      "output_oracle_rank4",
+      "paired_linear_rank4",
+      "random_rank4",
+      "readout_task_projection",
+      "target_linear_rank4",
+      "target_mean_delta",
+      "target_nonlinear_rank4",
+      "topk_sae_paired_selector",
+      "topk_sae_unpaired_selector",
+      "within_target_permutation",
+      "zero"
+    ],
+    "fit_artifacts": 5,
+    "jacobian_targets": 32,
+    "methods": 14,
+    "prediction_finite": true,
+    "record_reconciliation_pass": true
+  },
+  "config_sha256": "a6124ed992675f719ab948cc95504004a806a73355fac9afec55ab39b7c1e3aa",
+  "device": "cuda",
+  "expected_method_count": 66,
+  "method_table_sha256": "2ae7d11f491c8c815df5875491e941549bf0c57748745b778f7cc035356c1d08",
+  "panel_audit": {
+    "confirmation": {
+      "main_tuple_sha256": "21b6ff164c9433ce3e086e7aa4d0431f902003eeff700e68d71a4a8cb92c3738",
+      "max_main_tuple_contribution": 1,
+      "max_sham_tuple_contribution": 1,
+      "rows": 256,
+      "sham_tuple_sha256": "c6cc4ff6ecf2d6c0d8e00f1957604ae00a952cd8dabe5a02696e549cfa532e75",
+      "target_query_pairs": 256,
+      "unique_main_tuples": 256,
+      "unique_sham_tuples": 256
+    },
+    "cross_r5": {
+      "r5_rows_reconstructed_from_frozen_generator": 8576,
+      "row_id_overlap": 0,
+      "row_seed_overlap": 0
+    },
+    "development": {
+      "main_tuple_sha256": "79837b1c3c2c28a6ed497859f47046af58a7a0362bb81f458ac79e361ea14ede",
+      "max_main_tuple_contribution": 1,
+      "max_sham_tuple_contribution": 1,
+      "rows": 256,
+      "sham_tuple_sha256": "79aaa8214c6ee543b9216903be110f8f101ef7c2bbd9b119b79455113aea984b",
+      "target_query_pairs": 256,
+      "unique_main_tuples": 256,
+      "unique_sham_tuples": 256
+    },
+    "fit": {
+      "main_tuple_sha256": "ea1a5e851963cf1c686bc14cc763b68da96356b0f2c753d497c173c3d5683517",
+      "max_main_tuple_contribution": 1,
+      "max_sham_tuple_contribution": 1,
+      "rows": 2048,
+      "sham_tuple_sha256": "d21df302b93b25112672c7d3d7332293b309a794cdf7bca12419f5bc3dc7a7e0",
+      "target_query_pairs": 256,
+      "unique_main_tuples": 2048,
+      "unique_sham_tuples": 2048
+    }
+  },
+  "plan_sha256": "bf2b0e5fab750e7b95291f6904803baac255b30e5f7e4338ff8e852f64a5dbac",
+  "r5_checkpoint_hashes": {
+    "5101": "d7c57bcfd845dc57bc438ac66c0a8b527161e4db3eb9411587829243813b2ed1",
+    "5102": "c3e6f1902740f2bfb06fd84dcd45b0c26e65c2b15c6b66cca16c2fa586463a11",
+    "5103": "0af38d7eade3b1bb995b4313ab6a1553e8c87d95cdd892a88e9df84c1985d5e6"
+  },
+  "r5_checkpoint_loaded": false,
+  "r5_preservation_sha256": "537d6e0d6a2683162db72a5650ae157816dce9a59874ea45597daaf47eb63b83",
+  "r5_source_path": "scripts/capacity_external_validity_v1_r5.py",
+  "r5_source_sha256": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8",
+  "schema_version": "trained_copy_method_benchmark_v1_r2_candidate",
+  "scientific_panel_accessed": false,
+  "source_sha256": "1007677678f041cd9aa395ad4bb173b926ef19e66353c75843d8fbad3222bdd1",
+  "status": "PASS"
+}

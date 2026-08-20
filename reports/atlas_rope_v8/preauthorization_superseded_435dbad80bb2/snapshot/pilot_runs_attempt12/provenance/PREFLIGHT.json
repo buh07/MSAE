@@ -1,0 +1,66 @@
+{
+  "payload": {
+    "activation_extraction_performed": false,
+    "analysis_gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "attempt11_terminal_preserved": true,
+    "extraction_gpu_uuid": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+    "fresh_validation_performed": false,
+    "gpu_mapping": {
+      "cuda": "12.8",
+      "cuda_visible_devices": "0",
+      "cudnn": 90800,
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "physical_index": 0,
+      "physical_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+      "torch": "2.7.0",
+      "visible_device_count": 1,
+      "visible_index": 0,
+      "visible_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15"
+    },
+    "implementation_candidate_sha256": "cd9d9f52adb9ba9b50e6c0093fc9580c9aa126ebad17f2af528ee188a8a4dc86",
+    "import_verification": {
+      "activation_complete_sha256": {
+        "EWT": "2c6f57f788981198d2537fd605d2dadef491febc844938c3d4e5fc3b8aa6b88a",
+        "GUM": "65c29542bea7badb84694755774f62da95eefb40e7082a3dcac113b6c5b9791a"
+      },
+      "adapter_sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0",
+      "attempt11_terminal_sha256": "ad7fd3b4de265879737774df38220956a4947298f3122f37b207c2bea46285d1",
+      "attempt11_tree_inventory_sha256": "7e6c0006ddf8800d4fcda2ef759f6e00ddf16d817b61542e60e6125e0791c591",
+      "cache_rows": {
+        "EWT": 183771,
+        "GUM": 157398
+      },
+      "config_sha256": "406270b0f81ce487f22d230ddc4b0fc025ac99de131181b5454e8d348b6be3c2",
+      "cross_panel": {
+        "baseline_runtime_pass": true,
+        "rope_translation_pass": true
+      },
+      "deep_cache_verified": true,
+      "panel_complete_sha256": {
+        "CZECH_PDT": "b226437653617a1c0df5be6acb2fadac33b12da450f9e32c6fd76f230b1dbce4",
+        "ENGLISH_CHILDES_CTETEX": "bf5b79715655bb5b32e26ba6918f25568464288103d95f35bf3c538033fab0bf"
+      },
+      "panel_names": [
+        "CZECH_PDT",
+        "ENGLISH_CHILDES_CTETEX"
+      ],
+      "qa_complete_sha256": {
+        "EWT": "a767ddcb595de1ebcc3ad2dd86c7f541260b32a0473ff370569d860575aa3b44",
+        "GUM": "3b4520b392cddf190dcbbfd3813f16b11e11c8c4aba8e5ffa99d326205935400"
+      }
+    },
+    "model_forward_performed": false,
+    "neural_training_run": false,
+    "recovery_config_sha256": "406270b0f81ce487f22d230ddc4b0fc025ac99de131181b5454e8d348b6be3c2",
+    "result_namespace_absent": true,
+    "schema_version": "atlas_rope_v8_attempt12_preflight_v1",
+    "scientific_scoring_performed": false,
+    "status": "PASS"
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "4e32ee30b0b490190c8e83efc0b3f7fd1cec4e1773fe2b80d05f8c11e1ce5e36",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "pvGLVUTOAPL1JP4qqx5YxqXCardR7ywQsV3kDYAYrC7HQThnVN8zTWHq7vEplp2jQ5VMM5Ps1q/Dc+PMhp5+DA=="
+  }
+}

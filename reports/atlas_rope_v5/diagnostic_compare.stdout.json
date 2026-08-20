@@ -1,0 +1,16 @@
+{
+  "calibration_cap_candidate_sha256": "8085d9125c55c300e68c9dd98e10482f3a2b33da6cc8ab8b05fd43c64cef4037",
+  "hooked_complete_sha256": "4332cabb505b3649999edb87b125ec87f156c5124d1b738d2d6c7bb67b253f11",
+  "neural_training_authorized": false,
+  "observer_checks": {
+    "array_equal": true,
+    "c_order_bytes_equal": true,
+    "population_equal": true,
+    "row_ids_equal": true
+  },
+  "schema_version": "atlas_rope_v5_attempt9_diagnostic_complete_v1",
+  "status": "PASS",
+  "summaries_sha256": "9e6d1d38c363bbd2e5c97ce9cb73fb940200d38e86df8083f7ee5ebc4f8f2b98",
+  "threshold_tuning_authorized": false,
+  "unhooked_complete_sha256": "220cda95d1f8f591993e7fcfd9ceffba8019bdd2365d69276763f67c9792b515"
+}

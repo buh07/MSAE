@@ -1,0 +1,17 @@
+{
+  "clean_margin": 12.0,
+  "confirmation_rows_passing": 256,
+  "corrupt_margin": -0.011730205278592375,
+  "derivation": "12_times_one_hot_readout",
+  "development_rows_passing": 256,
+  "effect": 12.011730205278592,
+  "general_natural_model_claim": false,
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "prepared_attestation_sha256": "0edd5e8d0d456ba530dc763ecb7fdd1c9a6f11baab7051a96796a3122f02ead9",
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_analytic_eligibility",
+  "single_constructed_model": true,
+  "status": "PASS",
+  "training_performed": false
+}

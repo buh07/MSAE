@@ -1,0 +1,194 @@
+{
+  "failure_stage": "model cache resolution before first forward",
+  "file_count": 36,
+  "files": [
+    {
+      "bytes": 66,
+      "path": "results/joint_controllability_benchmark_v4_20260808/aggregate/BLOCKED.json",
+      "sha256": "83bf695aee527c55b1347160a7fd5a60c2f928553f6a3a4ce722fd659f885357"
+    },
+    {
+      "bytes": 200,
+      "path": "results/joint_controllability_benchmark_v4_20260808/failures/gemma2_layer0_FAIL.json",
+      "sha256": "0790cb5e37f1e3c0db3884193e3ea7b9eede9d0f890617b92524a82c618e19ce"
+    },
+    {
+      "bytes": 201,
+      "path": "results/joint_controllability_benchmark_v4_20260808/failures/gemma2_layer12_FAIL.json",
+      "sha256": "25d0fe25580e4a4eb9781c596968a32b893def325e00fefc7e2ba8a3e5b87a51"
+    },
+    {
+      "bytes": 201,
+      "path": "results/joint_controllability_benchmark_v4_20260808/failures/gemma2_layer25_FAIL.json",
+      "sha256": "507e98a803bc25a8c504eb20374dfede73f918e2d8f32e00f8017bf65c6b12e5"
+    },
+    {
+      "bytes": 199,
+      "path": "results/joint_controllability_benchmark_v4_20260808/failures/gpt2_layer10_FAIL.json",
+      "sha256": "98563d4cdf34a9a67fea5c126878275b7ade3f5805bc9340bb6c26b7ab4b0e80"
+    },
+    {
+      "bytes": 198,
+      "path": "results/joint_controllability_benchmark_v4_20260808/failures/gpt2_layer1_FAIL.json",
+      "sha256": "434c5613be5315391c74b60cb77bdf69de6e35aeda32220b97316d7239bcf75f"
+    },
+    {
+      "bytes": 198,
+      "path": "results/joint_controllability_benchmark_v4_20260808/failures/gpt2_layer6_FAIL.json",
+      "sha256": "d0a0fc2f741e3ac4c2fcd91e734e2716c48fd3cfd5cb1b4abd8cad0d5747e646"
+    },
+    {
+      "bytes": 203,
+      "path": "results/joint_controllability_benchmark_v4_20260808/failures/pythia160_layer8_FAIL.json",
+      "sha256": "0bea9cc5d4b257712b694dcb92ca9bdaf05d03810f246baffbfcc9f0e75d47a0"
+    },
+    {
+      "bytes": 57,
+      "path": "results/joint_controllability_benchmark_v4_20260808/shards/gemma2_layer0/WAITING.json",
+      "sha256": "ff2aa402d26bb87f9866e10239aee57b6a933ba186f38859fb4fa6e8fc748d6c"
+    },
+    {
+      "bytes": 57,
+      "path": "results/joint_controllability_benchmark_v4_20260808/shards/gemma2_layer12/WAITING.json",
+      "sha256": "ff2aa402d26bb87f9866e10239aee57b6a933ba186f38859fb4fa6e8fc748d6c"
+    },
+    {
+      "bytes": 57,
+      "path": "results/joint_controllability_benchmark_v4_20260808/shards/gemma2_layer25/WAITING.json",
+      "sha256": "ff2aa402d26bb87f9866e10239aee57b6a933ba186f38859fb4fa6e8fc748d6c"
+    },
+    {
+      "bytes": 57,
+      "path": "results/joint_controllability_benchmark_v4_20260808/shards/gpt2_layer1/WAITING.json",
+      "sha256": "ff2aa402d26bb87f9866e10239aee57b6a933ba186f38859fb4fa6e8fc748d6c"
+    },
+    {
+      "bytes": 57,
+      "path": "results/joint_controllability_benchmark_v4_20260808/shards/gpt2_layer10/WAITING.json",
+      "sha256": "ff2aa402d26bb87f9866e10239aee57b6a933ba186f38859fb4fa6e8fc748d6c"
+    },
+    {
+      "bytes": 57,
+      "path": "results/joint_controllability_benchmark_v4_20260808/shards/gpt2_layer6/WAITING.json",
+      "sha256": "ff2aa402d26bb87f9866e10239aee57b6a933ba186f38859fb4fa6e8fc748d6c"
+    },
+    {
+      "bytes": 57,
+      "path": "results/joint_controllability_benchmark_v4_20260808/shards/pythia160_layer8/WAITING.json",
+      "sha256": "ff2aa402d26bb87f9866e10239aee57b6a933ba186f38859fb4fa6e8fc748d6c"
+    },
+    {
+      "bytes": 388,
+      "path": "results/joint_controllability_benchmark_v4_20260808/synthetic/PASS.json",
+      "sha256": "abb4fe7ee830dd23dff398400d6682ad75f5a12e7451053ba2b3a185b9671d96"
+    },
+    {
+      "bytes": 388,
+      "path": "results/joint_controllability_benchmark_v4_20260808/synthetic/result.json",
+      "sha256": "abb4fe7ee830dd23dff398400d6682ad75f5a12e7451053ba2b3a185b9671d96"
+    },
+    {
+      "bytes": 268,
+      "path": "results/joint_controllability_benchmark_v4_20260808/task_gate/FAIL.json",
+      "sha256": "e1b30f998ee4fcb9582e6e4ce523010995ab18d693c17f55a9c42a9fad9af3c0"
+    },
+    {
+      "bytes": 413,
+      "path": "results/joint_controllability_benchmark_v4_20260808/task_gate/gemma2_FAIL.json",
+      "sha256": "ed4158d55ffc8b33e1f61783b241d3cff5edce80168ec01b64bf33d56aa59f96"
+    },
+    {
+      "bytes": 411,
+      "path": "results/joint_controllability_benchmark_v4_20260808/task_gate/gpt2_FAIL.json",
+      "sha256": "eafc5a597bb4d3010ccd2e672900f1c09bae67357d6be7b615599c98f1b8547b"
+    },
+    {
+      "bytes": 416,
+      "path": "results/joint_controllability_benchmark_v4_20260808/task_gate/pythia160_FAIL.json",
+      "sha256": "ccea4cb5a2a4a051340e59758723f446119bf55eea0432707489d556a7cef5db"
+    },
+    {
+      "bytes": 268,
+      "path": "results/joint_controllability_benchmark_v4_20260808/task_gate/result.json",
+      "sha256": "e1b30f998ee4fcb9582e6e4ce523010995ab18d693c17f55a9c42a9fad9af3c0"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/aggregate.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1066,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/gemma_l0.log",
+      "sha256": "594b65569426f78e3264c8a12112c809d74b4d79e7a8a4294507c556a85ddb72"
+    },
+    {
+      "bytes": 1066,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/gemma_l12.log",
+      "sha256": "594b65569426f78e3264c8a12112c809d74b4d79e7a8a4294507c556a85ddb72"
+    },
+    {
+      "bytes": 1066,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/gemma_l25.log",
+      "sha256": "594b65569426f78e3264c8a12112c809d74b4d79e7a8a4294507c556a85ddb72"
+    },
+    {
+      "bytes": 1066,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/gpt2_l1.log",
+      "sha256": "594b65569426f78e3264c8a12112c809d74b4d79e7a8a4294507c556a85ddb72"
+    },
+    {
+      "bytes": 1066,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/gpt2_l10.log",
+      "sha256": "594b65569426f78e3264c8a12112c809d74b4d79e7a8a4294507c556a85ddb72"
+    },
+    {
+      "bytes": 1066,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/gpt2_l6.log",
+      "sha256": "594b65569426f78e3264c8a12112c809d74b4d79e7a8a4294507c556a85ddb72"
+    },
+    {
+      "bytes": 1116,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/launch_manifest.json",
+      "sha256": "2b5e74bb0816d3a9321e3e9de0fa6c08bcaeb5f658eb54c693ab77f441297bd0"
+    },
+    {
+      "bytes": 1066,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/pythia_l8.log",
+      "sha256": "594b65569426f78e3264c8a12112c809d74b4d79e7a8a4294507c556a85ddb72"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/synthetic.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/task_aggregate.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4654,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/task_gemma.log",
+      "sha256": "26430f95314ec28a4ba55d57833b28f0d50817eca94294391536543a13f7d0e7"
+    },
+    {
+      "bytes": 4654,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/task_gpt2.log",
+      "sha256": "26430f95314ec28a4ba55d57833b28f0d50817eca94294391536543a13f7d0e7"
+    },
+    {
+      "bytes": 4654,
+      "path": "reports/provenance/joint_controllability_benchmark_v4_run_20260808/task_pythia.log",
+      "sha256": "26430f95314ec28a4ba55d57833b28f0d50817eca94294391536543a13f7d0e7"
+    }
+  ],
+  "roots": [
+    "results/joint_controllability_benchmark_v4_20260808",
+    "reports/provenance/joint_controllability_benchmark_v4_run_20260808"
+  ],
+  "schema_version": "joint_control_v4_failed_launch_tree_v1",
+  "scientific_metric_files": 0,
+  "scientific_model_forwards_observed": false,
+  "status": "FROZEN_POST_FAILURE_BEFORE_V4_1"
+}

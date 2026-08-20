@@ -1,0 +1,42 @@
+{
+  "payload": {
+    "activation_extraction_authorized": false,
+    "analysis_attempts": 1,
+    "authorized_stage": "ONE_SHOT_EXPLORATORY_ANALYSIS_ONLY_RECOVERY",
+    "exploratory": true,
+    "fresh_validation_authorized": false,
+    "gpu_mapping": {
+      "cuda": "12.8",
+      "cuda_visible_devices": "0",
+      "cudnn": 90800,
+      "extraction_physical_index": 1,
+      "extraction_physical_uuid": "GPU-9b529a09-92a6-caea-fee2-6b2bf07b0e4e",
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "physical_index": 0,
+      "physical_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+      "torch": "2.7.0",
+      "visible_device_count": 1,
+      "visible_index": 0,
+      "visible_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15"
+    },
+    "implementation_candidate_sha256": "a7604eed546e20b81f38faa48d86882433fd6efe685c02a1152b29ba10d3797b",
+    "model_forward_authorized": false,
+    "neural_training_authorized": false,
+    "preflight_sha256": "57d01a0681ec6db9c34cfcd5a89207f07d55f8224ee23f7e919c9487669545c3",
+    "recovery_freeze_sha256": "bdea0f86f5990e3cee2fbe79640966e48529c50f54f33bb6fea69037c857c5ab",
+    "retry_authorized": false,
+    "review": {
+      "path": "reports/adversarial/atlas_v3_8_attempt12_recovery_review.md",
+      "reviewed_sha256": "bdea0f86f5990e3cee2fbe79640966e48529c50f54f33bb6fea69037c857c5ab",
+      "sha256": "cfa48c236c6c533ab43c3734cf1308d3bc3001ad8f6a4f127e5f77f651b4c1ec"
+    },
+    "schema_version": "atlas_rope_v8_attempt12_authorization_v1",
+    "status": "AUTHORIZED"
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "41a6d52c227e4e6037dd5d4a5f94312f4cacc7376afecbbb4e3ea96b3a01f89e",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "WaNn9lxNLRHmN/5wa/h3XEfnSu7sKyUq3qYIm40o/91qQbD04wPV2QXPt8HKVMxufvxM+FBEU3pB3RWOaSdKBg=="
+  }
+}

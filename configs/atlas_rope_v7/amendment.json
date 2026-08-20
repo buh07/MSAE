@@ -1,0 +1,22 @@
+{
+  "schema_version": "atlas_rope_v7_attempt11_amendment_v1",
+  "status": "FROZEN_PLAN_INPUT",
+  "attempt10_terminal": {
+    "path": "pilot_runs/20260803_atlas_rope_technical_v6/TERMINAL.json",
+    "sha256": "9e11622335af072f6f273596917fd729fe38cfd4c65dd18b883fd43cc06dc109",
+    "required_status": "TERMINAL_GENTLE_VALIDATION_FAILED",
+    "no_retry_required": true
+  },
+  "opened_development_sources": ["EWT", "GUM", "GENTLE"],
+  "fresh_validation_order": ["ENGLISH_CHILDES_CTETEX", "CZECH_PDT"],
+  "gate": {
+    "row_norm_floor": 1e-12,
+    "primary": {"relative_l2": 2e-5, "norm_ratio_error": 1e-5},
+    "catastrophic": {"relative_l2": 5e-5, "norm_ratio_error": 2e-5},
+    "budgets": {"primary_per_cell": 2, "primary_per_panel": 6, "catastrophic": 0},
+    "descriptive": {"atol": 2e-5, "rtol": 5e-6, "cosine_reference": 2.5e-10, "cosine_product_floor": 1e-24}
+  },
+  "model_config": "configs/atlas_rope_v5/prescore.json",
+  "model_config_sha256": "a3862c377597bbf2109fa4d61935f3bba481eef5da794f41377c814832fde348",
+  "neural_training_authorized": false
+}

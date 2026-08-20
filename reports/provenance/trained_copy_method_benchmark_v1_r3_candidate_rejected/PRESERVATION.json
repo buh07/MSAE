@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    {
+      "bytes": 8717,
+      "path": "reports/provenance/trained_copy_method_benchmark_v1_r3_candidate_rejected/CANDIDATE.json",
+      "sha256": "cfc947054c49d41af0ec74808229c792ff7b559034b827d80cac42d9159a16f4"
+    },
+    {
+      "bytes": 26617,
+      "path": "reports/provenance/trained_copy_method_benchmark_v1_r3_candidate_rejected/PLAN_TRAINED_COPY_METHOD_BENCHMARK_V1_R3.md",
+      "sha256": "6095c37aa98180d61e91dc99e85ce4fdbfc56609d6d6ccc48113efb85e2d6245"
+    },
+    {
+      "bytes": 2718,
+      "path": "reports/provenance/trained_copy_method_benchmark_v1_r3_candidate_rejected/launch_trained_copy_method_benchmark_v1_r3_tmux.sh",
+      "sha256": "4741b3e28762f2a0ea998ecec011ff587649755f12e08d0af69ce46002fd12eb"
+    },
+    {
+      "bytes": 9200,
+      "path": "reports/provenance/trained_copy_method_benchmark_v1_r3_candidate_rejected/run.json",
+      "sha256": "9c1158cbf46818fae311b30e7afa5ecd09af1f39da8aec1f338623a7eb05613b"
+    },
+    {
+      "bytes": 12887,
+      "path": "reports/provenance/trained_copy_method_benchmark_v1_r3_candidate_rejected/test_trained_copy_method_benchmark_v1_r3.py",
+      "sha256": "7e08eb76718716221b5f377f7369f5c4299550227effa2a5215408cc50ff4829"
+    },
+    {
+      "bytes": 54875,
+      "path": "reports/provenance/trained_copy_method_benchmark_v1_r3_candidate_rejected/trained_copy_method_benchmark_v1_r3.py",
+      "sha256": "bc50731ceb46fcb776a0723f7c28cd81e18aff3d8af7f9c180f66a67c3d8ce99"
+    },
+    {
+      "bytes": 1287,
+      "path": "reports/provenance/trained_copy_method_benchmark_v1_r3_candidate_rejected/trained_copy_method_benchmark_v1_r3_candidate_review_BLOCK.md",
+      "sha256": "25343ab68896507bafd60c65f52f4a823dcb7b4ee40e6680ac37f7d792374519"
+    }
+  ],
+  "candidate_sha256": "cfc947054c49d41af0ec74808229c792ff7b559034b827d80cac42d9159a16f4",
+  "created_ns": 1786392115205825293,
+  "freeze_created": false,
+  "generator_lock_created": false,
+  "no_retry_under_r3_namespace": true,
+  "schema_version": "trained_copy_method_benchmark_v1_r3_rejected_candidate_preservation",
+  "scientific_payload_created": false,
+  "status": "PRESERVED_BLOCKED"
+}

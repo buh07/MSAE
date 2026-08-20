@@ -1,0 +1,790 @@
+{
+  "roles": {
+    "C1": {
+      "abs_pos_16": {
+        "classes": {
+          "0": 1578,
+          "1": 1583,
+          "10": 1280,
+          "11": 1259,
+          "12": 1250,
+          "13": 806,
+          "14": 463,
+          "15": 279,
+          "2": 1577,
+          "3": 1525,
+          "4": 1505,
+          "5": 1447,
+          "6": 1410,
+          "7": 1393,
+          "8": 1339,
+          "9": 1306
+        },
+        "groups": 754,
+        "path": "data/atlas_v1/analysis_rows/C1.abs_pos_16.jsonl",
+        "rows": 20000,
+        "sha256": "4b57c8ef38f6d2e3b01f67e4e4d6652c859c608344d21b64c1e50e35de68c932"
+      },
+      "abs_pos_8": {
+        "classes": {
+          "0": 3132,
+          "1": 3049,
+          "2": 2946,
+          "3": 2775,
+          "4": 2612,
+          "5": 2538,
+          "6": 2206,
+          "7": 742
+        },
+        "groups": 755,
+        "path": "data/atlas_v1/analysis_rows/C1.abs_pos_8.jsonl",
+        "rows": 20000,
+        "sha256": "cd97b5bf24465b4e56f7e303c3f5c634c2b257ea388ac076c9136745f999fa1c"
+      },
+      "boundary_state": {
+        "classes": {
+          "final": 5531,
+          "initial": 5556,
+          "interior": 8913
+        },
+        "groups": 755,
+        "path": "data/atlas_v1/analysis_rows/C1.boundary_state.jsonl",
+        "rows": 20000,
+        "sha256": "2ad973c977a181d8aa5561d1b75c69831b5295c76db9aedff16eb87d06df887a"
+      },
+      "dependency_depth": {
+        "classes": {
+          "0": 2556,
+          "1": 4397,
+          "2": 4446,
+          "3": 4273,
+          "4p": 4328
+        },
+        "groups": 5,
+        "path": "data/atlas_v1/analysis_rows/C1.dependency_depth.jsonl",
+        "rows": 20000,
+        "sha256": "6620ec9f15f67afe96e8e65558bd281ce6de063573f9ab512d5b070f1209a892"
+      },
+      "head_signed_distance": {
+        "classes": {
+          "L1": 2222,
+          "L2": 2222,
+          "L3_4": 2222,
+          "L5p": 2222,
+          "R1": 2223,
+          "R2": 2222,
+          "R3_4": 2222,
+          "R5p": 2222,
+          "ROOT": 2223
+        },
+        "groups": 5,
+        "path": "data/atlas_v1/analysis_rows/C1.head_signed_distance.jsonl",
+        "rows": 20000,
+        "sha256": "b7a0750e2f5ef7eb2db1e054cb50f1d8f6b42c499b442d7d34049e5631816db9"
+      },
+      "lemma_identity_256": {
+        "classes": {
+          "\"": 628,
+          "'s": 571,
+          "(": 349,
+          ")": 346,
+          ",": 903,
+          ".": 856,
+          "a": 705,
+          "and": 717,
+          "as": 586,
+          "at": 571,
+          "be": 653,
+          "but": 331,
+          "by": 575,
+          "do": 264,
+          "for": 593,
+          "from": 436,
+          "have": 584,
+          "he": 666,
+          "his": 575,
+          "i": 586,
+          "in": 705,
+          "is": 528,
+          "it": 590,
+          "not": 479,
+          "of": 696,
+          "on": 579,
+          "that": 581,
+          "the": 939,
+          "they": 480,
+          "this": 360,
+          "to": 679,
+          "was": 578,
+          "which": 303,
+          "with": 596,
+          "you": 412
+        },
+        "groups": 751,
+        "path": "data/atlas_v1/analysis_rows/C1.lemma_identity_256.jsonl",
+        "rows": 20000,
+        "sha256": "aae8eb89c16a1c5247af943139c789956ca09944e4fe6357d6dfbd57d46d34ea"
+      },
+      "ner_coarse": {
+        "classes": {
+          "LOC": 2252,
+          "MISC": 2197,
+          "O": 11334,
+          "ORG": 1778,
+          "PER": 2439
+        },
+        "groups": 750,
+        "path": "data/atlas_v1/analysis_rows/C1.ner_coarse.jsonl",
+        "rows": 20000,
+        "sha256": "62f3f898259766f1fe7efac235af3e4d874b4f98a4e5a7fcbd18c34ccda7473d"
+      },
+      "relative_quartile": {
+        "classes": {
+          "0": 5000,
+          "1": 5000,
+          "2": 5000,
+          "3": 5000
+        },
+        "groups": 754,
+        "path": "data/atlas_v1/analysis_rows/C1.relative_quartile.jsonl",
+        "rows": 20000,
+        "sha256": "f5c304d3394cf1e7242c2e7324dace63ca11abc7b3d2c7bd3a7ab1d6553e18bb"
+      },
+      "token_identity_256": {
+        "classes": {
+          "\"": 645,
+          "'s": 549,
+          "(": 349,
+          ")": 346,
+          ",": 991,
+          ".": 903,
+          "a": 683,
+          "an": 476,
+          "and": 700,
+          "are": 268,
+          "as": 570,
+          "at": 541,
+          "be": 336,
+          "but": 331,
+          "by": 546,
+          "for": 564,
+          "from": 436,
+          "had": 541,
+          "have": 240,
+          "he": 623,
+          "his": 548,
+          "i": 550,
+          "in": 707,
+          "is": 552,
+          "it": 570,
+          "not": 335,
+          "of": 721,
+          "on": 563,
+          "that": 560,
+          "the": 998,
+          "this": 316,
+          "to": 672,
+          "was": 600,
+          "were": 404,
+          "which": 303,
+          "with": 559,
+          "you": 404
+        },
+        "groups": 750,
+        "path": "data/atlas_v1/analysis_rows/C1.token_identity_256.jsonl",
+        "rows": 20000,
+        "sha256": "2aaef81ae45ad3faefc27710102d5c7a47913acdbe3e7e093b3957dde67ee272"
+      }
+    },
+    "C2": {
+      "abs_pos_16": {
+        "classes": {
+          "0": 1879,
+          "1": 1823,
+          "10": 1275,
+          "11": 1256,
+          "12": 702,
+          "13": 337,
+          "14": 201,
+          "15": 114,
+          "2": 1790,
+          "3": 1725,
+          "4": 1683,
+          "5": 1586,
+          "6": 1474,
+          "7": 1469,
+          "8": 1376,
+          "9": 1310
+        },
+        "groups": 754,
+        "path": "data/atlas_v1/analysis_rows/C2.abs_pos_16.jsonl",
+        "rows": 20000,
+        "sha256": "dd98dae33b514769bfbf2203c6580510e3bedef1fb92202fb1aec3cd62e10088"
+      },
+      "abs_pos_8": {
+        "classes": {
+          "0": 3663,
+          "1": 3565,
+          "2": 3224,
+          "3": 2992,
+          "4": 2679,
+          "5": 2523,
+          "6": 1039,
+          "7": 315
+        },
+        "groups": 754,
+        "path": "data/atlas_v1/analysis_rows/C2.abs_pos_8.jsonl",
+        "rows": 20000,
+        "sha256": "beb03c8589fe449cadd159370d3e46658de86a22113622e5f262dfc343497f56"
+      },
+      "boundary_state": {
+        "classes": {
+          "final": 4906,
+          "initial": 4916,
+          "interior": 10178
+        },
+        "groups": 754,
+        "path": "data/atlas_v1/analysis_rows/C2.boundary_state.jsonl",
+        "rows": 20000,
+        "sha256": "7e1fd0bed49f98bf4cd21c90072bc45dc4a391c76bc0aa686de376b3fe319616"
+      },
+      "dependency_depth": {
+        "classes": {
+          "0": 1924,
+          "1": 4771,
+          "2": 4847,
+          "3": 4311,
+          "4p": 4147
+        },
+        "groups": 4,
+        "path": "data/atlas_v1/analysis_rows/C2.dependency_depth.jsonl",
+        "rows": 20000,
+        "sha256": "25c05c78edfb49e0e3de38dd43780c4fb22c6bce8304d2a403236a240dd4dc0f"
+      },
+      "head_signed_distance": {
+        "classes": {
+          "L1": 2096,
+          "L2": 2233,
+          "L3_4": 2275,
+          "L5p": 2371,
+          "R1": 3078,
+          "R2": 2525,
+          "R3_4": 2314,
+          "R5p": 1184,
+          "ROOT": 1924
+        },
+        "groups": 4,
+        "path": "data/atlas_v1/analysis_rows/C2.head_signed_distance.jsonl",
+        "rows": 20000,
+        "sha256": "6ff468e32d41ef3d7aa6ae7daafdfe0437055e2002ba09f8338f1f72862d2dd2"
+      },
+      "lemma_identity_256": {
+        "classes": {
+          "\"": 673,
+          "'s": 516,
+          "(": 468,
+          ")": 461,
+          ",": 1097,
+          ".": 1021,
+          "a": 731,
+          "and": 769,
+          "as": 580,
+          "at": 472,
+          "be": 649,
+          "but": 236,
+          "by": 573,
+          "do": 220,
+          "for": 597,
+          "from": 412,
+          "have": 536,
+          "he": 626,
+          "his": 575,
+          "i": 352,
+          "in": 767,
+          "is": 476,
+          "it": 544,
+          "not": 368,
+          "of": 791,
+          "on": 600,
+          "that": 583,
+          "the": 1241,
+          "they": 236,
+          "this": 380,
+          "to": 713,
+          "was": 600,
+          "which": 217,
+          "with": 576,
+          "you": 344
+        },
+        "groups": 754,
+        "path": "data/atlas_v1/analysis_rows/C2.lemma_identity_256.jsonl",
+        "rows": 20000,
+        "sha256": "62076a130a9096df736dac177b5aea15ed89f610e6c02167597a901e5cc89065"
+      },
+      "ner_coarse": {
+        "classes": {
+          "LOC": 2169,
+          "MISC": 2108,
+          "O": 11531,
+          "ORG": 1556,
+          "PER": 2636
+        },
+        "groups": 750,
+        "path": "data/atlas_v1/analysis_rows/C2.ner_coarse.jsonl",
+        "rows": 20000,
+        "sha256": "9ed4e5b299ddadb0b46a7713cf114cbb03b7ebf170aef78c5d4fede20fb60e0e"
+      },
+      "relative_quartile": {
+        "classes": {
+          "0": 5000,
+          "1": 5000,
+          "2": 5000,
+          "3": 5000
+        },
+        "groups": 754,
+        "path": "data/atlas_v1/analysis_rows/C2.relative_quartile.jsonl",
+        "rows": 20000,
+        "sha256": "6608f985cd24800b22cd0b9ea8ec1240a1df381c712cba020104ef29e07cad02"
+      },
+      "token_identity_256": {
+        "classes": {
+          "\"": 643,
+          "'s": 540,
+          "(": 468,
+          ")": 461,
+          ",": 1097,
+          ".": 1104,
+          "a": 701,
+          "an": 256,
+          "and": 777,
+          "are": 316,
+          "as": 548,
+          "at": 472,
+          "be": 304,
+          "but": 236,
+          "by": 546,
+          "for": 580,
+          "from": 412,
+          "had": 260,
+          "have": 292,
+          "he": 598,
+          "his": 550,
+          "i": 292,
+          "in": 796,
+          "is": 564,
+          "it": 540,
+          "not": 300,
+          "of": 804,
+          "on": 575,
+          "that": 555,
+          "the": 1314,
+          "this": 360,
+          "to": 732,
+          "was": 610,
+          "were": 288,
+          "which": 217,
+          "with": 548,
+          "you": 344
+        },
+        "groups": 754,
+        "path": "data/atlas_v1/analysis_rows/C2.token_identity_256.jsonl",
+        "rows": 20000,
+        "sha256": "39c98e9f5ed4654e376b7b6e58508d6ee536dff8c3c7be73032a470062e6ed89"
+      }
+    },
+    "calibration": {
+      "abs_pos_16": {
+        "classes": {
+          "0": 2045,
+          "1": 1931,
+          "10": 1266,
+          "11": 984,
+          "12": 493,
+          "13": 262,
+          "14": 159,
+          "15": 107,
+          "2": 1919,
+          "3": 1839,
+          "4": 1738,
+          "5": 1629,
+          "6": 1536,
+          "7": 1440,
+          "8": 1362,
+          "9": 1290
+        },
+        "groups": 676,
+        "path": "data/atlas_v1/analysis_rows/calibration.abs_pos_16.jsonl",
+        "rows": 20000,
+        "sha256": "914604f23b64fa7562764041e810019887d1664e15d1c59141652d327af7e9eb"
+      },
+      "abs_pos_8": {
+        "classes": {
+          "0": 3907,
+          "1": 3677,
+          "2": 3290,
+          "3": 2971,
+          "4": 2629,
+          "5": 2505,
+          "6": 755,
+          "7": 266
+        },
+        "groups": 676,
+        "path": "data/atlas_v1/analysis_rows/calibration.abs_pos_8.jsonl",
+        "rows": 20000,
+        "sha256": "34752f472ed2fa3f340c97ea57ada463e0c1ab24d054963f2b00c64a774861a2"
+      },
+      "boundary_state": {
+        "classes": {
+          "final": 3982,
+          "initial": 3992,
+          "interior": 12026
+        },
+        "groups": 676,
+        "path": "data/atlas_v1/analysis_rows/calibration.boundary_state.jsonl",
+        "rows": 20000,
+        "sha256": "817489aff713187df986dcf7e3e5877c09c93f2bb54c92fc5e7056b58eb55515"
+      },
+      "dependency_depth": {
+        "classes": {
+          "0": 1998,
+          "1": 4563,
+          "2": 4700,
+          "3": 4335,
+          "4p": 4404
+        },
+        "groups": 176,
+        "path": "data/atlas_v1/analysis_rows/calibration.dependency_depth.jsonl",
+        "rows": 20000,
+        "sha256": "0e87b7b50daf6f286acd28b93a08d6c50bfcfc49dfe13bfc235f188a9b36cbd3"
+      },
+      "head_signed_distance": {
+        "classes": {
+          "L1": 2252,
+          "L2": 2245,
+          "L3_4": 2247,
+          "L5p": 2283,
+          "R1": 2539,
+          "R2": 2337,
+          "R3_4": 2263,
+          "R5p": 1836,
+          "ROOT": 1998
+        },
+        "groups": 176,
+        "path": "data/atlas_v1/analysis_rows/calibration.head_signed_distance.jsonl",
+        "rows": 20000,
+        "sha256": "306c2aaba546f632e1e947532096123fb9416343572c8c44acd9d53b0f21df71"
+      },
+      "lemma_identity_256": {
+        "classes": {
+          "\"": 455,
+          "'s": 132,
+          "(": 138,
+          ")": 169,
+          ",": 1586,
+          ".": 2058,
+          "a": 923,
+          "and": 991,
+          "as": 254,
+          "at": 287,
+          "be": 996,
+          "but": 190,
+          "by": 192,
+          "do": 404,
+          "for": 465,
+          "from": 252,
+          "have": 427,
+          "he": 300,
+          "his": 140,
+          "i": 860,
+          "in": 780,
+          "is": 528,
+          "it": 644,
+          "not": 318,
+          "of": 841,
+          "on": 396,
+          "that": 654,
+          "the": 1564,
+          "they": 264,
+          "this": 606,
+          "to": 886,
+          "was": 192,
+          "which": 76,
+          "with": 344,
+          "you": 688
+        },
+        "groups": 625,
+        "path": "data/atlas_v1/analysis_rows/calibration.lemma_identity_256.jsonl",
+        "rows": 20000,
+        "sha256": "51fe50ec19f95f18e3081e430d1583ec8cd5eb1ca21d4a0c81bf5465c7781748"
+      },
+      "ner_coarse": {
+        "classes": {
+          "LOC": 160,
+          "MISC": 884,
+          "O": 17392,
+          "ORG": 196,
+          "PER": 1368
+        },
+        "groups": 500,
+        "path": "data/atlas_v1/analysis_rows/calibration.ner_coarse.jsonl",
+        "rows": 20000,
+        "sha256": "bc52fb1ed2c564f44f4396529d8df68ecb70fd1eb16f1000f57e3602671102b3"
+      },
+      "relative_quartile": {
+        "classes": {
+          "0": 5000,
+          "1": 5000,
+          "2": 5000,
+          "3": 5000
+        },
+        "groups": 675,
+        "path": "data/atlas_v1/analysis_rows/calibration.relative_quartile.jsonl",
+        "rows": 20000,
+        "sha256": "f7c7e3257807e90e41dca3e31e7124fbacf15378b2e035693580fca2aa6be8ae"
+      },
+      "token_identity_256": {
+        "classes": {
+          "\"": 311,
+          "'s": 244,
+          "(": 138,
+          ")": 169,
+          ",": 1738,
+          ".": 2296,
+          "a": 950,
+          "an": 128,
+          "and": 1087,
+          "are": 323,
+          "as": 254,
+          "at": 283,
+          "be": 280,
+          "but": 190,
+          "by": 192,
+          "for": 461,
+          "from": 252,
+          "had": 80,
+          "have": 283,
+          "he": 276,
+          "his": 140,
+          "i": 854,
+          "in": 797,
+          "is": 751,
+          "it": 642,
+          "not": 190,
+          "of": 875,
+          "on": 396,
+          "that": 637,
+          "the": 1733,
+          "this": 552,
+          "to": 944,
+          "was": 375,
+          "were": 64,
+          "which": 76,
+          "with": 344,
+          "you": 695
+        },
+        "groups": 627,
+        "path": "data/atlas_v1/analysis_rows/calibration.token_identity_256.jsonl",
+        "rows": 20000,
+        "sha256": "8d734bcf3e896a5cf14cade25433d93bad755ee7497ba441ec55c0b813ebcec8"
+      }
+    },
+    "discovery": {
+      "abs_pos_16": {
+        "classes": {
+          "0": 4340,
+          "1": 4271,
+          "10": 3192,
+          "11": 3134,
+          "12": 2295,
+          "13": 1423,
+          "14": 890,
+          "15": 571,
+          "2": 4186,
+          "3": 4077,
+          "4": 3960,
+          "5": 3864,
+          "6": 3649,
+          "7": 3512,
+          "8": 3370,
+          "9": 3266
+        },
+        "groups": 1334,
+        "path": "data/atlas_v1/analysis_rows/discovery.abs_pos_16.jsonl",
+        "rows": 50000,
+        "sha256": "b0a2b94e5cb5f4d6a6a24bbd2359726622b5dc3bcdc12a30d506a14a065445a1"
+      },
+      "abs_pos_8": {
+        "classes": {
+          "0": 8608,
+          "1": 8220,
+          "2": 7818,
+          "3": 7201,
+          "4": 6656,
+          "5": 6318,
+          "6": 3718,
+          "7": 1461
+        },
+        "groups": 1334,
+        "path": "data/atlas_v1/analysis_rows/discovery.abs_pos_8.jsonl",
+        "rows": 50000,
+        "sha256": "682d77656c32066d4c1502b6fea88f21c449909b08fbc9962840dc48b431cd44"
+      },
+      "boundary_state": {
+        "classes": {
+          "final": 7841,
+          "initial": 7892,
+          "interior": 34267
+        },
+        "groups": 1332,
+        "path": "data/atlas_v1/analysis_rows/discovery.boundary_state.jsonl",
+        "rows": 50000,
+        "sha256": "32ea009a2dd70b653aa609d20426736f47a7dc2d4a1858cab824181d2ff23914"
+      },
+      "dependency_depth": {
+        "classes": {
+          "0": 3998,
+          "1": 11845,
+          "2": 12248,
+          "3": 10754,
+          "4p": 11155
+        },
+        "groups": 334,
+        "path": "data/atlas_v1/analysis_rows/discovery.dependency_depth.jsonl",
+        "rows": 50000,
+        "sha256": "e1802f245aa3c36703e2d189f1d9074f8507d901f193c3bbabb412a0321944e8"
+      },
+      "head_signed_distance": {
+        "classes": {
+          "L1": 5033,
+          "L2": 5230,
+          "L3_4": 5584,
+          "L5p": 6012,
+          "R1": 8649,
+          "R2": 6469,
+          "R3_4": 5753,
+          "R5p": 3272,
+          "ROOT": 3998
+        },
+        "groups": 334,
+        "path": "data/atlas_v1/analysis_rows/discovery.head_signed_distance.jsonl",
+        "rows": 50000,
+        "sha256": "671737b3b3a028f84190e1e899aff3c202ccfd499b12b1a72c5b19660515ba55"
+      },
+      "lemma_identity_256": {
+        "classes": {
+          "\"": 478,
+          "'s": 798,
+          "(": 1168,
+          ")": 1186,
+          ",": 4089,
+          ".": 4085,
+          "a": 2234,
+          "and": 2826,
+          "as": 1011,
+          "at": 854,
+          "be": 2050,
+          "but": 424,
+          "by": 899,
+          "do": 420,
+          "for": 1239,
+          "from": 693,
+          "have": 919,
+          "he": 780,
+          "his": 480,
+          "i": 1312,
+          "in": 2561,
+          "is": 748,
+          "it": 1072,
+          "not": 636,
+          "of": 2728,
+          "on": 1147,
+          "that": 1020,
+          "the": 5315,
+          "they": 716,
+          "this": 640,
+          "to": 2360,
+          "was": 1175,
+          "which": 266,
+          "with": 1063,
+          "you": 608
+        },
+        "groups": 1316,
+        "path": "data/atlas_v1/analysis_rows/discovery.lemma_identity_256.jsonl",
+        "rows": 50000,
+        "sha256": "f1389cbbe203ebeb8961d43cfc169fd36a5917daf8f570c377140652188c16f9"
+      },
+      "ner_coarse": {
+        "classes": {
+          "LOC": 5630,
+          "MISC": 6305,
+          "O": 29781,
+          "ORG": 4472,
+          "PER": 3812
+        },
+        "groups": 1000,
+        "path": "data/atlas_v1/analysis_rows/discovery.ner_coarse.jsonl",
+        "rows": 50000,
+        "sha256": "eefc5b630f8b2dcbdcdc34c60ab1fe9de3f5781bda13a73274d7fdbf54e213b3"
+      },
+      "relative_quartile": {
+        "classes": {
+          "0": 12500,
+          "1": 12500,
+          "2": 12500,
+          "3": 12500
+        },
+        "groups": 1334,
+        "path": "data/atlas_v1/analysis_rows/discovery.relative_quartile.jsonl",
+        "rows": 50000,
+        "sha256": "31299bad7665c1c0b297cbf7002d947c375862ab07bfd2ea0b57287fa422ee83"
+      },
+      "token_identity_256": {
+        "classes": {
+          "\"": 454,
+          "'s": 842,
+          "(": 1168,
+          ")": 1186,
+          ",": 4239,
+          ".": 4328,
+          "a": 2144,
+          "an": 501,
+          "and": 2901,
+          "are": 504,
+          "as": 1011,
+          "at": 850,
+          "be": 516,
+          "but": 424,
+          "by": 899,
+          "for": 1235,
+          "from": 693,
+          "had": 368,
+          "have": 495,
+          "he": 696,
+          "his": 480,
+          "i": 1128,
+          "in": 2644,
+          "is": 1429,
+          "it": 1080,
+          "not": 436,
+          "of": 2781,
+          "on": 1147,
+          "that": 1012,
+          "the": 5605,
+          "this": 548,
+          "to": 2389,
+          "was": 1502,
+          "were": 428,
+          "which": 262,
+          "with": 1063,
+          "you": 612
+        },
+        "groups": 1315,
+        "path": "data/atlas_v1/analysis_rows/discovery.token_identity_256.jsonl",
+        "rows": 50000,
+        "sha256": "78c91c765c4b945bfd40ca1fbe790c79b1199eb3c246e6ddceeaa83afec86577"
+      }
+    }
+  },
+  "schema_version": "atlas_v1_task_rows",
+  "seed": 20260731
+}

@@ -1,0 +1,51 @@
+{
+  "freshness": {
+    "composite_overlap": 0,
+    "marginal_categorical_recurrence_allowed": true,
+    "pass": true,
+    "per_generator": {
+      "11301": {
+        "opened": 24576,
+        "qualification": 16384,
+        "validation": 8192
+      },
+      "11302": {
+        "opened": 24576,
+        "qualification": 16384,
+        "validation": 8192
+      },
+      "11303": {
+        "opened": 24576,
+        "qualification": 16384,
+        "validation": 8192
+      },
+      "11304": {
+        "opened": 24576,
+        "qualification": 16384,
+        "validation": 8192
+      }
+    },
+    "row_id_overlap": 0,
+    "row_seed_overlap": 0
+  },
+  "generator_lock_sha256": "3061ebb6062600cbb86774018b59a72b90094fab2af937178c6f3a0e698d9612",
+  "method_inventory": [
+    "exact_controller",
+    "identity_full640"
+  ],
+  "payloads": [
+    {
+      "path": "data/causal_manifold_bridge_v2_technical_prepared/qualification.jsonl",
+      "rows": 16384,
+      "sha256": "22b33135409fd649a04ea40e65d03cdb2dad594d1945868bcae606b3787acefe",
+      "stage": "qualification"
+    },
+    {
+      "path": "data/causal_manifold_bridge_v2_technical_prepared/validation.jsonl",
+      "rows": 8192,
+      "sha256": "6af42df0002e7567b95365d14a66f536fb9db671667940452f143d2ecf61b8ab",
+      "stage": "validation"
+    }
+  ],
+  "schema_version": "causal_manifold_bridge_v2_technical_freeze"
+}

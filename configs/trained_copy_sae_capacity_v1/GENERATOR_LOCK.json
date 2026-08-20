@@ -1,0 +1,14 @@
+{
+  "candidate_review_sha256": "3c5e7a708db7c5042af1d3eb7c222b50aa02c38ac4ee7d39e9453215650820d2",
+  "candidate_sha256": "b844770e8cf8264f92b0d209f0fa994a113333c96583606e8586c95eba0967b3",
+  "config_sha256": "e71123e7eff3c135596f16943a9bae01749119e8340b93a78b431c95f435510c",
+  "launcher_sha256": "81949b593762a2a88eebdf152b5e827814d213bc037867fc44ea5b18e9f61b2b",
+  "method_table_sha256": "55e091d274bce150abe773cd3ffa9e117c8dc66104f546e1ff210db8559af73f",
+  "plan_sha256": "d6032a48b50ae56be3e7a662f0141e01778c063cf0884849ebe1bd8f1b3c1ac5",
+  "schema_version": "trained_copy_sae_capacity_v1_generator_lock",
+  "source_sha256": "9c26eabbc177b728d3904d35ba5508886cc55278a7eb80cf4104fb9150c33bea",
+  "tests_sha256": {
+    "launcher": "94d44765b3d2f19c3466980a91e99ef4768b2687d67ca2078bf63cc8caa49d78",
+    "study": "fb657dfaef9ef2ae266dfe9ce71655f8101bf9d5c3d7aac38854436a753e4b16"
+  }
+}

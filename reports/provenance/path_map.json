@@ -1,0 +1,7 @@
+{
+  "schema_version": "msae_path_map_v1",
+  "created_utc": "2026-08-01T03:01:02Z",
+  "obsolete_root": "/jumbo/lisp/f004ndc/MSAE",
+  "current_root": "/jumbo/lisp/f004ndc/experiments/wip/MSAE",
+  "policy": "Do not rewrite frozen JSON/checkpoint args; resolve obsolete prefix at read time or use repo-relative paths in active files."
+}

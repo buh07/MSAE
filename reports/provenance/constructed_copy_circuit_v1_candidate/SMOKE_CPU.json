@@ -1,0 +1,17 @@
+{
+  "device": "cpu",
+  "exact_oracle": true,
+  "fixture_sha256": "a1bee7b9a355abbd681db97504d5d35c2b69cd05bbe5f85e198c7488a0367ea7",
+  "full_clean_donor_bitwise": true,
+  "full_sham_donor_bitwise": true,
+  "general_natural_model_claim": false,
+  "implementation_sha256": "38c9cee2088b42bdda84d78357e003ecfdc85cf4b9aec93615d2a776777d3c2b",
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_smoke",
+  "scientific_support_expected": false,
+  "single_constructed_model": true,
+  "status": "PASS",
+  "training_performed": false
+}

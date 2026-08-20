@@ -1,0 +1,3594 @@
+{
+  "device": "cuda",
+  "fit": {
+    "learned": {
+      "sae_seed1701": {
+        "final_loss": 0.21617698669433594,
+        "initial_loss": 0.21957598626613617,
+        "seed": 1701,
+        "selected_features": [
+          90,
+          52,
+          153,
+          31,
+          85,
+          139,
+          39,
+          115
+        ],
+        "steps": 2
+      },
+      "sae_seed1702": {
+        "final_loss": 0.2188595086336136,
+        "initial_loss": 0.21860849857330322,
+        "seed": 1702,
+        "selected_features": [
+          79,
+          69,
+          180,
+          50,
+          250,
+          34,
+          98,
+          71
+        ],
+        "steps": 2
+      },
+      "sae_seed1703": {
+        "final_loss": 0.21174591779708862,
+        "initial_loss": 0.21472051739692688,
+        "seed": 1703,
+        "selected_features": [
+          122,
+          33,
+          223,
+          179,
+          19,
+          16,
+          170,
+          60
+        ],
+        "steps": 2
+      },
+      "supervised_seed2701": {
+        "final_loss": 236.62611389160156,
+        "initial_loss": 236.2016143798828,
+        "seed": 2701,
+        "steps": 2
+      },
+      "supervised_seed2702": {
+        "final_loss": 239.97227478027344,
+        "initial_loss": 238.06887817382812,
+        "seed": 2702,
+        "steps": 2
+      },
+      "supervised_seed2703": {
+        "final_loss": 238.088623046875,
+        "initial_loss": 234.76321411132812,
+        "seed": 2703,
+        "steps": 2
+      }
+    },
+    "nonlearned": [
+      "ground_truth",
+      "incomplete_routing_only",
+      "incomplete_private_only",
+      "incomplete_shared_only",
+      "incomplete_routing_private",
+      "incomplete_routing_shared",
+      "incomplete_attention_only",
+      "incomplete_bypass_only",
+      "random_rank8",
+      "pca_rank8",
+      "diffmean",
+      "leace_style"
+    ]
+  },
+  "learned_steps": 2,
+  "rows_scored": 6912,
+  "schema_version": "transformer_realistic_methods_v1_smoke",
+  "scientific_panels_read": false,
+  "summary": {
+    "constructed_synthetic_model": true,
+    "family_pass_every_seed": {
+      "diffmean": false,
+      "ground_truth": true,
+      "incomplete_attention_only": false,
+      "incomplete_bypass_only": false,
+      "incomplete_private_only": false,
+      "incomplete_routing_only": false,
+      "incomplete_routing_private": false,
+      "incomplete_routing_shared": false,
+      "incomplete_shared_only": false,
+      "leace_style": false,
+      "pca": false,
+      "random": false,
+      "sae": false,
+      "supervised": false
+    },
+    "k2_evaluated": false,
+    "methods": {
+      "diffmean": {
+        "family": "diffmean",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": true,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "diffmean",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.1443757130255421,
+              "point": 0.14716157559108162,
+              "upper": 0.14931466686697092,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.6902770930997384,
+              "point": 0.7024691850644343,
+              "upper": 0.7084359328054469,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.4326755775964116,
+              "point": 0.4369275859046198,
+              "upper": 0.44211354258176744,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 1.0596705836455937,
+              "point": 1.063485077071525,
+              "upper": 1.0684749896613295,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.7752710838247032,
+              "point": 0.7818220297965824,
+              "upper": 0.786628429125907,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.0,
+              "point": 0.0,
+              "upper": 0.0,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": true,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "diffmean",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.14314953615019926,
+              "point": 0.14585164816483884,
+              "upper": 0.14917983275202856,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.6813365162199713,
+              "point": 0.6917442545538245,
+              "upper": 0.6983663740863909,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.4234422171868524,
+              "point": 0.42625703092497913,
+              "upper": 0.4310669885120708,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 1.0308397967615806,
+              "point": 1.0329330651249833,
+              "upper": 1.0350212508130927,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.7576173191602998,
+              "point": 0.7689162170133291,
+              "upper": 0.7743175946024743,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.0,
+              "point": 0.0,
+              "upper": 0.0,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "ground_truth": {
+        "family": "ground_truth",
+        "matched": {
+          "all_gates_pass": true,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": true,
+            "control_margin": true,
+            "full_vocab_recovery": true,
+            "necessity": true,
+            "recovery": true,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "ground_truth",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 4.095759468398876e-08,
+              "point": 4.289922199307059e-08,
+              "upper": 4.5109457670496895e-08,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.9231164526594727,
+              "point": 0.9273045940646371,
+              "upper": 0.9334074378983697,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.9999999410956286,
+              "point": 0.9999999479860303,
+              "upper": 0.9999999530478498,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.9999999966570431,
+              "point": 0.9999999996499541,
+              "upper": 1.00000000287983,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.9999999973715563,
+              "point": 1.0000000051422855,
+              "upper": 1.0000000108784979,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.9325415210960157,
+              "point": 0.9419074845722352,
+              "upper": 0.9463494799905885,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": true,
+            "control_margin": true,
+            "full_vocab_recovery": true,
+            "necessity": true,
+            "recovery": true,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "ground_truth",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 4.081746800733295e-08,
+              "point": 4.289922199307059e-08,
+              "upper": 4.556427022130867e-08,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.9188275128463199,
+              "point": 0.9237215868064114,
+              "upper": 0.9305883143278212,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.9999999445580626,
+              "point": 0.9999999479860303,
+              "upper": 0.9999999526741418,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.9999999973324807,
+              "point": 0.9999999996499541,
+              "upper": 1.0000000031154244,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.999999997040938,
+              "point": 1.0000000051422855,
+              "upper": 1.0000000120193222,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.9321155614578436,
+              "point": 0.9416771847974227,
+              "upper": 0.9487752454443986,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "incomplete_attention_only": {
+        "family": "incomplete_attention_only",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": true,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": true,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_attention_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.07496141684954354,
+              "point": 0.07828466929401111,
+              "upper": 0.08112681950322383,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.7832933006269249,
+              "point": 0.7874777486692626,
+              "upper": 0.7945407718485693,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.5500861165613699,
+              "point": 0.5533808626311144,
+              "upper": 0.5557477386331876,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.26211861945816817,
+              "point": 0.2695374815159226,
+              "upper": 0.2757583780534314,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.7811323645502554,
+              "point": 0.787746727286927,
+              "upper": 0.7917569837492376,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.7458167455908595,
+              "point": 0.7544398407418097,
+              "upper": 0.7605721177081813,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": true,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": true,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_attention_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.07506106000349998,
+              "point": 0.07828466929401111,
+              "upper": 0.08043397005980785,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.7819079271129359,
+              "point": 0.7875955416066368,
+              "upper": 0.7925821837428416,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.5498541065225163,
+              "point": 0.5533808626311144,
+              "upper": 0.5562696163950708,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.26369266610405634,
+              "point": 0.2695374815159226,
+              "upper": 0.27272188358104443,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.7807795953819346,
+              "point": 0.787746727286927,
+              "upper": 0.7939829819679103,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.7468608002126609,
+              "point": 0.7542593136123878,
+              "upper": 0.7615948068623262,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "incomplete_bypass_only": {
+        "family": "incomplete_bypass_only",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": true,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_bypass_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.29768834617542506,
+              "point": 0.30161634467595544,
+              "upper": 0.3053373823169297,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.6436752341773813,
+              "point": 0.6518950699005639,
+              "upper": 0.6612398437316389,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.63984066702772,
+              "point": 0.6435511050394352,
+              "upper": 0.6465763920678104,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.20758860758378672,
+              "point": 0.2122532734632729,
+              "upper": 0.2184585401246604,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.7241408616783521,
+              "point": 0.730462515579045,
+              "upper": 0.7350672074006066,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.7214955969979389,
+              "point": 0.7295367364871203,
+              "upper": 0.7372608613046359,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": true,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_bypass_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.29781671097156115,
+              "point": 0.30161634467595544,
+              "upper": 0.30547366745187354,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.6408184710545133,
+              "point": 0.6520816332818593,
+              "upper": 0.6612465248538224,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.6400757119621181,
+              "point": 0.6435511050394352,
+              "upper": 0.646370013140635,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.20737999319840722,
+              "point": 0.2122532734632729,
+              "upper": 0.2171965070062321,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.726747870689875,
+              "point": 0.730462515579045,
+              "upper": 0.734674213847485,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.72406325439104,
+              "point": 0.7293457169882077,
+              "upper": 0.7377705198605335,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "incomplete_private_only": {
+        "family": "incomplete_private_only",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": true,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_private_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.5550314652258147,
+              "point": 0.5753425963732919,
+              "upper": 0.5943623719112913,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.7464666732726929,
+              "point": 0.7663584448814498,
+              "upper": 0.7821968888648922,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.30849211503808927,
+              "point": 0.31350348717266535,
+              "upper": 0.31882249216903635,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 1.3984260721069837,
+              "point": 1.4127641193607545,
+              "upper": 1.4276139482058168,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.8249467506791878,
+              "point": 0.8438122489837444,
+              "upper": 0.8610956072098956,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.7519270252851898,
+              "point": 0.7660831769341582,
+              "upper": 0.780777471290797,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_private_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.43221649732364964,
+              "point": 0.4427915787951986,
+              "upper": 0.4510052373858934,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.4435215713638729,
+              "point": 0.4559611654901981,
+              "upper": 0.4718625950023314,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.3665762115418487,
+              "point": 0.38284276877124895,
+              "upper": 0.3924667325288968,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.5835188451287885,
+              "point": 0.5961710208185205,
+              "upper": 0.613971503872305,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.46068843246229,
+              "point": 0.4702040287603096,
+              "upper": 0.47501029618351914,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.4566026506605144,
+              "point": 0.46907665917377145,
+              "upper": 0.485683291906144,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "incomplete_routing_only": {
+        "family": "incomplete_routing_only",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": true,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_routing_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.05871356313706956,
+              "point": 0.06552973144478336,
+              "upper": 0.07169286301150374,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": -0.024121836864860795,
+              "point": -0.019569598941685327,
+              "upper": -0.014027976442245701,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": -0.06472883337682311,
+              "point": -0.058589144150196594,
+              "upper": -0.053015792979174824,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.2587259315502392,
+              "point": 0.26438976249745894,
+              "upper": 0.2704949812125973,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.052146967107454346,
+              "point": 0.056797283141667744,
+              "upper": 0.06369092617818937,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.0,
+              "point": 0.0,
+              "upper": 0.0,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": true,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_routing_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.05542075891471457,
+              "point": 0.06436819004192584,
+              "upper": 0.07092013270212538,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": -0.025318093172909072,
+              "point": -0.020383392547952333,
+              "upper": -0.016818016993422384,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": -0.06468317689377362,
+              "point": -0.05752016612654851,
+              "upper": -0.05068540828941122,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.25187233265513864,
+              "point": 0.26025621619213785,
+              "upper": 0.2651763052311487,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.05254806185678025,
+              "point": 0.05491541742254843,
+              "upper": 0.06067832594233008,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.0,
+              "point": 0.0,
+              "upper": 0.0,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "incomplete_routing_private": {
+        "family": "incomplete_routing_private",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_routing_private",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.41371247089087054,
+              "point": 0.43409587539415745,
+              "upper": 0.44679346574022794,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.5842731948217523,
+              "point": 0.5946683957552307,
+              "upper": 0.6114253283204591,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.43970633124351854,
+              "point": 0.4575613286556795,
+              "upper": 0.4942575434431362,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.7409649938846817,
+              "point": 0.7513970930046366,
+              "upper": 0.7665556839627646,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.6630619822051581,
+              "point": 0.6744333917751364,
+              "upper": 0.689780186325559,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.604462840155346,
+              "point": 0.6173749855578231,
+              "upper": 0.6331076016495863,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": true,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": true
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_routing_private",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.3994215211161896,
+              "point": 0.4198020024748512,
+              "upper": 0.44202097606997875,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.5635476280141365,
+              "point": 0.578821609369608,
+              "upper": 0.5946684146861221,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.4252858092519341,
+              "point": 0.4481941067994673,
+              "upper": 0.4822085144974984,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.7161644687735969,
+              "point": 0.7275336430280142,
+              "upper": 0.741358101070706,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.6408981104754187,
+              "point": 0.6540862508443409,
+              "upper": 0.6715394032419295,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.5820232009859889,
+              "point": 0.5985386299924279,
+              "upper": 0.6193726980671439,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "incomplete_routing_shared": {
+        "family": "incomplete_routing_shared",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_routing_shared",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.41990172178177126,
+              "point": 0.43447568370950335,
+              "upper": 0.44773972544617247,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.3119548293395994,
+              "point": 0.3304776648259245,
+              "upper": 0.3429575481144868,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.20365715694784453,
+              "point": 0.2184039923029495,
+              "upper": 0.22991900615153918,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.5293457313205655,
+              "point": 0.5405272499344441,
+              "upper": 0.549722398861535,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.39574555088752106,
+              "point": 0.40864632958962616,
+              "upper": 0.4233391927297275,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.3298961651769119,
+              "point": 0.3484822890705155,
+              "upper": 0.36898793129078855,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "incomplete_routing_shared",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.4076532647292812,
+              "point": 0.4307857252329342,
+              "upper": 0.4430981143813927,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.31151649409932286,
+              "point": 0.32769012948744175,
+              "upper": 0.3455165771352471,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.201641171598459,
+              "point": 0.21115282096307944,
+              "upper": 0.22635978564257686,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.5185570186133925,
+              "point": 0.5297959705070202,
+              "upper": 0.5412507072440197,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.38950080939346393,
+              "point": 0.4038289771219941,
+              "upper": 0.41767507587639513,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.3382158366354025,
+              "point": 0.34557781257802317,
+              "upper": 0.3618644254672828,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "incomplete_shared_only": {
+        "family": "incomplete_shared_only",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": false,
+          "method": "incomplete_shared_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.45540677462766316,
+              "point": 0.4632133955690607,
+              "upper": 0.471218375745734,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.32185564982234366,
+              "point": 0.334546590197445,
+              "upper": 0.34861856203076863,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.33582976025150735,
+              "point": 0.3462771259403854,
+              "upper": 0.3634839032159279,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.8787922076013279,
+              "point": 0.9221141966156255,
+              "upper": 0.944176493913261,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.37837834600126974,
+              "point": 0.4080372227781206,
+              "upper": 0.4212569463355095,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.312778751109891,
+              "point": 0.3343525609475979,
+              "upper": 0.3475518923808364,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": false,
+          "method": "incomplete_shared_only",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.44293557071413486,
+              "point": 0.45296637122845623,
+              "upper": 0.45954260384241913,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.2382203573091297,
+              "point": 0.24932980510756178,
+              "upper": 0.25488262353662944,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.20174301621844318,
+              "point": 0.21118243309457538,
+              "upper": 0.21912341126883675,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.32525007815929263,
+              "point": 0.3459137495213282,
+              "upper": 0.355221394775559,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.2612694824890275,
+              "point": 0.27246635300437044,
+              "upper": 0.276717983052354,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.2607024108259231,
+              "point": 0.2690483991365779,
+              "upper": 0.2775530983921532,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "leace_style": {
+        "family": "leace_style",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "leace_style",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.48166562663743995,
+              "point": 0.49657529759115976,
+              "upper": 0.5156067551291381,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.45827355359155164,
+              "point": 0.4796322442391556,
+              "upper": 0.4926049421616888,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.26920704156298647,
+              "point": 0.29447586078490334,
+              "upper": 0.3122361836177882,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.9386093144066868,
+              "point": 0.9548299395133651,
+              "upper": 0.9830034159376487,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.5297132884749682,
+              "point": 0.5553704881111223,
+              "upper": 0.5818050923921045,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.0009712857045585873,
+              "point": 0.0017243701381717033,
+              "upper": 0.003289058708615704,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "leace_style",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.47640278393861185,
+              "point": 0.4967361903918457,
+              "upper": 0.5150590557720086,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.454522041796711,
+              "point": 0.4794452189972518,
+              "upper": 0.4994684181172975,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.2868451356310544,
+              "point": 0.29710337414286464,
+              "upper": 0.3130235111887228,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.9342270325026901,
+              "point": 0.9645286199470225,
+              "upper": 0.98522102464601,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.536090836751641,
+              "point": 0.5577176779828606,
+              "upper": 0.5825511358764116,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.0005804728482959555,
+              "point": 0.0017370742334679003,
+              "upper": 0.00267495279144485,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "pca_rank8": {
+        "family": "pca",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "pca_rank8",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.39608718306652646,
+              "point": 0.40717734072108697,
+              "upper": 0.4178633028181789,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.46923584711919714,
+              "point": 0.477237880208264,
+              "upper": 0.49109488744977603,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.33974694513111686,
+              "point": 0.3443325859705058,
+              "upper": 0.3520506718435443,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.8456319987957692,
+              "point": 0.8543093232380655,
+              "upper": 0.8639338395261229,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.5454617309444348,
+              "point": 0.5556517907569459,
+              "upper": 0.5690782780307108,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": -0.0027769077733760346,
+              "point": -0.0014222806082555964,
+              "upper": 0.0005669001106076133,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "pca_rank8",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.36437445261419754,
+              "point": 0.3724912301328345,
+              "upper": 0.381743480834035,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.3733414287150365,
+              "point": 0.3866002408062017,
+              "upper": 0.3969378286771677,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.2597774753190949,
+              "point": 0.2673383585057812,
+              "upper": 0.27843657446613884,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.4997021985292713,
+              "point": 0.5153302243358867,
+              "upper": 0.523901703082933,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.4319603557969744,
+              "point": 0.44735668366541254,
+              "upper": 0.4574649420891602,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.04380073781131549,
+              "point": 0.04676609791859032,
+              "upper": 0.04805885340873131,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "random_rank8": {
+        "family": "random",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "random_rank8",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.4978127168689846,
+              "point": 0.5216371708874582,
+              "upper": 0.5393118210162682,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.08045096405292561,
+              "point": 0.11627789680014637,
+              "upper": 0.14291190646768376,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.13713358055123512,
+              "point": 0.16523109077025058,
+              "upper": 0.18280610792194457,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.7051752718584731,
+              "point": 0.7271501744643666,
+              "upper": 0.7507703038793041,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.16530928192496477,
+              "point": 0.19277074837884536,
+              "upper": 0.21608525634520326,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.11014778064844284,
+              "point": 0.12389205841808287,
+              "upper": 0.141766211567669,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "random_rank8",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.4037554655489139,
+              "point": 0.41655082872187005,
+              "upper": 0.4252921528884965,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.04816140270957342,
+              "point": 0.06993058187762773,
+              "upper": 0.09432984580206201,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.07343502415078461,
+              "point": 0.093966624162739,
+              "upper": 0.11778233059867788,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.27253558459592264,
+              "point": 0.31361702688636584,
+              "upper": 0.34650656284145004,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.07830460876135886,
+              "point": 0.10105997798542517,
+              "upper": 0.123281187909752,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.07349722521293815,
+              "point": 0.08330783494304504,
+              "upper": 0.09266448393959577,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": null,
+        "technical_valid": true
+      },
+      "sae_seed1701": {
+        "family": "sae",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": false,
+          "method": "sae_seed1701",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.5492657084707278,
+              "point": 0.5642617837883294,
+              "upper": 0.5765220853771248,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.06762763615519359,
+              "point": 0.08600472418727373,
+              "upper": 0.10216549582782888,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.07802882854898849,
+              "point": 0.09285344696287545,
+              "upper": 0.11037739408423694,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.6240086210324388,
+              "point": 0.6714531331319321,
+              "upper": 0.7072431699525366,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.1352426453128888,
+              "point": 0.15711445563315388,
+              "upper": 0.1792536165018687,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.020610958276949344,
+              "point": 0.039059814906824426,
+              "upper": 0.06674692238477237,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": false,
+          "method": "sae_seed1701",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.3229733834183856,
+              "point": 0.3306633441046363,
+              "upper": 0.3390105024672667,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.022531949798644958,
+              "point": 0.028446755001078804,
+              "upper": 0.033388617232591934,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.016782670014088664,
+              "point": 0.02069269113478151,
+              "upper": 0.02567511753285795,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.05590883628735101,
+              "point": 0.06270235205172352,
+              "upper": 0.07084438522886106,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.023298926108507447,
+              "point": 0.03182862246388096,
+              "upper": 0.0379061150906132,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.0060642221044529005,
+              "point": 0.011691940817599862,
+              "upper": 0.015315174329328067,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": 1701,
+        "technical_valid": true
+      },
+      "sae_seed1702": {
+        "family": "sae",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": false,
+          "method": "sae_seed1702",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.5265196308643664,
+              "point": 0.5506327670099592,
+              "upper": 0.5739884085324793,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.002428135129417483,
+              "point": 0.019998489336784473,
+              "upper": 0.03369601299583842,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.05408905610213232,
+              "point": 0.060633945304233855,
+              "upper": 0.07441663132399287,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.5631590938908461,
+              "point": 0.5940662362455452,
+              "upper": 0.6201848857147256,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.07176829158186644,
+              "point": 0.09042763555869625,
+              "upper": 0.11156625272031269,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.008202127075208732,
+              "point": 0.02503487956663053,
+              "upper": 0.04421588293884504,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": false,
+          "method": "sae_seed1702",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.3186242211398556,
+              "point": 0.32715975147641635,
+              "upper": 0.3314430223813224,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.0015373187381286556,
+              "point": 0.006849764169077667,
+              "upper": 0.0108424511257318,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.007116347434813452,
+              "point": 0.011427761974071053,
+              "upper": 0.015684042663487403,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.04482534616928678,
+              "point": 0.05164931478066572,
+              "upper": 0.05643155074627859,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.005065469669779934,
+              "point": 0.010527799575954525,
+              "upper": 0.014257220337748525,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.0009821825453765415,
+              "point": 0.0049266024108884955,
+              "upper": 0.00936935684176069,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": 1702,
+        "technical_valid": true
+      },
+      "sae_seed1703": {
+        "family": "sae",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": false,
+          "method": "sae_seed1703",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.49087565252091986,
+              "point": 0.5042429098172679,
+              "upper": 0.5156090002871861,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.09454614152087064,
+              "point": 0.11261687341919606,
+              "upper": 0.1362724730126239,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.11220765912338429,
+              "point": 0.13141042826019914,
+              "upper": 0.15670171872131072,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.6053522755727464,
+              "point": 0.6537060982536457,
+              "upper": 0.6981756723386109,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.14961772037153162,
+              "point": 0.1786525209565042,
+              "upper": 0.18687552321907389,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.019912624893817888,
+              "point": 0.04069672679985576,
+              "upper": 0.06232333663425165,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": false,
+          "method": "sae_seed1703",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.31987790191073584,
+              "point": 0.3250559550404732,
+              "upper": 0.3303226920149508,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.025233933547236728,
+              "point": 0.03182369491055107,
+              "upper": 0.03914267116563017,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.016827268649718622,
+              "point": 0.024108509396011002,
+              "upper": 0.029611634059368598,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.056902094573139335,
+              "point": 0.06189577005351721,
+              "upper": 0.07131870978175364,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.030542932488499843,
+              "point": 0.035698081952422085,
+              "upper": 0.043661012209740675,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.006828681158724485,
+              "point": 0.012343342608747967,
+              "upper": 0.017144991043810388,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": 1703,
+        "technical_valid": true
+      },
+      "supervised_seed2701": {
+        "family": "supervised",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "supervised_seed2701",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.5360984026684045,
+              "point": 0.5502874644918606,
+              "upper": 0.568236812422,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.05187564613134711,
+              "point": 0.07880810485102054,
+              "upper": 0.09229450457659492,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.0945997042240686,
+              "point": 0.10814440648424388,
+              "upper": 0.1237416985971716,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.6853530650528767,
+              "point": 0.7045074119332936,
+              "upper": 0.7323741153493825,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.14058620531899452,
+              "point": 0.1532073639754253,
+              "upper": 0.17103083674816016,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": -0.004119068336021946,
+              "point": 0.006593843600091016,
+              "upper": 0.019628468180824664,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "supervised_seed2701",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.3019005948150517,
+              "point": 0.30805017499486426,
+              "upper": 0.3175311147414195,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.001642631594984021,
+              "point": 0.0019548735277463663,
+              "upper": 0.002583555890047688,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.0006113469335732301,
+              "point": 0.0011185991597377383,
+              "upper": 0.00169953787825198,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.0020165978247019514,
+              "point": 0.0022939759696296853,
+              "upper": 0.0028006610128964663,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.0009802258749289474,
+              "point": 0.0018773451816004305,
+              "upper": 0.0025721063317756462,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": -0.000127805138858553,
+              "point": 0.00011617502957415707,
+              "upper": 0.00034580781865038463,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": 2701,
+        "technical_valid": true
+      },
+      "supervised_seed2702": {
+        "family": "supervised",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "supervised_seed2702",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.5029196656480422,
+              "point": 0.519848880625929,
+              "upper": 0.5256432068554846,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": -0.0043349793725446,
+              "point": 0.02412212108664984,
+              "upper": 0.045245074312912824,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.08098112030521452,
+              "point": 0.09995334640477412,
+              "upper": 0.1235223310806976,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.610084691325035,
+              "point": 0.6510009270046265,
+              "upper": 0.671932099768607,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.0781560352971211,
+              "point": 0.102622914196468,
+              "upper": 0.13984676588092493,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": -0.005750185155661504,
+              "point": 0.002765047178942179,
+              "upper": 0.018758645620777472,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "supervised_seed2702",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.30069013986273874,
+              "point": 0.3075468242838706,
+              "upper": 0.3114768918719525,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": -0.0001714283292572557,
+              "point": 0.0008620810865792803,
+              "upper": 0.001621487688477755,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.0002846253036658346,
+              "point": 0.0007793699182685488,
+              "upper": 0.0012420829880503634,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": -0.0001750588308442258,
+              "point": 0.00015839094898941147,
+              "upper": 0.0006476544724660793,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": -0.00021612835481712718,
+              "point": 0.0009250419257117853,
+              "upper": 0.0016919674103850035,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": -0.00010594745694452452,
+              "point": 0.00010553400108099201,
+              "upper": 0.00028124993054265553,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": 2702,
+        "technical_valid": true
+      },
+      "supervised_seed2703": {
+        "family": "supervised",
+        "matched": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "matched",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": true,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "supervised_seed2703",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.539913031356929,
+              "point": 0.5590807776540768,
+              "upper": 0.5825508766339552,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.036598878048428235,
+              "point": 0.0454227701269208,
+              "upper": 0.06448491477720183,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.07439895697596742,
+              "point": 0.08761152606670945,
+              "upper": 0.09984192513922692,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.6451233499011068,
+              "point": 0.6685680788553409,
+              "upper": 0.6855162527594364,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.09771266312660663,
+              "point": 0.11998368148958431,
+              "upper": 0.13706843332446578,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 0.009639777114285297,
+              "point": 0.02065170555513643,
+              "upper": 0.030241539565152083,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "native": {
+          "all_gates_pass": false,
+          "common_cohort_per_block": {
+            "0": 8,
+            "1": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "2": 8,
+            "20": 8,
+            "21": 8,
+            "22": 8,
+            "23": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8,
+            "6": 8,
+            "7": 8,
+            "8": 8,
+            "9": 8
+          },
+          "common_cohort_total": 192,
+          "constructed_synthetic_model": true,
+          "estimand": "native",
+          "exclusion_rate": 0.0,
+          "gate_decisions": {
+            "collateral_error": false,
+            "control_margin": false,
+            "full_vocab_recovery": false,
+            "necessity": false,
+            "recovery": false,
+            "sham_specificity": false
+          },
+          "k2_evaluated": false,
+          "matched_complete": true,
+          "method": "supervised_seed2703",
+          "metrics": {
+            "collateral_error": {
+              "draws": 20,
+              "lower": 0.30179233895214475,
+              "point": 0.3081597628695703,
+              "upper": 0.3138596590868975,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "control_margin": {
+              "draws": 20,
+              "lower": 0.0006960243762104204,
+              "point": 0.0011449690270563682,
+              "upper": 0.0015499668312179834,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "full_vocab_recovery": {
+              "draws": 20,
+              "lower": 0.00039196343651610305,
+              "point": 0.0006205577819866463,
+              "upper": 0.0008862346991540973,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "necessity": {
+              "draws": 20,
+              "lower": 0.0007815395614564355,
+              "point": 0.0014743947897925861,
+              "upper": 0.002055373429466926,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "recovery": {
+              "draws": 20,
+              "lower": 0.0005323841108771261,
+              "point": 0.001140311391090884,
+              "upper": 0.0017156615666608025,
+              "weighting": "equal_block_paired_hierarchical"
+            },
+            "sham_specificity": {
+              "draws": 20,
+              "lower": 8.30850004449339e-06,
+              "point": 0.00040307012491726116,
+              "upper": 0.00068867217489904,
+              "weighting": "equal_block_paired_hierarchical"
+            }
+          },
+          "natural_model_claim": false,
+          "natural_prompt_assay": false,
+          "representation_methods_evaluated": true,
+          "schema_version": "transformer_realistic_methods_v1_method_summary",
+          "stage": "development",
+          "support_pass": true
+        },
+        "seed": 2703,
+        "technical_valid": true
+      }
+    },
+    "natural_model_claim": false,
+    "natural_prompt_assay": false,
+    "representation_methods_evaluated": true,
+    "schema_version": "transformer_realistic_methods_v1_stage_summary",
+    "stage": "development",
+    "status": "DEVELOPMENT_COMPLETE",
+    "technical_valid": true
+  }
+}

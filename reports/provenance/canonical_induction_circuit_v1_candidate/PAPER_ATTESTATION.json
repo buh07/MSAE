@@ -1,0 +1,15 @@
+{
+  "claim_verifier_status": "PASS",
+  "claims": 66,
+  "evidence_bindings": 284,
+  "ledger_path": "reports/paper_claim_ledger_v1.json",
+  "ledger_sha256": "e944d5753eb6369007c1db3a7f8dc19f924c370620449ae0eb0f2daddb3b3898",
+  "ledger_snapshot": "reports/provenance/canonical_induction_circuit_v1_candidate/PRELAUNCH_CLAIM_LEDGER.json",
+  "ledger_snapshot_sha256": "e944d5753eb6369007c1db3a7f8dc19f924c370620449ae0eb0f2daddb3b3898",
+  "paper_path": "PAPER.md",
+  "paper_sha256": "71b0016d7d00dd5f052fc68241686930c68a1e57114e9ccd839a1669474b621a",
+  "paper_snapshot": "reports/provenance/canonical_induction_circuit_v1_candidate/PRELAUNCH_PAPER.md",
+  "paper_snapshot_sha256": "71b0016d7d00dd5f052fc68241686930c68a1e57114e9ccd839a1669474b621a",
+  "schema_version": "canonical_induction_circuit_v1_paper_attestation",
+  "status": "PASS"
+}

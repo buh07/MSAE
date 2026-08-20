@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "authorization_outcome_independent": true,
+    "finite": true,
+    "sae_parameter_count": true,
+    "selector_permutation": true,
+    "topk": true
+  },
+  "config_sha256": "fa55f6dc57989cc72195fa5d2eeadf37a13b9388d16be1f2e2bddb01d5e9c167",
+  "expected_method_count_per_checkpoint": 507,
+  "launcher_sha256": "9cab99f10003502f5e5d3a92b8d87d18d73cbda4c9ee3addedd87c2ab1c310c3",
+  "method_inventory_sha256": "5a7c1fdd679e77893ee8dff8fad98687f4543439bef0c7c97934f7e3a4a0108a",
+  "plan_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "protocol_parity_sha256": "c0918ade2a333e452fd4d0b806c93e86a0fde99313ed369f0e5afc9c521cbf9a",
+  "recovery_lineage": {
+    "pass": true,
+    "r2_preservation_sha256": "f097b38b8b499be04cfdac944e3271337cbc0a214ec48f180f49e17053c5de97"
+  },
+  "runtime_profile": {
+    "below_half_timeout_budget": true,
+    "cached_sae_codes": 108,
+    "estimated_all_27_omp_seconds": 65.33638188242912,
+    "fit_rows": 64,
+    "method_records_per_checkpoint": 507,
+    "omp_features": 256,
+    "representative_omp_seconds": 2.419865995645523
+  },
+  "schema_version": "trained_copy_sae_basis_selection_v1_candidate",
+  "scientific_panel_accessed": false,
+  "source_sha256": "14527df5dd71f445c001a75aabe05eab8e09cf794ab974a6dc82422c50cebbe5",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "ddfa891c14448b4311cb94a0fe920d497295714325f4f95a7bae93f56a8b4650",
+    "study": "402b4afa11d7b2fe497c90765e4e90ddef13a998e3a328032fdb0cba3b1200e3"
+  },
+  "transitive_runtime_hashes": {
+    "base_source": "40851316c0ecdb2e052126fc421b462e9b298746810597758c07661f40c5e361",
+    "r5_config": "ae80b44d3735eaa055008617ba316679e8841d197eb9cd3bd64acdf28c2b6598",
+    "r5_freeze": "a59246d2d06e3fa8f14dcb290b6fdf2f9d73607e39ab93da55f1c41f02d6f758",
+    "r5_source": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8"
+  }
+}

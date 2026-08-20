@@ -1,0 +1,194 @@
+{
+  "analysis": {
+    "alphas": [
+      1.0,
+      10.0,
+      100.0
+    ],
+    "attention_log_floor": 1e-12,
+    "bootstrap_draws": 500,
+    "combined_minus_residual_minimum": 0.02,
+    "minimum_finite_draws": 490,
+    "paired_direction_lower_minimum": 0.5,
+    "paired_direction_minimum": 0.6,
+    "primary_link_feature": "mean_scaled_rotary_qk_logit",
+    "qk_auc_lower_minimum": 0.55,
+    "qk_auc_minimum": 0.6,
+    "quantile_method": "linear",
+    "quantiles": [
+      0.025,
+      0.5,
+      0.975
+    ],
+    "ridge": {
+      "class_weight": null,
+      "copy_X": true,
+      "fit_intercept": true,
+      "max_iter": 10000,
+      "positive": false,
+      "random_state": null,
+      "solver": "lsqr",
+      "tol": 1e-06
+    },
+    "scaler": {
+      "copy": true,
+      "with_mean": true,
+      "with_std": true
+    }
+  },
+  "backend_qa": {
+    "attention_probability_atol": 1e-06,
+    "attention_probability_rtol": 0.0001,
+    "pooling_atol": 1e-07,
+    "qk_logit_atol": 1e-07
+  },
+  "closure": {
+    "path": "reports/architecture_program_closure_v1.json",
+    "sha256": "9727cded086a83a130c7515d851faf98c7f1815558ccc67efd2cce2627b4ae6c"
+  },
+  "environment": {
+    "lock_path": "requirements-atlas.lock.txt",
+    "lock_sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834",
+    "versions": {
+      "cryptography": "41.0.7",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.4.1.post1",
+      "scipy": "1.11.4",
+      "torch": "2.7.0",
+      "transformers": "4.53.2"
+    }
+  },
+  "exploratory": true,
+  "exposure": {
+    "exact_raw_or_document_collision_ineligible": true,
+    "long_collision_min_words": 8,
+    "prior_endpoint_score_same_text_ineligible": true,
+    "prior_model_forward_same_text_ineligible": true,
+    "short_collisions_per_document_to_remove": 2
+  },
+  "matching": {
+    "exclude_empty_node_sentences": true,
+    "exclude_multiword_token_sentences": true,
+    "folds": 5,
+    "max_pairs_per_orientation": 12,
+    "minimum_components": 80,
+    "minimum_components_per_fold": 16,
+    "minimum_documents": 160,
+    "minimum_pairs": 480,
+    "minimum_pairs_per_fold": 96,
+    "minimum_relation_class_documents": 20,
+    "require_exact_fields": [
+      "causal_subtoken_gap",
+      "ud_token_gap",
+      "query_upos",
+      "key_upos",
+      "query_subtoken_count",
+      "key_subtoken_count"
+    ],
+    "require_exact_surface": true
+  },
+  "model": {
+    "attention_implementation": "eager",
+    "batch_size": 4,
+    "block_index": 3,
+    "block_input_hidden_state_index": 3,
+    "block_output_hidden_state_index": 4,
+    "dtype": "float32",
+    "head_size": 64,
+    "local_files_only": true,
+    "max_sequence_length": 256,
+    "name": "EleutherAI/pythia-160m-deduped",
+    "num_heads": 12,
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+    "width": 768
+  },
+  "namespace": "relational_attention_edges_v1_discovery1",
+  "paths": {
+    "candidate_review": "reports/adversarial/relational_attention_edges_v1_candidate_review.md",
+    "data_root": "data/relational_attention_edges_v1_discovery1",
+    "log": "pilot_runs/20260804_relational_attention_edges_v1_discovery1.log",
+    "opening": "pilot_runs/scientific_source_openings/relational_attention_edges_v1_discovery1.OPENED.json",
+    "prepared_root": "data/relational_attention_edges_v1_discovery1/prepared",
+    "result_root": "results/relational_attention_edges_v1_discovery1",
+    "run_root": "pilot_runs/20260804_relational_attention_edges_v1_discovery1"
+  },
+  "permissions": {
+    "checkpoint_authorized": false,
+    "fitted_estimator_persistence_authorized": false,
+    "neural_training_authorized": false,
+    "optimizer_authorized": false,
+    "representation_training_authorized": false,
+    "retry_authorized": false
+  },
+  "plan": {
+    "path": "PLAN_RELATIONAL_EDGE_V1.md",
+    "sha256": "5a5e8fb6d1396632c700fa51386711d022a6107bb02572fa7d7c94790bdb0c51"
+  },
+  "plan_review": {
+    "path": "reports/adversarial/relational_attention_edges_v1_plan_review_ship_qk.md",
+    "sha256": "6373224ac6256568835b19ab24031beb5546ea79860a18cee41ede54f86c4eab",
+    "verdict": "SHIP"
+  },
+  "preservation": {
+    "path": "reports/preservation_attempt13_attempt14_v1.json",
+    "sha256": "d765f8a48b00a1c51b3b19f8198572e7e5511757aa8b34ee45ff6423876ec644"
+  },
+  "raw_provenance": {
+    "path": "data/relational_attention_edges_v1_raw/PROVENANCE.json",
+    "sha256": "4acc5390bc441214ff599b5b903c77c70898889bac3e8567167c45555e5f5217"
+  },
+  "runtime": {
+    "cublas_workspace_config": ":4096:8",
+    "gpu_uuid": "GPU-a0c508ce-dc83-d536-b93d-fe64a58bd8b7",
+    "lock_path": "/tmp/msae_GPU-a0c508ce-dc83-d536-b93d-fe64a58bd8b7.lock",
+    "maximum_memory_used_mib": 1024,
+    "mig_mode": "[N/A]",
+    "minimum_memory_free_mib": 40000,
+    "physical_gpu_index": 7,
+    "required_utilization_percent": 0
+  },
+  "schema_version": "relational_attention_edges_v1_discovery1_config_v1",
+  "seed": 20260804,
+  "signer": {
+    "algorithm": "Ed25519",
+    "public_key_base64": "GhsF4vIJ52n0fXBCRhuK/BEi1MG55+Gs2LKykDGsuhI=",
+    "public_key_fingerprint_sha256": "1eb6470fb2bd3a114ca4427174a12eb5fb14639ca1e763f75b9afbb564b2e503"
+  },
+  "source_amendment": {
+    "path": "reports/provenance/relational_attention_edges_v1_source_amendment.json",
+    "sha256": "156b0faee3452f20d08ae6eacc7c6419870198203b02634f2db35dcc0f48476d"
+  },
+  "source_partition_rule": {
+    "endpoint_scores_seen": false,
+    "model_forward_run": false,
+    "rule": "Use only pinned Ukrainian-IU train and Latvian-LVTB train; dev/test and matched-support-ineligible Arabic-PADT remain provenance-only and cannot reach rows or inference.",
+    "status": "FROZEN_LABEL_ONLY_BEFORE_MODEL_FORWARD"
+  },
+  "sources": {
+    "LATVIAN_LVTB": {
+      "analysis_files": [
+        "lv_lvtb-ud-train.conllu"
+      ],
+      "files": {
+        "lv_lvtb-ud-dev.conllu": "d9dec7ed8809ab112f09945400fddf72d4731354624b1b637f5db5a5dabbb91d",
+        "lv_lvtb-ud-test.conllu": "4237279f832058659ed8494af13239f7efe25058919bc0f5d84050ef47f1968d",
+        "lv_lvtb-ud-train.conllu": "1fa6a60852b21aafca644c7929e2aaaf7b01899ccc71d7a2fa15f457caed49d2"
+      },
+      "revision": "f42ae0dd20ddef5aa4b88c40e3582e37c57d1e43",
+      "root": "data/relational_attention_edges_v1_raw/UD_Latvian-LVTB/f42ae0dd20ddef5aa4b88c40e3582e37c57d1e43"
+    },
+    "UKRAINIAN_IU": {
+      "analysis_files": [
+        "uk_iu-ud-train.conllu"
+      ],
+      "files": {
+        "uk_iu-ud-dev.conllu": "fc68644aeb86766935f1c3aa0e8baf42cc6325690803631e81e17ed8db79f436",
+        "uk_iu-ud-test.conllu": "5538dec31c89b0cd0e5141d8a9c6bdc0099103eab3c5c6b9078ab95e67be1286",
+        "uk_iu-ud-train.conllu": "f7282b32c72a2c6f304f1df13572b7dd9bff370d3da0abf726da00f6a15d1b14"
+      },
+      "revision": "21f641ba6109044ce9aafd4b2cbfa20a4ac6e479",
+      "root": "data/relational_attention_edges_v1_raw/UD_Ukrainian-IU/21f641ba6109044ce9aafd4b2cbfa20a4ac6e479"
+    }
+  },
+  "tmux_session": "msae_relational_attention_edges_v1_20260804"
+}

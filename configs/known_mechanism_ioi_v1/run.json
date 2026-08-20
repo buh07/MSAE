@@ -1,0 +1,274 @@
+{
+  "behavior_gate": {
+    "bootstrap_draws": 500,
+    "effect_floor_strict": 0.5,
+    "minimum_families": 2,
+    "minimum_informative_per_set": 14,
+    "minimum_informative_per_template": 56,
+    "require_every_template": true,
+    "required_confidence": 0.95,
+    "sham_ratio_point_max_inclusive": 0.25,
+    "sham_ratio_upper_strict": 0.35
+  },
+  "candidate_files": [
+    "PLAN_KNOWN_MECHANISM_IOI_V1.md",
+    "configs/known_mechanism_ioi_v1/run.json",
+    "scripts/known_mechanism_ioi_v1.py",
+    "tests/test_known_mechanism_ioi_v1.py",
+    "scripts/launch_known_mechanism_ioi_v1_tmux.sh",
+    "PAPER.md",
+    "reports/paper_claim_ledger_v1.json",
+    "reports/naturalistic_endpoint_program_closure_v1.json",
+    "reports/naturalistic_endpoint_program_closure_v1.md",
+    "reports/behavioral_endpoint_v6_2_analysis/result.json",
+    "reports/claim_review/behavioral_endpoint_v6_2_post_result_claim_review.md",
+    "configs/behavioral_endpoint_v6_2/FREEZE.json",
+    "results/behavioral_endpoint_v6_2_20260809/final/result.json",
+    "reports/adversarial/known_mechanism_ioi_v1_candidate_block_review.md",
+    "reports/adversarial/known_mechanism_ioi_v1_candidate_block_review_2.md",
+    "reports/adversarial/known_mechanism_ioi_v1_candidate_review.md"
+  ],
+  "confirmation_gate": {
+    "future_method_benchmark_automatically_launched": false,
+    "minimum_families": 2,
+    "requires_development_behavior_and_patch": true,
+    "same_estimators_and_thresholds": true
+  },
+  "models": [
+    {
+      "batch_size": 16,
+      "family": "gpt2",
+      "key": "gpt2",
+      "name": "gpt2",
+      "patch_layer": 11,
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+    },
+    {
+      "batch_size": 16,
+      "family": "pythia",
+      "key": "pythia160",
+      "name": "EleutherAI/pythia-160m-deduped",
+      "patch_layer": 11,
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+    },
+    {
+      "batch_size": 4,
+      "family": "gemma",
+      "key": "gemma2",
+      "name": "google/gemma-2-2b",
+      "patch_layer": 25,
+      "revision": "c5ebcd40d208330abc697524c919956e692655cf"
+    }
+  ],
+  "namespace": "known_mechanism_ioi_v1_20260809",
+  "panel": {
+    "conditions": [
+      "base",
+      "counterfactual",
+      "sham"
+    ],
+    "confirmation": {
+      "names": [
+        "Patricia",
+        "Nancy",
+        "Helen",
+        "Sandra",
+        "Donna",
+        "Emily",
+        "Anna",
+        "Peter",
+        "Paul",
+        "Kevin",
+        "Brian",
+        "Jason",
+        "Eric",
+        "Steven",
+        "Andrew",
+        "Kenneth",
+        "Joshua",
+        "Margaret",
+        "Dorothy",
+        "Amy",
+        "Angela",
+        "Melissa",
+        "Nicole",
+        "Katherine",
+        "Christine",
+        "Catherine",
+        "Deborah",
+        "Rachel",
+        "Janet",
+        "Maria",
+        "Heather",
+        "Diane"
+      ],
+      "objects": [
+        "ball",
+        "ring",
+        "message",
+        "parcel"
+      ],
+      "places": [
+        "library",
+        "theater",
+        "hospital",
+        "restaurant"
+      ],
+      "rows_per_set": 16,
+      "sets": 4,
+      "templates": [
+        "While {A} and {B} were at the {place}, {B} delivered the {object} to",
+        "In this account, {A} joined {B} at the {place}. In the end, {B} offered the {object} to"
+      ]
+    },
+    "development": {
+      "names": [
+        "Alice",
+        "Bob",
+        "Carol",
+        "David",
+        "Emma",
+        "Frank",
+        "Grace",
+        "Henry",
+        "Jack",
+        "Karen",
+        "Laura",
+        "Mary",
+        "John",
+        "Sarah",
+        "Tom",
+        "Lisa",
+        "Mark",
+        "James",
+        "Robert",
+        "Michael",
+        "William",
+        "Elizabeth",
+        "Jennifer",
+        "Susan",
+        "Daniel",
+        "George",
+        "Thomas",
+        "Charles",
+        "Joseph",
+        "Richard",
+        "Linda",
+        "Barbara"
+      ],
+      "objects": [
+        "book",
+        "letter",
+        "gift",
+        "package",
+        "bottle",
+        "note",
+        "key",
+        "card"
+      ],
+      "places": [
+        "store",
+        "park",
+        "school",
+        "office",
+        "station",
+        "market",
+        "museum",
+        "garden"
+      ],
+      "rows_per_set": 16,
+      "sets": 4,
+      "templates": [
+        "When {A} and {B} went to the {place}, {B} gave the {object} to",
+        "After {A} and {B} arrived at the {place}, {B} handed the {object} to",
+        "In this account, {A} and {B} visited the {place}. Later, {B} passed the {object} to",
+        "At the {place}, {A} met {B}. Afterwards, {B} sent the {object} to"
+      ]
+    },
+    "maximum_length": 96
+  },
+  "patch_gate": {
+    "bootstrap_draws": 500,
+    "minimum_families": 2,
+    "minimum_informative_per_set": 14,
+    "minimum_informative_per_template": 56,
+    "recovery_lower_strict": 0.6,
+    "recovery_point_min_inclusive": 0.8,
+    "replacement": "complete_final_token_block_output",
+    "require_every_template": true,
+    "required_confidence": 0.95,
+    "sham_movement_point_max_inclusive": 0.2,
+    "sham_movement_upper_strict": 0.3
+  },
+  "preservation": {
+    "forbid_paths": [
+      "configs/behavioral_endpoint_v6_3",
+      "results/behavioral_endpoint_v6_3_20260809"
+    ],
+    "records": [
+      {
+        "path": "PAPER.md",
+        "sha256": "21a8a023a7a11e8236531fd556238a815dcd3d3bedc4e67927b3001d1c11cece"
+      },
+      {
+        "path": "reports/paper_claim_ledger_v1.json",
+        "sha256": "9d7c5c1fe15e7c83cdceba81b495d3be8887a076753374e5fe896304f0c1d945"
+      },
+      {
+        "path": "reports/naturalistic_endpoint_program_closure_v1.json",
+        "sha256": "b3f8d57e2261d9bbbb34d53ba050400cc15d000cb9c68ceb13b66c166dbbc09e"
+      },
+      {
+        "path": "reports/naturalistic_endpoint_program_closure_v1.md",
+        "sha256": "06af97f833fce33947c9ee001fc9272e9b4ef5a933f7bb15f3116bedb14fe460"
+      },
+      {
+        "path": "reports/behavioral_endpoint_v6_2_analysis/result.json",
+        "sha256": "0dd84238eda2ffd79e00e71c6387679e3be39cd23fa6fa07e7142e97ca61692c"
+      },
+      {
+        "path": "reports/claim_review/behavioral_endpoint_v6_2_post_result_claim_review.md",
+        "sha256": "b7915118f41596dff62286271948d4b16948773d015f754e96d2c457c58de2ff"
+      },
+      {
+        "path": "configs/behavioral_endpoint_v6_2/FREEZE.json",
+        "sha256": "dac97dbc6ec6320648487a846217285ef8cad828de5ebe847a5912d382fb113d"
+      },
+      {
+        "path": "results/behavioral_endpoint_v6_2_20260809/final/result.json",
+        "sha256": "3bd678fd91e124d2d4c92b7d050de99dbacc3ee7a6e4ea6a7b5fa15111c646fa"
+      }
+    ],
+    "required_closure_status": "CURRENT_RETRIEVAL_AGREEMENT_ENDPOINT_LINE_CLOSED"
+  },
+  "prospective": true,
+  "question": "Does an established IOI task support prospective behavior and end-to-end full-residual causal positive control across model families?",
+  "runtime": {
+    "cache_attestation": "reports/provenance/known_mechanism_ioi_v1_candidate/cache_preflight.json",
+    "candidate_review": "reports/adversarial/known_mechanism_ioi_v1_candidate_review.md",
+    "candidate_root": "reports/provenance/known_mechanism_ioi_v1_candidate",
+    "deterministic": true,
+    "dtype": "float32",
+    "freeze": "configs/known_mechanism_ioi_v1/FREEZE.json",
+    "frozen_review": "reports/adversarial/known_mechanism_ioi_v1_frozen_review.md",
+    "frozen_review_binding": "reports/provenance/known_mechanism_ioi_v1_candidate/FROZEN_REVIEW_BINDING.json",
+    "gate_poll_seconds": 5,
+    "gate_timeout_seconds": 21600,
+    "model_cache_root": "${HF_HOME}/hub",
+    "output_root": "results/known_mechanism_ioi_v1_20260809",
+    "prepared_root": "data/known_mechanism_ioi_v1_prepared",
+    "provenance_root": "reports/provenance/known_mechanism_ioi_v1_run_20260809",
+    "tmux_prefix": "msae_known_ioi_v1"
+  },
+  "schema_version": "known_mechanism_ioi_v1_config",
+  "scope": {
+    "development_only_until_gates": true,
+    "established_task": "indirect_object_identification",
+    "full_residual_patch_is_sparse_circuit_evidence": false,
+    "future_method_authorization_in_this_run": false,
+    "representation_methods": false,
+    "training": false,
+    "v6_3_prompt_retry": false
+  },
+  "seed": 20260814
+}

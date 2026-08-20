@@ -1,0 +1,53 @@
+{
+  "all_cell_exact_checks": 512,
+  "config_sha256": "c56477621a14dbde73a63b2e9b28854ab2f01e2a5a77845e03635ca498c4e469",
+  "exact_qa_max_abs": 1.1920928955078125e-07,
+  "exact_qa_max_relative_l2": 2.819506050855125e-07,
+  "factorial_cells": 128,
+  "generators": 4,
+  "incomplete_mutations_detected": true,
+  "launcher_sha256": "dd92ebaefe4db8749e85bf9028a5da3c413b1895edff7222df07c10ff7365fca",
+  "method_registry_sha256": "57fa4387af96bb83ae8621252dbe50908ec534bdd0626cc34fc5132fc5fadb8e",
+  "patch_mutations_rejected": true,
+  "plan_sha256": "696dddc0041fdc23f61cefa215ddee941186e22599ce9313308b7bdeff35ac6a",
+  "protocol_parity_sha256": "1f9cca990fd6f2b83ca4468f030d5077389972f88fc7c9bea444751d722f698c",
+  "realized_design_qa_pass": true,
+  "recovery_lineage": {
+    "original_freezes": {
+      "causal_manifold_bridge_v1": {
+        "path": "configs/causal_manifold_bridge_v1/FREEZE.json",
+        "sha256": "12e72f1fc8bc4e6ebf992ff18b7791898868c89801931b5185b14e9df76975b2"
+      },
+      "trained_copy_sae_capacity_v1": {
+        "path": "configs/trained_copy_sae_capacity_v1/FREEZE.json",
+        "sha256": "431ba6af471b08eeb130066ea4d1705df0af1fa787c37a15c78257aa8c67dbc4"
+      }
+    },
+    "pass": true,
+    "preservation_sha256": "40b6fb3c59f431318e09e4ba151cbb57e59f0608b98b83499098a802e9062549",
+    "r1_freezes": {
+      "items": {
+        "causal_manifold_bridge_v1_r1": {
+          "path": "configs/causal_manifold_bridge_v1_r1/FREEZE.json",
+          "sha256": "658e9134f7ecb353b129026e190d9fe8f2034898435f072ae2df66d65315ec4e"
+        },
+        "trained_copy_sae_capacity_v1_r1": {
+          "path": "configs/trained_copy_sae_capacity_v1_r1/FREEZE.json",
+          "sha256": "b62dbe4ae01b93847986f155aaf73be8e1e5ab0363c28afa3e95e01229335501"
+        }
+      },
+      "preservation_path": "reports/provenance/trained_control_next_studies_v1_r1_failures_preservation.json",
+      "preservation_sha256": "006985fbe7ac9521cc5220daf1f510c3867bc5cd778d4ed1a87dfe201133451c"
+    }
+  },
+  "schema_version": "causal_manifold_bridge_v1_candidate",
+  "scientific_panel_accessed": false,
+  "smoke_seed_namespace": "bridge-smoke",
+  "source_sha256": "9fdb0f2cc4d9741fd04263ab4af237448b624b797843e8204b53e4f3cbaf4349",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "c5dbbe8f18164d057b1e52a4d234b2c15aa1b1675d2827b120ca78f4898c26cb",
+    "study": "ce7b1d46512832c6654aed248123c897660278224f7961928a3d137c896552f5"
+  },
+  "view_firewall_qa_pass": true
+}

@@ -1,0 +1,257 @@
+{
+  "analysis": {
+    "alphas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "assigned_recovery_min": 0.65,
+    "delta_basis_rank": 16,
+    "incremental_f1_min": 0.02,
+    "minimum_usable_rank": 8,
+    "nuisance_columns": {
+      "capitalization": [
+        "start_distance",
+        "relative_quartile",
+        "sentence_length",
+        "upos_coarse"
+      ],
+      "dependency_depth": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "deprel_coarse": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "head_signed_distance": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "lemma_identity": [
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "number": [
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "pair_distance": [
+        "left_token_class",
+        "right_token_class",
+        "left_lemma_class",
+        "right_lemma_class",
+        "left_upos_coarse",
+        "right_upos_coarse",
+        "left_punctuation",
+        "right_punctuation",
+        "left_capitalization",
+        "right_capitalization",
+        "left_word_length",
+        "right_word_length",
+        "sentence_length",
+        "left_start_distance"
+      ],
+      "punctuation": [
+        "start_distance",
+        "relative_quartile",
+        "sentence_length",
+        "upos_coarse"
+      ],
+      "relative_quartile": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length"
+      ],
+      "start_distance": [
+        "token_class",
+        "lemma_class",
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length"
+      ],
+      "token_identity": [
+        "upos_coarse",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "upos_coarse": [
+        "token_class",
+        "lemma_class",
+        "punctuation",
+        "capitalization",
+        "word_length",
+        "sentence_length",
+        "start_distance",
+        "relative_quartile"
+      ],
+      "word_length": [
+        "start_distance",
+        "relative_quartile",
+        "sentence_length",
+        "upos_coarse"
+      ]
+    },
+    "organizations": {
+      "broad_position_vs_lexical": [
+        "sequential",
+        "syntax_child",
+        "relative_gap",
+        "context"
+      ],
+      "sequential_context_vs_lexical_plus_relational_syntax": [
+        "sequential",
+        "relative_gap",
+        "context"
+      ],
+      "token_local_vs_context_dependent": [
+        "sequential",
+        "context",
+        "relation"
+      ]
+    },
+    "output_path": "results/atlas_discovery_v3_3_attempt7_v3",
+    "primary_rank": 16,
+    "projection_ranks": [
+      8,
+      16,
+      32
+    ],
+    "raw_denominator_floor": 1e-06,
+    "raw_recovery_min": 0.2,
+    "ridge_device": "cuda:0",
+    "ridge_gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "scale_floor": 1e-08,
+    "seed": 20260803,
+    "singular_floor": 1e-08
+  },
+  "attempt5_terminal": {
+    "path": "pilot_runs/20260803_atlas_discovery_v3_1_attempt5/TERMINAL.json",
+    "sha256": "59bf3229d1f8348b70a90ae94ebc19fbdd6f17b492f862b09a3a1c77d6029c9c"
+  },
+  "extraction": {
+    "batch_size": 64,
+    "cublas_workspace_config": ":4096:8",
+    "full_devices": {
+      "EWT": "cuda:0",
+      "GUM": "cuda:0"
+    },
+    "full_gpu_uuids": {
+      "EWT": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+      "GUM": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15"
+    },
+    "qa_devices": {
+      "EWT": "cuda:0",
+      "GUM": "cuda:0"
+    },
+    "qa_gpu_uuids": {
+      "EWT": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+      "GUM": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15"
+    }
+  },
+  "fresh_qa_parent": {
+    "config_path": "configs/atlas_discovery_v3_3/qa_compact_v3.json",
+    "config_sha256": "2efee08443ed7bc9b146a103aade91142e121607d78c3f3e7d501b375cf74f01",
+    "manifest_path": "data/atlas_discovery_v3_3_attempt7_qa_compact_v3/prepared/manifest.json",
+    "manifest_sha256": "77648023ac1a4ef37bece450310c8c09cf08e48a9bb62cfafcce941cd36080b9"
+  },
+  "full_authorization_path": "configs/atlas_discovery_v3_3/full_extraction_authorization_v3.json",
+  "implementation_adversarial_review": {
+    "path": "reports/adversarial/atlas_v3_3_attempt7_implementation_review_v3.md",
+    "sha256": "406988dbc32445febe4635ddc679540155045ee9fdb33ae512e0bce0cb40714d",
+    "verdict": "SHIP"
+  },
+  "implementation_inventory": {
+    "configs/atlas_discovery_v3_3/population_split_v3.json": "a7a7fce580121d8fd2e3ccd814894237866f4aab1c7b5bab2aa73a27e0fb91b1",
+    "configs/atlas_discovery_v3_3/qa_compact_v3.json": "2efee08443ed7bc9b146a103aade91142e121607d78c3f3e7d501b375cf74f01",
+    "configs/atlas_discovery_v3_3/run_final_v3.json": "4c780b3a3fbcc5b1cf1a6fa57c0226d26fe2f9bcddb56c4f1393e9bbe31a45ed",
+    "data/atlas_discovery_v3_3_attempt7_qa_compact_v3/prepared/manifest.json": "77648023ac1a4ef37bece450310c8c09cf08e48a9bb62cfafcce941cd36080b9",
+    "docs/rfc-atlas-v3-1-attempt5-discovery-factor-atlas.md": "105e9977871aa1d7cf94cee72aaf17dccd4b97aad073c82e0e445cce094533d2",
+    "docs/rfc-atlas-v3-3-attempt7-discovery-factor-atlas.md": "3175bd96c6ab116e5e950fa69e6651d6e76ccc0bef61f4074c8cf055c907dc45",
+    "reports/adversarial/atlas_v3_3_attempt7_prescore_review_v3.md": "7a571a8c21ccddcc7110e887d8bb5ca87345e923ab79db4a0abbc1750699c5dc",
+    "reports/atlas_v3_3_attempt7_final_v3_rebuild_check.json": "9964fee1b7990e6e0a35b66fcc8482e57593d6054fe9aff812a1faf6139a2f79",
+    "requirements-atlas.lock.txt": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834",
+    "scripts/analyze_atlas_discovery_v3_3.py": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031",
+    "scripts/atlas_discovery_v3_3_analysis.py": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266",
+    "scripts/atlas_discovery_v3_scoring.py": "0e9980c689f3cd6f058c7a3051f43946777e0db248c220c69d1ececcccc6860c",
+    "scripts/extract_atlas_discovery_v3_3.py": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508",
+    "tests/test_atlas_discovery_v3_3.py": "9277d5767b9efa07231a00ad23a611ec4525db6be4f8a706f2d48205d4dfa37c",
+    "tests/test_atlas_discovery_v3_3_implementation.py": "26bc1418a7ae9a94228d9ef2ac888adc3e18ac7ebad5e334b60f96e5b62cef7d",
+    "tests/test_atlas_discovery_v3_3_scoring.py": "4058fbc194ba051904949609fb9da807ab68e342f7ad50dad575ddb6bdfc4431"
+  },
+  "legacy_qa_parent": {
+    "config_path": "configs/atlas_discovery_v3/run.json",
+    "config_sha256": "34d92d79f2076a09762f9393cd01f88f9d3b19a50e0625d6715be254d568fbc0",
+    "manifest_path": "data/atlas_discovery_v3_1_attempt5/prepared/manifest.json",
+    "manifest_sha256": "ff5e2925dfa3fce57d0cf427a61fc304f659b853b759bc833a108b9ced1265ca"
+  },
+  "neural_training_authorized": false,
+  "population_split": {
+    "path": "configs/atlas_discovery_v3_3/population_split_v3.json",
+    "sha256": "a7a7fce580121d8fd2e3ccd814894237866f4aab1c7b5bab2aa73a27e0fb91b1"
+  },
+  "preflight_sha256": "29789bcf4131c9cbe276a12868262304c3a758b2416b2d34f37f709b800c4ade",
+  "prepared_manifest_sha256": "87cdf01c48428cf1d1cdab7a9324865d3db8e44408e997f1045123bb23ec5ee4",
+  "prescore_adversarial_review": {
+    "path": "reports/adversarial/atlas_v3_3_attempt7_prescore_review_v3.md",
+    "sha256": "7a571a8c21ccddcc7110e887d8bb5ca87345e923ab79db4a0abbc1750699c5dc",
+    "verdict": "SHIP"
+  },
+  "prescore_config": {
+    "path": "configs/atlas_discovery_v3_3/run_final_v3.json",
+    "sha256": "4c780b3a3fbcc5b1cf1a6fa57c0226d26fe2f9bcddb56c4f1393e9bbe31a45ed"
+  },
+  "qa_signer": {
+    "algorithm": "Ed25519",
+    "public_key_base64": "TTupMmkJYG7oNU26egYLWutbxM2sWzkLCn7xI9TwHXc=",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d"
+  },
+  "rebuild_check": {
+    "path": "reports/atlas_v3_3_attempt7_final_v3_rebuild_check.json",
+    "sha256": "9964fee1b7990e6e0a35b66fcc8482e57593d6054fe9aff812a1faf6139a2f79"
+  },
+  "schema_version": "atlas_discovery_v3_3_attempt7_scoring_v2",
+  "status": "frozen_numerical_qa_authorized"
+}

@@ -1,0 +1,24 @@
+{
+  "adversarial_verdict": "BLOCK",
+  "candidate_manifests": [
+    {
+      "bytes": 11525,
+      "path": "reports/provenance/capacity_controller_diagnostic_v1_r4_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "8f572a8ccbfed173c48f62ba8b33a7d777038e1fcebcfaf8aaf1c2e793e50acf"
+    },
+    {
+      "bytes": 11525,
+      "path": "reports/provenance/trained_copy_external_v1_r4_candidate/CANDIDATE_PREFLIGHT.json",
+      "sha256": "f15e5860fe1f76ba9747adfaa1d781b7efa45e23ccd7ef9ba613656353f5c331"
+    }
+  ],
+  "created_ns": 1786352258611642441,
+  "freezes_created": false,
+  "reason": "Adversarial review found missing GPU-validation failure injection, stdlib glob and bytes-path guard bypasses, and broadly exempted pipeline parity.",
+  "recovery_bindings_created": false,
+  "replacement_namespace": "capacity_external_validity_v1_r5",
+  "results_created": false,
+  "schema_version": "capacity_external_validity_v1_r4_invalid_candidate_preservation",
+  "scientific_run_started": false,
+  "status": "REJECTED_PREBIND_CANDIDATE"
+}

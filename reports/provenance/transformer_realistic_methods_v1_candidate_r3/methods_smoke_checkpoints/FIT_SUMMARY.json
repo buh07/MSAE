@@ -1,0 +1,116 @@
+{
+  "checkpoint_inventory": [
+    {
+      "bytes": 133774,
+      "path": "sae_seed1701.pt",
+      "sha256": "04e15e03cb8ba7bb2b2236f7424119f3588fa554d119e0d8139be341158a640c"
+    },
+    {
+      "bytes": 133774,
+      "path": "sae_seed1702.pt",
+      "sha256": "c7bc4a8ed4f8e224536ef52c6aebc860c2eafaa4c1f70c2f830b2c0d4a50e4ea"
+    },
+    {
+      "bytes": 133774,
+      "path": "sae_seed1703.pt",
+      "sha256": "3017ecc591ed572dd64bcd3dff82ac891a3d36515de00bd27248d3916ab31e96"
+    },
+    {
+      "bytes": 6341,
+      "path": "supervised_seed2701.pt",
+      "sha256": "33acd106b4f73f5d65cd6952b7c34e64403c1e042b95bd3b33ef9afee4cb8802"
+    },
+    {
+      "bytes": 6341,
+      "path": "supervised_seed2702.pt",
+      "sha256": "7545fbcdb6b35cc8b87c341e8024292aa2325ffd0e57a30a06985eb953521dbe"
+    },
+    {
+      "bytes": 6341,
+      "path": "supervised_seed2703.pt",
+      "sha256": "3ac88e3e5d7c12e8f4c49154abc8665b9c85da0280dbe7bd6aa0fced0a886fb2"
+    }
+  ],
+  "learned": {
+    "sae_seed1701": {
+      "final_loss": 0.21617698669433594,
+      "initial_loss": 0.21957598626613617,
+      "seed": 1701,
+      "selected_features": [
+        90,
+        52,
+        153,
+        31,
+        85,
+        139,
+        39,
+        115
+      ],
+      "steps": 2
+    },
+    "sae_seed1702": {
+      "final_loss": 0.2188595086336136,
+      "initial_loss": 0.21860849857330322,
+      "seed": 1702,
+      "selected_features": [
+        79,
+        69,
+        180,
+        50,
+        250,
+        34,
+        98,
+        71
+      ],
+      "steps": 2
+    },
+    "sae_seed1703": {
+      "final_loss": 0.21174591779708862,
+      "initial_loss": 0.21472051739692688,
+      "seed": 1703,
+      "selected_features": [
+        122,
+        33,
+        223,
+        179,
+        19,
+        16,
+        170,
+        60
+      ],
+      "steps": 2
+    },
+    "supervised_seed2701": {
+      "final_loss": 236.62611389160156,
+      "initial_loss": 236.2016143798828,
+      "seed": 2701,
+      "steps": 2
+    },
+    "supervised_seed2702": {
+      "final_loss": 239.97227478027344,
+      "initial_loss": 238.06887817382812,
+      "seed": 2702,
+      "steps": 2
+    },
+    "supervised_seed2703": {
+      "final_loss": 238.088623046875,
+      "initial_loss": 234.76321411132812,
+      "seed": 2703,
+      "steps": 2
+    }
+  },
+  "nonlearned": [
+    "ground_truth",
+    "incomplete_routing_only",
+    "incomplete_private_only",
+    "incomplete_shared_only",
+    "incomplete_routing_private",
+    "incomplete_routing_shared",
+    "incomplete_attention_only",
+    "incomplete_bypass_only",
+    "random_rank8",
+    "pca_rank8",
+    "diffmean",
+    "leace_style"
+  ]
+}

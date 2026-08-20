@@ -1,0 +1,35 @@
+{
+  "roles": {
+    "C1": {
+      "access": "public_analysis",
+      "path": "data/atlas_v1/transforms/C1.jsonl",
+      "rows": 128,
+      "sha256": "ee110f0918e71792ed043386e6ae45754ec036ce3e33187ade6f481c727473db"
+    },
+    "C2": {
+      "access": "public_analysis",
+      "path": "data/atlas_v1/transforms/C2.jsonl",
+      "rows": 128,
+      "sha256": "26ae0e1fb23c194107d1697e55ed657591005e2f7d377713fc3f412be2657638"
+    },
+    "calibration": {
+      "access": "public_analysis",
+      "path": "data/atlas_v1/transforms/calibration.jsonl",
+      "rows": 128,
+      "sha256": "eca3717f940ab509cb8269b77fcd96debe899b485aff9ba6d8a12b3bd7c51378"
+    },
+    "discovery": {
+      "access": "public_analysis",
+      "path": "data/atlas_v1/transforms/discovery.jsonl",
+      "rows": 128,
+      "sha256": "ff47eb5b579bcf17ace77ea26c7e8e7c4df19c55db29bd0bed0c3e6d70c1f8f1"
+    },
+    "final": {
+      "access": "M8_only_unlock_required",
+      "path": "data/atlas_v1/private/final.jsonl",
+      "rows": 128,
+      "sha256": "684d48c6fd5fd6a1faec5ca5785eb9a054fc94a603422088c5e9eb6a485c8eee"
+    }
+  },
+  "schema_version": "atlas_v1_transforms"
+}

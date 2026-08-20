@@ -1,0 +1,543 @@
+{
+  "payload": {
+    "attempt8_retirement_sha256": "6bc19447431666ce06827e7d7db71ccb810eeefa9b818c309c8c26271f95ef27",
+    "authorized_stage": "SEQUENTIAL_HELDOUT_VALIDATION",
+    "calibration_cap_candidate_sha256": "8085d9125c55c300e68c9dd98e10482f3a2b33da6cc8ab8b05fd43c64cef4037",
+    "ewt_authorization_sha256": "a1708a9e173a115e3aeb01a23ba2839570c90cf411a91c7408c6c483c1373398",
+    "freeze_candidate": {
+      "attempt8_retirement_sha256": "6bc19447431666ce06827e7d7db71ccb810eeefa9b818c309c8c26271f95ef27",
+      "calibration_cap_candidate_sha256": "8085d9125c55c300e68c9dd98e10482f3a2b33da6cc8ab8b05fd43c64cef4037",
+      "calibration_import_sha256": "37df7b806097735eea6fd23a99a0cf8c003a381111c2ba9decd45cb2cfbccb13",
+      "calibration_rows": 1272,
+      "caps": {
+        "atol": 2e-05,
+        "cosine_distance": 1e-11,
+        "relative_l2": 1e-05
+      },
+      "diagnostic_complete_sha256": "88953f05969479311842fdf207530a8b37378442612000daa53859627645ff80",
+      "diagnostic_values_used_for_thresholds": false,
+      "engineering_budgets": {
+        "cosine_failures": 0,
+        "per_cell_failing_elements": 30,
+        "per_cell_failing_rows": 2,
+        "relative_l2_failures": 0
+      },
+      "ewt_authorization_sha256": "a1708a9e173a115e3aeb01a23ba2839570c90cf411a91c7408c6c483c1373398",
+      "implementation_candidate_sha256": "b79124938859886fca11c41e100ae72ef943feb74dc38200052b9a44ebe783a7",
+      "implementation_inventory": {
+        "PLAN_ATTEMPT9.md": {
+          "bytes": 14413,
+          "sha256": "98612621e0a7d01e707afc676ace5121daf3325293cc5eae4a01c8dac92e4705"
+        },
+        "configs/atlas_rope_v5/prescore.json": {
+          "bytes": 10088,
+          "sha256": "a3862c377597bbf2109fa4d61935f3bba481eef5da794f41377c814832fde348"
+        },
+        "configs/atlas_rope_v5/science_adapter.json": {
+          "bytes": 9562,
+          "sha256": "5c338376f99d99a2d55efa216d8608ab1abe4e7f6192071a4b51e603f9da1df1"
+        },
+        "docs/rfc-atlas-v3-5-attempt9-rope-technical.md": {
+          "bytes": 4486,
+          "sha256": "837048304ea286d934d413e5e8ea204799aa72f4c0c42c7352a47466f54b3ba5"
+        },
+        "reports/adversarial/atlas_v3_5_attempt9_implementation_review_block_v1.md": {
+          "bytes": 6756,
+          "sha256": "f5878ac7689f559da947d304e7cc75747ad199b2570362000b35159f98834663"
+        },
+        "reports/adversarial/atlas_v3_5_attempt9_implementation_review_block_v2.md": {
+          "bytes": 4818,
+          "sha256": "dc8dc66ddcb796c499eb2873bcb57767af74dfee29262a3e2b07272c2b8649f6"
+        },
+        "reports/adversarial/atlas_v3_5_attempt9_plan_review.md": {
+          "bytes": 2787,
+          "sha256": "90018900e646a8c588e7a379acdd0fdb8f81252ec5afacf7ffe3e5c494e5aa70"
+        },
+        "requirements-atlas.lock.txt": {
+          "bytes": 417,
+          "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+        },
+        "scripts/analyze_atlas_discovery_v3_3.py": {
+          "bytes": 66806,
+          "sha256": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031"
+        },
+        "scripts/atlas_discovery_v3_3_analysis.py": {
+          "bytes": 7240,
+          "sha256": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266"
+        },
+        "scripts/atlas_rope_v5.py": {
+          "bytes": 45658,
+          "sha256": "f45f29797e845006bf5d11efb08ea5e4763ecf8e6693eccd9caa655131cfcf4f"
+        },
+        "scripts/build_atlas_rope_v5.py": {
+          "bytes": 36555,
+          "sha256": "82539501eac419cd50c3e77e83068463ae81aeb3bb6bdc0b56d5699d07dcd835"
+        },
+        "scripts/diagnose_atlas_rope_v5.py": {
+          "bytes": 24800,
+          "sha256": "b99e95ec9629bd56f4d6386d0e1b2761fd9bf723e15da0e92831f18ffdcdeb12"
+        },
+        "scripts/extract_atlas_discovery_v3_3.py": {
+          "bytes": 53804,
+          "sha256": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+        },
+        "scripts/probe_atlas_rope_v5_runtime.py": {
+          "bytes": 6103,
+          "sha256": "6466b58b44242e26f85dfc93fc75bfd6288aeaa734e6ab9092b9036adc89113e"
+        },
+        "scripts/run_atlas_rope_v5.py": {
+          "bytes": 96991,
+          "sha256": "8b7a53506f8586f61b54ec221777418ccea22dc3e2bd24af371055eab9d03fec"
+        },
+        "scripts/run_atlas_rope_v5_science.py": {
+          "bytes": 22998,
+          "sha256": "4c4568f4e6a2acc0cd42c0d50a7ae4ac622fb66990add5f440f5d263e1580376"
+        },
+        "tests/test_atlas_discovery_v3_3_scoring.py": {
+          "bytes": 15673,
+          "sha256": "4058fbc194ba051904949609fb9da807ab68e342f7ad50dad575ddb6bdfc4431"
+        },
+        "tests/test_atlas_rope_v5.py": {
+          "bytes": 31168,
+          "sha256": "c445181e012b9d00ce1f67e617fd6c425b41be09e7ed68920754309cbfbee5e7"
+        },
+        "tests/test_atlas_rope_v5_science.py": {
+          "bytes": 7329,
+          "sha256": "ce4348d15fe62c72e82c2d064cf059e302e3b0a4cb554460b9a015da5ee50e0f"
+        }
+      },
+      "implementation_review_sha256": "944af4b9391167714f047bc50a5d1bceb7f08997e024cc991a35de54a1aa1223",
+      "implementation_verification_report": {
+        "path": "reports/atlas_rope_v5/implementation_verification.json",
+        "sha256": "0860e06d3ed0c59c28b3ae2407d60ed1fad18852feb166188f605761b387f8ef"
+      },
+      "imported_attempt8_ewt": {
+        "candidate_canonical_sha256": "f14247654ed0aa7578a2f0c894d5c2bab5c1c2fdaa96f74f172da62fe6952adf",
+        "old_raw_cap_inputs": {
+          "calibration_rows": 1200,
+          "caps": {
+            "atol": null,
+            "cosine_distance": 1e-11,
+            "relative_l2": 1e-05
+          },
+          "grids": {
+            "atol": [
+              5e-07,
+              1e-06,
+              2e-06,
+              4e-06,
+              8e-06
+            ],
+            "cosine_distance": [
+              1e-11,
+              5e-11,
+              1e-10
+            ],
+            "relative_l2": [
+              2e-06,
+              5e-06,
+              1e-05
+            ]
+          },
+          "observed_maxima": {
+            "cosine_distance": 6.61326549078467e-12,
+            "relative_l2": 4.050714244725923e-06,
+            "required_atol": 1.3512020111083984e-05
+          },
+          "rtol": 5e-06,
+          "safety_factor": 1.25,
+          "status": "INELIGIBLE"
+        },
+        "reference_canonical_sha256": "8493d132327eb059db73a128a55476cb0328f3fa3cab4d4f5b2a2abac9d31581",
+        "staging_complete_sha256": "cb258db29525c444b4a2b451521365e3e6932413da4ca8b2f22273658d67081a",
+        "staging_tree_inventory": {
+          "COMPLETE.json": {
+            "bytes": 20703,
+            "sha256": "cb258db29525c444b4a2b451521365e3e6932413da4ca8b2f22273658d67081a"
+          },
+          "candidate.float32.npy": {
+            "bytes": 3686528,
+            "sha256": "0792e6cb97f66dbf0d537c7d1820d031dc5119ad6eb984c3bb79c9a704a7d801"
+          },
+          "reference.float32.npy": {
+            "bytes": 614528,
+            "sha256": "76c7e21aa6ca4a0f2454ce59dfde26e1790a5927663c9ed3045aaaa71aaa398e"
+          },
+          "reference_cached_replay.float32.npy": {
+            "bytes": 614528,
+            "sha256": "76c7e21aa6ca4a0f2454ce59dfde26e1790a5927663c9ed3045aaaa71aaa398e"
+          },
+          "reference_repeat_1.float32.npy": {
+            "bytes": 614528,
+            "sha256": "76c7e21aa6ca4a0f2454ce59dfde26e1790a5927663c9ed3045aaaa71aaa398e"
+          },
+          "reference_repeat_2.float32.npy": {
+            "bytes": 614528,
+            "sha256": "76c7e21aa6ca4a0f2454ce59dfde26e1790a5927663c9ed3045aaaa71aaa398e"
+          },
+          "row_ids.json": {
+            "bytes": 116022,
+            "sha256": "e8406589fc01b7eb592612f920a7fbb57c5b9252f32568ede0a3b4d4c74aea51"
+          }
+        },
+        "staging_tree_inventory_sha256": "bda14e939a348ee82819176b79c4a8e8f1942250b0f9478e6ea9b3a05017043b",
+        "status": "VERIFIED_OPENED_CALIBRATION_HISTORY",
+        "terminal_sha256": "3e152d2f5397d805af53a3ab7e358275990bbf4881b30f3706ad3e1a2901f180"
+      },
+      "neural_training_authorized": false,
+      "observed_calibration_maxima": {
+        "cosine_distance": 6.61326549078467e-12,
+        "relative_l2": 4.050714244725923e-06,
+        "required_atol": 1.3512020111083984e-05
+      },
+      "prescore_config_sha256": "a3862c377597bbf2109fa4d61935f3bba481eef5da794f41377c814832fde348",
+      "prescore_manifest_sha256": "58fe7fd785d66db9a7ebcb9c0c2e6852ad26806a2df3ac0bb1ab0f013355ddf6",
+      "retained_attempt7_ewt": {
+        "expanded_mapping_sha256": "bf19563208363a73a3052ed42a56e7debc220a40527f4bbeb15f4e664d93bcfd",
+        "expanded_rows": 72,
+        "family_indices": {
+          "fresh|prefix_position_only": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ],
+          "fresh|uniform_shift": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71
+          ],
+          "legacy|prefix_position_only": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "legacy|uniform_shift": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ]
+        },
+        "qa_arrays_sha256": "f39d29856a0c50e165528b4a5d69524453a3e0dcd8d775f123e4adfe919ed1f5",
+        "qa_complete_sha256": "d75a45ff38e6cc914d7236cad634fc92725e21ea0f1316ab707229c29f0b5d48",
+        "qa_rows_sha256": "e79571ee88ff5356402a2f582deea143f5167d272fbfd2040d748e951464ca33",
+        "semantic_verification": "PASS"
+      },
+      "rtol": 5e-06,
+      "safety_factor": 1.25,
+      "schema_version": "atlas_rope_v5_attempt9_validation_freeze_candidate_v1",
+      "science_adapter": {
+        "adapter_path": "scripts/run_atlas_rope_v5_science.py",
+        "adapter_sha256": "4c4568f4e6a2acc0cd42c0d50a7ae4ac622fb66990add5f440f5d263e1580376",
+        "allowed_adapter_changes": [
+          "config_schema",
+          "run_result_namespace",
+          "technical_qa_verification",
+          "science_authorization_verification",
+          "post_load_sdpa_assertion",
+          "signed_artifact_schema"
+        ],
+        "config_path": "configs/atlas_rope_v5/science_adapter.json",
+        "config_sha256": "5c338376f99d99a2d55efa216d8608ab1abe4e7f6192071a4b51e603f9da1df1",
+        "forbidden_scientific_changes": [
+          "task_definitions",
+          "relation_definitions",
+          "intervention_definitions",
+          "projection_organizations",
+          "projection_ranks",
+          "ridge_alphas",
+          "nuisance_columns",
+          "bootstrap",
+          "decision_thresholds"
+        ],
+        "frozen_files": {
+          "scripts/analyze_atlas_discovery_v3_3.py": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031",
+          "scripts/atlas_discovery_v3_3_analysis.py": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266",
+          "scripts/extract_atlas_discovery_v3_3.py": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+        },
+        "frozen_function_hashes": {
+          "scripts/analyze_atlas_discovery_v3_3.py": {
+            "bootstrap_metrics": "4b12e4e9ccd2641818bc460f253e320972a4576fc3d51f2e22fc5b389c8e2e81",
+            "cross_family_direction": "e97b8c488fff2a4e6fce1b048d33c82a216aef2bf27c020409466e10b02b1ba2",
+            "delta_for_pair": "30a2ca46df2834a1039e4096cc68b4adc7b833e83f577f73a9d0c903e78bf6ac",
+            "evaluate_direction": "b6cf7e459e4fecabd0b06eac7fcba3267aee80c37731a06cc4d020bc465e0d50",
+            "evaluate_relation_direction": "8f9c62d4bde9d6b345074a5403b816f1de102182dd49bef57d1d4ed6472464aa",
+            "fit_lemma_vocab": "6dce789996fd85ebdf30b4d85a66c371fa57c675e03d6ec44c209cb8a179e484",
+            "intervention_atlas": "4e1870f197959511bbf183ed207eb960fbdf46a761411d891b45752c1f1c44dc",
+            "json_safe": "7a44f454ecaadb94b717fd0b025597388f2108cbdd1a8f53843cd1a211795191",
+            "load_source": "87ca2e355440ee50bdbbf35747e8411bdd03e3c0c6c34d45b8b6ac1c5d45cd69",
+            "nuisance_rows": "c43c41042b47fbff5dbd7e136a940ef396a181f567fdc928fde6db390bd8e75d",
+            "projection_capture_controls": "b66d743a2657bc0a893eb4dd9496ef1c4d0480736c04bb8e4c3ddc0a53938281",
+            "projection_direction": "4de39e0e89d5dd7cbf2af7839b6d0ac4981244acf1ed174173e0781408d17c31",
+            "raw_delta_covariance_spectrum": "cfbb97b5b2197310691525b9d77f7eba9a8f69b2bca8f89340e885430b2e48b7",
+            "relation_matrix": "80adba7fd3fc117c264b43516190ee54b66793e80993072fad686385c75f4d32",
+            "run": "0b03a1b54597130891a29086e293725663bd1c32387a7fd4ad4b17ff76b5d3b1",
+            "state_pair_for": "374b302c35b94c3d64141679cf1cf93258588b98646e6cf3b1885719d462874a",
+            "task_matrix": "9131261812853d62a96ae9ce7cae38b4bd14450710bd52137d3a236e0739c727",
+            "task_rows": "794bd710d5d9d22076dd7a57156b94de46c09b6436eee63a7b292dd10314c07c"
+          },
+          "scripts/atlas_discovery_v3_3_analysis.py": {
+            "balanced_accuracy": "211f214964e427e09cd428707c92419496db953c634680fe0faf72cc65f9feb0",
+            "basis_overlap": "91618c1982bf46cc067d2329bf62b7aef545a71f77d6969316131f52366e6a57",
+            "choose_alpha": "5681a907cc30304cae3c9807b01b66f98c6087c58c1430f15ac78738286b35e3",
+            "delta_basis": "9237c07331fc5df8a7e778aa2e5fbb05cdbc343114e269f6698f3b5001345a1a",
+            "fit_ridge": "af8e51c5e63c81c919f37a9ff86ed7d73b8b9b89112b2f6cc6580613fcf5847a",
+            "interval": "5857fad949a24499e5456108652b1db327c450da32102a2db51bd0d2b668f7e4",
+            "macro_f1": "5eef770693dd8618884ae1b42f314564eb97856625c47bf6462a5092b81ba6f7",
+            "make_projector": "be5add0b44468c48318e850fbc31a9040b6368bac66288e9b2d5c6243a7a8988",
+            "normalized_recovery": "a7007eb23b8f1774361171b277aad497fc4c9aae69085342bda43cdf17e96993",
+            "prior_chance": "a53b0dd1286aa5c66520767a04410896de91ed223ad89aacd26b551db68dc2e6",
+            "row_normalize": "b2ebc9dce29cd54a177dc8f30a4e6c1228b6f692bc1e0e55400ee6342ff84b0c"
+          },
+          "scripts/extract_atlas_discovery_v3_3.py": {
+            "_forward_units": "3a4b938bddd32e72074134bbbe23abf683c4dd43d7c0476d3d54f0043df24ac4",
+            "_load_source_bundle": "424fddb1a4e261e34087157df89adb58889a775e6b3f4992ac4b54c98808f024"
+          }
+        }
+      },
+      "status": "READY_FOR_ADVERSARIAL_REVIEW",
+      "validation_model_calls_already_run": false,
+      "validation_order": [
+        "GUM_fresh_sentinel",
+        "GUM_fresh_validation",
+        "GENTLE_validation"
+      ]
+    },
+    "freeze_candidate_sha256": "93704e024275eb134f7d32e4e2bf48c6588575550132f50a55f46ce97b325a42",
+    "freeze_review": {
+      "path": "reports/adversarial/atlas_v3_5_attempt9_freeze_review.md",
+      "sha256": "01cca01dee5deae570a845d3d38f53c5a912b306fb2274930af409e6bfc3e83b",
+      "verdict": "SHIP"
+    },
+    "fresh_gum_first": true,
+    "gentle_requires_gum_pass": true,
+    "implementation_candidate_sha256": "b79124938859886fca11c41e100ae72ef943feb74dc38200052b9a44ebe783a7",
+    "implementation_inventory": {
+      "PLAN_ATTEMPT9.md": {
+        "bytes": 14413,
+        "sha256": "98612621e0a7d01e707afc676ace5121daf3325293cc5eae4a01c8dac92e4705"
+      },
+      "configs/atlas_rope_v5/prescore.json": {
+        "bytes": 10088,
+        "sha256": "a3862c377597bbf2109fa4d61935f3bba481eef5da794f41377c814832fde348"
+      },
+      "configs/atlas_rope_v5/science_adapter.json": {
+        "bytes": 9562,
+        "sha256": "5c338376f99d99a2d55efa216d8608ab1abe4e7f6192071a4b51e603f9da1df1"
+      },
+      "docs/rfc-atlas-v3-5-attempt9-rope-technical.md": {
+        "bytes": 4486,
+        "sha256": "837048304ea286d934d413e5e8ea204799aa72f4c0c42c7352a47466f54b3ba5"
+      },
+      "reports/adversarial/atlas_v3_5_attempt9_implementation_review_block_v1.md": {
+        "bytes": 6756,
+        "sha256": "f5878ac7689f559da947d304e7cc75747ad199b2570362000b35159f98834663"
+      },
+      "reports/adversarial/atlas_v3_5_attempt9_implementation_review_block_v2.md": {
+        "bytes": 4818,
+        "sha256": "dc8dc66ddcb796c499eb2873bcb57767af74dfee29262a3e2b07272c2b8649f6"
+      },
+      "reports/adversarial/atlas_v3_5_attempt9_plan_review.md": {
+        "bytes": 2787,
+        "sha256": "90018900e646a8c588e7a379acdd0fdb8f81252ec5afacf7ffe3e5c494e5aa70"
+      },
+      "requirements-atlas.lock.txt": {
+        "bytes": 417,
+        "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+      },
+      "scripts/analyze_atlas_discovery_v3_3.py": {
+        "bytes": 66806,
+        "sha256": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031"
+      },
+      "scripts/atlas_discovery_v3_3_analysis.py": {
+        "bytes": 7240,
+        "sha256": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266"
+      },
+      "scripts/atlas_rope_v5.py": {
+        "bytes": 45658,
+        "sha256": "f45f29797e845006bf5d11efb08ea5e4763ecf8e6693eccd9caa655131cfcf4f"
+      },
+      "scripts/build_atlas_rope_v5.py": {
+        "bytes": 36555,
+        "sha256": "82539501eac419cd50c3e77e83068463ae81aeb3bb6bdc0b56d5699d07dcd835"
+      },
+      "scripts/diagnose_atlas_rope_v5.py": {
+        "bytes": 24800,
+        "sha256": "b99e95ec9629bd56f4d6386d0e1b2761fd9bf723e15da0e92831f18ffdcdeb12"
+      },
+      "scripts/extract_atlas_discovery_v3_3.py": {
+        "bytes": 53804,
+        "sha256": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+      },
+      "scripts/probe_atlas_rope_v5_runtime.py": {
+        "bytes": 6103,
+        "sha256": "6466b58b44242e26f85dfc93fc75bfd6288aeaa734e6ab9092b9036adc89113e"
+      },
+      "scripts/run_atlas_rope_v5.py": {
+        "bytes": 96991,
+        "sha256": "8b7a53506f8586f61b54ec221777418ccea22dc3e2bd24af371055eab9d03fec"
+      },
+      "scripts/run_atlas_rope_v5_science.py": {
+        "bytes": 22998,
+        "sha256": "4c4568f4e6a2acc0cd42c0d50a7ae4ac622fb66990add5f440f5d263e1580376"
+      },
+      "tests/test_atlas_discovery_v3_3_scoring.py": {
+        "bytes": 15673,
+        "sha256": "4058fbc194ba051904949609fb9da807ab68e342f7ad50dad575ddb6bdfc4431"
+      },
+      "tests/test_atlas_rope_v5.py": {
+        "bytes": 31168,
+        "sha256": "c445181e012b9d00ce1f67e617fd6c425b41be09e7ed68920754309cbfbee5e7"
+      },
+      "tests/test_atlas_rope_v5_science.py": {
+        "bytes": 7329,
+        "sha256": "ce4348d15fe62c72e82c2d064cf059e302e3b0a4cb554460b9a015da5ee50e0f"
+      }
+    },
+    "implementation_verification_report": {
+      "path": "reports/atlas_rope_v5/implementation_verification.json",
+      "sha256": "0860e06d3ed0c59c28b3ae2407d60ed1fad18852feb166188f605761b387f8ef"
+    },
+    "neural_training_authorized": false,
+    "prescore_config_sha256": "a3862c377597bbf2109fa4d61935f3bba481eef5da794f41377c814832fde348",
+    "prescore_manifest_sha256": "58fe7fd785d66db9a7ebcb9c0c2e6852ad26806a2df3ac0bb1ab0f013355ddf6",
+    "schema_version": "atlas_rope_v5_attempt9_stage_authorization_v1",
+    "science_adapter": {
+      "adapter_path": "scripts/run_atlas_rope_v5_science.py",
+      "adapter_sha256": "4c4568f4e6a2acc0cd42c0d50a7ae4ac622fb66990add5f440f5d263e1580376",
+      "allowed_adapter_changes": [
+        "config_schema",
+        "run_result_namespace",
+        "technical_qa_verification",
+        "science_authorization_verification",
+        "post_load_sdpa_assertion",
+        "signed_artifact_schema"
+      ],
+      "config_path": "configs/atlas_rope_v5/science_adapter.json",
+      "config_sha256": "5c338376f99d99a2d55efa216d8608ab1abe4e7f6192071a4b51e603f9da1df1",
+      "forbidden_scientific_changes": [
+        "task_definitions",
+        "relation_definitions",
+        "intervention_definitions",
+        "projection_organizations",
+        "projection_ranks",
+        "ridge_alphas",
+        "nuisance_columns",
+        "bootstrap",
+        "decision_thresholds"
+      ],
+      "frozen_files": {
+        "scripts/analyze_atlas_discovery_v3_3.py": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031",
+        "scripts/atlas_discovery_v3_3_analysis.py": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266",
+        "scripts/extract_atlas_discovery_v3_3.py": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+      },
+      "frozen_function_hashes": {
+        "scripts/analyze_atlas_discovery_v3_3.py": {
+          "bootstrap_metrics": "4b12e4e9ccd2641818bc460f253e320972a4576fc3d51f2e22fc5b389c8e2e81",
+          "cross_family_direction": "e97b8c488fff2a4e6fce1b048d33c82a216aef2bf27c020409466e10b02b1ba2",
+          "delta_for_pair": "30a2ca46df2834a1039e4096cc68b4adc7b833e83f577f73a9d0c903e78bf6ac",
+          "evaluate_direction": "b6cf7e459e4fecabd0b06eac7fcba3267aee80c37731a06cc4d020bc465e0d50",
+          "evaluate_relation_direction": "8f9c62d4bde9d6b345074a5403b816f1de102182dd49bef57d1d4ed6472464aa",
+          "fit_lemma_vocab": "6dce789996fd85ebdf30b4d85a66c371fa57c675e03d6ec44c209cb8a179e484",
+          "intervention_atlas": "4e1870f197959511bbf183ed207eb960fbdf46a761411d891b45752c1f1c44dc",
+          "json_safe": "7a44f454ecaadb94b717fd0b025597388f2108cbdd1a8f53843cd1a211795191",
+          "load_source": "87ca2e355440ee50bdbbf35747e8411bdd03e3c0c6c34d45b8b6ac1c5d45cd69",
+          "nuisance_rows": "c43c41042b47fbff5dbd7e136a940ef396a181f567fdc928fde6db390bd8e75d",
+          "projection_capture_controls": "b66d743a2657bc0a893eb4dd9496ef1c4d0480736c04bb8e4c3ddc0a53938281",
+          "projection_direction": "4de39e0e89d5dd7cbf2af7839b6d0ac4981244acf1ed174173e0781408d17c31",
+          "raw_delta_covariance_spectrum": "cfbb97b5b2197310691525b9d77f7eba9a8f69b2bca8f89340e885430b2e48b7",
+          "relation_matrix": "80adba7fd3fc117c264b43516190ee54b66793e80993072fad686385c75f4d32",
+          "run": "0b03a1b54597130891a29086e293725663bd1c32387a7fd4ad4b17ff76b5d3b1",
+          "state_pair_for": "374b302c35b94c3d64141679cf1cf93258588b98646e6cf3b1885719d462874a",
+          "task_matrix": "9131261812853d62a96ae9ce7cae38b4bd14450710bd52137d3a236e0739c727",
+          "task_rows": "794bd710d5d9d22076dd7a57156b94de46c09b6436eee63a7b292dd10314c07c"
+        },
+        "scripts/atlas_discovery_v3_3_analysis.py": {
+          "balanced_accuracy": "211f214964e427e09cd428707c92419496db953c634680fe0faf72cc65f9feb0",
+          "basis_overlap": "91618c1982bf46cc067d2329bf62b7aef545a71f77d6969316131f52366e6a57",
+          "choose_alpha": "5681a907cc30304cae3c9807b01b66f98c6087c58c1430f15ac78738286b35e3",
+          "delta_basis": "9237c07331fc5df8a7e778aa2e5fbb05cdbc343114e269f6698f3b5001345a1a",
+          "fit_ridge": "af8e51c5e63c81c919f37a9ff86ed7d73b8b9b89112b2f6cc6580613fcf5847a",
+          "interval": "5857fad949a24499e5456108652b1db327c450da32102a2db51bd0d2b668f7e4",
+          "macro_f1": "5eef770693dd8618884ae1b42f314564eb97856625c47bf6462a5092b81ba6f7",
+          "make_projector": "be5add0b44468c48318e850fbc31a9040b6368bac66288e9b2d5c6243a7a8988",
+          "normalized_recovery": "a7007eb23b8f1774361171b277aad497fc4c9aae69085342bda43cdf17e96993",
+          "prior_chance": "a53b0dd1286aa5c66520767a04410896de91ed223ad89aacd26b551db68dc2e6",
+          "row_normalize": "b2ebc9dce29cd54a177dc8f30a4e6c1228b6f692bc1e0e55400ee6342ff84b0c"
+        },
+        "scripts/extract_atlas_discovery_v3_3.py": {
+          "_forward_units": "3a4b938bddd32e72074134bbbe23abf683c4dd43d7c0476d3d54f0043df24ac4",
+          "_load_source_bundle": "424fddb1a4e261e34087157df89adb58889a775e6b3f4992ac4b54c98808f024"
+        }
+      }
+    },
+    "science_model_calls_authorized": false,
+    "status": "AUTHORIZED",
+    "threshold_change_authorized": false
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "message_sha256": "8bd95831f428a9c569beaccb293ab4a2302432168dda4587db9d421fa3f2c8ab",
+    "public_key_fingerprint_sha256": "56308de36cf46c6c18f0a08b54d0884dd88b23e1f612cc4b6c93c9844d72025d",
+    "signature_base64": "PKk3KDiLb9MgKH4wyHPOMUqc6h/kHlgTTLDEM3087a/bGrf+4v4X6ke9MbYoK1itqQlLzADD/NvpqrOS7kz+Cw=="
+  }
+}

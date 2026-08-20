@@ -1,0 +1,15 @@
+{
+  "candidate_review_sha256": "19c4d52dcb9f6d6e701d94b2efe3b5a5a0d12eaafb7ce597be2423f5828ad8d1",
+  "candidate_sha256": "a21f2d7a7d1f830b183e41332fb7d8743cee710bea2778feda57942328706739",
+  "config_sha256": "ce6cda9a01f01ef0df9bb7e3d9f1a1381cbd2a8599aee15109d179da7f1d1090",
+  "factorial_sha256": "7d682705411a7b428771a86576a2c041b4ae56bc475c0a34b31a555fcbd8dab0",
+  "launcher_sha256": "d4dafeb1e2e40617c86308a83e619e3a4e407c15fff4b59c9bb1a5af29631c94",
+  "method_table_sha256": "57fa4387af96bb83ae8621252dbe50908ec534bdd0626cc34fc5132fc5fadb8e",
+  "plan_sha256": "d6032a48b50ae56be3e7a662f0141e01778c063cf0884849ebe1bd8f1b3c1ac5",
+  "schema_version": "causal_manifold_bridge_v1_generator_lock",
+  "source_sha256": "27883b82166754bf30d28ec4229567c056b5a06746b6109c344b6c8b34c0f9de",
+  "tests_sha256": {
+    "launcher": "359c87eb54125619b652e9a9652826df1562b90aecd314f3477cdb7c531260c9",
+    "study": "5f645d816d860b6f7a243339609038b21099136e52e383ba7036df9871311c91"
+  }
+}

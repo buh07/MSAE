@@ -1,0 +1,110 @@
+{
+  "created_ns": 1786352784023728539,
+  "failure_preservation_sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96",
+  "invalid_r2_candidate_preservation_sha256": "3dbcc809636353748f54fb27faf5f6e9f44bb2d314e46654372075d923c2e7cd",
+  "invalid_r3_candidate_preservation_sha256": "eec5f489c99a11d9aac9c785c0192045537de7cbb86365998a083b6579add3e5",
+  "invalid_r4_candidate_preservation_sha256": "42581eb0d4e77b45a6cde609b13e8ea0ca2f571b8cabd57c2853abeedcf60881",
+  "inventory": [
+    {
+      "bytes": 11682,
+      "path": "PLAN_CAPACITY_EXTERNAL_VALIDITY_V1_R5.md",
+      "sha256": "e0e25310a171d54c3151b7193216ad4f8e5705fdead19accb2c15ce52091ea42"
+    },
+    {
+      "bytes": 2147,
+      "path": "configs/trained_copy_external_v1_r5/RECOVERY_BINDING.json",
+      "sha256": "1065321b62703fd51c38416157e8acb485926c1d15f82492bc251cc3a5e8664f"
+    },
+    {
+      "bytes": 3708,
+      "path": "configs/trained_copy_external_v1_r5/run.json",
+      "sha256": "ae80b44d3735eaa055008617ba316679e8841d197eb9cd3bd64acdf28c2b6598"
+    },
+    {
+      "bytes": 7329,
+      "path": "data/trained_copy_external_v1_prepared/PANEL_METADATA.json",
+      "sha256": "9df6e6c6d75dcc6b0b8f7800b125954089e86c467b462e9efc8eb99f77ab29e2"
+    },
+    {
+      "bytes": 70,
+      "path": "data/trained_copy_external_v1_prepared/PREPARED.json",
+      "sha256": "befd3dedc30f5166a73dc7a052b318a28dfbf298498ea734196e774cd84fd9fa"
+    },
+    {
+      "bytes": 619,
+      "path": "reports/adversarial/capacity_external_validity_v1_r5_plan_review.md",
+      "sha256": "36992a27f2621fa34e8b8f33cda994ee326393ba6ecea49bfef15151b2d9f194"
+    },
+    {
+      "bytes": 21741,
+      "path": "reports/provenance/capacity_external_validity_v1_failure_preservation/PRESERVATION.json",
+      "sha256": "63050000610671498563a88fcfb0756ebfa3151299a9808627caa9e516c1da96"
+    },
+    {
+      "bytes": 1033,
+      "path": "reports/provenance/capacity_external_validity_v1_r2_invalid_candidate/PRESERVATION.json",
+      "sha256": "3dbcc809636353748f54fb27faf5f6e9f44bb2d314e46654372075d923c2e7cd"
+    },
+    {
+      "bytes": 1012,
+      "path": "reports/provenance/capacity_external_validity_v1_r3_invalid_candidate/PRESERVATION.json",
+      "sha256": "eec5f489c99a11d9aac9c785c0192045537de7cbb86365998a083b6579add3e5"
+    },
+    {
+      "bytes": 1032,
+      "path": "reports/provenance/capacity_external_validity_v1_r4_invalid_candidate/PRESERVATION.json",
+      "sha256": "42581eb0d4e77b45a6cde609b13e8ea0ca2f571b8cabd57c2853abeedcf60881"
+    },
+    {
+      "bytes": 17145,
+      "path": "reports/provenance/transformer_realistic_bridge_v1_r2_postresult/PRESERVATION.json",
+      "sha256": "d112fdc7aba9c153eb8ffc4b62750333631b5f0c8e6617a444286b7cbaf53bd2"
+    },
+    {
+      "bytes": 84714,
+      "path": "scripts/capacity_external_validity_v1_r5.py",
+      "sha256": "5c2e7bf0c27af6b3dc3e2de80ef6f0a5edb04b540fb7f3982283b1b8b5308ef8"
+    },
+    {
+      "bytes": 3410,
+      "path": "scripts/launch_capacity_external_validity_v1_r5_tmux.sh",
+      "sha256": "cea8706c42eb8c45525d54e5e498b86a5716972972f50518b0ddfcc46fa28d17"
+    },
+    {
+      "bytes": 5260,
+      "path": "scripts/preserve_capacity_external_validity_v1_failure.py",
+      "sha256": "5d9f9a423f0a82dd33b9bdea4a1b2e191bb4b5fcd619517befaa4ea609b957d8"
+    },
+    {
+      "bytes": 10081,
+      "path": "tests/test_capacity_external_validity_v1_r5.py",
+      "sha256": "6769fe1b905b43e50255d33e3197de7cebbb27b94b0664c0c8c7fbd022f503c5"
+    }
+  ],
+  "kind": "external",
+  "panel_access_state": {
+    "confirmation": "UNOPENED",
+    "development": "UNOPENED",
+    "train": "UNOPENED"
+  },
+  "payload_hash_source": "existing v1 PANEL_METADATA.json; r5 freeze did not stat/glob/hash/read payloads",
+  "payloads": [
+    {
+      "path": "data/trained_copy_external_v1_prepared/train.jsonl",
+      "sha256": "208d1cd6a0c43faee32d111624f6b86c62175d1232e569c213a6eea44cf1dc4b"
+    },
+    {
+      "path": "data/trained_copy_external_v1_prepared/development.jsonl",
+      "sha256": "b1c32094844745fea7f6718282cb2a4b8bcb52a55dc7144a9c41df52e5f406c8"
+    },
+    {
+      "path": "data/trained_copy_external_v1_prepared/confirmation.jsonl",
+      "sha256": "a707f73851455b54b759cc4ec21dbb1002425258179ca09f6975f431b76cc508"
+    }
+  ],
+  "payloads_preexisting": true,
+  "recovery_binding_sha256": "1065321b62703fd51c38416157e8acb485926c1d15f82492bc251cc3a5e8664f",
+  "schema_version": "external_recovery_freeze_v1_r5",
+  "status": "FROZEN_PANEL_SPECIFIC_RECOVERY",
+  "v1_partial_checkpoints_reused": false
+}

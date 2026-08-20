@@ -1,0 +1,111 @@
+{
+  "edges": [
+    {
+      "id": "token_to_predecessor",
+      "kind": "fixed_previous_position_attention",
+      "source": "token_state",
+      "target": "predecessor_head"
+    },
+    {
+      "id": "predecessor_to_pair_key",
+      "kind": "value_position_slice",
+      "source": "predecessor_head",
+      "target": "pair_key_state"
+    },
+    {
+      "id": "token_to_pair_value",
+      "kind": "value_position_slice",
+      "source": "token_state",
+      "target": "pair_value_state"
+    },
+    {
+      "id": "token_to_query",
+      "kind": "final_position_slice",
+      "source": "token_state",
+      "target": "query_state"
+    },
+    {
+      "id": "pair_key_to_mask",
+      "kind": "identity_key",
+      "source": "pair_key_state",
+      "target": "equality_mask"
+    },
+    {
+      "id": "query_to_mask",
+      "kind": "identity_query",
+      "source": "query_state",
+      "target": "equality_mask"
+    },
+    {
+      "id": "mask_to_induction_edge",
+      "kind": "hard_mask_softmax",
+      "source": "equality_mask",
+      "target": "induction_edge"
+    },
+    {
+      "id": "induction_to_transport",
+      "kind": "attention_weight",
+      "source": "induction_edge",
+      "target": "transport"
+    },
+    {
+      "id": "pair_value_to_transport",
+      "kind": "value_transport",
+      "source": "pair_value_state",
+      "target": "transport"
+    },
+    {
+      "id": "transport_to_readout",
+      "kind": "12_times_identity",
+      "source": "transport",
+      "target": "readout_logits"
+    }
+  ],
+  "fixed_sequence_length": 18,
+  "general_natural_model_claim": false,
+  "input_node": "token_state",
+  "key_positions": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15
+  ],
+  "leading_sentinel_token_id": 0,
+  "learned_parameters": 0,
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "nodes": [
+    "token_state",
+    "predecessor_head",
+    "pair_key_state",
+    "pair_value_state",
+    "query_state",
+    "equality_mask",
+    "induction_edge",
+    "transport",
+    "readout_logits"
+  ],
+  "output_node": "readout_logits",
+  "padding_positions": [],
+  "query_position": 17,
+  "registered_output_bypasses": 0,
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_1_graph_registry",
+  "single_constructed_model": true,
+  "status": "COMPLETE_BY_CONSTRUCTION",
+  "training_performed": false,
+  "value_positions": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+  ]
+}

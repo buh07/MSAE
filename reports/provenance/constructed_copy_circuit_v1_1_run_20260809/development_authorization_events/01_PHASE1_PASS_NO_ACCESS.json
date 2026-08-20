@@ -1,0 +1,20 @@
+{
+  "fresh_seed_provenance": {
+    "predecessor_config_path": "configs/constructed_copy_circuit_v1/run.json",
+    "predecessor_config_sha256": "a0a93859fe804d4735e8a3e098bf5e7e82e57d6098a5e3eb7ab1752f986cd1a8",
+    "retired_scientific_seeds": [
+      2026083101,
+      2026083102
+    ],
+    "seed_sets_disjoint": true,
+    "successor_scientific_seeds": [
+      2026091101,
+      2026091102
+    ]
+  },
+  "payload_access_may_have_occurred": false,
+  "review_binding_sha256": "4ca00f0c593f53d522e34cc8aab3dc7c3a92ae0834f7b0b94afe0f3065d9bc99",
+  "schema_version": "constructed_copy_circuit_v1_1_development_authorization_event",
+  "state": "PHASE1_PASS_NO_ACCESS",
+  "time_ns": 1786328641514355209
+}

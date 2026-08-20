@@ -1,0 +1,528 @@
+diff --git a/scripts/run_msae_k2_worker.py b/scripts/run_msae_k2_worker.py
+index 51718ca..45449e8 100644
+--- a/scripts/run_msae_k2_worker.py
++++ b/scripts/run_msae_k2_worker.py
+@@ -172,6 +172,10 @@ def run_job(args: argparse.Namespace, job: Dict[str, str], manifest: Path) -> No
+     env["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
+     env["HF_HOME"] = env.get("HF_HOME", "/jumbo/lisp/f004ndc/hf_cache")
+     env["HF_DATASETS_CACHE"] = env.get("HF_DATASETS_CACHE", "/jumbo/lisp/f004ndc/hf_cache/datasets")
++    env["XDG_CACHE_HOME"] = env.get("XDG_CACHE_HOME", "/jumbo/lisp/f004ndc/xdg_cache_f004ndc")
++    env["TMPDIR"] = env.get("TMPDIR", "/jumbo/lisp/f004ndc/tmp")
++    Path(env["XDG_CACHE_HOME"]).mkdir(parents=True, exist_ok=True)
++    Path(env["TMPDIR"]).mkdir(parents=True, exist_ok=True)
+ 
+     with open(log_file, "a", encoding="utf-8") as lf:
+         lf.write(f"\n[run] {now_iso()} job_id={job['job_id']} gpu={args.gpu}\n")
+diff --git a/scripts/train_msae_k2.py b/scripts/train_msae_k2.py
+index dd0cb8f..d471dc8 100644
+--- a/scripts/train_msae_k2.py
++++ b/scripts/train_msae_k2.py
+@@ -2,11 +2,13 @@
+ from __future__ import annotations
+ 
+ import argparse
++import csv
+ import json
+ import math
+ import os
+ import random
+ import time
++from collections import Counter, deque
+ from dataclasses import asdict, dataclass
+ from pathlib import Path
+ from typing import Any, Iterator
+@@ -35,6 +37,41 @@ def parse_args() -> argparse.Namespace:
+     p.add_argument("--text_field", type=str, default="text")
+     p.add_argument("--streaming", action="store_true", default=True)
+     p.add_argument("--no_streaming", action="store_false", dest="streaming")
++    p.add_argument(
++        "--source_configs_csv",
++        type=str,
++        default="ArXiv,Github,Pile-CC,PubMed Abstracts",
++        help="Comma-separated source configs for balanced interleaving when dataset_config=all",
++    )
++    p.add_argument("--balanced_interleave_sources", action="store_true", default=True)
++    p.add_argument("--no_balanced_interleave_sources", action="store_false", dest="balanced_interleave_sources")
++    p.add_argument(
++        "--data_pipeline_mode",
++        type=str,
++        default="interleaved_stream",
++        choices=["interleaved_stream", "pretok_warm_then_stream"],
++        help="Data pipeline mode. pretok_warm_then_stream pre-tokenizes warm shards once before training.",
++    )
++    p.add_argument(
++        "--pretok_warm_tokens",
++        type=int,
++        default=50_000_000,
++        help="Number of valid training tokens to pre-tokenize into shards before training starts.",
++    )
++    p.add_argument(
++        "--pretok_shard_sequences",
++        type=int,
++        default=250_000,
++        help="Number of fixed-length sequences per shard.",
++    )
++    p.add_argument(
++        "--pretok_dir",
++        type=str,
++        default="",
++        help="Directory for pre-tokenized shards. Defaults to <output_dir>/pretok_cache.",
++    )
++    p.add_argument("--data_monitor", action="store_true", default=True)
++    p.add_argument("--no_data_monitor", action="store_false", dest="data_monitor")
+ 
+     p.add_argument("--context_length", type=int, default=128)
+     p.add_argument("--model_batch_size", type=int, default=4)
+@@ -103,7 +140,17 @@ def normalize_text_field(raw: dict[str, Any], text_field: str) -> str:
+     return ""
+ 
+ 
+-def iter_texts(dataset_name: str, dataset_config: str, dataset_split: str, streaming: bool) -> Iterator[dict[str, Any]]:
++def parse_source_configs(csv_text: str) -> list[str]:
++    parts = [x.strip() for x in csv_text.split(",")]
++    return [x for x in parts if x]
++
++
++def iter_texts_single_source(
++    dataset_name: str,
++    dataset_config: str,
++    dataset_split: str,
++    streaming: bool,
++) -> Iterator[dict[str, Any]]:
+     if dataset_config:
+         ds = load_dataset(dataset_name, dataset_config, split=dataset_split, streaming=streaming)
+     else:
+@@ -119,6 +166,260 @@ def iter_texts(dataset_name: str, dataset_config: str, dataset_split: str, strea
+                 yield row
+ 
+ 
++def iter_texts_balanced_sources(
++    dataset_name: str,
++    source_configs: list[str],
++    dataset_split: str,
++    streaming: bool,
++) -> Iterator[dict[str, Any]]:
++    if not source_configs:
++        raise ValueError("source_configs cannot be empty for balanced interleave")
++    iterators = [
++        iter_texts_single_source(
++            dataset_name=dataset_name,
++            dataset_config=cfg,
++            dataset_split=dataset_split,
++            streaming=streaming,
++        )
++        for cfg in source_configs
++    ]
++    source_idx = 0
++    while True:
++        cfg = source_configs[source_idx]
++        it = iterators[source_idx]
++        try:
++            row = next(it)
++        except StopIteration:
++            iterators[source_idx] = iter_texts_single_source(
++                dataset_name=dataset_name,
++                dataset_config=cfg,
++                dataset_split=dataset_split,
++                streaming=streaming,
++            )
++            row = next(iterators[source_idx])
++        row = dict(row)
++        row["_source_config"] = cfg
++        yield row
++        source_idx = (source_idx + 1) % len(source_configs)
++
++
++def iter_texts(
++    dataset_name: str,
++    dataset_config: str,
++    dataset_split: str,
++    streaming: bool,
++    balanced_interleave_sources: bool,
++    source_configs: list[str],
++) -> Iterator[dict[str, Any]]:
++    if dataset_config == "all" and balanced_interleave_sources and source_configs:
++        yield from iter_texts_balanced_sources(
++            dataset_name=dataset_name,
++            source_configs=source_configs,
++            dataset_split=dataset_split,
++            streaming=streaming,
++        )
++        return
++    cfg = dataset_config
++    if cfg == "all":
++        # Keep original behavior as fallback if balancing is disabled.
++        cfg = "all"
++    yield from iter_texts_single_source(
++        dataset_name=dataset_name,
++        dataset_config=cfg,
++        dataset_split=dataset_split,
++        streaming=streaming,
++    )
++
++
++def valid_token_count(attention_mask: np.ndarray | torch.Tensor, skip_first_position: bool) -> int:
++    if isinstance(attention_mask, torch.Tensor):
++        c = int(attention_mask.sum().item())
++        if skip_first_position:
++            c -= int(attention_mask.shape[0])
++        return max(0, c)
++    c = int(np.sum(attention_mask))
++    if skip_first_position:
++        c -= int(attention_mask.shape[0])
++    return max(0, c)
++
++
++def build_pretokenized_warm_cache(
++    pretok_dir: Path,
++    tokenizer: AutoTokenizer,
++    text_iter: Iterator[dict[str, Any]],
++    text_field: str,
++    context_length: int,
++    model_batch_size: int,
++    skip_first_position: bool,
++    target_valid_tokens: int,
++    shard_sequences: int,
++) -> dict[str, Any]:
++    pretok_dir.mkdir(parents=True, exist_ok=True)
++    manifest_path = pretok_dir / "manifest.json"
++    if manifest_path.exists():
++        with open(manifest_path, "r", encoding="utf-8") as f:
++            old = json.load(f)
++        if (
++            old.get("context_length") == context_length
++            and old.get("text_field") == text_field
++            and int(old.get("target_valid_tokens", 0)) >= int(target_valid_tokens)
++            and old.get("status") == "ready"
++        ):
++            return old
++
++    # Remove stale files from previous partial attempts.
++    for p in pretok_dir.glob("ids_*.npy"):
++        p.unlink(missing_ok=True)
++    for p in pretok_dir.glob("mask_*.npy"):
++        p.unlink(missing_ok=True)
++    for p in pretok_dir.glob("shards.tsv"):
++        p.unlink(missing_ok=True)
++
++    source_counts: Counter[str] = Counter()
++    shard_rows: list[dict[str, Any]] = []
++    shard_id = 0
++    total_valid_tokens = 0
++    total_sequences = 0
++    build_start = time.time()
++    buffered_ids: list[np.ndarray] = []
++    buffered_masks: list[np.ndarray] = []
++    buffered_seq = 0
++
++    def flush_shard() -> None:
++        nonlocal shard_id, buffered_ids, buffered_masks, buffered_seq
++        if buffered_seq == 0:
++            return
++        shard_id += 1
++        ids = np.concatenate(buffered_ids, axis=0)
++        masks = np.concatenate(buffered_masks, axis=0)
++        ids_path = pretok_dir / f"ids_{shard_id:05d}.npy"
++        masks_path = pretok_dir / f"mask_{shard_id:05d}.npy"
++        np.save(ids_path, ids)
++        np.save(masks_path, masks)
++        shard_rows.append(
++            {
++                "shard_id": shard_id,
++                "ids_path": str(ids_path),
++                "mask_path": str(masks_path),
++                "num_sequences": int(ids.shape[0]),
++                "valid_tokens": int(valid_token_count(masks, skip_first_position)),
++            }
++        )
++        buffered_ids = []
++        buffered_masks = []
++        buffered_seq = 0
++
++    while total_valid_tokens < target_valid_tokens:
++        batch_texts: list[str] = []
++        batch_sources: list[str] = []
++        while len(batch_texts) < model_batch_size:
++            row = next(text_iter)
++            source = str(row.get("_source_config", row.get("domain", "unknown")))
++            t = normalize_text_field(row, text_field).strip()
++            if t:
++                batch_texts.append(t)
++                batch_sources.append(source)
++        t0 = time.time()
++        enc = tokenizer(
++            batch_texts,
++            return_tensors="np",
++            truncation=True,
++            padding="max_length",
++            max_length=context_length,
++        )
++        _ = time.time() - t0
++        ids = enc["input_ids"].astype(np.uint16, copy=False)
++        masks = enc["attention_mask"].astype(np.uint8, copy=False)
++
++        for s in batch_sources:
++            source_counts[s] += 1
++        n_valid = valid_token_count(masks, skip_first_position)
++        total_valid_tokens += int(n_valid)
++        total_sequences += int(ids.shape[0])
++        buffered_ids.append(ids)
++        buffered_masks.append(masks)
++        buffered_seq += int(ids.shape[0])
++        if buffered_seq >= shard_sequences:
++            flush_shard()
++        if total_sequences % 100_000 == 0:
++            tok_s = total_valid_tokens / max(1e-6, (time.time() - build_start))
++            print(
++                f"[pretok] seq={total_sequences} valid_tokens={total_valid_tokens} "
++                f"tok_s={tok_s:.1f} target={target_valid_tokens}"
++            )
++
++    flush_shard()
++    tok_s = total_valid_tokens / max(1e-6, (time.time() - build_start))
++    manifest = {
++        "status": "ready",
++        "context_length": context_length,
++        "text_field": text_field,
++        "target_valid_tokens": int(target_valid_tokens),
++        "total_valid_tokens": int(total_valid_tokens),
++        "total_sequences": int(total_sequences),
++        "num_shards": int(len(shard_rows)),
++        "source_counts": dict(source_counts),
++        "throughput_valid_tok_s": float(tok_s),
++        "shards": shard_rows,
++    }
++    with open(manifest_path, "w", encoding="utf-8") as f:
++        json.dump(manifest, f, indent=2)
++    with open(pretok_dir / "shards.tsv", "w", encoding="utf-8", newline="") as f:
++        w = csv.DictWriter(f, fieldnames=["shard_id", "ids_path", "mask_path", "num_sequences", "valid_tokens"], delimiter="\t")
++        w.writeheader()
++        w.writerows(shard_rows)
++    return manifest
++
++
++class PretokBatchProvider:
++    def __init__(self, manifest: dict[str, Any], model_batch_size: int, seed: int):
++        shards = manifest.get("shards", [])
++        if not shards:
++            raise ValueError("pretokenized manifest has no shards")
++        self.model_batch_size = model_batch_size
++        self.rng = random.Random(seed)
++        self.shards = [dict(s) for s in shards]
++        self.shard_order: deque[int] = deque()
++        self.cur_ids: np.ndarray | None = None
++        self.cur_masks: np.ndarray | None = None
++        self.cur_idx = 0
++        self._reshuffle()
++
++    def _reshuffle(self) -> None:
++        order = list(range(len(self.shards)))
++        self.rng.shuffle(order)
++        self.shard_order = deque(order)
++        self.cur_ids = None
++        self.cur_masks = None
++        self.cur_idx = 0
++
++    def _load_next_shard(self) -> None:
++        if not self.shard_order:
++            self._reshuffle()
++        idx = self.shard_order.popleft()
++        shard = self.shards[idx]
++        self.cur_ids = np.load(shard["ids_path"], mmap_mode="r")
++        self.cur_masks = np.load(shard["mask_path"], mmap_mode="r")
++        self.cur_idx = 0
++
++    def next_batch(self) -> tuple[np.ndarray, np.ndarray]:
++        ids_out: list[np.ndarray] = []
++        masks_out: list[np.ndarray] = []
++        while len(ids_out) < self.model_batch_size:
++            if self.cur_ids is None or self.cur_idx >= int(self.cur_ids.shape[0]):
++                self._load_next_shard()
++            assert self.cur_ids is not None and self.cur_masks is not None
++            n_take = min(self.model_batch_size - len(ids_out), int(self.cur_ids.shape[0]) - self.cur_idx)
++            if n_take <= 0:
++                self._load_next_shard()
++                continue
++            sl = slice(self.cur_idx, self.cur_idx + n_take)
++            ids_out.append(np.asarray(self.cur_ids[sl]))
++            masks_out.append(np.asarray(self.cur_masks[sl]))
++            self.cur_idx += n_take
++        return np.concatenate(ids_out, axis=0), np.concatenate(masks_out, axis=0)
++
++
+ class TopKBranch(nn.Module):
+     def __init__(self, d_model: int, m: int, k: int):
+         super().__init__()
+@@ -467,14 +768,46 @@ def main() -> None:
+ 
+     accum_steps = max(1, math.ceil(args.effective_batch_size / args.microbatch_size))
+     accum_count = 0
+-
++    source_configs = parse_source_configs(args.source_configs_csv)
+     text_iter = iter_texts(
+         dataset_name=args.dataset_name,
+         dataset_config=args.dataset_config,
+         dataset_split=args.dataset_split,
+         streaming=args.streaming,
++        balanced_interleave_sources=args.balanced_interleave_sources,
++        source_configs=source_configs,
+     )
+ 
++    pretok_provider: PretokBatchProvider | None = None
++    data_mode_effective = "interleaved_stream"
++    if args.data_pipeline_mode == "pretok_warm_then_stream" and args.pretok_warm_tokens > 0:
++        remaining_tokens = max(0, int(args.target_tokens) - int(tokens_seen))
++        warm_tokens = min(int(args.pretok_warm_tokens), remaining_tokens)
++        if warm_tokens > 0:
++            pretok_dir = Path(args.pretok_dir) if args.pretok_dir else (out / "pretok_cache")
++            print(
++                f"[pretok] building warm shard cache "
++                f"tokens={warm_tokens} dir={pretok_dir} "
++                f"source_configs={source_configs if source_configs else [args.dataset_config]}"
++            )
++            pretok_manifest = build_pretokenized_warm_cache(
++                pretok_dir=pretok_dir,
++                tokenizer=tokenizer,
++                text_iter=text_iter,
++                text_field=args.text_field,
++                context_length=args.context_length,
++                model_batch_size=args.model_batch_size,
++                skip_first_position=args.skip_first_position,
++                target_valid_tokens=warm_tokens,
++                shard_sequences=args.pretok_shard_sequences,
++            )
++            pretok_provider = PretokBatchProvider(
++                manifest=pretok_manifest,
++                model_batch_size=args.model_batch_size,
++                seed=args.seed,
++            )
++            data_mode_effective = "pretok_warm_then_stream"
++
+     start_time = time.time()
+     last_log_time = start_time
+     last_ckpt_tokens = tokens_seen
+@@ -498,6 +831,11 @@ def main() -> None:
+     }
+     window_usage_pos = torch.zeros(args.m_pos, dtype=torch.float32, device=device)
+     window_usage_content = torch.zeros(args.m_content, dtype=torch.float32, device=device)
++    running["rows"] = 0
++    running["tok_wall"] = 0.0
++    running["source_counts"] = Counter()
++    running["data_mode_pretok_batches"] = 0
++    running["data_mode_stream_batches"] = 0
+ 
+     def flush_log() -> None:
+         nonlocal last_log_time
+@@ -546,13 +884,27 @@ def main() -> None:
+         rec["accum_steps"] = accum_steps
+         rec["revived_pos_last_window"] = running["revived_pos"]
+         rec["revived_content_last_window"] = running["revived_content"]
++        rec["data_mode_effective"] = data_mode_effective
++        rec["stream_rows_last_window"] = int(running["rows"])
++        rec["stream_tokenizer_sec_last_window"] = float(running["tok_wall"])
++        rec["stream_rows_per_sec"] = float(running["rows"] / max(1e-6, dt))
++        rec["stream_tokenizer_rows_per_sec"] = float(running["rows"] / max(1e-6, running["tok_wall"]))
++        rec["data_mode_pretok_batches_last_window"] = int(running["data_mode_pretok_batches"])
++        rec["data_mode_stream_batches_last_window"] = int(running["data_mode_stream_batches"])
++        rec["source_mix_last_window"] = dict(running["source_counts"])
+         with open(metrics_jsonl, "a", encoding="utf-8") as f:
+             f.write(json.dumps(rec) + "\n")
++        source_summary = "-"
++        if running["source_counts"]:
++            top = running["source_counts"].most_common(3)
++            source_summary = ",".join(f"{k}:{v}" for k, v in top)
+         print(
+             "[train] "
+             f"step={step} tokens={tokens_seen} loss={rec['total_loss']:.6f} "
+             f"recon={rec['recon_loss']:.6f} incoh={rec['incoh_loss_est']:.6f} "
+             f"fvu={rec['fvu_total']:.6f} tok_s={rec['throughput_tok_s']:.1f} "
++            f"rows_s={rec['stream_rows_per_sec']:.1f} tokzr_rows_s={rec['stream_tokenizer_rows_per_sec']:.1f} "
++            f"src={source_summary} "
+             f"dead_pos={rec['pos_dead_fraction']:.4f} dead_content={rec['content_dead_fraction']:.4f}"
+         )
+         running.update(
+@@ -573,27 +925,47 @@ def main() -> None:
+             }
+         )
+         running.update({"n_micro": 0, "n_tok": 0, "revived_pos": 0, "revived_content": 0})
++        running["rows"] = 0
++        running["tok_wall"] = 0.0
++        running["source_counts"] = Counter()
++        running["data_mode_pretok_batches"] = 0
++        running["data_mode_stream_batches"] = 0
+         window_usage_pos.zero_()
+         window_usage_content.zero_()
+         last_log_time = now
+ 
+     while tokens_seen < args.target_tokens:
+-        batch_texts: list[str] = []
+-        while len(batch_texts) < args.model_batch_size:
+-            row = next(text_iter)
+-            t = normalize_text_field(row, args.text_field).strip()
+-            if t:
+-                batch_texts.append(t)
+-
+-        enc = tokenizer(
+-            batch_texts,
+-            return_tensors="pt",
+-            truncation=True,
+-            padding=True,
+-            max_length=args.context_length,
+-        )
+-        input_ids = enc["input_ids"].to(device)
+-        attention_mask = enc["attention_mask"].to(device)
++        use_pretok = pretok_provider is not None
++        if use_pretok:
++            ids_np, mask_np = pretok_provider.next_batch()
++            input_ids = torch.from_numpy(ids_np.astype(np.int64, copy=False)).to(device)
++            attention_mask = torch.from_numpy(mask_np.astype(np.int64, copy=False)).to(device)
++            running["data_mode_pretok_batches"] += 1
++        else:
++            batch_texts: list[str] = []
++            t_sources: list[str] = []
++            while len(batch_texts) < args.model_batch_size:
++                row = next(text_iter)
++                source = str(row.get("_source_config", row.get("domain", "unknown")))
++                t = normalize_text_field(row, args.text_field).strip()
++                if t:
++                    batch_texts.append(t)
++                    t_sources.append(source)
++            tok_t0 = time.time()
++            enc = tokenizer(
++                batch_texts,
++                return_tensors="pt",
++                truncation=True,
++                padding=True,
++                max_length=args.context_length,
++            )
++            running["tok_wall"] += float(time.time() - tok_t0)
++            running["rows"] += len(batch_texts)
++            for s in t_sources:
++                running["source_counts"][s] += 1
++            input_ids = enc["input_ids"].to(device)
++            attention_mask = enc["attention_mask"].to(device)
++            running["data_mode_stream_batches"] += 1
+ 
+         with torch.no_grad():
+             out_h = model_lm(
+@@ -762,12 +1134,20 @@ def main() -> None:
+         "checkpoint_final": final_ckpt_saved,
+         "git_commit_hash": args.git_commit_hash,
+         "metrics_schema_version": METRICS_SCHEMA_VERSION,
++        "data_pipeline_mode_requested": args.data_pipeline_mode,
++        "data_pipeline_mode_effective": data_mode_effective,
++        "source_configs": source_configs,
++        "balanced_interleave_sources": bool(args.balanced_interleave_sources),
++        "pretok_warm_tokens": int(args.pretok_warm_tokens),
++        "pretok_shard_sequences": int(args.pretok_shard_sequences),
+         "tail100_fvu_total_median": tail_median(metrics_rows, "fvu_total", 100),
+         "tail500_fvu_total_median": tail_median(metrics_rows, "fvu_total", 500),
+         "tail100_incoh_loss_est_median": tail_median(metrics_rows, "incoh_loss_est", 100),
+         "tail500_incoh_loss_est_median": tail_median(metrics_rows, "incoh_loss_est", 500),
+         "tail100_fvu_total_slope": tail_slope(metrics_rows, "fvu_total", 100),
+         "tail100_incoh_loss_est_slope": tail_slope(metrics_rows, "incoh_loss_est", 100),
++        "tail100_stream_rows_per_sec_median": tail_median(metrics_rows, "stream_rows_per_sec", 100),
++        "tail100_stream_tokenizer_rows_per_sec_median": tail_median(metrics_rows, "stream_tokenizer_rows_per_sec", 100),
+         "tail100_active_latent_frac_pos_median": tail_median(metrics_rows, "active_latent_frac_pos", 100),
+         "tail100_active_latent_frac_content_median": tail_median(metrics_rows, "active_latent_frac_content", 100),
+         "tail100_usage_entropy_pos_median": tail_median(metrics_rows, "usage_entropy_pos", 100),

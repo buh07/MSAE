@@ -1,0 +1,261 @@
+{
+  "bootstrap": {
+    "draws": 1000,
+    "method": "linear",
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "weighting": "equal_block_paired_hierarchical"
+  },
+  "dimension": 64,
+  "direction_gates": {
+    "cosine_min": 0.999,
+    "relative_l2_max": 0.001
+  },
+  "eligibility": {
+    "centered_scale_strict": 0.0001,
+    "corrupt_margin_strict_upper": 0.0,
+    "denominator_strict": 0.0001,
+    "effect_strict": 1.0,
+    "hybrid_margin_strict": 1.0
+  },
+  "fit_information": {
+    "closed_form_linear_full64": {
+      "class": "paired_global_linear",
+      "fit": [
+        "x_obs",
+        "delta_gt"
+      ],
+      "inference": [
+        "x_obs"
+      ]
+    },
+    "exact_delta_gt": {
+      "class": "analytic_control",
+      "fit": "none",
+      "inference": [
+        "delta_gt"
+      ]
+    },
+    "observed_input_transplant": {
+      "class": "nonselective_skyline",
+      "fit": "none",
+      "inference": [
+        "x_obs"
+      ]
+    },
+    "paired_linear": {
+      "class": "paired_global_linear",
+      "fit": [
+        "x_obs",
+        "delta_gt"
+      ],
+      "inference": [
+        "x_obs"
+      ]
+    },
+    "reduced_rank_regression": {
+      "class": "paired_global_linear",
+      "fit": [
+        "x_obs",
+        "delta_gt"
+      ],
+      "inference": [
+        "x_obs"
+      ]
+    },
+    "target_linear": {
+      "class": "paired_target_conditioned",
+      "fit": [
+        "x_obs",
+        "delta_gt",
+        "target"
+      ],
+      "inference": [
+        "x_obs",
+        "target"
+      ]
+    },
+    "target_nonlinear": {
+      "class": "paired_target_conditioned",
+      "fit": [
+        "x_obs",
+        "delta_gt",
+        "target"
+      ],
+      "inference": [
+        "x_obs",
+        "target"
+      ]
+    },
+    "unpaired_pca": {
+      "class": "unpaired_reconstruction",
+      "fit": [
+        "x_obs"
+      ],
+      "inference": [
+        "x_obs"
+      ]
+    }
+  },
+  "gates": {
+    "collateral_error": {
+      "point_max": 0.1,
+      "upper_strict_max": 0.15
+    },
+    "control_margin": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    },
+    "full_vocab_recovery": {
+      "lower_strict_min": 0.6,
+      "point_min": 0.7
+    },
+    "necessity": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    },
+    "recovery": {
+      "lower_strict_min": 0.6,
+      "point_min": 0.7
+    },
+    "sham_specificity": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    }
+  },
+  "generator": {
+    "basis_atol": 1e-10,
+    "corrupt_contrast": 1.5,
+    "corrupt_orthogonal_noise": 0.1,
+    "corrupt_target": -1.5,
+    "delta_contrast": -4.0,
+    "delta_noise": 0.2,
+    "delta_target": 4.0,
+    "layernorm_eps": 1e-05,
+    "mix_singular_max": 1.25,
+    "mix_singular_min": 0.75,
+    "readout_gain": 8.0,
+    "sample_atol": 1e-08,
+    "sample_condition_max": 1000000.0,
+    "sample_singular_min": 1e-05
+  },
+  "instances": [
+    41011,
+    41037,
+    41081
+  ],
+  "methods": {
+    "paired_linear": {
+      "batch_size": 128,
+      "init_std": 0.02,
+      "learning_rate": 0.003,
+      "optimizer": "adam",
+      "seeds": [
+        7101,
+        7102,
+        7103
+      ],
+      "steps": 1500
+    },
+    "permutation_seed": 7402,
+    "random_seed": 7401,
+    "svd_rtol": 1e-12,
+    "svd_tie_rule": "ascending_coordinate_pivot_sign_canonical",
+    "target_linear": {
+      "batch_size": 128,
+      "init_std": 0.02,
+      "learning_rate": 0.003,
+      "optimizer": "adam",
+      "ranks": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "seeds": [
+        7201,
+        7202,
+        7203
+      ],
+      "steps": 1500
+    },
+    "target_nonlinear": {
+      "batch_size": 128,
+      "hidden": 128,
+      "init": "torch_default_seeded",
+      "learning_rate": 0.001,
+      "optimizer": "adam",
+      "ranks": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "seeds": [
+        7301,
+        7302,
+        7303
+      ],
+      "steps": 2000
+    }
+  },
+  "namespace": "capacity_controller_diagnostic_v1_20260810r3",
+  "panels": {
+    "confirmation": {
+      "blocks": 24,
+      "rows_per_block": 8,
+      "seed": 20261113
+    },
+    "development": {
+      "blocks": 24,
+      "rows_per_block": 8,
+      "seed": 20261112
+    },
+    "maximum_exclusion_rate": 0.04,
+    "minimum_eval_blocks_per_target": 11,
+    "minimum_eval_per_block": 7,
+    "minimum_eval_rows_per_target": 11,
+    "minimum_eval_total": 185,
+    "train": {
+      "blocks": 32,
+      "rows_per_block": 16,
+      "seed": 20261111
+    }
+  },
+  "ranks": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "recovery": {
+    "failure_preservation": "reports/provenance/capacity_external_validity_v1_failure_preservation/PRESERVATION.json",
+    "fresh_checkpoint_initialization": true,
+    "invalid_r2_candidate_preservation": "reports/provenance/capacity_external_validity_v1_r2_invalid_candidate/PRESERVATION.json",
+    "payloads_preexisting": true,
+    "technical_successor_of": "capacity_controller_diagnostic_v1_20260810",
+    "v1_checkpoint_reuse": false
+  },
+  "runtime": {
+    "candidate_review": "reports/adversarial/capacity_controller_diagnostic_v1_r3_candidate_review.md",
+    "candidate_root": "reports/provenance/capacity_controller_diagnostic_v1_r3_candidate",
+    "freeze": "configs/capacity_controller_diagnostic_v1_r3/FREEZE.json",
+    "frozen_review": "reports/adversarial/capacity_controller_diagnostic_v1_r3_frozen_review.md",
+    "generator_lock": "configs/capacity_controller_diagnostic_v1_r3/RECOVERY_BINDING.json",
+    "output_root": "results/capacity_controller_diagnostic_v1_20260810r3",
+    "prepared_root": "data/capacity_controller_diagnostic_v1_prepared",
+    "provenance_root": "reports/provenance/capacity_controller_diagnostic_v1_r3_run_20260810r3"
+  },
+  "schema_version": "capacity_controller_diagnostic_v1_config",
+  "scope": {
+    "constructed_synthetic_model": true,
+    "k2_evaluated": false,
+    "natural_model_claim": false,
+    "paired_delta_capacity_diagnostic": true
+  },
+  "seed": 20261110,
+  "targets": 16
+}

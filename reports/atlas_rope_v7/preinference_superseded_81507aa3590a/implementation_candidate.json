@@ -1,0 +1,203 @@
+{
+  "fresh_panel_tree_inventory": {
+    "CZECH_PDT/": {
+      "type": "directory"
+    },
+    "CZECH_PDT/candidates.jsonl": {
+      "bytes": 637903,
+      "sha256": "cc3bcd2a090fb90ee2129218aa57469949406ec4a2a4c36276b9b2d6cac30402"
+    },
+    "CZECH_PDT/panel.json": {
+      "bytes": 2522,
+      "sha256": "a426eecefa94e21d5f09ab01601d2c3d43e376a3f591e2fdd8e060037114e1b0"
+    },
+    "CZECH_PDT/references.jsonl": {
+      "bytes": 94250,
+      "sha256": "14aa032e7f0423311ef4ab2b73e1e3effcdbbc935199a20c8a7f4c6b33e49c20"
+    },
+    "CZECH_PDT/rows.jsonl": {
+      "bytes": 55218,
+      "sha256": "67fa43294e43bd2890b43f709406d0c54d75a0f2421ffed4b9f14c6dc18f0774"
+    },
+    "CZECH_PDT/selected_bases.jsonl": {
+      "bytes": 77680,
+      "sha256": "f227f8bca77e79003c6bd0c210fc9710fbea7dc79be84cc0f3e74374a11dda42"
+    },
+    "ENGLISH_CHILDES_CTETEX/": {
+      "type": "directory"
+    },
+    "ENGLISH_CHILDES_CTETEX/candidates.jsonl": {
+      "bytes": 694855,
+      "sha256": "85915b31446bcc890f0596d85a2d2468e2cf1c1e143e2e20a2691c2dbdab5a0f"
+    },
+    "ENGLISH_CHILDES_CTETEX/panel.json": {
+      "bytes": 3075,
+      "sha256": "471ccaf83f7f06b961a2cc0258f92c8ad682c711b97c9c77c49072a69bbcce51"
+    },
+    "ENGLISH_CHILDES_CTETEX/references.jsonl": {
+      "bytes": 102407,
+      "sha256": "1403e964aa6b7943dbe9888c73f587aa1ba92ca8f396d86e9ef55c901f03bcb9"
+    },
+    "ENGLISH_CHILDES_CTETEX/rows.jsonl": {
+      "bytes": 63712,
+      "sha256": "96c3f376b8d6687cca264eddcb4edf301542e0bb19f658bca673c7eded914acf"
+    },
+    "ENGLISH_CHILDES_CTETEX/selected_bases.jsonl": {
+      "bytes": 85974,
+      "sha256": "56d79b10e1a691d9425c3eaa5a8476d0fa9d3ecdfbb1fcf7d2c64883bfcbbda2"
+    },
+    "manifest.json": {
+      "bytes": 6571,
+      "sha256": "08ff19d75de3a68f4c912262062c72052d0a8329cb55185ebe4180f806db2f1e"
+    }
+  },
+  "implementation_inventory": {
+    "PLAN_ATTEMPT11.md": {
+      "bytes": 27272,
+      "sha256": "d1ae2531a7e95731d9f3b06de5b95b88cdc33aad1ffb64d5addddebc76912fa7"
+    },
+    "configs/atlas_rope_v7/amendment.json": {
+      "bytes": 1058,
+      "sha256": "456a362194fa54169869383eea83086a1ce9a77ed8243fe386581bd410a27727"
+    },
+    "configs/atlas_rope_v7/sources.json": {
+      "bytes": 2668,
+      "sha256": "5cfbf812771597d2f0ec0baa68b9ba8566da77716960ae4f6e0f5dca8fbc2183"
+    },
+    "data/atlas_rope_v7_attempt11/CZECH_PDT/panel.json": {
+      "bytes": 2522,
+      "sha256": "a426eecefa94e21d5f09ab01601d2c3d43e376a3f591e2fdd8e060037114e1b0"
+    },
+    "data/atlas_rope_v7_attempt11/ENGLISH_CHILDES_CTETEX/panel.json": {
+      "bytes": 3075,
+      "sha256": "471ccaf83f7f06b961a2cc0258f92c8ad682c711b97c9c77c49072a69bbcce51"
+    },
+    "data/atlas_rope_v7_attempt11/manifest.json": {
+      "bytes": 6571,
+      "sha256": "08ff19d75de3a68f4c912262062c72052d0a8329cb55185ebe4180f806db2f1e"
+    },
+    "data/atlas_rope_v7_attempt11_rejected_scouting/REJECTION.json": {
+      "bytes": 712,
+      "sha256": "c4402a27fb9d009a1d6dcfe3aaa52c41474dad2a8167347440aaa553b48e4fef"
+    },
+    "requirements-atlas.lock.txt": {
+      "bytes": 417,
+      "sha256": "fc8cc0ff7551fc7c9d0fd7cdb8b3376f6791ac0a173eec293607bd839afd6834"
+    },
+    "scripts/analyze_atlas_rope_v7_development.py": {
+      "bytes": 18111,
+      "sha256": "c9bb93c222856886eb20d0cbdc9dcc3d72cf57fb304b545d83dfdce88a1578ea"
+    },
+    "scripts/atlas_rope_v7.py": {
+      "bytes": 14505,
+      "sha256": "8d7ce4dad6197b99e2a69ecb1ffb4ac15536c0a17bb4633593bf296ea3c5673a"
+    },
+    "scripts/build_atlas_rope_v7.py": {
+      "bytes": 19344,
+      "sha256": "6e49226b10c122dd3dc8b1e0f1ba9fe83dfdc00ab644ee646034256e976562f0"
+    },
+    "scripts/diagnose_atlas_rope_v7.py": {
+      "bytes": 12093,
+      "sha256": "5f092b2e3d4301aaec4b8b7338af203cfa9f5642cee464b353ff712b74bf8dec"
+    },
+    "scripts/launch_atlas_rope_v7_tmux.sh": {
+      "bytes": 1448,
+      "sha256": "33bc40b2a1737e1b1e6c46967122dff7c9a8303f3dae945e5d8a3ad0d17d28d9"
+    },
+    "scripts/run_atlas_rope_v7.py": {
+      "bytes": 40877,
+      "sha256": "926da7195724af9054886a6f8a6f4cc0ecd4d801c1c3fdfa38680a2c37f82356"
+    },
+    "scripts/run_atlas_rope_v7_development.sh": {
+      "bytes": 467,
+      "sha256": "2616d9d321022f824e0d1d47bbdf0f30be29989e562b5628d69f3811ff7c897f"
+    },
+    "scripts/run_atlas_rope_v7_pipeline.sh": {
+      "bytes": 1785,
+      "sha256": "45d6f938b42a0f77b33321381ca7cd620862148a2efc8f62c4879f5f5318e9d7"
+    },
+    "scripts/run_atlas_rope_v7_science.py": {
+      "bytes": 19254,
+      "sha256": "8f0567c8d5aee34cc233b9707ad19c1d6f20e7db1ac9a43c7fec9d6d4b589692"
+    },
+    "tests/test_atlas_rope_v7.py": {
+      "bytes": 14637,
+      "sha256": "4a085f5b192b18bb4c7bf70df4618858a1601f14dd6a9bb991818cf9c67d49cc"
+    }
+  },
+  "neural_training_authorized": false,
+  "rejected_pud_runtime_authorized": false,
+  "runtime_dependency_inventory": {
+    "configs/atlas_rope_v5/prescore.json": {
+      "bytes": 10088,
+      "sha256": "a3862c377597bbf2109fa4d61935f3bba481eef5da794f41377c814832fde348"
+    },
+    "configs/atlas_rope_v6/science_adapter.json": {
+      "bytes": 10248,
+      "sha256": "c1bd69b44b84ffb250d8e50df12534657307a0b9135c904cb1ad041526a10ef0"
+    },
+    "scripts/analyze_atlas_discovery_v3_3.py": {
+      "bytes": 66806,
+      "sha256": "c0e2a6dac70bdc2ec461e203a951b0cf2764809e49e245ed986145de04c43031"
+    },
+    "scripts/atlas_discovery_v3_3.py": {
+      "bytes": 97642,
+      "sha256": "5a42b8180ace22e85d9a185fa5c2447be233ae9186ff42d4c97d78fa63478ef7"
+    },
+    "scripts/atlas_discovery_v3_3_analysis.py": {
+      "bytes": 7240,
+      "sha256": "ab3f6fbb9f653301777d134af3a26f2ea42228058baffb96c7127e70c6e42266"
+    },
+    "scripts/atlas_discovery_v3_scoring.py": {
+      "bytes": 2782,
+      "sha256": "0e9980c689f3cd6f058c7a3051f43946777e0db248c220c69d1ececcccc6860c"
+    },
+    "scripts/atlas_rope_v5.py": {
+      "bytes": 45658,
+      "sha256": "f45f29797e845006bf5d11efb08ea5e4763ecf8e6693eccd9caa655131cfcf4f"
+    },
+    "scripts/atlas_rope_v6.py": {
+      "bytes": 45675,
+      "sha256": "0a26e76c698397e8d103615eb872a6c20d9648410b16957b66faeadf4cdb0f75"
+    },
+    "scripts/extract_atlas_discovery_v3_3.py": {
+      "bytes": 53804,
+      "sha256": "f971d4070240845d91edae39ca513f61fa149fde8a7b2a2716f7f63b91adf508"
+    },
+    "scripts/msae_measurement_v2.py": {
+      "bytes": 43070,
+      "sha256": "fc0daa2b78391340bf2e35fe4ea4792262ff8554cb3c7cb873bba12178479936"
+    },
+    "scripts/msae_measurement_v2_run.py": {
+      "bytes": 50266,
+      "sha256": "18248c54db6fc7480593aa866d301636b99faf5080b09896c4cec24010e1fdc5"
+    },
+    "scripts/probe_atlas_rope_v5_runtime.py": {
+      "bytes": 6103,
+      "sha256": "6466b58b44242e26f85dfc93fc75bfd6288aeaa734e6ab9092b9036adc89113e"
+    },
+    "scripts/run_atlas_rope_v5.py": {
+      "bytes": 96991,
+      "sha256": "8b7a53506f8586f61b54ec221777418ccea22dc3e2bd24af371055eab9d03fec"
+    },
+    "scripts/run_atlas_rope_v5_science.py": {
+      "bytes": 22998,
+      "sha256": "4c4568f4e6a2acc0cd42c0d50a7ae4ac622fb66990add5f440f5d263e1580376"
+    },
+    "scripts/run_atlas_rope_v6.py": {
+      "bytes": 48382,
+      "sha256": "0d9f89bb618b6c94c3077c22a7dca70be248fc281b9dea838d3de13d90793d9c"
+    },
+    "scripts/run_atlas_rope_v6_science.py": {
+      "bytes": 23312,
+      "sha256": "4f85d1b31778d757de55a0c727156645c8b377162e537ce5e19c4af7c57f9047"
+    }
+  },
+  "schema_version": "atlas_rope_v7_attempt11_implementation_candidate_v1",
+  "status": "READY_FOR_ADVERSARIAL_REVIEW",
+  "validation_outputs_absent": true,
+  "verification_report": {
+    "path": "reports/atlas_rope_v7/implementation_verification.json",
+    "sha256": "1dbef2589c6f5cd5fb6667237516d1dce00868396457a1a9db4ac325e535bc39"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "freshness": {
+    "complete_state_triple_overlap": 0,
+    "fresh_rows": 2560,
+    "full_condition_overlap": 0,
+    "marginals_recur_by_design": true,
+    "opened_rows": 11136,
+    "pass": true,
+    "row_id_overlap": 0,
+    "row_seed_overlap": 0
+  },
+  "generator_lock_sha256": "dd541d232240ce6968b99854b4df462a5770cc1e9609a8cd64e751c44941a415",
+  "payloads": [
+    {
+      "path": "data/trained_copy_sae_capacity_v1_prepared/fit.jsonl",
+      "rows": 2048,
+      "sha256": "b86f6cf98aef2a1b633b367794eccefd851012ca6d55f51b1a0bf03612538937",
+      "stage": "fit"
+    },
+    {
+      "path": "data/trained_copy_sae_capacity_v1_prepared/development.jsonl",
+      "rows": 256,
+      "sha256": "e63cfad95e4ac3d8d26e6919b1596a7db14a453a8ea214c21dc8c76658fc93c3",
+      "stage": "development"
+    },
+    {
+      "path": "data/trained_copy_sae_capacity_v1_prepared/confirmation.jsonl",
+      "rows": 256,
+      "sha256": "4e132bfbdf799ceb98b88b962d1af7a7b71c2f7164f2d0c751f5cfeaa3ffb73c",
+      "stage": "confirmation"
+    }
+  ],
+  "schema_version": "trained_copy_sae_capacity_v1_freeze"
+}

@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "bytes": 143713,
+    "path": "data/transformer_realistic_methods_v1_r2_prepared/train.jsonl",
+    "rows": 512,
+    "sha256": "cee6c16a7607a9ca6884e4408c9364f43bba42da521e00d0ca29be0613ee9d19"
+  },
+  "payload_access_may_have_occurred": false,
+  "state": "PRECHECK_JOURNALED_NO_ACCESS",
+  "time_ns": 1786336970221554610
+}

@@ -1,0 +1,6 @@
+{
+  "error": "AttributeError: module 'torch' has no attribute 'flatnonzero'",
+  "index": 999,
+  "state": "TECHNICAL_TERMINAL",
+  "time_ns": 1786344106982924223
+}

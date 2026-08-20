@@ -1,0 +1,20 @@
+{
+  "cuda_visible_devices": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+  "freeze_sha256": "a59246d2d06e3fa8f14dcb290b6fdf2f9d73607e39ab93da55f1c41f02d6f758",
+  "gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+  "launch_token_sha256": "9b343d3575a6e740ae5b95c464e6242783b029aba84357468c2a72caaa7627f8",
+  "ownership": {
+    "ancestor_chain": [
+      591318,
+      591316,
+      591305,
+      591304
+    ],
+    "gpu_lockdir": "/tmp/msae_capacity_external_r5_GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15.lockdir",
+    "locked_gpu_uuid": "GPU-ec526219-fb07-e57e-a30d-5d2ab843fb15",
+    "pane_pid": 591305,
+    "worker_pid": 591318
+  },
+  "physical_index": 0,
+  "time_ns": 1786352930480968619
+}

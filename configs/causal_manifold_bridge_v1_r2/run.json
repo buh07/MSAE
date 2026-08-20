@@ -1,0 +1,1617 @@
+{
+  "bootstrap": {
+    "draws": 1000,
+    "method": "linear",
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "weighting": "equal_block_paired_hierarchical"
+  },
+  "design": {
+    "cells": [
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 0,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 1,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 2,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 3,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 4,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 5,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 6,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 7,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 8,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 9,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 10,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 11,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 12,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 13,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 14,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 15,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 16,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 17,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 18,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 19,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 20,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 21,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 22,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 23,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 24,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 25,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 26,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 27,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 28,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 29,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 30,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 31,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 32,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 33,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 34,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 35,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 36,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 37,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 38,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 39,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 40,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 41,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 42,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 43,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 44,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 45,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 46,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 47,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 48,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 49,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 50,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 51,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 52,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 53,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 54,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 55,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 56,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 57,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 58,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 59,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 60,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 16,
+        "cell_id": 61,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 62,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 16,
+        "cell_id": 63,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 64,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 65,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 66,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 67,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 68,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 69,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 70,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 71,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 72,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 73,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 74,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 75,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 76,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 77,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 78,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 79,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 80,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 81,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 82,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 83,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 84,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 85,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 86,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 87,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 88,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 89,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 90,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 91,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 92,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 93,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 94,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 95,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 16,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 96,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 97,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 98,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 99,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 100,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 101,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 102,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 103,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 104,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 105,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 106,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 107,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 108,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 109,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 110,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 111,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 0.25,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 112,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 113,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 114,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 115,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 116,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 117,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 118,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 119,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.0,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 120,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 121,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 122,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 123,
+        "complexity": "one_head_one_layer",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 124,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": false,
+        "causal_dim": 32,
+        "cell_id": 125,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 126,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "deterministic"
+      },
+      {
+        "bypass": true,
+        "causal_dim": 32,
+        "cell_id": 127,
+        "complexity": "four_heads_two_layers",
+        "correlation": 0.7,
+        "nuisance_dim": 64,
+        "nuisance_gain": 4.0,
+        "routing": "distractor_noisy"
+      }
+    ],
+    "controller_dim": 640,
+    "generator_seeds": [
+      10101,
+      10102,
+      10103,
+      10104
+    ],
+    "levels": {
+      "bypass": [
+        false,
+        true
+      ],
+      "causal_dim": [
+        16,
+        32
+      ],
+      "complexity": [
+        "one_head_one_layer",
+        "four_heads_two_layers"
+      ],
+      "correlation": [
+        0.0,
+        0.7
+      ],
+      "nuisance_dim": [
+        16,
+        64
+      ],
+      "nuisance_gain": [
+        0.25,
+        4.0
+      ],
+      "routing": [
+        "deterministic",
+        "distractor_noisy"
+      ]
+    },
+    "patch_equation": "patched_site = original_corrupt_site + predicted_slice",
+    "queries": 8,
+    "sites": 10,
+    "values": 32,
+    "width": 64
+  },
+  "eligibility": {
+    "effect_strict": 0.25
+  },
+  "environment": {
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "12.8",
+    "numpy": "1.26.4",
+    "python": "3.12.3",
+    "pythonhashseed": "0",
+    "torch": "2.7.0"
+  },
+  "gates": {
+    "collateral_error": {
+      "point_max": 0.1,
+      "upper_strict_max": 0.15
+    },
+    "control_margin": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    },
+    "full_vocab_recovery": {
+      "lower_strict_min": 0.6,
+      "point_min": 0.7
+    },
+    "necessity": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    },
+    "recovery": {
+      "lower_strict_min": 0.6,
+      "point_min": 0.7
+    },
+    "sham_specificity": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    }
+  },
+  "hard_timeout_hours": 36,
+  "methods": {
+    "expected_input_rank": {
+      "answer": 96,
+      "corrupt": 68,
+      "instruction": 801
+    },
+    "information_views": {
+      "answer_conditioned": [
+        "corrupt_final",
+        "answer"
+      ],
+      "corrupt_only": [
+        "corrupt_final",
+        "query"
+      ],
+      "donor_compression": [
+        "clean_trace",
+        "corrupt_trace"
+      ],
+      "instruction_conditioned": [
+        "corrupt_trace",
+        "cell_config",
+        "query",
+        "offset"
+      ]
+    },
+    "mlp": {
+      "architectures": {
+        "answer": {
+          "bottleneck": 128,
+          "hidden": 256,
+          "seeds": [
+            9501,
+            9502,
+            9503
+          ]
+        },
+        "corrupt": {
+          "bottleneck": 128,
+          "hidden": 256,
+          "seeds": [
+            9301,
+            9302,
+            9303
+          ]
+        },
+        "instruction": {
+          "bottleneck": 256,
+          "hidden": 512,
+          "seeds": [
+            9401,
+            9402,
+            9403
+          ]
+        }
+      },
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "steps": 2500
+    },
+    "paired_seeds": [
+      9101,
+      9102,
+      9103
+    ],
+    "random_seed": 9151,
+    "ranks": [
+      32,
+      64,
+      128,
+      256,
+      640
+    ],
+    "registered_method_names": [
+      "exact_controller",
+      "identity_full640",
+      "output_oracle_rank32",
+      "ambient_pca_rank32",
+      "paired_linear_rank32_seed9101",
+      "paired_linear_rank32_seed9102",
+      "paired_linear_rank32_seed9103",
+      "output_oracle_rank64",
+      "ambient_pca_rank64",
+      "paired_linear_rank64_seed9101",
+      "paired_linear_rank64_seed9102",
+      "paired_linear_rank64_seed9103",
+      "output_oracle_rank128",
+      "ambient_pca_rank128",
+      "paired_linear_rank128_seed9101",
+      "paired_linear_rank128_seed9102",
+      "paired_linear_rank128_seed9103",
+      "output_oracle_rank256",
+      "ambient_pca_rank256",
+      "paired_linear_rank256_seed9101",
+      "paired_linear_rank256_seed9102",
+      "paired_linear_rank256_seed9103",
+      "output_oracle_rank640",
+      "ambient_pca_rank640",
+      "paired_linear_rank640_seed9101",
+      "paired_linear_rank640_seed9102",
+      "paired_linear_rank640_seed9103",
+      "random_rank32",
+      "random_rank64",
+      "random_rank128",
+      "sae_topk64_budget64_seed9201",
+      "sae_topk64_budget64_seed9202",
+      "sae_topk64_budget64_seed9203",
+      "sae_topk64_budget128_seed9201",
+      "sae_topk64_budget128_seed9202",
+      "sae_topk64_budget128_seed9203",
+      "sae_topk64_budget1280_seed9201",
+      "sae_topk64_budget1280_seed9202",
+      "sae_topk64_budget1280_seed9203",
+      "sae_topk128_budget64_seed9201",
+      "sae_topk128_budget64_seed9202",
+      "sae_topk128_budget64_seed9203",
+      "sae_topk128_budget128_seed9201",
+      "sae_topk128_budget128_seed9202",
+      "sae_topk128_budget128_seed9203",
+      "sae_topk128_budget1280_seed9201",
+      "sae_topk128_budget1280_seed9202",
+      "sae_topk128_budget1280_seed9203",
+      "corrupt_linear_ridge",
+      "corrupt_mlp_seed9301",
+      "corrupt_mlp_seed9302",
+      "corrupt_mlp_seed9303",
+      "instruction_linear_ridge",
+      "instruction_mlp_seed9401",
+      "instruction_mlp_seed9402",
+      "instruction_mlp_seed9403",
+      "answer_linear_ridge",
+      "answer_mlp_seed9501",
+      "answer_mlp_seed9502",
+      "answer_mlp_seed9503",
+      "instruction_analytic_controller_skyline",
+      "zero",
+      "within_cell_donor_permutation",
+      "target_permutation"
+    ],
+    "ridge": 1e-05,
+    "sae": {
+      "batch_size": 256,
+      "budgets": [
+        64,
+        128,
+        1280
+      ],
+      "learning_rate": 0.001,
+      "seeds": [
+        9201,
+        9202,
+        9203
+      ],
+      "steps": 2500,
+      "topks": [
+        64,
+        128
+      ],
+      "width": 1280
+    }
+  },
+  "namespace": "causal_manifold_bridge_v1_r2_20260813",
+  "panels": {
+    "confirmation": {
+      "blocks_per_cell": 8,
+      "rows_per_block": 4,
+      "seed": 20261422
+    },
+    "development": {
+      "blocks_per_cell": 8,
+      "rows_per_block": 4,
+      "seed": 20261421
+    },
+    "fit": {
+      "blocks_per_cell": 32,
+      "rows_per_block": 4,
+      "seed": 20261420
+    },
+    "minimum_eval_blocks": 7,
+    "minimum_eval_total": 30,
+    "minimum_per_cell_blocks": 7
+  },
+  "qa": {
+    "atol": 2e-05,
+    "condition_max": 100000000.0,
+    "exact_collateral_upper": 1e-05,
+    "exact_recovery_min": 0.999,
+    "relative_l2": 1e-05
+  },
+  "recovery_lineage": {
+    "original_freezes": {
+      "causal_manifold_bridge_v1": {
+        "path": "configs/causal_manifold_bridge_v1/FREEZE.json",
+        "sha256": "12e72f1fc8bc4e6ebf992ff18b7791898868c89801931b5185b14e9df76975b2"
+      },
+      "trained_copy_sae_capacity_v1": {
+        "path": "configs/trained_copy_sae_capacity_v1/FREEZE.json",
+        "sha256": "431ba6af471b08eeb130066ea4d1705df0af1fa787c37a15c78257aa8c67dbc4"
+      }
+    },
+    "preservation_path": "reports/provenance/trained_control_next_studies_v1_attempt1_preservation_v2.json",
+    "preservation_sha256": "40b6fb3c59f431318e09e4ba151cbb57e59f0608b98b83499098a802e9062549",
+    "r1_freezes": {
+      "items": {
+        "causal_manifold_bridge_v1_r1": {
+          "path": "configs/causal_manifold_bridge_v1_r1/FREEZE.json",
+          "sha256": "658e9134f7ecb353b129026e190d9fe8f2034898435f072ae2df66d65315ec4e"
+        },
+        "trained_copy_sae_capacity_v1_r1": {
+          "path": "configs/trained_copy_sae_capacity_v1_r1/FREEZE.json",
+          "sha256": "b62dbe4ae01b93847986f155aaf73be8e1e5ab0363c28afa3e95e01229335501"
+        }
+      },
+      "preservation_path": "reports/provenance/trained_control_next_studies_v1_r1_failures_preservation.json",
+      "preservation_sha256": "006985fbe7ac9521cc5220daf1f510c3867bc5cd778d4ed1a87dfe201133451c"
+    }
+  },
+  "runtime": {
+    "candidate_manifest": "reports/provenance/causal_manifold_bridge_v1_r2_candidate/CANDIDATE.json",
+    "candidate_review": "reports/adversarial/causal_manifold_bridge_v1_r2_candidate_review.md",
+    "freeze": "configs/causal_manifold_bridge_v1_r2/FREEZE.json",
+    "frozen_review": "reports/adversarial/causal_manifold_bridge_v1_r2_frozen_review.md",
+    "generator_lock": "configs/causal_manifold_bridge_v1_r2/GENERATOR_LOCK.json",
+    "launch_manifest": "reports/provenance/causal_manifold_bridge_v1_r2_LAUNCH.json",
+    "launcher_log": "reports/provenance/causal_manifold_bridge_v1_r2_launcher_20260813.log",
+    "output_root": "results/causal_manifold_bridge_v1_r2_20260813",
+    "prepared_root": "data/causal_manifold_bridge_v1_prepared",
+    "provenance_root": "reports/provenance/causal_manifold_bridge_v1_r2_run_20260813",
+    "review_binding": "reports/provenance/causal_manifold_bridge_v1_r2_REVIEW_BINDING.json",
+    "tmux_session": "causal_manifold_bridge_v1_r2_20260813"
+  },
+  "schema_version": "causal_manifold_bridge_v1_config",
+  "scope": {
+    "donor_compression": true,
+    "donor_free_discovery": true,
+    "k2_evaluated": false,
+    "known_ground_truth": true,
+    "natural_language_claim": false,
+    "pretrained_model": false,
+    "synthetic_only": true
+  },
+  "seed": 2026081302
+}

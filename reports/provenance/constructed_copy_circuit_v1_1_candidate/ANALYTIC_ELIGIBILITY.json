@@ -1,0 +1,14 @@
+{
+  "confirmation_rows_passing": 256,
+  "derivation": "creation_time_generator_attestation",
+  "development_rows_passing": 256,
+  "general_natural_model_claim": false,
+  "generator_attestation_sha256": "06787caf6434674a728bb0ec6591f9c264761ba1d74a2b5ff8391288e80fee48",
+  "method_benchmark_automatically_authorized": false,
+  "natural_prompt_assay": false,
+  "representation_methods_evaluated": false,
+  "schema_version": "constructed_copy_circuit_v1_1_analytic_eligibility",
+  "single_constructed_model": true,
+  "status": "PASS",
+  "training_performed": false
+}

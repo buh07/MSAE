@@ -1,0 +1,6 @@
+{
+  "schema_version": "constructed_copy_circuit_v1_1_preservation_field_clarification",
+  "clarification": "The legacy PRESERVATION.json field v1_1_files_modified=false refers only to the immutable v1.1 experiment namespace inventoried by that manifest. PAPER.md and reports/paper_claim_ledger_v1.json are living reporting artifacts and were intentionally updated after their pre-update snapshots were created.",
+  "legacy_manifest_modified": false,
+  "immutable_experiment_namespace_modified": false
+}

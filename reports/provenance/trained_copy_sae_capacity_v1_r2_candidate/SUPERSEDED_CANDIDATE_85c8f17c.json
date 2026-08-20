@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "authorization_outcome_independent": true,
+    "finite": true,
+    "sae_parameter_count": true,
+    "selector_permutation": true,
+    "topk": true
+  },
+  "config_sha256": "f12baf6b66d936fa8192c5385a48dc864a77ca3e4cb691cdfd5387df4f7a1dd9",
+  "expected_method_count_per_checkpoint": 323,
+  "launcher_sha256": "e9ec3d6f6a317a2baa9c376d8be38849b37a2a0c1660656608cc9cf19798bf70",
+  "method_inventory_sha256": "8631cc3bf2c9ef3be0bb379cfddbf7714cbae51ea3a276d4b71051d961857f28",
+  "plan_sha256": "696dddc0041fdc23f61cefa215ddee941186e22599ce9313308b7bdeff35ac6a",
+  "protocol_parity_sha256": "c70d5cf68787c0a1b3da3875f61d3720a3ff5db31f9af5311bddf807a7515d58",
+  "recovery_lineage": {
+    "original_freezes": {
+      "causal_manifold_bridge_v1": {
+        "path": "configs/causal_manifold_bridge_v1/FREEZE.json",
+        "sha256": "12e72f1fc8bc4e6ebf992ff18b7791898868c89801931b5185b14e9df76975b2"
+      },
+      "trained_copy_sae_capacity_v1": {
+        "path": "configs/trained_copy_sae_capacity_v1/FREEZE.json",
+        "sha256": "431ba6af471b08eeb130066ea4d1705df0af1fa787c37a15c78257aa8c67dbc4"
+      }
+    },
+    "pass": true,
+    "preservation_sha256": "40b6fb3c59f431318e09e4ba151cbb57e59f0608b98b83499098a802e9062549",
+    "r1_freezes": {
+      "items": {
+        "causal_manifold_bridge_v1_r1": {
+          "path": "configs/causal_manifold_bridge_v1_r1/FREEZE.json",
+          "sha256": "658e9134f7ecb353b129026e190d9fe8f2034898435f072ae2df66d65315ec4e"
+        },
+        "trained_copy_sae_capacity_v1_r1": {
+          "path": "configs/trained_copy_sae_capacity_v1_r1/FREEZE.json",
+          "sha256": "b62dbe4ae01b93847986f155aaf73be8e1e5ab0363c28afa3e95e01229335501"
+        }
+      },
+      "preservation_path": "reports/provenance/trained_control_next_studies_v1_r1_failures_preservation.json",
+      "preservation_sha256": "006985fbe7ac9521cc5220daf1f510c3867bc5cd778d4ed1a87dfe201133451c"
+    }
+  },
+  "schema_version": "trained_copy_sae_capacity_v1_candidate",
+  "scientific_panel_accessed": false,
+  "source_sha256": "8a9063b8247123b5b5bf2d95fef4161dc943e9512bb0d3bff7f5cdb103ae0552",
+  "status": "PASS",
+  "tests_sha256": {
+    "launcher": "88296c638cd894298f4cacc8938a8d6c646ee9d0295f4babacb83d6935e455db",
+    "study": "4f5bb0f9e70bdd1bce8e61d5f6117671eb9caba5ee84c653bd83a5b712facc38"
+  }
+}

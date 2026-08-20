@@ -1,0 +1,6 @@
+{
+  "bridge_final_sha256": "26b6bcdfbec0f6edb4e640d003764357f08f01dacd25222d2d1eb8720d8ad53b",
+  "payload_access_may_have_occurred": false,
+  "state": "PRECHECK_JOURNALED_NO_ACCESS",
+  "time_ns": 1786336970202654752
+}

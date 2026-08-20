@@ -1,0 +1,22 @@
+{
+  "artifacts": [
+    {
+      "bytes": 14861,
+      "path": "reports/provenance/trained_control_studies_v1_r2_PROTOCOL_PARITY_SUPERSEDED_1f0fe1bd.json",
+      "sha256": "1f0fe1bd9836599556cb974c8e997e97bae23c8a0d9f5f432b084ff372068c3a"
+    },
+    {
+      "bytes": 2326,
+      "path": "reports/provenance/trained_copy_sae_capacity_v1_r2_candidate/SUPERSEDED_CANDIDATE_235dfbdd.json",
+      "sha256": "235dfbdd3fc184e6713ea7482c43c73df5682dec9ea69c2deac39a94c553c84c"
+    },
+    {
+      "bytes": 2468,
+      "path": "reports/provenance/causal_manifold_bridge_v1_r2_candidate/SUPERSEDED_CANDIDATE_d71cc6d0.json",
+      "sha256": "d71cc6d01f92c96c5cf858c587ac30f905295f520add126bcda415cc7b30c898"
+    }
+  ],
+  "reason": "Independent adversarial review blocked the shared launcher because token generation or pre-registration metadata failure could leak an ownerless GPU lock; superseded before freeze or scientific execution.",
+  "schema_version": "trained_control_r2_candidate_supersession_v1",
+  "scientific_panel_accessed": false
+}

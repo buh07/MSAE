@@ -1,0 +1,3 @@
+VERDICT: BLOCK
+BOUND_SHA256: 054fabf00ef57fe39c101fd192efe65e25194b868139ebbc44ccda60f2ab9303
+Superseded after independent adversarial review; see session review transcript.

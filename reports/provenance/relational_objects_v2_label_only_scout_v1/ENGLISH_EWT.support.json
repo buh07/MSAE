@@ -1,0 +1,1 @@
+{"alignment":{"ambiguous_alignment":574,"empty_node":28,"multiword_token":2192,"retained":9750,"seen":12544},"components":150,"documents":300,"eligible":true,"examples":1000,"fold_components":{"0":30,"1":30,"2":30,"3":30,"4":30},"orientations":{"later_query_is_child":246,"later_query_is_head":254},"pairs":500,"source":"ENGLISH_EWT"}

@@ -1,0 +1,11 @@
+{
+  "payload_path": "configs/atlas_relation_context_v9/FINAL_FREEZE.payload.json",
+  "payload_sha256": "0b191bddd4008cf61af1d7d2552504bb7d1bd5a6bb3d9cacf325dfd76666fc42",
+  "schema_version": "atlas_relation_context_v9_attempt13_detached_signature_v1",
+  "signature": {
+    "algorithm": "Ed25519",
+    "public_key_base64": "GhsF4vIJ52n0fXBCRhuK/BEi1MG55+Gs2LKykDGsuhI=",
+    "public_key_fingerprint_sha256": "1eb6470fb2bd3a114ca4427174a12eb5fb14639ca1e763f75b9afbb564b2e503",
+    "signature_base64": "eMZPq36yUAfTmcSnbugvj/N6uN2ZV/9yA/xPEAH2K2zobdfRslskiRLioGe1FNtLzex8x4JlEGS8r+xqP/aQCw=="
+  }
+}

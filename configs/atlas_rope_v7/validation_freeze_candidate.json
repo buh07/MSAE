@@ -1,0 +1,95 @@
+{
+  "development_complete_sha256": "6740b0918bf8d6a64c000301860b1529615132658962b0ea728fd0e1bf74be32",
+  "development_threshold_changed": false,
+  "field_dependency_overlay_schema": "atlas_rope_v7_attempt11_technical_eligibility_overlay_v1",
+  "fresh_values_used": false,
+  "gate_contract": {
+    "budgets": {
+      "catastrophic": 0,
+      "primary_per_cell": 2,
+      "primary_per_panel": 6
+    },
+    "catastrophic": {
+      "norm_ratio_error": 2e-05,
+      "relative_l2": 5e-05
+    },
+    "descriptive": {
+      "atol": 2e-05,
+      "cosine_product_floor": 1e-24,
+      "cosine_reference": 2.5e-10,
+      "rtol": 5e-06
+    },
+    "primary": {
+      "norm_ratio_error": 1e-05,
+      "relative_l2": 2e-05
+    },
+    "row_norm_floor": 1e-12
+  },
+  "implementation_candidate_sha256": "1dafa6d4ad2eff2d1020db1589ebbd6c519de829acc890e94d1546d7dc121683",
+  "neural_training_authorized": false,
+  "panel_manifests": {
+    "CZECH_PDT": "a426eecefa94e21d5f09ab01601d2c3d43e376a3f591e2fdd8e060037114e1b0",
+    "ENGLISH_CHILDES_CTETEX": "471ccaf83f7f06b961a2cc0258f92c8ad682c711b97c9c77c49072a69bbcce51"
+  },
+  "panel_tree_inventory": {
+    "CZECH_PDT/": {
+      "type": "directory"
+    },
+    "CZECH_PDT/candidates.jsonl": {
+      "bytes": 637903,
+      "sha256": "cc3bcd2a090fb90ee2129218aa57469949406ec4a2a4c36276b9b2d6cac30402"
+    },
+    "CZECH_PDT/panel.json": {
+      "bytes": 2522,
+      "sha256": "a426eecefa94e21d5f09ab01601d2c3d43e376a3f591e2fdd8e060037114e1b0"
+    },
+    "CZECH_PDT/references.jsonl": {
+      "bytes": 94250,
+      "sha256": "14aa032e7f0423311ef4ab2b73e1e3effcdbbc935199a20c8a7f4c6b33e49c20"
+    },
+    "CZECH_PDT/rows.jsonl": {
+      "bytes": 55218,
+      "sha256": "67fa43294e43bd2890b43f709406d0c54d75a0f2421ffed4b9f14c6dc18f0774"
+    },
+    "CZECH_PDT/selected_bases.jsonl": {
+      "bytes": 77680,
+      "sha256": "f227f8bca77e79003c6bd0c210fc9710fbea7dc79be84cc0f3e74374a11dda42"
+    },
+    "ENGLISH_CHILDES_CTETEX/": {
+      "type": "directory"
+    },
+    "ENGLISH_CHILDES_CTETEX/candidates.jsonl": {
+      "bytes": 694855,
+      "sha256": "85915b31446bcc890f0596d85a2d2468e2cf1c1e143e2e20a2691c2dbdab5a0f"
+    },
+    "ENGLISH_CHILDES_CTETEX/panel.json": {
+      "bytes": 3075,
+      "sha256": "471ccaf83f7f06b961a2cc0258f92c8ad682c711b97c9c77c49072a69bbcce51"
+    },
+    "ENGLISH_CHILDES_CTETEX/references.jsonl": {
+      "bytes": 102407,
+      "sha256": "1403e964aa6b7943dbe9888c73f587aa1ba92ca8f396d86e9ef55c901f03bcb9"
+    },
+    "ENGLISH_CHILDES_CTETEX/rows.jsonl": {
+      "bytes": 63712,
+      "sha256": "96c3f376b8d6687cca264eddcb4edf301542e0bb19f658bca673c7eded914acf"
+    },
+    "ENGLISH_CHILDES_CTETEX/selected_bases.jsonl": {
+      "bytes": 85974,
+      "sha256": "56d79b10e1a691d9425c3eaa5a8476d0fa9d3ecdfbb1fcf7d2c64883bfcbbda2"
+    },
+    "manifest.json": {
+      "bytes": 6571,
+      "sha256": "08ff19d75de3a68f4c912262062c72052d0a8329cb55185ebe4180f806db2f1e"
+    }
+  },
+  "pud_forbidden": true,
+  "schema_version": "atlas_rope_v7_attempt11_validation_freeze_v1",
+  "science_semantics_changed": false,
+  "status": "READY_FOR_ADVERSARIAL_REVIEW",
+  "validation_attempts": 1,
+  "validation_order": [
+    "ENGLISH_CHILDES_CTETEX",
+    "CZECH_PDT"
+  ]
+}

@@ -1,0 +1,17 @@
+# Atlas-v1 analysis environment (Python 3.12.3; system torch/scipy/sklearn exposed read-only)
+conllu==6.0.0
+cryptography==41.0.7
+datasets==3.6.0
+huggingface-hub==0.33.4
+numpy==1.26.4
+pandas==2.1.4
+pyarrow==14.0.2
+safetensors==0.5.3
+tokenizers==0.21.4
+transformers==4.53.2
+
+# Host/system packages recorded by the freeze, not installed by this lock:
+torch==2.7.0
+scipy==1.11.4
+scikit-learn==1.4.1.post1
+networkx==2.8.8

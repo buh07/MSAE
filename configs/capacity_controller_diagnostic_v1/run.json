@@ -1,0 +1,82 @@
+{
+  "schema_version": "capacity_controller_diagnostic_v1_config",
+  "namespace": "capacity_controller_diagnostic_v1_20260810",
+  "seed": 20261110,
+  "instances": [41011, 41037, 41081],
+  "dimension": 64,
+  "targets": 16,
+  "panels": {
+    "train": {"blocks": 32, "rows_per_block": 16, "seed": 20261111},
+    "development": {"blocks": 24, "rows_per_block": 8, "seed": 20261112},
+    "confirmation": {"blocks": 24, "rows_per_block": 8, "seed": 20261113},
+    "minimum_eval_total": 185,
+    "minimum_eval_per_block": 7,
+    "minimum_eval_rows_per_target": 11,
+    "minimum_eval_blocks_per_target": 11,
+    "maximum_exclusion_rate": 0.04
+  },
+  "generator": {
+    "mix_singular_min": 0.75,
+    "mix_singular_max": 1.25,
+    "corrupt_target": -1.5,
+    "corrupt_contrast": 1.5,
+    "corrupt_orthogonal_noise": 0.10,
+    "delta_target": 4.0,
+    "delta_contrast": -4.0,
+    "delta_noise": 0.20,
+    "readout_gain": 8.0,
+    "layernorm_eps": 0.00001,
+    "basis_atol": 1e-10,
+    "sample_atol": 1e-8,
+    "sample_singular_min": 1e-5,
+    "sample_condition_max": 1000000.0
+  },
+  "eligibility": {
+    "hybrid_margin_strict": 1.0,
+    "corrupt_margin_strict_upper": 0.0,
+    "effect_strict": 1.0,
+    "denominator_strict": 0.0001,
+    "centered_scale_strict": 0.0001
+  },
+  "ranks": [4, 8, 16, 32, 64],
+  "methods": {
+    "paired_linear": {"seeds": [7101,7102,7103], "steps": 1500, "batch_size": 128, "learning_rate": 0.003, "init_std": 0.02, "optimizer": "adam"},
+    "target_linear": {"seeds": [7201,7202,7203], "ranks": [4,8,16,32], "steps": 1500, "batch_size": 128, "learning_rate": 0.003, "init_std": 0.02, "optimizer": "adam"},
+    "target_nonlinear": {"seeds": [7301,7302,7303], "ranks": [4,8,16,32], "hidden": 128, "steps": 2000, "batch_size": 128, "learning_rate": 0.001, "init": "torch_default_seeded", "optimizer": "adam"},
+    "random_seed": 7401,
+    "permutation_seed": 7402,
+    "svd_rtol": 1e-12,
+    "svd_tie_rule": "ascending_coordinate_pivot_sign_canonical"
+  },
+  "fit_information": {
+    "exact_delta_gt": {"fit": "none", "inference": ["delta_gt"], "class": "analytic_control"},
+    "observed_input_transplant": {"fit": "none", "inference": ["x_obs"], "class": "nonselective_skyline"},
+    "closed_form_linear_full64": {"fit": ["x_obs","delta_gt"], "inference": ["x_obs"], "class": "paired_global_linear"},
+    "reduced_rank_regression": {"fit": ["x_obs","delta_gt"], "inference": ["x_obs"], "class": "paired_global_linear"},
+    "paired_linear": {"fit": ["x_obs","delta_gt"], "inference": ["x_obs"], "class": "paired_global_linear"},
+    "unpaired_pca": {"fit": ["x_obs"], "inference": ["x_obs"], "class": "unpaired_reconstruction"},
+    "target_linear": {"fit": ["x_obs","delta_gt","target"], "inference": ["x_obs","target"], "class": "paired_target_conditioned"},
+    "target_nonlinear": {"fit": ["x_obs","delta_gt","target"], "inference": ["x_obs","target"], "class": "paired_target_conditioned"}
+  },
+  "bootstrap": {"draws": 1000, "quantiles": [0.025,0.975], "method": "linear", "weighting": "equal_block_paired_hierarchical"},
+  "gates": {
+    "recovery": {"point_min": 0.7, "lower_strict_min": 0.6},
+    "sham_specificity": {"point_min": 0.5, "lower_strict_min": 0.4},
+    "control_margin": {"point_min": 0.5, "lower_strict_min": 0.4},
+    "collateral_error": {"point_max": 0.1, "upper_strict_max": 0.15},
+    "necessity": {"point_min": 0.5, "lower_strict_min": 0.4},
+    "full_vocab_recovery": {"point_min": 0.7, "lower_strict_min": 0.6}
+  },
+  "direction_gates": {"cosine_min": 0.999, "relative_l2_max": 0.001},
+  "runtime": {
+    "candidate_root": "reports/provenance/capacity_controller_diagnostic_v1_candidate",
+    "candidate_review": "reports/adversarial/capacity_controller_diagnostic_v1_candidate_review.md",
+    "generator_lock": "configs/capacity_controller_diagnostic_v1/GENERATOR_LOCK.json",
+    "prepared_root": "data/capacity_controller_diagnostic_v1_prepared",
+    "freeze": "configs/capacity_controller_diagnostic_v1/FREEZE.json",
+    "frozen_review": "reports/adversarial/capacity_controller_diagnostic_v1_frozen_review.md",
+    "output_root": "results/capacity_controller_diagnostic_v1_20260810",
+    "provenance_root": "reports/provenance/capacity_controller_diagnostic_v1_run_20260810"
+  },
+  "scope": {"constructed_synthetic_model": true, "natural_model_claim": false, "k2_evaluated": false, "paired_delta_capacity_diagnostic": true}
+}

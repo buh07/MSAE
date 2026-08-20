@@ -1,0 +1,6 @@
+{
+  "payload_access_may_have_occurred": false,
+  "schema_version": "constructed_copy_circuit_v1_1_development_authorization_event",
+  "state": "PRECHECK_JOURNALED",
+  "time_ns": 1786328641443325717
+}

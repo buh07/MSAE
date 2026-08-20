@@ -1,0 +1,8 @@
+{
+  "payload_access_may_have_occurred": true,
+  "payload_bytes": 56463,
+  "payload_sha256": "1a160f3696a0b0a7dbf8b32e28a887841eeb4fac020b24de27baa1532bfbab0e",
+  "rows": 192,
+  "state": "CLOSED_OPENED",
+  "time_ns": 1786337099431022164
+}

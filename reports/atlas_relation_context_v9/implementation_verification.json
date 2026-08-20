@@ -1,0 +1,57 @@
+{
+  "adversarial_blocked_candidate_preserved": "reports/adversarial/atlas_v3_9_attempt13_candidate_review_block_6420c285.md",
+  "adversarial_blocked_candidates_preserved": [
+    "reports/adversarial/atlas_v3_9_attempt13_candidate_review_block_6420c285.md",
+    "reports/adversarial/atlas_v3_9_attempt13_candidate_review_block_6cf24cf7.md"
+  ],
+  "adversarial_blockers_addressed": [
+    "structured unique SHIP review bound to exact payload and inventory",
+    "reviewed authorization-only command enforces the same contract",
+    "frozen Ed25519 signing key validated before lifecycle writes",
+    "detached signatures verified over exact payload bytes",
+    "activation completion and canonical inventory lineage in result and terminal",
+    "safe tmux signing-key quoting",
+    "canonical config path/hash and signed authorization fields enforced",
+    "signed failure terminal distinguishes pre-opening from post-opening lifecycle failures",
+    "unclassified directory symlinks rejected"
+  ],
+  "attempt12_inventory_sha256": "bd1ab054271f0a97ee9dd8677f2551fd00cd242283d5d547ace5bb228b9565ca",
+  "authorization_eligible": true,
+  "commands": {
+    "bash_n": "PASS",
+    "py_compile": "PASS",
+    "pytest": "19 passed"
+  },
+  "implementation": {
+    "configs/atlas_relation_context_v9/run.json": "520221f4970263faf5646af4c0ecf5a2523c606793970d7cee90723d79332c3f",
+    "scripts/analyze_atlas_relation_context_v9.py": "08ead054024caba35a9d55adb5a495711cc04e83ea85a9c2d9fc4fc9de908766",
+    "scripts/atlas_relation_context_v9.py": "647c1da9144e51bd1826842d881663f142b4b71073889a47049f080cf7b23e1f",
+    "scripts/build_atlas_relation_context_v9.py": "c444674801799827437a8595f1237fef504999e749093c0691b491579387c453",
+    "scripts/launch_atlas_relation_context_v9_tmux.sh": "0f7d9e04c2702549ff46f924fc59eb0b4a0eb3d0940cd3699a4b92f8df1903df",
+    "scripts/run_atlas_relation_context_v9.py": "d8941a3053990ac112d748044300aef40ca7c758e5fd87ad5aa76e42aece9269",
+    "scripts/run_atlas_relation_context_v9_pipeline.sh": "afc684a5e97c56201423a18fe6691535fd520aa5bdcffd42016fa2852e57e491",
+    "tests/test_atlas_relation_context_v9.py": "8cc6d4e8eb035d5bfd7da6beaa0135181a2f36229fa45a906684673f70ad742c"
+  },
+  "model_inference_performed": false,
+  "module_prescore": {
+    "CTETEX": {
+      "relation": true,
+      "secondary": false
+    },
+    "GENTLE": {
+      "relation": true,
+      "secondary": false
+    }
+  },
+  "neural_training_performed": false,
+  "prepared_manifest_sha256": "d8ec3e714f6bac7b48ccd7a5e6ff9182101b4f5d422b3110dd46416fbbfd9de7",
+  "rebuild_check_sha256": "d1e5809a72d08f7c3e1d61e13a2b93befbe7f1468fcb9d2aee8066aa832dfc54",
+  "schema_version": "atlas_relation_context_v9_attempt13_implementation_verification_v3",
+  "static_no_neural_training_audit": {
+    "ephemeral_ridge_only": true,
+    "forbidden_calls": [],
+    "persisted_fitted_probe_weights": false,
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

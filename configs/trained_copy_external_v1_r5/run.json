@@ -1,0 +1,134 @@
+{
+  "authorization": {
+    "all_instances_both_panels": true,
+    "required_capacity_methods": [
+      "exact_delta_gt",
+      "closed_form_linear_full64"
+    ]
+  },
+  "bootstrap": {
+    "draws": 1000,
+    "method": "linear",
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "weighting": "equal_block_paired_hierarchical"
+  },
+  "eligibility": {
+    "clean_accuracy_min": 0.95,
+    "corrupt_accuracy_min": 0.95,
+    "effect_strict": 1.0,
+    "minimum_eval_total": 185,
+    "minimum_per_block": 7,
+    "minimum_per_query_marginal": 5,
+    "minimum_per_value_marginal": 5
+  },
+  "gates": {
+    "collateral_error": {
+      "point_max": 0.1,
+      "upper_strict_max": 0.15
+    },
+    "control_margin": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    },
+    "full_vocab_recovery": {
+      "lower_strict_min": 0.6,
+      "point_min": 0.7
+    },
+    "necessity": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    },
+    "recovery": {
+      "lower_strict_min": 0.6,
+      "point_min": 0.7
+    },
+    "sham_specificity": {
+      "lower_strict_min": 0.4,
+      "point_min": 0.5
+    }
+  },
+  "incomplete_masks": [
+    "first_half",
+    "second_half",
+    "alternating"
+  ],
+  "model": {
+    "factorized_qk_v": true,
+    "layernorm_eps": 1e-05,
+    "no_residual_bypass": true,
+    "seeds": [
+      5101,
+      5102,
+      5103
+    ],
+    "slots": 8,
+    "vocab": 32,
+    "width": 64
+  },
+  "namespace": "trained_copy_external_v1_20260810r5",
+  "panels": {
+    "confirmation": {
+      "blocks": 24,
+      "rows_per_block": 8,
+      "seed": 20261122
+    },
+    "development": {
+      "blocks": 24,
+      "rows_per_block": 8,
+      "seed": 20261121
+    },
+    "train": {
+      "blocks": 256,
+      "rows_per_block": 32,
+      "seed": 20261120
+    }
+  },
+  "recovery": {
+    "failure_preservation": "reports/provenance/capacity_external_validity_v1_failure_preservation/PRESERVATION.json",
+    "fresh_checkpoint_initialization": true,
+    "invalid_r2_candidate_preservation": "reports/provenance/capacity_external_validity_v1_r2_invalid_candidate/PRESERVATION.json",
+    "invalid_r3_candidate_preservation": "reports/provenance/capacity_external_validity_v1_r3_invalid_candidate/PRESERVATION.json",
+    "invalid_r4_candidate_preservation": "reports/provenance/capacity_external_validity_v1_r4_invalid_candidate/PRESERVATION.json",
+    "payloads_preexisting": true,
+    "technical_successor_of": "trained_copy_external_v1_20260810",
+    "v1_checkpoint_reuse": false
+  },
+  "routing_qa": {
+    "hybrid_atol": 1e-07,
+    "hybrid_rtol": 1e-06,
+    "weights_exact": true
+  },
+  "runtime": {
+    "candidate_review": "reports/adversarial/trained_copy_external_v1_r5_candidate_review.md",
+    "candidate_root": "reports/provenance/trained_copy_external_v1_r5_candidate",
+    "freeze": "configs/trained_copy_external_v1_r5/FREEZE.json",
+    "frozen_review": "reports/adversarial/trained_copy_external_v1_r5_frozen_review.md",
+    "generator_lock": "configs/trained_copy_external_v1_r5/RECOVERY_BINDING.json",
+    "output_root": "results/trained_copy_external_v1_20260810r5",
+    "prepared_root": "data/trained_copy_external_v1_prepared",
+    "provenance_root": "reports/provenance/trained_copy_external_v1_r5_run_20260810r5"
+  },
+  "schema_version": "trained_copy_external_v1_config",
+  "scope": {
+    "k2_evaluated": false,
+    "natural_language_claim": false,
+    "pretrained_model": false,
+    "trained_synthetic_transformer": true
+  },
+  "seed": 20261120,
+  "training": {
+    "batch_size": 256,
+    "checkpoint_steps": [
+      4000
+    ],
+    "grad_clip": 1.0,
+    "learning_rate": 0.003,
+    "optimizer": "adamw",
+    "sampling_seed_offset": 6100,
+    "steps": 4000,
+    "weight_decay": 0.0001
+  }
+}

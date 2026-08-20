@@ -1,0 +1,218 @@
+{
+  "analysis_only": true,
+  "causal_manifold_bridge": {
+    "both_exact_identity_technical_pass_cells": 358,
+    "confirmation_artifacts_absent": true,
+    "confirmation_opened": false,
+    "development_cell_generator_records": 512,
+    "exact_controls": {
+      "exact_controller": {
+        "support_pass_cells": 487,
+        "supported_control_margin_failures": {
+          "matched": 95,
+          "native": 92
+        },
+        "supported_metric_point_means": {
+          "matched": {
+            "collateral_error": 1.033353150107422e-07,
+            "control_margin": 0.9972686532892485,
+            "full_vocab_recovery": 0.9999998997613879,
+            "necessity": 0.9999999998776086,
+            "recovery": 0.999999999755217,
+            "sham_specificity": 1.0204678475244824
+          },
+          "native": {
+            "collateral_error": 1.033353150107422e-07,
+            "control_margin": 0.9940436843484334,
+            "full_vocab_recovery": 0.9999998997613879,
+            "necessity": 0.9999999998776086,
+            "recovery": 0.999999999755217,
+            "sham_specificity": 1.0517986127972847
+          }
+        },
+        "technical_pass_cells": 368,
+        "total_cells": 512
+      },
+      "identity_full640": {
+        "support_pass_cells": 487,
+        "supported_control_margin_failures": {
+          "matched": 91,
+          "native": 91
+        },
+        "supported_metric_point_means": {
+          "matched": {
+            "collateral_error": 1.033353150107422e-07,
+            "control_margin": 0.9943274571665504,
+            "full_vocab_recovery": 0.9999998997613879,
+            "necessity": 0.9999999998776086,
+            "recovery": 0.999999999755217,
+            "sham_specificity": 1.0204678475244824
+          },
+          "native": {
+            "collateral_error": 1.033353150107422e-07,
+            "control_margin": 1.0038187880780418,
+            "full_vocab_recovery": 0.9999998997613879,
+            "necessity": 0.9999999998776086,
+            "recovery": 0.999999999755217,
+            "sham_specificity": 1.0517986127972847
+          }
+        },
+        "technical_pass_cells": 372,
+        "total_cells": 512
+      }
+    },
+    "exact_qa_pass_cells": 512,
+    "incomplete_qa_pass_cells": 512,
+    "interpretation": "The intervention implementations and exact-recovery metrics worked, but support and random-control-margin requirements failed in a material subset of the factorial. The all-cell development gate therefore correctly blocked confirmation and all method/factorial claims.",
+    "preconfirmation": {
+      "all_128_cells_all_generators_exact_identity_pass": false,
+      "artifact_reconciliation": {
+        "development_records_match": true,
+        "fit_checkpoints_match": true,
+        "fit_records_match": true,
+        "frozen_inputs_verified": true,
+        "pass": true
+      },
+      "confirmation_authorized": false,
+      "estimated_method_outcomes_used_for_authorization": false
+    },
+    "preconfirmation_sha256": "3aa28298047a37a6f8ef53e130a4ff53e37f4c10aa7a2b2e6c5a3dbfc219bf96",
+    "terminal_status": "BRIDGE_DEVELOPMENT_TECHNICAL_STOP",
+    "view_firewall_pass_cells": 512
+  },
+  "experiment_namespaces_unchanged": true,
+  "sae_capacity": {
+    "confirmation_opened": true,
+    "family_count": 114,
+    "family_pass_count": 29,
+    "final_path": "results/trained_copy_sae_capacity_v1_r2_20260813/final/result.json",
+    "final_sha256": "ded94fae6d194d7bb5329f5f8617ca29298b12d63840ac2f5349426125cbe5be",
+    "interpretation": "Every sub-full SAE feature budget failed at least one gate in every checkpoint/panel/seed record, while the full 256-feature budget passed every record. Rank-32 PCA, output-oracle, and paired-linear controllers passed, so intrinsic rank alone does not explain the SAE subset failure.",
+    "linear_method_name_conjunction_passes": [
+      "ambient_pca_rank32",
+      "ambient_pca_rank64",
+      "exact_head_delta",
+      "identity_full64",
+      "output_oracle_rank32",
+      "output_oracle_rank64",
+      "paired_latent_width256_parameter_match_seed9701",
+      "paired_latent_width256_parameter_match_seed9702",
+      "paired_latent_width256_parameter_match_seed9703",
+      "paired_linear_rank32_seed9701",
+      "paired_linear_rank32_seed9702",
+      "paired_linear_rank32_seed9703",
+      "paired_linear_rank64_seed9701",
+      "paired_linear_rank64_seed9702",
+      "paired_linear_rank64_seed9703",
+      "random_rank64_identity_qa"
+    ],
+    "method_name_conjunction_pass_count": 76,
+    "method_records": 1938,
+    "methods_per_model_panel": 323,
+    "model_seeds": [
+      "5101",
+      "5102",
+      "5103"
+    ],
+    "random_rank64_is_identity_equivalent_qa": true,
+    "registered_global_rank_bracket": "(16, 32]",
+    "sae_budget_summary": {
+      "128": {
+        "all_gates_pass_records": 0,
+        "matched_point_mean": {
+          "collateral_error": 0.2850362995352043,
+          "control_margin": 0.789521079758803,
+          "full_vocab_recovery": 0.6809006891316838,
+          "necessity": 0.901402873131964,
+          "recovery": 0.7990377043684324,
+          "sham_specificity": 0.7998854307664766
+        },
+        "records": 360
+      },
+      "16": {
+        "all_gates_pass_records": 0,
+        "matched_point_mean": {
+          "collateral_error": 0.49568051780402633,
+          "control_margin": 0.26896126998795405,
+          "full_vocab_recovery": 0.26979211407403153,
+          "necessity": 0.6010732947124375,
+          "recovery": 0.27823411449790003,
+          "sham_specificity": 0.27260277171929675
+        },
+        "records": 360
+      },
+      "256": {
+        "all_gates_pass_records": 360,
+        "matched_point_mean": {
+          "collateral_error": 0.002072674660478116,
+          "control_margin": 0.9906877876983748,
+          "full_vocab_recovery": 0.9979671875635783,
+          "necessity": 0.9999936971399519,
+          "recovery": 0.9999872763951619,
+          "sham_specificity": 1.00221858686871
+        },
+        "records": 360
+      },
+      "32": {
+        "all_gates_pass_records": 0,
+        "matched_point_mean": {
+          "collateral_error": 0.463889042017076,
+          "control_margin": 0.3961637098756101,
+          "full_vocab_recovery": 0.3625397385822402,
+          "necessity": 0.6824577485521635,
+          "recovery": 0.4055193515287505,
+          "sham_specificity": 0.4019506822857592
+        },
+        "records": 360
+      },
+      "64": {
+        "all_gates_pass_records": 0,
+        "matched_point_mean": {
+          "collateral_error": 0.4020528900516284,
+          "control_margin": 0.5696680321461625,
+          "full_vocab_recovery": 0.49454148188233377,
+          "necessity": 0.7834810839758979,
+          "recovery": 0.5793226367897457,
+          "sham_specificity": 0.577949407696724
+        },
+        "records": 360
+      }
+    },
+    "sae_fit_diagnostics_by_topk": {
+      "128": {
+        "ambient_reconstruction_relative_l2": 0.0032295426612512935,
+        "final_loss": 4.8658152233353276e-06,
+        "full_code_delta_relative_l2": 0.002505434211343527,
+        "initial_loss": 0.6734417743153043
+      },
+      "16": {
+        "ambient_reconstruction_relative_l2": 0.0058903796080913805,
+        "final_loss": 1.7218925980463002e-05,
+        "full_code_delta_relative_l2": 0.00499933210408522,
+        "initial_loss": 0.5520087480545044
+      },
+      "256": {
+        "ambient_reconstruction_relative_l2": 0.0032237598982950053,
+        "final_loss": 4.881631765682768e-06,
+        "full_code_delta_relative_l2": 0.0025080355763849285,
+        "initial_loss": 0.6645122965176901
+      },
+      "32": {
+        "ambient_reconstruction_relative_l2": 0.004493444407772686,
+        "final_loss": 9.348606858515672e-06,
+        "full_code_delta_relative_l2": 0.0036267325178616578,
+        "initial_loss": 0.5979295240508186
+      },
+      "64": {
+        "ambient_reconstruction_relative_l2": 0.0033962978050112724,
+        "final_loss": 5.292342141021638e-06,
+        "full_code_delta_relative_l2": 0.0023510618419903847,
+        "initial_loss": 0.6474363870090909
+      }
+    },
+    "terminal_hash_matches": true,
+    "terminal_status": "SAE_CAPACITY_COMPLETE"
+  },
+  "schema_version": "trained_control_next_studies_v1_r2_postresult_summary_v1",
+  "scope": "Study A is a valid result on the registered trained synthetic copy transformer. Study B is an endpoint/positive-control qualification stop, not a negative result about estimated representation methods. Neither study supports a general pretrained-language-model claim."
+}
