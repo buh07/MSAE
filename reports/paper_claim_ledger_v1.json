@@ -170,7 +170,7 @@
       "evidence": [
         {
           "path": "reports/atlas_completion_results.md",
-          "selector": "| Four K2 point/refit series | four points and `4 \u00d7 500` draws produced | every series `414/500` scientifically finite; stopped below `>=450` |",
+          "selector": "| Four K2 point/refit series | four points and `4 × 500` draws produced | every series `414/500` scientifically finite; stopped below `>=450` |",
           "sha256": "c41eec6df564e5ebb85bef0e722dcee604ffa38bc2a1d4035bcea2a6b46c0db0"
         }
       ],
@@ -239,7 +239,7 @@
       "evidence": [
         {
           "path": "reports/adversarial/atlas_measurement_v2_v24_claim_review.md",
-          "selector": "- Token-identity probe localization passes for all candidates (assigned-recovery points `0.834`\u2013`0.862`,",
+          "selector": "- Token-identity probe localization passes for all candidates (assigned-recovery points `0.834`–`0.862`,",
           "sha256": "639ea11beb1d45080828bb84f8d2e5088cd39e0c86fbc990702c256e1acab346"
         }
       ],
@@ -1171,7 +1171,7 @@
         },
         {
           "path": "reports/claim_review/relational_measurement_v4_post_result_claim_review.md",
-          "selector": "  - `data/relational_measurement_v4/prepared.json` \u2014 the dominant failures were morphology-indicator\n    imbalance and propensity overlap: coarse-exact maximum eligible-panel indicator SMDs ranged\n    0.1443\u20130.5101 and propensity central fractions 0.824\u20130.946; optimal-caliper improved numeric\n    balance but indicator SMDs remained 0.1255\u20130.3712 and propensity central fractions 0.839\u20130.930,\n    against frozen limits 0.10 and 0.99 respectively.",
+          "selector": "  - `data/relational_measurement_v4/prepared.json` — the dominant failures were morphology-indicator\n    imbalance and propensity overlap: coarse-exact maximum eligible-panel indicator SMDs ranged\n    0.1443–0.5101 and propensity central fractions 0.824–0.946; optimal-caliper improved numeric\n    balance but indicator SMDs remained 0.1255–0.3712 and propensity central fractions 0.839–0.930,\n    against frozen limits 0.10 and 0.99 respectively.",
           "sha256": "c8495d68bbba562833eb0e6de57975a119bd4ea7b401a1445a6981c9ea5fdd5a"
         }
       ],
@@ -1238,7 +1238,7 @@
       "evidence": [
         {
           "path": "reports/claim_review/relational_measurement_v4_post_result_claim_review.md",
-          "selector": "  - `reports/provenance/relational_measurement_v4_tmux.log` \u2014 create-once execution completed without\n    a failure artifact; six weighted-scaler numerical warnings occurred during preparation/rebuild,\n    but no nonfinite result survived the frozen checks.",
+          "selector": "  - `reports/provenance/relational_measurement_v4_tmux.log` — create-once execution completed without\n    a failure artifact; six weighted-scaler numerical warnings occurred during preparation/rebuild,\n    but no nonfinite result survived the frozen checks.",
           "sha256": "c8495d68bbba562833eb0e6de57975a119bd4ea7b401a1445a6981c9ea5fdd5a"
         },
         {
@@ -3555,9 +3555,315 @@
         "feature indices were not compared across independently trained SAEs."
       ],
       "status": "valid"
+    },
+    {
+      "id": "C097",
+      "status": "exploratory",
+      "claim": "The SAE basis-selection successor changed fit size and seeds relative to R2; excellent fit reconstruction did not generalize to held-out panels, so it is a generalization warning rather than a basis indictment.",
+      "evidence": [
+        {
+          "path": "reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md",
+          "sha256": "eafb06bd4d54ed49d9ad7040661cd4d43e976deea91bc628766489b26c2f9988",
+          "selector": "the new SAE study used 64 fit rows versus 2,048 in R2, while also changing SAE and panel seeds"
+        },
+        {
+          "path": "reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md",
+          "sha256": "eafb06bd4d54ed49d9ad7040661cd4d43e976deea91bc628766489b26c2f9988",
+          "selector": "fit reconstruction relative L2 mean 0.00411, range 0.00275–0.00678; fit donor-delta error mean 0.00273."
+        },
+        {
+          "path": "reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md",
+          "sha256": "eafb06bd4d54ed49d9ad7040661cd4d43e976deea91bc628766489b26c2f9988",
+          "selector": "approximately 0.606 held-out reconstruction relative L2 and approximately 0.588–0.596 held-out donor-delta error."
+        },
+        {
+          "path": "results/trained_copy_sae_basis_selection_v1_20260814/final/result.json",
+          "sha256": "55627f52e5c8d8b89831d7accd3c4245de7da3aac61971300e1d089d1cf37514",
+          "pointer": "/status",
+          "expected": "SAE_BASIS_SELECTION_COMPLETE"
+        }
+      ],
+      "paper_selectors": [
+        "The August basis-selection successor does not overturn the R2 capacity result.",
+        "The appropriate interpretation is a severe fit-to-held-out"
+      ]
+    },
+    {
+      "id": "C098",
+      "status": "exploratory",
+      "claim": "The successor passed ambient PCA and full-rank span oracles but no SAE code or supervised OMP family; rank-64 spans demonstrate ambient expressibility, not low-dimensional localization.",
+      "evidence": [
+        {
+          "path": "reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md",
+          "sha256": "eafb06bd4d54ed49d9ad7040661cd4d43e976deea91bc628766489b26c2f9988",
+          "selector": "New SAE formal gates — ambient PCA rank 32 passed 6/6 checkpoint-panel records; full-code SAE passed 0/54; partial code patches passed 0/1,296; supervised OMP coefficient patches passed 0/270; selected-span and full-decoder-span oracles passed all records with rank 64."
+        },
+        {
+          "path": "results/trained_copy_sae_basis_selection_v1_20260814/final/result.json",
+          "sha256": "55627f52e5c8d8b89831d7accd3c4245de7da3aac61971300e1d089d1cf37514",
+          "pointer": "/family_pass_all_panels_checkpoints_method_seeds_estimands/ambient_pca_rank32",
+          "expected": true
+        },
+        {
+          "path": "results/trained_copy_sae_basis_selection_v1_20260814/final/result.json",
+          "sha256": "55627f52e5c8d8b89831d7accd3c4245de7da3aac61971300e1d089d1cf37514",
+          "pointer": "/family_pass_all_panels_checkpoints_method_seeds_estimands/full_code_sae",
+          "expected": false
+        },
+        {
+          "path": "results/trained_copy_sae_basis_selection_v1_20260814/final/result.json",
+          "sha256": "55627f52e5c8d8b89831d7accd3c4245de7da3aac61971300e1d089d1cf37514",
+          "pointer": "/family_pass_all_panels_checkpoints_method_seeds_estimands/decoder_full_span_oracle",
+          "expected": true
+        }
+      ],
+      "paper_selectors": [
+        "The successor's formal gates reinforce that limitation.",
+        "Those oracles"
+      ]
+    },
+    {
+      "id": "C099",
+      "status": "technical-invalid",
+      "claim": "Bridge v2 repaired qualification controls on supported endpoints, but 20 endpoints missed the support floor and the protocol stopped before validation.",
+      "evidence": [
+        {
+          "path": "reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md",
+          "sha256": "eafb06bd4d54ed49d9ad7040661cd4d43e976deea91bc628766489b26c2f9988",
+          "selector": "Bridge qualification shards — exact QA, view firewall and incomplete-controller QA passed 512/512; 492/512 endpoints met support and all 492 passed exact joint-control gates; the 20 misses had 97–119 eligible rows against the frozen minimum of 120."
+        },
+        {
+          "path": "results/causal_manifold_bridge_v2_technical_20260814/PREVALIDATION.json",
+          "sha256": "1439cf1004d5301c08d5640bc50fda1b5091dcf863c2be05379ced55a21929a9",
+          "pointer": "/all_512_endpoints_pass",
+          "expected": false
+        },
+        {
+          "path": "results/causal_manifold_bridge_v2_technical_20260814/PREVALIDATION.json",
+          "sha256": "1439cf1004d5301c08d5640bc50fda1b5091dcf863c2be05379ced55a21929a9",
+          "pointer": "/validation_authorized",
+          "expected": false
+        },
+        {
+          "path": "reports/provenance/causal_manifold_bridge_v2_technical_run_20260814/TERMINAL.json",
+          "sha256": "ec79e9d72b82da2efa7a12cc82e425f76c74ac0e10b6eccb6b581411c1ea076a",
+          "pointer": "/status",
+          "expected": "BRIDGE_V2_QUALIFICATION_TECHNICAL_STOP"
+        }
+      ],
+      "paper_selectors": [
+        "Bridge v2 successfully repaired its technical control layer:",
+        "The remaining 20 endpoints"
+      ]
+    },
+    {
+      "id": "C100",
+      "status": "technical-invalid",
+      "claim": "Bridge v2 did not evaluate bridge methods, factorial effects, or validation performance.",
+      "evidence": [
+        {
+          "path": "reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md",
+          "sha256": "eafb06bd4d54ed49d9ad7040661cd4d43e976deea91bc628766489b26c2f9988",
+          "selector": "Do not claim that bridge methods, factorial effects, or validation performance were evaluated."
+        },
+        {
+          "path": "results/causal_manifold_bridge_v2_technical_20260814/PREVALIDATION.json",
+          "sha256": "1439cf1004d5301c08d5640bc50fda1b5091dcf863c2be05379ced55a21929a9",
+          "pointer": "/estimated_method_outcomes_used_for_authorization",
+          "expected": false
+        },
+        {
+          "path": "results/causal_manifold_bridge_v2_technical_20260814/PREVALIDATION.json",
+          "sha256": "1439cf1004d5301c08d5640bc50fda1b5091dcf863c2be05379ced55a21929a9",
+          "pointer": "/validation_authorized",
+          "expected": false
+        }
+      ],
+      "paper_selectors": [
+        "No bridge-method comparison, factorial effect, or validation",
+        "method validation was never opened and no scientific bridge comparison exists."
+      ]
+    },
+    {
+      "id": "C101",
+      "status": "technical-invalid",
+      "claim": "AMALGUM v3 remains exposed-source calibration only; its gen9 control plane was rejected before changed-region publication or model scoring and cannot be described as independent replication or confirmation.",
+      "evidence": [
+        {
+          "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_rejection.md",
+          "sha256": "05a476b5777256b8ea26175b47d3797bfa31a75a960759e35202a289a0ca1e76",
+          "selector": "No v3 model scoring was launched."
+        },
+        {
+          "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_rejection.md",
+          "sha256": "05a476b5777256b8ea26175b47d3797bfa31a75a960759e35202a289a0ca1e76",
+          "selector": "**exposed-source calibration**, never an independent replication or confirmation,"
+        },
+        {
+          "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_rejection.md",
+          "sha256": "05a476b5777256b8ea26175b47d3797bfa31a75a960759e35202a289a0ca1e76",
+          "selector": "Decision: **REJECT the current gen9 implementation; do not publish, contain, probe, set up M3/M4, sign, or launch it.**"
+        }
+      ],
+      "paper_selectors": [
+        "The later AMALGUM v3 branch does not supply independent confirmation.",
+        "the retained source is therefore exposed-source calibration material only"
+      ]
+    },
+    {
+      "id": "C102",
+      "status": "development-prescore",
+      "claim": "V10 acquired the configured UniversalDependencies/UD_Swedish-Talbanken repository at an immutable commit and verified its exact configured tree; the frozen source-family and candidate-pedigree screens were eligible with zero blocking project-history evidence under their narrow definitions.",
+      "evidence": [
+        {
+          "path": "reports/provenance/msae_independent_source_v10/source_acquisition.json",
+          "sha256": "eab784620840cefc532dc72681c36640443ddeaf1f08eee6b4cffd545d3b2a1d",
+          "pointer": "/source_repo",
+          "expected": "https://github.com/UniversalDependencies/UD_Swedish-Talbanken.git"
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/source_acquisition.json",
+          "sha256": "eab784620840cefc532dc72681c36640443ddeaf1f08eee6b4cffd545d3b2a1d",
+          "pointer": "/source_commit",
+          "expected": "c434778d9511be5c35a6a11531f0107a960fb5d6"
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/source_acquisition.json",
+          "sha256": "eab784620840cefc532dc72681c36640443ddeaf1f08eee6b4cffd545d3b2a1d",
+          "pointer": "/tree_verified_from_ls_tree",
+          "expected": true
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/source_family.json",
+          "sha256": "a5b53c4a48d0c2751c681958e40233cd43fe081e338335d6fd7654d48d0f6056",
+          "pointer": "/status",
+          "expected": "eligible"
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/source_family.json",
+          "sha256": "a5b53c4a48d0c2751c681958e40233cd43fe081e338335d6fd7654d48d0f6056",
+          "pointer": "/content_occurrence_count",
+          "expected": 0
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/source_family.json",
+          "sha256": "a5b53c4a48d0c2751c681958e40233cd43fe081e338335d6fd7654d48d0f6056",
+          "pointer": "/pathname_occurrence_count",
+          "expected": 0
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/source_family.json",
+          "sha256": "a5b53c4a48d0c2751c681958e40233cd43fe081e338335d6fd7654d48d0f6056",
+          "pointer": "/whole_file_digest_matches",
+          "expected": []
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/candidate_pedigree.json",
+          "sha256": "dbbb8b278dd0fac93d317a3158f240217002f805c559fdf0b3a158a84ecd70e3",
+          "pointer": "/status",
+          "expected": "eligible"
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/candidate_pedigree.json",
+          "sha256": "dbbb8b278dd0fac93d317a3158f240217002f805c559fdf0b3a158a84ecd70e3",
+          "pointer": "/blocking_identifier_count",
+          "expected": 0
+        }
+      ],
+      "paper_selectors": [
+        "A source was subsequently acquired from the UniversalDependencies/UD_Swedish-Talbanken repository",
+        "The prospective source-family screen found zero content,"
+      ]
+    },
+    {
+      "id": "C103",
+      "status": "development-prescore",
+      "claim": "V10 stopped at a 100-witness cross-role overlap gate before full history/support analysis or payload publication; no scoring or training was authorized, and the terminal rejection is not a model result or independent replication.",
+      "evidence": [
+        {
+          "path": "reports/provenance/msae_independent_source_v10/cross_role_overlap.json",
+          "sha256": "ce81b37b2357fa2aafe39cc8df81763c1d7b73798d993f2912e633b2cd4dad9a",
+          "pointer": "/status",
+          "expected": "ineligible"
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/cross_role_overlap.json",
+          "sha256": "ce81b37b2357fa2aafe39cc8df81763c1d7b73798d993f2912e633b2cd4dad9a",
+          "pointer": "/blocking_collision_count",
+          "expected": 100
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/status",
+          "expected": "rejected_after_scientific_entry"
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/failure_code",
+          "expected": "cross_role_overlap"
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/payload_state/0/state",
+          "expected": "absent"
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/model_scoring_authorized",
+          "expected": false
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/training_runs_initiated_by_builder",
+          "expected": 0
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/model_operations_initiated_by_builder",
+          "expected": 0
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/gpu_queries_initiated_by_builder",
+          "expected": 0
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/k2_or_branch_training_authorized",
+          "expected": false
+        },
+        {
+          "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+          "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+          "pointer": "/stage_c_authorized",
+          "expected": false
+        },
+        {
+          "path": "reports/adversarial/msae_independent_source_v10_terminal_failure_review.md",
+          "sha256": "dfa3974182bc64ecd94934b72efc0a5a1a47559e74a036e4f8d87fa435463d80",
+          "selector": "Seal, no-training gate, history-overlap, support, role, and split outputs are absent."
+        },
+        {
+          "path": "reports/adversarial/msae_independent_source_v10_terminal_failure_review.md",
+          "sha256": "dfa3974182bc64ecd94934b72efc0a5a1a47559e74a036e4f8d87fa435463d80",
+          "selector": "this is a control-plane/scientific data-gate rejection. It is not model evidence, not a score, not a replication result, and specifically not independent replication."
+        }
+      ],
+      "paper_selectors": [
+        "V10 nevertheless failed its next scientific data gate.",
+        "The builder initiated"
+      ]
     }
   ],
   "paper": "PAPER.md",
   "schema_version": "paper_claim_ledger_v1",
-  "scope": "MSAE project through trained-copy SAE-capacity R2 and its frozen no-forward geometry analysis; basis-selection and bridge-v2 successors pending"
+  "scope": "MSAE project through the reviewed August SAE basis-selection/bridge-v2 follow-ups and the September gen9/V10 confirmation-readiness dispositions"
 }

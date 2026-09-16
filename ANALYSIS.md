@@ -1,5 +1,88 @@
 # MSAE Analysis
 
+## Current synthesis after August follow-ups and source-gate disposition (2026-09-15)
+
+**Current decision: keep K2 and branch training closed.** The project now has a
+stronger positive-control and capacity story, but no evidence that rescues the
+original semantic-branch interpretation. The exposed AMALGUM v3 source cannot
+serve as independent replication, and its gen9 control plane was rejected before
+any model scoring. A genuinely new source must pass source-family, support,
+official-role, and full accessible-history overlap gates before any scoring; even
+a successful source gate would authorize only a future prescore protocol, not
+training.
+
+The most durable conclusions are:
+
+1. **Encoding is not separability.** Positional, structural, lexical, and
+   contextual signals are decodable, and learned K2 geometry is highly stable,
+   but the eligible v2.4, relational, and context/local studies do not show
+   private functional ownership. Relative-quartile leakage exceeded assigned
+   recovery in the headline g4 comparison, relation-aware features did not beat
+   matched alternatives consistently, and coherent context barely exceeded
+   unrelated context.
+2. **Potency is not precision.** Proxy benchmarks repeatedly find methods that
+   move the target behavior, but increased recovery often accompanies leakage or
+   collateral damage. The v2 joint gate passed for none of 972 controlled method
+   summaries. The released-method v3 natural endpoint was itself ineligible, so
+   it cannot support an all-method negative.
+3. **Contribution is not sufficient control.** IOI and induction assays showed
+   real directional behavior and causal contribution while failing the full
+   recovery/specificity qualification. Exact full-residual and constructed
+   controls demonstrate that the evaluator can return a positive result when a
+   complete mechanism is supplied.
+4. **Capacity matters, but basis span is not the whole explanation.** In trained
+   synthetic copies, paired/global and several donor-compression controllers pass
+   once rank is adequate, with the supported sufficient-rank transition bracketed
+   in `(16,32]`. SAE-capacity R2 is the primary SAE result: full-code patching
+   passed while every registered sub-full subset failed despite low reconstruction
+   error. Since budget-64 decoder spans already cover the successful PCA span,
+   missing span alone cannot explain the subset failures.
+5. **The August successor is a generalization warning, not a basis indictment.**
+   Its 64-row fit changed data quantity, seeds, and panels relative to R2. Excellent
+   fit error degraded to roughly 0.6 held-out relative error, while every selected
+   span was empirically full rank. The failure therefore does not isolate basis
+   learning, feature selection, coefficients, or conditioning. R2 remains primary.
+6. **Bridge v2 repaired machinery but produced no bridge-method result.** All 492
+   supported endpoints passed its exact control checks, but 20 endpoints missed
+   the support floor and the protocol stopped before validation. Calling this a
+   method comparison would cross the evidence boundary.
+7. **Gen9 is closed as an implementation rejection.** Safe predecessor and CPU
+   tests exposed stale authority hashes, failed changed-region construction, a
+   misbound gen7 review, incomplete static closure, containment-node mismatch, a
+   stale socket namespace, and missing publication/recovery definitions. Because
+   the frozen sequence stops on those failures, omitting changed-region
+   publication, real containment, capability probing, M3/M4, signing, and launch
+   is the correct completion of that candidate—not unfinished execution.
+8. **V10 did not yield a blind payload.** It acquired and cryptographically bound
+   the configured UniversalDependencies Swedish-Talbanken repository tree. Its
+   source-family and candidate-pedigree screens were eligible,
+   but the frozen cross-role gate retained 100 fail-fast witnesses (98 short
+   containments and two exact overlaps). The protocol therefore stopped before
+   full history-overlap/support evaluation, split publication, or private payload
+   creation. This identifies source/role design as the next observed blocker; it
+   does not exclude later history-overlap or support blockers, is not a model
+   result, and does not establish independent replication, researcher unawareness,
+   or model-pretraining independence.
+
+### Evidence hierarchy and next legitimate step
+
+The scientific hierarchy is now: exact/constructed controls establish evaluator
+reachability; trained-copy studies establish conditional capacity results; natural
+and pretrained-model assays test external validity; only endpoints clearing their
+own support and specificity gates can adjudicate representation methods. Positive
+metrics below a failed common gate remain descriptive. Technical eligibility is
+not scientific success, and a technical stop is not a negative representation
+result.
+
+The only legitimate immediate continuation is a **new reviewed source protocol**:
+prospectively freeze either a genuinely new source or an outcome-blind role/group
+construction that prevents cross-role leakage, then establish license,
+source-family, pedigree, cross-role separation, full accessible-history overlap,
+and support before publishing a replacement payload. V10 itself is terminal and
+must not be repaired or retried. Do not reopen AMALGUM as confirmation, do not
+lower old gates, and do not restart K2 or train a new branch before a separately
+reviewed independent scoring protocol exists.
+
 ## Current atlas-v1 interpretation after diagnostic completion (2026-08-02)
 
 **Current decision: equivocal/no-decision; do not begin new model training now.** The frozen post-score completion and its independently reviewed additive diagnostic continuation did not resolve that decision. Primary L3 and all four K2 checkpoints had only `414/500` scientifically finite refit draws versus the registered `>=450` minimum; stability had `0/500` jointly finite draws; and all four specificity computations had invalid counterfactual gates. This supersedes the older model-side recommendations later in this document. Those sections remain a historical interpretation of the pre-K2 and training evidence, not current authorization for more training.

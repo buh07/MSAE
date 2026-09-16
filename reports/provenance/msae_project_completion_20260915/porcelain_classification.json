@@ -1,0 +1,2505 @@
+{
+  "baseline_head": "7e1a6fc7a26a870a4edcf29c96b7cdf3cdbd7faa",
+  "commit_results": [
+    {
+      "commit": "934e3905317e1701c54a8792493e8021236b0862",
+      "logical_commit": "01_calibration_control_plane",
+      "review_path": "reports/adversarial/msae_project_completion_20260915_commit1_review.md",
+      "review_sha256": "a5db1089cb1682ca0619d0d34180c82aa1106e9e4e934f19223c4b7487414b56",
+      "review_verdict": "SHIP",
+      "verified_test_summary": "55 passed; staged Python/shell/JSON syntax checks passed; intentional gen9 failures retained in bound transcript"
+    },
+    {
+      "commit": "e122d07baf616fe4657d134c70d7d0f80a8591bb",
+      "logical_commit": "02_independent_source_readiness",
+      "review_path": "reports/adversarial/msae_project_completion_20260915_commit2_review.md",
+      "review_sha256": "1698f219738817991f13ce646a9d3327834ac19786a0544b46a4ae39bbf5c80a",
+      "review_verdict": "SHIP",
+      "verified_test_summary": "789 source-free tests passed; staged Python/JSON syntax checks passed"
+    }
+  ],
+  "entries": [
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": ".gitattributes",
+      "sha256": "1c576a96d98614c4d567f65c2db5ed6c6faeef8d77df49c6b91caa479f8e09ed",
+      "size": 410,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "ANALYSIS.md",
+      "sha256": "f44a06dc579cfabcaca3ed0b062a98ad61548c4278333575c675615d5ba8cfa5",
+      "size": 35671,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "PAPER.md",
+      "sha256": "38618d9bcff3dfd9d1776b2ba786a44e47f7748eb3dddd7d53fc6fa13e6d15d3",
+      "size": 89258,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "RESULTS.md",
+      "sha256": "a70c4168224589d1b709ca6ea0ec19d41be7fa22d43368f3664eb9627f9ddeb5",
+      "size": 44275,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "TODO.md",
+      "sha256": "42ebc8f4db324305f5481a25d5a7db16af163ce45bf4ead4da27ce5a1678e217",
+      "size": 90319,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_independent_measurement_v1/protocol.json",
+      "sha256": "f958760a3b50e17dc80be85e2b376dcdee045720814621da66f7f942867041d7",
+      "size": 109254,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_independent_measurement_v3/authorization_commitment.json",
+      "sha256": "91626e9cd539a58b874c10a625a9d2c1bf1e07b76ea5b4a50493244a472e09d1",
+      "size": 3539,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_independent_measurement_v3/ed25519_public.pem",
+      "sha256": "0d79e3575a7eed4104b3b48538c438e4a0f484ac539b7e17018b4452819ef5fd",
+      "size": 113,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_independent_measurement_v3/protocol.json",
+      "sha256": "7bb766e177c68184da1df040f10e087c4d85c7c8c6bdae35d3ecd8c992e5efab",
+      "size": 67160,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_independent_measurement_v3_post_m2_gen2/authorization_commitment.json",
+      "sha256": "2c7810c667e051d1dbf4742ec35fd1d70aac7e953c20ee325203d1e45126151d",
+      "size": 3619,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_independent_measurement_v3_post_m2_gen2/cpu_no_model_public_entry_trace.json",
+      "sha256": "0d9ce79822888aa8096018e3b271cf15fb0a02044c7a2d1af41afa28423e3ce2",
+      "size": 901175,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_independent_measurement_v3_post_m2_gen2/ed25519_public.pem",
+      "sha256": "5979c460dbdd5c2d54077848b3f31874afeec94481812bd1a784f2c17a7e766d",
+      "size": 113,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_independent_measurement_v3_post_m2_gen2/protocol.json",
+      "sha256": "0abb5276f5241fc8bd206b271d63a11ece254adbbf6f66cc54f414121ce73c4e",
+      "size": 99931,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "configs/msae_independent_source_v10/acquisition.json",
+      "sha256": "e1ecf56829419baa397c61bf7919e191955ee57cc397236a6f4f9f36e8e08782",
+      "size": 1810,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "configs/msae_independent_source_v5/acquisition.json",
+      "sha256": "6b53511b6d0976ada49a7f090b884d7faeb7db3afb55da9a2f593c369af3e66d",
+      "size": 1812,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "configs/msae_independent_source_v6/acquisition.json",
+      "sha256": "9a299aa464a4c8f0765c3d48bc8e225382a8a03734e5c046eb9ef965efeaec22",
+      "size": 1812,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "configs/msae_independent_source_v7/acquisition.json",
+      "sha256": "30fad65ac10b504a5810b7015c153c53501d18d2dcadc1204795701391b579bd",
+      "size": 1779,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "configs/msae_independent_source_v8/acquisition.json",
+      "sha256": "8383d3ba80ac1296887c243e00d09b6b9a5e79b19f771934a1ddd07ceac56df9",
+      "size": 1809,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "configs/msae_independent_source_v9/acquisition.json",
+      "sha256": "db736634650af6b191f41c7ad48cae354dbee4a9a68e92ec69f7375655e2a5d5",
+      "size": 1809,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "configs/msae_measurement_remediation_v1/draft.json",
+      "sha256": "d070399035660680524922f1e5ddb24868c3778b1e947351ed42689dffb1429b",
+      "size": 1877,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/plan-msae-independent-measurement-v3-post-m4-gen3.md",
+      "sha256": "c4ea59571eacc970cb282a44460367ff25fd67b972fe4a957da165ac3e579ef7",
+      "size": 17365,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/plan-msae-independent-measurement-v3-post-m4-gen4.md",
+      "sha256": "c443a9eba2305a488b9948467676829c4d317cd67d9c4936a339d6af33bd023b",
+      "size": 38790,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/plan-msae-independent-measurement-v3-post-m5-gen5.md",
+      "sha256": "757ee41fc7ec5440ef1e5d0b132528d86a43a43cd7fc145be828fe5355fe723e",
+      "size": 61261,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/plan-msae-independent-measurement-v3-post-m6-gen6.md",
+      "sha256": "dc5e72ebd015acdeb1bbe472ca0d1a275e976fb07f3b5af51251bec66ca0c6ac",
+      "size": 98518,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/plan-msae-independent-measurement-v3-post-m7-gen7.md",
+      "sha256": "d612a86b3c33f774e51f649f1b87dc4977d6d91d2734e27729e84eb9a4867d5d",
+      "size": 107863,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/plan-msae-independent-measurement-v3-post-m8-gen8.md",
+      "sha256": "7bd04a1c466d6a7e5cd6e570eece4e9a19395bf90d5b1e7cf2e4486616c2dfb4",
+      "size": 74498,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/plan-msae-independent-measurement-v3-post-m9-gen9.md",
+      "sha256": "135f313fdad7299a69b8b04268f4168e168a1be30ba5e80d408e43b7f5690a30",
+      "size": 30612,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v10.md",
+      "sha256": "47a19df3e70f17df63c2ef676877d07bc7e473736977067a3a3e64911a57436e",
+      "size": 26198,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v4-1.md",
+      "sha256": "aad3fb92acf588d18d9fd77a040b47717d07f3e0a97ebcfcdce9e1e650b9f749",
+      "size": 6928,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v4-2.md",
+      "sha256": "ff93c8b2dc5de9e0920bb910126d3ef79d5ab941bbf9c61a47803fccf9d83ae4",
+      "size": 4563,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v4.md",
+      "sha256": "79cfa0bed9140e80dd7fa97f5e6f7133c506d034e01bb0ff8822615cf4889cc2",
+      "size": 21918,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v5.md",
+      "sha256": "1c450895bf836b142bc46dced85afd4f109edd68a96f6e4e91dc5719f0b3fc6b",
+      "size": 32214,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v6.md",
+      "sha256": "0bba4efcfea868b186f4051faa71d84382b33a8b1f8dc425ed595c7335b515cc",
+      "size": 35053,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v7.md",
+      "sha256": "67053a1b4a222de2fd9de18c534f2f5e58024413224e859c7ddfed4b63261916",
+      "size": 49326,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v8.md",
+      "sha256": "7aec70f8d6f384f2919f5f3086064b437dd34ff7731542aed2d7abe23ac5ae19",
+      "size": 54030,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "docs/plan-msae-independent-source-v9.md",
+      "sha256": "0607886af9561d8418fd7a153322e6b59cd47404f33174c49b07bec5284cd57e",
+      "size": 46819,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "docs/plan-msae-project-completion-2026-09-14.md",
+      "sha256": "c99e74db5897ec51732795ca27be5bbf9c9c13486d96b37772f0407fdf61e62b",
+      "size": 15175,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v1.md",
+      "sha256": "4e92e3086056ce55bb87fd64e9e49c8040f34a1eb3aebd62d12e9627f620cde5",
+      "size": 48418,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v2.md",
+      "sha256": "22de535b723cebd6d7a064944d31bddab8e438ab869dcb480a763ecc6873033a",
+      "size": 54033,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-m2-continuation.md",
+      "sha256": "8e09f21d383ef6c56a2b876ca9a3ba8184108621f5c3415b2ed3f480f74d86e7",
+      "size": 5440,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-post-m2-runtime.md",
+      "sha256": "53cb42b5101586d12bfc0642a4c240e6b253b5108065ca69fe72a558ac51389c",
+      "size": 11059,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-post-m4-gen3.md",
+      "sha256": "3d879bf957b859e25feacb26fa25a20a0abba850e502c50a893b2b3408d118df",
+      "size": 18999,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-post-m4-gen4.md",
+      "sha256": "64c175b46ab77d0b6e60577b1b33406c9ede162f4b5ddc3e45b9b394f770fcb3",
+      "size": 11943,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-post-m5-gen5.md",
+      "sha256": "0fd7e9bec658c4755b52f1a56639e19bbca9b2edb46a684b2e543a07c3c1db1c",
+      "size": 12929,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-post-m6-gen6.md",
+      "sha256": "0109cf1ff4d1e6b4a676fdf1abe6615df1a7b29910645b42cdbd93ac0616edc3",
+      "size": 16715,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-post-m7-gen7.md",
+      "sha256": "857620e5df9be77aef2315816d9f16b6c1cad885eafcd9b8baf96db0af496f59",
+      "size": 21024,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-post-m8-gen8.md",
+      "sha256": "e210ff486cf4547d40f29b264472399109c590aa0c4a928829d291a0c9f7a9cc",
+      "size": 21024,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3-post-m9-gen9.md",
+      "sha256": "d983cc3ade0a7ee475d0a54317b10ccb695c54c883d88e58aecb8ee681fc31e0",
+      "size": 21024,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-independent-measurement-v3.md",
+      "sha256": "babaa543e99f854d1d75606cf37cbc1ab56207b64de50026c3fd72fc7311d94d",
+      "size": 57728,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "docs/rfc-msae-measurement-remediation-readiness-v1.md",
+      "sha256": "635fff29cc801b1ce6960fd79dec636a8695606dfa64cad9da222efb8215fc54",
+      "size": 31122,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v1_prescore_review.md",
+      "sha256": "bdb94b5a34757c791c6cbb5840d55a7bfe13a77e434d7d62c734560145b116fa",
+      "size": 2203,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen3_implementation.md",
+      "sha256": "b77237868339a93f1b4e6ad4592260c83b2a0c318c22c9be27a1d0971f86462a",
+      "size": 4015,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen3_plan.md",
+      "sha256": "e3b2f0047b6fc14aabb0c60227cc1710cac17d3aca67618277ff1e64b4f902bb",
+      "size": 1902,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen4_plan.md",
+      "sha256": "45976d778388d0020c58ea4e3a278c7a1d54d0f67b6a266f5fdc2733366c5fce",
+      "size": 2884,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen5_plan.md",
+      "sha256": "bdd23fb26ff1cf7edbe4fbae8efb41b34b22bbaa72e9fa8e88f2231b035bd167",
+      "size": 4733,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen6_failure.md",
+      "sha256": "2f79df9b3273cab6d880a525f682e70c589b926109861325a8c9367635d70928",
+      "size": 4841,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen6_plan.md",
+      "sha256": "852d6acd0b6ead8df5b7b4aa316dfa766cee2be799513781bedb9f6d85fcaba5",
+      "size": 4484,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen7_failure.md",
+      "sha256": "5b056100599fe16db207f4717d57600d624988886b0188cf3cab0a7a78d28d4d",
+      "size": 7208,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen7_plan.md",
+      "sha256": "f3e3117e8331849c18f1520626e50edfed5c9602aa7b09ccd24bae434e016354",
+      "size": 387,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen8_failure.md",
+      "sha256": "45cc9dff4479b9a4a30eb6a84157e786a3e5736751cf0c1564b75f07c1739191",
+      "size": 3433,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen8_plan.md",
+      "sha256": "1a7dd1752694599322c80ad2d7e7bd03d306f7d618198a4cc6cd25a8f72720b1",
+      "size": 2048,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_plan.md",
+      "sha256": "9398a0356c8f5e8d1cf11cbcdeca4b01dc7f68c2fb04a4d61194a780ef47491e",
+      "size": 2861,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_rejection.md",
+      "sha256": "05a476b5777256b8ea26175b47d3797bfa31a75a960759e35202a289a0ca1e76",
+      "size": 5112,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_rejection_review.md",
+      "sha256": "677cfe2fc86c4615d134a8a758bf4b9209e9d603b4c216a49f53a4de07e03028",
+      "size": 3101,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v10_plan_review.md",
+      "sha256": "572d9d4dc30c29a86ec2f6961080f59cbec0c9e729399e59cc5921f19a9b78c2",
+      "size": 7174,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v10_preacquisition_authority_review.md",
+      "sha256": "078f00feeb45003206728ecd1a6edc3212a712181c980488f6ae9eaf0f02f468",
+      "size": 8962,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v10_preacquisition_implementation_review.md",
+      "sha256": "868e7ffdf97555ec5ae95e40874bb6ca4110b907054dc656deb6191b782e8c8b",
+      "size": 7115,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v10_terminal_failure_review.md",
+      "sha256": "dfa3974182bc64ecd94934b72efc0a5a1a47559e74a036e4f8d87fa435463d80",
+      "size": 11301,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v4_1_plan_review.md",
+      "sha256": "c683e6daf4fcb8a112175390ab9902fe7c66189b1e4a295dcf5d6dae38324d55",
+      "size": 1100,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v4_2_plan_review.md",
+      "sha256": "9d065acea90371ffe51ba85d05923f2eb1a1fedfad719a0977fa8c610298f357",
+      "size": 654,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v4_plan_review.md",
+      "sha256": "f082ff9485964057cca7f13ae6688a48ba3e628e015dd9042c895c96de03db4e",
+      "size": 1652,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v5_plan_review.md",
+      "sha256": "8137a0e7e2dffbf7c4c052e27dc60f5de3f1d1e5568723f5834de5c404aa3abc",
+      "size": 4235,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v5_preacquisition_control_plane_rejection_review.md",
+      "sha256": "6f83fe07fbb9b12dc7a75fbff2da2490300e0745e0c1fd15ad03b83fd8e5e347",
+      "size": 5663,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v5_preacquisition_implementation_review.md",
+      "sha256": "b098b819f3cc122f4501ccf8465649e070fa46d83484bfc0bc86a283c14a33a2",
+      "size": 5485,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v6_plan_review.md",
+      "sha256": "e229b167d7cd9c2b93a34a654d57402af35be0533ae1ddbe9f0ae0d32cb7a6d7",
+      "size": 6008,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v6_preacquisition_authority_review.md",
+      "sha256": "50ac9661a88713a517fc92bb7b4aaf2c8acde157d97f060aa65de8a60098cddb",
+      "size": 6268,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v6_preacquisition_implementation_review.md",
+      "sha256": "758234c4939c696385fa7a5c6b4679f887aa173ef4c9598aa74a33a67a95d962",
+      "size": 7677,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v6_terminal_failure_review.md",
+      "sha256": "45d6ae6bf1a64addcb32dcfe5e12d66803987bb3186deb0798fa0dcde39d8016",
+      "size": 8112,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v7_plan_review.md",
+      "sha256": "3f8ceedbd4be7f3335b8675f1e241e7fd3193719bb4d0bc55a3df54fc19a9429",
+      "size": 4846,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v7_preacquisition_authority_review.md",
+      "sha256": "b37513a325bd9ca6b9b65ccdba2a83ce068d63ee14b44b17d99df35334be89a3",
+      "size": 6590,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v7_preacquisition_implementation_review.md",
+      "sha256": "68cd4493fdccd2d810e14bedc7c6e2c0e8bf28e20f02c1a1195101a17e729884",
+      "size": 7172,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v7_terminal_failure_review.md",
+      "sha256": "a9ffad68a78df7b3362ff3900bd7a4e0959a33a63742d29175ba1ccef580207b",
+      "size": 6464,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v8_plan_review.md",
+      "sha256": "d159749125a6db4e1dd6a68f2207e4be6b643e2f0d7b8112695cfec98660204d",
+      "size": 5102,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v8_preacquisition_authority_review.md",
+      "sha256": "2567d7db6f72b0a19d66ec36bffd274ebb1e59ffb5f55b90fb688f4ed876f3e6",
+      "size": 8799,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v8_preacquisition_implementation_review.md",
+      "sha256": "0bedf94cb578722208e6069f9ee00bf966921fb32317235e777e3a54f6884496",
+      "size": 6508,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v8_terminal_failure_review.md",
+      "sha256": "fd3a40ba2ddd17a5a3464a669de186fdc4266307349751d81b01d6106ad7fc52",
+      "size": 10860,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v9_plan_review.md",
+      "sha256": "5e471cde50c9b4cda8e8f4ad8aca178e235d8a8b9d981a78d9e5b588f96aaee7",
+      "size": 5370,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v9_preacquisition_authority_review.md",
+      "sha256": "459ef19d6172d999d2d0272947dee7a21b7abc83707e9116ceb33f80ece8314a",
+      "size": 7532,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v9_preacquisition_implementation_review.md",
+      "sha256": "43420863b207d5b48219d95da6a2f39d5f9987ba57860f33d0d9852adbce3634",
+      "size": 7361,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/adversarial/msae_independent_source_v9_terminal_failure_review.md",
+      "sha256": "bafa2fbcc1c4ba4e6f3ffe9c696e63f4aa846d5b12a8922bbaa3ac36a770af28",
+      "size": 9391,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/adversarial/msae_project_completion_20260914_plan.md",
+      "sha256": "c6478d93a6c065cfe864c111bd64b9e67a75a3f9b2567308f65367802b0cdf87",
+      "size": 2377,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/adversarial/msae_project_completion_20260915_staged_diff_review.md",
+      "sha256": "170afcf9635053481d0070be80f797733c6e17836857f8d740f5b0cd89bc18c5",
+      "size": 10475,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/claim_review/msae_project_completion_20260915_staged_claim_review.md",
+      "sha256": "26abca69a298dfc92f6cbac796104f2a1425f6275bd962868d6be0ee7f46b234",
+      "size": 8494,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/claim_review/msae_project_completion_20260915_staged_claim_revision_review.md",
+      "sha256": "487a5b3b5e416661e51f30f1cdb0cc8a6fc2c80dcc080246f315a6c7ae1b1003",
+      "size": 6788,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/paper_claim_ledger_v1.json",
+      "sha256": "464595edaea8335120ec47f513511d94e72274000aa288f00bdf40190d2daa1c",
+      "size": 181838,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v1/baseline.json",
+      "sha256": "f619ff697b6c0e2e7bfa431be726c279bbb2d0a087a94e697b060eb7cfef4eb4",
+      "size": 1860,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v1/freeze.json",
+      "sha256": "e0704250136dd9c3378ca844aaeacedd034bc425e19229bbd80669dd89b84908",
+      "size": 1474,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v1/history_overlap.json",
+      "sha256": "cdc8fbf0dbc875a52809a833e9a525a676dede1fabdc9c27b36900ee27b7819a",
+      "size": 454429,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v1/preexposure_name_search.json",
+      "sha256": "09cb67c0a209268241b8bd101eac9f7164707544114e0dae7e66548789ee4d49",
+      "size": 382,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v1/prescore_authorization.json",
+      "sha256": "8c677dadf4273d4d8c71ac62f48e4ff55a3a74c156e8bcdafd194bdf29242080",
+      "size": 614,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v1/source_exposure.json",
+      "sha256": "e8f21c929abc33a25ce85d971a899b2c35a826f1cc251a37b76664b4e2f2542e",
+      "size": 549,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v1/stage_a.json",
+      "sha256": "301329753f8a5a53465c431fd06fdbdc6d002b1cddfa34e49591dcc558e92b8f",
+      "size": 12225,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v1/status.json",
+      "sha256": "522df301c612f43a3f8f2c7e5ad8dd6dbe9cc0f1141fb9557d20adcf873a0065",
+      "size": 344,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v2/status.json",
+      "sha256": "f71864c23e207aa296b8aca28ff3a102677c5c910514b6e01d88d18cb5106490",
+      "size": 485,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v3/m1_completion_manifest.json",
+      "sha256": "eed3004cf955b449b23a9bf470bd14725eca5a9e4cf27623f54fce33afa2c636",
+      "size": 1962,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v3/m2_completion_manifest.json",
+      "sha256": "e593a6283aa5468ddbee1cc755dbe60c4ee503375a0cbce44c52614dd232d737",
+      "size": 2234,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_independent_measurement_v3/m3_preflight_attempt_1.json",
+      "sha256": "411da64bc63dfa33c2b11813f6ce117943b0f2598fdcb388637ed2efb633dc6e",
+      "size": 1617,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/baseline_inventory.json",
+      "sha256": "65795d91db32e415b58e3ef7af68d81e96f682a97c44f1c580a094ba23825127",
+      "size": 7890755,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/candidate_pedigree.json",
+      "sha256": "dbbb8b278dd0fac93d317a3158f240217002f805c559fdf0b3a158a84ecd70e3",
+      "size": 1274,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/cross_role_overlap.json",
+      "sha256": "ce81b37b2357fa2aafe39cc8df81763c1d7b73798d993f2912e633b2cd4dad9a",
+      "size": 14364,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/dedup.json",
+      "sha256": "d2e7a8fcec07b1defb7fe928caeae23f46a2a036afadbead81aed0e5bd90e403",
+      "size": 1419,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/document_group_census.json",
+      "sha256": "c5e9d7827a87451f679b8bbee74c1dca607d219503563906b72075959209e38f",
+      "size": 1094,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/historical_source_registry.json",
+      "sha256": "3166d09141374506d7d200fa8d630a66e4a790f5a3f2e81778ed522d4a327863",
+      "size": 4177414,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/license.json",
+      "sha256": "af602cbf75c8ab07486802fd551dbb4ab5d2a0b15e40567eb504537d684ac7a5",
+      "size": 761,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/preacquisition_alias_screen.json",
+      "sha256": "cdda84035279b78698f98c760c5ce12d5276b9b2afbc8e4218133d8207dccafd",
+      "size": 4761,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/preacquisition_authority_manifest.json",
+      "sha256": "3178d973f57a5e93a29123d364e973484d5ea7ff408bbda2da0ab9620c4ecbf1",
+      "size": 5133,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/rejection.json",
+      "sha256": "16def212308c69501a7f589be8304f16dbfaaea66b69211dd03f1c6a25b49f05",
+      "size": 20821,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/scientific_preparation_entry.json",
+      "sha256": "e3c17556cce3913ca5bb16b00acb0e75b90ab4a030bd26e711304cdf155c1573",
+      "size": 14784,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/source_acquisition.json",
+      "sha256": "eab784620840cefc532dc72681c36640443ddeaf1f08eee6b4cffd545d3b2a1d",
+      "size": 8936,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/source_acquisition_entry.json",
+      "sha256": "4dcb100124a8acf0eca9c394de1a9ea0b5c3f97a5229bd0bf1ca52ab73aa76af",
+      "size": 926,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/source_family.json",
+      "sha256": "a5b53c4a48d0c2751c681958e40233cd43fe081e338335d6fd7654d48d0f6056",
+      "size": 401,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/source_manifest.json",
+      "sha256": "23f3cab0081e24d0875cf883f3d7860baead92947a794d5aab9e16d958768527",
+      "size": 663,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v10/v9_carryover_authority.json",
+      "sha256": "da13ae40e64c9828b2d08c29b4ff280bac5c71eeb8578a977f953f2169f7585d",
+      "size": 7343,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v4/baseline_inventory.json",
+      "sha256": "4467e76ce0ef016f32f58538df6440257b5765dad688317cf0f43e1592c5128b",
+      "size": 7352113,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v4/rejection.json",
+      "sha256": "f9470c92cf659c85eed8f06aa6c85fec4ed357b228ddb12cd4b23378cc2f0fa6",
+      "size": 304,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v4/source_acquisition.json",
+      "sha256": "26766a492aab9044aa93bddf93e4e719372522dc1d63561a6684ae259d93ea2d",
+      "size": 1377,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v4_1/rejection.json",
+      "sha256": "758527095279226cc918a5faa98f6ea634d4fc084d6786434ecc169bc0188236",
+      "size": 378,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v4_2/rejection.json",
+      "sha256": "4599f41981a3169c53bf83c3a25ead86a4d05b8056fbeee8c44fc0a43101c477",
+      "size": 686,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v5/baseline_inventory.json",
+      "sha256": "51390650c9d3f7e80cc3810cc3be4b3eae23dc74358c611dca425fe98e31c7a3",
+      "size": 7857966,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v5/historical_source_registry.json",
+      "sha256": "484a2b8c13798924c159d0e1bf7fbc90d19010111f89b08e7ddb7ceb6780b83f",
+      "size": 926780,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v5/preacquisition_alias_screen.json",
+      "sha256": "c0c17ed89e19b3af611bae43e73095ca4acb4d0a61a01f7c3ef8979cbe2fbd7d",
+      "size": 1769,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v5/preacquisition_control_plane_rejection.json",
+      "sha256": "06bc319b12d763895d3d7c8038acb8c82b2ad965ef26d0c4cbcb05dd4a097136",
+      "size": 1776,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/baseline_inventory.json",
+      "sha256": "16fe87554f9336a19a6355d144b0c823df9a41c4183144148b0aa66a3eff1515",
+      "size": 7861501,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/document_group_census.json",
+      "sha256": "01bd2e6eebd206d6e4889200760dfaac90a47b80e51f3f339fc3eeeb473c6673",
+      "size": 304,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/historical_source_registry.json",
+      "sha256": "484a2b8c13798924c159d0e1bf7fbc90d19010111f89b08e7ddb7ceb6780b83f",
+      "size": 926780,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/license.json",
+      "sha256": "cfd3544017eb59eed29e5f3d04e1517955baddfe2bec1c90080bccbea816e29d",
+      "size": 485,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/preacquisition_alias_screen.json",
+      "sha256": "c0c17ed89e19b3af611bae43e73095ca4acb4d0a61a01f7c3ef8979cbe2fbd7d",
+      "size": 1769,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/preacquisition_authority_manifest.json",
+      "sha256": "bf7486235379bd8a74608bada43962555bf34cab5ad9836942875bc6ad190fc9",
+      "size": 3962,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/rejection.json",
+      "sha256": "8b0df4518b349fad9114eaaae62957a6ab0b047232e4bb59b709ad294b03d3f7",
+      "size": 11682,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/source_acquisition.json",
+      "sha256": "49445a3e0e000bc48503b479541b80e319a03a9ae1264a51550f3024a8654c57",
+      "size": 9462,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/source_acquisition_entry.json",
+      "sha256": "3057f8f5dd0467ae3e922c3560b41842692391899dda33550fb01f8e29cbef50",
+      "size": 925,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v6/source_manifest.json",
+      "sha256": "05f539b4b21f6e4b039b30332ec296cda5db3f03e3088d1d2d1d600e90a10d1f",
+      "size": 663,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v7/baseline_inventory.json",
+      "sha256": "4db1c25dae89a24bed77ceffc9ac315168ddf357b3442e4c467a5cf6aee837b0",
+      "size": 7872211,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v7/historical_source_registry.json",
+      "sha256": "a5edbe04ce5ca083aa16cc4cade9d64beffe4a0541d67cd7a42dc05e7ec6712f",
+      "size": 4991401,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v7/preacquisition_alias_screen.json",
+      "sha256": "336a3a4082a1096201ae897715629aff870939d003fc9c6650de748ef16df3d7",
+      "size": 2582,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v7/preacquisition_authority_manifest.json",
+      "sha256": "9c049d5bce80fd58e5bd924811f139203de4c133fc944c22a3aace8ee598a5b7",
+      "size": 6795,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v7/source_acquisition_entry.json",
+      "sha256": "a5ed3430c081704e2b9dd8e7c53e928ebee21841dea3f5dcf7b823632e9fe7fa",
+      "size": 913,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v7/source_acquisition_rejection.json",
+      "sha256": "e71be14d61b76965423f6c209f3049eef156dc1daa5fdccfae80e5c040701a7e",
+      "size": 12244,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v8/baseline_inventory.json",
+      "sha256": "c4283d888fb8d5927ff46533bea3a163f582daea08f722656b5f38fcec64ff51",
+      "size": 7876701,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v8/historical_source_registry.json",
+      "sha256": "ff4a36996f58531353dda9ed8fcbedb4c3a615f2d877e8b31f1462ddc8581a97",
+      "size": 4994323,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v8/preacquisition_alias_screen.json",
+      "sha256": "68a7536c95896087960dd4fc5882df85296baaa1a07aaf910e0e7c257b165e2f",
+      "size": 2665,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v8/preacquisition_authority_manifest.json",
+      "sha256": "cd7179c392199aa4934f40878a9faf5b4d7b2ec4b9b149eaaad640619ddfffea",
+      "size": 8976,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v8/rejection.json",
+      "sha256": "6352d5a52628898cbc1c4f91bbd97dfddf0aff48dd4c1422bc5d82517b33ad52",
+      "size": 11113,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v8/source_acquisition.json",
+      "sha256": "6e57111da0b139bb2c4f0333b230b0a72458d7c419d50cfcb6896596b7f62958",
+      "size": 8917,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v8/source_acquisition_entry.json",
+      "sha256": "091d8472366f9ac8b01462b49f75f33c25bf77caa1569f947ddeda9e49a4140d",
+      "size": 925,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/baseline_inventory.json",
+      "sha256": "2ba6abc82c9a40a3007e8bfc62d34ef1e809460f5a91245843562837cb747ec2",
+      "size": 7883396,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/document_group_census.json",
+      "sha256": "c2eac0867680bca5a7445a3c56341e978733767853a3c51bf8f7def9e6af361e",
+      "size": 1093,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/historical_source_registry.json",
+      "sha256": "3166d09141374506d7d200fa8d630a66e4a790f5a3f2e81778ed522d4a327863",
+      "size": 4177414,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/preacquisition_alias_screen.json",
+      "sha256": "cdda84035279b78698f98c760c5ce12d5276b9b2afbc8e4218133d8207dccafd",
+      "size": 4761,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/preacquisition_authority_manifest.json",
+      "sha256": "3595208876aa551534af21bb96fa35186ee03d2b4778da1aefdd1a40b58ef445",
+      "size": 11420,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/rejection.json",
+      "sha256": "91c1e28f8f6f1e6efebef44875e4460848a5007360287787f715d8dea8a8896b",
+      "size": 16347,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/scientific_preparation_entry.json",
+      "sha256": "0ccb9df33f63e06dfd610308793bc926aa2be2c4fd71b30d4cf83493d5ef2f05",
+      "size": 12662,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/source_acquisition.json",
+      "sha256": "d353a5a04d8c853ea255526c20742a5e4c3578f672bc5d8cdd889cb193cff837",
+      "size": 8917,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/source_acquisition_entry.json",
+      "sha256": "f6489bc5a2813aa20fc0eb7d6257fb9fd97c78aab9ab69b688febdb503ad516a",
+      "size": 925,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/provenance/msae_independent_source_v9/v8_carryover_authority.json",
+      "sha256": "00d7cdca4e9893ef1f4e36b6104caf21991ce1ca92e9897d3c5a72d497212f47",
+      "size": 13174,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_measurement_remediation_v1/BASELINE.json",
+      "sha256": "28eb7a9771ea5c429779b95a8407fefe17a5b1cb4fc02167fd1ad4c1fe3bb22a",
+      "size": 2245495,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/provenance/msae_measurement_remediation_v1/FINAL_STATIC_VERIFICATION.json",
+      "sha256": "d726429c519ff3c5db85e7db1b3ea5020d8034cdb30972d3eef2f9b84755411b",
+      "size": 103020,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "reports/verification/msae_gen9_safe_checks_20260914.log",
+      "sha256": "ce26f149a75fee060eff7f92780c3ce0575e8e41a79d8b0da7b6136c4b1c148b",
+      "size": 376741,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/verification/msae_independent_source_v10_source_free_checks.log",
+      "sha256": "157bd0bfa187b332ee6e425d33bc4e6ac4036ca72edaa0fc135e3ca0160022c8",
+      "size": 3642,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/verification/msae_independent_source_v5_source_free_checks.log",
+      "sha256": "87cc02f7ca515a723249091e41116c7d0b0bf6cf58f53c0d45ab741c51b999ef",
+      "size": 2383,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/verification/msae_independent_source_v6_source_free_checks.log",
+      "sha256": "4bda3937addfed1c2d2e133012de44a8f7e4c07a62301949e07b1702edcc22b0",
+      "size": 2698,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/verification/msae_independent_source_v7_source_free_checks.log",
+      "sha256": "785a4c4876a567f3b2fc6b167bf5931c81fa64c2df8c0f97492c1ed51d981577",
+      "size": 2338,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/verification/msae_independent_source_v8_source_free_checks.log",
+      "sha256": "3629712ae64b00c9e6c9dd2cd1cced774d3a5f328fd72115bf7edbf14e13369b",
+      "size": 2547,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "reports/verification/msae_independent_source_v9_source_free_checks.log",
+      "sha256": "54598899cea7e2d1d6ad747364c797ca5557cd2df8cf4de64e13271259423b3d",
+      "size": 2999,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/acquire_msae_independent_source_v10.py",
+      "sha256": "fac7c739d10d4dcc966235102b173850c5e8e90fa1e035ef8693507228ed8a47",
+      "size": 74687,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/acquire_msae_independent_source_v5.py",
+      "sha256": "6b5c78543c9530c98c24ce99f90ac1caff6ca496d111d8b25889ec448402d11f",
+      "size": 51974,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/acquire_msae_independent_source_v6.py",
+      "sha256": "87df5427acfc5d879eb8546557cb0b7e866f9e9c64ff6e84dadccc811253252f",
+      "size": 52025,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/acquire_msae_independent_source_v7.py",
+      "sha256": "2f684b28fe98891df84d7d10c2b11b721f6a7c348f843374eec2a5a858bccd38",
+      "size": 59691,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/acquire_msae_independent_source_v8.py",
+      "sha256": "07a15235a860296ffb461d2bc065cdb093fb87656b9dbab3918c20293b4159a3",
+      "size": 59703,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/acquire_msae_independent_source_v9.py",
+      "sha256": "c622d1bd2f79609e843a5c003dc6c1405b4dcd25b41520532d12e3a32a0bcd97",
+      "size": 66736,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v1.sh",
+      "sha256": "d8b1cefd2fb7baad5697a7bde31dba0bb098eeb363588d323f211c62730d39cd",
+      "size": 231,
+      "working_mode": "0711"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v2.sh",
+      "sha256": "b8a0bd9e2d37b5fa1285b9bc9165d9a6cfa7e1c0364f5a1fcf4c50ba098663f9",
+      "size": 316,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v3.sh",
+      "sha256": "0b0093d2a32a49d1810c6d748240be762c32d8de4a2ff7eea664647ff9851a21",
+      "size": 327,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v3_gen3.sh",
+      "sha256": "6a036d17fac6fa60884c54c7d9f98bc45f2d9f2194d2b3beca1d85fa58b91ba1",
+      "size": 332,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v3_gen4.sh",
+      "sha256": "86e99a67af8bc3ce6b35191855ef63931fab576de44565cd55f9da6f9e0c0bf1",
+      "size": 337,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v3_gen5.sh",
+      "sha256": "3731a3fd4f235d7306686b0371ba63672a182246f4d12eddb736a507a71730d2",
+      "size": 337,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v3_gen6.sh",
+      "sha256": "5828e678487babde4e39672fb0cfb3632b57d11b57c151a2f0840e84e4b7f8b3",
+      "size": 337,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v3_gen7.sh",
+      "sha256": "21519cf92d0ed1d91d9ac4ad0caa2178cc80572624401952afe629b6fba6ba4b",
+      "size": 337,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v3_gen8.sh",
+      "sha256": "149d15cdfaad1ad02ac7a4c00ccb09e7586394a9801fe5bd8073ce0e6f1e8236",
+      "size": 337,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/launch_msae_independent_calibration_v3_gen9.sh",
+      "sha256": "b59382ffe6ab66e82747953e1a23044afc812784f9575cb6fd55aac609432e5e",
+      "size": 337,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v1.py",
+      "sha256": "2e66f52687f9798c746666e411fe430d7cddf9c50dc6a286f7dc3d18242fa50a",
+      "size": 20101,
+      "working_mode": "0711"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v2.py",
+      "sha256": "cbc27ba26a868fbb69a7a8bd44ac40e799090541ef0efe0581c046c6eb32da9b",
+      "size": 136558,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3.py",
+      "sha256": "2d08f380998c796852b19ed2214ec77c212948fb9d1758674ea1b9895dd032bd",
+      "size": 214252,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m1.py",
+      "sha256": "ea16d71e7dedd1232f82d81ed331d7f27812a666117d3509791baac449e6cb26",
+      "size": 29626,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m1_runtime.py",
+      "sha256": "d62cb16e39feb7d2e1f060ea798c50fce0c78fbc326c3ac46d275cbe9795889d",
+      "size": 371755,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen3.py",
+      "sha256": "734e52a4d5836b3084a887c3eb681d6842750ed471b817cf4c5b201260866cd5",
+      "size": 10151,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen3_runtime.py",
+      "sha256": "1fe6146984ba1faac59d95063cc6468e5be477f340cf17a43a66905f87a15d0f",
+      "size": 494339,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen4.py",
+      "sha256": "c2f52fa4c0a38d033a0034afe3d258c713cc9bd0e393c00b57e4b20635493faa",
+      "size": 10151,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen4_runtime.py",
+      "sha256": "a0f56b1e8c7acab74179bb51fc1d5d3ff101384882e50fcc80f92d3815b72446",
+      "size": 612015,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen5.py",
+      "sha256": "3a0471d33af027294e20cdd50fd76af7812f6ebdb9bd1f3e1035bdc32d708e49",
+      "size": 10151,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen5_runtime.py",
+      "sha256": "2ba4d988fcf14e0a6bb975fa5f1fe437d02ddfe6f387cf20e93eb776a4489feb",
+      "size": 688281,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen6.py",
+      "sha256": "3a2b22d87be6fe7dcbb74af38a7a44081c8ee135cc49d769e7a77f14bd7d6044",
+      "size": 10151,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen6_runtime.py",
+      "sha256": "a17828e2edc64a92dc2b380311cf3893b119342e533e7e3281f92e7e7bae851c",
+      "size": 791210,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen7.py",
+      "sha256": "4c10f5b5bc18ad4ae3828de5b6cebdf32e65c5ddf1f7acdec1aa2a1f8ad99ef9",
+      "size": 10151,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen7_runtime.py",
+      "sha256": "017862e1c433d45fea4e91b60e2f23a62084a1f2c8200a1a8222fddfa7a125bc",
+      "size": 1094963,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen8.py",
+      "sha256": "30678b56e9304a8c3837cb03138e0993948865f582bb3a61fa7d5fae998434ce",
+      "size": 10151,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen8_runtime.py",
+      "sha256": "0b873cdd2519c532677793d0c1acb0a823512ccd225da84c171fdeeebf46f46d",
+      "size": 1163836,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen9.py",
+      "sha256": "a0ea8c00913ca5eaa4404d6688a4536845ad1739929acb78f9fc93746962abcc",
+      "size": 10151,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_independent_measurement_v3_post_m2_gen9_runtime.py",
+      "sha256": "82100487585cafd381a0c414abe40f2865a536d1c18a84b79e9d43ca1e7fa756",
+      "size": 1165597,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/msae_measurement_remediation_v1.py",
+      "sha256": "67809ff8c780983ade4b45c2e2daa33c34091c23cf673b599bdd50fa80a15f5b",
+      "size": 59547,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v10.py",
+      "sha256": "637492e7ed4c1836704542deebe19b91ac38101bf6edf060fb4804868a45d088",
+      "size": 232043,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v4.py",
+      "sha256": "4cae36aef9b910426226da5d4bf649f5df2ef0ddb791e64c8d60c2454ac38238",
+      "size": 32485,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v4_1.py",
+      "sha256": "49b2d12feb61061032839bde092dd49cf743090f3861cc8aabdf4a4bb1909564",
+      "size": 35914,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v4_2.py",
+      "sha256": "f99037ac108aa193f26a0eab2a2b027625c9de2e64d49e37f16de9235ad704dc",
+      "size": 36709,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v5.py",
+      "sha256": "f78aba1add310c6a76a05cac4ccc159b9c6aa924e888664d3a54f372e0ebb1e8",
+      "size": 136370,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v6.py",
+      "sha256": "af514bf5b701e2814f33085109101da24afc1e735363312f4c447ef0e7b58d65",
+      "size": 138240,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v7.py",
+      "sha256": "ffa487d274699d26035754dac59cc61a01f2383d54872aefe88d633ff25a239c",
+      "size": 167456,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v8.py",
+      "sha256": "5b3bf93ed412e480e7d84720b235b104bc571bb63faa16504279cd25cf6bc881",
+      "size": 172962,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "scripts/prepare_msae_independent_source_v9.py",
+      "sha256": "5714f714039ecf29f1203000ec628984ff22abe62703946891cb5eaf781fc5fa",
+      "size": 226311,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v1.py",
+      "sha256": "640d24c88e650d9238be519ea1d50d768c976e9535bb3d9a0c0a19c8e7fefa85",
+      "size": 7676,
+      "working_mode": "0711"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v2.py",
+      "sha256": "9c4073108aa1c4346617c012c10d8138f254135079c562e7101a37723ebb5dfe",
+      "size": 16805,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v3.py",
+      "sha256": "00c7b0d3fa7bccb95094890df3d0ec878512515bb41a97d7a9a9cfc867b0b32b",
+      "size": 23999,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v3_gen3.py",
+      "sha256": "d243b62dc081d32a59491837c40356b138b26e08e36eb294d2fb6ba0ac8073d6",
+      "size": 30772,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v3_gen4.py",
+      "sha256": "b1588dbe4db9e2bd30f8d3d290bdcaf235f846859881d2931be9b18f336fc3cd",
+      "size": 30772,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v3_gen5.py",
+      "sha256": "828c94a8bb12882c0abb4be06afad84b6bfa9db82f56b820fa55eb425fda1bb6",
+      "size": 30772,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v3_gen6.py",
+      "sha256": "4bd6f7d51acd15b50604416687670cc0e39962ae55eb290ead8011a547542766",
+      "size": 30772,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v3_gen7.py",
+      "sha256": "c28bec9c4d2c4be61ba0bd6a87df81e9c33a6a196bfecc5a4b778ecc9189df91",
+      "size": 30772,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v3_gen8.py",
+      "sha256": "76b1b6b25cbbc139bab3c17a4dcf763bac113e934cc8f6afcf2ee2658afd6706",
+      "size": 30772,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_calibration_v3_gen9.py",
+      "sha256": "e414477c646b772fb5eb5e1f4c5184663429baea111864899eaf8412f10a1f5c",
+      "size": 30772,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100755",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_measurement_v3_post_m2_gen5_tmux_test.py",
+      "sha256": "d47d582b25e0613fd611d76244c7875bfce8d5a4e4f770aea25bef60306abf8f",
+      "size": 48797,
+      "working_mode": "0755"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_measurement_v3_post_m2_gen6_tmux_test.py",
+      "sha256": "bda74348cf2ea151c0cea4b2834a0600712ceef9c147af1a6e73c31f99091399",
+      "size": 61466,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_measurement_v3_post_m2_gen7_tmux_test.py",
+      "sha256": "cd85077c33b283a5c2bfb767632d5ee29c59d3b16f6f0652e0802393a4fae6a7",
+      "size": 90601,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_measurement_v3_post_m2_gen8_tmux_test.py",
+      "sha256": "e15abdbf07172f3bca865ddb4a45bbc2105aa575df60555decb20384bd97a9d2",
+      "size": 90601,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "scripts/run_msae_independent_measurement_v3_post_m2_gen9_tmux_test.py",
+      "sha256": "963253ca0a4247d3e3375d7932b3005ae9c4030736495236c3e8925500a066c5",
+      "size": 90601,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v1.py",
+      "sha256": "7d56c044c97adcb4fdafa7e0c28ab80b3524a03879fdcebb7a521e6749805588",
+      "size": 2877,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v2.py",
+      "sha256": "e32fec2ed82fe8589666a48df16b730b0a9f878e8e89525cf5ea8ddfda1a1ff2",
+      "size": 10332,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3.py",
+      "sha256": "0a980541266ca580f2ba4e149793ac9b6aa058f99d5c94212c78ffd76ddc9741",
+      "size": 38798,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m1.py",
+      "sha256": "fdcaf0988da67a3b3e6884a5e1b936fdbd48dcece55f62e761bc98aa228aa4e2",
+      "size": 8870,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m2_runtime.py",
+      "sha256": "906ad77440bb0ef7870dce50b750f061a55414c9eae429054504adfe8cce8720",
+      "size": 61797,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m4_gen3.py",
+      "sha256": "04c32b11d7206927f2c4b33471f2c86d4eb47e954d4101d40d15f2c4094d4c2d",
+      "size": 118230,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m4_gen4.py",
+      "sha256": "189824871ad197d74957357fbbb35ef269c7b214f7c6b4431e81bccbf285cd48",
+      "size": 128724,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m5_gen5.py",
+      "sha256": "eb194164dfddc5a858ba2fa123fe6fd7a029170142e366e01f8217d47ab3d597",
+      "size": 214493,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m6_gen6.py",
+      "sha256": "fec77df62d7e08ec6481df9f376091209a437735b3164cd3200e0571b1579c6b",
+      "size": 229308,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m7_gen7.py",
+      "sha256": "c99fdef8f6ff505986aa81e2dbbf8da0f8f840e232fe1ee7c3c36ea800df258e",
+      "size": 229495,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m8_gen8.py",
+      "sha256": "82f561ad8b95a178fa550a519c84be2efdb2084e748449e26f65e6ffa35d3b24",
+      "size": 244228,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_independent_measurement_v3_post_m9_gen9.py",
+      "sha256": "afebf9bf103986cf9458c1aed7df4a332fa055375b84786694bf3f067640c5be",
+      "size": 244228,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "01_calibration_control_plane",
+      "path": "tests/test_msae_measurement_remediation_v1.py",
+      "sha256": "fc34faf76bb44482276bff7646cfa5308cfb146917382b2d9e2b9c4d10e37898",
+      "size": 37387,
+      "working_mode": "0700"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v10.py",
+      "sha256": "6adc2e1cb251749c175484968d9764f51a0e93fae0bcc76d847508f10a448303",
+      "size": 129762,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v4.py",
+      "sha256": "c8b661a9635cb79fe81f469209fe64fd9a204de373875bb5727e69801a146c12",
+      "size": 5348,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v4_1.py",
+      "sha256": "4055cfabca0f13c68afa6570d64d1e33c33d5cdf36ff406938bc614519785feb",
+      "size": 6024,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v4_2.py",
+      "sha256": "91058a43bf8fccec566c79fed03b21daeef9119960511f4699d206af5a7a2e23",
+      "size": 7819,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v5.py",
+      "sha256": "f2cf4d0b58554d688fb4b601bcc739dc6749833d393b49e275178eedccdcac76",
+      "size": 59742,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v6.py",
+      "sha256": "c36a64fb9fa12d7face269ba29ed4e4d366f7bce5187220537e7f31f7c578810",
+      "size": 60798,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v7.py",
+      "sha256": "51bf834e29bc56c743a2dafe981dfa0f85c6d9a4bcc2eb8dbf0be39303dffbea",
+      "size": 86450,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v8.py",
+      "sha256": "3baad53b0d863c4139abeaf3fa303f46fad4338d0342d0289ced15ba83bd76cc",
+      "size": 93424,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track",
+      "index_mode": "100644",
+      "logical_commit": "02_independent_source_readiness",
+      "path": "tests/test_prepare_msae_independent_source_v9.py",
+      "sha256": "90054e75b2fb57e5ae6ff989dd1fae44c9d7220799d4fa34d43379dae59c2667",
+      "size": 108259,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track_self_authenticated_by_commit",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/provenance/msae_project_completion_20260915/porcelain_classification.json",
+      "sha256": null,
+      "size": null,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track_review_generated_outside_reviewed_predecessor_index",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/adversarial/msae_project_completion_20260915_commit1_review.md",
+      "sha256": "a5db1089cb1682ca0619d0d34180c82aa1106e9e4e934f19223c4b7487414b56",
+      "size": 6341,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track_review_generated_outside_reviewed_predecessor_index",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/adversarial/msae_project_completion_20260915_commit2_review.md",
+      "sha256": "1698f219738817991f13ce646a9d3327834ac19786a0544b46a4ae39bbf5c80a",
+      "size": 8086,
+      "working_mode": "0644"
+    },
+    {
+      "disposition": "track_review_self_artifact_excluded_from_its_own_candidate_digest",
+      "index_mode": "100644",
+      "logical_commit": "03_synthesis_and_handoff",
+      "path": "reports/adversarial/msae_project_completion_20260915_commit3_review.md",
+      "sha256": null,
+      "size": null,
+      "working_mode": "0644"
+    }
+  ],
+  "ignore_rule_counts": [
+    {
+      "rule": ".gitignore:15:*.bak_*",
+      "status_entry_count": 1
+    },
+    {
+      "rule": ".gitignore:18:pilot_runs/",
+      "status_entry_count": 1
+    },
+    {
+      "rule": ".gitignore:19:pilot_outputs/",
+      "status_entry_count": 1
+    },
+    {
+      "rule": ".gitignore:20:logs/",
+      "status_entry_count": 5
+    },
+    {
+      "rule": ".gitignore:23:results/",
+      "status_entry_count": 1
+    },
+    {
+      "rule": ".gitignore:24:data/",
+      "status_entry_count": 1
+    },
+    {
+      "rule": ".gitignore:25:.generated/",
+      "status_entry_count": 1
+    },
+    {
+      "rule": ".gitignore:26:*.log",
+      "status_entry_count": 74
+    },
+    {
+      "rule": ".gitignore:2:__pycache__/",
+      "status_entry_count": 2
+    },
+    {
+      "rule": ".gitignore:30:*.pt",
+      "status_entry_count": 18
+    },
+    {
+      "rule": ".gitignore:36:*.npz",
+      "status_entry_count": 6
+    },
+    {
+      "rule": ".gitignore:46:.cache/",
+      "status_entry_count": 1
+    },
+    {
+      "rule": ".pytest_cache/.gitignore:2:*",
+      "status_entry_count": 1
+    },
+    {
+      "rule": ".venv-atlas/.gitignore:1:*",
+      "status_entry_count": 1
+    },
+    {
+      "rule": "tests/.pytest_cache/.gitignore:2:*",
+      "status_entry_count": 1
+    }
+  ],
+  "ignored_local_classes": [
+    {
+      "class": "cache_or_environment",
+      "disposition": "ignored_local_only_never_stage",
+      "status_entry_count": 6
+    },
+    {
+      "class": "data/",
+      "disposition": "ignored_local_only_never_stage",
+      "status_entry_count": 1
+    },
+    {
+      "class": "ignored_unbound_logs",
+      "disposition": "ignored_local_only_never_stage",
+      "status_entry_count": 74
+    },
+    {
+      "class": "other_ignored_transient",
+      "disposition": "ignored_local_only_never_stage",
+      "status_entry_count": 31
+    },
+    {
+      "class": "pilot_outputs/",
+      "disposition": "ignored_local_only_never_stage",
+      "status_entry_count": 1
+    },
+    {
+      "class": "pilot_runs/",
+      "disposition": "ignored_local_only_never_stage",
+      "status_entry_count": 1
+    },
+    {
+      "class": "results/",
+      "disposition": "ignored_local_only_never_stage",
+      "status_entry_count": 1
+    }
+  ],
+  "logical_commits": [
+    {
+      "digest_format": "sorted lines: <index_mode> <sha256> <size> <path>\\n; inventory self-entry excluded",
+      "file_count_including_self_exception": 117,
+      "hashed_file_count": 117,
+      "id": "01_calibration_control_plane",
+      "message": "chore(msae): preserve calibration control-plane evidence",
+      "path_content_mode_digest_sha256": "a1397552d7cd9780873ce7da4babf0ebb8014b20ddf40f417f8f218dc9aaf679"
+    },
+    {
+      "digest_format": "sorted lines: <index_mode> <sha256> <size> <path>\\n; inventory self-entry excluded",
+      "file_count_including_self_exception": 129,
+      "hashed_file_count": 129,
+      "id": "02_independent_source_readiness",
+      "message": "chore(msae): record independent-source gate outcomes",
+      "path_content_mode_digest_sha256": "0031ef976b1c6a8956923c5158522e5d752b4e6543a508315241420053708314"
+    },
+    {
+      "digest_format": "sorted lines: <index_mode> <sha256> <size> <path>\\n; inventory self-entry excluded",
+      "file_count_including_self_exception": 14,
+      "hashed_file_count": 12,
+      "id": "03_synthesis_and_handoff",
+      "message": "docs(msae): synchronize evidence synthesis and handoff",
+      "path_content_mode_digest_sha256": "5bd3b2945a403771907d0fccea73b249d31e636de245bdb3db05ff54cbb5a1ed"
+    }
+  ],
+  "mode_note": "Git preserves only the executable bit. index_mode is the checkout contract; working_mode records the source workspace mode for custody audits.",
+  "outcome_3_status": "incomplete: V10 terminally failed cross-role overlap before full history/support and blind-payload publication; new reviewed successor required",
+  "protected_content_policy": "ignored data/results/pilot/cache content was not opened, read, hashed, parsed, or printed; only status path classes and ignore rules were counted",
+  "public_log_exceptions": [
+    "reports/verification/msae_gen9_safe_checks_20260914.log",
+    "reports/verification/msae_independent_source_v5_source_free_checks.log",
+    "reports/verification/msae_independent_source_v6_source_free_checks.log",
+    "reports/verification/msae_independent_source_v7_source_free_checks.log",
+    "reports/verification/msae_independent_source_v8_source_free_checks.log",
+    "reports/verification/msae_independent_source_v9_source_free_checks.log",
+    "reports/verification/msae_independent_source_v10_source_free_checks.log"
+  ],
+  "review_self_artifact_policy": "The final commit-3 reviewer evaluates the exact candidate excluding its own not-yet-written transcript. Its transcript is the sole permitted post-review addition, is scanned/diff-checked, and is authenticated by the resulting commit.",
+  "schema_version": "msae_project_completion_porcelain_classification_v1",
+  "scope": "all ordinary completion-candidate paths plus ignored local-only classes before logical commits",
+  "self_authentication": "This inventory cannot contain its own digest. Its exact bytes are authenticated by the final Git commit; every other candidate path is SHA-256/size/mode bound here.",
+  "snapshot_date": "2026-09-15"
+}

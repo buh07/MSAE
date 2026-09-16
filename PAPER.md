@@ -4,7 +4,7 @@
 
 This manuscript is a complete project-level synthesis of the MSAE position/content program, the
 subsequent measurement-only relational investigations, and the prospective proxy-control benchmark
-v2. It is not a preregistration, it does not alter any frozen
+v2, including the August SAE basis-selection and bridge-v2 follow-ups. It is not a preregistration, it does not alter any frozen
 result, and it does not promote an exploratory or development result to confirmation.
 
 Evidence is divided into four classes. **Valid** results met their applicable technical and
@@ -708,6 +708,53 @@ overlap is unavailable, and feature indices were not compared across independent
 [C096] The result concerns one trained synthetic copy-transformer design and donor-conditioned
 control. It is not a general negative claim about released SAEs or natural transformers.
 
+### 4.22 SAE basis-selection successor and bridge-v2 technical follow-up
+
+The August basis-selection successor does not overturn the R2 capacity result. It used 64 fit rows [C097]
+instead of R2's 2,048 while also changing SAE and panel seeds, so disagreement cannot be attributed [C097]
+cleanly to basis learning or selector quality. [C097] Its training fit was excellent—mean ambient
+reconstruction relative-L2 was 0.00411 and mean fit donor-delta error was 0.00273—but descriptive [C097]
+replay on held-out panels showed reconstruction relative-L2 of roughly 0.606--0.607 and donor-delta [C097]
+error of roughly 0.588--0.596. [C097] The appropriate interpretation is a severe fit-to-held-out
+generalization warning, not a basis indictment.
+
+The successor's formal gates reinforce that limitation. Ambient PCA rank 32 passed all 6 registered [C098]
+checkpoint-panel records, while full-code SAE passed 0 of 54 records, partial code patches passed 0 [C098]
+of 1,296, and supervised OMP coefficient patches passed 0 of 270. [C098] Selected-span and full-
+decoder-span oracles passed, but every selected span had empirical rank 64. [C098] Those oracles
+therefore establish full-ambient expressibility, not low-dimensional localization or successful
+selection. R2 remains the primary SAE capacity result because its substantially larger fit panel
+supported full-code success while every registered sub-full subset failed. [C094] [C095]
+
+Bridge v2 successfully repaired its technical control layer: exact QA, the view firewall, and the
+incomplete-controller checks passed 512 of 512 endpoints; 492 of 512 endpoints met the frozen [C099]
+support floor, and all 492 passed the exact joint-control gates. [C099] The remaining 20 endpoints [C099]
+had only 97--119 eligible rows against the frozen minimum of 120, so qualification stopped and [C099]
+validation remained unopened. [C099] No bridge-method comparison, factorial effect, or validation
+performance was evaluated. [C100] This is evidence that the control implementation was repaired on
+eligible endpoints, not evidence about the scientific bridge methods.
+
+### 4.23 Confirmation-readiness follow-ups
+
+The later AMALGUM v3 branch does not supply independent confirmation. Its gen9 control plane was
+rejected before changed-region publication, containment, capability closure, or any model scoring;
+the retained source is therefore exposed-source calibration material only, never independent
+replication or confirmation. [C101]
+
+A source was subsequently acquired from the UniversalDependencies/UD_Swedish-Talbanken repository
+under the V10 one-shot protocol. The prospective source-family screen found zero content,
+pathname, or whole-file-digest matches in the frozen project-history universe, and the candidate-
+pedigree screen found zero blocking identifiers. [C102] These are narrow project-history and
+repository-provenance findings, not claims of researcher unawareness, independent replication, or
+model-pretraining independence.
+
+V10 nevertheless failed its next scientific data gate. The frozen cross-role check retained 100
+blocking witnesses and the protocol stopped with `cross_role_overlap` before full history-overlap
+and support analysis, split publication, or private payload creation. [C103] The builder initiated
+zero model operations, GPU queries, or training runs; model scoring, K2/branch training, and Stage C
+remained unauthorized. [C103] V10 is terminal and
+non-retriable; it is a source/data-gate rejection, not a model result or independent replication.
+
 ## 5. Integrated interpretation
 
 ### 5.1 What is positive
@@ -757,6 +804,8 @@ The failures concern ownership and functional specificity:
   conjunction even when some recovered substantial potency or necessity. [C078] [C079]
 - a trained-copy rank-16 nonlinear controller remained highly potent while failing joint collateral [C092]
   safety, despite the corresponding rank-32 family passing. [C092]
+- the SAE basis-selection successor did not generalize from its small fit panel, and its successful
+  span oracles were full-rank expressibility checks rather than localized controllers. [C097] [C098]
 
 The strongest supported conclusion is therefore conditional and local:
 
@@ -1013,6 +1062,15 @@ relational training are not authorized. [C038] [C040]
 12. Preserve transformer-realistic bridge/method r2 unchanged. It validates the evaluator on a
     nontrivial constructed graph and demonstrates a registered potency--precision gap, but does not
     isolate discovery from capacity or authorize K2. [C076] [C078] [C080]
+13. Keep SAE-capacity R2 as the primary SAE result. Treat the basis-selection successor as a
+    generalization warning rather than a basis indictment, and do not promote its full-rank span
+    oracles as low-dimensional feature selection. [C097] [C098]
+14. Preserve bridge v2 as a technical qualification stop. Its repaired controls passed on supported
+    endpoints, but method validation was never opened and no scientific bridge comparison exists.
+    [C099] [C100]
+15. Preserve AMALGUM v3 as exposed-source calibration only, and preserve V10 as a terminal
+    source/data-gate rejection. No replacement blind payload or independent confirmation result
+    exists, so neither branch authorizes scoring or training. [C101] [C102] [C103]
 
 ### 8.2 Conditions for any new edge program
 
@@ -1121,6 +1179,14 @@ frontier, not to rescue or rename K2. V2 does not authorize that experiment.
 - The v3 relational-object successor stopped at prescore, and the v4 measurement-design study stopped
   after real-panel balance and overlap evaluation. Neither contributes a positive or negative
   relational-representation result. [C038] [C040]
+- The basis-selection successor changed fit-panel size and seeds relative to SAE-capacity R2, and its
+  held-out reconstruction deteriorated sharply; it cannot isolate basis quality from fit
+  generalization or selection. [C097] [C098]
+- Bridge v2 stopped at technical qualification because some endpoints missed the support floor.
+  Validation and scientific method comparisons were not run. [C099] [C100]
+- The confirmation-readiness work produced no model result: gen9 stopped before scoring, while V10
+  passed narrow source-family/pedigree screens but failed cross-role separation before payload
+  publication. [C101] [C102] [C103]
 
 ## 10. Reproducibility and artifact map
 
@@ -1183,6 +1249,16 @@ Primary evidence artifacts are:
 - `results/trained_copy_method_benchmark_v1_20260810r4_2/final/result.json`
 - `reports/claim_review/trained_copy_method_benchmark_v1_r4_2_post_result_claim_review.md`
 - `reports/provenance/trained_copy_method_benchmark_v1_r4_2_postresult/PRESERVATION.json`
+- `results/trained_copy_sae_basis_selection_v1_20260814/final/result.json`
+- `results/causal_manifold_bridge_v2_technical_20260814/PREVALIDATION.json`
+- `reports/provenance/causal_manifold_bridge_v2_technical_run_20260814/TERMINAL.json`
+- `reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md`
+- `reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_rejection.md`
+- `reports/provenance/msae_independent_source_v10/source_family.json`
+- `reports/provenance/msae_independent_source_v10/candidate_pedigree.json`
+- `reports/provenance/msae_independent_source_v10/cross_role_overlap.json`
+- `reports/provenance/msae_independent_source_v10/rejection.json`
+- `reports/adversarial/msae_independent_source_v10_terminal_failure_review.md`
 - `prereg/proxy_control_naturalistic_confirmation_v1_draft.md`
 
 ## 11. Conclusion
@@ -1223,7 +1299,9 @@ The remaining prospective question is donor-free controller discovery and whethe
 capacity, selection, or intervention-operator limitation. [C091] [C093] [C095] The confirmed SAE
 capacity study makes this distinction concrete: a compact PCA controller and full-code SAE succeeded,
 partial SAE feature sets did not, but their decoder spans already contained the compact controller.
-[C094] [C095]
+[C094] [C095] The August successor did not resolve basis versus selection because its small fit panel
+failed to generalize, while its successful span oracles were full-rank; bridge v2 repaired technical
+controls but stopped before any scientific method comparison. [C097] [C098] [C099] [C100]
 
 > **Central conclusion:** These activations contain behaviorally relevant information, but neither
 > stable encoding nor intervention potency guarantees precise, collateral-safe control.

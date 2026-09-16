@@ -1,0 +1,38 @@
+VERDICT: SHIP
+ONE-LINE: The exact synthesis candidate is internally consistent, closes the earlier consolidation blockers, and honestly leaves the replacement-payload outcome incomplete.
+
+BLOCKERS
+  - None.
+
+REVISIONS
+  - None.
+
+NITS
+  - None.
+
+CHECKS RUN
+  - Exact-index census → 13 staged paths, all regular mode `100644`; no staged path is under `data/`, `results/`, `raw/`, `private/`, or `quarantine`, and every staged blob is UTF-8 plus LF-terminated.
+  - Commit-3 inventory reconstruction → the 13 staged paths exactly equal the 14-path `03_synthesis_and_handoff` inventory after removing only this not-yet-written review path; all 12 non-null SHA-256/size/index-mode bindings match. The thirteenth staged path is the inventory's explicit self-authenticated entry at `reports/provenance/msae_project_completion_20260915/porcelain_classification.json:2326-2333`; its reviewed bytes have SHA-256 `bb69226b204b56e04ef50ab905946bdcffb1dfe64ea6e840b1c28ad73deb5c8e`.
+  - Commit-3 digest reconstruction → sorting the 12 bound records by path and serializing the declared `<index_mode> <sha256> <size> <path>\n` form reproduces `5bd3b2945a403771907d0fccea73b249d31e636de245bdb3db05ff54cbb5a1ed`, the recorded digest and intended message `docs(msae): synchronize evidence synthesis and handoff` at `reports/provenance/msae_project_completion_20260915/porcelain_classification.json:2479-2485`.
+  - Prior-commit reconstruction → commit `934e3905317e1701c54a8792493e8021236b0862` has exactly the 117 inventoried commit-1 paths and commit `e122d07baf616fe4657d134c70d7d0f80a8591bb` has exactly the 129 inventoried commit-2 paths; every SHA-256, byte size, and index mode matches. Their recomputed group digests are respectively `a1397552d7cd9780873ce7da4babf0ebb8014b20ddf40f417f8f218dc9aaf679` and `0031ef976b1c6a8956923c5158522e5d752b4e6543a508315241420053708314`. The baseline-to-HEAD diff is exactly those 246 paths.
+  - Prior-review binding → the staged commit-1 review is `VERDICT: SHIP` with SHA-256 `a5db1089cb1682ca0619d0d34180c82aa1106e9e4e934f19223c4b7487414b56`; the commit-2 review is `VERDICT: SHIP` with SHA-256 `1698f219738817991f13ce646a9d3327834ac19786a0544b46a4ae39bbf5c80a`. Those hashes and exact commits are recorded at inventory lines 3-19.
+  - Earlier BLOCK closure → all seven formerly omitted public verification logs are tracked mode `100644` at HEAD; the reviewed calibration launchers and V7-V10 acquisition/prepare entry points have executable index modes; the three logical commits and complete classification are now published; and `git diff --cached --check` passes. This closes the four concrete blockers in `reports/adversarial/msae_project_completion_20260915_staged_diff_review.md:4-20` without mutating the retained scientific failures.
+  - Claim review and verifier → `reports/claim_review/msae_project_completion_20260915_staged_claim_revision_review.md:1-30` is `CLAIM: SUPPORTED` at SHA-256 `487a5b3b5e416661e51f30f1cdb0cc8a6fc2c80dcc080246f315a6c7ae1b1003`. `python scripts/verify_paper_claims.py` returned `PASS` for 103 claims, 506 evidence bindings, and 68 paper selectors; `pytest -q -p no:cacheprovider tests/test_verify_paper_claims_v2.py` passed `1 passed`.
+  - Data-format checks → strict duplicate-key JSON parsing passed for the staged claim ledger and classification inventory. The ledger has 103 unique claim IDs; C097-C098 are `exploratory`, C099-C101 are `technical-invalid`, and C102-C103 are `development-prescore`, matching their prose and public evidence classes.
+  - Commit-3 safety scan → high-confidence staged-blob scanning found no private-key header, AWS/GitHub/Slack/OpenAI token, or bearer credential; sensitive-path scanning found no protected/raw/private/quarantine/final-payload path. No symlink, submodule, executable, or binary is staged in commit 3.
+  - Worktree hygiene before this report was written → zero ordinary unstaged tracked paths and zero ordinary untracked paths. The current 13-path index was not changed by this review. This report is now the sole permitted post-review addition and remains outside the index for the coordinator to scan, stage, and commit.
+
+CONTRACT COVERAGE
+  - Gen9 finished or rejected → met — `ANALYSIS.md:49-55`, `RESULTS.md:16-25`, `PAPER.md:739-742`, and `TODO.md:1178-1183` consistently classify gen9 as a terminal implementation/control-plane rejection before changed-region publication, containment, capability closure, M3/M4, signing, launch, or scoring. Commit 1 preserves the rejection and durable public transcript rather than repairing a frozen candidate.
+  - V3 is exposed-source calibration only → met — `ANALYSIS.md:5-12`, `RESULTS.md:7-18`, `PAPER.md:739-742`, and `TODO.md:1167-1183` expressly deny independent replication or confirmation and record that scoring did not launch.
+  - Independent-source gate and replacement payload → honestly incomplete — V10 acquired and bound the configured source but stopped at `cross_role_overlap` before full accessible-history overlap, support, split publication, or payload creation (`ANALYSIS.md:56-65`; `RESULTS.md:19,27-34`; `PAPER.md:744-756`; `TODO.md:1184-1191`). The inventory explicitly records outcome 3 as incomplete and successor-required at `reports/provenance/msae_project_completion_20260915/porcelain_classification.json:2489`; nothing calls the failure independent replication or model evidence.
+  - No K2 restart or branch training → met — the current decision remains closed at `ANALYSIS.md:5-12,77-84`, `RESULTS.md:7-20,33-34`, and `TODO.md:1189-1192`; model/GPU/scoring/training authorizations remain false in the bound public V10 record.
+  - August follow-ups integrated → met — `PAPER.md:711-735` and claims C097-C100 preserve basis selection as an exploratory generalization warning and bridge v2 as a technical stop; R2 stays primary with C094-C095 attached to its capacity sentence. No bridge-method result is claimed.
+  - Stale synthesis refreshed → met — `ANALYSIS.md:3-84` supplies the current evidence hierarchy and stop decision, while `RESULTS.md:3-63` adds the 2026-08-03 through 2026-09-15 factual result index and operational closure.
+  - Safe reproducible consolidation → met — the two committed logical predecessors, their SHIP reviews, exact inventory digests, public logs, executable modes, claim review, syntax/test evidence, clean diff, and secret/path scans are bound. No ignored data/result/private/raw artifact enters Git.
+  - Review-self-artifact policy → acceptable — the inventory separately marks its own unavoidable self-authentication at lines 2326-2333 and this review's not-yet-written cyclic entry at lines 2353-2360. The policy at lines 2500-2503 permits exactly this one post-review file; staging only these exact report bytes, scanning/diff-checking them, and making the final Git commit authenticates both otherwise non-self-hashable artifacts without reopening the reviewed 13-path index.
+
+UNKNOWNS
+  - The protected raw/source/blind/private/quarantine bytes were not opened, read, hashed, parsed, or printed. This review therefore does not recompute V10's raw-derived collision witnesses; it checks their public, hash-bound disposition and the independently reviewed claim boundary.
+  - No replacement blind payload or independent scored result exists. Outcome 3 remains incomplete, and a new reviewed successor protocol is required before scoring, K2 restart, or branch training.
+  - Final commit-3 identity does not exist yet. SHIP is conditional only on the coordinator adding this report as the sole extra path, confirming its mode/hash and safety checks, leaving the other 13 index entries byte-identical, and committing with the inventoried message.

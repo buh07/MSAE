@@ -1142,6 +1142,53 @@ Execute in this order:
 9. [x] Complete the five-analysis diagnostic obligation. The base root ran baseline/Tier-2 calibration and all 500 requested raw L3/L4 refits; the additive continuation ran all K2 refits, stability, and specificity jobs and dispositioned their invalid/stopped scientific endpoints without changing the frozen gates.
 10. [x] Independently review, freeze, and run the additive diagnostic-only continuation and summary recovery. Preserve the original stop/root record, pair K2 IDs with the exact retained raw IDs, keep all scientific gates unchanged, and prohibit decision promotion/training.
 11. [ ] **Immediate next research step:** draft and independently review a new prescore, independent-evidence plan that fixes document/source bootstrap class coverage using discovery/calibration only and evaluates once on a new architecture-confirmation source or dataset. Do not relax or rerun the frozen completion, use descriptive L4 as a fallback, or open the blind final partition.
+    - **2026-08-20 attempted and stopped before GPU/model scoring:** the reviewed
+      AMALGUM-v0.2 candidate had adequate label support and a deterministic
+      175-document C1 / 175-document C2 split, but the exhaustive accessible-
+      history audit found **206 blocking exact/near sentence collisions** across
+      **143 selected documents**. All 50 selected `whow` documents collided.
+      Stage A is therefore `ineligible`/not ready; no Stage B, GPU job, model
+      call, or tmux session was authorized. See
+      `reports/provenance/msae_independent_measurement_v1/history_overlap.json`
+      and `stage_a.json`.
+    - Next, choose a genuinely new source under a new reviewed protocol. Run the
+      filename/source-family and accessible-history screen before consuming it
+      as the confirmation source; do not repair this failure by outcome-blind
+      cherry-picking later AMALGUM ranks under the already frozen rule.
+    - **2026-08-20 v2 overlap redesign also stopped prescore:** the prospective
+      substantive gate removed the 206 short-fragment false positives but its
+      cumulative-short rule still blocked four phrasebook-vs-ESL/CHILDES pairs
+      (20--22 distinct shared short-phrase tokens, only 1.9--3.9% of each
+      selected document, with zero/negligible five-gram similarity). Preserve
+      v2 exactly as `stopped_prescore_overlap_ineligible`; do not reinterpret
+      its Stage A as passing. See
+      `data/msae_independent_measurement_v2/history_overlap.json` and
+      `reports/provenance/msae_independent_measurement_v2/status.json`.
+    - **Superseded additive v3 course (closed by the 2026-09-14 disposition
+      below):** retain the unchanged AMALGUM split only as
+      an exposed-source technical/measurement replication, never pristine
+      confirmation. Freeze cumulative short overlap as
+      `members>=5 && S>=20 && 10*S>=selected_token_count`, preserve all other
+      substantive gates, bind the four v2 rows as motivating (not independent)
+      regressions, and retain separate planted validation. Finish strict labels,
+      four-role 500-draw maps, closure, signed authorization, typed replay QA,
+      and external prescore review. The prior plan permitted calibration only if v3 Stage A and
+      the final adversarial review both pass; Stage C remains blocked pending a
+      separately reviewed replacement blind partition.
+    - **2026-09-14 gen9 disposition:** the frozen v3 control plane was rejected
+      before changed-region publication after safe predecessor/CPU checks found
+      stale or misbound authorities, incomplete changed-region/static closure,
+      containment and socket-namespace defects, and missing publication/recovery
+      contracts. No v3 model scoring was launched. Preserve v3 as exposed-source
+      calibration only; it is not independent replication.
+    - **2026-09-15 independent-source v10 disposition:** the reviewed one-shot
+      acquisition bound the configured UniversalDependencies Swedish-Talbanken tree and passed the
+      source-family and candidate-pedigree gates. The next frozen gate retained
+      100 cross-role overlap witnesses (98 short-containment, 2 exact), so V10
+      stopped before full history-overlap/support evaluation, split publication,
+      or blind-payload creation. V10 is terminal/non-retriable; any continuation
+      needs a newly named and independently reviewed source/role protocol. Model
+      scoring, GPU, K2, and branch-training work remains prohibited.
 12. [ ] After that independent gate, sign exactly one G3 completion branch and freeze the primary/fallback case study plus that branch's evaluation plan. Until then, record `equivocal_no_decision` and prohibit new training.
 13. [ ] If the learned branch is active, run engineering, 25M, 100M, and 1B gates in sequence; otherwise record M7 as `not_applicable`.
 14. [ ] Freeze representations/configs/claims, open the final test once, and complete branch-specific functional, causal, stability, and case-study evaluation.

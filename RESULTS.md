@@ -1,6 +1,66 @@
 # MSAE Results
 
-Last updated: 2026-08-02 (America/New_York)
+Last updated: 2026-09-15 (America/New_York)
+
+## Current closure and newest evidence (2026-08-03 through 2026-09-15)
+
+Status: the existing K2/branch-training program remains closed. No K2 or branch
+training was restarted. The August method/capacity follow-ups are complete as
+listed below. The later AMALGUM v3 materials are exposed-source calibration
+materials only; they are not an independent replication or confirmation.
+
+### Operational closure
+
+| Item | Current status | Factual result / artifact |
+|---|---|---|
+| Exposed-source v3 M2 preparation | complete and technically eligible | 350 AMALGUM documents; 1,491,748 label rows; 17 tasks × 4 roles; 34,000 bootstrap-map entries; 8,297 nonblocking overlap diagnostics and zero blocking historical collisions ([M2 provenance](reports/provenance/msae_independent_measurement_v3/m2_completion_manifest.json)) |
+| Gen9 control plane | **rejected before changed-region publication** | safe matrix: v1 `5 passed`; v2 `47 passed`; v3 `102 passed`; post-M1 `26 passed`; post-M2 `1 failed, 70 passed, 1 deselected`; remediation `50 passed`; gen4 `4 failed, 123 passed, 1 deselected`; gen9 CPU `24 failed, 161 passed, 1 deselected`; publisher nodes `2 passed` ([rejection](reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_rejection.md)) |
+| Exposed-source v3 scoring | not launched | gen9 stopped before changed-region, containment, capability, M3/M4, authorization, signature, or launcher stages |
+| Independent-source readiness v10 | **terminal scientific data-gate rejection** | exact UD Swedish-Talbanken acquisition succeeded at commit `c434778d9511be5c35a6a11531f0107a960fb5d6`; source-family and candidate-pedigree gates were eligible, but the frozen cross-role gate retained 100 fail-fast witnesses (98 `contained_short`, 2 `exact`) and stopped before full history overlap, support, split, or payload publication ([terminal review](reports/adversarial/msae_independent_source_v10_terminal_failure_review.md)) |
+| K2 restart / new branch training | not restarted / not launched | explicitly prohibited pending the independent-source gate |
+
+The gen9 rejection is an implementation/control-plane result, not a scientific
+calibration result. No changed-region manifest, real-tmux containment run,
+capability report, implementation approval, M3/M4 closure, signature, or live
+handoff exists for that candidate.
+
+The independent-source sequence also remains closed. V10 verified the configured
+four-file UniversalDependencies repository tree and the narrow pre-v8 project-history/source-family
+conditions, but it did **not** create a replacement blind payload: the private
+namespace, no-training gate, and terminal seal are absent. The retained V10
+rejection is non-retriable and requires a newly reviewed successor protocol.
+This is a source/data-gate result, not model evidence or independent replication.
+The builder initiated zero model operations, GPU queries, or training runs, and
+model scoring, K2/branch training, and Stage C remained unauthorized.
+
+### Post-atlas experimental result index
+
+| Study | Status | Latest factual result |
+|---|---|---|
+| Repaired measurement v2.4 | eligible negative for the tested conjunction | `K2_broad_position_content_selective_not_supported`; g4 relative-quartile assigned recovery `0.9318`, leakage `1.0385`; signed-head-distance selectivity `-0.4112` to `-0.3353`; token-identity content recovery about `0.834–0.862`, with the required lexical cross-control failing |
+| Numerical-QA attempts 7/9/10 | technical stops | scientific atlas not executed |
+| Attempt 11 | analysis-stage stop | retained signed no-retry terminal |
+| Attempt 12 | exploratory, technically ineligible | completed analysis-only import; all candidate organizations ineligible |
+| Relational syntax attempt 13 | exploratory negative | CTETEX→GENTLE true deprel macro-F1 `0.6513` vs sequential `0.6593`; reverse true `0.6573` vs sham `0.6645`; all-task recovery/isolation conjunction failed |
+| Context-versus-local attempt 14 | eligible negative | 136/648 supported components; transfer capture `0.1620/0.1917`; coherent-vs-unrelated specificity margin `0.0087/0.0136`; `CONTEXT_DETECTABLE_BUT_NOT_CLEANLY_SEPARABLE_AT_THIS_LAYER` |
+| Proxy-control benchmark v1 | exploratory | 918 rows; post-hoc aligned probe-recovery/specificity rho `0.4058`; probe-recovery/collateral-safety rho `-0.6005`; CKA/collateral-safety rho `-0.7075` |
+| Prospective proxy-control v2 | complete joint failure | `0/90` method–concept–stage decisions and `0/972` controlled method summaries passed all gates; relative-position behavior-gradient recovery `0.330` with collateral KL `0.058`; no training authorized |
+| Released-method benchmark v3 | natural endpoint ineligible | 51,456 component measurements; constructed linear positive control passed; all 14 natural task cells missed at least one common endpoint gate; no method-level natural conclusion |
+| Naturalistic endpoint v6.2 | development stop | retrieval qualified zero model families; agreement remained template-conditioned; `BOTH_ENDPOINTS_STOP` |
+| IOI v1 | development stop | substantial counterfactual effects but no checkpoint met the every-template hierarchy; method stage unopened |
+| Canonical induction v1.1 | development stop | attention/contribution controls passed; clean-donor recovery `0.140` vs `0.25` requirement and selectivity `0.086` vs `0.15` |
+| Canonical induction two-tier v2 | qualified evaluator, insufficient upstream control | exact full-residual skyline passed; fixed circuit sets contributed but did not provide sufficient recovery/specificity |
+| Constructed copy v1.1 | positive control | exact complete controller passed on the constructed mechanism |
+| Transformer-realistic bridge/method r2 | controlled synthetic mixed result | exact controller passed; approximate low-rank/projection/SAE/supervised controllers often retained potency without joint specificity/completeness/safety |
+| Capacity diagnostic + trained copies | positive capacity/evaluator result | global paired-linear ranks 16/32/64 passed while 4/8 failed; trained-copy exact controller passed all 3 checkpoints and both panels |
+| Trained-copy methods R4.2 | positive at adequate capacity | output-oracle, paired-linear, ambient PCA, readout projection, and target-nonlinear methods passed at rank 32/64 as applicable; sufficient-rank bracket `(16,32]` |
+| SAE-capacity R2 | confirmed capacity contrast | all 2,880 partial-subset estimands at budgets 16–128 failed; all 720 full-code budget-256 estimands passed; rank-32 PCA passed; mean full-code reconstruction relative-L2 `0.405%` |
+| SAE geometry companion | analysis-only | every budget-64 decoder-row span covered the successful PCA rank-32 subspace to at least `0.9999999999999996`; no model forwards |
+| Basis-selection successor | exploratory generalization warning | 64 fit rows; fit reconstruction relative-L2 `0.00411`, fit donor-delta error `0.00273`; held-out reconstruction `0.606–0.607`, donor-delta `0.588–0.596`; PCA rank 32 passed `6/6`, full SAE `0/54`, partial `0/1,296`, OMP `0/270`; all selected spans had empirical rank 64 |
+| Bridge v2 technical follow-up | technical stop | QA/firewall/incomplete checks passed `512/512`; `492/512` met support and passed exact controls; 20 had 97–119 rows vs 120 required; validation/method comparison unopened |
+
+The basis-selection and bridge-v2 rows are bound to the later claim review at
+[reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md](reports/claim_review/sae_basis_selection_v1_bridge_v2_post_result_claim_review.md).
 
 This document is a factual index of MSAE experiment runs, statuses, result artifacts, and recorded metrics. It intentionally does not include analysis or interpretation.
 
