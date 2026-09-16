@@ -1,0 +1,42 @@
+MSAE independent source v9 source-free checks
+Date: 2026-09-15
+Scope: these v9 checks initiate no v8/v9 raw-byte/private/quarantine/network/model/GPU/scoring/training operation; process snapshot is informational, not authority evidence.
+
+$ python -c namespace-absence-check
+PASS: v9 data namespace absent
+
+$ PYTHONPYCACHEPREFIX=/tmp/[external] PYTHONDONTWRITEBYTECODE=1 python -m py_compile [v9 builder/runner/test]
+PASS: py_compile (external cache)
+
+$ PYTHONDONTWRITEBYTECODE=1 python /tmp/msae_v9_source_free_validate.py
+PASS: runtime/config/plan-review/registry/screen/v8-carryover/AST/process-snapshot-schema
+runtime=3.12.3 unicode=15.0.0
+history_input_count=16133 history_inputs_sha256=8070a7cdd536a0dbd6104ff1dfb279ef01fb0acf98e969227625324155227564
+carryover_control_count=17 carryover_raw_count=4
+process_count=47 forbidden_identity_count=11 status=ineligible
+
+$ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider [v4/v4.1/v4.2/v5/v6/v7/v8/v9 source suites]
+........................................................................ [ 11%]
+........................................................................ [ 23%]
+........................................................................ [ 34%]
+........................................................................ [ 46%]
+........................................................................ [ 57%]
+........................................................................ [ 69%]
+........................................................................ [ 81%]
+........................................................................ [ 92%]
+..............................................                           [100%]
+622 passed in 28.45s
+
+$ git diff --check -- [v9 builder/runner/test/config]
+PASS: git diff --check
+
+$ sha256sum [review inputs except this containing log]
+0607886af9561d8418fd7a153322e6b59cd47404f33174c49b07bec5284cd57e  docs/plan-msae-independent-source-v9.md
+5e471cde50c9b4cda8e8f4ad8aca178e235d8a8b9d981a78d9e5b588f96aaee7  reports/adversarial/msae_independent_source_v9_plan_review.md
+00d7cdca4e9893ef1f4e36b6104caf21991ce1ca92e9897d3c5a72d497212f47  reports/provenance/msae_independent_source_v9/v8_carryover_authority.json
+3166d09141374506d7d200fa8d630a66e4a790f5a3f2e81778ed522d4a327863  reports/provenance/msae_independent_source_v9/historical_source_registry.json
+cdda84035279b78698f98c760c5ce12d5276b9b2afbc8e4218133d8207dccafd  reports/provenance/msae_independent_source_v9/preacquisition_alias_screen.json
+5714f714039ecf29f1203000ec628984ff22abe62703946891cb5eaf781fc5fa  scripts/prepare_msae_independent_source_v9.py
+c622d1bd2f79609e843a5c003dc6c1405b4dcd25b41520532d12e3a32a0bcd97  scripts/acquire_msae_independent_source_v9.py
+90054e75b2fb57e5ae6ff989dd1fae44c9d7220799d4fa34d43379dae59c2667  tests/test_prepare_msae_independent_source_v9.py
+db736634650af6b191f41c7ad48cae354dbee4a9a68e92ec69f7375655e2a5d5  configs/msae_independent_source_v9/acquisition.json

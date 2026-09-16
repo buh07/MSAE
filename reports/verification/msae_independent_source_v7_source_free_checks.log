@@ -1,0 +1,36 @@
+MSAE independent source v7 source-free checks
+Date: 2026-09-15
+Scope: source-free only; no v7 source/raw/private/quarantine/network/model/GPU/scoring/training operation.
+
+$ python -c namespace-absence-check
+PASS: v7 data namespace absent
+
+$ PYTHONPYCACHEPREFIX=/tmp/msae-v7-source-free-pycache PYTHONDONTWRITEBYTECODE=1 python -m py_compile [v7 builder/runner/test]
+PASS: py_compile (external cache)
+
+$ PYTHONDONTWRITEBYTECODE=1 python /tmp/msae_v7_source_free_validate.py
+PASS: runtime/config/plan-review/registry/screen/AST/process-snapshot
+runtime=3.12.3 unicode=15.0.0
+history_input_count=16117 history_inputs_sha256=545cf2ed68a657ae45a753b3f022bc91ad35e4e60c7587d5803957cad4953533
+process_count=39 forbidden_identity_count=0 status=eligible
+
+$ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider [v4-v7 source suites]
+........................................................................ [ 20%]
+........................................................................ [ 41%]
+........................................................................ [ 62%]
+........................................................................ [ 83%]
+..........................................................               [100%]
+346 passed in 12.91s
+
+$ git diff --check
+PASS: git diff --check
+
+$ sha256sum [v7 reviewed inputs]
+67053a1b4a222de2fd9de18c534f2f5e58024413224e859c7ddfed4b63261916  docs/plan-msae-independent-source-v7.md
+3f8ceedbd4be7f3335b8675f1e241e7fd3193719bb4d0bc55a3df54fc19a9429  reports/adversarial/msae_independent_source_v7_plan_review.md
+a5edbe04ce5ca083aa16cc4cade9d64beffe4a0541d67cd7a42dc05e7ec6712f  reports/provenance/msae_independent_source_v7/historical_source_registry.json
+336a3a4082a1096201ae897715629aff870939d003fc9c6650de748ef16df3d7  reports/provenance/msae_independent_source_v7/preacquisition_alias_screen.json
+ffa487d274699d26035754dac59cc61a01f2383d54872aefe88d633ff25a239c  scripts/prepare_msae_independent_source_v7.py
+2f684b28fe98891df84d7d10c2b11b721f6a7c348f843374eec2a5a858bccd38  scripts/acquire_msae_independent_source_v7.py
+51bf834e29bc56c743a2dafe981dfa0f85c6d9a4bcc2eb8dbf0be39303dffbea  tests/test_prepare_msae_independent_source_v7.py
+30fad65ac10b504a5810b7015c153c53501d18d2dcadc1204795701391b579bd  configs/msae_independent_source_v7/acquisition.json

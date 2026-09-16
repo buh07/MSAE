@@ -1,0 +1,112 @@
+{
+  "alias_token_sequences": [
+    {
+      "alias_id": "ud_swedish_talbanken",
+      "tokens": [
+        "ud",
+        "swedish",
+        "talbanken"
+      ]
+    },
+    {
+      "alias_id": "swedish_talbanken",
+      "tokens": [
+        "swedish",
+        "talbanken"
+      ]
+    },
+    {
+      "alias_id": "sv_talbanken",
+      "tokens": [
+        "sv",
+        "talbanken"
+      ]
+    },
+    {
+      "alias_id": "repository_url",
+      "tokens": [
+        "https",
+        "github",
+        "com",
+        "universaldependencies",
+        "ud",
+        "swedish",
+        "talbanken",
+        "git"
+      ]
+    },
+    {
+      "alias_id": "commit",
+      "tokens": [
+        "c434778d9511be5c35a6a11531f0107a960fb5d6"
+      ]
+    }
+  ],
+  "candidate_commit": "c434778d9511be5c35a6a11531f0107a960fb5d6",
+  "candidate_repo": "https://github.com/UniversalDependencies/UD_Swedish-Talbanken.git",
+  "content_occurrence_count": 0,
+  "content_occurrences": [],
+  "gpu_queries": 0,
+  "history_input_count": 16133,
+  "history_inputs_sha256": "8070a7cdd536a0dbd6104ff1dfb279ef01fb0acf98e969227625324155227564",
+  "history_registry_path": "reports/provenance/msae_independent_source_v8/historical_source_registry.json",
+  "history_registry_sha256": "ff4a36996f58531353dda9ed8fcbedb4c3a615f2d877e8b31f1462ddc8581a97",
+  "metadata_discovery": {
+    "method": "git_ls_remote_refs_heads_master",
+    "network_operations": 1,
+    "source_blobs_acquired": 0,
+    "source_content_read": false
+  },
+  "model_operations": 0,
+  "normalization": "strict-utf8-NFKC-casefold-Unicode-Letter-Number-tokenization-contiguous-token-sequences-v1",
+  "normalization_goldens": [
+    {
+      "input": "UD_Swedish-Talbanken",
+      "tokens": [
+        "ud",
+        "swedish",
+        "talbanken"
+      ]
+    },
+    {
+      "input": "Swedish Talbanken",
+      "tokens": [
+        "swedish",
+        "talbanken"
+      ]
+    },
+    {
+      "input": "Ｓｗｅｄｉｓｈ＿Ｔａｌｂａｎｋｅｎ",
+      "tokens": [
+        "swedish",
+        "talbanken"
+      ]
+    },
+    {
+      "input": "SV_Talbanken",
+      "tokens": [
+        "sv",
+        "talbanken"
+      ]
+    },
+    {
+      "input": "xSwedish-Talbankeny",
+      "tokens": [
+        "xswedish",
+        "talbankeny"
+      ]
+    }
+  ],
+  "pathname_occurrence_count": 0,
+  "pathname_occurrences": [],
+  "quarantine_content_reads": 0,
+  "runtime": {
+    "implementation": "CPython",
+    "python_version": "3.12.3",
+    "unicode_version": "15.0.0"
+  },
+  "schema_version": "msae_independent_source_v8_preacquisition_alias_screen_v2",
+  "source_use_evidence_count": 0,
+  "status": "no_project_source_use_evidence",
+  "training_runs": 0
+}

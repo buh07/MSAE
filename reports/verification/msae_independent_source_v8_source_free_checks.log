@@ -1,0 +1,39 @@
+MSAE independent source v8 source-free checks
+Date: 2026-09-15
+Scope: source-free only; no Swedish Talbanken source/raw/private/quarantine/network/model/GPU/scoring/training operation.
+
+$ python -c namespace-absence-check
+PASS: v8 data namespace absent
+
+$ PYTHONPYCACHEPREFIX=/tmp/msae-v8-source-free-pycache PYTHONDONTWRITEBYTECODE=1 python -m py_compile [v8 builder/runner/test]
+PASS: py_compile (external cache)
+
+$ PYTHONDONTWRITEBYTECODE=1 python /tmp/msae_v8_source_free_validate.py
+PASS: runtime/config/plan-review/registry/screen/predecessors/AST/process-snapshot
+runtime=3.12.3 unicode=15.0.0
+history_input_count=16133 history_inputs_sha256=8070a7cdd536a0dbd6104ff1dfb279ef01fb0acf98e969227625324155227564
+predecessor_count=50
+process_count=39 forbidden_identity_count=0 status=eligible
+
+$ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider [v4-v8 source suites]
+........................................................................ [ 15%]
+........................................................................ [ 30%]
+........................................................................ [ 45%]
+........................................................................ [ 60%]
+........................................................................ [ 75%]
+........................................................................ [ 90%]
+.............................................                            [100%]
+477 passed in 21.66s
+
+$ git diff --check
+PASS: git diff --check
+
+$ sha256sum [v8 reviewed inputs]
+7aec70f8d6f384f2919f5f3086064b437dd34ff7731542aed2d7abe23ac5ae19  docs/plan-msae-independent-source-v8.md
+d159749125a6db4e1dd6a68f2207e4be6b643e2f0d7b8112695cfec98660204d  reports/adversarial/msae_independent_source_v8_plan_review.md
+ff4a36996f58531353dda9ed8fcbedb4c3a615f2d877e8b31f1462ddc8581a97  reports/provenance/msae_independent_source_v8/historical_source_registry.json
+68a7536c95896087960dd4fc5882df85296baaa1a07aaf910e0e7c257b165e2f  reports/provenance/msae_independent_source_v8/preacquisition_alias_screen.json
+5b3bf93ed412e480e7d84720b235b104bc571bb63faa16504279cd25cf6bc881  scripts/prepare_msae_independent_source_v8.py
+07a15235a860296ffb461d2bc065cdb093fb87656b9dbab3918c20293b4159a3  scripts/acquire_msae_independent_source_v8.py
+3baad53b0d863c4139abeaf3fa303f46fad4338d0342d0289ced15ba83bd76cc  tests/test_prepare_msae_independent_source_v8.py
+8383d3ba80ac1296887c243e00d09b6b9a5e79b19f771934a1ddd07ceac56df9  configs/msae_independent_source_v8/acquisition.json

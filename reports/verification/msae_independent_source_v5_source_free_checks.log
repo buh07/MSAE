@@ -1,0 +1,18 @@
+MSAE v5 source-free verification — 2026-09-14 — implementation revision 9
+Scope: no network, no source acquisition, no source/private/quarantine reads, no model/GPU/training operations.
+1c450895bf836b142bc46dced85afd4f109edd68a96f6e4e91dc5719f0b3fc6b  docs/plan-msae-independent-source-v5.md
+8137a0e7e2dffbf7c4c052e27dc60f5de3f1d1e5568723f5834de5c404aa3abc  reports/adversarial/msae_independent_source_v5_plan_review.md
+c0c17ed89e19b3af611bae43e73095ca4acb4d0a61a01f7c3ef8979cbe2fbd7d  reports/provenance/msae_independent_source_v5/preacquisition_alias_screen.json
+484a2b8c13798924c159d0e1bf7fbc90d19010111f89b08e7ddb7ceb6780b83f  reports/provenance/msae_independent_source_v5/historical_source_registry.json
+f78aba1add310c6a76a05cac4ccc159b9c6aa924e888664d3a54f372e0ebb1e8  scripts/prepare_msae_independent_source_v5.py
+6b5c78543c9530c98c24ce99f90ac1caff6ca496d111d8b25889ec448402d11f  scripts/acquire_msae_independent_source_v5.py
+f2cf4d0b58554d688fb4b601bcc739dc6749833d393b49e275178eedccdcac76  tests/test_prepare_msae_independent_source_v5.py
+6b53511b6d0976ada49a7f090b884d7faeb7db3afb55da9a2f593c369af3e66d  configs/msae_independent_source_v5/acquisition.json
+$ Python 3.12.3 py_compile with external pycache
+PASS: py_compile
+$ PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q -p no:cacheprovider tests/test_prepare_msae_independent_source_v4.py tests/test_prepare_msae_independent_source_v4_1.py tests/test_prepare_msae_independent_source_v4_2.py tests/test_prepare_msae_independent_source_v5.py
+........................................................................ [ 52%]
+.................................................................        [100%]
+137 passed in 5.16s
+PASS: builder deny-all and runner exact allowlisted process/network contracts, inode-safe durable publisher cleanup, same-fd canonical public-final parsing, no-follow public/raw/private custody, scratch teardown before success, exact idempotent command/raw/Git-blob/digest reconstruction, empty-stderr digest checks, complete scientific-artifact schemas plus deterministic terminal reconstruction, exact structural recensus, retained failure reconstruction, and terminal success/rejection reconstruction
+Result: PASS; builder/runner model_operations_initiated=0; gpu_queries_initiated=0; training_runs_initiated=0; source_acquisitions=0; quarantine_content_reads=0.

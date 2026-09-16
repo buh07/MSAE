@@ -1,0 +1,1 @@
+{"failure_code":"malformed_feats","first_failed_gate":"source_parser","gpu_queries":0,"model_operations":0,"next_action":"new_reviewed_protocol_only","payload_created":false,"schema_version":"msae_independent_source_v4_rejection_v1","source_content_reported":false,"status":"rejected","training_runs":0}

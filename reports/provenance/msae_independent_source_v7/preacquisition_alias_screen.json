@@ -1,0 +1,112 @@
+{
+  "alias_token_sequences": [
+    {
+      "alias_id": "ud_finnish_tdt",
+      "tokens": [
+        "ud",
+        "finnish",
+        "tdt"
+      ]
+    },
+    {
+      "alias_id": "finnish_tdt",
+      "tokens": [
+        "finnish",
+        "tdt"
+      ]
+    },
+    {
+      "alias_id": "fi_tdt",
+      "tokens": [
+        "fi",
+        "tdt"
+      ]
+    },
+    {
+      "alias_id": "repository_url",
+      "tokens": [
+        "https",
+        "github",
+        "com",
+        "universaldependencies",
+        "ud",
+        "finnish",
+        "tdt",
+        "git"
+      ]
+    },
+    {
+      "alias_id": "commit",
+      "tokens": [
+        "bfaae13719f249573d940edda6a0d7aa8eec620f"
+      ]
+    }
+  ],
+  "candidate_commit": "bfaae13719f249573d940edda6a0d7aa8eec620f",
+  "candidate_repo": "https://github.com/UniversalDependencies/UD_Finnish-TDT.git",
+  "content_occurrence_count": 0,
+  "content_occurrences": [],
+  "gpu_queries": 0,
+  "history_input_count": 16117,
+  "history_inputs_sha256": "545cf2ed68a657ae45a753b3f022bc91ad35e4e60c7587d5803957cad4953533",
+  "history_registry_path": "reports/provenance/msae_independent_source_v7/historical_source_registry.json",
+  "history_registry_sha256": "a5edbe04ce5ca083aa16cc4cade9d64beffe4a0541d67cd7a42dc05e7ec6712f",
+  "metadata_discovery": {
+    "method": "git_ls_remote_refs_heads_master",
+    "network_operations": 1,
+    "source_blobs_acquired": 0,
+    "source_content_read": false
+  },
+  "model_operations": 0,
+  "normalization": "strict-utf8-NFKC-casefold-Unicode-Letter-Number-tokenization-contiguous-token-sequences-v1",
+  "normalization_goldens": [
+    {
+      "input": "UD_Finnish-TDT",
+      "tokens": [
+        "ud",
+        "finnish",
+        "tdt"
+      ]
+    },
+    {
+      "input": "Finnish\u00a0TDT",
+      "tokens": [
+        "finnish",
+        "tdt"
+      ]
+    },
+    {
+      "input": "\uff26\uff49\uff4e\uff4e\uff49\uff53\uff48\uff3f\uff34\uff24\uff34",
+      "tokens": [
+        "finnish",
+        "tdt"
+      ]
+    },
+    {
+      "input": "FI_TDT",
+      "tokens": [
+        "fi",
+        "tdt"
+      ]
+    },
+    {
+      "input": "xFinnish-TDTy",
+      "tokens": [
+        "xfinnish",
+        "tdty"
+      ]
+    }
+  ],
+  "pathname_occurrence_count": 0,
+  "pathname_occurrences": [],
+  "quarantine_content_reads": 0,
+  "runtime": {
+    "implementation": "CPython",
+    "python_version": "3.12.3",
+    "unicode_version": "15.0.0"
+  },
+  "schema_version": "msae_independent_source_v7_preacquisition_alias_screen_v2",
+  "source_use_evidence_count": 0,
+  "status": "no_project_source_use_evidence",
+  "training_runs": 0
+}

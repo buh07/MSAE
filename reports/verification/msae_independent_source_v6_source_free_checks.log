@@ -1,0 +1,22 @@
+MSAE v6 source-free verification — 2026-09-14 — implementation revision 2
+Scope: no network, no source acquisition, no source/raw/private/quarantine reads, no model/GPU/scoring/training operations.
+0bba4efcfea868b186f4051faa71d84382b33a8b1f8dc425ed595c7335b515cc  docs/plan-msae-independent-source-v6.md
+e229b167d7cd9c2b93a34a654d57402af35be0533ae1ddbe9f0ae0d32cb7a6d7  reports/adversarial/msae_independent_source_v6_plan_review.md
+c0c17ed89e19b3af611bae43e73095ca4acb4d0a61a01f7c3ef8979cbe2fbd7d  reports/provenance/msae_independent_source_v6/preacquisition_alias_screen.json
+484a2b8c13798924c159d0e1bf7fbc90d19010111f89b08e7ddb7ceb6780b83f  reports/provenance/msae_independent_source_v6/historical_source_registry.json
+af514bf5b701e2814f33085109101da24afc1e735363312f4c447ef0e7b58d65  scripts/prepare_msae_independent_source_v6.py
+87df5427acfc5d879eb8546557cb0b7e866f9e9c64ff6e84dadccc811253252f  scripts/acquire_msae_independent_source_v6.py
+c36a64fb9fa12d7face269ba29ed4e4d366f7bce5187220537e7f31f7c578810  tests/test_prepare_msae_independent_source_v6.py
+9a299aa464a4c8f0765c3d48bc8e225382a8a03734e5c046eb9ef965efeaec22  configs/msae_independent_source_v6/acquisition.json
+06bc319b12d763895d3d7c8038acb8c82b2ad965ef26d0c4cbcb05dd4a097136  reports/provenance/msae_independent_source_v5/preacquisition_control_plane_rejection.json
+6f83fe07fbb9b12dc7a75fbff2da2490300e0745e0c1fd15ad03b83fd8e5e347  reports/adversarial/msae_independent_source_v5_preacquisition_control_plane_rejection_review.md
+$ Python 3.12.3 py_compile with external pycache
+PASS: py_compile
+$ PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q -p no:cacheprovider tests/test_prepare_msae_independent_source_v4.py tests/test_prepare_msae_independent_source_v4_1.py tests/test_prepare_msae_independent_source_v4_2.py tests/test_prepare_msae_independent_source_v5.py tests/test_prepare_msae_independent_source_v6.py
+........................................................................ [ 31%]
+........................................................................ [ 62%]
+........................................................................ [ 93%]
+..............                                                           [100%]
+230 passed in 8.72s
+PASS: v5 controls plus v6 namespace/current-plan/predecessor bindings, corrected v6 split golden, inherited v5 pedigree-domain compatibility, globally sorted builder and acquisition-runner training-root reconstruction, and separate depth-first-versus-lexical regression coverage.
+Result: PASS; builder/runner model_operations_initiated=0; gpu_queries_initiated=0; training_runs_initiated=0; source_acquisitions=0; quarantine_content_reads=0.

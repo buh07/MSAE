@@ -1,0 +1,28 @@
+VERDICT: SHIP
+ONE-LINE: The frozen v5 authority path deterministically fails before acquisition and the retained rejection states that boundary accurately.
+
+BLOCKERS        (must fix before proceeding; empty if none)
+
+REVISIONS       (should fix; not blocking)
+
+NITS            (optional, cap at 5)
+
+CHECKS RUN
+  - `sha256sum` over the four supplied inputs → plan `1c450895bf836b142bc46dced85afd4f109edd68a96f6e4e91dc5719f0b3fc6b`; baseline inventory `51390650c9d3f7e80cc3810cc3be4b3eae23dc74358c611dca425fe98e31c7a3`; implementation review `b098b819f3cc122f4501ccf8465649e070fa46d83484bfc0bc86a283c14a33a2`; control-plane rejection `06bc319b12d763895d3d7c8038acb8c82b2ad965ef26d0c4cbcb05dd4a097136` — all exact requested bindings matched.
+  - Canonical parse and internal-digest recomputation of the public baseline and rejection JSON → both files are canonical newline-terminated JSON; `entries_sha256` and `training_root_entries_sha256` recompute exactly.
+  - Independent metadata-only reproduction of the frozen training-root predicate and depth-first traversal (without importing or invoking the builder) → baseline count `2116`; current count `2116`; path sets equal; all size/mode/inode/mtime records equal by path; baseline sequence globally sorted; current depth-first sequence not globally sorted; sequences unequal with 199 positional mismatches and no added or missing paths.
+  - Independent streaming SHA-256 verification of the same 2,116 permitted training-root files → `139,663,075,787` bytes hashed; zero digest mismatches against the baseline; combined with the metadata check, every per-path record remains equal.
+  - Direct `lstat`-only absence check over the authority manifest/review, acquisition entry/success/rejection finals and three named temporaries, complete v5 namespace/raw hierarchy and five frozen raw files, private directory, payload, and payload temporary → every enumerated path absent; no source, raw, private, or quarantine content was opened.
+  - Current hashes of the frozen builder/runner/tests/config/transcript and their baseline entries → the builder remains `f78aba1add310c6a76a05cac4ccc159b9c6aa924e888664d3a54f372e0ebb1e8`, and the baseline binds that same builder and the implementation review as `v5_authority` entries.
+
+CONTRACT COVERAGE
+  - Deterministic `training_root_delta` diagnosis → met — scripts/prepare_msae_independent_source_v5.py:1551-1558 globally path-sorts the baseline subset, while lines 1567-1579 compare it directly with the unsorted depth-first sequence yielded by lines 1582-1597. The independent reproduction found equal 2,116-element path/record mappings but unequal order, exactly matching reports/provenance/msae_independent_source_v5/preacquisition_control_plane_rejection.json:1.
+  - Current path-set and per-path-record equality → met — the independent traversal found no missing or added paths and no metadata differences; full SHA-256 revalidation of all 139,663,075,787 bytes found zero content differences. The only difference is sequence order.
+  - Failure occurs before authority publication or source acquisition → met — scripts/prepare_msae_independent_source_v5.py:1632-1645 checks history and training roots before constructing or writing the authority manifest; the frozen comparison must raise at lines 1578-1579. `lstat` confirms the authority manifest/review and every acquisition entry/outcome/raw/private target remain absent, consistent with the false/zero fields in the rejection at line 1.
+  - Rejection is terminal rather than retryable v5 state → met — docs/plan-msae-independent-source-v5.md:343-353 requires the exact reviewed builder before the create-once baseline and requires a manifest plus independent authority review before acquisition; scripts/prepare_msae_independent_source_v5.py:250-286 and 1702-1713 publish the baseline no-replace. Correcting the globally unsorted reconstruction changes a baseline-bound reviewed authority input, while the retained baseline and newly published rejection cannot be silently replaced or recensused under the frozen namespace. The rejection's successor-namespace instruction is therefore the conservative outcome.
+  - No one-way source or payload artifact was created → met — docs/plan-msae-independent-source-v5.md:90-154 and 276-312 define the acquisition and payload one-way paths; all corresponding finals, temporaries, directories, and source files are absent. The public control-plane rejection neither claims source readiness nor an acquisition outcome.
+  - K2/branch training, scoring, GPU, and Stage C remain unauthorized → met as a control-plane claim — reports/provenance/msae_independent_source_v5/preacquisition_control_plane_rejection.json:1 keeps every authorization false and every builder-attempt operation count zero; absent authority/review/entry artifacts make entry into the reviewed networked acquisition path impossible.
+  - Review restrictions → met — no baseline/authority/acquisition/prepare/verify command, network operation, source/raw/private/quarantine content read, or model/GPU/scoring/training command was used. Checks were independent public-metadata traversal, `lstat`, and hashing of existing training-root artifacts only.
+
+UNKNOWNS
+  - No durable per-invocation transcript was supplied for the two reported failed authority attempts, so `attempt_count=2` and the historical zero-operation counters are not independently reconstructable from filesystem state alone. The frozen control flow, exact deterministic failure, and complete absence of downstream artifacts are consistent with those claims and provide no contradictory evidence.
