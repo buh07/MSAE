@@ -1,0 +1,12 @@
+{
+  "content_opened": true,
+  "content_opened_date": "2026-08-20",
+  "full_upstream_clone_removed": true,
+  "protocol_id": "msae_independent_measurement_v1",
+  "remote": "https://github.com/gucorpling/amalgum.git",
+  "retained_scope": "350 selected non-Reddit dep CoNLL-U files",
+  "revision": "a2dbd33e757f75a61d68d22d1a29e840bdffa711",
+  "schema_version": "msae_independent_source_exposure_v1",
+  "selected_inventory_sha256": "973a4f6849246d0f7a12008cf86a82952a6f15a1377f7ebf424c027a39b9b141",
+  "selection_rule": "filename_hash_before_content"
+}

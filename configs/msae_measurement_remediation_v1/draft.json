@@ -1,0 +1,67 @@
+{
+  "artifact_schema_version": "msae_measurement_remediation_artifact_v1",
+  "dependency": {
+    "path": "scripts/msae_measurement_v2.py",
+    "sha256": "fc0daa2b78391340bf2e35fe4ea4792262ff8554cb3c7cb873bba12178479936"
+  },
+  "endpoint_schema_version": "msae_endpoint_evidence_v1",
+  "functional_reproducibility": {
+    "checkpoints": [],
+    "families": {},
+    "maximum_spread": {
+      "leakage": null,
+      "recovery": null,
+      "selectivity": null
+    },
+    "minimum_checkpoints": null
+  },
+  "protocol_id": "msae_measurement_remediation_v1_draft",
+  "replay": {
+    "partition": null,
+    "safety_factor": null,
+    "source_revision": null,
+    "source_role": "calibration",
+    "strata": [],
+    "tolerance_ladder": []
+  },
+  "replay_bundle_schema_version": "msae_calibration_replay_bundle_v1",
+  "schema_version": "msae_measurement_remediation_config_v1",
+  "stages": {
+    "A": {
+      "optional": [],
+      "purpose": "calibration_replay_candidate",
+      "required": [
+        "candidate_confirmation_source",
+        "immutable_source_revision",
+        "independent_grouping_provenance",
+        "label_support_audit",
+        "construct_inventory",
+        "counterfactual_template_specification",
+        "tolerance_ladder_frozen",
+        "dependency_attestation"
+      ]
+    },
+    "B": {
+      "optional": [],
+      "purpose": "confirmation_scoring_candidate",
+      "required": [
+        "calibration_replay",
+        "selected_replay_tolerance",
+        "cached_noop_hash_replay",
+        "canonical_pooling_qa",
+        "counterfactual_cache_alignment_qa"
+      ]
+    },
+    "C": {
+      "optional": [],
+      "purpose": "decision_review_candidate",
+      "required_by_category": {
+        "baseline": [],
+        "collateral": [],
+        "counterfactual": [],
+        "functional_reproducibility": [],
+        "localization": []
+      }
+    }
+  }
+}

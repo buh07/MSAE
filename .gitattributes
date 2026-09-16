@@ -1,0 +1,5 @@
+# Preserve exact bytes in immutable Markdown evidence that intentionally uses hard line breaks.
+docs/plan-msae-independent-source-v10.md whitespace=-trailing-space
+reports/adversarial/msae_independent_measurement_v3_post_m2_gen9_rejection.md whitespace=-trailing-space
+# Verification transcripts are immutable command output; whitespace is evidence bytes.
+reports/verification/*.log whitespace=-trailing-space

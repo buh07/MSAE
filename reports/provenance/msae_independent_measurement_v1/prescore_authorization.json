@@ -1,0 +1,15 @@
+{
+  "authorized_scope": "none",
+  "experiment_launch_authorized": false,
+  "history_overlap_sha256": "cdc8fbf0dbc875a52809a833e9a525a676dede1fabdc9c27b36900ee27b7819a",
+  "operator_instruction_recorded": true,
+  "protocol_config_sha256": "f958760a3b50e17dc80be85e2b376dcdee045720814621da66f7f942867041d7",
+  "reasons": [
+    "stage_a_not_ready",
+    "accessible_history_overlap_detected_206",
+    "external_prescore_review_blocked"
+  ],
+  "schema_version": "msae_independent_prescore_authorization_v1",
+  "stage_a_sha256": "301329753f8a5a53465c431fd06fdbdc6d002b1cddfa34e49591dcc558e92b8f",
+  "verdict": "BLOCK"
+}

@@ -1,0 +1,16 @@
+{
+  "baseline_head": "7e1a6fc7a26a870a4edcf29c96b7cdf3cdbd7faa",
+  "command": [
+    "git",
+    "grep",
+    "-in",
+    "AMALGUM",
+    "7e1a6fc7a26a870a4edcf29c96b7cdf3cdbd7faa",
+    "--",
+    "."
+  ],
+  "match_count": 0,
+  "returncode": 1,
+  "schema_version": "msae_independent_name_search_v1",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

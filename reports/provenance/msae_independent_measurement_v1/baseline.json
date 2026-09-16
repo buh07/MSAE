@@ -1,0 +1,56 @@
+{
+  "dirty_paths": [
+    {
+      "path": "docs/rfc-msae-measurement-remediation-readiness-v1.md",
+      "sha256": "635fff29cc801b1ce6960fd79dec636a8695606dfa64cad9da222efb8215fc54",
+      "size": 31122,
+      "status": " M",
+      "type": "file"
+    },
+    {
+      "path": "configs/msae_measurement_remediation_v1/draft.json",
+      "sha256": "d070399035660680524922f1e5ddb24868c3778b1e947351ed42689dffb1429b",
+      "size": 1877,
+      "status": "??",
+      "type": "file"
+    },
+    {
+      "path": "docs/rfc-msae-independent-measurement-v1.md",
+      "sha256": "8d9d48910de01aacf7d4e9d1f2319f2307f6def5d5d7851a91cf37db818c2492",
+      "size": 47185,
+      "status": "??",
+      "type": "file"
+    },
+    {
+      "path": "reports/provenance/msae_measurement_remediation_v1/BASELINE.json",
+      "sha256": "28eb7a9771ea5c429779b95a8407fefe17a5b1cb4fc02167fd1ad4c1fe3bb22a",
+      "size": 2245495,
+      "status": "??",
+      "type": "file"
+    },
+    {
+      "path": "reports/provenance/msae_measurement_remediation_v1/FINAL_STATIC_VERIFICATION.json",
+      "sha256": "d726429c519ff3c5db85e7db1b3ea5020d8034cdb30972d3eef2f9b84755411b",
+      "size": 103020,
+      "status": "??",
+      "type": "file"
+    },
+    {
+      "path": "scripts/msae_measurement_remediation_v1.py",
+      "sha256": "67809ff8c780983ade4b45c2e2daa33c34091c23cf673b599bdd50fa80a15f5b",
+      "size": 59547,
+      "status": "??",
+      "type": "file"
+    },
+    {
+      "path": "tests/test_msae_measurement_remediation_v1.py",
+      "sha256": "fc34faf76bb44482276bff7646cfa5308cfb146917382b2d9e2b9c4d10e37898",
+      "size": 37387,
+      "status": "??",
+      "type": "file"
+    }
+  ],
+  "git_head": "7e1a6fc7a26a870a4edcf29c96b7cdf3cdbd7faa",
+  "git_status_sha256": "7eee5a3ffbb5692cbcb6a0cb4fdcea7645636f6c842273d8aa533b576643d1d4",
+  "schema_version": "msae_independent_baseline_v1"
+}

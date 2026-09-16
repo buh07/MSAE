@@ -170,8 +170,10 @@ path/digest with the parsed config and (for B/C) predecessor artifact, and embed
 the fresh attestation. Stage B accepts the complete Stage-A artifact, recomputes
 its canonical JSON SHA-256 and Stage-A aggregate from its bound records,
 verifies its schema, purpose/config/dependency/registry bindings and
-`stage_ready`, then embeds the prior-stage digest. Stage C does the same for
-Stage B. Registry digests are recomputed with the shared canonical serializer
+`stage_ready`, then embeds the prior-stage digest. Stage C accepts the complete
+Stage-A and Stage-B artifacts, revalidates A, requires B's prior-stage digest to
+equal the freshly recomputed Stage-A artifact digest, and then performs the same
+full recomputation for B. Registry digests are recomputed with the shared canonical serializer
 from registry objects in the freshly parsed raw config. The Stage-C config must
 contain nonempty ordered registries for `localization`,
 `functional_reproducibility`, `collateral`, `counterfactual`, and `baseline`;
@@ -335,7 +337,7 @@ pure module is the smallest executable guard.
 
 ## Milestones
 
-- [ ] **M0 — Protected-state baseline.** Create the exact baseline/protected
+- [x] **M0 — Protected-state baseline.** Create the exact baseline/protected
   inventory and capture process/tmux/GPU-process state before any implementation
   file is created. Acceptance: capture porcelain status to a temporary path
   outside the repository before atomically installing the baseline; every
@@ -343,7 +345,7 @@ pure module is the smallest executable guard.
   protected files hash successfully; the baseline freezes every pre-existing
   non-allowlisted dirty-path hash/type/size and separately records allowlisted
   starting state so its reviewed deltas remain attributable.
-- [ ] **M1 — Prospective replay calibration.** Add calibration-role and digest
+- [x] **M1 — Prospective replay calibration.** Add calibration-role and digest
   validation plus deterministic ordered-ladder selection. Acceptance: tests cover exact
   repeats, ladder-boundary selection, no-candidate failure, all-pairs coverage,
   safety factor, multi-stratum selection, full pass matrix, nonfinite/misaligned
@@ -351,14 +353,14 @@ pure module is the smallest executable guard.
   repeats, invalid/mixed provenance, malformed or
   incomparable ladders, zero `atol`, arithmetic overflow, order invariance of
   input mappings, and refusal of every non-calibration role.
-- [ ] **M2 — Endpoint-specific functional reproducibility.** Add the precisely
+- [x] **M2 — Endpoint-specific functional reproducibility.** Add the precisely
   defined task/family checkpoint-spread summaries without a global all-family
   finite predicate. Acceptance: tests cover unbounded/signed finite metrics,
   distinct seeds, pairwise deltas, thresholds, task-first family aggregation,
   insufficient checkpoints, stable-negative selectivity, and independent family
   missingness, one-to-one lineage enforcement, and finite inputs whose derived
   deltas/sums/spreads overflow.
-- [ ] **M3 — Three fail-closed readiness contracts and draft config.** Add thin
+- [x] **M3 — Three fail-closed readiness contracts and draft config.** Add thin
   adapters over `aggregate_endpoint_records`, local dependency-origin/digest
   verification, and an unset draft config. Acceptance: each stage has the exact
   required inputs above; Stage A does not depend on replay results; Stage B does;
@@ -366,7 +368,7 @@ pure module is the smallest executable guard.
   cannot rescue/block; an empty required set is invalid; no adapter can emit an
   operator authorization; every stage/prior-stage/category/config/dependency
   binding is reverified; and the checked-in draft is blocked.
-- [ ] **M4 — Documentation and verification.** Document how a future candidate
+- [x] **M4 — Documentation and verification.** Document how a future candidate
   becomes eligible and how this work relates to the historical v1/v2 artifacts.
   Acceptance: targeted unit tests, Python compilation, strict static/runtime
   side-effect tripwires, protected-state comparison, and config validation pass;
@@ -375,25 +377,25 @@ pure module is the smallest executable guard.
 
 ## Definition of done
 
-- [ ] The protected-state comparison proves that no artifact in the explicit
+- [x] The protected-state comparison proves that no artifact in the explicit
   protected set or pre-existing non-allowlisted dirty-path inventory changed
   after the baseline, no new non-allowlisted dirty path appeared, and every
   allowlisted starting/final delta is recorded.
-- [ ] Numerical tolerance selection is possible only for an explicit
+- [x] Numerical tolerance selection is possible only for an explicit
   `calibration` role, requires at least three aligned finite repeats, selects from
   a prescore-ordered componentwise ladder, and returns `ineligible` rather than
   extrapolating beyond the ladder.
-- [ ] Functional reproducibility uses the frozen task-first/checkpoint-spread
+- [x] Functional reproducibility uses the frozen task-first/checkpoint-spread
   estimand independently by task and family for all three registered metrics,
   with explicit status/reasons and retained finite subordinate values.
-- [ ] Stage A, B, and C readiness are separate required-only conjunctions; each
+- [x] Stage A, B, and C readiness are separate required-only conjunctions; each
   reports all blockers, optional endpoints are neutral, and none can emit a
   launch/operator authorization.
-- [ ] The draft config is schema-validated, dependency-digest-bound, and remains
+- [x] The draft config is schema-validated, dependency-digest-bound, and remains
   intentionally blocked because no new study is authorized.
-- [ ] New tests are deterministic, CPU-only, network-free, and cover unhappy
+- [x] New tests are deterministic, CPU-only, network-free, and cover unhappy
   paths; targeted tests and compilation pass.
-- [ ] No experiment, GPU process, activation extraction, probe fit, model load,
+- [x] No experiment, GPU process, activation extraction, probe fit, model load,
   dataset download, or tmux session is launched.
 
 ## Verification plan
@@ -441,6 +443,34 @@ pure module is the smallest executable guard.
   ineligible family. Status must travel with every value so those values cannot be
   promoted accidentally.
 
+## Implementation outcome and future use
+
+The implemented public surface is the eight-function `__all__` listed above.
+The checked-in draft deliberately contains no source revision, replay strata,
+tolerance ladder, seed/checkpoint registry, family registry, thresholds, or
+Stage-C endpoint names. `validate_draft_config` therefore reports it as blocked;
+this is the intended current research status, not a request to fill those values
+from the historical neural results.
+
+A future candidate proceeds in this order:
+
+1. independently name and digest the replacement source, partition, grouping
+   evidence, label inventory, replay strata, ladder, safety factor, checkpoint
+   lineages, representative tasks/families, spread thresholds, and all five
+   Stage-C endpoint categories;
+2. obtain the external signed prescore review that is intentionally outside this
+   module, then build Stage A from label/provenance evidence;
+3. only after separate operator approval, collect calibration-role replay arrays
+   and let Stage B recompute the registered tolerance selection;
+4. only after another separate approval, score confirmation endpoints and build
+   Stage C from the complete recursively verified Stage-A/Stage-B chain; and
+5. send the Stage-C artifact and substantive results to a scientific claim
+   review before selecting a paper branch.
+
+This implementation is additive. It does not modify, repair, rerun, or promote
+Atlas completion v1 or measurement v2 artifacts, and it creates no new empirical
+result.
+
 ## Open questions
 
 - Shared-workspace concurrency cannot be prevented. Any protected or
@@ -457,4 +487,16 @@ pure module is the smallest executable guard.
 
 ## Deviations log
 
-- None.
+- The first baseline emission was atomically corrected before implementation to
+  include clean and absent exact-allowlist starting states. The accepted
+  `BASELINE.json` records that correction; no implementation or protected path
+  existed or changed between the two emissions.
+- Independent implementation review initially found four fail-open gaps (reduced
+  Stage-A/B requirement registries, cross-metric missingness coupling, split
+  replay lineage, and incomplete side-effect tripwires), then found incomplete
+  edge coverage, a tautological Stage-B-to-A chain check, and non-ASCII digest
+  acceptance. All were repaired and assigned regression tests before the final
+  `VERDICT: SHIP`.
+- Verification is intentionally limited to CPU-only unit/static checks. No
+  research smoke, model call, activation extraction, probe fit, training job,
+  GPU job, or tmux session was launched.
