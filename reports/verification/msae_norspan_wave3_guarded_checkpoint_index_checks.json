@@ -1,0 +1,160 @@
+{
+  "finite_secret_scan": {
+    "backend": "internal.secret_scan._scan_text/_blocked_name plus generic private header; explicit MSAE root",
+    "findings": [],
+    "status": "PASS",
+    "text_blobs": 27
+  },
+  "frozen_public_subjects_match": 77,
+  "json_parse_pass": 7,
+  "lint_typecheck": "UNAVAILABLE_NOT_PASS",
+  "previous_76_subjects_git_unchanged": true,
+  "production_launch_authorized": false,
+  "python_ast_parse_pass": 1,
+  "runtime_result": "PENDING_NOT_PASS",
+  "schema_version": "norspan_wave3_finite_index_checks_v1",
+  "scientific_operations_authorized": false,
+  "scope": "finite_public_staged_text_only_no_worktree_crawl_or_test_execution",
+  "staged_files": 27,
+  "staged_tree": "45f7928465d103c83ee89d5adf073d4fc0e88d96",
+  "subjects": [
+    {
+      "bytes": 49734,
+      "path": "ANALYSIS.md",
+      "sha256": "d2f56ccc805408df3f3e10184bdaab114acce26a08dfba110882ed4e2939acec"
+    },
+    {
+      "bytes": 61341,
+      "path": "RESULTS.md",
+      "sha256": "67e70ab008df03d0534ae869817169b33a29de5852f1360223f93642737e6fa7"
+    },
+    {
+      "bytes": 6319,
+      "path": "docs/plan-msae-norspan-typed-scientific-fault-wave3-v2.md",
+      "sha256": "8c6e38619d82bb861264d7ec6a4dd1a5fe701ee990ec72fd4591fc3a88063057"
+    },
+    {
+      "bytes": 6752,
+      "path": "docs/plan-msae-norspan-typed-scientific-fault-wave3-v3.md",
+      "sha256": "58e674985c997dc313000587b25f984de933836016b2eafd4c1e63d601735a46"
+    },
+    {
+      "bytes": 4735,
+      "path": "docs/plan-msae-norspan-typed-scientific-fault-wave3.md",
+      "sha256": "0b527f93c692ef07e8c7b525ecf05f7636aa59e53e068c17573600bf259cfe55"
+    },
+    {
+      "bytes": 13832,
+      "path": "docs/status-msae-norspan-containment-preflight-and-typed-history-2026-09-17.md",
+      "sha256": "2d6657fa8ba2e37b8f51ebb3644cccb0c58fd697c800030bcf30f1666f25a4e5"
+    },
+    {
+      "bytes": 8218,
+      "path": "docs/status-msae-norspan-typed-scientific-wave3-and-consolidation-2026-09-17.md",
+      "sha256": "cfef9c9e8ad3a486953d06ba7f300235bc0eb62436cadcf0c4606bbd63bc6de4"
+    },
+    {
+      "bytes": 12273,
+      "path": "reports/adversarial/msae_norspan_engineering_consolidation_staged_review.md",
+      "sha256": "c3f29b091dbab6bcb8e1046415eb1f0014316ecc380c84bc927806d8a4f3c688"
+    },
+    {
+      "bytes": 11859,
+      "path": "reports/adversarial/msae_norspan_engineering_consolidation_staged_successor_review.md",
+      "sha256": "1d02315eff3bf081a723fe7a1f4fd1875c08b111ae68da898a101f34bf5948b2"
+    },
+    {
+      "bytes": 9411,
+      "path": "reports/adversarial/msae_norspan_typed_scientific_wave3_plan_review.md",
+      "sha256": "7af386107c87177d28cb02a328c2efcbd385f968400f15d104933219e326ee5f"
+    },
+    {
+      "bytes": 6221,
+      "path": "reports/adversarial/msae_norspan_typed_scientific_wave3_plan_v2_review.md",
+      "sha256": "8701abc3507221320b49e6baa2a64412395645323a2224257cb5e2948aac797d"
+    },
+    {
+      "bytes": 8135,
+      "path": "reports/adversarial/msae_norspan_typed_scientific_wave3_plan_v3_review.md",
+      "sha256": "b27a473ed70d09bc7f9448293b824e3ba96146045555e3cee558645ea49ff481"
+    },
+    {
+      "bytes": 14112,
+      "path": "reports/adversarial/msae_norspan_typed_scientific_wave3_source_implementation_review.md",
+      "sha256": "3c730bb4a2e01f0b3a80833b00121b438032c3b0582cf1ac2f1233b1ebcb158f"
+    },
+    {
+      "bytes": 8459,
+      "path": "reports/adversarial/msae_norspan_typed_scientific_wave3_source_second_successor_review.md",
+      "sha256": "1b268d22497c086da2d61494779e40d93fc039abad72944829c274e760b6ce4f"
+    },
+    {
+      "bytes": 11095,
+      "path": "reports/adversarial/msae_norspan_typed_scientific_wave3_source_successor_review.md",
+      "sha256": "cea7229e0bde7a51fb50d2960f73efa77a6db78d2909a10e76218f518ceb2029"
+    },
+    {
+      "bytes": 9432,
+      "path": "reports/adversarial/msae_norspan_typed_scientific_wave3_source_third_successor_review.md",
+      "sha256": "b458d7764ebac3954ab957f2a25a4681429f8c918963feaa562fa67721e8ff26"
+    },
+    {
+      "bytes": 596,
+      "path": "reports/verification/msae_norspan_engineering_consolidation_initial_secret_scan.json",
+      "sha256": "7bd526b34922827c4f0535ca4f71dd585a837cff1af32f996f2167cccd8abf7f"
+    },
+    {
+      "bytes": 596,
+      "path": "reports/verification/msae_norspan_engineering_consolidation_successor_secret_scan.json",
+      "sha256": "35e8967d2ab9feba2a1ee5dce907e082029dfccde71aea5f1a6f77fa30e19424"
+    },
+    {
+      "bytes": 951,
+      "path": "reports/verification/msae_norspan_typed_scientific_wave3_active_supersession.json",
+      "sha256": "733642745445af814717175137b99f4cdaed8ab3174704d3859a7aa3567241cd"
+    },
+    {
+      "bytes": 72,
+      "path": "reports/verification/msae_norspan_typed_scientific_wave3_initial_root.txt",
+      "sha256": "b37812e6cb6731c6cbf11282d501f80392bbad4dcc9cf4bdb79a04aab367d58d"
+    },
+    {
+      "bytes": 1095,
+      "path": "reports/verification/msae_norspan_typed_scientific_wave3_launch_snapshot.json",
+      "sha256": "28c8566b4e3823020ba2827580ff806fe3ebe89396cabce70d40b601f8603331"
+    },
+    {
+      "bytes": 17740,
+      "path": "reports/verification/msae_norspan_typed_scientific_wave3_public_source_checks.json",
+      "sha256": "4b9a2ceb3224e506d45759ceb6a5a28a93f2f6f0ceea7298e678496ee712e6ba"
+    },
+    {
+      "bytes": 17933,
+      "path": "reports/verification/msae_norspan_typed_scientific_wave3_reviewed_binding.json",
+      "sha256": "98b8adfeb9ff7d1d85c18ca1f0c8feb8a93fa61766a11387db844510efd57ab9"
+    },
+    {
+      "bytes": 798,
+      "path": "reports/verification/msae_norspan_typed_scientific_wave3_reviewed_command.json",
+      "sha256": "9739601c77df628d01e33fd0235471eb3a3a434d6b1dfd4e963f64fdceede56a"
+    },
+    {
+      "bytes": 72,
+      "path": "reports/verification/msae_norspan_typed_scientific_wave3_reviewed_root.txt",
+      "sha256": "9823ec37d280b659e72514104957f7a341172e44600bf83a4c5c5daee4be4e50"
+    },
+    {
+      "bytes": 68,
+      "path": "reports/verification/msae_norspan_typed_scientific_wave3_root.txt",
+      "sha256": "d14eb6aea0df8c3096300b39038b4a3c563276fe09cd234db8d06c104f321427"
+    },
+    {
+      "bytes": 20311,
+      "path": "tests/test_msae_norspan_typed_scientific_wave3.py",
+      "sha256": "7a38c247285703f044ae131e93dab5000e6373b0b16f9bd1427b9e1c3c824645"
+    }
+  ],
+  "whole_implementation_rows_open": 80,
+  "whole_matrix_qualified": false,
+  "whole_qualification_groups_open": 9
+}
