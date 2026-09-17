@@ -1,0 +1,16 @@
+{
+  "active_archival_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-wave3-forty-cells-cBpD5fRi",
+  "blocked_candidate_source_sha256": "7a515e5cfcd585dc3cc0989c10540067e19daf7c65183983d843845d6f931c22",
+  "current_source_implementation_review": "PENDING",
+  "current_unlaunched_source_sha256": "7a38c247285703f044ae131e93dab5000e6373b0b16f9bd1427b9e1c3c824645",
+  "independent_block_review_sha256": "3c730bb4a2e01f0b3a80833b00121b438032c3b0582cf1ac2f1233b1ebcb158f",
+  "observed_at_utc": "2026-09-17T17:08:41.058944+00:00",
+  "production_launch_authorized": false,
+  "real_source_payload_scoring_training_operations": 0,
+  "reason": "independent four-issue harness BLOCK; stronger current test source differs from imported old candidate",
+  "schema_version": "norspan_synthetic_wave3_supersession_v1",
+  "status": "UNQUALIFIED_ARCHIVAL_REGARDLESS_OF_PASS_COUNT",
+  "whole_groups_open": 9,
+  "whole_matrix_qualified": false,
+  "whole_rows_open": 80
+}

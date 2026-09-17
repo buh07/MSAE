@@ -1,5 +1,31 @@
 # MSAE Analysis
 
+## Latest guarded consolidation and scientific-fault prefix (2026-09-17; engineering only)
+
+**Whole production/scientific launch remains BLOCK: all nine groups /80 whole rows
+OPEN.** Public engineering checkpoint **1b6fd5d is committed and pushed**, after
+independent exact-index scoped SHIP and zero finite secret-scan findings. The
+completed **1,172-pass main and extracted regressions** remain exact76 evidence;
+they do not include the new test module.
+
+A source-reviewed, frozen77 public candidate now runs **40 declared synthetic cells**
+in tmux `msae-wave3-20260917:reviewed-forty-cells`. Runtime result and independent
+completed-evidence review are **PENDING**. Estimate20–40minutes total; concurrent NFS
+load may extend it. Initial8harnessFAIL and all negative source reviews are retained;
+the older40-cell run is archival **UNQUALIFIED regardless of pass count**.
+New checks target raw one-shot boundaries, ordinary-history drift, four-role sealing,
+terminal write/link/catalog faults and positive recovery—not full combined-fault or
+containment closure. No production/scientific predicates were changed.
+
+Namespace source audit does not qualify an unmodified bwrap route. Exact helper/init
+custody, before-release/killed-supervisor behavior, enforceable family limits, remaining
+full fault matrix, whole approval, canonical binding and exact FINAL owner enrollment
+still precede NORSPAN eligibility/payload/C1. No real acquisition, payload, model
+scoring, K2/branch training or C2 opening has begun; conclusions are unchanged.
+[Current details](docs/status-msae-norspan-typed-scientific-wave3-and-consolidation-2026-09-17.md).
+Older uncommitted/unpushed statements below describe their historical captures,
+not the now-pushed guarded checkpoint or any final scientific release.
+
 ## Latest containment preflight and typed-history qualification (2026-09-17)
 
 **Independent counterexamples, not green counts, determine acceptance.** Initial

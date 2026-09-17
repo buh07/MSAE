@@ -100,7 +100,8 @@ public archive/manifest/runner and compressed original JUnit/logs are retained i
 [Finite checks](../reports/verification/msae_norspan_stage1_v2_public_checks.json).
 Long source-free regressions ran in tmux and have finished, no GPUs/scientific experiments. Initial
 runtime estimate12–18 minutes each; concurrent NFS load may extend it. Never wait for
-scientific jobs that are not authorized. Work remains uncommitted/unpushed.
+scientific jobs that are not authorized. This public engineering checkpoint was later committed and pushed as 1b6fd5d;
+see the [successor consolidation and PENDING fault-prefix status](status-msae-norspan-typed-scientific-wave3-and-consolidation-2026-09-17.md).
 
 ## Launch/evidence status — completed once, not whole containment
 

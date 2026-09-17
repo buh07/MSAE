@@ -1,0 +1,26 @@
+{
+  "cwd": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-wave3-reviewed-prefix-r12_e1nf/candidate",
+  "argv": [
+    "/usr/bin/python3.12",
+    "-B",
+    "-m",
+    "pytest",
+    "-vv",
+    "-c",
+    "/dev/null",
+    "--noconftest",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-wave3-reviewed-prefix-r12_e1nf/run/base",
+    "--junitxml=/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-wave3-reviewed-prefix-r12_e1nf/run/results.xml",
+    "tests/test_msae_norspan_typed_scientific_wave3.py"
+  ],
+  "environment_overrides": {
+    "TMPDIR": "/jumbo/lisp/f004ndc/tmp/lisplab1",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "scope": "fresh_synthetic_wave3_only",
+  "expected_cells_not_result": 40
+}

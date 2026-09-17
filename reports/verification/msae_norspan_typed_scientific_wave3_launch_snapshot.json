@@ -1,0 +1,27 @@
+{
+  "captured_utc": "2026-09-17T17:19:55.534286+00:00",
+  "estimate_not_a_deadline": true,
+  "estimated_total_runtime_minutes": [
+    20,
+    40
+  ],
+  "expected_cells_not_result": 40,
+  "observed_collected_cells": 40,
+  "observed_fail_lines_at_capture": 0,
+  "observed_pass_lines_at_capture": 7,
+  "owner_final_receipt_enrolled": false,
+  "production_launch_authorized": false,
+  "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-wave3-reviewed-prefix-r12_e1nf",
+  "runtime_result": "PENDING_NOT_A_COMPLETED_RESULT",
+  "schema_version": "norspan_wave3_launch_snapshot_v1",
+  "scientific_operations_authorized": false,
+  "scope": "fresh_synthetic_test_only_not_containment_or_science",
+  "server_backup_guarantees": "UNKNOWN",
+  "superseded_run": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-wave3-forty-cells-cBpD5fRi",
+  "superseded_run_authority": "UNQUALIFIED_ARCHIVAL_REGARDLESS_OF_PASS_COUNT",
+  "tmux_session": "reviewed-forty-cells",
+  "tmux_socket": "msae-wave3-20260917",
+  "whole_implementation_rows_open": 80,
+  "whole_matrix_qualified": false,
+  "whole_qualification_groups_open": 9
+}
