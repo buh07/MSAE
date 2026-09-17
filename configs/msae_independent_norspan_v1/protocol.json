@@ -1,0 +1,478 @@
+{
+  "schema_version": "msae_independent_norspan_v1_protocol_v1",
+  "protocol_id": "NORSPAN-1",
+  "source": {
+    "repo": "https://github.com/UniversalDependencies/UD_Norwegian-Bokmaal.git",
+    "commit": "396d11f0c2bd290a2a2711015c04ac25bc3dcc06",
+    "files": [
+      "no_bokmaal-ud-train.conllu",
+      "no_bokmaal-ud-dev.conllu",
+      "no_bokmaal-ud-test.conllu",
+      "LICENSE.txt"
+    ]
+  },
+  "authority": {
+    "plan_path": "docs/plan-msae-independent-norspan-v1.md",
+    "plan_sha256": "7e063dcac878623c7f1f293b77294e4c3d006d839d8df184f6814157fe17d7c9",
+    "plan_review_path": "reports/adversarial/msae_independent_norspan_v1_plan_review.md",
+    "plan_review_sha256": "f6a24f10d1a95c1687a81f5cd472c56c0c7ea119b671c558582955c8972d24dc",
+    "todo_sha256": "42ebc8f4db324305f5481a25d5a7db16af163ce45bf4ead4da27ce5a1678e217",
+    "v10_reference_sha256": "637492e7ed4c1836704542deebe19b91ac38101bf6edf060fb4804868a45d088"
+  },
+  "runtime": {
+    "python": [
+      3,
+      12,
+      3
+    ],
+    "unicode": "15.0.0"
+  },
+  "state_order": [
+    "clean_reviewed",
+    "baseline",
+    "authority",
+    "acquisition_entered",
+    "network_ready",
+    "network_started",
+    "acquisition_terminal",
+    "scientific_entered",
+    "raw_ready",
+    "raw_started",
+    "scientific_terminal"
+  ],
+  "control_plane": {
+    "review_ship_first_line": "VERDICT: SHIP",
+    "authority_control_modes": {
+      "docs/plan-msae-independent-norspan-v1.md": 420,
+      "reports/adversarial/msae_independent_norspan_v1_plan_review.md": 420,
+      "configs/msae_independent_norspan_v1/protocol.json": 420,
+      "scripts/prepare_msae_independent_norspan_v1.py": 493,
+      "scripts/acquire_msae_independent_norspan_v1.py": 493,
+      "tests/test_prepare_msae_independent_norspan_v1.py": 420,
+      "reports/verification/msae_independent_norspan_v1_source_free_checks.log": 420,
+      "reports/adversarial/msae_independent_norspan_v1_implementation_review.md": 420,
+      "reports/provenance/msae_independent_norspan_v1/current_history_registry.json": 420,
+      "reports/provenance/msae_independent_norspan_v1/baseline.json": 420
+    },
+    "scientific_prefix": [
+      "source_manifest.json",
+      "license.json",
+      "candidate_pedigree.json",
+      "dedup.json",
+      "history_overlap.json",
+      "internal_overlap_prune.json",
+      "role_manifest.json",
+      "cross_role_overlap.json",
+      "support.json"
+    ],
+    "unresolved_no_retry_states": [
+      "network_started_without_terminal",
+      "raw_started_without_terminal",
+      "partial_raw",
+      "partial_private",
+      "temporary_object"
+    ],
+    "raw_mode": 292,
+    "private_file_mode": 384,
+    "private_directory_mode": 448,
+    "raw_file_count": 4,
+    "private_role_count": 4
+  },
+  "license": {
+    "max_bytes": 131072,
+    "accepted_phrases": [
+      [
+        "cc",
+        "by",
+        "sa",
+        "4",
+        "0"
+      ],
+      [
+        "creative",
+        "commons",
+        "attribution",
+        "sharealike",
+        "4",
+        "0"
+      ],
+      [
+        "attribution",
+        "sharealike",
+        "4",
+        "0",
+        "international"
+      ]
+    ],
+    "accepted_urls": [
+      "http://creativecommons.org/licenses/by-sa/4.0",
+      "http://creativecommons.org/licenses/by-sa/4.0/",
+      "https://creativecommons.org/licenses/by-sa/4.0",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "negative_phrases": [
+      [
+        "all",
+        "rights",
+        "reserved"
+      ],
+      [
+        "no",
+        "redistribution"
+      ],
+      [
+        "non",
+        "commercial",
+        "use",
+        "only"
+      ]
+    ],
+    "contradictory_identifiers": [
+      "agpl-3.0",
+      "cc-by-nc-4.0",
+      "cc-by-nd-4.0",
+      "gpl-2.0",
+      "gpl-3.0",
+      "proprietary"
+    ]
+  },
+  "pedigree": {
+    "domain_hex": "6e6f727370616e2d312f706564696772656500",
+    "identifiers": [
+      [
+        "ud",
+        "norwegian",
+        "bokmaal"
+      ],
+      [
+        "norwegian",
+        "bokmaal"
+      ],
+      [
+        "no",
+        "bokmaal"
+      ],
+      [
+        "https",
+        "github",
+        "com",
+        "universaldependencies",
+        "ud",
+        "norwegian",
+        "bokmaal",
+        "git"
+      ],
+      [
+        "https",
+        "github",
+        "com",
+        "universaldependencies",
+        "ud",
+        "norwegian",
+        "bokmaal"
+      ],
+      [
+        "396d11f0c2bd290a2a2711015c04ac25bc3dcc06"
+      ],
+      [
+        "no",
+        "bokmaal",
+        "ud",
+        "train",
+        "conllu"
+      ],
+      [
+        "no",
+        "bokmaal",
+        "ud",
+        "train"
+      ],
+      [
+        "no",
+        "bokmaal",
+        "ud",
+        "dev",
+        "conllu"
+      ],
+      [
+        "no",
+        "bokmaal",
+        "ud",
+        "dev"
+      ],
+      [
+        "no",
+        "bokmaal",
+        "ud",
+        "test",
+        "conllu"
+      ],
+      [
+        "no",
+        "bokmaal",
+        "ud",
+        "test"
+      ],
+      [
+        "license",
+        "txt"
+      ],
+      [
+        "license"
+      ]
+    ]
+  },
+  "role": {
+    "domain": "norspan-1/role-v1",
+    "cutpoints_u64": [
+      11068046444225730969,
+      14757395258967641292,
+      16602069666338596454
+    ],
+    "names": [
+      "discovery",
+      "calibration",
+      "C1",
+      "C2"
+    ]
+  },
+  "support": {
+    "distinct_sentence_floor": 20,
+    "required_tasks": [
+      "absolute_bucket",
+      "relative_quartile",
+      "capitalization",
+      "word_length",
+      "punctuation",
+      "sentence_boundary",
+      "head_signed_distance",
+      "upos_coarse"
+    ],
+    "optional_tasks": [
+      "dependency_depth",
+      "deprel_coarse",
+      "number",
+      "token_identity",
+      "lemma_identity"
+    ],
+    "minimum_optional_tasks": 2,
+    "upos": [
+      "ADJ",
+      "ADP",
+      "ADV",
+      "AUX",
+      "CCONJ",
+      "DET",
+      "INTJ",
+      "NOUN",
+      "NUM",
+      "PART",
+      "PRON",
+      "PROPN",
+      "PUNCT",
+      "SCONJ",
+      "SYM",
+      "VERB",
+      "X"
+    ],
+    "deprel": [
+      "acl",
+      "advcl",
+      "advmod",
+      "amod",
+      "appos",
+      "aux",
+      "case",
+      "cc",
+      "ccomp",
+      "clf",
+      "compound",
+      "conj",
+      "cop",
+      "csubj",
+      "dep",
+      "det",
+      "discourse",
+      "dislocated",
+      "expl",
+      "fixed",
+      "flat",
+      "goeswith",
+      "iobj",
+      "list",
+      "mark",
+      "nmod",
+      "nsubj",
+      "nummod",
+      "obj",
+      "obl",
+      "orphan",
+      "parataxis",
+      "punct",
+      "reparandum",
+      "root",
+      "vocative",
+      "xcomp"
+    ],
+    "number": [
+      "Sing",
+      "Plur",
+      "Dual",
+      "Trial",
+      "Pauc",
+      "Grpa",
+      "Grpl",
+      "Inv",
+      "Ptan"
+    ],
+    "token_domain_hex": "6e6f727370616e2d312f746f6b656e00",
+    "lemma_domain_hex": "6e6f727370616e2d312f6c656d6d6100"
+  },
+  "overlap": {
+    "short_max_tokens": 9,
+    "long_min_tokens": 10,
+    "fivegram_jaccard_min": 0.8,
+    "covered_fivegrams_min": 4,
+    "covered_tokens_min": 20,
+    "covered_fraction_min": 0.1
+  },
+  "payload": {
+    "schema_version": "msae_independent_norspan_v1_payload_v1",
+    "roles": [
+      "discovery",
+      "calibration",
+      "C1",
+      "C2"
+    ],
+    "file_mode": 384,
+    "directory_mode": 448
+  },
+  "gates": {
+    "finite_draws_required": 450,
+    "finite_draws_total": 500,
+    "broad_recovery_min": 0.75,
+    "broad_leakage_max": 0.55,
+    "selectivity_margin_min": 0.2,
+    "family_advantage_margin": 0.05,
+    "retention_margin": 0.02,
+    "collateral_margin": 0.02,
+    "stability_margin": 0.05,
+    "outputs": [
+      "learned_model",
+      "existing_or_simple",
+      "negative_atlas",
+      "equivocal_no_decision"
+    ],
+    "case_precedence": [
+      "ioi",
+      "controlled_relation_position"
+    ]
+  },
+  "containment": {
+    "prescore_roles": [
+      "discovery",
+      "calibration",
+      "C1"
+    ],
+    "prescore_forbidden_roles": [
+      "C2"
+    ],
+    "c1_requires": [
+      "readiness_ship",
+      "immutable_scoring_manifest",
+      "prescore_ship",
+      "c1_capability"
+    ],
+    "c2_requires": [
+      "signed_g3",
+      "m5_frozen",
+      "m6_passed",
+      "branch_prerequisites",
+      "m8_capability"
+    ],
+    "network": false,
+    "host_ipc": false,
+    "host_sockets": false,
+    "regular_file_limit_bytes": 8589934592,
+    "open_file_limit": 4096,
+    "process_limit": 512,
+    "run_total_bytes_limit": 68719476736,
+    "run_entry_limit": 65536
+  },
+  "decision_rules": {
+    "precedence": [
+      "learned_model",
+      "existing_or_simple",
+      "negative_atlas",
+      "equivocal_no_decision"
+    ],
+    "equivocal_conditions": [
+      "conflicting_metrics",
+      "boundary_interval_overlap",
+      "insufficient_finite_draws",
+      "failed_stability",
+      "failed_specificity",
+      "inadequate_power"
+    ],
+    "negative_requires": [
+      "c1_technically_valid",
+      "all_endpoints_finite",
+      "stable_null_direction",
+      "no_family_passes_g1",
+      "all_upper_bounds_exclude_material_margin"
+    ],
+    "equivocal_authorizes_c2": false,
+    "equivocal_authorizes_training": false,
+    "one_signed_g3_branch": true,
+    "one_pre_c2_case": true
+  },
+  "history": {
+    "archive_max_members": 10000,
+    "archive_max_member_bytes": 67108864,
+    "archive_max_total_bytes": 536870912,
+    "protected_content_reads": 0
+  },
+  "capability": {
+    "process_tokens": [
+      "nvidia-smi",
+      "torchrun",
+      "accelerate",
+      "deepspeed",
+      "train",
+      "training",
+      "score",
+      "scoring",
+      "evaluate",
+      "evaluation",
+      "inference",
+      "vllm",
+      "tmux"
+    ],
+    "environment_keys": [
+      "CUDA_VISIBLE_DEVICES",
+      "NVIDIA_VISIBLE_DEVICES",
+      "LOCAL_RANK",
+      "RANK",
+      "WORLD_SIZE",
+      "TMUX"
+    ],
+    "training_roots": [
+      "results",
+      "pilot_runs",
+      "checkpoints",
+      "runs"
+    ],
+    "content_hash_max_bytes": 67108864
+  },
+  "authorizations": {
+    "model_scoring": false,
+    "gpu_query": false,
+    "k2_or_branch_training": false,
+    "stage_c": false
+  },
+  "acquisition_limits": {
+    "command_timeout_seconds": 600,
+    "stdout_limit_bytes": 16777216,
+    "stderr_limit_bytes": 4194304
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-candidate-iuumo8j8",
+  "canonical_authority_established": false,
+  "production_launch_authorized": false,
+  "schema_version": "norspan_controller_candidate_binding_v1",
+  "status": "UNQUALIFIED FROZEN SOURCE-FREE CANDIDATE; GUARD UNCONDITIONAL",
+  "subjects": 49,
+  "subjects_sha256": "c0d8343498939b3bce0c4148ee499925012bbe480c16423206383b232b98010b",
+  "test_suites": 26,
+  "tests_sha256": "a7afc0e7a6f8aa8fd4e70a229b42896819191b11f712a4462a08a7eddfa44fc7"
+}

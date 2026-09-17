@@ -1,0 +1,34 @@
+{
+  "schema_version": "msae_norspan_client_checkpoint_binding_v1",
+  "status": "BOUNDED REPAIR SHIP; WHOLE/TASK/N3 BLOCK; EXTRACTED SNAPSHOT477PASS/0FAIL/0SKIP",
+  "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-public-checkpoint-_junx14y",
+  "archive": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-public-checkpoint-_junx14y/public-checkpoint.tar.gz",
+  "sha256": "1cfff29dbf2ad0fe2ffd30b0ebaedc52ce0a415f376fd455f38eb1447c6fe76e",
+  "bytes": 935117,
+  "public_files": 319,
+  "manifest_sha256": "95fb5e12f994e50a84c7b699b5fcf0b1c9d5f417233415ca512abb25a11b8038",
+  "snapshot": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-public-checkpoint-_junx14y/snapshot",
+  "snapshot_all_bound_files_verified": true,
+  "source_operations": 0,
+  "model_operations": 0,
+  "administrator_contact": false,
+  "production_launch_authorized": false,
+  "reproduction": {
+    "path": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-public-checkpoint-_junx14y/reproduction-binding.json",
+    "sha256": "45279566241b0df8488574641ade09edad0a67b6ec3f04c1bf2681ddb84695ed",
+    "run": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-checkpoint-reproduction-bq6uv0i6",
+    "counts": {
+      "tests": 477,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "all_file_bindings_verified_after": true
+  },
+  "post_archive_public_delta": {
+    "path": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-public-checkpoint-_junx14y/post-archive-public-delta.json",
+    "sha256": "db7395b01c56fb61967834ef81147f3588d8239f5fdfa3d19a6e8e6f5d8a7fd6",
+    "files": 3,
+    "core38_subjects_unchanged": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "msae_norspan_client_successor_binding_v1",
+  "status": "EXACT SOURCE-FREE BOUNDED REPAIR SHIP; TASK/N3 INCOMPLETE; WHOLE BLOCK",
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-successor-binding-prkhrjka",
+  "subjects_sha256": "80741a728925ce4365f6e70b3b425f037cd7369aa5b977e68a3f821a366b10e7",
+  "tests_sha256": "493af805ce336dae6ebda093f68bf279cbaa49a43e4be5067b7afe9322e6098b",
+  "subjects": 38,
+  "root_test_run": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-successor-full-n9fwsnkz",
+  "root_tests_passed": 477,
+  "production_launch_authorized": false,
+  "canonical_authority": false,
+  "N3_complete": false,
+  "implementation_verdict": "SHIP_BOUNDED_N1_N2_TWO_RESOURCE_REPAIRS_ONLY",
+  "review": {
+    "path": "reports/adversarial/msae_norspan_jumbo_client_resource_successor_review.md",
+    "sha256": "b5702300175b8713ff6756f5377dcbc5ff467bc2e75b166187347d1207e78ddd",
+    "independent_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-resource-successor-review-tqSAHl",
+    "maintained_passed": 477,
+    "additional_attacks_passed": 45,
+    "whole_authority": false
+  }
+}

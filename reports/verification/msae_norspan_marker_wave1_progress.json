@@ -1,0 +1,98 @@
+{
+  "schema_version": "norspan_marker_wave1_guarded_progress_v1",
+  "status": "BOUNDED TEST-ONLY SHIP; WHOLE BLOCK; SCIENTIFIC GATES UNRESOLVED",
+  "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91",
+  "public_subjects": 67,
+  "unchanged_predecessor_subjects": 65,
+  "production_changes": false,
+  "completed_runs": {
+    "main": {
+      "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-full-yzqhudd3",
+      "exit_code": 0,
+      "passed": 1096,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_summary_seconds": 733.68,
+      "junit_seconds": 733.287,
+      "junit_sha256": "a5fa7c4228c3f1aefabfa93dd8eb37fd4245998c2d1f998d3ccbcde09e06766f",
+      "command_sha256": "6b5db6cb2088abab286146a5c3611e448e65ee2e87364175f0cae65f649694a8",
+      "test_suites": 28,
+      "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91"
+    },
+    "extracted": {
+      "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-reproduction-_c6snahv",
+      "exit_code": 0,
+      "passed": 1096,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_summary_seconds": 731.98,
+      "junit_seconds": 731.532,
+      "junit_sha256": "7d529f966073d965ef7f23623d18747546878f41a0198b110a1ba1585de69917",
+      "command_sha256": "49e298848f4c8edc4a31ad94f24e3f90d5fcd9c36dfc6b329f3ccf9f03f8a768",
+      "test_suites": 28,
+      "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91"
+    }
+  },
+  "focused_passed": 431,
+  "focused_seconds": 32.42,
+  "independent_passed": 443,
+  "independent_seconds": 33.37,
+  "explicit_adapter_fault_cells": 385,
+  "positive_adapter_controls": 11,
+  "harness_and_guard_controls": 35,
+  "public_identity_checks": 201,
+  "syntax_only_inputs": 42,
+  "lint": "UNAVAILABLE",
+  "typecheck": "UNAVAILABLE",
+  "cell_manifest": "reports/verification/msae_norspan_marker_wave1_cell_manifest.json",
+  "reviews": [
+    {
+      "path": "reports/adversarial/msae_norspan_marker_wave1_plan_review.md",
+      "sha256": "d08b61d0fe1b92b7ab3510974d0ba30f5e6d4df30e180d65dd9a876541d97a06"
+    },
+    {
+      "path": "reports/adversarial/msae_norspan_marker_wave1_harness_initial_review.md",
+      "sha256": "1c1cb40dca4ab04a7758bdf9153e7afb1ad3b296526488b611beea8fbb335cdb"
+    },
+    {
+      "path": "reports/adversarial/msae_norspan_marker_wave1_implementation_review.md",
+      "sha256": "82302033f090013d87eb4e1c5548a9d95fda75a66cabdd8450d1ccfc1255e878"
+    },
+    {
+      "path": "reports/adversarial/msae_norspan_containment_availability_plan_review.md",
+      "sha256": "31a39af84510544c06e4661e28f488bb7870b057629a26a66af4e40e9687ae92"
+    },
+    {
+      "path": "reports/adversarial/msae_norspan_marker_wave1_completed_evidence_review.md",
+      "sha256": "87b0c61f9867b452bc718ae696d827ed611571a49f510fcd659a829c26f66fd8"
+    }
+  ],
+  "all_original9groups_and80rows_whole_closed": false,
+  "generic9_and80_classification_scope": "Preserved exact65/665 records; separate wave1 enum is NOT silent whole closure",
+  "exact_owner_receipt_enrolled": false,
+  "owner_continue_permission": "2026-09-17: approved continue guarded work, not qualification waiver or FINAL receipt enrollment",
+  "administrator_contact": false,
+  "production_launch_authorized": false,
+  "canonical_authority_established": false,
+  "source_operations": 0,
+  "model_operations": 0,
+  "scientific_result_changed": false,
+  "cgroup_or_namespace_mutations": false,
+  "next_plan": "docs/plan-msae-norspan-containment-availability-diagnostic-v1.md",
+  "next_plan_launch_ready": false,
+  "remaining_axes": [
+    "Typed history/authority/acquisition/scientific/terminal producer control flow and once-only/raw-access boundaries",
+    "Catalog-writer/checkpoint syscall and predecessor/registration combined faults",
+    "Every other full9-group/80-row fault-matrix obligation and all relevant combinations",
+    "Before-release kill/reap/selector/pipe failures: recorded blocked outcomes, not guaranteed successful release",
+    "Hard process/FD/disk/helper/descendant/network/protected-content containment",
+    "Server crash/reboot/failover/backup/quota/retention/recovery guarantees UNKNOWN",
+    "Historical publication_metadata/ENOTEMPTY exact causes UNKNOWN",
+    "Exact independent technical whole review and prospectively approved canonical report binding",
+    "Exact production owner receipt enrollment after technical qualification",
+    "Independent-source eligibility/history/support/role separation; sealed replacement payload; C1/G3/conditional branch/C2/release"
+  ],
+  "completed_evidence_scoped_review": "SHIP; WHOLE BLOCK"
+}

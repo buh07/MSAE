@@ -1,0 +1,16 @@
+{
+  "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-integration-checkpoint-mDa7YG",
+  "archive": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-integration-checkpoint-mDa7YG/public-checkpoint.tar.gz",
+  "sha256": "84b89ef35eb8e545406b76185db95a5ea92cc479d9be20c44880b2e19a50a34e",
+  "bytes": 561601,
+  "public_files": 170,
+  "status": "SOURCE-FREE ONLY; WHOLE BLOCK; EXTRACTED SNAPSHOT VERIFIED 379 PASS/6 FAIL",
+  "manifest_sha256": "b605b5c2c324c550dcdaed9ba2f8d1fdfe1e37f010d76cc07fb9404450de30a0",
+  "reproduction": {
+    "path": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-integration-checkpoint-mDa7YG/reproduction-binding.json",
+    "sha256": "54f1118609bc5ce65286d8d008369653cc338d976d137a56215c8ca1f7342a23",
+    "bytes": 2711,
+    "mode": 448,
+    "nlink": 1
+  }
+}

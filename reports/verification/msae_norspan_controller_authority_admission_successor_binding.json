@@ -1,0 +1,43 @@
+{
+  "schema_version": "norspan_controller_authority_admission_successor_binding_v1",
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-authority-admission-binding-8ux9h2sg",
+  "subjects": 62,
+  "subjects_sha256": "35dbadd9b4903c362bfcd0ea18579ab68af0471be89dc218363c8c3bd500094b",
+  "test_suites": 26,
+  "tests_sha256": "a7afc0e7a6f8aa8fd4e70a229b42896819191b11f712a4462a08a7eddfa44fc7",
+  "predecessor_binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-observation-binding-mge9uipw",
+  "production_launch_authorized": false,
+  "canonical_authority_established": false,
+  "status": "GUARDED SOURCE-FREE KNOWN AUTHORITY ADMISSION REPAIR; WHOLE UNQUALIFIED",
+  "legacy_test_source_only_never_collect": "tests/test_prepare_msae_independent_norspan_v1.py",
+  "exact_changed_or_added_subjects": [
+    {
+      "path": "docs/plan-msae-norspan-controller-authority-admission-supplement-v1.md",
+      "sha256": "3ccf272742c014bf168166d568117191882081b260af6061ceb22f6d93431e32",
+      "bytes": 2685,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_authority.py",
+      "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69",
+      "bytes": 10094,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_controller.py",
+      "sha256": "39ad4fe29be89e38c24f6316b02b0d6458bc113b32d41271fc0914971499c037",
+      "bytes": 23373,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_controller_matrix.py",
+      "sha256": "631af250dd8b7cbea475ee237b81dfd8c1fc738dcb4163e807564dd4be687d4d",
+      "bytes": 34958,
+      "mode": 420,
+      "nlink": 1
+    }
+  ]
+}

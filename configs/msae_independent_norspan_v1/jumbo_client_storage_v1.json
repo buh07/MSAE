@@ -1,0 +1,498 @@
+{
+  "protocol_id": "NORSPAN-1",
+  "original_protocol_path": "configs/msae_independent_norspan_v1/protocol.json",
+  "original_protocol_sha256": "645fc34db2a770113c6c8ef531e9317f3209e4d6f1d31c18b55daecad6151420",
+  "scientific_projection": {
+    "source": {
+      "repo": "https://github.com/UniversalDependencies/UD_Norwegian-Bokmaal.git",
+      "commit": "396d11f0c2bd290a2a2711015c04ac25bc3dcc06",
+      "files": [
+        "no_bokmaal-ud-train.conllu",
+        "no_bokmaal-ud-dev.conllu",
+        "no_bokmaal-ud-test.conllu",
+        "LICENSE.txt"
+      ]
+    },
+    "license": {
+      "max_bytes": 131072,
+      "accepted_phrases": [
+        [
+          "cc",
+          "by",
+          "sa",
+          "4",
+          "0"
+        ],
+        [
+          "creative",
+          "commons",
+          "attribution",
+          "sharealike",
+          "4",
+          "0"
+        ],
+        [
+          "attribution",
+          "sharealike",
+          "4",
+          "0",
+          "international"
+        ]
+      ],
+      "accepted_urls": [
+        "http://creativecommons.org/licenses/by-sa/4.0",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "https://creativecommons.org/licenses/by-sa/4.0",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "negative_phrases": [
+        [
+          "all",
+          "rights",
+          "reserved"
+        ],
+        [
+          "no",
+          "redistribution"
+        ],
+        [
+          "non",
+          "commercial",
+          "use",
+          "only"
+        ]
+      ],
+      "contradictory_identifiers": [
+        "agpl-3.0",
+        "cc-by-nc-4.0",
+        "cc-by-nd-4.0",
+        "gpl-2.0",
+        "gpl-3.0",
+        "proprietary"
+      ]
+    },
+    "pedigree": {
+      "domain_hex": "6e6f727370616e2d312f706564696772656500",
+      "identifiers": [
+        [
+          "ud",
+          "norwegian",
+          "bokmaal"
+        ],
+        [
+          "norwegian",
+          "bokmaal"
+        ],
+        [
+          "no",
+          "bokmaal"
+        ],
+        [
+          "https",
+          "github",
+          "com",
+          "universaldependencies",
+          "ud",
+          "norwegian",
+          "bokmaal",
+          "git"
+        ],
+        [
+          "https",
+          "github",
+          "com",
+          "universaldependencies",
+          "ud",
+          "norwegian",
+          "bokmaal"
+        ],
+        [
+          "396d11f0c2bd290a2a2711015c04ac25bc3dcc06"
+        ],
+        [
+          "no",
+          "bokmaal",
+          "ud",
+          "train",
+          "conllu"
+        ],
+        [
+          "no",
+          "bokmaal",
+          "ud",
+          "train"
+        ],
+        [
+          "no",
+          "bokmaal",
+          "ud",
+          "dev",
+          "conllu"
+        ],
+        [
+          "no",
+          "bokmaal",
+          "ud",
+          "dev"
+        ],
+        [
+          "no",
+          "bokmaal",
+          "ud",
+          "test",
+          "conllu"
+        ],
+        [
+          "no",
+          "bokmaal",
+          "ud",
+          "test"
+        ],
+        [
+          "license",
+          "txt"
+        ],
+        [
+          "license"
+        ]
+      ]
+    },
+    "role": {
+      "domain": "norspan-1/role-v1",
+      "cutpoints_u64": [
+        11068046444225730969,
+        14757395258967641292,
+        16602069666338596454
+      ],
+      "names": [
+        "discovery",
+        "calibration",
+        "C1",
+        "C2"
+      ]
+    },
+    "support": {
+      "distinct_sentence_floor": 20,
+      "required_tasks": [
+        "absolute_bucket",
+        "relative_quartile",
+        "capitalization",
+        "word_length",
+        "punctuation",
+        "sentence_boundary",
+        "head_signed_distance",
+        "upos_coarse"
+      ],
+      "optional_tasks": [
+        "dependency_depth",
+        "deprel_coarse",
+        "number",
+        "token_identity",
+        "lemma_identity"
+      ],
+      "minimum_optional_tasks": 2,
+      "upos": [
+        "ADJ",
+        "ADP",
+        "ADV",
+        "AUX",
+        "CCONJ",
+        "DET",
+        "INTJ",
+        "NOUN",
+        "NUM",
+        "PART",
+        "PRON",
+        "PROPN",
+        "PUNCT",
+        "SCONJ",
+        "SYM",
+        "VERB",
+        "X"
+      ],
+      "deprel": [
+        "acl",
+        "advcl",
+        "advmod",
+        "amod",
+        "appos",
+        "aux",
+        "case",
+        "cc",
+        "ccomp",
+        "clf",
+        "compound",
+        "conj",
+        "cop",
+        "csubj",
+        "dep",
+        "det",
+        "discourse",
+        "dislocated",
+        "expl",
+        "fixed",
+        "flat",
+        "goeswith",
+        "iobj",
+        "list",
+        "mark",
+        "nmod",
+        "nsubj",
+        "nummod",
+        "obj",
+        "obl",
+        "orphan",
+        "parataxis",
+        "punct",
+        "reparandum",
+        "root",
+        "vocative",
+        "xcomp"
+      ],
+      "number": [
+        "Sing",
+        "Plur",
+        "Dual",
+        "Trial",
+        "Pauc",
+        "Grpa",
+        "Grpl",
+        "Inv",
+        "Ptan"
+      ],
+      "token_domain_hex": "6e6f727370616e2d312f746f6b656e00",
+      "lemma_domain_hex": "6e6f727370616e2d312f6c656d6d6100"
+    },
+    "overlap": {
+      "short_max_tokens": 9,
+      "long_min_tokens": 10,
+      "fivegram_jaccard_min": 0.8,
+      "covered_fivegrams_min": 4,
+      "covered_tokens_min": 20,
+      "covered_fraction_min": 0.1
+    },
+    "payload": {
+      "schema_version": "msae_independent_norspan_v1_payload_v1",
+      "roles": [
+        "discovery",
+        "calibration",
+        "C1",
+        "C2"
+      ],
+      "file_mode": 384,
+      "directory_mode": 448
+    },
+    "gates": {
+      "finite_draws_required": 450,
+      "finite_draws_total": 500,
+      "broad_recovery_min": 0.75,
+      "broad_leakage_max": 0.55,
+      "selectivity_margin_min": 0.2,
+      "family_advantage_margin": 0.05,
+      "retention_margin": 0.02,
+      "collateral_margin": 0.02,
+      "stability_margin": 0.05,
+      "outputs": [
+        "learned_model",
+        "existing_or_simple",
+        "negative_atlas",
+        "equivocal_no_decision"
+      ],
+      "case_precedence": [
+        "ioi",
+        "controlled_relation_position"
+      ]
+    },
+    "containment": {
+      "prescore_roles": [
+        "discovery",
+        "calibration",
+        "C1"
+      ],
+      "prescore_forbidden_roles": [
+        "C2"
+      ],
+      "c1_requires": [
+        "readiness_ship",
+        "immutable_scoring_manifest",
+        "prescore_ship",
+        "c1_capability"
+      ],
+      "c2_requires": [
+        "signed_g3",
+        "m5_frozen",
+        "m6_passed",
+        "branch_prerequisites",
+        "m8_capability"
+      ],
+      "network": false,
+      "host_ipc": false,
+      "host_sockets": false,
+      "regular_file_limit_bytes": 8589934592,
+      "open_file_limit": 4096,
+      "process_limit": 512,
+      "run_total_bytes_limit": 68719476736,
+      "run_entry_limit": 65536
+    },
+    "decision_rules": {
+      "precedence": [
+        "learned_model",
+        "existing_or_simple",
+        "negative_atlas",
+        "equivocal_no_decision"
+      ],
+      "equivocal_conditions": [
+        "conflicting_metrics",
+        "boundary_interval_overlap",
+        "insufficient_finite_draws",
+        "failed_stability",
+        "failed_specificity",
+        "inadequate_power"
+      ],
+      "negative_requires": [
+        "c1_technically_valid",
+        "all_endpoints_finite",
+        "stable_null_direction",
+        "no_family_passes_g1",
+        "all_upper_bounds_exclude_material_margin"
+      ],
+      "equivocal_authorizes_c2": false,
+      "equivocal_authorizes_training": false,
+      "one_signed_g3_branch": true,
+      "one_pre_c2_case": true
+    },
+    "history": {
+      "archive_max_members": 10000,
+      "archive_max_member_bytes": 67108864,
+      "archive_max_total_bytes": 536870912,
+      "protected_content_reads": 0
+    },
+    "capability": {
+      "process_tokens": [
+        "nvidia-smi",
+        "torchrun",
+        "accelerate",
+        "deepspeed",
+        "train",
+        "training",
+        "score",
+        "scoring",
+        "evaluate",
+        "evaluation",
+        "inference",
+        "vllm",
+        "tmux"
+      ],
+      "environment_keys": [
+        "CUDA_VISIBLE_DEVICES",
+        "NVIDIA_VISIBLE_DEVICES",
+        "LOCAL_RANK",
+        "RANK",
+        "WORLD_SIZE",
+        "TMUX"
+      ],
+      "training_roots": [
+        "results",
+        "pilot_runs",
+        "checkpoints",
+        "runs"
+      ],
+      "content_hash_max_bytes": 67108864
+    },
+    "authorizations": {
+      "model_scoring": false,
+      "gpu_query": false,
+      "k2_or_branch_training": false,
+      "stage_c": false
+    },
+    "acquisition_limits": {
+      "command_timeout_seconds": 600,
+      "stdout_limit_bytes": 16777216,
+      "stderr_limit_bytes": 4194304
+    },
+    "runtime": {
+      "python": [
+        3,
+        12,
+        3
+      ],
+      "unicode": "15.0.0"
+    },
+    "state_order": [
+      "clean_reviewed",
+      "baseline",
+      "authority",
+      "acquisition_entered",
+      "network_ready",
+      "network_started",
+      "acquisition_terminal",
+      "scientific_entered",
+      "raw_ready",
+      "raw_started",
+      "scientific_terminal"
+    ]
+  },
+  "publication": {
+    "algorithm": "JPC-1",
+    "stage_rule": ".<final>.stage",
+    "complete_nlink": 2,
+    "stage_retained": true,
+    "final_retained": true,
+    "unlink": false,
+    "rename": false,
+    "fallback": false,
+    "external_expected_receipts_required": true,
+    "ordinary_history_nlink": 1
+  },
+  "recovery": {
+    "explicit_fresh_invocation": true,
+    "incomplete": "unresolved",
+    "prestart": "current_custody_then_full_control_validation",
+    "started_without_terminal": "no_retry",
+    "terminal": "current_opaque_custody_only",
+    "source_operations": 0,
+    "model_operations": 0,
+    "historical_success_inferred": false
+  },
+  "schema_version": "norspan_jumbo_client_storage_v1",
+  "contract_path": "docs/contract-msae-norspan-jumbo-client-storage-v3.md",
+  "contract_sha256": "9431a898ba7ca6f828e856b438ff764e58008be50a2e45fc890cad724adbe678",
+  "production_launch_authorized": false,
+  "scratch": {
+    "base": "/jumbo/lisp/f004ndc/experiments/wip/MSAE/acquisition_scratch/norspan-1",
+    "reservation_before_started_marker": true,
+    "mode": 448,
+    "retention": "all_success_and_failure",
+    "cleanup_attempts": 0,
+    "file_bytes_limit": 8589934592,
+    "total_bytes_limit": 68719476736,
+    "entry_limit": 65536,
+    "monitor_is_hard_quota": false,
+    "object_admission_limit": 1024,
+    "depth_admission_limit": 64,
+    "contract": "controlled_writer_multi_observation_not_atomic",
+    "administrator_contact": false,
+    "hard_aggregate_quota_enforced": false
+  },
+  "assurance": {
+    "server_stable_storage": "UNKNOWN",
+    "failover_reboot": "UNKNOWN",
+    "multi_client_isolation": "UNKNOWN",
+    "backup_retention": "UNKNOWN",
+    "disaster_recovery": "UNKNOWN",
+    "restored_inode_identity": "UNKNOWN",
+    "quota_reserved_headroom": "UNKNOWN",
+    "hard_process_limit_512": "UNVERIFIED",
+    "kernel_fsize_production_limit": "NOT_ACTIVATED",
+    "client_fsync": "successful_calls_only",
+    "metadata_mutation_detection": "INSUFFICIENT_ALONE",
+    "expected_byte_fence": "REQUIRED_NOT_ATOMIC"
+  },
+  "activation": {
+    "whole_implementation_approval_required": true,
+    "authenticated_canonical_binding_required": true,
+    "source_gates_required": true,
+    "prescore_gates_required": true,
+    "unchanged_hard_containment_waiver": false
+  }
+}

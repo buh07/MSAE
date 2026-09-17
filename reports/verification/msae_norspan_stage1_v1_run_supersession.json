@@ -1,0 +1,8 @@
+{
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-stage1-public-checkpoint-7vlyy2wl",
+  "main_status": "SUPERSEDED_NOT_AUTHORITATIVE: public diagnostic changed after run began; not exact frozen75 reproduction",
+  "extracted_status": "IN_PROGRESS_EXACT_FROZEN75; candidate BLOCK by independent review; not launch authority",
+  "cause": "independent nested cleanup evidence counterexample; preserved archive and earlier inputs/reports",
+  "source_model_operations": 0,
+  "production_launch_authorized": false
+}

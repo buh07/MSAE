@@ -1,0 +1,57 @@
+{
+  "schema_version": "norspan_controller_observation_successor_binding_v1",
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-observation-binding-mge9uipw",
+  "subjects": 61,
+  "subjects_sha256": "af33430b4ca9a28c58c5afaa108c85cb79c0c70b6d8842a207ae50396875752d",
+  "test_suites": 26,
+  "tests_sha256": "a7afc0e7a6f8aa8fd4e70a229b42896819191b11f712a4462a08a7eddfa44fc7",
+  "predecessor_binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-test-custody-binding-t0hb4f3h",
+  "production_launch_authorized": false,
+  "canonical_authority_established": false,
+  "status": "UNQUALIFIED GUARDED SOURCE-FREE OBSERVATION SUCCESSOR; OLD49/59/60 FAILURES PRESERVED",
+  "legacy_test_source_only_never_collect": "tests/test_prepare_msae_independent_norspan_v1.py",
+  "exact_changed_or_added_subjects": [
+    {
+      "path": "docs/plan-msae-norspan-controller-aggregate-admission-supplement-v1.md",
+      "sha256": "c63839cd8b55974360c68ced682338dc9e4e8072f9778e7ab91aa9cd59e72fea",
+      "bytes": 2801,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_authority.py",
+      "sha256": "0aa14c58240a5f2bece25a79788eb06294dac9b26248150d9c7ee48f35cb9b7d",
+      "bytes": 9906,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_controller.py",
+      "sha256": "d54b2d16f4d16feee7a3ac843f4d9da5e4a4d8e8b92ac9d177c0636d0c2362d1",
+      "bytes": 23283,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_controls.py",
+      "sha256": "b4f6b21a563bf2d62d640863209fa3660360c66e3b95e5ee0b45c19c9118f72e",
+      "bytes": 16875,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_runtime.py",
+      "sha256": "2ed024854ee275af1b0d87359f6181fdb2d3aee44835eaa0b8dcea0e5485e4a4",
+      "bytes": 31654,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_controller_matrix.py",
+      "sha256": "c3a8dcbd9e8c2579a73c6f5b2680bd59ef6c6afec5c3d7c9c991ab9027f1a28e",
+      "bytes": 28361,
+      "mode": 420,
+      "nlink": 1
+    }
+  ]
+}

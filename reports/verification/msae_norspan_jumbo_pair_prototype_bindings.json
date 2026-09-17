@@ -1,0 +1,80 @@
+{
+  "status": "SOURCE-FREE PROTOTYPE ONLY; WHOLE LAUNCH BLOCK",
+  "qualification_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jumbo-pair-qualified-lIMmpz",
+  "corrected_diagnostic_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jumbo-diagnostics-corrected-elVXdR",
+  "checks": "53 passed in 2.18s; py_compile exit0; production preserved",
+  "bindings": {
+    "docs/plan-msae-norspan-jumbo-qualification-v3.md": {
+      "sha256": "5e01515be3d27eba6e10fcbf4dfca521a01151a7bb377c5f0b97c5fbe2c8caf3",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 12638
+    },
+    "reports/adversarial/msae_norspan_jumbo_pair_v3_plan_review.md": {
+      "sha256": "183cf354fe873c0a279f1a3363f4c15b341a36b91ec3c3822237128cee92a655",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 6271
+    },
+    "scripts/msae_jumbo_pair_commit.py": {
+      "sha256": "f104dae8aaf92c3d412bad9caf6699ec5a7128dafee76a76a3fcc6537fc8f3bf",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 8119
+    },
+    "scripts/diagnose_msae_jumbo_nfs_v1.py": {
+      "sha256": "dd9fd5fe39b2ae73d8e0863d59e3ee59684094a86a58f55a03b8efaab5681445",
+      "mode": 493,
+      "nlink": 1,
+      "bytes": 6535
+    },
+    "tests/test_msae_jumbo_pair_commit.py": {
+      "sha256": "efae737b29d1289435d7c81f522c8fed9a68c98b701905071e68163cb76a8dc9",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 13744
+    },
+    "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jumbo-pair-qualified-lIMmpz/pytest.txt": {
+      "sha256": "a4da2ecec88e5794955390a8418a2c8cb405aed11364fedf520c762671699519",
+      "mode": 448,
+      "nlink": 1,
+      "bytes": 99
+    },
+    "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jumbo-diagnostics-corrected-elVXdR/subjects/diagnostics.json": {
+      "sha256": "c273319d382600ea6b97d292ea8235051de86382472005d618b204b3caea2421",
+      "mode": 384,
+      "nlink": 1,
+      "bytes": 472318
+    },
+    "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jumbo-diagnostics-corrected-elVXdR/syscalls.log": {
+      "sha256": "e0338271a7d9693a4e7092cd6089b5957bb898a61c75c9427ae3e16ea9eb3762",
+      "mode": 448,
+      "nlink": 1,
+      "bytes": 3078274
+    }
+  },
+  "preserved_checked": [
+    "docs/plan-msae-independent-norspan-v1.md",
+    "reports/adversarial/msae_independent_norspan_v1_plan_review.md",
+    "reports/adversarial/msae_independent_norspan_v1_implementation_review.md",
+    "reports/adversarial/msae_independent_norspan_v1_bounded_followup_review.md",
+    "reports/adversarial/msae_independent_norspan_v1_runtime_remediation_review.md",
+    "reports/adversarial/msae_independent_norspan_v1_runtime_followup_review.md",
+    "reports/adversarial/msae_independent_norspan_v1_atomic_publication_review.md",
+    "reports/adversarial/msae_independent_norspan_v1_final_boundary_review.md",
+    "reports/verification/msae_independent_norspan_v1_pre_bounded_checks.log",
+    "reports/verification/msae_independent_norspan_v1_pre_remediation_checks.log",
+    "reports/verification/msae_independent_norspan_v1_pre_runtime_followup_checks.log",
+    "reports/verification/msae_independent_norspan_v1_pre_atomic_publication_checks.log",
+    "reports/verification/msae_independent_norspan_v1_pre_final_boundary_checks.log",
+    "docs/plan-msae-norspan-jumbo-qualification-v1.md",
+    "docs/plan-msae-norspan-jumbo-qualification-v2.md",
+    "reports/adversarial/msae_norspan_jumbo_qualification_plan_review.md",
+    "reports/adversarial/msae_norspan_jumbo_pair_plan_review.md",
+    "scripts/prepare_msae_independent_norspan_v1.py",
+    "scripts/acquire_msae_independent_norspan_v1.py",
+    "configs/msae_independent_norspan_v1/protocol.json",
+    "tests/test_prepare_msae_independent_norspan_v1.py",
+    "reports/verification/msae_independent_norspan_v1_source_free_checks.log"
+  ]
+}

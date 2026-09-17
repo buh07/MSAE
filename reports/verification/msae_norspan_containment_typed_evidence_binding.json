@@ -1,0 +1,13 @@
+{
+  "scope": "public_bounded_engineering_evidence_snapshot",
+  "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-containment-typed-evidence-j00a1d4g",
+  "subjects": 31,
+  "archive_members": 33,
+  "archive_sha256": "6b4ca89c36bc3cf82a7f0ab7191631cd1bde815569e7a7fa024c323a1c8c7e83",
+  "manifest_sha256": "4f41408a61af1d2fde2523228ac649e151eec373bb4ba8eed2627b50e2d28f61",
+  "client_archive_and_parent_fsync_returned": true,
+  "server_backup_guarantees": "UNKNOWN",
+  "completed_regression": "PENDING_AT_SNAPSHOT",
+  "production_launch_authorized": false,
+  "whole_qualification_approved": false
+}

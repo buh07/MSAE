@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-09-17T09:35:09.786262+00:00",
+  "branch": "main",
+  "head": "75653a764498913c1865ab9ddebdcd91370b527b",
+  "top_level_porcelain_entries": 346,
+  "status_counts": {
+    " M": 2,
+    "??": 344
+  },
+  "ahead_behind_local_ref": "0\t0",
+  "fetch_performed": false,
+  "private_keys_or_payload_content_read": false,
+  "committed": false,
+  "pushed": false
+}

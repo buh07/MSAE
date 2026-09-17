@@ -1,0 +1,16 @@
+{
+  "schema_version": "norspan_marker_wave1_checkpoint_v1",
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-checkpoint-zkje7szb",
+  "archive_sha256": "d282794eba0ac03ae16919220858c6ec8095e4936fc69019364f0bbb05d70d03",
+  "archive_bytes": 304191,
+  "archive_mode": 448,
+  "manifest_sha256": "a0b67be3c962f5e36015bcea850843884a4beaaf499a40f2c5b5fe8246159f28",
+  "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91",
+  "public_subjects": 67,
+  "reproduction_status": "PASS:1096actual source-free cases; nofail/error/skip; SAMEcase set as main",
+  "client_archive_and_parent_fsync_returned": true,
+  "server_backup_durability_guarantees": "UNKNOWN",
+  "production_launch_authorized": false,
+  "completed_run_binding": "reports/verification/msae_norspan_marker_wave1_completed_runs.json",
+  "post_run_identity_checks": 201
+}

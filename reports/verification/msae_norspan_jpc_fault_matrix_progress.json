@@ -1,0 +1,2706 @@
+{
+  "status": "WHOLE FAULT MATRIX OPEN / BLOCK; BOUNDED EVIDENCE ONLY",
+  "declared_plan": {
+    "path": "/jumbo/lisp/f004ndc/experiments/wip/MSAE/docs/plan-msae-norspan-jpc-integration-v1.md",
+    "sha256": "248d015a0600749b4a57eb18cc439417333a40711c809cd843da4e7b4198de2a",
+    "bytes": 13553,
+    "mode": 420,
+    "nlink": 1
+  },
+  "groups": [
+    {
+      "id": "control_markers",
+      "declared_boundary": "Baseline/authority/entry/ready/started, network and raw separately",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-prelink_parent_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-link]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-postlink_parent_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-file_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-prelink_parent_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-link]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-postlink_parent_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[file_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[prelink_parent_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[link]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[postlink_parent_fsync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-create-1]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-create-2]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-create-3]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-verify-1]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-verify-2]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-create-1]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-create-2]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-create-3]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-verify-1]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-verify-2]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[acquire]",
+          "result": "passed"
+        }
+      ],
+      "required_unclosed": [
+        "Actual paired baseline/history/authority/entry/ready/start schemas and physical/logical state replay",
+        "Every phase write/chmod/file+parent sync/link/hash/cardinality/close and interruption/substitution/extra/combined axis",
+        "Actual zero first access before durable start; complete-control/partial-successor states"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    },
+    {
+      "id": "subprocess",
+      "declared_boundary": "First subprocess and supervisor setup/run/drain",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_runner_static_prestart_scratch_binding_precedes_first_subprocess",
+          "result": "passed"
+        }
+      ],
+      "required_unclosed": [
+        "Actual fake-Git selector/Popen/register/read/limits/time/kill/reap/pipe/close matrix",
+        "Registration+close and leader-exit+live-descendant cases; command failure+foreign retained scratch",
+        "Static supervisor primary masking/skipped release defects require test-first repair",
+        "Ordering evidence currently structural only; no integrated first/second-spawn authorization test"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    },
+    {
+      "id": "producer_raw",
+      "declared_boundary": "Sparse checkout producer and raw publication",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_aggregate_real_eight_names_external_receipts[448]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_aggregate_real_eight_names_external_receipts[365]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-mkdir]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-link]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-sync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-close]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-mkdir]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-link]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-sync]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-close]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[recovery]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-recovery]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-recovery]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-recovery]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-recovery]",
+          "result": "passed"
+        }
+      ],
+      "required_unclosed": [
+        "Actual pinned sparse producer Git object/blob/schema and bounded nonblocking special-file rejection",
+        "Producer per-file/total bounded reads and primary/ancestor cleanup combined faults",
+        "Full ordinary-producer to paired-raw manifest/schema and false-terminal end-to-end matrix"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    },
+    {
+      "id": "scientific_raw_access",
+      "declared_boundary": "First scientific raw access",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[acquire]",
+          "result": "passed"
+        }
+      ],
+      "required_unclosed": [
+        "Actual last authority/history/readiness recensus, ready/start and each first open/read",
+        "Malformed support/source controls, mid-access failure/kill plus partial-start marker",
+        "No repeated initiated raw access and separately reviewed terminal raw exception counters",
+        "Entry guards are not readiness/first-access protocol qualification"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    },
+    {
+      "id": "private_seal",
+      "declared_boundary": "Four-role private publication and seal",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[root_extra]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[role_extra]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[second_partial]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_private_adapter_retains_distinct_role_writer_pairs",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[recovery]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-recovery]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-recovery]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-recovery]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-flat_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-flat_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-role_publish]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-role_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-recovery]",
+          "result": "passed"
+        }
+      ],
+      "required_unclosed": [
+        "Actual private seal/readiness and containing outside receipt approval",
+        "Every role/root create/write/chmod/link/fsync/hash/cardinality/close interrupted and combined case",
+        "Integrated private readers, third/cross-role aliases, counter/accounting and final-only scorer capability",
+        "Current tests use synthetic role publishers/opaque readers; no approved scientific access"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    },
+    {
+      "id": "terminal_recovery",
+      "declared_boundary": "Terminal success/rejection and fresh recovery",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_explicit_recovery_is_current_opaque_custody_never_repeated_work[names0-prestart_current_custody]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_explicit_recovery_is_current_opaque_custody_never_repeated_work[names1-terminal_current_custody]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[incomplete]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[malformed]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[started_stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[started_final]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[catalog_digest]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[lineage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[extra]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[nlink-2.0]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[bytes-True]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[mode-644.0]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[pair-value4]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-.network_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-.raw_access_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.raw_access_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[seal.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[seal.json-.network_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[seal.json-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[seal.json-.raw_access_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "required_unclosed": [
+        "Explicit actual zero-source-work recovery command and all four strict state/lineage/history/schema outcomes",
+        "Actual success/rejection canonical paired terminal and retained-scratch replay",
+        "Duplicate/nonfinite/noncanonical/typed stale claims/counters, link-kill, fsync+detached ancestry and extra-replay faults",
+        "Opaque API intentionally grants no source-work authorization or past-success inference; not P5 completion"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    },
+    {
+      "id": "descriptor_ancestry",
+      "declared_boundary": "Descriptor/ancestor custody everywhere",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[OSError-False-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[OSError-False-verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[OSError-True-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[OSError-True-verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[KeyboardInterrupt-False-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[KeyboardInterrupt-False-verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[KeyboardInterrupt-True-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[KeyboardInterrupt-True-verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-owned-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-owned-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-immediate-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-immediate-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-nonleaf-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-nonleaf-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-root-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-root-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-owned-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-owned-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-immediate-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-immediate-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-nonleaf-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-nonleaf-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-root-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-root-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-fsync_file-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-fsync_file-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-fsync_parent-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-fsync_parent-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-hash_before-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-hash_before-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-hash_after-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-hash_after-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-fsync_file-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-fsync_file-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-fsync_parent-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-fsync_parent-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-hash_before-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-hash_before-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-hash_after-writer]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-hash_after-reader]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_handle_constructor_failure_preserves_primary_and_all_fd_cleanup[OSError-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_handle_constructor_failure_preserves_primary_and_all_fd_cleanup[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_handle_constructor_failure_preserves_primary_and_all_fd_cleanup[KeyboardInterrupt-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_owned_pair_matrix::test_handle_constructor_failure_preserves_primary_and_all_fd_cleanup[KeyboardInterrupt-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_public_adapter_parent_close_error_closes_chain_no_publication[OSError]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_public_adapter_parent_close_error_closes_chain_no_publication[KeyboardInterrupt]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-None-flat]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-None-roles]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-None-recover]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-OSError-flat]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-OSError-roles]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-OSError-recover]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-KeyboardInterrupt-flat]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-KeyboardInterrupt-roles]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-KeyboardInterrupt-recover]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-None-flat]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-None-roles]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-None-recover]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-OSError-flat]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-OSError-roles]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-OSError-recover]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-KeyboardInterrupt-flat]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-KeyboardInterrupt-roles]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-KeyboardInterrupt-recover]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_final_pass_budget_fault_plus_all_release_errors_keeps_budget_primary[OSError]",
+          "result": "failed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_final_pass_budget_fault_plus_all_release_errors_keeps_budget_primary[KeyboardInterrupt]",
+          "result": "failed"
+        }
+      ],
+      "required_unclosed": [
+        "Six scratch second-pass/combined-primary tests remain failed (including OSError/KeyboardInterrupt combinations)",
+        "Predecessor supervisor/ordinary/raw teardown has static skipped-release/primary-masking paths",
+        "Every actual whole-path constructor/validation+all-close/reuse/nonleaf exchange/read/durability axis not yet exercised"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    },
+    {
+      "id": "history_capability",
+      "declared_boundary": "History and capability boundaries",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_amendment_freezes_literal_science_and_no_launch",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[source]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[license]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[pedigree]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[support]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[overlap]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[payload]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[gates]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[containment]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[decision_rules]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[capability]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[authorizations]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[runtime]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[state_order]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_bool_integer_projection_drift_rejected",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[acquire]",
+          "result": "passed"
+        }
+      ],
+      "required_unclosed": [
+        "Exact finite paired additions/ordinary history/empty-dir/unknown-binary drift and predecessor BLOCK visibility",
+        "Canonical whole/storage/history/authority outside trust graph still absent",
+        "Actual synthetic process/env/root capability containment mutations; no real GPU/training invocation",
+        "Literal config freeze and entry poison guards do not establish accessible-history or source eligibility"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    },
+    {
+      "id": "storage_limits",
+      "declared_boundary": "Storage limits/recovery",
+      "whole_row_closed": false,
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_prestart_binding_fsync_and_reopen_retains_all_bytes",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[foreign]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[root_replaced]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[special]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[hardlink]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[file_budget]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[total_budget]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[entry_budget]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_interrupt_and_primary_cleanup_fault_do_not_delete",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_late_scratch_file_mutation_during_root_sync_rejects_stale_snapshot",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_home_extra_is_unresolved_and_retained",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[1-False-home_foreign]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[1-False-earlier_file_over_budget]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[1-True-home_foreign]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[1-True-earlier_file_over_budget]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[2-False-home_foreign]",
+          "result": "failed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[2-False-earlier_file_over_budget]",
+          "result": "failed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[2-True-home_foreign]",
+          "result": "failed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[2-True-earlier_file_over_budget]",
+          "result": "failed"
+        }
+      ],
+      "required_unclosed": [
+        "Second final treewalk scratch consistency/budget/durability failures remain unresolved",
+        "Administrator exact destinations/identities/ACL/enforced quotas/reservation/retention/recovery/stable-storage facts absent",
+        "Safe actual approved destination and any required multi-client/reboot/failover evidence absent",
+        "Native same-client monitor/fsync cases are neither hard quotas nor server-crash proof"
+      ],
+      "transcript": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "junit": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+    }
+  ],
+  "actual_maintained_summary": {
+    "total": 385,
+    "passed": 379,
+    "failed": 6,
+    "exit": 1,
+    "cases": [
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_native_jumbo_pair_has_exact_owned_aliases_and_bytes[292]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_native_jumbo_pair_has_exact_owned_aliases_and_bytes[384]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_native_jumbo_pair_has_exact_owned_aliases_and_bytes[420]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_visible_pair_alone_is_not_a_manifest_or_consumption_capability",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_preexisting_obstruction_preserved_without_creating_other_names[record]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_preexisting_obstruction_preserved_without_creating_other_names[.record.stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_preexisting_obstruction_preserved_without_creating_other_names[.record.building]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_precise_prelink_attacks_never_succeed_or_erase_foreign_evidence[same_inode_bytes]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_precise_prelink_attacks_never_succeed_or_erase_foreign_evidence[substituted_stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_precise_prelink_attacks_never_succeed_or_erase_foreign_evidence[racing_final]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_precise_prelink_attacks_never_succeed_or_erase_foreign_evidence[third_link]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-prelink_parent_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-link]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-postlink_parent_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-open]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-chmod]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-write]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-file_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-prelink_parent_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-link]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[KeyboardInterrupt-postlink_parent_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_short_writes_are_completed_and_zero_write_is_preserved",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_publisher_has_no_unlink_or_overwrite_rename_fallback",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_late_legacy_building_extra_rejects_and_preserves_pair",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_pinned_nonleaf_ancestor_exchange_rejects_without_leak",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_native_eight_process_pair_race_exactly_one_winner",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_receipt_schema_drift_rejected[mode-True]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_receipt_schema_drift_rejected[byte_count-True]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_receipt_schema_drift_rejected[sha256-wrong]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_receipt_schema_drift_rejected[inode--1]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_outside_jumbo_is_refused_before_creation",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_diagnostic_size_floor_is_derived_not_false_positive",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[write]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[chmod]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[file_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[prelink_parent_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[link]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_actual_sigkill_retains_initiated_pair_and_never_recreates[postlink_parent_fsync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_current_custody_durability_failure_propagates_closes_and_retains[OSError-file]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_current_custody_durability_failure_propagates_closes_and_retains[OSError-parent]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_current_custody_durability_failure_propagates_closes_and_retains[KeyboardInterrupt-file]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_current_custody_durability_failure_propagates_closes_and_retains[KeyboardInterrupt-parent]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_consumer_rejects_changed_aliases_before_approval[stage_absent]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_consumer_rejects_changed_aliases_before_approval[final_absent]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_consumer_rejects_changed_aliases_before_approval[wrong_mode]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_consumer_rejects_changed_aliases_before_approval[same_inode_wrong_bytes]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_consumer_rejects_changed_aliases_before_approval[unknown_link]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_consumer_rejects_changed_aliases_before_approval[stage_directory]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_consumer_rejects_changed_aliases_before_approval[final_symlink]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_receipt_alias_must_be_literal_string_not_equality_path_spoof[pathlike]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_receipt_alias_must_be_literal_string_not_equality_path_spoof[string_subclass]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_close_error_after_linux_release_closes_every_other_fd_once[OSError-writer-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_close_error_after_linux_release_closes_every_other_fd_once[OSError-writer-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_close_error_after_linux_release_closes_every_other_fd_once[OSError-ancestor-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_close_error_after_linux_release_closes_every_other_fd_once[OSError-ancestor-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_close_error_after_linux_release_closes_every_other_fd_once[KeyboardInterrupt-writer-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_close_error_after_linux_release_closes_every_other_fd_once[KeyboardInterrupt-writer-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_close_error_after_linux_release_closes_every_other_fd_once[KeyboardInterrupt-ancestor-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_close_error_after_linux_release_closes_every_other_fd_once[KeyboardInterrupt-ancestor-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_combined_ancestor_open_and_close_failures_preserve_primary_and_close_chain[OSError]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_combined_ancestor_open_and_close_failures_preserve_primary_and_close_chain[KeyboardInterrupt]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_unrelated_caller_exception_does_not_swallow_close_failure[create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_commit::test_unrelated_caller_exception_does_not_swallow_close_failure[verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_writer_stays_owned_until_explicit_aggregate_end",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_early_writer_checked_again_after_later_pair[bytes]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_early_writer_checked_again_after_later_pair[third]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_early_writer_checked_again_after_later_pair[replacement]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_early_writer_checked_again_after_later_pair[nonleaf]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_pair_close_failure_propagates_even_inside_unrelated_exception",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_primary_and_all_secondary_close_errors_are_preserved",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_owned_reader_requires_external_receipt_and_rechecks_read_time",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_reject_type_spoofing[device]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_reject_type_spoofing[inode]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_reject_type_spoofing[mode]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_reject_type_spoofing[byte_count]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_reject_type_spoofing[sha256]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_reject_type_spoofing[stage_name]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_reject_type_spoofing[final_name]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_require_exact_keys_names_digest[extra]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_require_exact_keys_names_digest[missing]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_require_exact_keys_names_digest[alias]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_serialized_receipts_require_exact_keys_names_digest[hash]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_only_explicit_owned_immediate_parent_mode_transition",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_readonly_transition_cannot_accept_other_drift[not_changed]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_readonly_transition_cannot_accept_other_drift[wrong_mode]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_readonly_transition_cannot_accept_other_drift[replacement]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_readonly_transition_cannot_accept_other_drift[nonleaf]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair::test_owned_reader_never_accepts_observed_digest_in_place_of_expectation",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_second_publisher_file_fsync_failure[OSError]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_second_publisher_file_fsync_failure[KeyboardInterrupt]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-create-1]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-create-2]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-create-3]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-verify-1]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[OSError-verify-2]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-create-1]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-create-2]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-create-3]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-verify-1]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_each_hashing_boundary_error_closes_preserves[KeyboardInterrupt-verify-2]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[bytes-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[bytes-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[extra_alias-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[extra_alias-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[stage_rename-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[stage_rename-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[final_rename-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[final_rename-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[chmod-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[chmod-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[ancestor_exchange-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[ancestor_exchange-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[building-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[building-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_literal_name_schema_both_fields[pathlike-stage_name]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_literal_name_schema_both_fields[pathlike-final_name]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_literal_name_schema_both_fields[str_subclass-stage_name]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_literal_name_schema_both_fields[str_subclass-final_name]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_pinned_parent_constructor_failure_and_cleanup_fault[OSError]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_pinned_parent_constructor_failure_and_cleanup_fault[KeyboardInterrupt]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[OSError-False-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[OSError-False-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[OSError-True-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[OSError-True-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[KeyboardInterrupt-False-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[KeyboardInterrupt-False-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[KeyboardInterrupt-True-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_multiple_close_faults_release_all_once_preserve_primary[KeyboardInterrupt-True-verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_close_error_never_retries_reused_unrelated_fd[create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_close_error_never_retries_reused_unrelated_fd[verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_readtime_inode_mutation_rejects[create-1]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_readtime_inode_mutation_rejects[create-2]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_readtime_inode_mutation_rejects[create-3]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_readtime_inode_mutation_rejects[verify-1]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_readtime_inode_mutation_rejects[verify-2]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_empty_and_multi_chunk_actual_bytes[]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_empty_and_multi_chunk_actual_bytes",
+        "result": "passed",
+        "full_junit_id_sha256": "d4990db99a4c985576933e1025ec6a2bae6fe153a1f8b575fd466103fdfef2fe",
+        "full_id_characters": 2097243,
+        "full_id_location": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_parent_symlink_refused_before_creation",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_nonregular_final_fifo_rejected_without_blocking",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_precise_stage_substitution_rejects_publisher_and_external_receipt[same_bytes_new_inode]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_precise_stage_substitution_rejects_publisher_and_external_receipt[symlink]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_pair_successor_matrix::test_precise_stage_substitution_rejects_publisher_and_external_receipt[fifo]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_fd_access_and_original_retention[writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_fd_access_and_original_retention[reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-owned-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-owned-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-immediate-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-immediate-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-nonleaf-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-nonleaf-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-root-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[OSError-root-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-owned-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-owned-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-immediate-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-immediate-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-nonleaf-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-nonleaf-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-root-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_each_retained_close_position_release_reuse_no_retry[KeyboardInterrupt-root-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-fsync_file-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-fsync_file-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-fsync_parent-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-fsync_parent-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-hash_before-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-hash_before-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-hash_after-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[OSError-hash_after-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-fsync_file-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-fsync_file-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-fsync_parent-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-fsync_parent-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-hash_before-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-hash_before-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-hash_after-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_validate_primary_all_secondary_close_errors[KeyboardInterrupt-hash_after-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_handle_constructor_failure_preserves_primary_and_all_fd_cleanup[OSError-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_handle_constructor_failure_preserves_primary_and_all_fd_cleanup[OSError-open]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_handle_constructor_failure_preserves_primary_and_all_fd_cleanup[KeyboardInterrupt-create]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_handle_constructor_failure_preserves_primary_and_all_fd_cleanup[KeyboardInterrupt-open]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[error-prevalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[error-copy]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[error-postvalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[interrupt-prevalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[interrupt-copy]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[interrupt-postvalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[short-prevalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[short-copy]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[short-postvalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[bytes-prevalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[bytes-copy]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[bytes-postvalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[third-prevalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[third-copy]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[third-postvalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[ancestor-prevalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[ancestor-copy]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_each_phase_has_no_false_success[ancestor-postvalidate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_actual_bytes_empty_and_multichunk[-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_actual_bytes_empty_and_multichunk[-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_actual_bytes_empty_and_multichunk[alpha-writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_actual_bytes_empty_and_multichunk[alpha-reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_actual_bytes_empty_and_multichunk",
+        "result": "passed",
+        "full_junit_id_sha256": "f5a2502eab351516bbee3ed39c3b516580d26b830a7e656169cb53cfc78f0f76",
+        "full_id_characters": 2097281,
+        "full_id_location": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_bounded_reader_actual_bytes_empty_and_multichunk",
+        "result": "passed",
+        "full_junit_id_sha256": "a65c006cf49bfe72658c439ee36a85517e16ee09abeab6905e43310a6d57b686",
+        "full_id_characters": 2097281,
+        "full_id_location": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_invalid_read_limit_rejected_before_any_pread[True]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_invalid_read_limit_rejected_before_any_pread[-1]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_invalid_read_limit_rejected_before_any_pread[1.5]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_invalid_read_limit_rejected_before_any_pread[5]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_invalid_read_limit_rejected_before_any_pread[None]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_parent_transition_rolls_back_binding_on_owned_validation_failure[bytes]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_parent_transition_rolls_back_binding_on_owned_validation_failure[third]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_parent_transition_rolls_back_binding_on_owned_validation_failure[missing_stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_parent_transition_rolls_back_binding_on_owned_validation_failure[ancestor]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_parent_transition_rolls_back_binding_on_owned_validation_failure[error]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_parent_transition_rolls_back_binding_on_owned_validation_failure[interrupt]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_transition_exact_inode_then_nonimmediate_modes_still_frozen[writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_transition_exact_inode_then_nonimmediate_modes_still_frozen[reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_no_primary_multiple_close_errors_first_propagated_and_notes_complete[writer]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_no_primary_multiple_close_errors_first_propagated_and_notes_complete[reader]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_closed_handle_refuses_before_descriptor_reuse[validate]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_closed_handle_refuses_before_descriptor_reuse[read]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_closed_handle_refuses_before_descriptor_reuse[transition]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_jumbo_owned_pair_matrix::test_closed_handle_refuses_before_descriptor_reuse[enter]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_amendment_freezes_literal_science_and_no_launch",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[source]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[license]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[pedigree]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[support]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[overlap]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[payload]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[gates]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[containment]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[decision_rules]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[capability]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[authorizations]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[runtime]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[state_order]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_bool_integer_projection_drift_rejected",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_aggregate_real_eight_names_external_receipts[448]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_aggregate_real_eight_names_external_receipts[365]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_aggregate_rechecks_all_owned_writers_and_cardinality[early_bytes]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_aggregate_rechecks_all_owned_writers_and_cardinality[late_extra]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_aggregate_rechecks_all_owned_writers_and_cardinality[third]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_aggregate_rechecks_all_owned_writers_and_cardinality[substituted_final]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_aggregate_rechecks_all_owned_writers_and_cardinality[parent]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-mkdir]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-write]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-link]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-sync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[OSError-close]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-mkdir]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-write]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-link]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-sync]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_flat_failure_never_returns_success_or_erases_partial[KeyboardInterrupt-close]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[root_extra]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[role_extra]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[second_partial]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_prestart_binding_fsync_and_reopen_retains_all_bytes",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[foreign]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[root_replaced]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[special]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[hardlink]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[file_budget]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[total_budget]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_obstruction_or_budget_failure_preserves_every_object[entry_budget]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_interrupt_and_primary_cleanup_fault_do_not_delete",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_late_scratch_file_mutation_during_root_sync_rejects_stale_snapshot",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_scratch_home_extra_is_unresolved_and_retained",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_directory_context_entry_failure_closes_all_owned_descriptors",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_explicit_recovery_is_current_opaque_custody_never_repeated_work[names0-prestart_current_custody]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_explicit_recovery_is_current_opaque_custody_never_repeated_work[names1-terminal_current_custody]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[incomplete]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[malformed]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[started_stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[started_final]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[catalog_digest]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[lineage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_runtime::test_recovery_unresolved_or_untrusted_never_recreates_or_replays[extra]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_actual_public_control_publisher_retains_pair",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_actual_private_adapter_retains_distinct_role_writer_pairs",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[acquire]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_runner_has_no_initiated_cleanup_or_default_temporary_placement",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_runner_static_prestart_scratch_binding_precedes_first_subprocess",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_actual_public_adapter_parent_close_error_closes_chain_no_publication[OSError]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_adapters::test_actual_public_adapter_parent_close_error_closes_chain_no_publication[KeyboardInterrupt]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[flat_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[flat_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[role_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[role_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_late_matrix::test_earlier_pair_mutation_during_last_durable_digest_rejected[recovery]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_late_matrix::test_scratch_final_scan_late_previous_subtree_mutation_rejected[late_home_extra]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_late_matrix::test_scratch_final_scan_late_previous_subtree_mutation_rejected[late_file_budget]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-None-flat]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-None-roles]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-None-recover]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-OSError-flat]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-OSError-roles]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-OSError-recover]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-KeyboardInterrupt-flat]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-KeyboardInterrupt-roles]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[OSError-KeyboardInterrupt-recover]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-None-flat]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-None-roles]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-None-recover]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-OSError-flat]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-OSError-roles]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-OSError-recover]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-KeyboardInterrupt-flat]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-KeyboardInterrupt-roles]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_all_combined_aggregate_closes_release_once_preserve_primary_and_reuse[KeyboardInterrupt-KeyboardInterrupt-recover]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_scratch_binding_literals_reject[device-True]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_scratch_binding_literals_reject[inode-1.0]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_scratch_binding_literals_reject[mode-448.0]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_scratch_binding_literals_reject[cleanup_attempts-False]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_scratch_binding_literals_reject[authority_sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_scratch_binding_literals_reject[entry_lineage_sha256-x]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[nlink-2.0]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[bytes-True]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[mode-644.0]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_malformed_manifest_literals_reject[pair-value4]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-network_started.json]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-.network_started.json.stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-raw_access_started.json]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-.raw_access_started.json.stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-raw_access_started.json]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.raw_access_started.json.stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[seal.json-network_started.json]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[seal.json-.network_started.json.stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[seal.json-raw_access_started.json]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[seal.json-.raw_access_started.json.stage]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-flat_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-flat_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-role_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-role_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[same_size_restored_mtime-recovery]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-flat_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-flat_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-role_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-role_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[third_alias-recovery]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-flat_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-flat_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-role_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-role_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[stage_substitution-recovery]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-flat_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-flat_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-role_publish]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-role_verify]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_aggregate_matrix::test_last_digest_cannot_bless_earlier_alias_metadata_ancestor[ancestor_mode-recovery]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[1-False-home_foreign]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[1-False-earlier_file_over_budget]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[1-True-home_foreign]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[1-True-earlier_file_over_budget]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[2-False-home_foreign]",
+        "result": "failed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[2-False-earlier_file_over_budget]",
+        "result": "failed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[2-True-home_foreign]",
+        "result": "failed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_mutation_during_each_final_inventory_pass_rejects[2-True-earlier_file_over_budget]",
+        "result": "failed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_final_pass_budget_fault_plus_all_release_errors_keeps_budget_primary[OSError]",
+        "result": "failed"
+      },
+      {
+        "id": "tests.test_msae_norspan_jpc_second_pass_matrix::test_scratch_final_pass_budget_fault_plus_all_release_errors_keeps_budget_primary[KeyboardInterrupt]",
+        "result": "failed"
+      },
+      {
+        "id": "tests.test_diagnose_msae_scratch_custody_v1::test_frozen_legacy_cleanup_foreign_loss_with_retained_before_images[foreign_extra]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_diagnose_msae_scratch_custody_v1::test_frozen_legacy_cleanup_foreign_loss_with_retained_before_images[checked_then_substituted]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_diagnose_msae_scratch_custody_v1::test_current_cleanup_interface_refuses_without_deleting_any_name[foreign_extra]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_diagnose_msae_scratch_custody_v1::test_current_cleanup_interface_refuses_without_deleting_any_name[checked_then_substituted]",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_diagnose_msae_scratch_custody_v1::test_cli_refuses_preexisting_root_without_modification",
+        "result": "passed"
+      },
+      {
+        "id": "tests.test_diagnose_msae_scratch_custody_v1::test_cli_refuses_nonjumbo_root_before_creation",
+        "result": "passed"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "path": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/checks.log",
+      "sha256": "a1e935e32b47dbb270400abc56d001bcc37624ad28a5a12ca729f7b0115779ac",
+      "bytes": 21358,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jpc-current-matrix-IhcwJg/tests.xml",
+      "sha256": "efe2c051e06c24c1fad6d1af78139a4c4f0f0a7fbe7c2665d703fd50edb30932",
+      "bytes": 6375708,
+      "mode": 448,
+      "nlink": 1
+    }
+  ],
+  "independent_whole_block": {
+    "path": "/jumbo/lisp/f004ndc/experiments/wip/MSAE/reports/adversarial/msae_norspan_jpc_whole_candidate_review.md",
+    "sha256": "f31166d80f77751af828df6a18bc62ea71cba1e1fd36a4d949156267d939ffac",
+    "bytes": 29080,
+    "mode": 420,
+    "nlink": 1
+  },
+  "no_real_source_or_scoring": true,
+  "note": "Pattern-linked named cases are bounded evidence for parts of a row, not axis-by-axis whole closure. No missing row is declared N/A."
+}

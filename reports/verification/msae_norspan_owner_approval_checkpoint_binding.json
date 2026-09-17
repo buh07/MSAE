@@ -1,0 +1,40 @@
+{
+  "schema_version": "norspan_controller_checkpoint_binding_v1",
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-checkpoint-mhf8y9h7",
+  "archive_sha256": "eea6e4d14229811e98a0734dc79d4691bdaa8eb4dd76d8f345d48fd2447fd45c",
+  "archive_bytes": 294974,
+  "archive_mode": 448,
+  "manifest_sha256": "3fe24ff0a5bb24468f130f8bf260ae6e38b87782516fedec061801eb84e3212c",
+  "candidate_subjects_sha256": "85c1d36c6665fa1f69630400098843b19a9f44c6d89a7c1baacb0c22714b4875",
+  "public_subjects": 65,
+  "reproduction_status": "PASS: EXTRACTED27 EXPLICIT SUITES665/0FAIL/0SKIP; PUBLIC CODE/TEST DEPENDENCIES ONLY; WHOLE BLOCK",
+  "production_launch_authorized": false,
+  "reproduction": {
+    "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-reproduction-_sw40p8w",
+    "passed": 665,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "pytest_summary_seconds": 718.02,
+    "junit_sha256": "4b9fc3f70b1726ae6a93a63f4d936c350325e0912c1a20c7a4b9f898351d0a38",
+    "junit_time_seconds": 717.737
+  },
+  "main_qualification": {
+    "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-full-xkdilxkp",
+    "passed": 665,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "pytest_summary_seconds": 717.37,
+    "junit_sha256": "f59301aac66c02b3346fe0677f3ea6de0d0c60e1bbaa40f9d1e12034ffa5ab1b",
+    "junit_time_seconds": 717.067
+  },
+  "after_completed_runs_identity_checks": {
+    "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-owner-receipt-after-checks-ri4xalnd",
+    "checks": 195,
+    "sha256": "fccacdf7963196f27245d8d481c50755faa82c10d0df534b16b050d6d5144a02"
+  },
+  "authenticated_owner_approval": false,
+  "canonical_authority_established": false,
+  "whole_implementation_qualified": false
+}

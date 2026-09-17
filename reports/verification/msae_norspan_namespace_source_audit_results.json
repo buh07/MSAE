@@ -1,0 +1,28 @@
+{
+  "analysis": {
+    "bytes": 6607,
+    "mode": 420,
+    "nlink": 1,
+    "path": "docs/analysis-msae-norspan-namespace-route-source-audit-v1.md",
+    "sha256": "3fa385cc7258cdb03fd1dc9632e2daa963fd192de948bc493d0c3c705ad97852"
+  },
+  "binary_upstream_source_equivalence": "UNVERIFIED",
+  "containment_qualified": false,
+  "decision": "NO_UNMODIFIED_BWRAP_QUALIFIED_LAUNCH",
+  "design_query": "NO_MATCH; no silent architecture selection",
+  "independent_review": {
+    "bytes": 9447,
+    "mode": 420,
+    "nlink": 1,
+    "path": "reports/adversarial/msae_norspan_namespace_source_architecture_review.md",
+    "sha256": "c02db51b8465d64f1dc69fe9e3d50b180239ccab9bf7c497ed7acf4e2c9d59be"
+  },
+  "no_real_source_payload_scoring_training": true,
+  "production_launch_authorized": false,
+  "query_backend": "UNAVAILABLE_FOR_NESTED_PROJECT_SCOPE; direct named source inspection, not query PASS",
+  "schema_version": "norspan_namespace_source_audit_v1",
+  "scope": "source_only_no_probes_no_architecture_selected",
+  "whole_groups_open": 9,
+  "whole_matrix_qualified": false,
+  "whole_rows_open": 80
+}

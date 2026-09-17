@@ -1,0 +1,20 @@
+{
+  "schema_version": "norspan_owner_approval_evidence_binding_v1",
+  "evidence_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-owner-receipt-public-evidence-q292cgzg",
+  "archive_sha256": "c88519708b25e9113447f90bf5be99b702bd73a6d0d43f0b2670925bfc7c4d50",
+  "archive_bytes": 752372,
+  "archive_mode": 448,
+  "manifest_sha256": "ca70f851ba01b14e0179779ecd9a55c7d0888e98fd18b047c97e095de4f63a54",
+  "explicit_files": 186,
+  "all_members_public_regular_verified": true,
+  "candidate_subjects_sha256": "85c1d36c6665fa1f69630400098843b19a9f44c6d89a7c1baacb0c22714b4875",
+  "whole_decision": "BLOCK",
+  "authenticated_owner_approval": false,
+  "canonical_authority_established": false,
+  "production_launch_authorized": false,
+  "real_source_operations": 0,
+  "model_operations": 0,
+  "administrator_contact": false,
+  "client_fsync_observation": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-owner-receipt-public-evidence-q292cgzg/client_fsync_observation.json",
+  "server_backup_retention_recovery_guarantees": "UNKNOWN"
+}

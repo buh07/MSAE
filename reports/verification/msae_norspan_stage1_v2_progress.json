@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-09-17T09:40:09.025452+00:00",
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-stage1-v2-public-checkpoint-m3wvopvr",
+  "manifest_sha256": "ecfa13b81197af7e0c6424f045aa4cf110ecafcb6c1fed98cab6247ec387bb5b",
+  "expected_cases_not_result": 1172,
+  "test_suites": 31,
+  "runs": [
+    {
+      "run": "main",
+      "status": "RUNNING",
+      "reported_percent": 49,
+      "log_bytes": 681,
+      "log_mtime_age_seconds": 1.09,
+      "failure_or_traceback_observed": false
+    },
+    {
+      "run": "extracted",
+      "status": "RUNNING",
+      "reported_percent": 49,
+      "log_bytes": 681,
+      "log_mtime_age_seconds": 0.77,
+      "failure_or_traceback_observed": false
+    }
+  ],
+  "runtime_estimate_minutes_each": [
+    12,
+    18
+  ],
+  "concurrent_nfs_load_can_extend_estimate": true,
+  "completed_results": "PENDING",
+  "whole_matrix_qualified": false,
+  "production_launch_authorized": false,
+  "source_payload_model_operations": 0,
+  "tmux_socket": "msae-stage1-20260917",
+  "tmux_sessions": [
+    "stage1-v2-main",
+    "stage1-v2-extracted"
+  ],
+  "older75main": "SUPERSEDED_NOT_AUTHORITATIVE"
+}

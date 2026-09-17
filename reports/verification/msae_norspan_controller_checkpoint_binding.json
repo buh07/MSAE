@@ -1,0 +1,16 @@
+{
+  "schema_version": "norspan_controller_checkpoint_binding_v1",
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-public-checkpoint-e7whcnb5",
+  "archive_sha256": "b0dabed386774e7363aafa4c26d99559f4755020786855570f24b5898893eca0",
+  "archive_bytes": 285179,
+  "archive_mode": 448,
+  "manifest_sha256": "1d103c134736aea3adf7b1c878486eb821510dd6e1804bd1b20de81b886f24b8",
+  "candidate_subjects_sha256": "ebb9f7c3b570e77af76e96ca812ccb25f6b2007178ce44a5423834fcac9d4913",
+  "public_subjects": 59,
+  "reproduction_status": "FAILED INCOMPLETE; MONITOR FAULT FIXTURES INTERRUPTED PYTEST AND THIRD PUBLIC TEST DEPENDENCY MISSING",
+  "production_launch_authorized": false,
+  "reproduction_passed": 385,
+  "reproduction_failed": 6,
+  "reproduction_seconds": 17.59,
+  "reproduction_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-checkpoint-reproduction-KuPFdB"
+}

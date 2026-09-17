@@ -1,0 +1,477 @@
+{
+  "scope": "typed_synthetic_history_controller_prefix_only",
+  "cases": [
+    {
+      "node": "::test_typed_history_positive_explicit_fresh_recovery",
+      "firing": {
+        "catalog_sequence": 2,
+        "command": "build-history_then_fresh_recover",
+        "source_work_authorized": false,
+        "typed_state": "baseline"
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[OSError-open]",
+      "firing": {
+        "edge": "open",
+        "fired": [
+          "open"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36728147,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": null,
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": false
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[OSError-write]",
+      "firing": {
+        "edge": "write",
+        "fired": [
+          "write"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36727869,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36729930
+        ],
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[OSError-chmod]",
+      "firing": {
+        "edge": "chmod",
+        "fired": [
+          "chmod"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36730101,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36730145
+        ],
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[OSError-fsync]",
+      "firing": {
+        "edge": "fsync",
+        "fired": [
+          "fsync"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36729654,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36731178
+        ],
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[OSError-link]",
+      "firing": {
+        "edge": "link",
+        "fired": [
+          "link"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36728555,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36730856
+        ],
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[OSError-close]",
+      "firing": {
+        "edge": "close",
+        "fired": [
+          "close"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36728443,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36728444
+        ],
+        "original_writer_reused": true,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[KeyboardInterrupt-open]",
+      "firing": {
+        "edge": "open",
+        "fired": [
+          "open"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36730148,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": null,
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": false
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[KeyboardInterrupt-write]",
+      "firing": {
+        "edge": "write",
+        "fired": [
+          "write"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36731404,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36730104
+        ],
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[KeyboardInterrupt-chmod]",
+      "firing": {
+        "edge": "chmod",
+        "fired": [
+          "chmod"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36731298,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36731407
+        ],
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[KeyboardInterrupt-fsync]",
+      "firing": {
+        "edge": "fsync",
+        "fired": [
+          "fsync"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36729792,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36730574
+        ],
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[KeyboardInterrupt-link]",
+      "firing": {
+        "edge": "link",
+        "fired": [
+          "link"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36728942,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36729498
+        ],
+        "original_writer_reused": false,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_registry_complete_baseline_syscall_fault_no_adoption[KeyboardInterrupt-close]",
+      "firing": {
+        "edge": "close",
+        "fired": [
+          "close"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "open_attempt": {
+          "flags": 131266,
+          "parent_dev": 65,
+          "parent_ino": 36729983,
+          "stage_name": ".baseline.json.stage"
+        },
+        "original": [
+          65,
+          36730330
+        ],
+        "original_writer_reused": true,
+        "predecessor_sequence": 1,
+        "stage_retained": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_baseline_catalog_actual_syscall_fault_predecessor_retained[OSError-write]",
+      "firing": {
+        "catalog_name": "catalog-000002.json",
+        "edge": "write",
+        "explicit_predecessor_refusal": "directory_cardinality",
+        "fired": [
+          "write"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "original": [
+          65,
+          36728166
+        ],
+        "partial_catalog_retained": true,
+        "physical_baseline_pair_retained": true,
+        "predecessor_sequence": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_baseline_catalog_actual_syscall_fault_predecessor_retained[OSError-chmod]",
+      "firing": {
+        "catalog_name": "catalog-000002.json",
+        "edge": "chmod",
+        "explicit_predecessor_refusal": "directory_cardinality",
+        "fired": [
+          "chmod"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "original": [
+          65,
+          36727656
+        ],
+        "partial_catalog_retained": true,
+        "physical_baseline_pair_retained": true,
+        "predecessor_sequence": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_baseline_catalog_actual_syscall_fault_predecessor_retained[OSError-fsync]",
+      "firing": {
+        "catalog_name": "catalog-000002.json",
+        "edge": "fsync",
+        "explicit_predecessor_refusal": "directory_cardinality",
+        "fired": [
+          "fsync"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "original": [
+          65,
+          36731204
+        ],
+        "partial_catalog_retained": true,
+        "physical_baseline_pair_retained": true,
+        "predecessor_sequence": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_baseline_catalog_actual_syscall_fault_predecessor_retained[KeyboardInterrupt-write]",
+      "firing": {
+        "catalog_name": "catalog-000002.json",
+        "edge": "write",
+        "explicit_predecessor_refusal": "directory_cardinality",
+        "fired": [
+          "write"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "original": [
+          65,
+          36730703
+        ],
+        "partial_catalog_retained": true,
+        "physical_baseline_pair_retained": true,
+        "predecessor_sequence": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_baseline_catalog_actual_syscall_fault_predecessor_retained[KeyboardInterrupt-chmod]",
+      "firing": {
+        "catalog_name": "catalog-000002.json",
+        "edge": "chmod",
+        "explicit_predecessor_refusal": "directory_cardinality",
+        "fired": [
+          "chmod"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "original": [
+          65,
+          36726621
+        ],
+        "partial_catalog_retained": true,
+        "physical_baseline_pair_retained": true,
+        "predecessor_sequence": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_baseline_catalog_actual_syscall_fault_predecessor_retained[KeyboardInterrupt-fsync]",
+      "firing": {
+        "catalog_name": "catalog-000002.json",
+        "edge": "fsync",
+        "explicit_predecessor_refusal": "directory_cardinality",
+        "fired": [
+          "fsync"
+        ],
+        "marker": "baseline.json",
+        "no_source_namespace": true,
+        "original": [
+          65,
+          36732427
+        ],
+        "partial_catalog_retained": true,
+        "physical_baseline_pair_retained": true,
+        "predecessor_sequence": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_fresh_recovery_retains_rewrite_or_foreign_object[equal_length_baseline]",
+      "firing": {
+        "attack": "equal_length_baseline",
+        "no_source_namespace": true,
+        "predecessor_sequence": 2,
+        "retained_foreign_or_modified": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_fresh_recovery_retains_rewrite_or_foreign_object[extra_control_object]",
+      "firing": {
+        "attack": "extra_control_object",
+        "no_source_namespace": true,
+        "predecessor_sequence": 2,
+        "retained_foreign_or_modified": true
+      },
+      "status": "PASS"
+    },
+    {
+      "node": "::test_typed_fresh_recovery_retains_rewrite_or_foreign_object[extra_catalog_object]",
+      "firing": {
+        "attack": "extra_catalog_object",
+        "no_source_namespace": true,
+        "predecessor_sequence": 2,
+        "retained_foreign_or_modified": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "case_count": 22,
+  "source": {
+    "path": "tests/test_msae_norspan_typed_history_wave2.py",
+    "sha256": "1c40cb8ee4c4ee8610f86d16d8afd3a02182aaabf16663f60d99e2dd76b05c11"
+  },
+  "coordinator_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-typed-history-wave2-review-input-EmD08apR",
+  "independent_report": "reports/adversarial/msae_norspan_typed_history_wave2_implementation_review.md",
+  "independent_report_sha256": "e81688a0105e1a062a545fab477055b6c7c3ce8d3dda45aa6092ad5ac117e4d6",
+  "whole_groups": 9,
+  "whole_rows": 80,
+  "whole_closed_rows": 0,
+  "production_launch_authorized": false
+}

@@ -1,0 +1,1336 @@
+{
+  "candidate_manifest_sha256": "ecfa13b81197af7e0c6424f045aa4cf110ecafcb6c1fed98cab6247ec387bb5b",
+  "identity_checks": 228,
+  "rows": [
+    {
+      "scope": "current",
+      "path": "TODO.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "TODO.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "TODO.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "configs/msae_independent_norspan_v1/jpc_publication_retention_v1.json",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "configs/msae_independent_norspan_v1/jpc_publication_retention_v1.json",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "configs/msae_independent_norspan_v1/jpc_publication_retention_v1.json",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "configs/msae_independent_norspan_v1/jumbo_client_storage_v1.json",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "configs/msae_independent_norspan_v1/jumbo_client_storage_v1.json",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "configs/msae_independent_norspan_v1/jumbo_client_storage_v1.json",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "configs/msae_independent_norspan_v1/protocol.json",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "configs/msae_independent_norspan_v1/protocol.json",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "configs/msae_independent_norspan_v1/protocol.json",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/contract-msae-norspan-jumbo-client-storage-v3.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/contract-msae-norspan-jumbo-client-storage-v3.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/contract-msae-norspan-jumbo-client-storage-v3.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-independent-norspan-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-independent-norspan-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-independent-norspan-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-aggregate-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-aggregate-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-aggregate-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-authority-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-authority-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-authority-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-credential-stop-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-credential-stop-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-credential-stop-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-descriptor-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-descriptor-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-descriptor-admission-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-fifo-diagnostics-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-fifo-diagnostics-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-fifo-diagnostics-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-history-custody-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-history-custody-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-history-custody-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-observation-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-observation-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-observation-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-qualification-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-qualification-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-qualification-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-controller-recovery-metadata-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-controller-recovery-metadata-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-controller-recovery-metadata-supplement-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-jumbo-client-contract-v5.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-jumbo-client-contract-v5.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-jumbo-client-contract-v5.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-marker-fault-qualification-wave1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-marker-fault-qualification-wave1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-marker-fault-qualification-wave1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-owner-approval-receipt-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-owner-approval-receipt-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-owner-approval-receipt-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "reports/adversarial/msae_independent_norspan_v1_implementation_review.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "reports/adversarial/msae_independent_norspan_v1_implementation_review.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "reports/adversarial/msae_independent_norspan_v1_implementation_review.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "reports/adversarial/msae_independent_norspan_v1_plan_review.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "reports/adversarial/msae_independent_norspan_v1_plan_review.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "reports/adversarial/msae_independent_norspan_v1_plan_review.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "reports/adversarial/msae_norspan_controller_whole_review.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "reports/adversarial/msae_norspan_controller_whole_review.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "reports/adversarial/msae_norspan_controller_whole_review.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "reports/adversarial/msae_norspan_jpc_whole_candidate_review.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "reports/adversarial/msae_norspan_jpc_whole_candidate_review.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "reports/adversarial/msae_norspan_jpc_whole_candidate_review.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "reports/adversarial/msae_norspan_jumbo_client_implementation_review.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "reports/adversarial/msae_norspan_jumbo_client_implementation_review.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "reports/adversarial/msae_norspan_jumbo_client_implementation_review.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "reports/adversarial/msae_norspan_jumbo_nfs_aggregate_plan_review.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "reports/adversarial/msae_norspan_jumbo_nfs_aggregate_plan_review.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "reports/adversarial/msae_norspan_jumbo_nfs_aggregate_plan_review.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "reports/verification/msae_independent_norspan_v1_source_free_checks.log",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "reports/verification/msae_independent_norspan_v1_source_free_checks.log",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "reports/verification/msae_independent_norspan_v1_source_free_checks.log",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/acquire_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/acquire_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/acquire_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/diagnose_msae_jumbo_nfs_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/diagnose_msae_jumbo_nfs_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/diagnose_msae_jumbo_nfs_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/diagnose_msae_scratch_custody_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/diagnose_msae_scratch_custody_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/diagnose_msae_scratch_custody_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/msae_jumbo_pair_commit.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/msae_jumbo_pair_commit.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/msae_jumbo_pair_commit.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/msae_norspan_jpc_authority.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/msae_norspan_jpc_authority.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/msae_norspan_jpc_authority.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/msae_norspan_jpc_controller.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/msae_norspan_jpc_controller.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/msae_norspan_jpc_controller.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/msae_norspan_jpc_controls.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/msae_norspan_jpc_controls.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/msae_norspan_jpc_controls.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/msae_norspan_jpc_runtime.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/msae_norspan_jpc_runtime.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/msae_norspan_jpc_runtime.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/msae_norspan_owner_approval.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/msae_norspan_owner_approval.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/msae_norspan_owner_approval.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/prepare_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/prepare_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/prepare_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/prepare_msae_independent_source_v10.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/prepare_msae_independent_source_v10.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/prepare_msae_independent_source_v10.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/fixtures/msae_norspan_legacy_cleanup.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/fixtures/msae_norspan_legacy_cleanup.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/fixtures/msae_norspan_legacy_cleanup.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/msae_norspan_controller_fixture.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/msae_norspan_controller_fixture.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/msae_norspan_controller_fixture.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_diagnose_msae_scratch_custody_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_diagnose_msae_scratch_custody_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_diagnose_msae_scratch_custody_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_jumbo_owned_pair.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_jumbo_owned_pair.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_jumbo_owned_pair.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_jumbo_owned_pair_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_jumbo_owned_pair_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_jumbo_owned_pair_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_jumbo_pair_commit.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_jumbo_pair_commit.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_jumbo_pair_commit.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_jumbo_pair_successor_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_jumbo_pair_successor_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_jumbo_pair_successor_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_client_boundaries.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_client_boundaries.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_client_boundaries.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_client_contract.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_client_contract.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_client_contract.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_client_independent_cleanup.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_client_independent_cleanup.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_client_independent_cleanup.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_client_independent_resources.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_client_independent_resources.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_client_independent_resources.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_client_release_boundaries.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_client_release_boundaries.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_client_release_boundaries.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_client_repairs.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_client_repairs.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_client_repairs.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_client_resource_successor.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_client_resource_successor.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_client_resource_successor.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_adapters.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_adapters.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_adapters.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_aggregate_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_aggregate_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_aggregate_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_authority.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_authority.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_authority.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_consumer_integration.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_consumer_integration.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_consumer_integration.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_controller.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_controller.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_controller.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_controller_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_controller_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_controller_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_controls.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_controls.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_controls.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_edge_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_edge_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_edge_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_full_recovery.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_full_recovery.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_full_recovery.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_late_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_late_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_late_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_recovery_metadata.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_recovery_metadata.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_recovery_metadata.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_runtime.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_runtime.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_runtime.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_second_pass_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_second_pass_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_second_pass_matrix.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_jpc_timestamp_aggregate.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_jpc_timestamp_aggregate.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_jpc_timestamp_aggregate.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_marker_fault_wave1.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_marker_fault_wave1.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_marker_fault_wave1.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_owner_approval.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_owner_approval.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_owner_approval.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_prepare_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_prepare_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_prepare_msae_independent_norspan_v1.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1-v2.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1-v2.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1-v2.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/contract-msae-norspan-preflight-runtime-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/contract-msae-norspan-preflight-runtime-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/contract-msae-norspan-preflight-runtime-v1.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/contract-msae-norspan-preflight-runtime-v2.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/contract-msae-norspan-preflight-runtime-v2.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/contract-msae-norspan-preflight-runtime-v2.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "scripts/msae_norspan_containment_preflight.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "scripts/msae_norspan_containment_preflight.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "scripts/msae_norspan_containment_preflight.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_containment_preflight.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_containment_preflight.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_containment_preflight.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "docs/plan-msae-norspan-typed-history-fault-wave2.md",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "docs/plan-msae-norspan-typed-history-fault-wave2.md",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "docs/plan-msae-norspan-typed-history-fault-wave2.md",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_typed_history_wave2.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_typed_history_wave2.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_typed_history_wave2.py",
+      "matches": true
+    },
+    {
+      "scope": "current",
+      "path": "tests/test_msae_norspan_containment_preflight_cleanup_evidence.py",
+      "matches": true
+    },
+    {
+      "scope": "frozen",
+      "path": "tests/test_msae_norspan_containment_preflight_cleanup_evidence.py",
+      "matches": true
+    },
+    {
+      "scope": "extracted",
+      "path": "tests/test_msae_norspan_containment_preflight_cleanup_evidence.py",
+      "matches": true
+    }
+  ],
+  "source_only_syntax_inputs": 46,
+  "syntax": [
+    {
+      "path": "scripts/acquire_msae_independent_norspan_v1.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/diagnose_msae_jumbo_nfs_v1.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/diagnose_msae_scratch_custody_v1.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/msae_jumbo_pair_commit.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_authority.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_controller.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_controls.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_runtime.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/msae_norspan_owner_approval.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/prepare_msae_independent_norspan_v1.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/prepare_msae_independent_source_v10.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/fixtures/msae_norspan_legacy_cleanup.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/msae_norspan_controller_fixture.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_diagnose_msae_scratch_custody_v1.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_jumbo_owned_pair.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_jumbo_owned_pair_matrix.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_jumbo_pair_commit.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_jumbo_pair_successor_matrix.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_client_boundaries.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_client_contract.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_client_independent_cleanup.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_client_independent_resources.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_client_release_boundaries.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_client_repairs.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_client_resource_successor.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_adapters.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_aggregate_matrix.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_authority.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_consumer_integration.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_controller.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_controller_matrix.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_controls.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_edge_matrix.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_full_recovery.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_late_matrix.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_recovery_metadata.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_runtime.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_second_pass_matrix.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_timestamp_aggregate.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_marker_fault_wave1.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_owner_approval.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_prepare_msae_independent_norspan_v1.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "scripts/msae_norspan_containment_preflight.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_containment_preflight.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_typed_history_wave2.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    },
+    {
+      "path": "tests/test_msae_norspan_containment_preflight_cleanup_evidence.py",
+      "status": "SOURCE_ONLY_NO_IMPORT"
+    }
+  ],
+  "lint_status": "UNAVAILABLE",
+  "typecheck_status": "UNAVAILABLE",
+  "production_launch_authorized": false
+}

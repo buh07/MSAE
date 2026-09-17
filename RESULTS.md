@@ -1,6 +1,216 @@
 # MSAE Results
 
-Last updated: 2026-09-15 (America/New_York)
+Last updated: 2026-09-17 (America/New_York)
+
+## Latest containment preflight and typed-history qualification (2026-09-17; engineering only)
+
+**Whole production/scientific launch remains BLOCK; all9groups/80whole rows OPEN.**
+New actual typed-controller history/baseline/fresh-recovery prefix: **22 PASS**,
+independently22PASS34.00s, scoped implementation SHIP. Explicit12 baseline faults,
+6catalog faults,3corruption/foreign-object refusals and1positive bind original
+identities/retained evidence/pins. This is NOT raw/private/terminal or whole closure.
+
+The restricted no-fork preflight harness now passes **54 synthetic checks**;
+independently54PASS9.74s. Initial41/53green missed five counterexamples and then a
+nested secondary-note omission; both BLOCK reports, genuineRED comparisons and
+failed roots are retained. Repairs preserve primary/secondary cleanup evidence,
+original setup budgets, strict result observations and inert/nonreturning killed-owner
+fixtures. Exact second-successor scoped SHIP is CONDITIONAL on independent frozen
+runtime/argv/evidence binding audit. No full fork/escape/bwrap containment is inferred.
+
+Exact76 public checkpoint: prior67unchanged;228identities+46source-only syntax pass;
+Ruff/Pyright UNAVAILABLE. Both exact31-suite main/extracted tmux regressions
+completed **1172PASS /0fail/error/skip** (834.78s/835.07s); actual case sets match. Earlier75main run is SUPERSEDED/NOT exact;
+its frozen/extracted archive remains distinct and BLOCKed, never silent authority.
+No scientific/model result changed. No history/source/payload/scoring/K2/training.
+[Current detailed status](docs/status-msae-norspan-containment-preflight-and-typed-history-2026-09-17.md) ·
+[Typed cell manifest](reports/verification/msae_norspan_typed_history_wave2_cell_manifest.json).
+Completed public reproduction received independent scoped SHIP; all228post-run
+identities match. [Completed bound results](reports/verification/msae_norspan_stage1_v2_completed_results.json).
+The historical PENDING binding/progress snapshot is preserved, not silently retconned.
+No final owner receipt requested before whole closure.
+
+The exact scoped implementation and135-subject frozen binding were independently
+approved before one tmux prerequisite launch. **D1a self-migration EACCES13/unavailable;
+D2a userns success/AVAILABLE_PREREQUISITE_ONLY**, own handle changed. Both owned children
+reaped, FD baseline restored, two empty configured leaves retained.121 observed runtime
+subjects match the124 frozen allowlist subset,0extra/drift. Exit0 is classified evidence,
+NOT containment/limit/escape PASS. Full fork/escape/bwrap stays unlaunched; scientific
+stages remain blocked. Independent completed evidence SHIP is prerequisite-only,
+NOT Stage1/whole approval. [Bound results](reports/verification/msae_norspan_containment_preflight_completed_results.json).
+
+## Latest bounded marker-fault qualification (2026-09-17; engineering only)
+
+**Whole production/task remains BLOCK.** Owner approved continuation; exact FINAL
+production receipt enrollment and technical qualification are not waived. No external
+signer/admin required. One new test-only suite, unchanged predecessor65 inputs, passes
+**431 focused cases**:385 named publisher fault/interruption cells,11positive controls,
+35harness/guard controls. All eleven marker names exercise actual paired publication
+and outside catalogs;44cases use genuine SIGKILL. These direct synthetic adapter cells
+are NOT typed science or whole-matrix closure. All9groups/80whole rows remain OPEN.
+
+The first12failed/385passed harness run and independent8actualRED counterexamples
+are retained. Premature pre-GO publication and selector setup cleanup harness defects
+are repaired; no production implementation/checks relaxed. Exact67 public-only source
+checkpoint reproduces **1096PASS /0fail/error/skip** in both main/extracted28-suite
+runs (733.68s/731.98s), same actual case set;
+201public identities and42syntax-only inputs pass. Independent **443PASS33.37s**
+(431suite+12actual attacks) supports bounded test-only SHIP; technicalWHOLE remainsBLOCK.
+No source/payload/model result changed; no real experiment, scoring, K2 or branch training started.
+See [current detailed status](docs/status-msae-norspan-marker-fault-qualification-2026-09-17.md)
+and [explicit cell manifest](reports/verification/msae_norspan_marker_wave1_cell_manifest.json).
+All previous checkpoints/reports/negative roots remain; work uncommitted/unpushed.
+
+## Latest guarded controller and owner-approval qualification (2026-09-16; engineering only)
+
+**Whole launch/task remains BLOCK/incomplete.** Guarded create-once Jumbo catalogs,
+exact approval verification and actual full synthetic history/scientific/terminal
+recovery are implemented. The user's own approval is the trust root; **no separate
+signing key, signer or administrator is required**. The owner-origin Markdown adapter
+is implemented, but actual exact-candidate owner approval remains PENDING. The
+mechanism-policy message is not candidate approval, whole SHIP or science permission.
+
+Exact65 main27-suite and extracted public-code checkpoint each pass **665 source-free
+cases /0 failed /0 skipped** (717.37s and718.02s).41 finite public Python inputs compile;
+lint/type tools unavailable, not PASS.195 current/frozen/extracted identitychecks pass.
+Owner feature baseline2RED became42GREEN. The runtime checks35 finite production
+subjects; the65-subject checkpoint reference is context, not runtime validation of65.
+Only a FINAL APPROVE document personally confirmed through the owner channel can
+establish enrollment; agent strings, discovered hashes and checkboxes cannot.
+
+Every9-group whole fault row and80-row audit closure remains **OPEN**. Hard containment
+is unqualified; server/backup/quota/retention/recovery guarantees remain UNKNOWN.
+Earlier49/59/60/61 negatives and62bounded-SHIP/whole-BLOCK checkpoint stay distinct;
+green605/614 totals demonstrably missed genuine FD counterexamples. No independent
+source/payload/model result changed, no real experiments/K2/branch training restarted.
+
+See [detailed status](docs/status-msae-norspan-controller-qualification-2026-09-16.md)
+and [exact65 checkpoint](reports/verification/msae_norspan_owner_approval_checkpoint_binding.json).
+Outside owner request stays PENDING; no approval/qualification waiver requested.
+Changes remain uncommitted.
+
+## Earlier no-admin Jumbo client follow-up (2026-09-16; engineering only)
+
+**Whole launch remains BLOCK; task/integration incomplete.** Exact prospective v5
+and client storage contractv3 received independent plan/contract-only SHIP; no
+administrator contact. Retained scratch original-FD/name validation, supervisor/
+reader all-release cleanup, nonblocking bounded input and pair/aggregate expected-
+byte fences plus two resource repairs now pass **477explicit source-free tests**.
+Exact successor477cases were independently reproduced, plus45independent
+attacks passed; [bounded N1/N2/resource SHIP](reports/adversarial/msae_norspan_jumbo_client_resource_successor_review.md)
+is not full N3/whole/task approval. The predecessor bounded REVISE exposed eager
+recovery enumeration and whole-control
+prefix buffering; both are repaired and retained independent donor cases pass.
+Actual paired control/raw/opaque-private consumers pass synthetic integration cases;
+typed metadata recovery grants no work authority and is not full approved recovery.
+
+Fresh synthetic NFS diagnostics found13/100metadata-blind same-length rewrite false
+acceptances in the predecessor; times stayed unchanged60/100even after fsync/
+FORCE_SYNC. The reviewed byte-fence successor rejects100/100scheduled mutations.
+Every failed root and corrected nonfiring/ordinal harness predecessor remains.
+No atomic snapshot/arbitrary-writer/server/backup/hard-quota guarantee is established.
+Old administrator-required config stays immutable; new client config does not waive
+original scientific hard containment. Full controller/history/terminal/recovery,
+whole fault matrix and authenticated canonical authority remain incomplete.
+
+No source/payload/model result changed; no real acquisition/scoring/GPU/tmux/K2/
+branch/G3/C2 work. See [current status and enforceability table](docs/status-msae-norspan-jumbo-client-contract-2026-09-16.md).
+A319-file finite PUBLIC/SYNTHETIC checkpoint reproduced477pass/0fail/0skip from
+its extracted snapshot; [checkpoint binding](reports/verification/msae_norspan_client_checkpoint_binding.json)
+records the archive, final reproduction and declared final-summary delta.
+Changes remain uncommitted. Exact successor has bounded repair SHIP; predecessor
+REVISE and whole BLOCK remain immutable; integration/task incomplete.
+
+## Earlier predecessor JPC integration (2026-09-16; no model results)
+
+**Whole launch remains BLOCK / NOT READY.** The reviewed integration plan now has
+partial production code: owned pair publishers and opaque consumers, actual builder
+publication adapters, explicit Jumbo scratch reservation/binding, no initiated
+scratch deletion, and zero-source-work recovery foundation. All five production
+entrypoints are unconditionally blocked before real state/evidence access.
+The original scientific config and all scientific conclusions are unchanged.
+
+The owned-handle API received [bounded independent SHIP](reports/adversarial/msae_norspan_jpc_owned_handle_review.md)
+(92 maintained + 81 supplemental cases passing). Aggregate/runtime qualification
+did **not** pass: the [initial BLOCK](reports/adversarial/msae_norspan_jpc_runtime_review.md)
+exposed seven late-mutation counterexamples; after their repair the
+[successor BLOCK](reports/adversarial/msae_norspan_jpc_runtime_successor_review.md)
+exposed six maintained scratch-consistency/combined-close failures. Latest explicit
+11-suite run: **379 passed, 6 failed**, independently reproduced with the same counts
+on fresh Jumbo subjects. An extra inventory walk moved the race; it did not close it.
+
+Paired application state/schema/history/authority consumers and actual recovery
+remain incomplete. The [exact whole-candidate review](reports/adversarial/msae_norspan_jpc_whole_candidate_review.md)
+returned **BLOCK**, not canonical approval. Supervisor/ordinary-reader cleanup and nonblocking special-file
+rejection also need qualification. Full fault-matrix closure, actual administrator
+quota/retention/recovery facts, whole approval and canonical binding remain absent.
+No real acquisition, payload, scoring, GPU/tmux experiment, K2/branch training, G3
+or C2 opening occurred. Changes remain uncommitted. See the
+[current integration status](docs/status-msae-norspan-jpc-integration-2026-09-16.md).
+
+## Earlier Jumbo-only follow-up (2026-09-16; historical engineering checkpoint)
+
+The observations below precede the production edits described above. Statements
+about unchanged production/cleanup refer to that frozen predecessor, not the
+current guarded partial integration.
+
+All new work remains on Jumbo. A [prospective JPC-1 permanent-pair plan](docs/plan-msae-norspan-jumbo-qualification-v3.md)
+received independent **plan-only SHIP**. Its separate publisher prototype has
+**67 passing source-free tests on actual Jumbo**, including real SIGKILL boundaries
+and no-overwrite process races. The initial prototype's independent **BLOCK** is
+preserved: receipt-alias spoofing and ancestor-close leaks required new regressions
+and repair; an additional caller-exception masking defect was also reproduced and
+repaired. Its [successor independent review](reports/adversarial/msae_norspan_jumbo_pair_successor_review.md)
+returned **SHIP only for the separate Q2 primitive**, with **67 frozen cases and
+54 supplemental cases passing independently**; not whole-implementation approval.
+
+Fresh corrected NFS diagnostics passed **128 closed-writer publications and 128
+closed-reader cleanups**. Introduced open-holder controls reproduced both earlier
+failure patterns, but their historical cause remains **unproven**. The new diagnostic's
+own length-check bug was repaired and its initial evidence retained. Further fresh
+synthetic probes found **destructive foreign scratch cleanup** in the unchanged
+production runner, including substitution before unlink; storage relocation alone
+would not repair that latent custody defect. The [independent scratch review](reports/adversarial/msae_norspan_jumbo_scratch_custody_review.md)
+reproduced both defects and retains **BLOCK** for production cleanup.
+
+**Whole launch remains BLOCK / NOT READY.** The prototype is not production-integrated;
+the unchanged rename publisher remains NFS-incompatible. Paired schema/readers/history/
+authority/recovery, scratch-preservation policy, full fault matrix, whole approval,
+storage retention/recovery facts and all scientific gates remain open. No real source,
+payload, scoring, GPU/tmux, K2/branch training, G3 or C2 opening occurred.
+The explicit integration/no-deletion scratch plan received **plan-only SHIP**;
+that permits source-free implementation, not acquisition or scoring.
+See the [Jumbo-only checkpoint](docs/status-msae-norspan-jumbo-qualification-2026-09-16.md).
+
+## Earlier source-free readiness work (2026-09-16; no model results)
+
+NORSPAN-1 is a new prospective source/group-role protocol independently reviewed
+**SHIP at plan level only**. Whole launch remains **BLOCK / NOT READY**. The newest
+unchanged production runtime candidate compiles and has **222 passing source-free tests, two N/A skips,
+on compatible local storage**. These exercise actual synthetic acquisition → prepare
+→ verify success/rejection; the copied public-only predecessor subset has **162
+passes, five deliberately deselected real-identity cases**. No model results changed.
+
+Local repairs include complete named-ancestor retention, fresh history recensus,
+strict typed acquisition/control replay, bounded supervised Git with protected startup,
+pre-start-only resumption, UTF8 handling, and private preservation/opaque streaming.
+Preserved runtime and atomic-publication **BLOCK** reviews exposed further publisher
+races; the newest successor retains original writer FDs, checks actual hashes and uses atomic no-replace promotion
+without deleting replaced temporary objects. Late cardinality and inventory-fstat cleanup
+repairs received [independent scoped **SHIP**](reports/adversarial/msae_independent_norspan_v1_final_boundary_review.md)
+on compatible local storage (**55 passed, two N/A skips, 167 deselected**). That bounded
+verdict is not whole-implementation, canonical authority, or launch approval.
+
+**The current project filesystem rejects that required atomic primitive (`EINVAL`).**
+Fresh synthetic probes preserved the failed temp; no unsafe fallback or real protocol
+publication was attempted. Local `/tmp` tests do not certify NFS compatibility or fix
+prior intermittent NFS publication/scratch-cleanup faults. Reviewed compatible placement,
+full combined fault coverage, canonical authority, and contained prescore remain open.
+See the [runtime checkpoint and conditional ETAs](docs/status-msae-independent-norspan-v1-2026-09-16.md).
+
+No new real acquisition/payload, model scoring, GPU/tmux experiment, K2 restart,
+G3 branch, or final opening occurred. Actual source license/support/overlap remain
+unknown; engineering tests are **not independent scientific evidence**.
 
 ## Current closure and newest evidence (2026-08-03 through 2026-09-15)
 

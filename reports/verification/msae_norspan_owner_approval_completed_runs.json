@@ -1,0 +1,30 @@
+{
+  "schema_version": "norspan_owner_approval_completed_runs_v1",
+  "candidate_subjects_sha256": "85c1d36c6665fa1f69630400098843b19a9f44c6d89a7c1baacb0c22714b4875",
+  "runs": {
+    "main": {
+      "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-full-xkdilxkp",
+      "passed": 665,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_summary_seconds": 717.37,
+      "junit_sha256": "f59301aac66c02b3346fe0677f3ea6de0d0c60e1bbaa40f9d1e12034ffa5ab1b",
+      "junit_time_seconds": 717.067
+    },
+    "extracted": {
+      "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-reproduction-_sw40p8w",
+      "passed": 665,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_summary_seconds": 718.02,
+      "junit_sha256": "4b9fc3f70b1726ae6a93a63f4d936c350325e0912c1a20c7a4b9f898351d0a38",
+      "junit_time_seconds": 717.737
+    }
+  },
+  "public_identity_checks": 195,
+  "after_check_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-owner-receipt-after-checks-ri4xalnd",
+  "production_launch_authorized": false,
+  "canonical_authority_established": false
+}

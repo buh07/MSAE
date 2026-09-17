@@ -1,0 +1,16 @@
+{
+  "schema_version": "norspan_stage1_public_checkpoint_binding_v1",
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-stage1-public-checkpoint-7vlyy2wl",
+  "public_subjects": 75,
+  "unchanged_predecessor_subjects": 67,
+  "manifest_sha256": "89c74c739556e8afb9f78a0b496fac39c7b10fa8aed4f95a774a664d306c1703",
+  "archive_sha256": "11ff19208a49de4ee8e73aa8429bb52b57ae68f792b04c5f8d5dd1338fe9e950",
+  "archive_bytes": 328639,
+  "archive_members": 77,
+  "main_reproduction_status": "PENDING",
+  "extracted_reproduction_status": "PENDING",
+  "production_launch_authorized": false,
+  "whole_matrix_qualified": false,
+  "client_archive_and_parent_fsync_returned": true,
+  "server_backup_durability_guarantees": "UNKNOWN"
+}

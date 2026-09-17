@@ -1,5 +1,180 @@
 # MSAE Analysis
 
+## Latest containment preflight and typed-history qualification (2026-09-17)
+
+**Independent counterexamples, not green counts, determine acceptance.** Initial
+41-pass preflight missed cleanup misclassification, lost notes, late setup deadlines,
+permissive active observations and a finite-sleep owner-fixture race.53 repaired
+passes still missed nested final-cleanup note loss. All failures/reviews are retained;
+54 exact synthetic checks and independent scoped SHIP close only these named repairs,
+conditional on a separately audited exact launch binding. Fixtures are now inert
+under delayed/failed transport/kill; no operation capability is hidden behind timing.
+A prerequisite success would not establish enforcement/escape prevention/isolation.
+
+Typed history22cells now test actual producer/controller/recovery semantics, not
+arbitrary JSON adapter names. Visible partial catalogs cause actual cardinality
+refusal, not stale predecessor adoption; preserved physical pairs do not establish
+semantic completion or authority. Before-release child/close faults, raw one-shot,
+private sealing, terminal and full recovery combinations remain incompletely qualified.
+All9groups/80whole rows stay OPEN; no scientific/train/final-test authorization.
+
+Exact76public artifact and228identities/46syntax-only checks provide a finite
+engineering checkpoint. Both31-suite main/extracted runs completed1172PASS with
+identical actual case sets and228post-run identities. Independent scoped completed
+evidence SHIP is engineering reproduction only, not whole approval. The
+superseded75main run is not an exact latest candidate reproduction. Whole qualification,
+canonical binding and exact FINAL owner approval precede every scientific stage.
+[Current status](docs/status-msae-norspan-containment-preflight-and-typed-history-2026-09-17.md).
+
+The exact scoped implementation and135-subject frozen binding were independently
+approved before one tmux prerequisite launch. **D1a self-migration EACCES13/unavailable;
+D2a userns success/AVAILABLE_PREREQUISITE_ONLY**, own handle changed. Both owned children
+reaped, FD baseline restored, two empty configured leaves retained.121 observed runtime
+subjects match the124 frozen allowlist subset,0extra/drift. Exit0 is classified evidence,
+NOT containment/limit/escape PASS. Full fork/escape/bwrap stays unlaunched; scientific
+stages remain blocked. Independent completed evidence SHIP is prerequisite-only,
+NOT Stage1/whole approval. [Bound results](reports/verification/msae_norspan_containment_preflight_completed_results.json).
+
+## Latest bounded marker-fault qualification (2026-09-17)
+
+**Green counts are not whole qualification.** The intermediate427-pass new suite
+missed eight actual independently reproduced harness counterexamples: leaked test
+children/pipes after selector setup failure and acceptance of real publication before
+GO. Root preserved these failures and repaired the test harness. The final focused
+suite431PASS binds385named adapter fault/kill cells,11positive controls and35harness/
+guard controls; no production bytes/checks changed. Per-cell JUnit observations,
+not repeated pattern links, support only these bounded adapter scenarios.
+
+A killed complete pair may verify CURRENT custody against an independently supplied
+synthetic identity/known payload; that cannot prove successful producer/adapter/semantic
+completion or authority. Typed producers, catalog-writer combinations, all9/80whole
+rows and hard containment remain incomplete. Exact67 public checkpoint main/extracted
+28-suite runs each reproduce1096PASS with identical actual case sets,201public identity
+checks and42syntax-only checks. Independent443PASS supports scoped test-only SHIP,
+not WHOLE technical approval or scientific/source readiness.
+Owner continuation does not waive technical gates or self-enroll exact production
+approval. No independent scientific/model result changed, no real experiment resumed.
+See [current status](docs/status-msae-norspan-marker-fault-qualification-2026-09-17.md).
+
+## Latest controller and owner-approval qualification (2026-09-16)
+
+**A green suite is not a completion gate.** Exact60 main/extracted605-pass and61
+614-pass runs missed independently reproduced aggregate/recovery/authority-reader
+FD failures. Exact62 repaired known actual-path authority/review/duplicate/transport
+admission and reproduced623pass in main/extracted runs; all negative evidence remains.
+
+Exact65 adds the user's selected owner-origin Markdown mechanism: no separate signer
+or administrator required. Main/extracted27suite runs each pass **665 cases**, with
+41syntax-only passes and195 public identitychecks. This establishes bounded engineering
+evidence, not actual owner approval, whole qualification or independent science.
+Runtime checks35 finite production inputs;65checkpoint context is not a65-file runtime
+proof. FINAL receipt approval must come from the owner after edits. An agent-created
+APPROVE marker/proof, generic caller pin or policy-only message cannot self-enroll.
+
+C2 remains opaque; full synthetic recovery reports current observation, not past
+success or launch authority. Scratch historical bytes remain unattested. Local Git
+helpers executed; direct source-call counters cannot imply total network/protected
+isolation.9fault groups/80audit rows still have EVERY whole closure OPEN. Repeated
+admission/fences are not hard quotas, atomic snapshots or arbitrary-writer containment.
+Original source/payload/C1/G3/conditional-training/C2/release gates remain unchanged;
+no real experiment resumed. See [current status](docs/status-msae-norspan-controller-qualification-2026-09-16.md).
+
+## Earlier no-admin client follow-up (2026-09-16)
+
+The six retained scratch counterexamples are repaired with held original objects,
+frozen names and a different final fence—not another recursive reopen walk.
+Supervisor/reader teardown and FIFO/cap boundaries now have synthetic tests.
+**477source-free cases pass** after two resource repairs; predecessor457cases
+were independently reproduced. Its bounded REVISE exposed eager recovery listing
+and whole-control prefix buffering. Repairs use incremental admission and bounded
+prefix output with full copied-stream digest. Exact successor independently
+reproduces477pass plus45additional attacks and receives bounded N1/N2/resource SHIP;
+green counts and bounded SHIP are not full phase/controller/recovery/canonical
+integration or whole fault-matrix closure.
+
+A new observation matters: same-length byte changes can leave full fingerprints
+unchanged on observed Jumbo NFS, including after fsync/FORCE_SYNC. Expected-byte
+fences therefore cannot be replaced by metadata checks. A fresh100-case successor
+rejects every scheduled mutation; finite observations still do not establish atomic
+state or arbitrary concurrent writer exclusion. Earlier failed/harness roots remain.
+
+The prospectively reviewed client-only contract distinguishes client-enforceable
+read/output/admission/no-deletion/no-retry rules from UNKNOWN server/backup/retention/
+quota/restore assurances and UNVERIFIED hard process containment. No administrator
+contact; no science/once-only/C1/C2 gate is waived. Actual paired consumers work on
+synthetics; metadata recovery expressly reports no canonical approval or scientific
+replay. **Whole launch BLOCK, N3/task incomplete.** No independent-source/model result
+changed. See [current status](docs/status-msae-norspan-jumbo-client-contract-2026-09-16.md).
+
+## Earlier predecessor source-free JPC integration (2026-09-16)
+
+**Engineering progress is not scientific readiness.** Permanent owned-pair
+publication adapters and explicit retained Jumbo scratch wiring are now written;
+recursive initiated cleanup is removed. The narrow owned-handle API received
+bounded independent SHIP, but the aggregate/runtime candidate retains BLOCK.
+All production entrypoints remain unconditionally stopped before real evidence
+access; the paired scientific state/readers/history/authority/recovery chain is
+not yet integrated or approved.
+
+The newest explicit source-free matrix returned **379 passed, 6 failed** in both
+coordinator and independent fresh Jumbo runs. Earlier seven late aggregate/scratch
+counterexamples were repaired, but second-pass inventory mutations still evade
+scratch validation, including combined primary/close faults. Repeating a treewalk
+is not a consistency solution. These retained negatives preclude whole acceptance;
+test totals cannot replace named closure of the full application fault matrix.
+The [whole-candidate review](reports/adversarial/msae_norspan_jpc_whole_candidate_review.md)
+independently retains **BLOCK**; it is ordinary history, not canonical authority.
+Latent supervisor/reader cleanup and substituted-FIFO read boundaries, administrator
+storage/quota/retention/recovery facts and exact canonical authority also remain open.
+
+No source/payload/model result changed. Independent-source eligibility is unknown,
+V10 remains terminal, AMALGUM v3 remains exposed calibration only, and K2/branch
+training remain closed. First qualify a reviewed whole Jumbo successor and its
+storage, then source eligibility and blind sealing, then reviewed C1/G3 and only
+conditional branch/C2/release work. See the
+[current integration status](docs/status-msae-norspan-jpc-integration-2026-09-16.md).
+
+## Earlier source-free continuation (2026-09-16; historical checkpoint)
+
+The following production-unchanged and destructive-cleanup statements describe the
+frozen predecessor before the guarded partial integration above. Its retained tests
+and reviews do not certify the changed implementation.
+
+The Jumbo-only continuation has an independently **plan-reviewed** permanent
+stage/final hardlink-pair protocol and a separate **67-test native-Jumbo prototype**.
+An initial independent prototype BLOCK exposed receipt alias spoofing and descriptor
+cleanup leaks; test-first successor repairs also caught caller-exception masking.
+Successor primitive review returned **bounded Q2 SHIP**, independently passing67
+frozen and54 supplemental cases; the scratch-custody review separately retains
+**production BLOCK**. None is whole approval, source evidence or production integration. Closed-writer/
+closed-reader NFS diagnostics passed 128 cases each, while intentionally held-open
+controls reproduced both symptoms. Historical causation remains unresolved.
+Separate synthetic probes expose destructive foreign scratch cleanup in the unchanged
+runner, so not every custody problem can be attributed to unsupported NFS rename.
+This needs a prospectively reviewed preservation/retention solution, not cleanup
+retries or relaxed checks. See the [Jumbo qualification checkpoint](docs/status-msae-norspan-jumbo-qualification-2026-09-16.md).
+
+NORSPAN-1 supplies a new prospective source/group-role design, but whole launch
+remains **BLOCK / NOT READY**. The unchanged production runtime candidate has **222 passing
+source-free tests, two N/A skips, on compatible local storage**. They exercise
+actual isolated synthetic acquisition/preparation/terminal reconstruction, not an
+independent model replication. Local history, authority, typed metadata, startup
+supervision and publisher custody repairs change no scientific conclusions.
+
+Both runtime reviews returned **BLOCK** and are retained. The newest publisher
+uses retained writer descriptors, actual opaque hashes and atomic no-replace
+promotion without deleting checked-then-replaced temps. Final-cardinality and
+inventory-fstat cleanup repairs received independent **SHIP in bounded compatible-local
+scope only**; this is not whole-implementation or launch approval and does not replace
+canonical primary authority. **Current NFS placement rejects the required atomic operation.** A
+reviewed compatible placement design is now an explicit prerequisite; local tests
+are not NFS approval. Earlier publication/scratch-cleanup reliability anomalies,
+full combined fault coverage and canonical primary-authority binding remain open.
+A separately frozen contained prescore implementation is still needed before scoring.
+
+**K2/branch training remains closed; no G3 or final access is authorized.** See the
+[runtime status and conditional ETA report](docs/status-msae-independent-norspan-v1-2026-09-16.md).
+
 ## Current synthesis after August follow-ups and source-gate disposition (2026-09-15)
 
 **Current decision: keep K2 and branch training closed.** The project now has a

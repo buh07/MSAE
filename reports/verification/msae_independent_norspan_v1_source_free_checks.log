@@ -1,0 +1,137 @@
+NORSPAN-1 final-boundary runtime successor — SOURCE-FREE; NOT ACQUISITION AUTHORITY
+UTC:2026-09-16T17:30:18.553228+00:00
+CPython3.12.3; Unicode15.0.0; platformlinux
+Whole launch BLOCK / NOT READY. Project NFS lacks required atomic no-replace support; bounded independent review pending.
+
+Frozen SHA-256, mode, path:
+7e063dcac878623c7f1f293b77294e4c3d006d839d8df184f6814157fe17d7c9  0644  docs/plan-msae-independent-norspan-v1.md
+f6a24f10d1a95c1687a81f5cd472c56c0c7ea119b671c558582955c8972d24dc  0644  reports/adversarial/msae_independent_norspan_v1_plan_review.md
+645fc34db2a770113c6c8ef531e9317f3209e4d6f1d31c18b55daecad6151420  0644  configs/msae_independent_norspan_v1/protocol.json
+bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64  0755  scripts/prepare_msae_independent_norspan_v1.py
+7aa98231181fd19061726a68b004079a0c13310d0fcfa7f7938f45ef61ae2f4c  0755  scripts/acquire_msae_independent_norspan_v1.py
+099bda44fe13d9333c8415bad98504059eb630335ffe2ff82fa17b781386b8f9  0644  tests/test_prepare_msae_independent_norspan_v1.py
+3cc1f07361beb0a3f4d7523df1636de3bb4de5871f02c2b1950412be137bf6f6  0644  reports/adversarial/msae_independent_norspan_v1_implementation_review.md
+ee0df6e680764eaaf09b37d59b8428dfe9a2615256afe75ea2e0e19d35464f5d  0644  reports/adversarial/msae_independent_norspan_v1_bounded_followup_review.md
+e2decc66f040dcc0770f0322061a82415d81715d8f71a6b47078d96ea164cc61  0644  reports/adversarial/msae_independent_norspan_v1_runtime_remediation_review.md
+2c63d13982fb9cb299465ff284f6a43f49f0a4d1e3f7d82f3e3c984e8a97deed  0644  reports/adversarial/msae_independent_norspan_v1_runtime_followup_review.md
+b1b4767caefdd372871e15ff723e83554d3a89ceed0ac6c6578e51cb66bcdf04  0644  reports/adversarial/msae_independent_norspan_v1_atomic_publication_review.md
+
+Earlier exact transcripts remain byte-preserved:
+pre_final_boundary_checks.log SHA4e433b45d785f8d858ed42a67112dfdb3ea147b4df5fa603545671c38337e41b:219 pass2 N/A skips49.10s on local /tmp; atomic review BLOCK exposed late single/private-root cardinality.
+pre_atomic_publication_checks.log SHA028ddc8b13db94ebbbb4caf70ab9e8ffa76e23e483df225bf1c94bf7d80364a8:1 failed206 passed2 N/A skips191.46s; synthetic scratch ENOTEMPTY. Cause unestablished, retained evidence not erased/retried.
+pre_runtime_followup_checks.log SHA9e1642d8241981789c0a1ce3203afcfeaa9117d9fcfc4ae065322940c0d7f373:prior172 pass2skip checkpoint, independently BLOCKed.
+
+Final-boundary regression sequence:
+Initial late-cardinality fixture1 fail1 pass0.07s; private hook fired before initial root enumeration. Precise fixture fires at global third positive c2 retained-FD read; both late-cardinality negatives fail:
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_________________ test_late_single_temp_after_directory_fsync __________________
+
+tmp_path = PosixPath('/tmp/norspan-late-red-precise-FKVbAb/tests/test_late_single_temp_after_di0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x744f1bf2d3a0>
+
+    def test_late_single_temp_after_directory_fsync(tmp_path,monkeypatch):
+     h._set_protocol_root(monkeypatch,tmp_path);original=n.os.fsync;foreign=tmp_path/'.record.building';fired=[]
+     def fsync(fd):
+      result=original(fd)
+      if not fired and (tmp_path/'record').exists() and os.readlink(f'/proc/self/fd/{fd}')==str(tmp_path):
+       fired.append(True);foreign.write_bytes(b'foreign-late-evidence')
+      return result
+     monkeypatch.setattr(n.os,'fsync',fsync)
+>    with pytest.raises(n.GateFailure):n.publish_bytes(tmp_path/'record',b'alpha')
+E    Failed: DID NOT RAISE <class 'prepare_msae_independent_norspan_v1.GateFailure'>
+
+/tmp/test_norspan_late_cardinality.py:18: Failed
+_______________ test_late_private_root_extra_during_last_digest ________________
+
+tmp_path = PosixPath('/tmp/norspan-late-red-precise-FKVbAb/tests/test_late_private_root_extra_d0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x744f1bcb3800>
+
+    def test_late_private_root_extra_during_last_digest(tmp_path,monkeypatch):
+     h._set_protocol_root(monkeypatch,tmp_path);original=n.os.read;foreign=n.PRIVATE/'foreign-late-evidence';fired=[];reads=[]
+     def read(fd,count):
+      result=original(fd,count)
+      if os.readlink(f'/proc/self/fd/{fd}')==str(n.PRIVATE/'c2'/'payload.jsonl') and result:
+       reads.append(True)
+       if len(reads)==3:
+        fired.append(True);foreign.write_bytes(b'foreign-late-evidence')
+      return result
+     monkeypatch.setattr(n.os,'read',read)
+     sentence=n.parse_conllu_text(h.conllu(),'train')[0][0]
+>    with pytest.raises(n.GateFailure):n.publish_private_roles({role:[sentence] for role in ['discovery','calibration','C1','C2']})
+E    Failed: DID NOT RAISE <class 'prepare_msae_independent_norspan_v1.GateFailure'>
+
+/tmp/test_norspan_late_cardinality.py:33: Failed
+=========================== short test summary info ============================
+FAILED ../../../../../../tmp/test_norspan_late_cardinality.py::test_late_single_temp_after_directory_fsync
+FAILED ../../../../../../tmp/test_norspan_late_cardinality.py::test_late_private_root_extra_during_last_digest
+2 failed in 0.07s
+
+Separate inventory-root fstat failure reproduced six leaked retained descriptors before repair (test reaped only those owned extra descriptors):
+F                                                                        [100%]
+=================================== FAILURES ===================================
+________ test_inventory_root_fstat_failure_does_not_leak_retained_chain ________
+
+tmp_path = PosixPath('/tmp/norspan-inventory-fd-red-YqVRub/tests/test_inventory_root_fstat_fail0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b153ed6a180>
+
+    def test_inventory_root_fstat_failure_does_not_leak_retained_chain(tmp_path,monkeypatch):
+     monkeypatch.setattr(n,'ROOT',tmp_path);target=tmp_path/'inventory-root';target.mkdir();opened=[];originalopen=os.open;originalstat=os.fstat
+     def opening(path,flags,*args,**kwargs):
+      fd=originalopen(path,flags,*args,**kwargs);opened.append((fd,originalstat(fd),path));return fd
+     def unavailable(fd):
+      if opened and opened[-1][2]==target.name and fd==opened[-1][0]:raise OSError('synthetic_root_fstat_failure')
+      return originalstat(fd)
+     monkeypatch.setattr(n.os,'open',opening);monkeypatch.setattr(n.os,'fstat',unavailable)
+     with pytest.raises(OSError,match='synthetic_root_fstat_failure'):n._descriptor_tree(target)
+     leaked=[]
+     for fd,expected,_ in opened:
+      try:actual=originalstat(fd)
+      except OSError:continue
+      if (actual.st_dev,actual.st_ino)==(expected.st_dev,expected.st_ino):leaked.append(fd)
+     for fd in leaked:os.close(fd)
+>    assert leaked==[]
+E    assert [11, 12, 13, 14, 15, 16] == []
+E      Left contains 6 more items, first extra item: 11
+E      Use -v to get more diff
+
+/tmp/test_norspan_inventory_fd_red.py:21: AssertionError
+=========================== short test summary info ============================
+FAILED ../../../../../../tmp/test_norspan_inventory_fd_red.py::test_inventory_root_fstat_failure_does_not_leak_retained_chain
+1 failed in 0.04s
+
+Repairs recheck temporary-name absence after final hash/durability and single complete-publication boundary, exact private-root children after complete validation, and close root/ancestor descriptors on initial inventory-fstat failure. Focused repaired selection18 pass206 deselected0.26s.
+
+Exact-candidate compile:
+PYTHONPYCACHEPREFIX=/tmp/norspan-remediation-pyc python -m py_compile scripts/prepare_msae_independent_norspan_v1.py scripts/acquire_msae_independent_norspan_v1.py tests/test_prepare_msae_independent_norspan_v1.py
+PASS(exit0).
+
+Exact-candidate full suite — COMPATIBLE LOCAL STORAGE ONLY:
+R=$(mktemp -d /tmp/norspan-final-boundary-sourcefree-XXXXXX); mkdir "$R/scratch"
+TMPDIR="$R/scratch" PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider --basetemp="$R/full" tests/test_prepare_msae_independent_norspan_v1.py
+........................................................................ [ 32%]
+...............................................................s....s... [ 64%]
+........................................................................ [ 96%]
+........                                                                 [100%]
+222 passed, 2 skipped in 53.02s
+
+PASS222 passed2 N/A skips53.02s. Skips single-file publisher lacking child-directory mkdir/fsync. Covers actual synthetic acquire→prepare→verify, scientific/operational rejection reconstruction, typed/control/history/metadata/capability negatives, timeout/caps/descendants/setup/interruption cleanup, atomic wrong-byte/replaced-temp/racing-final/unavailable-platform and late-cardinality/FD-error cases.
+Publisher writer-FD opaque self-checks introduce no additional scientific/custody path opens. Existing external private custody verifier remains streaming and separately counted. All partial objects preserved. Old link/unlink fault cases were prospectively replaced by atomic-promotion faults: no publisher retirement unlink is performed.
+
+Final exact-candidate actual NFS sacrificial negative:
+EXPECTED FAIL-CLOSED: atomic_noreplace_unavailable:errno=22
+retained_names: ['.control.building']
+same_project_filesystem: True
+
+Expected failclosed is NOT production readiness. This was a fresh synthetic temporary root, not real protocol data/provenance. Prior /tmp native probe succeeded; prior default-NFS focused native run15 failed27 passed2skip174 deselected4.33s dueEINVAL is retained in pre_final_boundary transcript. No unsafe fallback/cleanup/retry/real ROOT relocation.
+
+Copied public-only predecessor subset unchanged:162 passed5 deliberately deselected12.57s. Full command/isolation setup limitations in pre_atomic transcript; five real-inode/carryover cases are NOT passing. No predecessor raw/private bytes copied/read/hashed.
+
+Whitespace/tools:git diff --check PASS; no-index before-image checks no whitespace diagnostics (changed exit1). Ruff/Pyright unavailable; no lint/typecheck claim.
+
+Remaining blocks:
+Current project/NFS placement unsupported; prospectively reviewed compatible placement/portability design required before real gates.
+Combined exchange/kill/cardinality fault matrix, prior NFS publication/scratch reliability, and canonical primary authority binding are unclosed. Separate scoped reports never replace old primary BLOCK.
+Actual source license/family/pedigree/current accessible-history overlap/cross-role/support/deterministic construction, real payload/seal, readiness/prescore/G3/branch/final/release remain unrun.
+
+Scope:source-free temporary synthetic data only; no real census/data/provenance/acquisition/network/GPU inventory/tmux/model/tokenizer/scoring/training/K2/branch/final opening. No protected Atlas final or V8/V9/V10 raw/source/private byte reads/hashes/printing. V10 terminal; AMALGUM v3 exposed-source calibration only. No scientific thresholds/source/roles/claims changed. No commit/push.

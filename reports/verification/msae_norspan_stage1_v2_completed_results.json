@@ -1,0 +1,130 @@
+{
+  "actual_case_sets_and_order_identical": true,
+  "archive": {
+    "bytes": 329083,
+    "mode": 420,
+    "nlink": 1,
+    "sha256": "2ba1228170fb5837c555210165df497a2d0ab1a80137e3a656b9b6d61c99a4a6"
+  },
+  "case_id_set_sha256": "185db29d9a073ec76d8a9ea63e31cae874a9e6ed1ceb1546dd6828c14dca3dd8",
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-stage1-v2-public-checkpoint-m3wvopvr",
+  "earlier_pending_snapshot_preserved": true,
+  "historical_precompletion_binding": {
+    "bytes": 733,
+    "mode": 448,
+    "nlink": 1,
+    "path": "reports/verification/msae_norspan_stage1_v2_public_checkpoint_binding.json",
+    "sha256": "be680033bfcf333b29e41480d96edccc9b977fea02b294ba365e9a4c11e7c9d4"
+  },
+  "independent_completed_review": {
+    "path": "reports/adversarial/msae_norspan_stage1_v2_completed_evidence_review.md",
+    "scope": "completed_public_engineering_only",
+    "sha256": "2b657a734d4bfd47f13da3de70be870d006660f634f2562e9c1b280b57e017ca",
+    "verdict": "SHIP"
+  },
+  "manifest": {
+    "bytes": 18945,
+    "mode": 420,
+    "nlink": 1,
+    "sha256": "ecfa13b81197af7e0c6424f045aa4cf110ecafcb6c1fed98cab6247ec387bb5b"
+  },
+  "observed_at_utc": "2026-09-17T16:56:01.887513+00:00",
+  "postrun_identities_verified": 228,
+  "production_launch_authorized": false,
+  "public_artifact_file_fsync_returned": true,
+  "public_subjects": 76,
+  "real_source_payload_scoring_training_operations": 0,
+  "runs": [
+    {
+      "artifacts": {
+        "main-command.json": {
+          "bytes": 2298,
+          "mode": 420,
+          "nlink": 1,
+          "sha256": "3e00b11cce76008708a9170532b2945b1c7fcab43b30d32e1fdadf6ba9a4919c"
+        },
+        "main-exit.txt": {
+          "bytes": 2,
+          "mode": 420,
+          "nlink": 1,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        "main-results.xml.gz": {
+          "bytes": 29579,
+          "mode": 420,
+          "nlink": 1,
+          "sha256": "c01b7439f6d82578031ef92cd6a4fda9f84fabadb78812c174ac2d1c2796c9f3"
+        },
+        "main-run.log": {
+          "bytes": 1523,
+          "mode": 420,
+          "nlink": 1,
+          "sha256": "a531d5491bc83e91647503266b962042e374a18d5371fa6bc1068417dfd79874"
+        }
+      },
+      "errors": 0,
+      "exit_code": 0,
+      "failed": 0,
+      "name": "main",
+      "original_junit": {
+        "bytes": 6686869,
+        "mode": 448,
+        "nlink": 1,
+        "sha256": "7af5e2d4c23895ff018eb911043508279494a8557af2118bb27cf0cf2b3b82ac"
+      },
+      "passed": 1172,
+      "skipped": 0,
+      "status": "PASS",
+      "suite_seconds": 834.41
+    },
+    {
+      "artifacts": {
+        "extracted-command.json": {
+          "bytes": 2256,
+          "mode": 420,
+          "nlink": 1,
+          "sha256": "563347aa37fb4011dec71a0d3620c450811bb47b10fecfde3d94868a3d9892dc"
+        },
+        "extracted-exit.txt": {
+          "bytes": 2,
+          "mode": 420,
+          "nlink": 1,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        "extracted-results.xml.gz": {
+          "bytes": 29546,
+          "mode": 420,
+          "nlink": 1,
+          "sha256": "d8569c3604cae77b53b05a8ba3c9733d941a023e38803eb055dcac2d281f7551"
+        },
+        "extracted-run.log": {
+          "bytes": 1528,
+          "mode": 420,
+          "nlink": 1,
+          "sha256": "87f57497c743d5ea4efd06c46b5a00a4c7bc21613de15db3f3fc34bae7a17100"
+        }
+      },
+      "errors": 0,
+      "exit_code": 0,
+      "failed": 0,
+      "name": "extracted",
+      "original_junit": {
+        "bytes": 6686869,
+        "mode": 448,
+        "nlink": 1,
+        "sha256": "30b3e74858a25f7933a52f45a9557994538092d49618705bff02f540e2f1231f"
+      },
+      "passed": 1172,
+      "skipped": 0,
+      "status": "PASS",
+      "suite_seconds": 834.706
+    }
+  ],
+  "schema_version": "norspan_stage1_v2_completed_evidence_v1",
+  "scope": "public_synthetic_engineering_reproduction_only",
+  "server_backup_durability": "UNKNOWN",
+  "unchanged_predecessor_subjects": 67,
+  "whole_audit_rows_open": 80,
+  "whole_groups_open": 9,
+  "whole_matrix_qualified": false
+}

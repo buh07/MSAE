@@ -1,0 +1,576 @@
+{
+  "schema_version": "norspan_stage1_public_checkpoint_v1",
+  "subjects": [
+    {
+      "path": "TODO.md",
+      "sha256": "42ebc8f4db324305f5481a25d5a7db16af163ce45bf4ead4da27ce5a1678e217",
+      "bytes": 90319,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "configs/msae_independent_norspan_v1/jpc_publication_retention_v1.json",
+      "sha256": "02bbc4a2d127c795dac56722254c33d5cdd093a281c05823957cc70452bff37b",
+      "bytes": 11440,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "configs/msae_independent_norspan_v1/jumbo_client_storage_v1.json",
+      "sha256": "2922d5c9a9908e5a188f0b7a095e4ec2c4b6cc086df3222a0316baa2c45f377f",
+      "bytes": 11554,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "configs/msae_independent_norspan_v1/protocol.json",
+      "sha256": "645fc34db2a770113c6c8ef531e9317f3209e4d6f1d31c18b55daecad6151420",
+      "bytes": 10242,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "docs/contract-msae-norspan-jumbo-client-storage-v3.md",
+      "sha256": "9431a898ba7ca6f828e856b438ff764e58008be50a2e45fc890cad724adbe678",
+      "bytes": 8728,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-independent-norspan-v1.md",
+      "sha256": "7e063dcac878623c7f1f293b77294e4c3d006d839d8df184f6814157fe17d7c9",
+      "bytes": 32842,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-aggregate-admission-supplement-v1.md",
+      "sha256": "c63839cd8b55974360c68ced682338dc9e4e8072f9778e7ab91aa9cd59e72fea",
+      "bytes": 2801,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-authority-admission-supplement-v1.md",
+      "sha256": "3ccf272742c014bf168166d568117191882081b260af6061ceb22f6d93431e32",
+      "bytes": 2685,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-credential-stop-supplement-v1.md",
+      "sha256": "07fa2f8cd245d8fe28746301d54999fedb52b04033a90896db1811c13c8039a5",
+      "bytes": 1230,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-descriptor-admission-supplement-v1.md",
+      "sha256": "ea64768b865c60071c547fed5d20bd0b1c03de41d89a286f183fbb3be705a366",
+      "bytes": 1854,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-fifo-diagnostics-supplement-v1.md",
+      "sha256": "2141b456ae6de87fad0e352791e8a0f682e67318af83259d72c0964fa9586e34",
+      "bytes": 1666,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-history-custody-supplement-v1.md",
+      "sha256": "74b84afa9617da288c28ad6a1ca0cbd945e9c5e573db33ea3548d77a6088724f",
+      "bytes": 1959,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-observation-supplement-v1.md",
+      "sha256": "c101ee3de71d629142e96c7c8f1c99cd3ac6bd250703033f9c92ad086a58a3a2",
+      "bytes": 2184,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-qualification-v1.md",
+      "sha256": "bf8265b61d98ede74cc9bbcd43b4a1990b55e938987ee0fc7247ddce2cfff503",
+      "bytes": 9371,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-controller-recovery-metadata-supplement-v1.md",
+      "sha256": "73983a264d26c7d42d42e73f20ae534adb713a114e7b3ced8ef6f9cf0870b62a",
+      "bytes": 1466,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-jumbo-client-contract-v5.md",
+      "sha256": "3e3b208d9f628ea7a3423dd065fcaf41e1eb15260dec0ee4a9b9fca9dfebbb9e",
+      "bytes": 15977,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-marker-fault-qualification-wave1.md",
+      "sha256": "ab9caa0c60758865691268b84e6fa9362ce30419c479da8e15f1ddc5612f9457",
+      "bytes": 8469,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-owner-approval-receipt-v1.md",
+      "sha256": "666c0089351c40203a6cb96badb541a2036e99302e11eba62b0f723cae289f65",
+      "bytes": 6040,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "reports/adversarial/msae_independent_norspan_v1_implementation_review.md",
+      "sha256": "3cc1f07361beb0a3f4d7523df1636de3bb4de5871f02c2b1950412be137bf6f6",
+      "bytes": 20980,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "reports/adversarial/msae_independent_norspan_v1_plan_review.md",
+      "sha256": "f6a24f10d1a95c1687a81f5cd472c56c0c7ea119b671c558582955c8972d24dc",
+      "bytes": 4707,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "reports/adversarial/msae_norspan_controller_whole_review.md",
+      "sha256": "fc94592b9b0b2577b9dba07b64825ac3658724dc6e5bf308aae6d7fcfd34b9b2",
+      "bytes": 20486,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "reports/adversarial/msae_norspan_jpc_whole_candidate_review.md",
+      "sha256": "f31166d80f77751af828df6a18bc62ea71cba1e1fd36a4d949156267d939ffac",
+      "bytes": 29080,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "reports/adversarial/msae_norspan_jumbo_client_implementation_review.md",
+      "sha256": "1efd3c48b30786ed063c59d8683b200a7e3cdd8bdb6ca83c059cec84353c5199",
+      "bytes": 18235,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "reports/adversarial/msae_norspan_jumbo_nfs_aggregate_plan_review.md",
+      "sha256": "a90985554ce1440942b400750d3d01aea552c92d41a7adbd2bcad78c1084e4b9",
+      "bytes": 11201,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "reports/verification/msae_independent_norspan_v1_source_free_checks.log",
+      "sha256": "36aab05e8e32128d3055104309596694fe88aac91242d63dc5c948d9542adfdb",
+      "bytes": 11046,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/acquire_msae_independent_norspan_v1.py",
+      "sha256": "1e441abe3535523c01626d3e4d91d8ae4285f74e945ff7f99e26e2f32e7fac12",
+      "bytes": 25153,
+      "mode": 493,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/diagnose_msae_jumbo_nfs_v1.py",
+      "sha256": "dd9fd5fe39b2ae73d8e0863d59e3ee59684094a86a58f55a03b8efaab5681445",
+      "bytes": 6535,
+      "mode": 493,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/diagnose_msae_scratch_custody_v1.py",
+      "sha256": "fb8122d055c26e645b07f26510d5449338989f9b4e3f898c077664ab4df1ca15",
+      "bytes": 4329,
+      "mode": 493,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_jumbo_pair_commit.py",
+      "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7",
+      "bytes": 19074,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_authority.py",
+      "sha256": "f4c71d55dae42f0f9f64d32c49181f95884984fd1357c3f947172b80e669bea3",
+      "bytes": 10317,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_controller.py",
+      "sha256": "02d32825ba366494fa929f52b651f28e9fc57761050f68a209917a98d784c56a",
+      "bytes": 25129,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_controls.py",
+      "sha256": "b4f6b21a563bf2d62d640863209fa3660360c66e3b95e5ee0b45c19c9118f72e",
+      "bytes": 16875,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_runtime.py",
+      "sha256": "2ed024854ee275af1b0d87359f6181fdb2d3aee44835eaa0b8dcea0e5485e4a4",
+      "bytes": 31654,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_owner_approval.py",
+      "sha256": "807fb79768a08ec191648377c1905972105150997428f21c1342e33ab2f1a71f",
+      "bytes": 4079,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/prepare_msae_independent_norspan_v1.py",
+      "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290",
+      "bytes": 166736,
+      "mode": 493,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/prepare_msae_independent_source_v10.py",
+      "sha256": "637492e7ed4c1836704542deebe19b91ac38101bf6edf060fb4804868a45d088",
+      "bytes": 232043,
+      "mode": 493,
+      "nlink": 1
+    },
+    {
+      "path": "tests/fixtures/msae_norspan_legacy_cleanup.py",
+      "sha256": "252a06008efdad0f5f0fc14847f202538b83f80178ed972daa7078c78fdd023c",
+      "bytes": 1898,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/msae_norspan_controller_fixture.py",
+      "sha256": "05c1699796e47ccc51c86f0b64b35dba270ef6ba7f0d92784db10fc38fa4c0ae",
+      "bytes": 9536,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_diagnose_msae_scratch_custody_v1.py",
+      "sha256": "3222092758715db5a014d59fa5fb865b9ac7d0954b04558c04f3c831b17c0b2b",
+      "bytes": 3043,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_jumbo_owned_pair.py",
+      "sha256": "61b7c58b405fa7baccab465b83f671f2f1b46410a85883d5adaa45ef9a4effeb",
+      "bytes": 7027,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_jumbo_owned_pair_matrix.py",
+      "sha256": "9729325108763f6a7fa521d22627e286fd2e430b20d9623ea90105628dafd1fe",
+      "bytes": 12655,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_jumbo_pair_commit.py",
+      "sha256": "e6204acef7193c28d326289eeea4476c34c41f60b5dbee2990b38f20e6d012cd",
+      "bytes": 17320,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_jumbo_pair_successor_matrix.py",
+      "sha256": "d05157f4ebda530add02239446a0863737bcc82980f07f690a2e81843848a5d7",
+      "bytes": 10576,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_client_boundaries.py",
+      "sha256": "234ba38b992c6a78dad4295cea3a40a366570680a528b4e3c11ca0c53f64fd1a",
+      "bytes": 7898,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_client_contract.py",
+      "sha256": "681da0d34060b67a8a328a7dfd6d57c33e15c650ee73335f3d9ac1d69ee048ed",
+      "bytes": 2248,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_client_independent_cleanup.py",
+      "sha256": "0c7e5b5ff425f7ec7170ba38fbe326ecdb27b701f2093fa543b295798b2f9f51",
+      "bytes": 3836,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_client_independent_resources.py",
+      "sha256": "0fb0dad454350a4d04f175a8693992d43773ba26756e79a4449d46e58add8ad7",
+      "bytes": 2137,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_client_release_boundaries.py",
+      "sha256": "a1f89b0d7edcc5a7c3499f0a8a6acb99a4ba932f764aec4cbd2dc82719056975",
+      "bytes": 3227,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_client_repairs.py",
+      "sha256": "360710c6b62379a9df31259dc34fbefaee01a89ed430697990454b9eda6582dc",
+      "bytes": 7018,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_client_resource_successor.py",
+      "sha256": "c2fbde2654c32ad44bfc1191c3f36c336a03c4aad32602c4df5410909887c8d8",
+      "bytes": 7616,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_adapters.py",
+      "sha256": "8d9322bb1aa3af4b225505c51e49ec3c1a39cd05631d5cd61ee9b88d04310592",
+      "bytes": 5963,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_aggregate_matrix.py",
+      "sha256": "9cdd5949d931232f413adf0254a15e85de0923a04eda5a2e069dd97280737ab6",
+      "bytes": 3920,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_authority.py",
+      "sha256": "41634cfa2c4f56261f9af05222a64448e9677fcf480cc03d1b4bd07e9a67307e",
+      "bytes": 5272,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_consumer_integration.py",
+      "sha256": "40c40f9bce6a1afaad60a7b543fca854f3c74bf6a8f4017dfaff780350cdbb1c",
+      "bytes": 3738,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_controller.py",
+      "sha256": "5b734fcf2c40e3a3112f62a1c943574c363ef3fc2c2b8dfa482ea08269cb13e2",
+      "bytes": 5276,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_controller_matrix.py",
+      "sha256": "631af250dd8b7cbea475ee237b81dfd8c1fc738dcb4163e807564dd4be687d4d",
+      "bytes": 34958,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_controls.py",
+      "sha256": "6b118cd1a80f19aadcd0b86adc364341cf64643704cf450b5bc5a58112061ddb",
+      "bytes": 3904,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_edge_matrix.py",
+      "sha256": "4bccd0202e6b9111fd1a925d2bca1046b3a6de6be5a9d68b82bc08134fa69bb0",
+      "bytes": 5804,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_full_recovery.py",
+      "sha256": "e6bc1b7b3e5cbc3dc9ac7ebaca43476626678b26e142773bf98a12886d43aff8",
+      "bytes": 2859,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_late_matrix.py",
+      "sha256": "bc0698e907ac6dcdff90173265e4c10111fb85285c5aaad3c18c311008b6c5f7",
+      "bytes": 5030,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_recovery_metadata.py",
+      "sha256": "cc67a4c2b67896ee51ec2fe3f7d7950efa014baa887712e67bfd8c4b50930149",
+      "bytes": 5066,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_runtime.py",
+      "sha256": "bc249fda40d3bae491506f686332d0fdb474fc186a4290692ab498e6404dd452",
+      "bytes": 14335,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_second_pass_matrix.py",
+      "sha256": "268ba16f9da26d40c59928d4e8f7a857fb9cd41f227aae4b26493da342b3f5c6",
+      "bytes": 5019,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_timestamp_aggregate.py",
+      "sha256": "36659ee25840ca27994e45c46e6fd883aa58ac2f526d8478f46bc5a3411a0f77",
+      "bytes": 3221,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_marker_fault_wave1.py",
+      "sha256": "df9502b291d0e7e4454ed91e493f15918914f2043bd15b54169eba5d3b4c3f4f",
+      "bytes": 29347,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_owner_approval.py",
+      "sha256": "359bbc39dfc422b3d1c6f302b23a5840bb9ec5480c40d31b4df264c30648b74a",
+      "bytes": 12655,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_prepare_msae_independent_norspan_v1.py",
+      "sha256": "099bda44fe13d9333c8415bad98504059eb630335ffe2ff82fa17b781386b8f9",
+      "bytes": 78954,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1.md",
+      "sha256": "429dce98de195190c0466c00e2e6e1d2d3a8e2d2a3c0fe2d4228fab48f683572",
+      "bytes": 9596,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1-v2.md",
+      "sha256": "6efcf2485abb00ee962e31ec258e840cf7d95e5959aecaca6fc574784453e946",
+      "bytes": 12202,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "docs/contract-msae-norspan-preflight-runtime-v1.md",
+      "sha256": "05b07ab2bcf781d19499fe3f59632bc7941648d9821cc137f0489a8e8c0a7b0c",
+      "bytes": 1343,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "docs/contract-msae-norspan-preflight-runtime-v2.md",
+      "sha256": "1312e144297f0adc938c4ae9113e2557c85f86814684a1ee83996c3fef8b8189",
+      "bytes": 2777,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_containment_preflight.py",
+      "sha256": "979a0b15ef86e1341094e51f433da9638f3a51340157cd3fa735cbb3697e6424",
+      "bytes": 23307,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_containment_preflight.py",
+      "sha256": "115c90d8ff216fbb0bfaf27f12591b2c9e356c142f8342b9b90a6221b7059314",
+      "bytes": 23406,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "docs/plan-msae-norspan-typed-history-fault-wave2.md",
+      "sha256": "6db13fc5523b3c96a8ff83f1092adee5acc632d26e6c7594b5bd6e61a4867d9a",
+      "bytes": 4167,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_typed_history_wave2.py",
+      "sha256": "1c40cb8ee4c4ee8610f86d16d8afd3a02182aaabf16663f60d99e2dd76b05c11",
+      "bytes": 9121,
+      "mode": 420,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_containment_preflight_cleanup_evidence.py",
+      "sha256": "3a79049cf1e919752a551fce1924c3171198a41cce216fa00ca20a20f08c465e",
+      "bytes": 1804,
+      "mode": 448,
+      "nlink": 1
+    }
+  ],
+  "tests": [
+    "tests/test_msae_jumbo_pair_commit.py",
+    "tests/test_msae_jumbo_owned_pair.py",
+    "tests/test_msae_jumbo_pair_successor_matrix.py",
+    "tests/test_msae_jumbo_owned_pair_matrix.py",
+    "tests/test_msae_norspan_jpc_runtime.py",
+    "tests/test_msae_norspan_jpc_adapters.py",
+    "tests/test_msae_norspan_jpc_late_matrix.py",
+    "tests/test_msae_norspan_jpc_edge_matrix.py",
+    "tests/test_msae_norspan_jpc_aggregate_matrix.py",
+    "tests/test_msae_norspan_jpc_second_pass_matrix.py",
+    "tests/test_diagnose_msae_scratch_custody_v1.py",
+    "tests/test_msae_norspan_client_repairs.py",
+    "tests/test_msae_norspan_client_boundaries.py",
+    "tests/test_msae_norspan_jpc_timestamp_aggregate.py",
+    "tests/test_msae_norspan_jpc_controls.py",
+    "tests/test_msae_norspan_jpc_recovery_metadata.py",
+    "tests/test_msae_norspan_jpc_consumer_integration.py",
+    "tests/test_msae_norspan_client_contract.py",
+    "tests/test_msae_norspan_client_release_boundaries.py",
+    "tests/test_msae_norspan_client_resource_successor.py",
+    "tests/test_msae_norspan_client_independent_cleanup.py",
+    "tests/test_msae_norspan_client_independent_resources.py",
+    "tests/test_msae_norspan_jpc_controller.py",
+    "tests/test_msae_norspan_jpc_authority.py",
+    "tests/test_msae_norspan_jpc_full_recovery.py",
+    "tests/test_msae_norspan_jpc_controller_matrix.py",
+    "tests/test_msae_norspan_owner_approval.py",
+    "tests/test_msae_norspan_marker_fault_wave1.py",
+    "tests/test_msae_norspan_containment_preflight.py",
+    "tests/test_msae_norspan_typed_history_wave2.py",
+    "tests/test_msae_norspan_containment_preflight_cleanup_evidence.py"
+  ],
+  "unchanged_predecessor_subjects": 67,
+  "scope": "public_guarded_engineering_only",
+  "production_launch_authorized": false,
+  "whole_matrix_qualified": false,
+  "source_or_model_operations_authorized": false,
+  "legacy_test_source_only_never_collect": "tests/test_prepare_msae_independent_norspan_v1.py"
+}

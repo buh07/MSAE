@@ -1,0 +1,13 @@
+{
+  "schema_version": "norspan_controller_successor_binding_v1",
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-successor-binding-90guro5c",
+  "subjects": 59,
+  "subjects_sha256": "ebb9f7c3b570e77af76e96ca812ccb25f6b2007178ce44a5423834fcac9d4913",
+  "test_suites": 26,
+  "tests_sha256": "a7afc0e7a6f8aa8fd4e70a229b42896819191b11f712a4462a08a7eddfa44fc7",
+  "predecessor_binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-candidate-iuumo8j8",
+  "production_launch_authorized": false,
+  "canonical_authority_established": false,
+  "status": "UNQUALIFIED GUARDED SOURCE-FREE SUCCESSOR; OLD WHOLE BLOCK PRESERVED",
+  "legacy_test_source_only_never_collect": "tests/test_prepare_msae_independent_norspan_v1.py"
+}

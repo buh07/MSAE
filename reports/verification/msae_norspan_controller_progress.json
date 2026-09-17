@@ -1,0 +1,121 @@
+{
+  "schema_version": "norspan_guarded_controller_progress_v1",
+  "date": "2026-09-16",
+  "whole_decision": "BLOCK",
+  "task_complete": false,
+  "production_guard": "jpc_whole_qualification_pending; unconditional before production input observation",
+  "candidate": {
+    "path": "reports/verification/msae_norspan_owner_approval_successor_binding.json",
+    "sha256": "ff29336723fab0d86cea046ec4db0e2ce68626fd497034363a3728f407823106",
+    "bytes": 1905,
+    "mode": 448,
+    "nlink": 1
+  },
+  "candidate_subjects_sha256": "85c1d36c6665fa1f69630400098843b19a9f44c6d89a7c1baacb0c22714b4875",
+  "bounded_scope": "Implemented/tested controller catalog and exact owner Markdown adapter; actual full synthetic reconstruction only; no whole qualification",
+  "milestones": {
+    "Q1_controller_catalog": "GUARDED IMPLEMENTED/BOUNDED TESTED",
+    "Q2_approval_mechanism": "OWNER-ORIGIN MARKDOWN BOUNDED SHIP; REAL EXACT OWNER APPROVAL PENDING",
+    "Q3_history_scientific_terminal_recovery": "ACTUAL SYNTHETIC RECONSTRUCTION TESTED; FULL FAULT QUALIFICATION OPEN",
+    "Q4_fault_matrix": "ALL9 WHOLE GROUPS AND80 AUDIT ROWS OPEN",
+    "Q5_canonical_authority_and_whole": "BLOCK/PENDING; NO AUTHENTICATED EXACT OWNER APPROVAL OR WHOLE SHIP"
+  },
+  "tests": {
+    "main": {
+      "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-full-xkdilxkp",
+      "passed": 665,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_summary_seconds": 717.37,
+      "junit_sha256": "f59301aac66c02b3346fe0677f3ea6de0d0c60e1bbaa40f9d1e12034ffa5ab1b",
+      "junit_time_seconds": 717.067
+    },
+    "extracted": {
+      "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-reproduction-_sw40p8w",
+      "passed": 665,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_summary_seconds": 718.02,
+      "junit_sha256": "4b9fc3f70b1726ae6a93a63f4d936c350325e0912c1a20c7a4b9f898351d0a38",
+      "junit_time_seconds": 717.737
+    }
+  },
+  "syntax_public_files_passed": 41,
+  "lint": "UNAVAILABLE; NOT PASS",
+  "type_check": "UNAVAILABLE; NOT PASS",
+  "post_run_public_identities_verified": 195,
+  "independent_reviews": {
+    "authority_scoped": {
+      "path": "reports/adversarial/msae_norspan_owner_approval_authority_review.md",
+      "sha256": "d90062c86155523918f1d1bf4e6657da0b02e180f9e5c6f5f0a3e97e1055b95c",
+      "bytes": 9227,
+      "mode": 420,
+      "nlink": 1
+    },
+    "whole": {
+      "path": "reports/adversarial/msae_norspan_owner_approval_whole_review.md",
+      "sha256": "feb0eb1e94a712232c335c4c6850306be1bb9240bce3b76dc14961e7bb6d4509",
+      "bytes": 23612,
+      "mode": 420,
+      "nlink": 1
+    }
+  },
+  "technical_vs_canonical_acceptance": "Independent technical whole-implementation qualification precedes owner approval; canonical/production acceptance requires both plus all unchanged gates; currently both incomplete",
+  "workflow_clarification_review": {
+    "path": "reports/adversarial/msae_norspan_owner_approval_workflow_clarification_review.md",
+    "sha256": "2536beca048f9718f15464d5b548583f588e09322e82e704fd509ffe36d9700e",
+    "bytes": 3786,
+    "mode": 420,
+    "nlink": 1
+  },
+  "trust_policy": "Owners authenticated conversation or personal confirmation of their final approved Markdown; no separate Ed signer/admin required",
+  "runtime_production_subjects": 35,
+  "milestone_context_subjects_not_runtime_verified": 65,
+  "pending_owner_request": {
+    "path": "reports/verification/msae_norspan_owner_approval_request_binding.json",
+    "sha256": "233d63ff4ec0ec274528a50ef398d3bd85edf5356bcfa978c97f38356e73ace4",
+    "bytes": 3665,
+    "mode": 448,
+    "nlink": 1
+  },
+  "pending_request_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-owner-approval-technical-request-fd_tvwt3",
+  "owner_policy_message_is_exact_approval": false,
+  "authenticated_owner_approval": false,
+  "canonical_authority_established": false,
+  "production_launch_authorized": false,
+  "fault_matrix": {
+    "path": "reports/verification/msae_norspan_controller_fault_matrix_progress.json",
+    "sha256": "e19cd8bf907bae8d7662292e0673adcf0fec6093f6fdb407589583b87b7eac52",
+    "bytes": 136539,
+    "mode": 448,
+    "nlink": 1
+  },
+  "audit80": {
+    "path": "reports/verification/msae_norspan_controller_integration_audit_progress.json",
+    "sha256": "eb8945d35c08fe88d6fe4c8d6cda320a006a59431c395c4b5039ba4add24f1fd",
+    "bytes": 179472,
+    "mode": 448,
+    "nlink": 1
+  },
+  "whole_fault_groups_closed": 0,
+  "whole_audit_rows_closed": 0,
+  "original_audit_historical_source_bytes_reconstructed": false,
+  "original_audit_provenance_note": "Static80rows and originalsource digestrecords retained; different319 checkpoint publication beforeimages do not independently reconstruct the original audit source bytes",
+  "hard_process_allocation_helper_descendant_containment": "UNQUALIFIED/UNVERIFIED",
+  "server_backup_quota_retention_restore_guarantees": "UNKNOWN",
+  "historical_nfs_failures_cause": "UNKNOWN; fresh synthetic reproductions do not establish causation",
+  "scratch_historical_descendant_bytes_attested": false,
+  "C2_scientific_access": 0,
+  "real_history_authority_source_acquisition_payload_operations": 0,
+  "model_scoring_training_operations": 0,
+  "administrator_contact": false,
+  "initiated_retry_or_destructive_cleanup": false,
+  "committed": false,
+  "pushed": false,
+  "next_gate": "Complete full applicable matrix and hard containment, exact independent WHOLE approval/prospectively reviewed canonical binding/new freeze, owner FINALreceipt approval; THEN scientific source eligibility, blind seal, reviewed C1, G3, conditional branch, C2, release",
+  "V10": "TERMINAL",
+  "AMALGUM_v3": "EXPOSED-SOURCE CALIBRATION ONLY; NOT INDEPENDENT CONFIRMATION",
+  "negative_history": "All predecessor BLOCK/REVISE/bounded SHIP/failures/checkpoints preserved; no later bounded SHIP silently replaces wholeBLOCK"
+}

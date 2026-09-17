@@ -1,0 +1,19 @@
+{
+  "schema_version": "norspan_controller_checkpoint_binding_v1",
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-authority-admission-checkpoint-t9s7ngkr",
+  "archive_sha256": "b08c38b3ce49f17269d071252c89f64e8b9f2c364614334dbd88984b9a48ac11",
+  "archive_bytes": 287718,
+  "archive_mode": 448,
+  "manifest_sha256": "373707397ab9cb1e5ba40738856a78dba5759ac2c2fa5921c4541b492c11071a",
+  "candidate_subjects_sha256": "35dbadd9b4903c362bfcd0ea18579ab68af0471be89dc218363c8c3bd500094b",
+  "public_subjects": 62,
+  "reproduction_status": "PASS code/test dependencies, NOT whole approval",
+  "production_launch_authorized": false,
+  "reproduction_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-authority-admission-reproduction-8z0u6jk8",
+  "reproduction_passed": 623,
+  "reproduction_failed": 0,
+  "reproduction_skipped": 0,
+  "reproduction_seconds": 621.601,
+  "reproduction_junit_sha256": "a1dca2ca0922274aed115f49130e3065e738260aecd6717b11173c295ee69677",
+  "after_exact_checks": 186
+}

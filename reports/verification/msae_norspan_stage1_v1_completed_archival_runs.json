@@ -1,0 +1,27 @@
+{
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-stage1-public-checkpoint-7vlyy2wl",
+  "runs": [
+    {
+      "run": "main",
+      "exit_code": 0,
+      "actual_testcases": 1171,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "qualification_status": "SUPERSEDED_NOT_EXACT_AUTHORITATIVE"
+    },
+    {
+      "run": "extracted",
+      "exit_code": 0,
+      "actual_testcases": 1171,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "qualification_status": "EXACT_OLD75_BLOCKED_CANDIDATE_ONLY"
+    }
+  ],
+  "latest76_completed_results": "PENDING_SEPARATE",
+  "production_launch_authorized": false,
+  "whole_matrix_qualified": false,
+  "old_nested_cleanup_evidence_BLOCK_preserved": true
+}

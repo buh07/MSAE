@@ -1,0 +1,3831 @@
+{
+  "status": "ALL80 ORIGINAL ROWS HAVE CURRENT AST WIRING AND NAMED BOUNDED EVIDENCE; WHOLE RESOLUTION OPEN",
+  "candidate_subjects_sha256": "35dbadd9b4903c362bfcd0ea18579ab68af0471be89dc218363c8c3bd500094b",
+  "original_audit": {
+    "path": "/jumbo/lisp/f004ndc/experiments/wip/MSAE/reports/verification/msae_norspan_jumbo_pair_integration_audit.json",
+    "sha256": "4d952423c0b6b3b315c3473bf8042335b5ac24cc84f66520966cddbd11205ae6",
+    "bytes": 17825,
+    "mode": 448,
+    "nlink": 1
+  },
+  "completed_junit": {
+    "path": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-authority-admission-full-69hbofon/results.xml",
+    "sha256": "175b9be9c82b4aa323e80ecdbc55e15d6ca82640afa005729f29171189757784",
+    "bytes": 6392156,
+    "mode": 448,
+    "nlink": 1
+  },
+  "rows": [
+    {
+      "row_id": 1,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 88,
+        "function": "<module>",
+        "text": "ALLOWED_AUTHORITY_PATHS = frozenset({"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 619,
+          "end_line": 796,
+          "function": "load_config",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 2,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 96,
+        "function": "<module>",
+        "text": "\"reports/adversarial/msae_independent_norspan_v1_implementation_review.md\","
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 619,
+          "end_line": 796,
+          "function": "load_config",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 3,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 109,
+        "function": "<module>",
+        "text": "AUTHORITY_CONTROL_MODES = {"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 619,
+          "end_line": 796,
+          "function": "load_config",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 4,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 117,
+        "function": "<module>",
+        "text": "\"reports/adversarial/msae_independent_norspan_v1_implementation_review.md\": 0o644,"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 619,
+          "end_line": 796,
+          "function": "load_config",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 5,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 184,
+        "function": "review_is_ship",
+        "text": "text = read_bytes_nofollow(path, mode=0o644, nlink=1).decode(\"utf-8\", \"strict\")"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 235,
+          "end_line": 240,
+          "function": "review_is_ship",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 6,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 198,
+        "function": "stream_file_digest",
+        "text": "def stream_file_digest(path: Path, *, mode: int | None = None, nlink: int | None = None,"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 251,
+          "end_line": 306,
+          "function": "stream_file_digest",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 394,
+          "end_line": 406,
+          "function": "_reader_fd_admission",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 7,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 211,
+        "function": "stream_file_digest",
+        "text": "if nlink is not None and before.st_nlink != nlink:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 251,
+          "end_line": 306,
+          "function": "stream_file_digest",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 394,
+          "end_line": 406,
+          "function": "_reader_fd_admission",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 8,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 212,
+        "function": "stream_file_digest",
+        "text": "raise GateFailure(\"wrong_nlink:\" + path.as_posix())"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 251,
+          "end_line": 306,
+          "function": "stream_file_digest",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 394,
+          "end_line": 406,
+          "function": "_reader_fd_admission",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 9,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 263,
+        "function": "_identity",
+        "text": "st.st_nlink, st.st_size)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 339,
+          "end_line": 341,
+          "function": "_identity",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 10,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 343,
+        "function": "_check_published_inode",
+        "text": "def _check_published_inode(fd: int, name: str, original: os.stat_result, nlink: int) -> os.stat_result:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 200,
+          "end_line": 231,
+          "function": "_check",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        },
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 178,
+          "end_line": 198,
+          "function": "_expected_byte_fence",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 11,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 346,
+        "function": "_check_published_inode",
+        "text": "or named.st_size != original.st_size or named.st_nlink != nlink"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 200,
+          "end_line": 231,
+          "function": "_check",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        },
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 178,
+          "end_line": 198,
+          "function": "_expected_byte_fence",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 12,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 347,
+        "function": "_check_published_inode",
+        "text": "or not stat.S_ISREG(named.st_mode) or original.st_nlink != 1):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 200,
+          "end_line": 231,
+          "function": "_check",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        },
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 178,
+          "end_line": 198,
+          "function": "_expected_byte_fence",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 13,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 348,
+        "function": "_check_published_inode",
+        "text": "raise GateFailure(f\"publication_original_inode:{name}:observed={_identity(named)},original={_identity(original)},required_nlink={nlink}\")"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 200,
+          "end_line": 231,
+          "function": "_check",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        },
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 178,
+          "end_line": 198,
+          "function": "_expected_byte_fence",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 14,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 360,
+        "function": "_rename_noreplace",
+        "text": "def _rename_noreplace(fd: int, source: str, destination: str) -> None:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 234,
+          "end_line": 237,
+          "function": "_insert_final",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 15,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 361,
+        "function": "_rename_noreplace",
+        "text": "\"\"\"Linux atomic no-replace promotion; never fall back to overwrite/unlink.\"\"\""
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 234,
+          "end_line": 237,
+          "function": "_insert_final",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 16,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 407,
+        "function": "_require_absent",
+        "text": "raise GateFailure(\"publication_extra_building_object:\" + name)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 141,
+          "end_line": 146,
+          "function": "_absent",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 17,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 410,
+        "function": "_publish_owned_file",
+        "text": "def _publish_owned_file(fd: int, temporary: str, final: str, payload: bytes, mode: int) -> _OwnedPublication:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 369,
+          "end_line": 412,
+          "function": "create_owned_pair",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 18,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 429,
+        "function": "_publish_owned_file",
+        "text": "or original.st_nlink != 1 or original.st_size != len(payload)):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 369,
+          "end_line": 412,
+          "function": "create_owned_pair",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 19,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 435,
+        "function": "_publish_owned_file",
+        "text": "_rename_noreplace(fd, temporary, final)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 369,
+          "end_line": 412,
+          "function": "create_owned_pair",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 20,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 442,
+        "function": "_publish_owned_file",
+        "text": "raise GateFailure(\"publication_extra_building_object\")"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/msae_jumbo_pair_commit.py",
+          "line": 369,
+          "end_line": 412,
+          "function": "create_owned_pair",
+          "sha256": "94e948385bb8ebe40a5c3447b50cbf12a50cc4aa1b2347b7f73db2ca50f559f7"
+        }
+      ],
+      "disposition": "REPLACED by retained owned-pair hardlink/expected-byte primitive",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 21,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 493,
+        "function": "publish_flat_directory",
+        "text": "owned[name] = _publish_owned_file(final_fd, \".\" + name + \".building\", name, payload, file_mode)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 475,
+          "end_line": 486,
+          "function": "publish_flat_directory",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 22,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 502,
+        "function": "publish_flat_directory",
+        "text": "if set(os.listdir(final_fd)) != set(files):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 475,
+          "end_line": 486,
+          "function": "publish_flat_directory",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 23,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 503,
+        "function": "publish_flat_directory",
+        "text": "raise GateFailure(\"building_cardinality\")"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 475,
+          "end_line": 486,
+          "function": "publish_flat_directory",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 24,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 508,
+        "function": "publish_flat_directory",
+        "text": "\"mode\": stat.S_IMODE(st.st_mode), \"nlink\": st.st_nlink}"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 475,
+          "end_line": 486,
+          "function": "publish_flat_directory",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 25,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 512,
+        "function": "publish_flat_directory",
+        "text": "if set(os.listdir(final_fd)) != set(files):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 475,
+          "end_line": 486,
+          "function": "publish_flat_directory",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 26,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 513,
+        "function": "publish_flat_directory",
+        "text": "raise GateFailure(\"building_cardinality\")"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 475,
+          "end_line": 486,
+          "function": "publish_flat_directory",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 27,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 524,
+        "function": "read_bytes_nofollow",
+        "text": "nlink: int | None = None, max_bytes: int | None = None,"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 489,
+          "end_line": 542,
+          "function": "read_bytes_nofollow",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 394,
+          "end_line": 406,
+          "function": "_reader_fd_admission",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 28,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 539,
+        "function": "read_bytes_nofollow",
+        "text": "if nlink is not None and before.st_nlink != nlink:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 489,
+          "end_line": 542,
+          "function": "read_bytes_nofollow",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 394,
+          "end_line": 406,
+          "function": "_reader_fd_admission",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 29,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 540,
+        "function": "read_bytes_nofollow",
+        "text": "raise GateFailure(\"wrong_nlink:\" + path.as_posix())"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 489,
+          "end_line": 542,
+          "function": "read_bytes_nofollow",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 394,
+          "end_line": 406,
+          "function": "_reader_fd_admission",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All constructors and named ancestors through full controller \u00d7 opening/fstat/validation/all-close failures, Linux close-after-release FDreuse and relevant combined primary failures.",
+        "Operational FD observations are not kernel hard quota or arbitrary concurrent allocation exclusion."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 30,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 673,
+        "function": "load_config",
+        "text": "\"authority_control_modes\": {key: value for key, value in AUTHORITY_CONTROL_MODES.items()},"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 619,
+          "end_line": 796,
+          "function": "load_config",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 31,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 816,
+        "function": "publish_bytes",
+        "text": "owned = _publish_owned_file(parent, \".\" + path.name + \".building\", path.name, payload, mode)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 799,
+          "end_line": 811,
+          "function": "publish_bytes",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 32,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 819,
+        "function": "publish_bytes",
+        "text": "_require_absent(parent, \".\" + path.name + \".building\")"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 799,
+          "end_line": 811,
+          "function": "publish_bytes",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 33,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 835,
+        "function": "_dir_names",
+        "text": "names = set(os.listdir(fd))"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 818,
+          "end_line": 831,
+          "function": "_dir_names",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 34,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 862,
+        "function": "_descriptor_tree",
+        "text": "\"nlink\": st.st_nlink, \"device\": st.st_dev, \"inode\": st.st_ino}"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 834,
+          "end_line": 898,
+          "function": "_descriptor_tree",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 35,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 889,
+        "function": "walk",
+        "text": "\"nlink\": child.st_nlink, \"size\": child.st_size,"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 834,
+          "end_line": 898,
+          "function": "_descriptor_tree",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 36,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 945,
+        "function": "classify_protocol_state",
+        "text": "if any(row[\"mode\"] != 0o644 or row[\"nlink\"] != 1 for row in inv[\"public_manifest\"]):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 968,
+          "end_line": 1046,
+          "function": "classify_protocol_state",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 37,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 962,
+        "function": "classify_protocol_state",
+        "text": "and all(data_records[name][\"mode\"] == 0o444 and data_records[name][\"nlink\"] == 1"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 968,
+          "end_line": 1046,
+          "function": "classify_protocol_state",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 38,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 966,
+        "function": "classify_protocol_state",
+        "text": "and all(data_records[name][\"mode\"] == 0o600 and data_records[name][\"nlink\"] == 1"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 968,
+          "end_line": 1046,
+          "function": "classify_protocol_state",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 39,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1035,
+        "function": "_git_porcelain_snapshot",
+        "text": "or path in ALLOWED_AUTHORITY_PATHS):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1049,
+          "end_line": 1071,
+          "function": "_git_porcelain_snapshot",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 40,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1056,
+        "function": "_training_snapshot",
+        "text": "row[\"nlink\"], row[\"size\"])"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1074,
+          "end_line": 1091,
+          "function": "_training_snapshot",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 41,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1462,
+        "function": "build_history_registry",
+        "text": "\"type\": stat.S_IFMT(st.st_mode), \"mode\": stat.S_IMODE(st.st_mode), \"nlink\": st.st_nlink,"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1538,
+          "end_line": 1592,
+          "function": "build_history_registry",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1193,
+          "end_line": 1306,
+          "function": "_history_objects",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1310,
+          "end_line": 1331,
+          "function": "_history_census",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 42,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1467,
+        "function": "build_history_registry",
+        "text": "blocked = sorted({item[\"path\"] for item in alias_occurrences if item[\"path\"] not in ALLOWED_AUTHORITY_PATHS})"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1538,
+          "end_line": 1592,
+          "function": "build_history_registry",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1193,
+          "end_line": 1306,
+          "function": "_history_objects",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1310,
+          "end_line": 1331,
+          "function": "_history_census",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 43,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1481,
+        "function": "build_history_registry",
+        "text": "\"allowed_authority_paths\": sorted(ALLOWED_AUTHORITY_PATHS),"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1538,
+          "end_line": 1592,
+          "function": "build_history_registry",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1193,
+          "end_line": 1306,
+          "function": "_history_objects",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1310,
+          "end_line": 1331,
+          "function": "_history_census",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 44,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1490,
+        "function": "cmd_build_history",
+        "text": "review = ROOT / \"reports/adversarial/msae_independent_norspan_v1_implementation_review.md\""
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1602,
+          "end_line": 1633,
+          "function": "cmd_build_history",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 45,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1494,
+        "function": "cmd_build_history",
+        "text": "for rel in sorted(ALLOWED_AUTHORITY_PATHS - set(AUTHORITY_CONTROL_MODES)):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1602,
+          "end_line": 1633,
+          "function": "cmd_build_history",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 46,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1532,
+        "function": "cmd_build_authority",
+        "text": "for rel, expected_mode in sorted(AUTHORITY_CONTROL_MODES.items()):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1636,
+          "end_line": 1665,
+          "function": "cmd_build_authority",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 47,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1536,
+        "function": "cmd_build_authority",
+        "text": "or st.st_nlink != 1):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1636,
+          "end_line": 1665,
+          "function": "cmd_build_authority",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 48,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1538,
+        "function": "cmd_build_authority",
+        "text": "controls[rel] = {\"sha256\": sha_file(path, st), \"mode\": expected_mode, \"nlink\": 1}"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1636,
+          "end_line": 1665,
+          "function": "cmd_build_authority",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 49,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1549,
+        "function": "cmd_build_authority",
+        "text": "rel for rel in ALLOWED_AUTHORITY_PATHS if not (ROOT / rel).exists()"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1636,
+          "end_line": 1665,
+          "function": "cmd_build_authority",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 50,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 1899,
+        "function": "history_collisions",
+        "text": "entry[\"nlink\"], entry[\"size\"])"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1984,
+          "end_line": 2045,
+          "function": "history_collisions",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 51,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2147,
+        "function": "publish_private_roles",
+        "text": "owned[role] = _publish_owned_file(rfd, \".payload.jsonl.building\", \"payload.jsonl\", rendered[role], 0o600)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2231,
+          "end_line": 2241,
+          "function": "publish_private_roles",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every four role write/chmod/link/fsync/hash/cardinality/close and completed-role/partial-next combination, with substitutions/extras/kill.",
+        "Existing aggregate late-byte/name/alias cells do not cover every per-role seal publication axis."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 52,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2152,
+        "function": "publish_private_roles",
+        "text": "if set(os.listdir(private_fd)) != {\"discovery\", \"calibration\", \"c1\", \"c2\"}:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2231,
+          "end_line": 2241,
+          "function": "publish_private_roles",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every four role write/chmod/link/fsync/hash/cardinality/close and completed-role/partial-next combination, with substitutions/extras/kill.",
+        "Existing aggregate late-byte/name/alias cells do not cover every per-role seal publication axis."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 53,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2160,
+        "function": "publish_private_roles",
+        "text": "if set(os.listdir(rfd)) != {\"payload.jsonl\"}:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2231,
+          "end_line": 2241,
+          "function": "publish_private_roles",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every four role write/chmod/link/fsync/hash/cardinality/close and completed-role/partial-next combination, with substitutions/extras/kill.",
+        "Existing aggregate late-byte/name/alias cells do not cover every per-role seal publication axis."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 54,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2165,
+        "function": "publish_private_roles",
+        "text": "\"nlink\": st.st_nlink, \"custody_hash_open_count\": 0, \"scientific_open_count\": 0}"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2231,
+          "end_line": 2241,
+          "function": "publish_private_roles",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every four role write/chmod/link/fsync/hash/cardinality/close and completed-role/partial-next combination, with substitutions/extras/kill.",
+        "Existing aggregate late-byte/name/alias cells do not cover every per-role seal publication axis."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 55,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2172,
+        "function": "publish_private_roles",
+        "text": "if set(os.listdir(rfd)) != {\"payload.jsonl\"}:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2231,
+          "end_line": 2241,
+          "function": "publish_private_roles",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every four role write/chmod/link/fsync/hash/cardinality/close and completed-role/partial-next combination, with substitutions/extras/kill.",
+        "Existing aggregate late-byte/name/alias cells do not cover every per-role seal publication axis."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 56,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2174,
+        "function": "publish_private_roles",
+        "text": "if set(os.listdir(private_fd)) != {\"discovery\", \"calibration\", \"c1\", \"c2\"}:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2231,
+          "end_line": 2241,
+          "function": "publish_private_roles",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every four role write/chmod/link/fsync/hash/cardinality/close and completed-role/partial-next combination, with substitutions/extras/kill.",
+        "Existing aggregate late-byte/name/alias cells do not cover every per-role seal publication axis."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 57,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2200,
+        "function": "verify_private_payload_bytes",
+        "text": "actual = stream_file_digest(path, mode=0o600, nlink=1)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2244,
+          "end_line": 2259,
+          "function": "verify_private_payload_bytes",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[role]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_roles_have_distinct_pairs_and_only_final_consumers",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[early_bytes]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_four_role_faults_preserve_all_preceding_and_foreign_evidence[cross_role]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every four role write/chmod/link/fsync/hash/cardinality/close and completed-role/partial-next combination, with substitutions/extras/kill.",
+        "Existing aggregate late-byte/name/alias cells do not cover every per-role seal publication axis."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 58,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2283,
+        "function": "validate_history_registry",
+        "text": "fields = {\"path\", \"device\", \"inode\", \"type\", \"mode\", \"nlink\", \"size\","
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2321,
+          "end_line": 2405,
+          "function": "validate_history_registry",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1193,
+          "end_line": 1306,
+          "function": "_history_objects",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1310,
+          "end_line": 1331,
+          "function": "_history_census",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 59,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2292,
+        "function": "validate_history_registry",
+        "text": "if stat.S_IMODE(st.st_mode) != 0o644 or st.st_nlink != 1:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2321,
+          "end_line": 2405,
+          "function": "validate_history_registry",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1193,
+          "end_line": 1306,
+          "function": "_history_objects",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1310,
+          "end_line": 1331,
+          "function": "_history_census",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 60,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2304,
+        "function": "validate_history_registry",
+        "text": "expected = (entry[\"device\"], entry[\"inode\"], entry[\"type\"], entry[\"mode\"], entry[\"nlink\"], entry[\"size\"])"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2321,
+          "end_line": 2405,
+          "function": "validate_history_registry",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1193,
+          "end_line": 1306,
+          "function": "_history_objects",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 1310,
+          "end_line": 1331,
+          "function": "_history_census",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_history]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_build_authority]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_real_entrypoints_block_before_any_state_or_evidence_access[cmd_prepare]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every original process/env/root/training-tree and overlap/pedigree mutation through full controller; whole history-support eligibility remains unknown.",
+        "Any .msae_keys component now blocks full census before opening; no new successful pruning exemption."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 61,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2347,
+        "function": "canonical_control",
+        "text": "raw = read_bytes_nofollow(path, mode=0o644, nlink=1)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2426,
+          "end_line": 2433,
+          "function": "canonical_control",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 62,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2361,
+        "function": "control_manifest",
+        "text": "observed = stream_file_digest(ROOT / rel, mode=mode, nlink=1)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2440,
+          "end_line": 2445,
+          "function": "control_manifest",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 63,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2362,
+        "function": "control_manifest",
+        "text": "return {\"sha256\": observed[\"sha256\"], \"mode\": mode, \"nlink\": 1}"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2440,
+          "end_line": 2445,
+          "function": "control_manifest",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 64,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2390,
+        "function": "validate_authority_chain",
+        "text": "implementation = ROOT / \"reports/adversarial/msae_independent_norspan_v1_implementation_review.md\""
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2488,
+          "end_line": 2511,
+          "function": "validate_authority_chain",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 65,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2393,
+        "function": "validate_authority_chain",
+        "text": "review_digest = stream_file_digest(review, mode=0o644, nlink=1)[\"sha256\"]"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2488,
+          "end_line": 2511,
+          "function": "validate_authority_chain",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 66,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2403,
+        "function": "validate_authority_chain",
+        "text": "controls = {rel: control_manifest(rel, mode) for rel, mode in AUTHORITY_CONTROL_MODES.items()}"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2488,
+          "end_line": 2511,
+          "function": "validate_authority_chain",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 67,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2409,
+        "function": "validate_authority_chain",
+        "text": "\"controls\": controls, \"absent_at_publication\": sorted(ALLOWED_AUTHORITY_PATHS - set(AUTHORITY_CONTROL_MODES)),"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2488,
+          "end_line": 2511,
+          "function": "validate_authority_chain",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_authority.py",
+          "line": 99,
+          "end_line": 188,
+          "function": "Approvals",
+          "sha256": "1467c7888a9747d6de44cd1960d072d028fdb2ed95a4cf5e9407c53fe30f6f69"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-open]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-chmod]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-write]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_commit::test_faults_propagate_preserve_obstruction_close_owned_descriptors[OSError-file_fsync]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Complete eleven marker \u00d7 reserve/write/chmod/both filefsync/prepostlink parentfsync/link/every hash/cardinality/close \u00d7 interruption/substitution/extra-object cross-product through actual controller. Current marker additions qualify checkpoint failure OSError/KI, not that cross-product.",
+        "Kill at complete-control/partial-successor and combined ancestry/publication/durability faults."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 68,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2535,
+        "function": "validate_acquisition_metadata",
+        "text": "if (not isinstance(row, dict) or set(row) != {\"sha256\", \"bytes\", \"mode\", \"nlink\", \"git_blob_sha1\"}"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2641,
+          "end_line": 2695,
+          "function": "validate_acquisition_metadata",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 69,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2540,
+        "function": "validate_acquisition_metadata",
+        "text": "require_literals(row, {\"mode\": 0o444, \"nlink\": 1}, \"acquisition_file_custody\")"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2641,
+          "end_line": 2695,
+          "function": "validate_acquisition_metadata",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 70,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2613,
+        "function": "validate_control_chain",
+        "text": "if set(controls) != set(AUTHORITY_CONTROL_MODES):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2698,
+          "end_line": 2866,
+          "function": "validate_control_chain",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[bytes-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[bytes-verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[extra_alias-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[extra_alias-verify]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every typed success/rejection terminal \u00d7 duplicate/nonfinite/noncanonical/stale lineage/counter/schema \u00d7 kill/fsync/close/detached ancestry/extra during actual replay.",
+        "Historical scratch descendant bytes remain unattested: current original-root and retained count-summary checks are not historical byte proof."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 71,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2615,
+        "function": "validate_control_chain",
+        "text": "for rel, expected_mode in AUTHORITY_CONTROL_MODES.items():"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2698,
+          "end_line": 2866,
+          "function": "validate_control_chain",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[bytes-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[bytes-verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[extra_alias-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[extra_alias-verify]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every typed success/rejection terminal \u00d7 duplicate/nonfinite/noncanonical/stale lineage/counter/schema \u00d7 kill/fsync/close/detached ancestry/extra during actual replay.",
+        "Historical scratch descendant bytes remain unattested: current original-root and retained count-summary checks are not historical byte proof."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 72,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2754,
+        "function": "load_validated_raw",
+        "text": "if set(os.listdir(raw_fd)) != expected:"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2869,
+          "end_line": 2910,
+          "function": "load_validated_raw",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-.raw_access_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.raw_access_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Each first scientific raw file open/read plus midway kill and partial-start marker combined with history/readiness/authority drift.",
+        "Reconstruction-counter and opaque custody positives are not complete raw-access fault closure."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 73,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2759,
+        "function": "load_validated_raw",
+        "text": "payload = read_bytes_nofollow(RAW / name, mode=0o444, nlink=1, parent_fd=raw_fd)"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2869,
+          "end_line": 2910,
+          "function": "load_validated_raw",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-.raw_access_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.raw_access_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Each first scientific raw file open/read plus midway kill and partial-start marker combined with history/readiness/authority drift.",
+        "Reconstruction-counter and opaque custody positives are not complete raw-access fault closure."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 74,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2764,
+        "function": "load_validated_raw",
+        "text": "or record[\"nlink\"] != 1):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2869,
+          "end_line": 2910,
+          "function": "load_validated_raw",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-.raw_access_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.raw_access_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Each first scientific raw file open/read plus midway kill and partial-start marker combined with history/readiness/authority drift.",
+        "Reconstruction-counter and opaque custody positives are not complete raw-access fault closure."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 75,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 2770,
+        "function": "load_validated_raw",
+        "text": "or set(os.listdir(raw_fd)) != expected):"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 2869,
+          "end_line": 2910,
+          "function": "load_validated_raw",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[none-.raw_access_started.json.stage]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-raw_access_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.raw_access_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Each first scientific raw file open/read plus midway kill and partial-start marker combined with history/readiness/authority drift.",
+        "Reconstruction-counter and opaque custody positives are not complete raw-access fault closure."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 76,
+      "original": {
+        "path": "scripts/prepare_msae_independent_norspan_v1.py",
+        "line": 3065,
+        "function": "cmd_verify",
+        "text": "\"mode\": 0o600, \"nlink\": 1, \"custody_hash_open_count\": 1, \"scientific_open_count\": 0,"
+      },
+      "original_code_sha256": "bd4c17678d12b0f30f4d5e207a9bcedea98959a2b1447ac55d80c5f737626e64",
+      "current_wiring": [
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 3080,
+          "end_line": 3210,
+          "function": "cmd_verify",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_controller.py",
+          "line": 242,
+          "end_line": 412,
+          "function": "Controller",
+          "sha256": "39ad4fe29be89e38c24f6316b02b0d6458bc113b32d41271fc0914971499c037"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[bytes-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[bytes-verify]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[extra_alias-create]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_custody_mutation_after_terminal_parent_fsync_is_rejected[extra_alias-verify]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Every typed success/rejection terminal \u00d7 duplicate/nonfinite/noncanonical/stale lineage/counter/schema \u00d7 kill/fsync/close/detached ancestry/extra during actual replay.",
+        "Historical scratch descendant bytes remain unattested: current original-root and retained count-summary checks are not historical byte proof."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 77,
+      "original": {
+        "path": "scripts/acquire_msae_independent_norspan_v1.py",
+        "line": 169,
+        "function": "read_sparse_files",
+        "text": "if set(os.listdir(root_fd)) != {\".git\", *FILES}:"
+      },
+      "original_code_sha256": "7aa98231181fd19061726a68b004079a0c13310d0fcfa7f7938f45ef61ae2f4c",
+      "current_wiring": [
+        {
+          "path": "scripts/acquire_msae_independent_norspan_v1.py",
+          "line": 188,
+          "end_line": 246,
+          "function": "read_sparse_files",
+          "sha256": "1e441abe3535523c01626d3e4d91d8ae4285f74e945ff7f99e26e2f32e7fac12"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 394,
+          "end_line": 406,
+          "function": "_reader_fd_admission",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 78,
+      "original": {
+        "path": "scripts/acquire_msae_independent_norspan_v1.py",
+        "line": 175,
+        "function": "read_sparse_files",
+        "text": "if not stat.S_ISREG(before.st_mode) or before.st_nlink != 1:"
+      },
+      "original_code_sha256": "7aa98231181fd19061726a68b004079a0c13310d0fcfa7f7938f45ef61ae2f4c",
+      "current_wiring": [
+        {
+          "path": "scripts/acquire_msae_independent_norspan_v1.py",
+          "line": 188,
+          "end_line": 246,
+          "function": "read_sparse_files",
+          "sha256": "1e441abe3535523c01626d3e4d91d8ae4285f74e945ff7f99e26e2f32e7fac12"
+        },
+        {
+          "path": "scripts/prepare_msae_independent_norspan_v1.py",
+          "line": 394,
+          "end_line": 406,
+          "function": "_reader_fd_admission",
+          "sha256": "ae44b8735e23a3670f8025201f50ad5a84f2d5c5c34939bf64efdb621c05e290"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_every_scientific_field_drift_rejected[acquisition_limits]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_adapters::test_actual_raw_adapter_has_eight_names_and_external_manifest",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-network_started.json]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_edge_matrix::test_started_names_never_authorize_source_or_retry[source_acquisition.json-.network_started.json.stage]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "All four raw pairs and named Git schema/blob identities \u00d7 every promotion/last hash/close/durability failure, foreign name and kill combination through actual acquisition.",
+        "No real source retry or eligibility result is permitted by these synthetic cells."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 79,
+      "original": {
+        "path": "scripts/acquire_msae_independent_norspan_v1.py",
+        "line": 209,
+        "function": "remove_tree_fd",
+        "text": "os.unlink(name, dir_fd=fd)"
+      },
+      "original_code_sha256": "7aa98231181fd19061726a68b004079a0c13310d0fcfa7f7938f45ef61ae2f4c",
+      "current_wiring": [
+        {
+          "path": "scripts/acquire_msae_independent_norspan_v1.py",
+          "line": 249,
+          "end_line": 252,
+          "function": "cleanup_scratch",
+          "sha256": "1e441abe3535523c01626d3e4d91d8ae4285f74e945ff7f99e26e2f32e7fac12"
+        }
+      ],
+      "disposition": "RETIRED production cleanup; refusal/retention interface only",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_owned_pair::test_writer_stays_owned_until_explicit_aggregate_end",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_nonregular_final_fifo_rejected_without_blocking",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_precise_stage_substitution_rejects_publisher_and_external_receipt[fifo]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_aggregate_real_eight_names_external_receipts[448]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Approved exact deployment containment/contract authority remains pending; client monitoring is not hard disk/process quota.",
+        "Server reboot/failover/backup/retention/restore/quota and required multi-client/reboot guarantees UNKNOWN; no administrator contact or invented guarantees.",
+        "Original historical publication_metadata/ENOTEMPTY causes remain unproven."
+      ],
+      "whole_row_closed": false
+    },
+    {
+      "row_id": 80,
+      "original": {
+        "path": "scripts/acquire_msae_independent_norspan_v1.py",
+        "line": 293,
+        "function": "acquire",
+        "text": "scratch = Path(tempfile.mkdtemp(prefix=\"norspan-1-sparse-\"))"
+      },
+      "original_code_sha256": "7aa98231181fd19061726a68b004079a0c13310d0fcfa7f7938f45ef61ae2f4c",
+      "current_wiring": [
+        {
+          "path": "scripts/acquire_msae_independent_norspan_v1.py",
+          "line": 255,
+          "end_line": 279,
+          "function": "acquire",
+          "sha256": "1e441abe3535523c01626d3e4d91d8ae4285f74e945ff7f99e26e2f32e7fac12"
+        },
+        {
+          "path": "scripts/acquire_msae_independent_norspan_v1.py",
+          "line": 282,
+          "end_line": 462,
+          "function": "_acquire_in_reserved_scratch",
+          "sha256": "1e441abe3535523c01626d3e4d91d8ae4285f74e945ff7f99e26e2f32e7fac12"
+        },
+        {
+          "path": "scripts/msae_norspan_jpc_runtime.py",
+          "line": 605,
+          "end_line": 620,
+          "function": "reserve_scratch",
+          "sha256": "2ed024854ee275af1b0d87359f6181fdb2d3aee44835eaa0b8dcea0e5485e4a4"
+        }
+      ],
+      "disposition": "CURRENT guarded controller integration; finite ordinary and fixed paired paths remain distinct",
+      "bounded_named_cases": [
+        {
+          "id": "tests.test_msae_jumbo_owned_pair::test_writer_stays_owned_until_explicit_aggregate_end",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_nonregular_final_fifo_rejected_without_blocking",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_jumbo_pair_successor_matrix::test_precise_stage_substitution_rejects_publisher_and_external_receipt[fifo]",
+          "result": "passed"
+        },
+        {
+          "id": "tests.test_msae_norspan_jpc_runtime::test_flat_aggregate_real_eight_names_external_receipts[448]",
+          "result": "passed"
+        }
+      ],
+      "evidence_scope": "Function-region/current wiring and illustrative group cells; not row-complete causal/fault qualification",
+      "remaining_requirement": [
+        "Approved exact deployment containment/contract authority remains pending; client monitoring is not hard disk/process quota.",
+        "Server reboot/failover/backup/retention/restore/quota and required multi-client/reboot guarantees UNKNOWN; no administrator contact or invented guarantees.",
+        "Original historical publication_metadata/ENOTEMPTY causes remain unproven."
+      ],
+      "whole_row_closed": false
+    }
+  ],
+  "prior_progress_preserved": "reports/verification/msae_norspan_jpc_integration_audit_progress.json",
+  "production_launch_authorized": false
+}

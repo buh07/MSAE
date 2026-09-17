@@ -1,0 +1,9 @@
+{
+  "path": "/jumbo/lisp/f004ndc/tmp/lisplab1/build-norspan-stage1-v2-public-checkpoint.py",
+  "sha256": "bd113bfd9da3a427e5cc2a373201fd3282aaa418f2dd364318e9fe7ca045f4dc",
+  "bytes": 5899,
+  "scope": "public_whitelist_builder_extractor_only",
+  "negative_extractor_execution": "NOT_RUN",
+  "archive_data_independently_verified": true,
+  "production_launch_authorized": false
+}

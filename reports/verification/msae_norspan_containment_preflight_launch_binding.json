@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "/usr/bin/python3.12",
+    "-I",
+    "-S",
+    "-B",
+    "/jumbo/lisp/f004ndc/experiments/wip/MSAE/scripts/msae_norspan_containment_preflight.py",
+    "--run",
+    "--binding",
+    "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-preflight-launch-freeze-zy02_cy8/binding.json",
+    "--binding-sha256",
+    "2e75bfbb9cce60443b3a84cc24689f868bec5949134cc4c7d65f7dbb64547c15",
+    "--output",
+    "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-preflight-availability-26cd6f3e7839f1730c341f584f77d05d"
+  ],
+  "cwd": "/jumbo/lisp/f004ndc/experiments/wip/MSAE",
+  "environment": {
+    "PATH": "/usr/bin",
+    "LC_ALL": "C"
+  },
+  "binding_sha256": "2e75bfbb9cce60443b3a84cc24689f868bec5949134cc4c7d65f7dbb64547c15",
+  "binding": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-preflight-launch-freeze-zy02_cy8/binding.json",
+  "output": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-preflight-availability-26cd6f3e7839f1730c341f584f77d05d",
+  "expected_scope": "synthetic_no_fork_preflight_only",
+  "production_launch_authorized": false,
+  "status": "FROZEN_PENDING_INDEPENDENT_BINDING_AUDIT",
+  "subjects": 135,
+  "runtime_inputs": 124,
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-preflight-launch-freeze-zy02_cy8",
+  "launch_script_sha256": "f80144f9dbfce79b44862278c3268ced6c94e8a2bec568e32110d9c89d28e5e3"
+}

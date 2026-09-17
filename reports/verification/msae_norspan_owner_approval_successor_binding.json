@@ -1,0 +1,50 @@
+{
+  "schema_version": "norspan_owner_approval_successor_binding_v1",
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-binding-x8batjp7",
+  "subjects": 65,
+  "subjects_sha256": "85c1d36c6665fa1f69630400098843b19a9f44c6d89a7c1baacb0c22714b4875",
+  "test_suites": 27,
+  "tests_sha256": "393b25bbb8cce62250eba39347d9c68ff9f584f3a4e7302eb93f6a90e99840eb",
+  "predecessor_binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-authority-admission-binding-8ux9h2sg",
+  "production_launch_authorized": false,
+  "canonical_authority_established": false,
+  "status": "GUARDED OWNER-ORIGIN RECEIPT MECHANISM; EXACT OWNER APPROVAL PENDING; WHOLE UNQUALIFIED",
+  "legacy_test_source_only_never_collect": "tests/test_prepare_msae_independent_norspan_v1.py",
+  "exact_changed_or_added_subjects": [
+    {
+      "path": "docs/plan-msae-norspan-owner-approval-receipt-v1.md",
+      "sha256": "666c0089351c40203a6cb96badb541a2036e99302e11eba62b0f723cae289f65",
+      "bytes": 6040,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_authority.py",
+      "sha256": "f4c71d55dae42f0f9f64d32c49181f95884984fd1357c3f947172b80e669bea3",
+      "bytes": 10317,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_jpc_controller.py",
+      "sha256": "02d32825ba366494fa929f52b651f28e9fc57761050f68a209917a98d784c56a",
+      "bytes": 25129,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "scripts/msae_norspan_owner_approval.py",
+      "sha256": "807fb79768a08ec191648377c1905972105150997428f21c1342e33ab2f1a71f",
+      "bytes": 4079,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_owner_approval.py",
+      "sha256": "359bbc39dfc422b3d1c6f302b23a5840bb9ec5480c40d31b4df264c30648b74a",
+      "bytes": 12655,
+      "mode": 420,
+      "nlink": 1
+    }
+  ]
+}

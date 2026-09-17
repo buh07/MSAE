@@ -1,0 +1,12 @@
+{
+  "schema_version": "msae_norspan_client_candidate_binding_v1",
+  "status": "unqualified_exact_candidate",
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-candidate-binding-r2385jsg",
+  "subjects_sha256": "d2ccad3c9eabdd0abf10fc718e0a9e7a2c76511cb4eb39bffe65dcad36028624",
+  "tests_sha256": "148b97201959494f476c8b8c5d8a8260e67f5c06d7a50ab5fbed8831753438ea",
+  "subjects": 34,
+  "root_test_run": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-qualified-candidate-xrZHZZ7S",
+  "root_tests_passed": 457,
+  "production_launch_authorized": false,
+  "canonical_authority": false
+}

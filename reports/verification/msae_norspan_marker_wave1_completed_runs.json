@@ -1,0 +1,43 @@
+{
+  "schema_version": "norspan_marker_wave1_completed_runs_v1",
+  "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91",
+  "runs": {
+    "main": {
+      "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-full-yzqhudd3",
+      "exit_code": 0,
+      "passed": 1096,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_summary_seconds": 733.68,
+      "junit_seconds": 733.287,
+      "junit_sha256": "a5fa7c4228c3f1aefabfa93dd8eb37fd4245998c2d1f998d3ccbcde09e06766f",
+      "command_sha256": "6b5db6cb2088abab286146a5c3611e448e65ee2e87364175f0cae65f649694a8",
+      "test_suites": 28,
+      "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91"
+    },
+    "extracted": {
+      "root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-reproduction-_c6snahv",
+      "exit_code": 0,
+      "passed": 1096,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_summary_seconds": 731.98,
+      "junit_seconds": 731.532,
+      "junit_sha256": "7d529f966073d965ef7f23623d18747546878f41a0198b110a1ba1585de69917",
+      "command_sha256": "49e298848f4c8edc4a31ad94f24e3f90d5fcd9c36dfc6b329f3ccf9f03f8a768",
+      "test_suites": 28,
+      "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91"
+    }
+  },
+  "same_actual_case_set": true,
+  "same_case_count": 1096,
+  "all_manifest_cases_present": true,
+  "post_run_identity_checks": 201,
+  "syntax_only_inputs": 42,
+  "public_check_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-final-public-checks-v4itrba6",
+  "whole_matrix_qualified": false,
+  "production_launch_authorized": false,
+  "scientific_result_changed": false
+}

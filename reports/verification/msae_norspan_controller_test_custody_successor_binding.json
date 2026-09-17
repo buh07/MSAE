@@ -1,0 +1,36 @@
+{
+  "schema_version": "norspan_controller_test_custody_successor_binding_v1",
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-test-custody-binding-t0hb4f3h",
+  "subjects": 60,
+  "subjects_sha256": "c67f2e3b12a1e28ff151cfe8a2351f977c696d2e474e78cb24605d1d836cbc6b",
+  "test_suites": 26,
+  "tests_sha256": "a7afc0e7a6f8aa8fd4e70a229b42896819191b11f712a4462a08a7eddfa44fc7",
+  "predecessor_binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-successor-binding-90guro5c",
+  "production_launch_authorized": false,
+  "canonical_authority_established": false,
+  "status": "UNQUALIFIED GUARDED SOURCE-FREE TEST-CUSTODY SUCCESSOR; OLD49/59 FAILURES PRESERVED",
+  "legacy_test_source_only_never_collect": "tests/test_prepare_msae_independent_norspan_v1.py",
+  "exact_changed_or_added_subjects": [
+    {
+      "path": "scripts/diagnose_msae_jumbo_nfs_v1.py",
+      "sha256": "dd9fd5fe39b2ae73d8e0863d59e3ee59684094a86a58f55a03b8efaab5681445",
+      "bytes": 6535,
+      "mode": 493,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_client_repairs.py",
+      "sha256": "360710c6b62379a9df31259dc34fbefaee01a89ed430697990454b9eda6582dc",
+      "bytes": 7018,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_jpc_adapters.py",
+      "sha256": "8d9322bb1aa3af4b225505c51e49ec3c1a39cd05631d5cd61ee9b88d04310592",
+      "bytes": 5963,
+      "mode": 448,
+      "nlink": 1
+    }
+  ]
+}

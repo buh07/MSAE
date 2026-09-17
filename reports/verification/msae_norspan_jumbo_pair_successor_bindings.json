@@ -1,0 +1,62 @@
+{
+  "status": "SOURCE-FREE Q2 SUCCESSOR ONLY; WHOLE LAUNCH BLOCK",
+  "checks": "67 passed in 1.98s; compile exit0",
+  "run_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jumbo-pair-successor-YYuE83",
+  "before_repair": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jumbo-pair-before-repair-20liw_40",
+  "bindings": {
+    "docs/plan-msae-norspan-jumbo-qualification-v3.md": {
+      "sha256": "5e01515be3d27eba6e10fcbf4dfca521a01151a7bb377c5f0b97c5fbe2c8caf3",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 12638
+    },
+    "reports/adversarial/msae_norspan_jumbo_pair_v3_plan_review.md": {
+      "sha256": "183cf354fe873c0a279f1a3363f4c15b341a36b91ec3c3822237128cee92a655",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 6271
+    },
+    "scripts/msae_jumbo_pair_commit.py": {
+      "sha256": "2873a1b8be1e6298ad3d923eac7e2ecd33b2470ad5e1cddc4e2cb319ae5e5deb",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 11508
+    },
+    "scripts/diagnose_msae_jumbo_nfs_v1.py": {
+      "sha256": "dd9fd5fe39b2ae73d8e0863d59e3ee59684094a86a58f55a03b8efaab5681445",
+      "mode": 493,
+      "nlink": 1,
+      "bytes": 6535
+    },
+    "tests/test_msae_jumbo_pair_commit.py": {
+      "sha256": "e6204acef7193c28d326289eeea4476c34c41f60b5dbee2990b38f20e6d012cd",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 17320
+    },
+    "reports/adversarial/msae_norspan_jumbo_pair_primitive_review.md": {
+      "sha256": "87fd153997b1f30114ec7bdb298d1856f28d920861cce1d7e0d0713ac9cd725b",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 10926
+    },
+    "reports/verification/msae_norspan_jumbo_pair_prototype_bindings.json": {
+      "sha256": "9011d2a2110cb6278f9209d1c4825cc1b60aece1c109e5afe6853fcb59df28a9",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 3737
+    },
+    "reports/verification/msae_norspan_jumbo_pair_prototype_checks.log": {
+      "sha256": "23701367215c673f4e3dddc30aa7a77541886b1ae70c0a6f4586d9297be566ac",
+      "mode": 420,
+      "nlink": 1,
+      "bytes": 4163
+    },
+    "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-jumbo-pair-successor-YYuE83/pytest.txt": {
+      "sha256": "fde11c226f03a9cfafe9ae65e988a4006b56671d0010310c97746a3ff70cb81d",
+      "mode": 448,
+      "nlink": 1,
+      "bytes": 99
+    }
+  }
+}

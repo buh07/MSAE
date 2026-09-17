@@ -1,0 +1,79 @@
+{
+  "unchanged_predecessor_subjects": 67,
+  "new_subjects": [
+    {
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1.md",
+      "sha256": "429dce98de195190c0466c00e2e6e1d2d3a8e2d2a3c0fe2d4228fab48f683572",
+      "bytes": 9596,
+      "mode": 420,
+      "nlink": 1,
+      "change": "NEW_ENTIRE_PUBLIC_FILE",
+      "lines": 131
+    },
+    {
+      "path": "docs/plan-msae-norspan-containment-preflight-wave1-v2.md",
+      "sha256": "6efcf2485abb00ee962e31ec258e840cf7d95e5959aecaca6fc574784453e946",
+      "bytes": 12202,
+      "mode": 420,
+      "nlink": 1,
+      "change": "NEW_ENTIRE_PUBLIC_FILE",
+      "lines": 159
+    },
+    {
+      "path": "docs/contract-msae-norspan-preflight-runtime-v1.md",
+      "sha256": "05b07ab2bcf781d19499fe3f59632bc7941648d9821cc137f0489a8e8c0a7b0c",
+      "bytes": 1343,
+      "mode": 420,
+      "nlink": 1,
+      "change": "NEW_ENTIRE_PUBLIC_FILE",
+      "lines": 17
+    },
+    {
+      "path": "docs/contract-msae-norspan-preflight-runtime-v2.md",
+      "sha256": "1312e144297f0adc938c4ae9113e2557c85f86814684a1ee83996c3fef8b8189",
+      "bytes": 2777,
+      "mode": 420,
+      "nlink": 1,
+      "change": "NEW_ENTIRE_PUBLIC_FILE",
+      "lines": 35
+    },
+    {
+      "path": "scripts/msae_norspan_containment_preflight.py",
+      "sha256": "21a647a52945c8bc2ed85946fbcbe9334382971c37259fa947b31c411119ca17",
+      "bytes": 23172,
+      "mode": 420,
+      "nlink": 1,
+      "change": "NEW_ENTIRE_PUBLIC_FILE",
+      "lines": 483
+    },
+    {
+      "path": "tests/test_msae_norspan_containment_preflight.py",
+      "sha256": "115c90d8ff216fbb0bfaf27f12591b2c9e356c142f8342b9b90a6221b7059314",
+      "bytes": 23406,
+      "mode": 420,
+      "nlink": 1,
+      "change": "NEW_ENTIRE_PUBLIC_FILE",
+      "lines": 462
+    },
+    {
+      "path": "docs/plan-msae-norspan-typed-history-fault-wave2.md",
+      "sha256": "6db13fc5523b3c96a8ff83f1092adee5acc632d26e6c7594b5bd6e61a4867d9a",
+      "bytes": 4167,
+      "mode": 420,
+      "nlink": 1,
+      "change": "NEW_ENTIRE_PUBLIC_FILE",
+      "lines": 59
+    },
+    {
+      "path": "tests/test_msae_norspan_typed_history_wave2.py",
+      "sha256": "1c40cb8ee4c4ee8610f86d16d8afd3a02182aaabf16663f60d99e2dd76b05c11",
+      "bytes": 9121,
+      "mode": 420,
+      "nlink": 1,
+      "change": "NEW_ENTIRE_PUBLIC_FILE",
+      "lines": 154
+    }
+  ],
+  "production_code_changes": false,
+  "whole_matrix_qualified": false
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "norspan_marker_wave1_public_binding_v1",
+  "binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-binding-uqez56ue",
+  "subjects": 67,
+  "subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91",
+  "test_suites": 28,
+  "tests_sha256": "e6cd3a8448896fe1156ae53b9d5636807c3b177fcc3a583d64261695677ff7ab",
+  "predecessor_binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-binding-x8batjp7",
+  "unchanged_predecessor_subjects": 65,
+  "new_subjects": [
+    {
+      "path": "docs/plan-msae-norspan-marker-fault-qualification-wave1.md",
+      "sha256": "ab9caa0c60758865691268b84e6fa9362ce30419c479da8e15f1ddc5612f9457",
+      "bytes": 8469,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_marker_fault_wave1.py",
+      "sha256": "df9502b291d0e7e4454ed91e493f15918914f2043bd15b54169eba5d3b4c3f4f",
+      "bytes": 29347,
+      "mode": 420,
+      "nlink": 1
+    }
+  ],
+  "production_changes": false,
+  "production_launch_authorized": false,
+  "canonical_authority_established": false,
+  "whole_matrix_qualified": false,
+  "status": "FROZEN TEST-ONLY PUBLIC CANDIDATE; WHOLE BLOCK; FINAL REVIEW AND RUNS PENDING",
+  "legacy_test_source_only_never_collect": "tests/test_prepare_msae_independent_norspan_v1.py"
+}

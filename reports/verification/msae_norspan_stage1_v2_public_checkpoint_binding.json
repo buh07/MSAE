@@ -1,0 +1,16 @@
+{
+  "schema_version": "norspan_stage1_public_checkpoint_binding_v1",
+  "checkpoint_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-stage1-v2-public-checkpoint-m3wvopvr",
+  "public_subjects": 76,
+  "unchanged_predecessor_subjects": 67,
+  "manifest_sha256": "ecfa13b81197af7e0c6424f045aa4cf110ecafcb6c1fed98cab6247ec387bb5b",
+  "archive_sha256": "2ba1228170fb5837c555210165df497a2d0ab1a80137e3a656b9b6d61c99a4a6",
+  "archive_bytes": 329083,
+  "archive_members": 78,
+  "main_reproduction_status": "PENDING",
+  "extracted_reproduction_status": "PENDING",
+  "production_launch_authorized": false,
+  "whole_matrix_qualified": false,
+  "client_archive_and_parent_fsync_returned": true,
+  "server_backup_durability_guarantees": "UNKNOWN"
+}

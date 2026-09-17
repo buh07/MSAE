@@ -1,0 +1,40 @@
+VERDICT: SHIP
+ONE-LINE: The successor defines a coherent restricted preflight implementation slice; real cgroup/userns launches still require exact independent implementation review.
+
+BLOCKERS
+  - None for implementing and causally testing the explicitly restricted prospective slice. This is not real-operation launch approval, production qualification or Stage1 closure.
+
+REVISIONS
+  - None.
+
+NITS
+  - None.
+
+CHECKS RUN
+  - Read the exact distinct docs/plan-msae-norspan-containment-preflight-wave1-v2.md in a fresh reasoning pass against the unchanged parent availability draft and existing parent planning review. Compared each initial-plan finding against the successor's explicit requirements; no workspace backend was required for this literal-path review.
+  - Reviewed successor SHA256 → 6efcf2485abb00ee962e31ec258e840cf7d95e5959aecaca6fc574784453e946.
+  - Existing initial-plan/report identities retained: initial plan SHA256 429dce98de195190c0466c00e2e6e1d2d3a8e2d2a3c0fe2d4228fab48f683572; initial BLOCK report SHA256 b073356a1039f3c505765642fb599dc439013d0821653fd2ac8f6dc465dc5298.
+  - Earlier bounded public-runtime facts used for this comparison: named _struct extension ENOENT; exact /etc/ld.so.preload contains /usr/${LIB}/nosetxattr.so; preload config, ld.so.cache and resolved /usr/lib/x86_64-linux-gnu/nosetxattr.so are root-owned mode0644. No active dependency probe or import was performed by this reviewer.
+  - No active probes, child launches, imports, tests, process/history/protected-source scans, cgroup/namespace/systemd/GPU operations, network or production changes. Only this distinct mode0644 successor review was created; the initial BLOCK review and older artifacts were not changed.
+
+CONTRACT COVERAGE
+  - Restricted prospective authority → met. Plan:3-15,125,138-141 explicitly separates independent plan SHIP, exact implementation review/freeze and once-only real launches. This verdict permits implementation/testing under the stated scope, not launch on this report alone.
+  - Initial migration-bytes blocker → met as corrected specification. Plan:99-104 declares pids.max bytes hex34 0a and self-migration bytes hex30 0a, with the actual one-backslash Python newline literal and exact return-length/no-partial-write-retry requirements. The resulting D1a fixture must test those bytes, not merely an equivalent-looking string.
+  - Initial runtime-manifest blocker → met as corrected specification. Plan:46-57 records built-in _struct rather than the fictitious extension path; includes exact preload configuration/cache/resolved object and a finite imported stdlib source/existing-bytecode closure. Directory identities are expressly not attestations of every descendant, and missing/unexpected closure blocks. Actual freeze remains pending exact implementation evidence.
+  - Initial missing-target-pidfd cleanup blocker → met as corrected specification. Plan:74-79,84-89 defines pre-GO cooperative EOF plus bounded original-child reap when no original target pidfd exists, explicitly retaining incomplete cleanup/BLOCK if exit cannot be proved. No numeric signal, adopted handle, retry or unconditional release promise remains. All later arms stop on that branch.
+  - Lifetime-stable parent/target identities → met prospectively. Plan:62-73 requires single-thread/default-SIGCHLD/no-external-reaper custody, original coordinator pidfd before Popen, child PDEATHSIG establishment then original-parent-pidfd check before GO, and target pidfd acquisition while the exact direct Popen child remains unreaped. Signals use only the acquired original target pidfd; groups/start-time checks are not authority.
+  - READY/GO framing and budgets → met as testable requirements. Plan:69-90,126-128 requires a fresh per-invocation nonce, rejection of wrong/extra/partial frames and pre-GO result bytes, separate monotonic setup30s/command10s/cleanup5s, concurrent nonblocking stdout+stderr bounded to1MiB plus one observed overflow byte, fixed deadlines and primary-preserving secondary cleanup errors. No universal uninterruptible-wait bound is claimed.
+  - Fresh cgroup leaf/control custody and bounded retention → met prospectively. Plan:93-113 binds expected delegated directory/cgroup2 identity, creates at most two nonce leaves through its held directory FD, transports only the original leafA control FD and uses self-migration instead of numeric-PID migration. Original identities/results/member observations are retained, post-reap empty membership is mandatory, and no reuse/deletion/retry is allowed. Intentional leaf retention is separate from process/FD restoration.
+  - Same-UID interference premise → met as a diagnostic assumption, not security proof. Plan:109-113 states no concurrent intentional leaf writers or target reassignment, admits incomplete interference detection and infers no exclusivity from nonce/inode/UID. Unexpected members/control/content/replacement still BLOCK.
+  - D2a prerequisite only → met prospectively. Plan:115-122 permits one distinct no-fork child and exactly one libc unshare(CLONE_NEWUSER), only after clean D1a owned-process/FD restoration. No UID/GID mapping, helper tree, other namespace, mount/socket/connection or host fallback is authorized. Declared errno classifications and AVAILABLE_PREREQUISITE_ONLY do not qualify isolation or full bubblewrap.
+  - Concrete externally owned killed-coordinator fixture → met as required test design, not executed. Plan:129-137 places child-subreaper status in a dedicated new fixture process, not the existing coordinator/pytest process; permits only an anonymous AF_UNIX socketpair/SCM_RIGHTS transport of the original target pidfd; requires original-coordinator-pidfd kill, original-target-pidfd exit and reaping only that fixture family. Both before-prctl and parked-after-READY death cases must prove no diagnostic operation. Fixture-only forks/transports are expressly not authority for scientific D1/D2 forks.
+  - Unavailable outcomes versus fallback/retry → met. Plan:9,100-108,120-122,140,151-159 treats denial as evidence and stops the affected operation, never increases privileges or silently repeats. D2 requires a verified clean owned baseline; incomplete cleanup stops all arms.
+  - No production/scientific authority or Stage1 closure → met as unchanged constraints. Plan:17-22,142-159 prohibits protected access and production guard changes, keeps the whole9-group/80-row status OPEN and retains exact FINAL/source/payload/C1/G3/conditional-training/C2/release obligations. Successful prerequisites require separate full-arm supplements.
+
+UNKNOWNS
+  - Kernel migration/userns permissions remain untested; positive availability, negative-control escape, pids enforcement and full containment are not established.
+  - Exact implementation must demonstrate causal missing-handle EOF failure, actual FD reuse/selector failures, malformed/output-cap/deadline handling and primary-plus-secondary kill/reap/close faults. Requirements in a plan are not executed acceptance evidence.
+  - The fixture must prove original pidfd transport/acquisition before killing the coordinator, exercise the actual pre-prctl and post-READY logic without starting a diagnostic, and reap only known fixture-family children. An independent exact implementation review must check fixture bootstrap/transport failure cleanup rather than infer it from subreaper status.
+  - The imported source/pyc and transitive loader closure, exact script/argv/evidence-root identities and ownership/mode checks still require a frozen finite manifest; the corrected subject list alone is not an executed runtime attestation.
+  - Production guard source was not independently re-read in this review. Its unchanged unconditional status remains a plan constraint supported by the existing parent review, not a new source audit here.
+  - Arbitrary same-UID adversaries, universal scheduling/uninterruptible bounds, full descendant/bubblewrap/network/protected-content/server qualification and final scientific approval remain outside this slice.

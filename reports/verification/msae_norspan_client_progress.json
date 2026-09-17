@@ -1,0 +1,114 @@
+{
+  "schema_version": "msae_norspan_client_progress_v1",
+  "status": "EXACT SOURCE-FREE BOUNDED REPAIR SHIP; TASK/N3 INCOMPLETE; WHOLE BLOCK",
+  "prospective_plan": "docs/plan-msae-norspan-jumbo-client-contract-v5.md",
+  "prospective_contract": "docs/contract-msae-norspan-jumbo-client-storage-v3.md",
+  "prospective_verdict": "SHIP_PLAN_AND_CONTRACT_ONLY",
+  "implementation_verdict": "SHIP_BOUNDED_N1_N2_TWO_RESOURCE_REPAIRS_ONLY",
+  "root_run": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-successor-full-n9fwsnkz",
+  "root_junit_sha256": "4a2554afbf6fee684fdd4bae9991b177f9bf34d042391c8fd460cd4b0aa0c324",
+  "root_counts": {
+    "passed": 477,
+    "failed": 0,
+    "skipped": 0
+  },
+  "closed_bounded_repairs": [
+    "scratch retained original-FD inventory and flat names",
+    "supervisor independent cleanup and no terminal on failed teardown",
+    "nonblocking bounded ordinary/sparse readers and all releases",
+    "primitive and aggregate expected-byte fences",
+    "paired opaque recovery cap+1 incremental enumeration",
+    "paired prefix bounded buffering and full copied-stream digest"
+  ],
+  "partial_integration": [
+    "outside expected live/catalog controls",
+    "physical/logical control/raw/private consumers",
+    "typed scratch/phase metadata observer with zero work authority"
+  ],
+  "remaining_integration": [
+    "create-once controller/catalog transport and lifetime",
+    "authenticated canonical exact whole authority",
+    "full authority/history/science/terminal/recovery replay",
+    "generic protocol/training metadata tree admission qualification",
+    "end-to-end phase/fault combined integration"
+  ],
+  "historical_matrix": {
+    "path": "reports/verification/msae_norspan_jpc_fault_matrix_progress.json",
+    "sha256": "a649838eedec2466bc6b9844173ff976f33f2f57bd57675d440c269337fbff79",
+    "whole_groups": [
+      {
+        "id": "control_markers",
+        "whole_row_closed": false
+      },
+      {
+        "id": "subprocess",
+        "whole_row_closed": false
+      },
+      {
+        "id": "producer_raw",
+        "whole_row_closed": false
+      },
+      {
+        "id": "scientific_raw_access",
+        "whole_row_closed": false
+      },
+      {
+        "id": "private_seal",
+        "whole_row_closed": false
+      },
+      {
+        "id": "terminal_recovery",
+        "whole_row_closed": false
+      },
+      {
+        "id": "descriptor_ancestry",
+        "whole_row_closed": false
+      },
+      {
+        "id": "history_capability",
+        "whole_row_closed": false
+      },
+      {
+        "id": "storage_limits",
+        "whole_row_closed": false
+      }
+    ]
+  },
+  "historical_audit": {
+    "path": "reports/verification/msae_norspan_jpc_integration_audit_progress.json",
+    "sha256": "ea4743c9fd4f76e42166d11d938370804cd5f56e2dc21a3d0dc93255747d1fba",
+    "rows": 80,
+    "whole_rows_closed": 0
+  },
+  "admin_contact": false,
+  "canonical_authority": false,
+  "source_operations": 0,
+  "model_operations": 0,
+  "production_launch_authorized": false,
+  "hard_containment_waiver": false,
+  "server_backup_guarantees": "UNKNOWN",
+  "hard_aggregate_quota": "UNVERIFIED",
+  "process_limit_512": "UNVERIFIED",
+  "changes_committed": false,
+  "self_enforcement_metadata": {
+    "pointer": "reports/verification/msae_norspan_client_self_enforcement_path.txt",
+    "own_user_unit_writable_paths_observed": true,
+    "enabled_controllers": [
+      "cpu",
+      "memory",
+      "pids"
+    ],
+    "qualification": "PROSPECTIVE_METADATA_ONLY; PER_RUN_DELEGATION_UNTESTED",
+    "cgroup_changes": 0,
+    "hard_process_gate_passed": false,
+    "hard_storage_quota_passed": false
+  },
+  "review": {
+    "path": "reports/adversarial/msae_norspan_jumbo_client_resource_successor_review.md",
+    "sha256": "b5702300175b8713ff6756f5377dcbc5ff467bc2e75b166187347d1207e78ddd",
+    "independent_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-client-resource-successor-review-tqSAHl",
+    "maintained_passed": 477,
+    "additional_attacks_passed": 45,
+    "whole_authority": false
+  }
+}

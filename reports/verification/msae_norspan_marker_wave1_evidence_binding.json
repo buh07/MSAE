@@ -1,0 +1,15 @@
+{
+  "schema_version": "norspan_marker_wave1_evidence_binding_v1",
+  "evidence_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-public-evidence-_96plc7h",
+  "archive_path": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-public-evidence-_96plc7h/public-evidence.tar.gz",
+  "archive_sha256": "d1af198caa25825435772ef103b87fb9f2a3d966366b39e5f372fb41ac118dbc",
+  "archive_bytes": 1341219,
+  "archive_mode": 448,
+  "manifest_sha256": "5f568449819f357052c8edea74936674d2405693b870ef91e23e95a6962bb81f",
+  "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91",
+  "explicit_file_count": 154,
+  "client_file_and_parent_fsync_returned": true,
+  "server_backup_durability_guarantees": "UNKNOWN",
+  "whole_production_qualified": false,
+  "scientific_result_changed": false
+}

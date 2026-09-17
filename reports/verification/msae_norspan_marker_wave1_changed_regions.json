@@ -1,0 +1,47 @@
+{
+  "schema_version": "norspan_marker_wave1_changed_regions_v1",
+  "candidate_subjects_sha256": "cf93e5142f914202cac6eab1e00e0cb94372805dce9db1806504f3b1285b4f91",
+  "predecessor_binding_root": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-controller-owner-receipt-binding-x8batjp7",
+  "unchanged_predecessor_public_subjects": 65,
+  "newly_bound_subjects": [
+    {
+      "path": "docs/plan-msae-norspan-marker-fault-qualification-wave1.md",
+      "sha256": "ab9caa0c60758865691268b84e6fa9362ce30419c479da8e15f1ddc5612f9457",
+      "bytes": 8469,
+      "mode": 448,
+      "nlink": 1
+    },
+    {
+      "path": "tests/test_msae_norspan_marker_fault_wave1.py",
+      "sha256": "df9502b291d0e7e4454ed91e493f15918914f2043bd15b54169eba5d3b4c3f4f",
+      "bytes": 29347,
+      "mode": 420,
+      "nlink": 1
+    }
+  ],
+  "baseline_note": "These2 were not bound by predecessor65; missing baseline is NOT proof of creation. No production bytes/modes changed.",
+  "first_failed_test_source": "/jumbo/lisp/f004ndc/tmp/lisplab1/norspan-marker-wave1-first-lparPh/first-candidate-test.py",
+  "first_failed_test_sha256": "57774ec1130adb016e271bbd714e7f1e12940a61d3e45f573ef9753d29f16586",
+  "first_run": {
+    "tests": 397,
+    "failures": 12,
+    "passed": 385,
+    "junit_sha256": "adbd844f6692c27d29f90f78464c6ac25776d217a4e645bb80561492df37dba9",
+    "failed_case_names": [
+      "test_marker_adapter_positive_actual_pair_registration_catalog[current_history_registry.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[baseline.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[authority.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[acquisition_entry.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[pre_network_ready.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[network_started.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[scientific_entry.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[pre_raw_ready.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[raw_access_started.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[source_acquisition.json]",
+      "test_marker_adapter_positive_actual_pair_registration_catalog[seal.json]",
+      "test_marker_wave_production_guard_remains_first_and_unconditional"
+    ]
+  },
+  "owner_continuation_is_exact_production_enrollment": false,
+  "whole_qualification": false
+}
